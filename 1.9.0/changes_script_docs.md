@@ -1,1 +1,257 @@
-TODO
+# Update 1.9 - Script Docs
+## Overview
+- Trade Routes have been replaced with exports and imports
+- Three new scopes have been added:
+  - `treaty`
+  - `treaty_article`
+  - `treaty_article_options`
+- New additions for the `company` scope
+- Added some new general triggers and effects
+  - `error_log`: Write to the error log
+  - List effects (like `add_to_list`) now support timed entries
+  - And more...
+- Added quite a lot of war-specific triggers, effects and event targets
+  - Naval invasion has been renamed to invasion
+
+## Table of Content
+- [Effects](#effects)
+  - [Additions](#additions)
+  - [Removals](#removals)
+  - [Changes](#changes)
+- [Triggers](#triggers)
+  - [Additions](#additions-1)
+  - [Removals](#removals-1)
+  - [Changes](#changes-1)
+- [Event Targets](#event-targets)
+  - [Additions](#additions-2)
+  - [Removals](#removals-2)
+  - [Changes](#changes-2)
+- [On Actions](#on-actions)
+  - [Additions](#additions-3)
+  - [Removals](#removals-3)
+
+## Effects
+### Additions
+- Added `add_company_monopoly`: Adds a monopoly to a company scope: add_company_monopoly = bt:building_textile_mills
+- Added `add_country_monopoly`: Adds a monopoly to a country scope: add_country_monopoly = bt:building_textile_mills
+- Added `add_exports`: Adds a multiplier of exports to the state for the scoped state goods
+- Added `add_imports`: Adds a multiplier of imports to the state for the scoped state goods
+- Added `cede_treaty_port`: Cedes a treaty port in scope state to target country
+- Added `create_treaty`: Creates a treaty between countries
+- Added `error_log`: Log a string to the error log when this effect executes, `error_log = message`, the message can be a localization string with ROOT, SCOPE and PREV available
+- Added `every_decentralized_country`: Iterate through all countries that are decentralized
+- Added `every_scope_article`: Iterate through articles of the scoped treaty
+- Added `every_scope_article_option`: Iterate through article_options of the scoped treaty or treaty_options
+- Added `every_scope_regional_hqs`: Iterate through regional HQs of the scoped company
+- Added `every_scope_treaty`: Iterate through in force treaties binding the scoped country
+- Added `every_treaty`: Iterate through treaties (both in force and drafts)
+- Added `ordered_decentralized_country`: Iterate through all countries that are decentralized
+- Added `ordered_scope_article`: Iterate through articles of the scoped treaty
+- Added `ordered_scope_article_option`: Iterate through article_options of the scoped treaty or treaty_options
+- Added `ordered_scope_regional_hqs`: Iterate through regional HQs of the scoped company
+- Added `ordered_scope_treaty`: Iterate through in force treaties binding the scoped country
+- Added `ordered_treaty`: Iterate through treaties (both in force and drafts)
+- Added `post_audio_event`: Runs an audio even on a "persistent" audio object
+- Added `random_decentralized_country`: Iterate through all countries that are decentralized
+- Added `random_scope_article`: Iterate through articles of the scoped treaty
+- Added `random_scope_article_option`: Iterate through article_options of the scoped treaty or treaty_options
+- Added `random_scope_regional_hqs`: Iterate through regional HQs of the scoped company
+- Added `random_scope_treaty`: Iterate through in force treaties binding the scoped country
+- Added `random_treaty`: Iterate through treaties (both in force and drafts)
+- Added `remove_exports`: Removes a multiplier of exports to the state for the scoped state goods
+- Added `remove_imports`: Removes a multiplier of imports to the state for the scoped state goods
+- Added `remove_monopoly`: Removes a monopoly in a country scope for a specific building: remove_monopoly = bt:building_textile_mills
+- Added `remove_owned_country`: Removes the scoped company's ownership of the target country
+- Added `set_export_tariff_level`: Sets export tariff level for a good in scoped country
+- Added `set_exports`: Sets a multiplier of exports to the state for the scoped state goods
+- Added `set_import_tariff_level`: Sets import tariff level for a good in scoped country
+- Added `set_imports`: Sets a multiplier of imports to the state for the scoped state goods
+- Added `withdraw`: Withdraws a country from a treaty
+### Removals
+- Removed `add_owned_country`
+- Removed `create_trade_route`
+- Removed `every_trade_route`
+- Removed `lock_trade_route`
+- Removed `ordered_trade_route`
+- Removed `random_trade_route`
+- Removed `set_tariffs_export_priority`
+- Removed `set_tariffs_import_priority`
+- Removed `set_tariffs_no_priority`
+### Changes
+- `add_to_global_variable_list`: Now supports timed list entries using e.g. `days = 10`
+- `add_to_list`: Now supports timed list entries using e.g. `days = 10`
+- `add_to_local_variable_list`: Now supports timed list entries using e.g. `days = 10`
+- `add_to_temporary_list`: Now supports timed list entries using e.g. `days = 10`
+- `add_to_variable_list`: Now supports timed list entries using e.g. `days = 10`
+- `random_list`: Changed documentation
+- `set_character_as_ruler`: CAUTION: Do not use this effect with chartered companies, as the character's country will be affected
+- `random_list`: Changed documentation
+## Triggers
+### Additions
+- Added `any_decentralized_country`: Iterate through all countries that are decentralized
+- Added `any_scope_article`: Iterate through articles of the scoped treaty
+- Added `any_scope_article_option`: Iterate through article_options of the scoped treaty or treaty_options
+- Added `any_scope_regional_hqs`: Iterate through regional HQs of the scoped company
+- Added `any_scope_treaty`: Iterate through in force treaties binding the scoped country
+- Added `any_treaty`: Iterate through treaties (both in force and drafts)
+- Added `authority_usage`: Compares the consumed authority of the scoped country
+- Added `binds`: Checks if the scoped treaty or treaty_options binds the given country
+- Added `blockade_level`: Compare to state's blockade level
+- Added `bureaucracy_usage`: Compares the consumed bureaucracy of the scoped country
+- Added `can_create_treaty`: Checks if a treaty between countries can be created
+- Added `can_potentially_produce_prestige_goods`: Checks if scope company can potentially produce target prestige good type
+- Added `company_employed_levels`: Check the number of employed building levels of the scoped company
+- Added `company_global_productivity_comparison`: Check the average global productivity of buildings matching this company's buildings, scaled by owned levels for each type
+- Added `company_has_building_type_monopoly`: Check if the scoped company has a monopoly of the specified building type
+- Added `company_has_monopoly`: Check if the scoped company has any monopoly
+- Added `company_is_prosperous`: Check if a company is considered to be prosperous
+- Added `company_owned_levels`: Check the number of owned building levels of the scoped company
+- Added `company_productivity`: Check the productivity of the scoped company
+- Added `company_prosperity`: Check the prosperity of a company
+- Added `country_has_building_type_monopoly`: Check if the scoped country has a monopoly of the specified building type
+- Added `country_has_country_monopoly`: Check if the scoped country has any country monopolies
+- Added `export_advantage`: Compare to state goods export advantage
+- Added `export_tariff_level`: Checks if state goods has a particular export tariff level set
+- Added `has_account_item`: Does the player have the item in the account
+- Added `has_law_commitment`: Checks if a country has a commitment to enact a certain law
+- Added `has_potential_supply`: Check if the market goods or state goods has a potential supply, either though local production or theoretical import
+- Added `has_treaty_port_in_market`: Checks if the scoped country has a treaty port in target market
+- Added `has_type`: Checks if the scoped object has the type identified by the given string
+- Added `import_advantage`: Compare to state goods import advantage
+- Added `import_tariff_level`: Checks if state goods has a particular import tariff level set
+- Added `influence_usage`: Compares the consumed influence of the scoped country
+- Added `infrastructure_delta`: Compares the infrastructure balance of a given state
+- Added `is_blockaded_by`: Checks if a state is blockaded by a country
+- Added `is_company_type`: Checks if scoped company is of the specified type
+- Added `is_enforced`: Checks if the scoped treaty is enforced on either party
+- Added `is_fulfilled_by`: Check if the scoped treaty is fulfilled by the given country
+- Added `is_invasion_stalled`: Checks if the invasion is stalled due to wrong commander orders
+- Added `is_potential_treaty_port`: Checks if the scoped state has the potential to become a treaty port for target country
+- Added `is_producing_prestige_goods`: Checks if scope company is producing prestige goods
+- Added `is_world_market_hub`: Check if state is a world market hub
+- Added `liberty_desire_weekly_progress_from_support_independence`: Compare trigger for the weekly Liberty Desire progress value from the scoped country having their independence supported.
+- Added `market_consumption_share`: Compare fraction of scope market consumption coming from target country
+- Added `market_exports`: Compare total units of exports from scope to target market (if set) or world market in general (if no market specified)
+- Added `market_exports_reliance`: Compare fraction of buy orders in scope market that are due to exports to target market (if set) or world market in general (if no market specified)
+- Added `market_goods_export_share`: Checks if market goods exports are the specified fraction of world market exports
+- Added `market_goods_import_share`: Checks if market goods imports are the specified fraction of world market imports
+- Added `market_imports`: Compare total units of imports from target to scope market
+- Added `market_imports_reliance`: Compare fraction of buy orders in scope market that are due to imports from target market (if set) or world market in general (if no market specified)
+- Added `market_prestige_goods_buy_orders`: Compare the buy orders of a specific prestige good type in the market
+- Added `market_prestige_goods_consumption`: Compare the consumption value of a specific prestige good type in the market
+- Added `market_prestige_goods_delta`: Compare the delta (sell orders - buy orders) of a specific prestige good type in the market
+- Added `market_prestige_goods_export_share`: Compare the world market expore share of a specific prestige good type in the market
+- Added `market_prestige_goods_exports`: Compare the export value of a specific prestige good type in the market
+- Added `market_prestige_goods_import_share`: Compare the world market export share of a specific prestige good type in the market
+- Added `market_prestige_goods_imports`: Compare the import value of a specific prestige good type in the market
+- Added `market_prestige_goods_production`: Compare the production value of a specific prestige good type in the market
+- Added `market_prestige_goods_sell_orders`: Compare the sell orders of a specific prestige good type in the market
+- Added `market_production_share`: Compare fraction of scope market production coming from target country
+- Added `market_trade`: Compare total units of goods traded between scope market and target market (if set) or world market in general (if no market specified)
+- Added `market_trade_reliance`: Compare fraction of buy and sell orders in scope market that are due to trade with target market (if set) or world market in general (if no market specified)
+- Added `max_contraventions`: Check the maximum contraventions for the article type of the scoped article or article_options
+- Added `movement_pressure`: Compares the pressure of the scoped movement on the target IG
+- Added `num_contraventions`: Check if the scoped article has the given number of contravention from the given country
+- Added `num_front_casualties`: Checks the number of casualties for the target country in the scoped front
+- Added `num_front_dead`: Checks the number of dead for the target country in the scoped front
+- Added `num_front_wounded`: Checks the number of wounded for the target country in the scoped front
+- Added `organization_target`: Compares the target Organization of the Military Formation in scope
+- Added `relative_authority`: Compares the relative production to usage of bureaucracy for the scoped country
+- Added `relative_bureaucracy`: Compares relative production to usage of bureaucracy for the scoped country
+- Added `relative_export_advantage`: Compare to state goods relative export advantage
+- Added `relative_import_advantage`: Compare to state goods relative import advantage
+- Added `relative_influence`: Compares relative production to usage of influence for the scoped country
+- Added `state_exports`: Compare total units of exports from scope to target state (if set) or world state in general (if no state specified)
+- Added `state_imports`: Compare total units of imports from target to scope state
+- Added `state_trade`: Compare total units of goods traded between scope state and target state (if set) or world state in general (if no state specified)
+- Added `transfer_money_gross_income`: Does the country have this amount of gross income (income before expenses) from money transfer treaties
+- Added `transfer_money_net_income`: Does the country have this amount of net income (income after expenses) from money transfer treaties
+- Added `unit_formation_has_commander`: Checks if ther formation of the scoped combat unit has the provided character as one of its commanders
+- Added `world_market_access`: Checks the world market access of the scoped state
+- Added `world_market_delta`: Checks if goods has the specified number of exports minus imports in the world market
+- Added `world_market_exports`: Checks if goods has the specified number of exports in the world market
+- Added `world_market_imports`: Checks if goods has the specified number of imports in the world market
+### Removals
+- Removed `any_trade_route`
+- Removed `can_establish_any_export_route`
+- Removed `can_establish_any_import_route`
+- Removed `has_export_priority_tariffs`
+- Removed `has_import_priority_tariffs`
+- Removed `has_map_interaction_export_goods`
+- Removed `has_map_interaction_import_goods`
+- Removed `has_no_priority_tariffs`
+- Removed `has_treaty_port_in_country`
+- Removed `is_active`
+- Removed `is_naval_invasion_stalled_due_to_orders`
+- Removed `is_trade_route_active`
+- Removed `is_trade_route_productive`
+- Removed `max_organization`
+- Removed `trade_route_needs_convoys_to_grow`
+### Changes
+- `check_area`: Can now also be applied to market
+- `goods_production_rank`: Changed documentation
+- `hidden_trigger`: Changed documentation
+## Event Targets
+### Additions
+- Added `global_productivity`: Scope to global productivity values
+- Added `ai_treaty_export_value`: Scope to target country AI desire to export scoped market good
+- Added `ai_treaty_import_value`: Scope to target country AI desire to import scoped market good through treaties
+- Added `ai_treaty_trade_value`: Scope to target country AI desire to import and export scoped market good
+- Added `input_building_type`: Scope to the building type input in a treaty article
+- Added `input_company`: Scope to the company input in a treaty article
+- Added `input_country`: Scope to the country input in a treaty article
+- Added `input_goods`: Scope to the goods input in a treaty article
+- Added `input_law`: Scope to the law input in a treaty article
+- Added `input_market_goods`: Scope to the market goods input in a treaty article
+- Added `input_quantity`: Scope to the quantity input in a treaty article
+- Added `input_state`: Scope to the state input in a treaty article
+- Added `input_strategic_region`: Scope to the strategic region input in a treaty article
+- Added `source_country`: Scope to the source_country of any treaty article (for directed article types only) or treaty article options (for directed article types only)
+- Added `target_country`: Scope to the target_country of any treaty article (for directed article types only) or treaty article options (for directed article types only)
+- Added `binding_period_original`: Get the original binding period in days when the treaty was signed for the scoped treaty
+- Added `executive`: Scope from a company to its executive character
+- Added `treaty`: Scope to the treaty a treaty article belongs to
+- Added `global_productivity`: Scope to global productivity values
+- Added `ai_transit_rights_value`: Scope to AI desire of to have transit rights through target country
+- Added `ai_treaty_fairness`: Scope to AI evaluation of how fair (to both sides) it considers existing treaty articles with the target country to be
+- Added `ai_treaty_value`: Scope to AI evaluation of how favorable to itself it considers existing treaty articles with the target country to be
+- Added `income_transfer_expenses`: Scope to the amount of money scope country is transferring to other countries via treaties & pacts
+- Added `income_transfer_relative_expenses`: Scope to the fraction of their income country is transferring to other countries via treaties & pacts
+- Added `mutual_trade_value_with_country`: Scope to the total base value of goods traded in trade routes between the two markets
+- Added `num_income_transfer_treaty_articles`: Scope to the number of income-transferring (to others) treaty articles target country has in total
+- Added `num_income_transfers`: Scope to the number of income-transfering (to others) pacts and treaty articles target country has in total
+- Added `owning_company`: Scope to the company owning the scoped country
+- Added `num_world_market_hub_trade_center_levels`: Get the total number of trade center levels associated with scope world market hub state
+- Added `binding_period`: Get the current remaining binding period in days for the scoped treaty
+- Added `enforced_on_country`: Scope to the enforced_on_country of an enforced treaty
+- Added `enforcer_country`: Scope to the enforcer_country of an enforced treaty
+- Added `num_units_in_battle`: Get the number of active units in battle for a commander or military formation
+- Added `num_units_not_in_battle`: Get the number of active units not in battle for a commander or military formation
+- Added `base_price`: Get the base price of the scoped good
+### Removals
+- Removed `num_mutual_trade_route_levels_with_country`
+- Removed `num_trade_routes`
+- Removed `num_treaty_ports`
+- Removed `num_export_trade_routes`
+- Removed `num_import_trade_routes`
+- Removed `actor_market`
+- Removed `exporter`
+- Removed `importer`
+- Removed `target_market`
+### Changes
+- `owner`: Added company
+## On Actions
+### Additions
+- Added `on_game_started`
+- Added `on_treaty_entered_into_force`
+- Added `on_treaty_enforced`
+- Added `on_treaty_proposed`
+- Added `on_country_released_as_company_subject`
+- Added `on_game_started_after_lobby`
+- Added `on_treaty_proposal_declined`
+- Added `on_country_withdrawn_from_treaty`
+- Added `on_country_broke_treaty`
+- Added `on_treaty_dissolved`
+- Added `tech_monthly_events`
+### Removals
+- Removed `on_naval_invasion`

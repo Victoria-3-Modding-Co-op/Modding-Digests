@@ -1,1 +1,512 @@
-TODO
+# Update 1.9 - Data Types
+## Overview
+- Dividing is now supported
+- Added new types/scopes for:
+  - World Market
+  - Treaties
+  - Invasions
+  - Companies
+- Changes to the Portrait Editor
+- Added GUI data Profiler types
+- Removed GUI editor types
+
+## Table of Content
+- [Common](#common)
+  - [Additions](#additions)
+- [Script](#script)
+  - [Additions](#additions-1)
+  - [Removals](#removals)
+- [Game Types](#game-types-uncategorized) (Uncategorized)
+  - [Additions](#additions-2)
+  - [Removals](#removals-1)
+  - [Changes](#changes)
+- [Game Concepts](#game-concepts-uncategorized) (Uncategorized)
+  - [Additions](#additions-3)
+  - [Removals](#removals-2)
+- [Game Promotes](#game-promotes-uncategorized) (Uncategorized)
+  - [Additions](#additions-4)
+  - [Removals](#removals-3)
+- [GUI](#gui)
+  - [Additions](#additions-5)
+  - [Removals](#removals-4)
+  - [Changes](#changes-1)
+- [Internal](#internal)
+  - [Additions](#additions-6)
+  - [Removals](#removals-5)
+
+## Common
+### Additions
+- Added `Divide_CFixedPoint( Arg0, Arg1 )`
+- Added `Divide_CVector2f( Arg0, Arg1 )`
+- Added `Divide_float( Arg0, Arg1 )`
+- Added `Divide_int32( Arg0, Arg1 )`
+- Added `Divide_int64( Arg0, Arg1 )`
+- Added `Divide_uint32( Arg0, Arg1 )`
+- Added `Divide_uint64( Arg0, Arg1 )`
+## Script
+### Additions
+- Added `Scope.AccessInvasion`
+- Added `Scope.AccessTreaty`
+- Added `Scope.AccessTreatyArticle`
+- Added `Scope.GetInvasion`
+- Added `Scope.GetTreaty`
+- Added `Scope.GetTreatyArticle`
+### Removals
+- Removed `Scope.AccessNavalInvasion`
+- Removed `Scope.AccessTradeRoute`
+- Removed `Scope.GetNavalInvasion`
+- Removed `Scope.GetTradeRoute`
+## Game Types (Uncategorized)
+### Additions
+- Added `Article`
+- Added `ArticleDraft`
+- Added `ArticleType`
+- Added `BattleSide`
+- Added `CompaniesPanel`
+- Added `CompanyCharter`
+- Added `CompanyCharterType`
+- Added `CompanyPanel`
+- Added `FrontSide`
+- Added `GoodsUsagePanel`
+- Added `GoodsWorldMarketPanel`
+- Added `Invasion`
+- Added `InvasionPlannerPopup`
+- Added `MapMode`
+- Added `Treaty`
+- Added `TreatyDraft`
+- Added `TreatyDraftPanel`
+- Added `TreatyPanel`
+- Added `WorldMarketPanel`
+### Removals
+- Removed `FrontParticipant`
+- Removed `MapListAdvanceFrontOption`
+- Removed `MapListTradeRouteOption`
+- Removed `NavalInvasionPlannerPopup`
+- Removed `TradeRoute`
+### Changes
+- Changed `Battle`
+- Changed `Building`
+- Changed `BuildingBrowserPanel`
+- Changed `BuildingType`
+- Changed `Character`
+- Changed `CombatUnit`
+- Changed `Command`
+- Changed `CommanderOrderType`
+- Changed `Company`
+- Changed `CompanyType`
+- Changed `Country`
+- Changed `CountryPanel`
+- Changed `DecreeType`
+- Changed `DiplomaticOverviewPanel`
+- Changed `DiplomaticPlay`
+- Changed `ExilePool`
+- Changed `FormationMarker`
+- Changed `FormationPanel`
+- Changed `Front`
+- Changed `FrontMovementMarker`
+- Changed `GameSetup`
+- Changed `Goods`
+- Changed `GoodsPanel`
+- Changed `GoodsPanelValue`
+- Changed `GoodsStatePanel`
+- Changed `HQMovementMarker`
+- Changed `HighlightManager`
+- Changed `Ideology`
+- Changed `InformationPanelBar`
+- Changed `InterestGroup`
+- Changed `LabelingHelper`
+- Changed `Law`
+- Changed `LawType`
+- Changed `LensOption`
+- Changed `LensTab`
+- Changed `MapInteractionManager`
+- Changed `MapListOption`
+- Changed `MapModeList`
+- Changed `Market`
+- Changed `MarketGoods`
+- Changed `MarketPanel`
+- Changed `MarketsMarker`
+- Changed `MilitaryFormation`
+- Changed `MilitaryFormationUnitEntry`
+- Changed `MobilizationOption`
+- Changed `NationalizeBuildingWindow`
+- Changed `Outliner`
+- Changed `OutlinerEntry`
+- Changed `PanelMilitary`
+- Changed `PoliticalMovement`
+- Changed `PoliticalMovementType`
+- Changed `PopsOverviewPanel`
+- Changed `PopupManager`
+- Changed `PowerBlocPanel`
+- Changed `Proposal`
+- Changed `RightClickMenuManager`
+- Changed `ScriptProfilerEntry`
+- Changed `ScriptProfilerFileLine`
+- Changed `ScriptProfilerGui`
+- Changed `ScriptedButton`
+- Changed `SeaNodeMovementMarker`
+- Changed `SeaRegionPanel`
+- Changed `SeaRegionWar`
+- Changed `ShippingLane`
+- Changed `SocietyPanel`
+- Changed `StagedFormation`
+- Changed `State`
+- Changed `StrategicRegion`
+- Changed `Theme`
+- Changed `War`
+- Changed `WarGoal`
+- Changed `WarPanel`
+## Game Concepts (Uncategorized)
+### Additions
+- Added `concept_article`
+- Added `concept_binding_period`
+- Added `concept_blockade`
+- Added `concept_company_charter`
+- Added `concept_company_hq`
+- Added `concept_company_monopoly`
+- Added `concept_contravention`
+- Added `concept_controlled_war_goal`
+- Added `concept_country_monopoly`
+- Added `concept_enforced_treaty`
+- Added `concept_executive`
+- Added `concept_exiled_army`
+- Added `concept_export_price`
+- Added `concept_georegion`
+- Added `concept_georegion_africa`
+- Added `concept_georegion_americas`
+- Added `concept_georegion_central_america`
+- Added `concept_georegion_central_asia`
+- Added `concept_georegion_china`
+- Added `concept_georegion_east_asia`
+- Added `concept_georegion_europe`
+- Added `concept_georegion_india`
+- Added `concept_georegion_middle_east`
+- Added `concept_georegion_north_africa`
+- Added `concept_georegion_north_america`
+- Added `concept_georegion_south_america`
+- Added `concept_georegion_southeast_asia`
+- Added `concept_georegion_subsaharan_africa`
+- Added `concept_import_price`
+- Added `concept_invasion`
+- Added `concept_market_area`
+- Added `concept_market_capital`
+- Added `concept_military_access`
+- Added `concept_monopoly`
+- Added `concept_non_fulfillment`
+- Added `concept_prestige_good`
+- Added `concept_privy_purse`
+- Added `concept_regional_company_hq`
+- Added `concept_risk`
+- Added `concept_subventions`
+- Added `concept_terrain_labels`
+- Added `concept_trade`
+- Added `concept_trade_advantage`
+- Added `concept_trade_capacity`
+- Added `concept_trade_potential`
+- Added `concept_trade_privilege`
+- Added `concept_traded_quantity`
+- Added `concept_treaty`
+- Added `concept_world_market`
+- Added `concept_world_market_access`
+- Added `concept_world_market_hub`
+- Added `concept_world_market_price`
+### Removals
+- Removed `concept_land_trade_capacity`
+- Removed `concept_market_capital`
+- Removed `concept_market_good_policy`
+- Removed `concept_trade_agreement`
+- Removed `concept_trade_lens`
+- Removed `concept_trade_route`
+- Removed `concept_trade_route_competitiveness`
+## Game Promotes (Uncategorized)
+### Additions
+- Added `COMPANY_CHARTER`
+- Added `COMPANY_CHARTER_TYPE`
+- Added `FIRST_COUNTRY`
+- Added `GetArticleType( Arg0 )`
+- Added `GetCommanderOrderType( Arg0 )`
+- Added `GetCompanyCharterType( Arg0 )`
+- Added `GetMapMode( Arg0 )`
+- Added `GetSelectedFormation`
+- Added `GetStrategicObjectiveFormationInState( Arg0, Arg1 )`
+- Added `INVASION`
+- Added `SECOND_COUNTRY`
+- Added `SOURCE_COUNTRY`
+- Added `TARGET_COMPANY_CHARTER`
+- Added `TARGET_COMPANY_CHARTER_TYPE`
+- Added `TARGET_INVASION`
+- Added `TARGET_TREATY`
+- Added `TARGET_TREATY_ARTICLE`
+- Added `TARGET_TREATY_ARTICLE_TYPE`
+- Added `TREATY`
+- Added `TREATY_ARTICLE`
+- Added `TREATY_ARTICLE_TYPE`
+- Added `CopyRNGSeedToClipboard`
+- Added `DemobilizeSelectedArmies`
+- Added `GetCompanyCharterTypes`
+- Added `GetCountryStrategicObjectiveInStateDesc( Arg0, Arg1 )`
+- Added `GetGlobalRandomSeed`
+- Added `GetGlobalRandomSeedString`
+- Added `GetMapModeIcon( Arg0 )`
+- Added `GetNumCommandersInSelectedFormations`
+- Added `GetNumCommandersInSelectedFormationsWithOrderActive( Arg0 )`
+- Added `GetNumCommandersInSelectedFormationsWithOrderBlocked( Arg0 )`
+- Added `GetNumCommandersInSelectedFormationsWithOrderNext( Arg0 )`
+- Added `GetNumCommandersInSelectedFormationsWithOrderPossible( Arg0 )`
+- Added `GetNumSelectedArmies`
+- Added `GetNumSelectedArmiesWithDemobilizationActive`
+- Added `GetNumSelectedArmiesWithDemobilizationBlocked`
+- Added `GetNumSelectedArmiesWithDemobilizationPossible`
+- Added `GetNumSelectedArmiesWithMobilizationActive`
+- Added `GetNumSelectedArmiesWithMobilizationBlocked`
+- Added `GetNumSelectedArmiesWithMobilizationPossible`
+- Added `GetNumSelectedArmiesWithRaiseConscriptsActive`
+- Added `GetNumSelectedArmiesWithRaiseConscriptsBlocked`
+- Added `GetNumSelectedArmiesWithRaiseConscriptsPossible`
+- Added `GetNumSelectedFleets`
+- Added `GetNumSelectedFormations`
+- Added `GetSelectedFormationsList`
+- Added `HasValidSelectedFormationsToCancelStrategicObjective( Arg0 )`
+- Added `HasValidSelectedFormationsToSetStrategicObjective( Arg0 )`
+- Added `IsMapModeIndexSelected( Arg0 )`
+- Added `IsPotential( Arg0 )`
+- Added `IsRedundant( Arg0 )`
+- Added `MergeSelectedFormations`
+- Added `MobilizeSelectedArmies`
+- Added `RaiseConscriptsInSelectedArmies`
+- Added `SetCharacterOrderForSelectedFormations( Arg0 )`
+- Added `SetStrategicObjective( Arg0, Arg1 )`
+- Added `SetStrategicObjectiveForSelectedFormations( Arg0 )`
+- Added `MakeLineIf( Condition, LocKey )`
+- Added `MakeParagraphIf( Condition, LocKey )`
+### Removals
+- Removed `FRONTPARTICIPANT`
+- Removed `NAVAL_INVASION`
+- Removed `TARGET_NAVAL_INVASION`
+- Removed `TARGET_TRADE_ROUTE`
+- Removed `TRADE_ROUTE`
+- Removed `IsPlayerInLeft( Arg0 )`
+## GUI
+### Additions
+- Added `JominiGUISetting.HasChangedSinceStartup`
+- Added `JominiSettingsWindow.AppliedOnApply`
+- Added `MeshImporterMaterialEntry.GetDetailsDescription`
+- Added `MeshImporterMaterialEntry.GetNumberGeometriesUsingMaterial`
+- Added `MeshImporterMaterialEntry.IsCollision`
+- Added `OosData.GetPlayerId`
+- Added `PdxGuiGfxVideoControl.IsPlaybackComplete`
+- Added `PdxGuiWidget.HasContext( Arg0 )`
+- Added `PlayerJoinRequest.IsChecked`
+- Added `PlayerJoinRequest.Toggle`
+- Added `SettingCategory.GetSettingsOrder`
+- Added `SettingCategory.HasSettingsWidgets`
+### Removals
+- Removed `PdxGuiGfxVideoControl.IsVisible`
+- Removed `PdxGuiGfxVideoControl.SetVisible( Arg0 )`
+- Removed `ScopedEditorSettingsPage`
+- Removed `ScopedEditorSettingsPage.AccessPage`
+- Removed `ScopedEditorSettingsPage.GetPage`
+- Removed `ScopedEditorSettingsPage.AccessSelf`
+- Removed `ScopedEditorSettingsPage.Self`
+- Removed `ScopedJominiSettingsCategory`
+- Removed `ScopedJominiSettingsCategory.AccessCategory`
+- Removed `ScopedJominiSettingsCategory.GetCategory`
+- Removed `ScopedJominiSettingsCategory.AccessSelf`
+- Removed `ScopedJominiSettingsCategory.Self`
+- Removed `ScopedJominiSettingsPage`
+- Removed `ScopedJominiSettingsPage.AccessPage`
+- Removed `ScopedJominiSettingsPage.GetPage`
+- Removed `ScopedJominiSettingsPage.AccessSelf`
+- Removed `ScopedJominiSettingsPage.Self`
+### Changes
+- `PdxGuiWidget.InterruptThenTriggerAnimation( Arg0, Arg1 )`: Now returns a boolean
+- `PdxGuiWidget.TriggerAnimation( Arg0 )`: Now returns a boolean
+## Internal
+### Additions
+- Added `GraphPanel.GetNodeLineMaskTexture( Arg0 )`
+- Added `GraphPanel.GetViewportHotkeysDescription`
+- Added `GraphPanel.IsViewportHoteysDescriptionShown`
+- Added `GraphPanel.RenameGraph`
+- Added `GuiDataProfiler`
+- Added `GuiDataProfiler.AccessSelf`
+- Added `GuiDataProfiler.BeginRecording`
+- Added `GuiDataProfiler.CanBeginRecording`
+- Added `GuiDataProfiler.GetCurrentDurationTypeDescription`
+- Added `GuiDataProfiler.GetCurrentFrame`
+- Added `GuiDataProfiler.GetDurationTypeIndex`
+- Added `GuiDataProfiler.GetDurationTypeNames`
+- Added `GuiDataProfiler.GetDurationValueTypeIndex`
+- Added `GuiDataProfiler.GetDurationValueTypeNames`
+- Added `GuiDataProfiler.GetNodeDuration( Arg0 )`
+- Added `GuiDataProfiler.GetNodeTree`
+- Added `GuiDataProfiler.GetNumFramesToCapture`
+- Added `GuiDataProfiler.GetSortingMethodIndex`
+- Added `GuiDataProfiler.GetSortingMethodNames`
+- Added `GuiDataProfiler.GetTotalCapturedWidgets`
+- Added `GuiDataProfiler.GetViewTypeIndex`
+- Added `GuiDataProfiler.GetViewTypeNames`
+- Added `GuiDataProfiler.IsCallsListView`
+- Added `GuiDataProfiler.IsLocationColumnShown`
+- Added `GuiDataProfiler.IsNodeExpanded( Arg0 )`
+- Added `GuiDataProfiler.IsRecording`
+- Added `GuiDataProfiler.NextFrame( Arg0 )`
+- Added `GuiDataProfiler.Self`
+- Added `GuiDataProfiler.SetCurrentFrame`
+- Added `GuiDataProfiler.SetDurationTypeIndex`
+- Added `GuiDataProfiler.SetDurationValueTypeIndex`
+- Added `GuiDataProfiler.SetNumFramesToCapture`
+- Added `GuiDataProfiler.SetSortingMethodIndex`
+- Added `GuiDataProfiler.SetViewTypeIndex`
+- Added `GuiDataProfiler.ToggleLocationColumnShown`
+- Added `GuiDataProfiler.ToggleNodeExpanded( Arg0 )`
+- Added `GuiDataProfilerEntryNode`
+- Added `GuiDataProfilerEntryNode.AccessSelf`
+- Added `GuiDataProfilerEntryNode.CanOpenFileLocation`
+- Added `GuiDataProfilerEntryNode.GetBranchDepth( Arg0, Arg1 )`
+- Added `GuiDataProfilerEntryNode.GetLocation`
+- Added `GuiDataProfilerEntryNode.GetName`
+- Added `GuiDataProfilerEntryNode.GetNumCalls`
+- Added `GuiDataProfilerEntryNode.HasChildren`
+- Added `GuiDataProfilerEntryNode.OpenFileLocation`
+- Added `GuiDataProfilerEntryNode.Self`
+- Added `MeshImporter.GetSettingsFileName`
+- Added `MeshImporter.ImportCurrentlySelected`
+- Added `MeshImporter.IsAutoSaveOnImport`
+- Added `MeshImporter.IsBrowserViewOpen`
+- Added `MeshImporter.IsMeshLodded`
+- Added `MeshImporter.IsSettingsDifferentThanDiskFile`
+- Added `MeshImporter.IsSettingsDiskFileExist`
+- Added `MeshImporter.SaveSettings`
+- Added `MeshImporter.ToggleAutoSaveOnImport`
+- Added `MeshImporter.ToggleBrowserView`
+- Added `MeshImporterBrowser`
+- Added `MeshImporterBrowser.AccessSelf`
+- Added `MeshImporterBrowser.ClearQueue`
+- Added `MeshImporterBrowser.DeselectAllFiles`
+- Added `MeshImporterBrowser.GetAllFiles`
+- Added `MeshImporterBrowser.GetQueuedFiles`
+- Added `MeshImporterBrowser.ImportAllInQueue`
+- Added `MeshImporterBrowser.ReloadAllFiles`
+- Added `MeshImporterBrowser.SelectAllFiles`
+- Added `MeshImporterBrowser.Self`
+- Added `MeshImporterBrowserEntry`
+- Added `MeshImporterBrowserEntry.AccessSelf`
+- Added `MeshImporterBrowserEntry.GetFileDescription`
+- Added `MeshImporterBrowserEntry.GetFileName`
+- Added `MeshImporterBrowserEntry.GetFullPath`
+- Added `MeshImporterBrowserEntry.IsInQueue`
+- Added `MeshImporterBrowserEntry.IsSelected`
+- Added `MeshImporterBrowserEntry.IsSettingsDifferentThanDiskFile`
+- Added `MeshImporterBrowserEntry.IsSettingsDiskFileExist`
+- Added `MeshImporterBrowserEntry.Self`
+- Added `MeshImporterBrowserEntry.ToggleQueue`
+- Added `MeshImporterBrowserEntry.ToggleSelect`
+- Added `NodeLine.IsDisabled`
+- Added `PortraitEditorWindow.GetCurrentAnimationFileDesc`
+- Added `PortraitEditorWindow.GetCurrentCameraFileDesc`
+- Added `PortraitEditorWindow.GetCurrentEnvironmentFileDesc`
+- Added `PortraitEditorWindow.GetCurrentEthnicityFileDesc`
+- Added `PortraitEditorWindow.GetCurrentGeneFileDesc`
+- Added `PortraitEditorWindow.OnRandomizePortraitId`
+- Added `PortraitEditorWindow.OnRestartPortrait`
+- Added `PortraitEditorWindow.OpenCurrentAnimationFile`
+- Added `PortraitEditorWindow.OpenCurrentCameraFile`
+- Added `PortraitEditorWindow.OpenCurrentEnvironmentFile`
+- Added `PortraitEditorWindow.OpenCurrentEthnicityFile`
+- Added `PortraitEditorWindow.OpenCurrentGeneFile`
+- Added `ToolProperty.HasCheckbox`
+- Added `ToolProperty.IsSelected`
+- Added `ToolProperty.IsValueDefault`
+- Added `ToolProperty.SetSelected( Arg0 )`
+- Added `ToolPropertyUndoableSearchList.AreSelectButtonsVisible`
+- Added `ToolPropertyUndoableSearchList.HasNext`
+- Added `ToolPropertyUndoableSearchList.HasPrev`
+- Added `ToolPropertyUndoableSearchList.NextEntryTooltip`
+- Added `ToolPropertyUndoableSearchList.PrevEntryTooltip`
+- Added `ToolPropertyUndoableSearchList.SelectNext`
+- Added `ToolPropertyUndoableSearchList.SelectPrev`
+- Added `ToolsPropertyTextureStringValue`
+- Added `ToolsPropertyTextureStringValue.AccessSelf`
+- Added `ToolsPropertyTextureStringValue.GetTexture`
+- Added `ToolsPropertyTextureStringValue.GetTexturePath`
+- Added `ToolsPropertyTextureStringValue.SelectTexture`
+- Added `ToolsPropertyTextureStringValue.Self`
+- Added `ToolsPropertyTextureStringValue.SetValueFromText`
+- Added `ToolsPropertyValueListEntry.IsItemVisible`
+- Added `ToolsPropertyVfsMountPath`
+- Added `ToolsPropertyVfsMountPath.AccessSelf`
+- Added `ToolsPropertyVfsMountPath.CloseBrowser`
+- Added `ToolsPropertyVfsMountPath.GetFullPath`
+- Added `ToolsPropertyVfsMountPath.GetFullPathFromMountTag( Arg0 )`
+- Added `ToolsPropertyVfsMountPath.GetMountTagIndex`
+- Added `ToolsPropertyVfsMountPath.GetPathFontColor`
+- Added `ToolsPropertyVfsMountPath.GetTags`
+- Added `ToolsPropertyVfsMountPath.GetVfsMountPathAsString`
+- Added `ToolsPropertyVfsMountPath.GetVfsPath`
+- Added `ToolsPropertyVfsMountPath.IsBrowserOpen`
+- Added `ToolsPropertyVfsMountPath.IsDisplayModeFullPath`
+- Added `ToolsPropertyVfsMountPath.OpenBrowser`
+- Added `ToolsPropertyVfsMountPath.Self`
+- Added `ToolsPropertyVfsMountPath.SetMountTagIndex`
+- Added `ToolsPropertyVfsMountPath.SetVfsPathFromText`
+- Added `ToolsPropertyVfsMountPath.ToggleBrowser`
+- Added `ToolsPropertyVfsMountPath.ToggleDisplayMode`
+- Added `VariableListEntry.GetTicksRemaining`
+- Added `VariableListEntry.SetTicksRemaining`
+- Added `VariableListStore.GetVariableTicksRemaining`
+- Added `VariableListStore.SetVariableTicksRemaining`
+- Added `VfsMountPathBrowser`
+- Added `VfsMountPathBrowser.GetFirstSelectedNode`
+- Added `VfsMountPathBrowser.AccessSelf`
+- Added `VfsMountPathBrowser.GetFilter`
+- Added `VfsMountPathBrowser.GetNodeTree`
+- Added `VfsMountPathBrowser.GetNumSelectedNodes`
+- Added `VfsMountPathBrowser.HasDirectFilterMatch( Arg0 )`
+- Added `VfsMountPathBrowser.IsNodeExpanded( Arg0 )`
+- Added `VfsMountPathBrowser.IsNodeSelected( Arg0 )`
+- Added `VfsMountPathBrowser.IsRefreshingDirectories`
+- Added `VfsMountPathBrowser.OnCancel`
+- Added `VfsMountPathBrowser.OnFilterEdit`
+- Added `VfsMountPathBrowser.OnSelect`
+- Added `VfsMountPathBrowser.RefreshAllDirectories`
+- Added `VfsMountPathBrowser.Self`
+- Added `VfsMountPathBrowser.ToggleNodeExpanded( Arg0 )`
+- Added `VfsMountPathBrowser.ToggleNodeSelected( Arg0 )`
+- Added `VfsMountPathBrowserEntryNode`
+- Added `VfsMountPathBrowserEntryNode.AccessSelf`
+- Added `VfsMountPathBrowserEntryNode.GetBranchDepth( Arg0, Arg1 )`
+- Added `VfsMountPathBrowserEntryNode.GetFullPath`
+- Added `VfsMountPathBrowserEntryNode.GetName`
+- Added `VfsMountPathBrowserEntryNode.HasChildren`
+- Added `VfsMountPathBrowserEntryNode.Self`
+### Removals
+- Removed `GuiEditor`
+- Removed `PdxGuiEditorMessageBox( Arg0 )`
+- Removed `EntityEditorEventLayerPtr`
+- Removed `EntityEditorEventLayerPtr.Access`
+- Removed `EntityEditorEventLayerPtr.AccessSelf`
+- Removed `EntityEditorEventLayerPtr.Self`
+- Removed `MeshImporter.OnImportClick`
+- Removed `Node.TypeName`
+- Removed `PdxSettingsWindowScopedCategory`
+- Removed `PdxSettingsWindowScopedCategory.GetCategory`
+- Removed `PdxSettingsWindowScopedCategory.AccessSelf`
+- Removed `PdxSettingsWindowScopedCategory.Self`
+- Removed `SelectionHistory`
+- Removed `SelectionHistory.AccessSelf`
+- Removed `SelectionHistory.HasNext`
+- Removed `SelectionHistory.HasPrevious`
+- Removed `SelectionHistory.Self`
+- Removed `SelectionLine`
+- Removed `SelectionLine.AccessSelf`
+- Removed `SelectionLine.Color`
+- Removed `SelectionLine.From`
+- Removed `SelectionLine.Position`
+- Removed `SelectionLine.Self`
+- Removed `SelectionLine.Size`
+- Removed `SelectionLine.To`
+- Removed `ToolProperty.CanSetValueToDefault`
+- Removed `ViewerEntityStatePtr`
+- Removed `ViewerEntityStatePtr.Access`
+- Removed `ViewerEntityStatePtr.AccessSelf`
+- Removed `ViewerEntityStatePtr.Self`
