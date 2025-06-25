@@ -7,6 +7,10 @@
 - Added Event Target: `treaty_exports`
 - Added Event Target: `treaty_imports`
 - Added On Action: `on_treaty_article_removed`
+- Added Trigger: `has_law_or_variant`
+- Added Trigger: `is_equal_exchange`
+- Added Trigger: `is_theme_selected`
+- Added Trigger: `is_treaty_article_in_danger`
 ### Data Types
 - Added: `TopScope.sTreaty( Arg0 )`
 - Added: `TopScope.sTreatyArticle( Arg0 )`
