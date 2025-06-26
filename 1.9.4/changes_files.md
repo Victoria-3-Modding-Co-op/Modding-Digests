@@ -1,0 +1,23 @@
+# Update 1.9.4 - Game File Changes
+**Only the following filetypes are included:** txt, gui, yml, asset
+- **M** caligula_branch.txt
+- **M** caligula_rev.txt
+- **M** game/common/ai_strategies/00_default_strategy.txt
+- **M** game/common/defines/00_ai.txt
+- **M** game/common/treaty_articles/00_alliance.txt
+- **M** game/common/treaty_articles/01_defensive_pact.txt
+- **M** game/common/treaty_articles/02_guarantee_independence.txt
+- **M** game/common/treaty_articles/03_support_independence.txt
+- **M** game/common/treaty_articles/04_take_on_debt.txt
+- **M** game/common/treaty_articles/05_transfer_money.txt
+- **M** game/common/treaty_articles/06_transfer_state.txt
+- **M** game/common/treaty_articles/12_military_assistance.txt
+- **M** game/common/treaty_articles/14_treaty_port.txt
+- **M** game/common/treaty_articles/15_military_access.txt
+- **M** game/common/treaty_articles/18_acquire_monopoly_for_company.txt
+- **M** game/common/treaty_articles/24_transit_rights.txt
+- **M** game/common/treaty_articles/25_trade_privilege.txt
+- **M** game/gui/add_wargoal_panel.gui
+- **M** game/gui/custom_tooltip.gui
+- **M** game/gui/right_click_menu.gui
+- **M** game/localization/english/diplomacy_l_english.yml
