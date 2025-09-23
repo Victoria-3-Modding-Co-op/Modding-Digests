@@ -1,0 +1,2189 @@
+# Update 1.10.0 - Game File Changes
+**Only the following filetypes are included:** txt, gui, yml, asset
+- **M** caligula_branch.txt
+- **M** caligula_rev.txt
+- **M** clausewitz_branch.txt
+- **M** clausewitz_rev.txt
+- **M** game/common/achievement_groups.txt
+- **M** game/common/achievements/chartersofcommerceachievements.txt
+- **M** game/common/achievements/cots_achievements.txt
+- **A** game/common/achievements/nationalawakeningachievements.txt
+- **M** game/common/achievements/poe_achievements.txt
+- **M** game/common/achievements/sphereofinfluenceachievements.txt
+- **M** game/common/achievements/standard_achievments.txt
+- **M** game/common/achievements/voiceofthepeopleachievements.txt
+- **M** game/common/ai_strategies/00_default_strategy.txt
+- **M** game/common/ai_strategies/01_admin_strategies.txt
+- **M** game/common/ai_strategies/02_diplomatic_strategies.txt
+- **M** game/common/ai_strategies/02_subject_diplomatic_strategies.txt
+- **M** game/common/ai_strategies/03_political_strategies.txt
+- **M** game/common/alert_types/00_alert_types.txt
+- **M** game/common/building_groups/00_building_groups.txt
+- **M** game/common/buildings/01_industry.txt
+- **M** game/common/buildings/02_agro.txt
+- **M** game/common/buildings/03_mines.txt
+- **M** game/common/buildings/04_plantations.txt
+- **M** game/common/buildings/05_military.txt
+- **M** game/common/buildings/06_urban_center.txt
+- **M** game/common/buildings/07_government.txt
+- **M** game/common/buildings/08_monuments.txt
+- **M** game/common/buildings/09_misc_resource.txt
+- **M** game/common/buildings/11_private_infrastructure.txt
+- **M** game/common/buildings/12_subsistence.txt
+- **M** game/common/buildings/13_construction.txt
+- **A** game/common/buildings/14_companies.txt
+- **M** game/common/buy_packages/00_buy_packages.txt
+- **M** game/common/character_interactions/00_character_interactions.txt
+- **M** game/common/character_interactions/01_additional_interactions.txt
+- **M** game/common/character_templates/country_arg.txt
+- **M** game/common/character_templates/country_aus.txt
+- **M** game/common/character_templates/country_bol.txt
+- **M** game/common/character_templates/country_brz.txt
+- **A** game/common/character_templates/country_bul.txt
+- **M** game/common/character_templates/country_can.txt
+- **M** game/common/character_templates/country_chi.txt
+- **M** game/common/character_templates/country_chl.txt
+- **A** game/common/character_templates/country_cro.txt
+- **M** game/common/character_templates/country_dai.txt
+- **M** game/common/character_templates/country_egy.txt
+- **M** game/common/character_templates/country_eth.txt
+- **M** game/common/character_templates/country_gbr.txt
+- **M** game/common/character_templates/country_gre.txt
+- **M** game/common/character_templates/country_hai.txt
+- **M** game/common/character_templates/country_hun.txt
+- **M** game/common/character_templates/country_ita.txt
+- **A** game/common/character_templates/country_lib.txt
+- **A** game/common/character_templates/country_mbs.txt
+- **A** game/common/character_templates/country_mon.txt
+- **A** game/common/character_templates/country_msn.txt
+- **M** game/common/character_templates/country_net.txt
+- **A** game/common/character_templates/country_oma.txt
+- **M** game/common/character_templates/country_peu.txt
+- **M** game/common/character_templates/country_prg.txt
+- **M** game/common/character_templates/country_pru.txt
+- **M** game/common/character_templates/country_rus.txt
+- **A** game/common/character_templates/country_ser.txt
+- **A** game/common/character_templates/country_sgu.txt
+- **A** game/common/character_templates/country_trs.txt
+- **M** game/common/character_templates/country_tur.txt
+- **M** game/common/character_templates/country_usa.txt
+- **A** game/common/character_templates/country_wtu.txt
+- **A** game/common/character_templates/country_zan.txt
+- **M** game/common/character_templates/default_template.txt
+- **M** game/common/character_templates/historical_agitators.txt
+- **M** game/common/character_templates/historical_commanders_asia.txt
+- **M** game/common/character_templates/historical_commanders_europe.txt
+- **M** game/common/character_templates/historical_leaders_europe.txt
+- **M** game/common/character_traits/condition_traits.txt
+- **M** game/common/character_traits/skill_traits.txt
+- **A** game/common/character_traits/special_personality_traits.txt
+- **M** game/common/coat_of_arms/coat_of_arms/02_countries.txt
+- **M** game/common/coat_of_arms/template_lists/coa_templates.txt
+- **M** game/common/coat_of_arms/template_lists/color_lists.txt
+- **M** game/common/coat_of_arms/template_lists/colored_emblem_lists.txt
+- **M** game/common/coat_of_arms/template_lists/pattern_lists.txt
+- **M** game/common/combat_unit_types/00_land_combat_unit_types.txt
+- **M** game/common/company_types/00_companies_africa.txt
+- **M** game/common/company_types/00_companies_americas.txt
+- **M** game/common/company_types/00_companies_asia.txt
+- **M** game/common/company_types/00_companies_austria_hungary.txt
+- **M** game/common/company_types/00_companies_china.txt
+- **M** game/common/company_types/00_companies_cots.txt
+- **M** game/common/company_types/00_companies_europe.txt
+- **M** game/common/company_types/00_companies_france.txt
+- **M** game/common/company_types/00_companies_germany.txt
+- **M** game/common/company_types/00_companies_ip2.txt
+- **A** game/common/company_types/00_companies_ip3.txt
+- **M** game/common/company_types/00_companies_italy.txt
+- **M** game/common/company_types/00_companies_japan.txt
+- **M** game/common/company_types/00_companies_mp1.txt
+- **M** game/common/company_types/00_companies_russia.txt
+- **M** game/common/company_types/00_companies_soi.txt
+- **M** game/common/company_types/99_basic_companies.txt
+- **M** game/common/country_creation/00_releasable_countries.txt
+- **M** game/common/country_definitions/00_countries.txt
+- **M** game/common/country_definitions/01_africa.txt
+- **M** game/common/country_formation/00_formable_countries.txt
+- **M** game/common/country_formation/00_major_formables.txt
+- **M** game/common/country_ranks/00_country_ranks.txt
+- **M** game/common/culture_graphics/00_culture_graphics.txt
+- **M** game/common/cultures/00_cultures.txt
+- **M** game/common/customizable_localization/00_characters.txt
+- **M** game/common/customizable_localization/02_events.txt
+- **M** game/common/customizable_localization/03_misc.txt
+- **M** game/common/customizable_localization/04_units.txt
+- **M** game/common/customizable_localization/99_ru_custom_loc.txt
+- **M** game/common/customizable_localization/agitators_custom_loc.txt
+- **M** game/common/customizable_localization/bp1_custom_loc.txt
+- **A** game/common/customizable_localization/ip3_custom_loc.txt
+- **M** game/common/customizable_localization/victoria_custom_loc.txt
+- **A** game/common/decisions/austria_decisions.txt
+- **A** game/common/decisions/austro_hungarian_decisions.txt
+- **A** game/common/decisions/bulgaria_decisions.txt
+- **M** game/common/decisions/france_ashes.txt
+- **M** game/common/decisions/goods_ban_decisions.txt
+- **A** game/common/decisions/greece_decisions.txt
+- **M** game/common/decisions/india_decisions.txt
+- **M** game/common/decisions/japan_shinto.txt
+- **M** game/common/decisions/korea_decisions.txt
+- **M** game/common/decisions/manifest_destiny.txt
+- **A** game/common/decisions/montenegro_decision.txt
+- **M** game/common/decrees/00_decree.txt
+- **M** game/common/defines/00_ai.txt
+- **M** game/common/defines/00_defines.txt
+- **M** game/common/defines/00_graphics.txt
+- **M** game/common/defines/00_interfaces.txt
+- **M** game/common/defines/00_shaders.txt
+- **M** game/common/diplomatic_actions/01_expel_diplomats.txt
+- **A** game/common/diplomatic_actions/17_war_reparations.txt
+- **M** game/common/diplomatic_actions/22_subject_personal_union.txt
+- **M** game/common/diplomatic_actions/28_invite_to_power_bloc.txt
+- **M** game/common/diplomatic_actions/30_fund_lobby.txt
+- **M** game/common/diplomatic_actions/31_power_bloc_force_regime_change.txt
+- **M** game/common/diplomatic_actions/31_power_bloc_force_state_religion.txt
+- **M** game/common/diplomatic_actions/32_subjects_raise_payments.txt
+- **M** game/common/diplomatic_actions/34_subjects_exempt_from_service.txt
+- **M** game/common/diplomatic_actions/35_subjects_appoint_governor.txt
+- **M** game/common/diplomatic_actions/38_subjects_increase_autonomy.txt
+- **M** game/common/diplomatic_actions/40_subjects_knowledge_sharing.txt
+- **M** game/common/diplomatic_actions/41_subjects_evangelize.txt
+- **M** game/common/diplomatic_actions/43_subjects_handle_states.txt
+- **A** game/common/diplomatic_actions/50_raiding.txt
+- **A** game/common/diplomatic_actions/50_subject_crown_land.txt
+- **A** game/common/diplomatic_actions/51_disapproval.txt
+- **A** game/common/diplomatic_actions/52_nationalism_actions.txt
+- **M** game/common/diplomatic_plays/00_diplomatic_plays.txt
+- **A** game/common/discrimination_trait_groups/00_cultural_heritage_groups.txt
+- **A** game/common/discrimination_trait_groups/01_language_groups.txt
+- **A** game/common/discrimination_trait_groups/02_religious_heritage_groups.txt
+- **A** game/common/discrimination_traits/00_cultural_heritages.txt
+- **A** game/common/discrimination_traits/01_languages.txt
+- **A** game/common/discrimination_traits/02_traditions.txt
+- **A** game/common/discrimination_traits/03_religious_heritages.txt
+- **A** game/common/dna_data/00_alexander_karadordevic.txt
+- **A** game/common/dna_data/00_ali_pasha_rizvanbegovic.txt
+- **A** game/common/dna_data/00_archduke_franz_ferdinand_of_austria.txt
+- **A** game/common/dna_data/00_baron_alexander_von_bach.txt
+- **A** game/common/dna_data/00_danilo_petrovic_njegos.txt
+- **A** game/common/dna_data/00_dordije_petrovic_njegos.txt
+- **A** game/common/dna_data/00_emperor_karl_i_of_austria.txt
+- **A** game/common/dna_data/00_ferenc_deak.txt
+- **A** game/common/dna_data/00_george_i_of_greece.txt
+- **A** game/common/dna_data/00_gyula_andrassy.txt
+- **A** game/common/dna_data/00_maximilian_i_of_mexico.txt
+- **A** game/common/dna_data/00_mihailo_obrenovic.txt
+- **A** game/common/dna_data/00_milan_obrenovic_ii.txt
+- **A** game/common/dna_data/00_milos_obrenovic.txt
+- **A** game/common/dna_data/00_mirko_petrovic_njegos.txt
+- **M** game/common/dna_data/00_muhammad_ali.txt
+- **A** game/common/dna_data/00_nicholas_i.txt
+- **A** game/common/dna_data/00_novica_cerovic.txt
+- **A** game/common/dna_data/00_petar_ii_petrovic_njegos.txt
+- **A** game/common/dna_data/00_petar_vukotic.txt
+- **A** game/common/dna_data/00_rudolf_prince_of_austria.txt
+- **A** game/common/dna_data/00_sandor_petofi.txt
+- **A** game/common/dna_data/00_sultan_abdulaziz.txt
+- **M** game/common/dynamic_country_map_colors/00_default.txt
+- **M** game/common/dynamic_country_names/00_dynamic_country_names.txt
+- **M** game/common/dynamic_treaty_names/00_dynamic_treaty_names.txt
+- **M** game/common/effect_localization/00_country_effects_loc.txt
+- **M** game/common/effect_localization/00_culture_effects.txt
+- **M** game/common/effect_localization/00_diplomatic_play_effects_loc.txt
+- **M** game/common/effect_localization/00_journal_effects_loc.txt
+- **A** game/common/ethnicities/01_ethnicities_african_diaspora.txt
+- **M** game/common/flag_definitions/00_flag_definitions.txt
+- **M** game/common/flag_definitions/01_flag_definitions_usa.txt
+- **M** game/common/game_concepts/00_game_concepts.txt
+- **A** game/common/game_concepts/01_additional_game_concepts.txt
+- **M** game/common/genes/02_genes_accessories_hairstyles.txt
+- **M** game/common/genes/03_genes_accessories_beards.txt
+- **M** game/common/genes/97_genes_accessories_clothes.txt
+- **M** game/common/genes/98_genes_accessories_headgear.txt
+- **M** game/common/government_types/00_chiefdoms.txt
+- **M** game/common/government_types/01_monarchies.txt
+- **M** game/common/government_types/02_presidential_republics.txt
+- **M** game/common/government_types/03_parliamentary_republics.txt
+- **M** game/common/government_types/04_theocracies.txt
+- **M** game/common/government_types/05_council_republics.txt
+- **M** game/common/government_types/06_corporate_states.txt
+- **M** game/common/harvest_condition_types/00_harvest_condition_types.txt
+- **M** game/common/history/ai/00_secret_goals.txt
+- **M** game/common/history/ai/00_strategy.txt
+- **M** game/common/history/buildings/00_west_europe.txt
+- **M** game/common/history/buildings/01_south_europe.txt
+- **M** game/common/history/buildings/02_east_europe.txt
+- **M** game/common/history/buildings/04_subsaharan_africa.txt
+- **M** game/common/history/buildings/05_north_america.txt
+- **M** game/common/history/buildings/15_russia.txt
+- **M** game/common/history/characters/arg - argentina.txt
+- **M** game/common/history/characters/aus - austria.txt
+- **A** game/common/history/characters/aws - aussa.txt
+- **M** game/common/history/characters/bgm - begemder.txt
+- **A** game/common/history/characters/cro - croatia.txt
+- **M** game/common/history/characters/egy - egypt.txt
+- **M** game/common/history/characters/gjm - gojjam.txt
+- **M** game/common/history/characters/gre - greece.txt
+- **M** game/common/history/characters/hai - haiti.txt
+- **A** game/common/history/characters/hun - hungary.txt
+- **A** game/common/history/characters/lib - liberia.txt
+- **A** game/common/history/characters/mbs - mombasa.txt
+- **M** game/common/history/characters/mon - montenegro.txt
+- **A** game/common/history/characters/msn - massina.txt
+- **M** game/common/history/characters/nbs - new brunswick.txt
+- **M** game/common/history/characters/oma - oman.txt
+- **M** game/common/history/characters/ont - ontario.txt
+- **M** game/common/history/characters/pap - papacy.txt
+- **M** game/common/history/characters/que - quebec.txt
+- **A** game/common/history/characters/qwr - qwara.txt
+- **M** game/common/history/characters/sar - sardinia-piedmont.txt
+- **M** game/common/history/characters/ser - serbia.txt
+- **A** game/common/history/characters/sgu - segou.txt
+- **A** game/common/history/characters/tgi - tungi.txt
+- **A** game/common/history/characters/tgr - tigray.txt
+- **A** game/common/history/characters/trs - transylvania.txt
+- **M** game/common/history/characters/ubd - baltic.txt
+- **A** game/common/history/characters/wlg - welega.txt
+- **A** game/common/history/characters/wlt - wolaita.txt
+- **A** game/common/history/characters/wtu - witu.txt
+- **M** game/common/history/countries/ace - aceh.txt
+- **M** game/common/history/countries/ach - acholi.txt
+- **A** game/common/history/countries/ajr - ajuran.txt
+- **M** game/common/history/countries/ank - ankole.txt
+- **A** game/common/history/countries/anu - anuak.txt
+- **M** game/common/history/countries/arg - argentina.txt
+- **A** game/common/history/countries/ars - arsiland.txt
+- **A** game/common/history/countries/aul - aulihan.txt
+- **M** game/common/history/countries/aus - austria.txt
+- **M** game/common/history/countries/bad - baden.txt
+- **M** game/common/history/countries/bag - bagelkhand.txt
+- **M** game/common/history/countries/bal - bali.txt
+- **M** game/common/history/countries/bav - bavaria.txt
+- **M** game/common/history/countries/bce - ceylon.txt
+- **M** game/common/history/countries/bel - belgium.txt
+- **M** game/common/history/countries/bgm - begemder.txt
+- **M** game/common/history/countries/bhu - bhutan.txt
+- **M** game/common/history/countries/bhv - bhavnagar.txt
+- **M** game/common/history/countries/bhw - bahawalpur.txt
+- **M** game/common/history/countries/bic - british east india company.txt
+- **M** game/common/history/countries/blg - bulungan.txt
+- **M** game/common/history/countries/bnj - banjar.txt
+- **M** game/common/history/countries/bol - bolivia.txt
+- **M** game/common/history/countries/bra - braunschweig.txt
+- **M** game/common/history/countries/brn - borana.txt
+- **M** game/common/history/countries/bru - brunei.txt
+- **M** game/common/history/countries/brz - brazil.txt
+- **M** game/common/history/countries/btn - buton.txt
+- **M** game/common/history/countries/buk - bukkhara.txt
+- **M** game/common/history/countries/bur - burma.txt
+- **M** game/common/history/countries/cam - cambodia.txt
+- **M** game/common/history/countries/chi - china.txt
+- **M** game/common/history/countries/chl - chile.txt
+- **M** game/common/history/countries/chp - champassak.txt
+- **M** game/common/history/countries/cht - chitral.txt
+- **M** game/common/history/countries/clm - colombia.txt
+- **M** game/common/history/countries/cmi - chiang mai.txt
+- **M** game/common/history/countries/con - constantine.txt
+- **A** game/common/history/countries/cro - croatia.txt
+- **M** game/common/history/countries/cub - cuba.txt
+- **M** game/common/history/countries/dai - dai viet.txt
+- **M** game/common/history/countries/dei - dutch east indies company.txt
+- **M** game/common/history/countries/den - denmark.txt
+- **A** game/common/history/countries/dgr - degar.txt
+- **M** game/common/history/countries/dha - dharmpur.txt
+- **M** game/common/history/countries/ecu - ecuador.txt
+- **M** game/common/history/countries/egy - egypt.txt
+- **M** game/common/history/countries/fin - finland.txt
+- **M** game/common/history/countries/fra - france.txt
+- **M** game/common/history/countries/gbr - great britain.txt
+- **M** game/common/history/countries/gre - greece.txt
+- **M** game/common/history/countries/gza - gaza.txt
+- **M** game/common/history/countries/hai - haiti.txt
+- **M** game/common/history/countries/haw - hawaii.txt
+- **A** game/common/history/countries/hdy - hadiya.txt
+- **M** game/common/history/countries/her - herat.txt
+- **A** game/common/history/countries/hun - hungary.txt
+- **M** game/common/history/countries/hyd - hyderabad.txt
+- **M** game/common/history/countries/ida - idar.txt
+- **M** game/common/history/countries/ion - ionian islands.txt
+- **M** game/common/history/countries/iqu - iquichia.txt
+- **M** game/common/history/countries/jap - japan.txt
+- **M** game/common/history/countries/jey - jeypore.txt
+- **M** game/common/history/countries/jmb - jambi.txt
+- **M** game/common/history/countries/joh - johore.txt
+- **M** game/common/history/countries/jun - junagadh.txt
+- **M** game/common/history/countries/kab - kabul.txt
+- **M** game/common/history/countries/kaf - kafiristan.txt
+- **M** game/common/history/countries/kal - kalat.txt
+- **M** game/common/history/countries/kan - kandahar.txt
+- **M** game/common/history/countries/kas - kashmir.txt
+- **M** game/common/history/countries/kat - kathiri.txt
+- **M** game/common/history/countries/kau - kaurna.txt
+- **M** game/common/history/countries/khi - khiva.txt
+- **M** game/common/history/countries/khp - kolhapur.txt
+- **A** game/common/history/countries/klo - khmer loeu.txt
+- **M** game/common/history/countries/kno - kurnool.txt
+- **M** game/common/history/countries/kok - kokand.txt
+- **M** game/common/history/countries/kor - korea.txt
+- **M** game/common/history/countries/kot - kotah.txt
+- **M** game/common/history/countries/kra - krakow.txt
+- **M** game/common/history/countries/kti - kutai.txt
+- **M** game/common/history/countries/kun - kunduz.txt
+- **M** game/common/history/countries/kzh - kishi zhuz.txt
+- **M** game/common/history/countries/lad - ladakh.txt
+- **M** game/common/history/countries/lan - lanfang.txt
+- **M** game/common/history/countries/lib - liberia.txt
+- **M** game/common/history/countries/lua - luang prabang.txt
+- **M** game/common/history/countries/mah - mahra.txt
+- **M** game/common/history/countries/mai - maimana.txt
+- **M** game/common/history/countries/mak - makran.txt
+- **M** game/common/history/countries/mas - mascara.txt
+- **A** game/common/history/countries/mbs - mombasa.txt
+- **M** game/common/history/countries/mex - mexico.txt
+- **M** game/common/history/countries/mgd - maguindanao.txt
+- **A** game/common/history/countries/mjk - mijikenda.txt
+- **M** game/common/history/countries/mjt - majerteen.txt
+- **M** game/common/history/countries/mld - maldives.txt
+- **M** game/common/history/countries/mol - moldavia.txt
+- **M** game/common/history/countries/mon - montenegro.txt
+- **M** game/common/history/countries/mor - morocco.txt
+- **M** game/common/history/countries/msi - masai.txt
+- **M** game/common/history/countries/mug - mughals.txt
+- **M** game/common/history/countries/myb - mayurbhanj.txt
+- **M** game/common/history/countries/mys - mysore.txt
+- **M** game/common/history/countries/nar - narsinghpur.txt
+- **M** game/common/history/countries/naw - nawanagar.txt
+- **M** game/common/history/countries/nbs - new brunswick.txt
+- **M** game/common/history/countries/nep - nepal.txt
+- **M** game/common/history/countries/net - netherlands.txt
+- **M** game/common/history/countries/nor - norway.txt
+- **M** game/common/history/countries/npu - north peru.txt
+- **M** game/common/history/countries/nsw - new south wales.txt
+- **M** game/common/history/countries/nvs - nova scotia.txt
+- **A** game/common/history/countries/ogd - ogaden.txt
+- **M** game/common/history/countries/oma - oman.txt
+- **A** game/common/history/countries/omo - omo.txt
+- **M** game/common/history/countries/ont - ontario.txt
+- **M** game/common/history/countries/ora - oranje.txt
+- **A** game/common/history/countries/orm - orma.txt
+- **M** game/common/history/countries/ozh - orta zhuz.txt
+- **M** game/common/history/countries/pan - panjab.txt
+- **M** game/common/history/countries/per - persia.txt
+- **M** game/common/history/countries/phi - philippines.txt
+- **M** game/common/history/countries/plp - palanpur.txt
+- **M** game/common/history/countries/ply - tahiti.txt
+- **M** game/common/history/countries/pon - pontianak.txt
+- **M** game/common/history/countries/por - portugal.txt
+- **M** game/common/history/countries/prg - paraguay.txt
+- **M** game/common/history/countries/prk - perak.txt
+- **M** game/common/history/countries/pru - prussia.txt
+- **M** game/common/history/countries/ptn - patna.txt
+- **M** game/common/history/countries/pud - pudukottai.txt
+- **M** game/common/history/countries/que - quebec.txt
+- **M** game/common/history/countries/rus - russia.txt
+- **M** game/common/history/countries/saf - south africa.txt
+- **M** game/common/history/countries/sak - siak.txt
+- **M** game/common/history/countries/sar - sardinia.txt
+- **M** game/common/history/countries/sas - south australia.txt
+- **M** game/common/history/countries/sat - satara.txt
+- **M** game/common/history/countries/sax - saxony.txt
+- **A** game/common/history/countries/sct - sipsong chao tai.txt
+- **M** game/common/history/countries/sel - selangor.txt
+- **M** game/common/history/countries/ser - serbia.txt
+- **M** game/common/history/countries/shs - shan.txt
+- **M** game/common/history/countries/sia - siam.txt
+- **M** game/common/history/countries/sic - two sicilies.txt
+- **M** game/common/history/countries/sik - sikkim.txt
+- **M** game/common/history/countries/sin - sind.txt
+- **A** game/common/history/countries/skm - usukuma.txt
+- **A** game/common/history/countries/sky - sakuye.txt
+- **M** game/common/history/countries/smb - sambas.txt
+- **M** game/common/history/countries/sok - sokoto.txt
+- **M** game/common/history/countries/spa - spain.txt
+- **M** game/common/history/countries/spu - south peru.txt
+- **M** game/common/history/countries/srk - surakarta.txt
+- **M** game/common/history/countries/stg - sintang.txt
+- **M** game/common/history/countries/sul - sulu.txt
+- **M** game/common/history/countries/sur - surguja.txt
+- **M** game/common/history/countries/swe - sweden.txt
+- **M** game/common/history/countries/swi - switzerland.txt
+- **M** game/common/history/countries/tas - tasmania.txt
+- **A** game/common/history/countries/tgi - tungi.txt
+- **M** game/common/history/countries/tgr - tigray.txt
+- **M** game/common/history/countries/tib - tibet.txt
+- **M** game/common/history/countries/tid - tidore.txt
+- **M** game/common/history/countries/trm - turkmenia.txt
+- **M** game/common/history/countries/trn - transvaal.txt
+- **A** game/common/history/countries/trs - transylvania.txt
+- **M** game/common/history/countries/tur - ottoman empire.txt
+- **M** game/common/history/countries/tus - tuscany.txt
+- **M** game/common/history/countries/ubd - baltic.txt
+- **M** game/common/history/countries/uca - central america.txt
+- **M** game/common/history/countries/uru - uruguay.txt
+- **M** game/common/history/countries/usa - usa.txt
+- **M** game/common/history/countries/uzh - uly zhuz.txt
+- **M** game/common/history/countries/vnz - venezuela.txt
+- **M** game/common/history/countries/wal - wallachia.txt
+- **M** game/common/history/countries/was - western australia.txt
+- **A** game/common/history/countries/wlt - wolaita.txt
+- **A** game/common/history/countries/wtu - witu.txt
+- **M** game/common/history/countries/yog - yogyakarta.txt
+- **M** game/common/history/countries/zul - zulu.txt
+- **A** game/common/history/cultures/00_cultures.txt
+- **A** game/common/history/diplomacy/00_embargos.txt
+- **M** game/common/history/diplomacy/00_relations.txt
+- **M** game/common/history/diplomacy/00_rivalries.txt
+- **M** game/common/history/diplomacy/00_subject_relationships.txt
+- **M** game/common/history/global/00_global.txt
+- **M** game/common/history/interests/00_interests.txt
+- **M** game/common/history/lobbies/00_lobbies.txt
+- **M** game/common/history/military_formations/00_military_formations_europe.txt
+- **M** game/common/history/military_formations/04_military_formations_middle_east.txt
+- **A** game/common/history/military_formations/07_military_formations_subsaharan_africa.txt
+- **M** game/common/history/political_movements/00_movements.txt
+- **M** game/common/history/pops/00_west_europe.txt
+- **M** game/common/history/pops/01_south_europe.txt
+- **M** game/common/history/pops/02_east_europe.txt
+- **M** game/common/history/pops/04_subsaharan_africa.txt
+- **M** game/common/history/pops/05_north_america.txt
+- **M** game/common/history/pops/08_middle_east.txt
+- **M** game/common/history/pops/09_central_asia.txt
+- **M** game/common/history/pops/11_east_asia.txt
+- **M** game/common/history/pops/15_russia.txt
+- **A** game/common/history/population/ajr - ajuran.txt
+- **A** game/common/history/population/anu - anuak.txt
+- **A** game/common/history/population/ars - arsiland.txt
+- **A** game/common/history/population/aul - aulihan.txt
+- **A** game/common/history/population/hdy - hadiya.txt
+- **A** game/common/history/population/mbs - mombasa.txt
+- **A** game/common/history/population/mjk - mijikenda.txt
+- **M** game/common/history/population/mon - montenegro.txt
+- **A** game/common/history/population/ogd - ogaden.txt
+- **A** game/common/history/population/omo - omo.txt
+- **A** game/common/history/population/orm - orma.txt
+- **A** game/common/history/population/qwr - qwara.txt
+- **A** game/common/history/population/skm - usukuma.txt
+- **A** game/common/history/population/sky - sakuye.txt
+- **A** game/common/history/population/tgi - tungi.txt
+- **A** game/common/history/population/wlt - wolaita.txt
+- **A** game/common/history/population/wtu - witu.txt
+- **M** game/common/history/states/00_states.txt
+- **M** game/common/history/treaties/00_historical_treaties.txt
+- **M** game/common/ideologies/00_ig_ideologies.txt
+- **M** game/common/ideologies/00_ig_ideologies_event.txt
+- **M** game/common/ideologies/00_ig_ideologies_flavored.txt
+- **M** game/common/ideologies/01_character_ideologies.txt
+- **M** game/common/ideologies/02_character_french_flavored.txt
+- **M** game/common/ideologies/03_ig_ideologies_movement.txt
+- **M** game/common/interest_group_traits/00_armed_forces_traits.txt
+- **M** game/common/interest_group_traits/00_industrialists_traits.txt
+- **M** game/common/interest_group_traits/00_petty_bourgeoisie_traits.txt
+- **M** game/common/interest_group_traits/00_rural_folk_traits.txt
+- **M** game/common/interest_groups/00_armed_forces.txt
+- **M** game/common/interest_groups/00_devout.txt
+- **M** game/common/interest_groups/00_industrialists.txt
+- **M** game/common/interest_groups/00_intelligentsia.txt
+- **M** game/common/interest_groups/00_landowners.txt
+- **M** game/common/interest_groups/00_petty_bourgeoisie.txt
+- **M** game/common/interest_groups/00_rural_folk.txt
+- **M** game/common/interest_groups/00_trade_unions.txt
+- **M** game/common/journal_entries/00_abolish_monarchy.txt
+- **M** game/common/journal_entries/00_acw_entries.txt
+- **M** game/common/journal_entries/00_assassination.txt
+- **M** game/common/journal_entries/00_autocracy.txt
+- **M** game/common/journal_entries/00_belle_epoque.txt
+- **M** game/common/journal_entries/00_boxer_rebellion.txt
+- **M** game/common/journal_entries/00_canada_australia.txt
+- **M** game/common/journal_entries/00_central_and_south_america.txt
+- **M** game/common/journal_entries/00_communism.txt
+- **M** game/common/journal_entries/00_congo_free_state.txt
+- **M** game/common/journal_entries/00_corn_laws.txt
+- **M** game/common/journal_entries/00_east_indies.txt
+- **M** game/common/journal_entries/00_ethiopia.txt
+- **M** game/common/journal_entries/00_fascism.txt
+- **M** game/common/journal_entries/00_german_unification.txt
+- **M** game/common/journal_entries/00_greek_nationalism.txt
+- **M** game/common/journal_entries/00_hawaii.txt
+- **M** game/common/journal_entries/00_indian_removal.txt
+- **M** game/common/journal_entries/00_italian_unification.txt
+- **M** game/common/journal_entries/00_land_reclamation.txt
+- **M** game/common/journal_entries/00_liberalism.txt
+- **M** game/common/journal_entries/00_meiji_restoration.txt
+- **M** game/common/journal_entries/00_opium.txt
+- **M** game/common/journal_entries/00_opium_wars.txt
+- **M** game/common/journal_entries/00_patagonia.txt
+- **M** game/common/journal_entries/00_peoples_springtime_je.txt
+- **M** game/common/journal_entries/00_player_objectives_egalitarian_society.txt
+- **M** game/common/journal_entries/00_player_objectives_great_game.txt
+- **M** game/common/journal_entries/00_player_objectives_hegemon.txt
+- **M** game/common/journal_entries/00_poland.txt
+- **M** game/common/journal_entries/00_prohibition_laws.txt
+- **M** game/common/journal_entries/00_red_scare.txt
+- **M** game/common/journal_entries/00_reunify_china.txt
+- **M** game/common/journal_entries/00_romania.txt
+- **M** game/common/journal_entries/00_scotland_yard.txt
+- **M** game/common/journal_entries/00_scramble_for_africa.txt
+- **M** game/common/journal_entries/00_secret_police.txt
+- **M** game/common/journal_entries/00_sick_man.txt
+- **M** game/common/journal_entries/00_slave_owner_paranoia.txt
+- **M** game/common/journal_entries/00_standard_of_living.txt
+- **M** game/common/journal_entries/00_strike_je.txt
+- **M** game/common/journal_entries/00_suffragists.txt
+- **M** game/common/journal_entries/00_taiping.txt
+- **M** game/common/journal_entries/00_texas.txt
+- **M** game/common/journal_entries/00_trade_route_event_missions.txt
+- **M** game/common/journal_entries/00_treaty_of_london.txt
+- **M** game/common/journal_entries/00_turtle_island.txt
+- **M** game/common/journal_entries/00_urbanization.txt
+- **M** game/common/journal_entries/00_warlord_china.txt
+- **M** game/common/journal_entries/00_zanzibar.txt
+- **M** game/common/journal_entries/01_algeria.txt
+- **M** game/common/journal_entries/01_french_monarchism.txt
+- **M** game/common/journal_entries/01_hispaniola.txt
+- **M** game/common/journal_entries/01_nihilism.txt
+- **M** game/common/journal_entries/01_paris_commune.txt
+- **M** game/common/journal_entries/02_acre_dispute.txt
+- **M** game/common/journal_entries/02_amazonas.txt
+- **M** game/common/journal_entries/02_brazilian_nation_building.txt
+- **M** game/common/journal_entries/02_brazilian_slavery.txt
+- **M** game/common/journal_entries/02_caudillo.txt
+- **M** game/common/journal_entries/02_coffee_and_milk.txt
+- **M** game/common/journal_entries/02_cristo_redentor.txt
+- **M** game/common/journal_entries/02_gran_colombia.txt
+- **M** game/common/journal_entries/02_paraguay.txt
+- **M** game/common/journal_entries/02_pedro_brazil.txt
+- **M** game/common/journal_entries/02_peru_bolivia.txt
+- **M** game/common/journal_entries/02_positivism.txt
+- **M** game/common/journal_entries/02_south_america_migration.txt
+- **M** game/common/journal_entries/02_south_american_national_identity.txt
+- **M** game/common/journal_entries/02_vargas.txt
+- **M** game/common/journal_entries/03_afghanistan.txt
+- **M** game/common/journal_entries/03_eastern_frontier.txt
+- **M** game/common/journal_entries/03_korea.txt
+- **M** game/common/journal_entries/03_russia.txt
+- **M** game/common/journal_entries/04_dravidian_movement.txt
+- **M** game/common/journal_entries/04_imperialism_of_promise.txt
+- **M** game/common/journal_entries/04_india_british_dictates.txt
+- **M** game/common/journal_entries/04_india_home_rule.txt
+- **M** game/common/journal_entries/04_india_nationalism.txt
+- **M** game/common/journal_entries/04_india_non_cooperation.txt
+- **M** game/common/journal_entries/04_indian_federation.txt
+- **M** game/common/journal_entries/04_mughals.txt
+- **M** game/common/journal_entries/04_princely_states.txt
+- **M** game/common/journal_entries/04_sikh_empire.txt
+- **A** game/common/journal_entries/05_austria_journal_entries.txt
+- **A** game/common/journal_entries/05_austrian_fascism.txt
+- **A** game/common/journal_entries/05_balkan_national_awakening.txt
+- **A** game/common/journal_entries/05_balkan_wars.txt
+- **A** game/common/journal_entries/05_bulgaria_je.txt
+- **A** game/common/journal_entries/05_creation_of_yugoslavia.txt
+- **A** game/common/journal_entries/05_danubian_federation.txt
+- **A** game/common/journal_entries/05_eastern_question.txt
+- **A** game/common/journal_entries/05_great_eastern_crisis.txt
+- **A** game/common/journal_entries/05_greece.txt
+- **A** game/common/journal_entries/05_grunderzeit.txt
+- **A** game/common/journal_entries/05_hungary_je.txt
+- **A** game/common/journal_entries/05_hungry_forties.txt
+- **A** game/common/journal_entries/05_metternich.txt
+- **A** game/common/journal_entries/05_montenegro_je.txt
+- **A** game/common/journal_entries/05_serbia.txt
+- **A** game/common/journal_entries/05_technocracy.txt
+- **A** game/common/journal_entries/05_the_grand_collapse.txt
+- **M** game/common/journal_entry_groups/00_journal_entries.txt
+- **M** game/common/law_groups/00_laws.txt
+- **M** game/common/laws/00_army_model.txt
+- **M** game/common/laws/00_bureaucracy.txt
+- **M** game/common/laws/00_childrens_rights.txt
+- **M** game/common/laws/00_church_and_state.txt
+- **M** game/common/laws/00_citizenship.txt
+- **M** game/common/laws/00_colonial_affairs.txt
+- **M** game/common/laws/00_distribution_of_power.txt
+- **M** game/common/laws/00_economic_system.txt
+- **M** game/common/laws/00_education_system.txt
+- **M** game/common/laws/00_free_speech.txt
+- **M** game/common/laws/00_governance_principles.txt
+- **M** game/common/laws/00_health_system.txt
+- **M** game/common/laws/00_internal_security.txt
+- **A** game/common/laws/00_labour_associations.txt
+- **M** game/common/laws/00_land_reform.txt
+- **M** game/common/laws/00_migration.txt
+- **M** game/common/laws/00_policing.txt
+- **M** game/common/laws/00_rights_of_women.txt
+- **M** game/common/laws/00_slavery.txt
+- **M** game/common/laws/00_taxation.txt
+- **M** game/common/laws/00_trade_policy.txt
+- **M** game/common/laws/00_welfare.txt
+- **M** game/common/messages/00_messages.txt
+- **M** game/common/messages/01_event_messages.txt
+- **M** game/common/modifier_type_definitions/00_modifier_types.txt
+- **M** game/common/modifier_type_definitions/01_building_modifier_types.txt
+- **M** game/common/modifier_type_definitions/02_modifier_types_rules.txt
+- **M** game/common/modifier_type_definitions/03_modifier_types_script_only.txt
+- **M** game/common/modifier_type_definitions/06_country_modifier_types.txt
+- **M** game/common/modifier_type_definitions/08_movement_modifier_types.txt
+- **A** game/common/modifier_type_definitions/10_country_cultural_acceptance_culture_modifier_types.txt
+- **A** game/common/modifier_type_definitions/11_country_fervor_taget_culture_modifier_types.txt
+- **M** game/common/modifier_type_definitions/99_todo_sort_into_other_files.txt
+- **M** game/common/named_colors/00_coa_colors.txt
+- **M** game/common/named_colors/00_country_colors.txt
+- **M** game/common/objective_subgoals/01_subgoals_player_objectives_egalitarian.txt
+- **M** game/common/on_actions/00_code_on_actions.txt
+- **M** game/common/on_actions/00_on_actions_half_yearly.txt
+- **M** game/common/on_actions/00_on_actions_yearly.txt
+- **M** game/common/parties/agrarian_party.txt
+- **M** game/common/parties/anarchist_party.txt
+- **M** game/common/parties/communist_party.txt
+- **M** game/common/parties/conservative_party.txt
+- **M** game/common/parties/fascist_party.txt
+- **M** game/common/parties/free_trade_party.txt
+- **M** game/common/parties/liberal_party.txt
+- **M** game/common/parties/military_party.txt
+- **M** game/common/parties/radical_party.txt
+- **M** game/common/parties/religious_party.txt
+- **M** game/common/parties/social_democrats_party.txt
+- **M** game/common/political_lobbies/00_political_lobbies.txt
+- **M** game/common/political_movement_pop_support/00_political_movement_pop_support.txt
+- **M** game/common/political_movements/00_ideological_movements.txt
+- **M** game/common/political_movements/01_religious_movements.txt
+- **M** game/common/political_movements/02_cultural_movement.txt
+- **M** game/common/political_movements/03_pan_national_movements.txt
+- **M** game/common/political_movements/04_country_specific_ideological_movements.txt
+- **M** game/common/political_movements/04_national_movements.txt
+- **M** game/common/pop_needs/00_pop_needs.txt
+- **M** game/common/pop_types/clergymen.txt
+- **M** game/common/pop_types/farmers.txt
+- **M** game/common/pop_types/laborers.txt
+- **M** game/common/pop_types/machinists.txt
+- **M** game/common/pop_types/officers.txt
+- **M** game/common/power_bloc_identities/00_power_bloc_identities.txt
+- **M** game/common/power_bloc_names/00_power_bloc_names.txt
+- **M** game/common/power_bloc_principles/00_power_bloc_principles.txt
+- **M** game/common/prestige_goods/00_prestige_goods.txt
+- **M** game/common/production_method_groups/02_agro.txt
+- **M** game/common/production_method_groups/11_private_infrastructure.txt
+- **M** game/common/production_method_groups/12_subsistence.txt
+- **A** game/common/production_method_groups/14_companies.txt
+- **M** game/common/production_methods/02_agro.txt
+- **M** game/common/production_methods/07_government.txt
+- **M** game/common/production_methods/08_monuments.txt
+- **M** game/common/production_methods/11_private_infrastructure.txt
+- **M** game/common/production_methods/12_subsistence.txt
+- **A** game/common/production_methods/14_companies.txt
+- **M** game/common/religions/religion.txt
+- **M** game/common/script_values/00_diplomacy_values.txt
+- **M** game/common/script_values/01_power_bloc_values.txt
+- **M** game/common/script_values/command_values.txt
+- **M** game/common/script_values/cultural_community_values.txt
+- **M** game/common/script_values/decision_values.txt
+- **M** game/common/script_values/event_values.txt
+- **A** game/common/script_values/ideology_values.txt
+- **M** game/common/script_values/india_values.txt
+- **A** game/common/script_values/je_values.txt
+- **M** game/common/script_values/lobby_values.txt
+- **A** game/common/script_values/movement_values.txt
+- **M** game/common/script_values/politics_values.txt
+- **M** game/common/script_values/static_treaty_acceptance.txt
+- **M** game/common/script_values/war_exhaustion_values.txt
+- **A** game/common/scripted_buttons/00_balkan_wars_buttons.txt
+- **M** game/common/scripted_buttons/00_christ_of_europe_buttons.txt
+- **M** game/common/scripted_buttons/00_scripted_buttons.txt
+- **A** game/common/scripted_buttons/00_the_grand_collapse_buttons.txt
+- **A** game/common/scripted_buttons/00_wild_je_buttons.txt
+- **M** game/common/scripted_buttons/03_brazilian_slavery_scripted_buttons.txt
+- **M** game/common/scripted_buttons/03_paraguay_scripted_buttons.txt
+- **M** game/common/scripted_buttons/04_india_buttons.txt
+- **A** game/common/scripted_buttons/05_austria_buttons.txt
+- **A** game/common/scripted_buttons/05_greece_buttons.txt
+- **A** game/common/scripted_buttons/05_hungary_buttons.txt
+- **A** game/common/scripted_buttons/05_serbia_buttons.txt
+- **M** game/common/scripted_buttons/brazilian_scripted_buttons.txt
+- **M** game/common/scripted_buttons/caudillo_buttons.txt
+- **M** game/common/scripted_buttons/china_buttons.txt
+- **M** game/common/scripted_buttons/london_conference_buttons.txt
+- **M** game/common/scripted_buttons/southamerica_migration_button.txt
+- **M** game/common/scripted_buttons/turtle_island_buttons.txt
+- **M** game/common/scripted_buttons/usa_buttons.txt
+- **A** game/common/scripted_effects/00_balkan_wars_scripted_effects.txt
+- **A** game/common/scripted_effects/00_chris_scripted_effects.txt
+- **M** game/common/scripted_effects/00_dynamic_state_names.txt
+- **M** game/common/scripted_effects/00_dynamic_state_names_africa.txt
+- **M** game/common/scripted_effects/00_dynamic_state_names_americas.txt
+- **M** game/common/scripted_effects/00_dynamic_state_names_asia.txt
+- **M** game/common/scripted_effects/00_dynamic_state_names_europe.txt
+- **A** game/common/scripted_effects/00_ip3_victoria_scripted_effects.txt
+- **M** game/common/scripted_effects/00_political_setup.txt
+- **M** game/common/scripted_effects/00_rufus_scripted_effects.txt
+- **M** game/common/scripted_effects/00_scripted_effects.txt
+- **M** game/common/scripted_effects/00_starting_inventions.txt
+- **A** game/common/scripted_effects/00_the_grand_collapse_scripted_effects.txt
+- **M** game/common/scripted_effects/00_unification_effects.txt
+- **M** game/common/scripted_effects/00_victoria_adversarial_scripted_effects.txt
+- **M** game/common/scripted_effects/00_victoria_scripted_effects.txt
+- **M** game/common/scripted_lists/victoria_scripted_lists.txt
+- **A** game/common/scripted_progress_bars/00_austrian_progress_bars.txt
+- **A** game/common/scripted_progress_bars/00_greece_progress_bars.txt
+- **A** game/common/scripted_progress_bars/00_grunderzeit_progress_bars.txt
+- **A** game/common/scripted_progress_bars/00_je_progress_bars.txt
+- **M** game/common/scripted_progress_bars/00_sepoy_mutiny_progress_bars.txt
+- **M** game/common/scripted_progress_bars/00_victoria_progress_bars.txt
+- **M** game/common/scripted_rules/00_scripted_rules.txt
+- **M** game/common/scripted_triggers/00_ai_triggers.txt
+- **M** game/common/scripted_triggers/00_clothes_triggers.txt
+- **M** game/common/scripted_triggers/00_coa_triggers.txt
+- **M** game/common/scripted_triggers/00_geography_triggers.txt
+- **M** game/common/scripted_triggers/00_gfx_route_graphics_triggers.txt
+- **A** game/common/scripted_triggers/00_ip3_victoria_scripted_triggers.txt
+- **M** game/common/scripted_triggers/00_scripted_triggers.txt
+- **M** game/common/scripted_triggers/00_strike_triggers.txt
+- **A** game/common/scripted_triggers/00_theme_triggers.txt
+- **M** game/common/scripted_triggers/00_victoria_scripted_triggers.txt
+- **M** game/common/social_hierarchies/00_social_hierarchies.txt
+- **M** game/common/state_traits/00_generic_traits.txt
+- **M** game/common/state_traits/01_scandinavia_traits.txt
+- **M** game/common/state_traits/03_north_america_traits.txt
+- **M** game/common/state_traits/04_south_america_traits.txt
+- **M** game/common/state_traits/05_western_europe_traits.txt
+- **M** game/common/state_traits/06_eastern_europe_traits.txt
+- **M** game/common/state_traits/07_africa_traits.txt
+- **M** game/common/state_traits/08_near_east_traits.txt
+- **M** game/common/static_modifiers/00_code_static_modifiers.txt
+- **A** game/common/static_modifiers/00_ip3_02_modifiers.txt
+- **A** game/common/static_modifiers/00_ip3_03_modifiers.txt
+- **A** game/common/static_modifiers/00_ip3_04_modifiers.txt
+- **M** game/common/static_modifiers/02_event_modifiers.txt
+- **M** game/common/static_modifiers/04_decision_modifiers.txt
+- **M** game/common/static_modifiers/07_culture_standard_of_living.txt
+- **M** game/common/static_modifiers/08_religion_standard_of_living.txt
+- **M** game/common/static_modifiers/106_modifiers.txt
+- **A** game/common/static_modifiers/10_culture_cultural_acceptance_modifiers.txt
+- **A** game/common/static_modifiers/11_culture_fervor_target_modifiers.txt
+- **A** game/common/static_modifiers/12_diplomatic_modifiers.txt
+- **M** game/common/static_modifiers/agitators_1_modifiers.txt
+- **M** game/common/static_modifiers/agitators_3_modifiers.txt
+- **M** game/common/static_modifiers/agitators_5_modifiers.txt
+- **M** game/common/static_modifiers/brazil_1_modifiers.txt
+- **M** game/common/static_modifiers/brazil_2_modifiers.txt
+- **A** game/common/static_modifiers/bulgarian_modifiers.txt
+- **M** game/common/static_modifiers/content_1_modifiers.txt
+- **M** game/common/static_modifiers/content_204_modifiers.txt
+- **M** game/common/static_modifiers/content_2_modifiers.txt
+- **M** game/common/static_modifiers/content_304_modifiers.txt
+- **M** game/common/static_modifiers/content_3_modifiers.txt
+- **M** game/common/static_modifiers/content_4_modifiers.txt
+- **A** game/common/static_modifiers/montenegrin_modifiers.txt
+- **M** game/common/strategic_regions/europe_strategic_regions.txt
+- **M** game/common/subject_types/00_subject_types.txt
+- **M** game/common/technology/technologies/30_society.txt
+- **M** game/common/terrain_manipulators/provinces/allowed_provinces.txt
+- **M** game/common/themes/00_themes.txt
+- **M** game/common/treaty_articles/03_support_independence.txt
+- **M** game/common/treaty_articles/05_transfer_money.txt
+- **M** game/common/treaty_articles/06_transfer_state.txt
+- **M** game/common/treaty_articles/10_host_power_bloc_embassy.txt
+- **M** game/common/treaty_articles/11_offer_embassy.txt
+- **M** game/common/treaty_articles/13_goods_transfer.txt
+- **M** game/common/treaty_articles/14_treaty_port.txt
+- **M** game/common/treaty_articles/15_military_access.txt
+- **M** game/common/treaty_articles/16_non_colonization_agreement.txt
+- **M** game/common/treaty_articles/20_law_commitment.txt
+- **M** game/common/treaty_articles/21_no_tariffs.txt
+- **M** game/common/treaty_articles/25_trade_privilege.txt
+- **M** game/common/treaty_articles/26_no_subventions.txt
+- **M** game/common/trigger_localization/00_trigger_localization.txt
+- **M** game/common/trigger_localization/01_scripted_triggers_localization.txt
+- **M** game/credits.txt
+- **M** game/dlc/dlc004_voice_of_the_people/gfx/map/building_config/french_culturepack.txt
+- **M** game/dlc/dlc007_ap1/gfx/models/papermap/papermap_candle.asset
+- **M** game/dlc/dlc009_trains_pack/gfx/map/spline_network/route_graphics/02_railroad_vehicles.txt
+- **M** game/dlc/dlc011_ip2/gfx/map/building_config/indian_culturepack.txt
+- **M** game/dlc/dlc011_ip2/gfx/models/buildings/indian/indian_farm/indian_farm_cotton_01.asset
+- **M** game/dlc/dlc011_ip2/gfx/models/buildings/indian/indian_farm/indian_farm_rice_01.asset
+- **M** game/dlc/dlc011_ip2/gfx/models/buildings/indian/indian_mining/indian_mining_centerpiece_01.asset
+- **M** game/dlc/dlc011_ip2/gfx/models/buildings/indian/indian_mining/indian_mining_coal_01.asset
+- **M** game/dlc/dlc011_ip2/gfx/models/buildings/indian/indian_mining/indian_mining_gold_01.asset
+- **M** game/dlc/dlc011_ip2/gfx/models/buildings/indian/indian_mining/indian_mining_iron_01.asset
+- **M** game/dlc/dlc011_ip2/gfx/models/buildings/indian/indian_mining/indian_mining_lead_01.asset
+- **A** game/dlc/dlc011_ip2/gfx/models/buildings/indian/indian_mining/indian_mining_oil_01.asset
+- **M** game/dlc/dlc011_ip2/gfx/models/buildings/indian/indian_mining/indian_mining_sulfur_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/map/building_config/balkan_culturepack.txt
+- **A** game/dlc/dlc014_ip3/gfx/map/city_data/city_centerpiece/balkan_centerpieces.txt
+- **A** game/dlc/dlc014_ip3/gfx/map/city_data/city_types/balkan_city.txt
+- **A** game/dlc/dlc014_ip3/gfx/map/city_data/city_types/balkan_farm.txt
+- **A** game/dlc/dlc014_ip3/gfx/map/city_data/city_types/balkan_mine.txt
+- **A** game/dlc/dlc014_ip3/gfx/map/city_data/city_types/balkan_port.txt
+- **A** game/dlc/dlc014_ip3/gfx/map/city_data/city_types/balkan_wood.txt
+- **A** game/dlc/dlc014_ip3/gfx/map/map_object_data/papermap_coin_ip3.txt
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/1x1.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/2x2.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/3x3.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_city/balkan_city_academy_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_city/balkan_city_barracks_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_city/balkan_city_centerpiece_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_city/balkan_city_financialdistrict_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_city/balkan_city_govadmin_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_city/balkan_city_skyscraper_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_city/balkan_city_tradecenter_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_city/balkan_city_university_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_city_companyhq_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_city_regionalcompanyhq_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_factory_arms_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_factory_chemical_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_factory_construction_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_factory_food_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_factory_furniture_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_factory_glass_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_factory_munition_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_factory_papermill_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_factory_powerplant_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_factory_steel_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_factory_tech_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_factory_textilemill_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_factory_tools_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_factory/balkan_factory_warmachine_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_farm/balkan_farm_centerpiece_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_farm/balkan_farm_ranch_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_farm/balkan_farm_vineyard_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_farm/balkan_farm_wheat_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_centerpiece_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_centerpiece_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_centerpiece_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_centerpiece_hardwoodpiles_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_centerpiece_hardwoodpiles_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_centerpiece_hardwoodpiles_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_centerpiece_mixwoodpiles_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_centerpiece_mixwoodpiles_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_centerpiece_mixwoodpiles_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_centerpiece_softwoodpiles_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_centerpiece_softwoodpiles_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_centerpiece_softwoodpiles_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_equipment_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_equipment_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_equipment_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcabin_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcabin_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcabin_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcamp_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcamp_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcamp_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcamp_hardwoodpiles_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcamp_hardwoodpiles_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcamp_hardwoodpiles_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcamp_mixwoodpiles_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcamp_mixwoodpiles_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcamp_mixwoodpiles_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcamp_softwoodpiles_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcamp_softwoodpiles_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_loggingcamp_softwoodpiles_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_transportation_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_transportation_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_transportation_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_transportation_hardwoodpiles_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_transportation_hardwoodpiles_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_transportation_hardwoodpiles_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_transportation_mixwoodpiles_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_transportation_mixwoodpiles_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_transportation_mixwoodpiles_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_transportation_softwoodpiles_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_transportation_softwoodpiles_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_transportation_softwoodpiles_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_trees_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_trees_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_forestry/balkan_forestry_trees_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_mining/balkan_mining_centerpiece_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_mining/balkan_mining_coal_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_mining/balkan_mining_gold_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_mining/balkan_mining_iron_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_mining/balkan_mining_lead_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_mining/balkan_mining_oil_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_mining/balkan_mining_sulfur_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_centerpiece_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_centerpiece_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_docks_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_docks_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_fishingwharf_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_fishingwharf_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_fishingwharf_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_militaryshipyard_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_militaryshipyard_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_navalbase_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_navalbase_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_shipyard_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_shipyard_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_whalingstation_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_port/balkan_port_worldmarket_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_rural_manorhouse/balkan_rural_manorhouse_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_rural_residential_buildings/balkan_rural_residential_mid_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_rural_residential_buildings/balkan_rural_residential_mid_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_rural_residential_buildings/balkan_rural_residential_mid_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_rural_residential_buildings/balkan_rural_residential_poor_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_rural_residential_buildings/balkan_rural_residential_poor_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_rural_residential_buildings/balkan_rural_residential_poor_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_rural_residential_buildings/balkan_rural_residential_rich_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_rural_residential_buildings/balkan_rural_residential_rich_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_rural_residential_buildings/balkan_rural_residential_rich_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_urban_residentail/balkan_urban_residential_mid_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_urban_residentail/balkan_urban_residential_mid_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_urban_residentail/balkan_urban_residential_mid_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_urban_residentail/balkan_urban_residential_poor_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_urban_residentail/balkan_urban_residential_poor_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_urban_residentail/balkan_urban_residential_poor_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_urban_residentail/balkan_urban_residential_poor_04.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_urban_residentail/balkan_urban_residential_rich_01.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_urban_residentail/balkan_urban_residential_rich_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/balkan/balkan_urban_residentail/balkan_urban_residential_rich_03.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/buildings/wonders/wonder_hagia_sophia_02/wonder_hagia_sophia_02.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/papermap/ip3_coin/ip3_coin.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/papermap/papermap_bugbearflask.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/papermap/papermap_coffeecup.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/papermap/papermap_extension_bottom_ip3.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/papermap/papermap_extension_top_ip3.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/papermap/papermap_kolbasz.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/papermap/papermap_pipe.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/papermap/papermap_table_bottom_ip3.asset
+- **A** game/dlc/dlc014_ip3/gfx/models/papermap/papermap_table_top_ip3.asset
+- **M** game/dlc_metadata/00_dlc_metadata.txt
+- **M** game/events/1848.txt
+- **M** game/events/acceptance_events.txt
+- **M** game/events/africa_colonial_events.txt
+- **M** game/events/africa_colonial_events_02.txt
+- **M** game/events/africa_colonial_events_03.txt
+- **M** game/events/agitators_events/agitators_election_events.txt
+- **M** game/events/agitators_events/agitators_law_events.txt
+- **M** game/events/agitators_events/algeria_events.txt
+- **M** game/events/agitators_events/coup_events.txt
+- **M** game/events/agitators_events/dreyfus_events.txt
+- **M** game/events/agitators_events/exiles_events.txt
+- **M** game/events/agitators_events/exiles_events_02.txt
+- **M** game/events/agitators_events/garibaldi_events.txt
+- **M** game/events/agitators_events/historic_agitator_events.txt
+- **M** game/events/agitators_events/land_ownership_law_events.txt
+- **M** game/events/agitators_events/luddite_law_events.txt
+- **M** game/events/agitators_events/paris_commune_events.txt
+- **M** game/events/agitators_events/paris_commune_pulse_events.txt
+- **M** game/events/agitators_events/revolution_events_01.txt
+- **M** game/events/agitators_events/revolution_events_02.txt
+- **M** game/events/agitators_events/revolution_events_03.txt
+- **M** game/events/agitators_events/silkworm_diseases.txt
+- **M** game/events/agitators_events/slave_revolt_events.txt
+- **M** game/events/amazon_events.txt
+- **M** game/events/american_civil_war/acw_events.txt
+- **M** game/events/american_civil_war/acw_je_events.txt
+- **M** game/events/american_civil_war/acw_wild_west_events.txt
+- **M** game/events/australia_events.txt
+- **M** game/events/autocracy_events.txt
+- **A** game/events/balkans_events/00_ip3_austria_events.txt
+- **A** game/events/balkans_events/00_ip3_hungary_events.txt
+- **A** game/events/balkans_events/03_ip3_austria_events.txt
+- **A** game/events/balkans_events/04_ip3_austria_events.txt
+- **A** game/events/balkans_events/austria_federalism.txt
+- **A** game/events/balkans_events/austria_germany_events.txt
+- **A** game/events/balkans_events/balkan_wars_events.txt
+- **A** game/events/balkans_events/bavarocracy.txt
+- **A** game/events/balkans_events/eastern_crisis.txt
+- **A** game/events/balkans_events/eastern_question.txt
+- **A** game/events/balkans_events/grunderzeit.txt
+- **A** game/events/balkans_events/hungry_forties.txt
+- **A** game/events/balkans_events/metternich.txt
+- **A** game/events/balkans_events/montenegro_events.txt
+- **A** game/events/balkans_events/national_awakening.txt
+- **A** game/events/balkans_events/ottoman_events.txt
+- **A** game/events/balkans_events/serbia_events.txt
+- **A** game/events/balkans_events/subjecthood_events.txt
+- **A** game/events/balkans_events/the_grand_collapse_events.txt
+- **A** game/events/balkans_events/yugoslavia_events.txt
+- **M** game/events/belle_epoque_events.txt
+- **M** game/events/bic_breakup.txt
+- **M** game/events/boxer_rebellion_events.txt
+- **M** game/events/brazil/amazonas.txt
+- **M** game/events/brazil/brazil_navy.txt
+- **M** game/events/brazil/brazilian_slavery.txt
+- **M** game/events/brazil/caudillo.txt
+- **M** game/events/brazil/coffee_with_milk.txt
+- **M** game/events/brazil/cristo_redentor.txt
+- **M** game/events/brazil/misc_events.txt
+- **M** game/events/brazil/paraguay.txt
+- **M** game/events/brazil/pedro_brazil_events.txt
+- **M** game/events/brazil/positivism.txt
+- **M** game/events/brazil/vargas.txt
+- **M** game/events/british_raj_events.txt
+- **A** game/events/bulgaria_events.txt
+- **M** game/events/character_events.txt
+- **M** game/events/cholera.txt
+- **M** game/events/colonial_administration_events.txt
+- **M** game/events/communism.txt
+- **M** game/events/congo_free_state_events.txt
+- **M** game/events/corn_laws_events.txt
+- **M** game/events/crime_events.txt
+- **M** game/events/debug_events.txt
+- **M** game/events/decree_events.txt
+- **M** game/events/decree_events_02.txt
+- **M** game/events/dei_breakup.txt
+- **M** game/events/diplomatic_friction_events.txt
+- **M** game/events/dreadnought_hoax.txt
+- **M** game/events/east_indies_je_events.txt
+- **M** game/events/election_events/communist_fascist_election_events.txt
+- **M** game/events/election_events/election_conservative_events.txt
+- **M** game/events/election_events/election_contextual_events.txt
+- **M** game/events/election_events/election_generic_events.txt
+- **M** game/events/election_events/election_liberal_events.txt
+- **M** game/events/election_events/election_moderate_events.txt
+- **M** game/events/election_events/election_neutral_events.txt
+- **M** game/events/election_events/election_other_parties_events.txt
+- **M** game/events/ethiopia.txt
+- **M** game/events/famine_political_events.txt
+- **M** game/events/fascism_events.txt
+- **M** game/events/french_pretenders.txt
+- **M** game/events/french_pretenders_pulse.txt
+- **M** game/events/german_unification.txt
+- **M** game/events/gold_rush.txt
+- **M** game/events/government_conflicts_events.txt
+- **M** game/events/grand_exhibition_events.txt
+- **M** game/events/greece_events.txt
+- **M** game/events/hawaii_events.txt
+- **M** game/events/heavenly_kingdom_events.txt
+- **M** game/events/ig_petitions.txt
+- **M** game/events/ig_revolutions.txt
+- **M** game/events/ig_suppression_events.txt
+- **M** game/events/india_events/caste_conflict.txt
+- **M** game/events/india_events/federation_of_india.txt
+- **M** game/events/india_events/india_home_rule_events.txt
+- **M** game/events/india_events/india_misc_events.txt
+- **M** game/events/india_events/india_nationalism_events.txt
+- **M** game/events/india_events/india_non_cooperation.txt
+- **M** game/events/india_events/india_railway.txt
+- **M** game/events/india_events/indian_famines.txt
+- **M** game/events/india_events/mughal_events.txt
+- **M** game/events/india_events/princely_state_creation.txt
+- **M** game/events/india_events/princely_states.txt
+- **M** game/events/india_events/sepoy_mutiny_events.txt
+- **M** game/events/india_events/set_hierarchy_events.txt
+- **M** game/events/india_events/sikh_empire.txt
+- **M** game/events/india_events/utilitarian.txt
+- **M** game/events/india_events/victoria_terminus.txt
+- **M** game/events/indochina.txt
+- **M** game/events/industrial_accidents_events.txt
+- **M** game/events/italian_unification.txt
+- **M** game/events/karl_marx_events.txt
+- **M** game/events/korea_events.txt
+- **M** game/events/krakatoa_events.txt
+- **M** game/events/krakow_events.txt
+- **M** game/events/law_events/anarchy_law.txt
+- **M** game/events/law_events/anti_state_religion_law_events.txt
+- **M** game/events/law_events/bureaucracy.txt
+- **M** game/events/law_events/children_rights_events.txt
+- **M** game/events/law_events/conscription_laws.txt
+- **M** game/events/law_events/corporate_state_events.txt
+- **M** game/events/law_events/economy_laws.txt
+- **M** game/events/law_events/education_laws.txt
+- **M** game/events/law_events/internal_security_events.txt
+- **M** game/events/law_events/labor_rights_laws.txt
+- **A** game/events/law_events/labour_associations_events.txt
+- **M** game/events/law_events/law_events.txt
+- **M** game/events/law_events/law_events_01.txt
+- **M** game/events/law_events/migration_laws.txt
+- **M** game/events/law_events/slavery_laws.txt
+- **M** game/events/law_events/state_atheism.txt
+- **M** game/events/law_events/tax_laws.txt
+- **M** game/events/law_events/technocracy_law.txt
+- **M** game/events/law_events/theocracy.txt
+- **M** game/events/law_events/welfare_laws_events.txt
+- **M** game/events/liberalism.txt
+- **M** game/events/meiji_restoration.txt
+- **M** game/events/misc_unifications.txt
+- **M** game/events/movement_events.txt
+- **M** game/events/native_resettlement.txt
+- **M** game/events/neighbor_events.txt
+- **M** game/events/nihilism.txt
+- **M** game/events/oil_rush_events.txt
+- **M** game/events/opium_events.txt
+- **M** game/events/opium_wars_events.txt
+- **M** game/events/oscar_wilde.txt
+- **M** game/events/peoples_springtime.txt
+- **M** game/events/pm_events.txt
+- **M** game/events/poland_events.txt
+- **M** game/events/prohibition_events.txt
+- **M** game/events/prostitution_events.txt
+- **M** game/events/psychology_events.txt
+- **M** game/events/red_scare_events.txt
+- **M** game/events/resignation.txt
+- **M** game/events/romania_events.txt
+- **M** game/events/royal_wedding.txt
+- **M** game/events/russia_events.txt
+- **M** game/events/secession_situations.txt
+- **M** game/events/sick_man_events.txt
+- **M** game/events/slave_revolts.txt
+- **M** game/events/soi_events/00_ep1_caucasus_events.txt
+- **M** game/events/soi_events/00_ep1_kazakh_events.txt
+- **M** game/events/soi_events/00_ep1_korea_events.txt
+- **M** game/events/soi_events/00_lobbies_events_01.txt
+- **M** game/events/soi_events/00_lobbies_events_03.txt
+- **M** game/events/soi_events/00_lobbies_events_04.txt
+- **M** game/events/spanish_flu_events.txt
+- **M** game/events/spooky_halloween_events.txt
+- **M** game/events/standard_of_living_events.txt
+- **M** game/events/strike_events.txt
+- **M** game/events/subject_interaction_evts.txt
+- **M** game/events/suffragist_events.txt
+- **M** game/events/tanzimat_events.txt
+- **M** game/events/tech_events/camera_film_pm_events.txt
+- **M** game/events/tech_events/society_tech_events.txt
+- **M** game/events/technology_events.txt
+- **M** game/events/test_events.txt
+- **M** game/events/titanic_events.txt
+- **M** game/events/trade_route_events.txt
+- **M** game/events/tunguska.txt
+- **M** game/events/utopians.txt
+- **M** game/events/vampire_panic_events.txt
+- **M** game/events/warlord_china_events.txt
+- **M** game/events/zanzibar_events.txt
+- **M** game/gfx/map/front_entities/front_entities_cavalry.txt
+- **M** game/gfx/map/front_entities/front_entities_infantry.txt
+- **M** game/gfx/map/front_entities/front_entities_support.txt
+- **M** game/gfx/map/map_modes/map_modes.txt
+- **M** game/gfx/map/map_object_data/generated_map_object_locators_city.txt
+- **M** game/gfx/map/map_object_data/generated_map_object_locators_farm.txt
+- **M** game/gfx/map/map_object_data/generated_map_object_locators_mine.txt
+- **M** game/gfx/map/map_object_data/generated_map_object_locators_port.txt
+- **M** game/gfx/map/map_object_data/generated_map_object_locators_wood.txt
+- **M** game/gfx/map/map_object_data/papermap_items_locators.txt
+- **M** game/gfx/map/map_object_data/papermap_table_ip2_locators.txt
+- **A** game/gfx/map/map_object_data/papermap_table_ip3_locators.txt
+- **M** game/gfx/map/map_object_data/unique_buildings.txt
+- **M** game/gfx/map/spline_network/route_graphics/02_railroad_vehicles.txt
+- **M** game/gfx/media_aliases/media_aliases.txt
+- **M** game/gfx/models/buildings/generic/generic_mining/generic_mining_centerpiece_01.asset
+- **M** game/gfx/models/buildings/generic/generic_mining/generic_mining_coal_01.asset
+- **M** game/gfx/models/buildings/generic/generic_mining/generic_mining_gold_01.asset
+- **M** game/gfx/models/buildings/generic/generic_mining/generic_mining_iron_01.asset
+- **M** game/gfx/models/buildings/generic/generic_mining/generic_mining_lead_01.asset
+- **M** game/gfx/models/buildings/generic/generic_mining/generic_mining_oil_01.asset
+- **M** game/gfx/models/buildings/generic/generic_mining/generic_mining_sulfur_01.asset
+- **M** game/gfx/models/particles/vfx_entities_ui.asset
+- **M** game/gfx/models/portraits/attachments/female_outfits/slavic/female_outfit_slavic_01_mid/female_outfit_slavic_01_mid.asset
+- **M** game/gfx/models/portraits/attachments/male_beards/european/male_beard_european_05/male_beard_european_05.asset
+- **A** game/gfx/models/portraits/attachments/male_beards/historical/male_beard_gyula_andrassy/male_beard_gyula_andrassy.asset
+- **A** game/gfx/models/portraits/attachments/male_beards/historical/male_beard_mihailo_obrenovic/male_beard_mihailo_obrenovic.asset
+- **A** game/gfx/models/portraits/attachments/male_beards/historical/male_beard_petar_ii_petrovic_njegos/male_beard_petar_ii_petrovic_njegos.asset
+- **A** game/gfx/models/portraits/attachments/male_beards/historical/male_beard_rudolf_prince_of_austria/male_beard_rudolf_prince_of_austria.asset
+- **M** game/gfx/models/portraits/attachments/male_belts/generic/01/male_belt_generic_01.asset
+- **A** game/gfx/models/portraits/attachments/male_belts/greek_01/male_belt_greek_01.asset
+- **A** game/gfx/models/portraits/attachments/male_belts/greek_01/male_belt_greek_01_bs_fat.asset
+- **A** game/gfx/models/portraits/attachments/male_belts/greek_01/male_belt_greek_01_bs_old.asset
+- **A** game/gfx/models/portraits/attachments/male_belts/greek_01/male_belt_greek_01_bs_thick.asset
+- **A** game/gfx/models/portraits/attachments/male_belts/male_belt_austrian_01/male_belt_austrian_01.asset
+- **A** game/gfx/models/portraits/attachments/male_belts/male_belt_austrian_01/male_belt_austrian_01_bs_fat.asset
+- **A** game/gfx/models/portraits/attachments/male_belts/male_belt_austrian_01/male_belt_austrian_01_bs_gaunt.asset
+- **A** game/gfx/models/portraits/attachments/male_belts/male_belt_austrian_01/male_belt_austrian_01_bs_old.asset
+- **A** game/gfx/models/portraits/attachments/male_belts/male_belt_austrian_01/male_belt_austrian_01_bs_thick.asset
+- **A** game/gfx/models/portraits/attachments/male_belts/male_belt_austrian_01/male_belt_austrian_01_bs_thin.asset
+- **A** game/gfx/models/portraits/attachments/male_belts/male_belts_late_military_greatcoat_01/male_belt_greatcoat_01.asset
+- **A** game/gfx/models/portraits/attachments/male_belts/male_belts_late_military_greatcoat_02/male_belt_greatcoat_02.asset
+- **M** game/gfx/models/portraits/attachments/male_coats/european/01/male_coat_european_01.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/european/01/male_coat_european_01_bs_fat.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/european/01/male_coat_european_01_bs_old.asset
+- **M** game/gfx/models/portraits/attachments/male_coats/european/03/male_coat_european_03.asset
+- **M** game/gfx/models/portraits/attachments/male_coats/european/06/male_coat_european_06.asset
+- **M** game/gfx/models/portraits/attachments/male_coats/european/08/male_coat_european_08.asset
+- **M** game/gfx/models/portraits/attachments/male_coats/european/09/male_coat_european_09.asset
+- **M** game/gfx/models/portraits/attachments/male_coats/european/10/male_coat_european_10.asset
+- **M** game/gfx/models/portraits/attachments/male_coats/european/civil_dress_uniform_01/male_coat_european_civil_dress_uniform_01.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/european/male_coat_european_fancy_single_breasted_01/male_coat_european_fancy_single_breasted_01.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/european/male_coat_late_military_greatcoat_01/male_coat_late_military_greatcoat_01.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/european/male_coat_late_military_greatcoat_01/male_coat_late_military_greatcoat_01_bs_fat.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/european/male_coat_late_military_greatcoat_01/male_coat_late_military_greatcoat_01_bs_gaunt.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/european/male_coat_late_military_greatcoat_01/male_coat_late_military_greatcoat_01_bs_old.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/european/male_coat_late_military_greatcoat_01/male_coat_late_military_greatcoat_01_bs_thick.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/european/male_coat_late_military_greatcoat_01/male_coat_late_military_greatcoat_01_bs_thin.asset
+- **M** game/gfx/models/portraits/attachments/male_coats/european/military_01/male_coat_european_military_01.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/greek/male_coat_greek_01/male_coat_greek_01.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/greek/male_coat_greek_01/male_coat_greek_01_bs_fat.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/greek/male_coat_greek_01/male_coat_greek_01_bs_gaunt.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/greek/male_coat_greek_01/male_coat_greek_01_bs_old.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/greek/male_coat_greek_01/male_coat_greek_01_bs_thick.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/greek/male_coat_greek_01/male_coat_greek_01_bs_thin.asset
+- **M** game/gfx/models/portraits/attachments/male_coats/historical/male_coat_alexis_de_tocqueville_01/male_coat_alexis_de_tocqueville_01.asset
+- **A** game/gfx/models/portraits/attachments/male_coats/historical/male_coat_balkan_01/male_coat_balkan_01.asset
+- **M** game/gfx/models/portraits/attachments/male_coats/historical/male_coat_historical_blanqui_01/male_coat_historical_blanqui_01.asset
+- **M** game/gfx/models/portraits/attachments/male_coats/russian/military_01/male_coat_russian_military_01.asset
+- **M** game/gfx/models/portraits/attachments/male_epaulettes/01/male_epaulettes_01.asset
+- **M** game/gfx/models/portraits/attachments/male_epaulettes/military_01/male_epaulettes_military_01.asset
+- **A** game/gfx/models/portraits/attachments/male_hair/historical/male_hair_alexander_karadordevic/male_hair_alexander_karadordevic.asset
+- **A** game/gfx/models/portraits/attachments/male_hair/historical/male_hair_historical_milos_obrenovic/male_hair_historical_milos_obrenovic.asset
+- **A** game/gfx/models/portraits/attachments/male_hair/historical/male_hair_rudolf_prince_of_austria/male_hair_rudolf_prince_of_austria.asset
+- **A** game/gfx/models/portraits/attachments/male_hair/historical/male_hair_sador_petofi/male_hair_sador_petofi.asset
+- **M** game/gfx/models/portraits/attachments/male_headgear/arabic_agitators/male_headgear_arabic_agitator_01/male_headgear_arabic_agitator_01.asset
+- **A** game/gfx/models/portraits/attachments/male_headgear/european_common/male_headgear_serbian_01/male_headgear_serbian_01.asset
+- **M** game/gfx/models/portraits/attachments/male_headgear/european_military/02/male_headgear_european_military_02.asset
+- **M** game/gfx/models/portraits/attachments/male_headgear/european_military/03/male_headgear_european_military_03.asset
+- **M** game/gfx/models/portraits/attachments/male_headgear/european_military/04/male_headgear_european_military_04.asset
+- **M** game/gfx/models/portraits/attachments/male_headgear/european_military/cossack_01/male_headgear_european_cossack_01.asset
+- **A** game/gfx/models/portraits/attachments/male_headgear/european_military/male_headgear_austrian_military_cap_01/male_headgear_austrian_military_cap_01.asset
+- **A** game/gfx/models/portraits/attachments/male_headgear/european_military/male_headgear_austrian_military_cap_02/male_headgear_austrian_military_cap_02.asset
+- **M** game/gfx/models/portraits/attachments/male_headgear/european_military/military_cap_01/male_headgear_european_military_cap_01.asset
+- **M** game/gfx/models/portraits/attachments/male_headgear/european_religious/male_headgear_european_religious_catholic_01/male_headgear_european_religious_catholic_01.asset
+- **A** game/gfx/models/portraits/attachments/male_headgear/greek/male_headgear_greek_01/male_headgear_greek_01.asset
+- **A** game/gfx/models/portraits/attachments/male_headgear/historical/male_headgear_petar_ii_petrovic_njegos/male_headgear_petar_ii_petrovic_njegos.asset
+- **A** game/gfx/models/portraits/attachments/male_headgear/slavic/male_headgear_balkan_fur_01/male_headgear_balkan_fur_01.asset
+- **A** game/gfx/models/portraits/attachments/male_legwear/african/male_legwear_african_zulu_dingane_01/male_legwear_african_zulu_dingane_01.asset
+- **A** game/gfx/models/portraits/attachments/male_legwear/european/male_legwear_austrian_01/male_legwear_austrian_01.asset
+- **A** game/gfx/models/portraits/attachments/male_legwear/european/male_legwear_balkan_hajduk_01/male_legwear_balkan_hajduk_01.asset
+- **M** game/gfx/models/portraits/attachments/male_legwear/european/military_01/male_legwear_european_military_01.asset
+- **A** game/gfx/models/portraits/attachments/male_legwear/greek/male_legwear_greek_01.asset
+- **A** game/gfx/models/portraits/attachments/male_legwear/greek/male_legwear_greek_01_bs_fat.asset
+- **A** game/gfx/models/portraits/attachments/male_legwear/greek/male_legwear_greek_01_bs_gaunt.asset
+- **A** game/gfx/models/portraits/attachments/male_legwear/greek/male_legwear_greek_01_bs_old.asset
+- **A** game/gfx/models/portraits/attachments/male_legwear/greek/male_legwear_greek_01_bs_thick.asset
+- **A** game/gfx/models/portraits/attachments/male_legwear/greek/male_legwear_greek_01_bs_thin.asset
+- **M** game/gfx/models/portraits/attachments/male_legwear/slavic/male_legwear_slavic_01_high/male_legwear_slavic_01_high.asset
+- **A** game/gfx/models/portraits/attachments/male_mustaches/historical/male_mustache_alexander_karadordevic/male_mustache_alexander_karadordevic.asset
+- **A** game/gfx/models/portraits/attachments/male_mustaches/historical/male_mustache_dordije_petrovic_njegos/male_mustache_dordije_petrovic_njegos.asset
+- **A** game/gfx/models/portraits/attachments/male_mustaches/historical/male_mustache_george_i_of_greece/male_mustache_george_i_of_greece.asset
+- **A** game/gfx/models/portraits/attachments/male_mustaches/historical/male_mustache_mihailo_obrenovic/male_mustache_mihailo_obrenovic.asset
+- **A** game/gfx/models/portraits/attachments/male_mustaches/historical/male_mustache_milos_obrenovic/male_mustache_milos_obrenovic.asset
+- **A** game/gfx/models/portraits/attachments/male_mustaches/historical/male_mustache_rudolf_prince_of_austria/male_mustache_rudolf_prince_of_austria.asset
+- **A** game/gfx/models/portraits/attachments/male_mustaches/historical/male_mustache_sandor_petofi/male_mustache_sandor_petofi.asset
+- **M** game/gfx/models/portraits/attachments/male_outfits/african/common_01/male_outfit_african_common_01.asset
+- **M** game/gfx/models/portraits/attachments/male_outfits/arabic/common_02/male_outfit_arabic_common_02.asset
+- **A** game/gfx/models/portraits/attachments/male_outfits/greek/male_outfit_greek_fustanella_01/male_outfit_greek_fustanella_01.asset
+- **A** game/gfx/models/portraits/attachments/male_outfits/greek/male_outfit_greek_fustanella_01/male_outfit_greek_fustanella_01_bs_fat.asset
+- **A** game/gfx/models/portraits/attachments/male_outfits/greek/male_outfit_greek_fustanella_01/male_outfit_greek_fustanella_01_bs_gaunt.asset
+- **A** game/gfx/models/portraits/attachments/male_outfits/greek/male_outfit_greek_fustanella_01/male_outfit_greek_fustanella_01_bs_old.asset
+- **A** game/gfx/models/portraits/attachments/male_outfits/greek/male_outfit_greek_fustanella_01/male_outfit_greek_fustanella_01_bs_thick.asset
+- **A** game/gfx/models/portraits/attachments/male_outfits/greek/male_outfit_greek_fustanella_01/male_outfit_greek_fustanella_01_bs_thin.asset
+- **M** game/gfx/models/portraits/attachments/male_outfits/indian/common_01/male_outfit_indian_common_01.asset
+- **M** game/gfx/models/portraits/attachments/male_outfits/indian/male_outfit_indian_tatya_tope/male_outfit_indian_tatya_tope.asset
+- **M** game/gfx/models/portraits/attachments/male_outfits/slavic/male_outfit_slavic_01_high/male_outfit_slavic_01_high.asset
+- **A** game/gfx/models/portraits/attachments/male_sashes/male_sashes_austrian_01/male_sashes_austrian_01.asset
+- **A** game/gfx/models/portraits/attachments/male_sashes/male_sashes_tricolor/male_sashes_tricolor.asset
+- **A** game/gfx/models/portraits/attachments/male_sashes/male_sashes_tricolor/male_sashes_tricolor_bs_fat.asset
+- **A** game/gfx/models/portraits/attachments/male_sashes/male_sashes_tricolor/male_sashes_tricolor_bs_gaunt.asset
+- **A** game/gfx/models/portraits/attachments/male_sashes/male_sashes_tricolor/male_sashes_tricolor_bs_old.asset
+- **A** game/gfx/models/portraits/attachments/male_sashes/male_sashes_tricolor/male_sashes_tricolor_bs_thick.asset
+- **A** game/gfx/models/portraits/attachments/male_sashes/male_sashes_tricolor/male_sashes_tricolor_bs_thin.asset
+- **A** game/gfx/models/portraits/attachments/male_shirts/balkan/male_shirts_balkan_hajduk_01.asset
+- **A** game/gfx/models/portraits/attachments/male_shirts/male_shirt_greek_01/male_shirt_greek_01.asset
+- **A** game/gfx/models/portraits/attachments/male_shirts/male_shirt_greek_01/male_shirt_greek_01_bs_fat.asset
+- **A** game/gfx/models/portraits/attachments/male_shirts/male_shirt_greek_01/male_shirt_greek_01_bs_gaunt.asset
+- **A** game/gfx/models/portraits/attachments/male_shirts/male_shirt_greek_01/male_shirt_greek_01_bs_old.asset
+- **A** game/gfx/models/portraits/attachments/male_shirts/male_shirt_greek_01/male_shirt_greek_01_bs_thick.asset
+- **A** game/gfx/models/portraits/attachments/male_shirts/male_shirt_greek_01/male_shirt_greek_01_bs_thin.asset
+- **A** game/gfx/models/portraits/attachments/male_top_layers/greek/male_top_layer_greek_01/male_top_layer_greek_01.asset
+- **A** game/gfx/models/portraits/attachments/male_top_layers/greek/male_top_layer_greek_01/male_top_layer_greek_01_bs_fat.asset
+- **A** game/gfx/models/portraits/attachments/male_top_layers/greek/male_top_layer_greek_01/male_top_layer_greek_01_bs_gaunt.asset
+- **A** game/gfx/models/portraits/attachments/male_top_layers/greek/male_top_layer_greek_01/male_top_layer_greek_01_bs_old.asset
+- **A** game/gfx/models/portraits/attachments/male_top_layers/greek/male_top_layer_greek_01/male_top_layer_greek_01_bs_thick.asset
+- **A** game/gfx/models/portraits/attachments/male_top_layers/greek/male_top_layer_greek_01/male_top_layer_greek_01_bs_thin.asset
+- **M** game/gfx/portraits/accessories/beards.txt
+- **M** game/gfx/portraits/accessories/clothes.txt
+- **M** game/gfx/portraits/accessories/hairstyles.txt
+- **M** game/gfx/portraits/accessories/headgear.txt
+- **M** game/gfx/portraits/accessories/mustaches.txt
+- **M** game/gfx/portraits/accessory_variations/african.txt
+- **M** game/gfx/portraits/accessory_variations/arabic.txt
+- **M** game/gfx/portraits/accessory_variations/european.txt
+- **M** game/gfx/portraits/accessory_variations/slavic.txt
+- **M** game/gfx/portraits/accessory_variations/south_americcan.txt
+- **M** game/gfx/portraits/environments/portrait_environments.txt
+- **M** game/gfx/portraits/portrait_animations/animations.txt
+- **M** game/gfx/portraits/portrait_modifiers/01_accessories.txt
+- **M** game/gfx/portraits/portrait_modifiers/01_beards.txt
+- **M** game/gfx/portraits/portrait_modifiers/01_clothes.txt
+- **M** game/gfx/portraits/portrait_modifiers/01_hairstyles.txt
+- **M** game/gfx/portraits/portrait_modifiers/01_headgear.txt
+- **M** game/gui/battle.gui
+- **M** game/gui/block_windows.gui
+- **M** game/gui/budget_panel.gui
+- **M** game/gui/building_details_panel.gui
+- **M** game/gui/companies_panel.gui
+- **M** game/gui/company_panel.gui
+- **M** game/gui/cooltip.gui
+- **M** game/gui/country_panel.gui
+- **M** game/gui/culture_info_panel.gui
+- **M** game/gui/culture_panel.gui
+- **M** game/gui/custom_tooltip.gui
+- **M** game/gui/diplomatic_overview.gui
+- **M** game/gui/diplomatic_play_panel.gui
+- **M** game/gui/eventwindow.gui
+- **M** game/gui/front_panel.gui
+- **M** game/gui/frontend/frontend_ingame_menu.gui
+- **M** game/gui/frontend/frontend_load.gui
+- **M** game/gui/frontend/frontend_main.gui
+- **M** game/gui/frontend/shared/windows.gui
+- **M** game/gui/gameover_screen.gui
+- **M** game/gui/goods_panel.gui
+- **M** game/gui/goods_state_panel.gui
+- **M** game/gui/goods_world_market_panel.gui
+- **M** game/gui/ingame_hud.gui
+- **M** game/gui/invasion_panel.gui
+- **M** game/gui/invasion_planner.gui
+- **M** game/gui/map_list_panel.gui
+- **M** game/gui/map_markers.gui
+- **M** game/gui/market_panel.gui
+- **M** game/gui/military_formation_panel.gui
+- **M** game/gui/military_panel_formations.gui
+- **M** game/gui/multiplayer_lobby_types.gui
+- **M** game/gui/outliner.gui
+- **M** game/gui/outliner_framework.gui
+- **M** game/gui/outliner_ongoing_types.gui
+- **M** game/gui/outliner_pinnable_types.gui
+- **M** game/gui/panel_military.gui
+- **M** game/gui/political_movement_panel.gui
+- **M** game/gui/politics_panel_change_law.gui
+- **M** game/gui/politics_panel_constitution.gui
+- **M** game/gui/politics_panel_types.gui
+- **M** game/gui/pops_overview.gui
+- **M** game/gui/popups.gui
+- **M** game/gui/power_bloc_panel.gui
+- **M** game/gui/religion_info_panel.gui
+- **M** game/gui/right_click_menu.gui
+- **M** game/gui/settings/setting_types.gui
+- **M** game/gui/shared/animations_special.gui
+- **M** game/gui/shared/backgrounds.gui
+- **M** game/gui/shared/character.gui
+- **M** game/gui/shared/flags.gui
+- **M** game/gui/shared/textures.gui
+- **M** game/gui/states_panel.gui
+- **M** game/gui/states_panel_buildings.gui
+- **M** game/gui/sway_country_panel.gui
+- **M** game/gui/textformatting.gui
+- **M** game/gui/texticons.gui
+- **M** game/gui/theme_selector_window.gui
+- **M** game/gui/world_market_panel.gui
+- **A** game/localization/braz_por/JE_lobby_text_l_braz_por.yml
+- **M** game/localization/braz_por/acceptance_statuses_l_braz_por.yml
+- **M** game/localization/braz_por/achievements_l_braz_por.yml
+- **M** game/localization/braz_por/agitators_1_l_braz_por.yml
+- **M** game/localization/braz_por/agitators_3_l_braz_por.yml
+- **M** game/localization/braz_por/agitators_4_l_braz_por.yml
+- **M** game/localization/braz_por/alerts_l_braz_por.yml
+- **M** game/localization/braz_por/brazil_1_l_braz_por.yml
+- **M** game/localization/braz_por/brazil_2_l_braz_por.yml
+- **M** game/localization/braz_por/brazil_3_l_braz_por.yml
+- **M** game/localization/braz_por/character/character_traits_l_braz_por.yml
+- **M** game/localization/braz_por/character_focused_l_braz_por.yml
+- **M** game/localization/braz_por/companies_l_braz_por.yml
+- **M** game/localization/braz_por/concepts_l_braz_por.yml
+- **M** game/localization/braz_por/content_101_l_braz_por.yml
+- **M** game/localization/braz_por/content_104_l_braz_por.yml
+- **M** game/localization/braz_por/content_105_l_braz_por.yml
+- **M** game/localization/braz_por/content_106_l_braz_por.yml
+- **M** game/localization/braz_por/content_1_l_braz_por.yml
+- **M** game/localization/braz_por/content_204_l_braz_por.yml
+- **M** game/localization/braz_por/content_2_l_braz_por.yml
+- **M** game/localization/braz_por/content_304_l_braz_por.yml
+- **M** game/localization/braz_por/content_3_l_braz_por.yml
+- **M** game/localization/braz_por/core_l_braz_por.yml
+- **M** game/localization/braz_por/countries_l_braz_por.yml
+- **M** game/localization/braz_por/country_flavor_text_l_braz_por.yml
+- **M** game/localization/braz_por/credits_l_braz_por.yml
+- **M** game/localization/braz_por/cultures_l_braz_por.yml
+- **M** game/localization/braz_por/customized_tooltips_l_braz_por.yml
+- **M** game/localization/braz_por/diplomacy_l_braz_por.yml
+- **M** game/localization/braz_por/diplomatic_treaties_l_braz_por.yml
+- **M** game/localization/braz_por/dlc_l_braz_por.yml
+- **M** game/localization/braz_por/dynamic_state_and_hub_names_l_braz_por.yml
+- **M** game/localization/braz_por/effects_l_braz_por.yml
+- **M** game/localization/braz_por/event_effects_l_braz_por.yml
+- **M** game/localization/braz_por/frontend/core_l_braz_por.yml
+- **M** game/localization/braz_por/goods_l_braz_por.yml
+- **M** game/localization/braz_por/government_l_braz_por.yml
+- **M** game/localization/braz_por/historical/military_formations_names_l_braz_por.yml
+- **M** game/localization/braz_por/hub_names_l_braz_por.yml
+- **M** game/localization/braz_por/interest_groups/interest_group_traits_l_braz_por.yml
+- **M** game/localization/braz_por/interest_groups/interest_groups_l_braz_por.yml
+- **M** game/localization/braz_por/interfaces_l_braz_por.yml
+- **M** game/localization/braz_por/ip2_02_l_braz_por.yml
+- **M** game/localization/braz_por/ip2_03_l_braz_por.yml
+- **M** game/localization/braz_por/ip2_04_l_braz_por.yml
+- **A** game/localization/braz_por/ip3_02_l_braz_por.yml
+- **A** game/localization/braz_por/ip3_03_l_braz_por.yml
+- **A** game/localization/braz_por/ip3_04_l_braz_por.yml
+- **A** game/localization/braz_por/ip3_05_l_braz_por.yml
+- **A** game/localization/braz_por/ip3_bulgaria_l_braz_por.yml
+- **A** game/localization/braz_por/ip3_montenegro_l_braz_por.yml
+- **M** game/localization/braz_por/laws_l_braz_por.yml
+- **M** game/localization/braz_por/liberty_desire_levels_l_braz_por.yml
+- **M** game/localization/braz_por/lobbies_l_braz_por.yml
+- **M** game/localization/braz_por/map/state_traits_l_braz_por.yml
+- **M** game/localization/braz_por/map/states_l_braz_por.yml
+- **M** game/localization/braz_por/map/strategic_regions_l_braz_por.yml
+- **M** game/localization/braz_por/map_modes_l_braz_por.yml
+- **M** game/localization/braz_por/modifiers_l_braz_por.yml
+- **M** game/localization/braz_por/names_l_braz_por.yml
+- **M** game/localization/braz_por/parties_l_braz_por.yml
+- **M** game/localization/braz_por/political_movements_l_braz_por.yml
+- **M** game/localization/braz_por/production_methods_2_l_braz_por.yml
+- **M** game/localization/braz_por/production_methods_l_braz_por.yml
+- **M** game/localization/braz_por/religion_l_braz_por.yml
+- **M** game/localization/braz_por/scripted_triggers_l_braz_por.yml
+- **M** game/localization/braz_por/settings_l_braz_por.yml
+- **M** game/localization/braz_por/social_hierarchy_l_braz_por.yml
+- **M** game/localization/braz_por/sphere_of_influence_4_l_braz_por.yml
+- **M** game/localization/braz_por/themes_l_braz_por.yml
+- **M** game/localization/braz_por/triggers_l_braz_por.yml
+- **M** game/localization/braz_por/tutorial_l_braz_por.yml
+- **A** game/localization/english/JE_lobby_text_l_english.yml
+- **M** game/localization/english/acceptance_statuses_l_english.yml
+- **M** game/localization/english/achievements_l_english.yml
+- **M** game/localization/english/agitators_1_l_english.yml
+- **M** game/localization/english/agitators_3_l_english.yml
+- **M** game/localization/english/agitators_4_l_english.yml
+- **M** game/localization/english/alerts_l_english.yml
+- **M** game/localization/english/brazil_1_l_english.yml
+- **M** game/localization/english/brazil_2_l_english.yml
+- **M** game/localization/english/brazil_3_l_english.yml
+- **M** game/localization/english/character/character_traits_l_english.yml
+- **M** game/localization/english/character_focused_l_english.yml
+- **M** game/localization/english/companies_l_english.yml
+- **M** game/localization/english/concepts_l_english.yml
+- **M** game/localization/english/content_101_l_english.yml
+- **M** game/localization/english/content_104_l_english.yml
+- **M** game/localization/english/content_105_l_english.yml
+- **M** game/localization/english/content_106_l_english.yml
+- **M** game/localization/english/content_1_l_english.yml
+- **M** game/localization/english/content_204_l_english.yml
+- **M** game/localization/english/content_2_l_english.yml
+- **M** game/localization/english/content_304_l_english.yml
+- **M** game/localization/english/content_3_l_english.yml
+- **M** game/localization/english/core_l_english.yml
+- **M** game/localization/english/countries_l_english.yml
+- **M** game/localization/english/country_flavor_text_l_english.yml
+- **M** game/localization/english/credits_l_english.yml
+- **M** game/localization/english/cultures_l_english.yml
+- **M** game/localization/english/customized_tooltips_l_english.yml
+- **M** game/localization/english/diplomacy_l_english.yml
+- **M** game/localization/english/diplomatic_treaties_l_english.yml
+- **M** game/localization/english/dlc_l_english.yml
+- **M** game/localization/english/dynamic_state_and_hub_names_l_english.yml
+- **M** game/localization/english/effects_l_english.yml
+- **M** game/localization/english/event_effects_l_english.yml
+- **M** game/localization/english/frontend/common_l_english.yml
+- **M** game/localization/english/frontend/core_l_english.yml
+- **M** game/localization/english/goods_l_english.yml
+- **M** game/localization/english/government_l_english.yml
+- **M** game/localization/english/historical/military_formations_names_l_english.yml
+- **M** game/localization/english/hub_names_l_english.yml
+- **M** game/localization/english/interest_groups/interest_group_traits_l_english.yml
+- **M** game/localization/english/interest_groups/interest_groups_l_english.yml
+- **M** game/localization/english/interfaces_l_english.yml
+- **M** game/localization/english/ip2_02_l_english.yml
+- **M** game/localization/english/ip2_03_l_english.yml
+- **M** game/localization/english/ip2_04_l_english.yml
+- **A** game/localization/english/ip3_02_l_english.yml
+- **A** game/localization/english/ip3_03_l_english.yml
+- **A** game/localization/english/ip3_04_l_english.yml
+- **A** game/localization/english/ip3_05_l_english.yml
+- **A** game/localization/english/ip3_bulgaria_l_english.yml
+- **A** game/localization/english/ip3_montenegro_l_english.yml
+- **M** game/localization/english/laws_l_english.yml
+- **M** game/localization/english/liberty_desire_levels_l_english.yml
+- **M** game/localization/english/lobbies_l_english.yml
+- **M** game/localization/english/map/state_traits_l_english.yml
+- **M** game/localization/english/map/states_l_english.yml
+- **M** game/localization/english/map/strategic_regions_l_english.yml
+- **M** game/localization/english/map_modes_l_english.yml
+- **M** game/localization/english/modifiers_l_english.yml
+- **M** game/localization/english/names_l_english.yml
+- **M** game/localization/english/parties_l_english.yml
+- **M** game/localization/english/political_movements_l_english.yml
+- **M** game/localization/english/production_methods_2_l_english.yml
+- **M** game/localization/english/production_methods_l_english.yml
+- **M** game/localization/english/religion_l_english.yml
+- **M** game/localization/english/scripted_triggers_l_english.yml
+- **M** game/localization/english/settings_l_english.yml
+- **M** game/localization/english/social_hierarchy_l_english.yml
+- **M** game/localization/english/sphere_of_influence_2_l_english.yml
+- **M** game/localization/english/sphere_of_influence_4_l_english.yml
+- **M** game/localization/english/themes_l_english.yml
+- **M** game/localization/english/triggers_l_english.yml
+- **M** game/localization/english/tutorial_l_english.yml
+- **A** game/localization/french/JE_lobby_text_l_french.yml
+- **M** game/localization/french/acceptance_statuses_l_french.yml
+- **M** game/localization/french/achievements_l_french.yml
+- **M** game/localization/french/agitators_1_l_french.yml
+- **M** game/localization/french/agitators_3_l_french.yml
+- **M** game/localization/french/agitators_4_l_french.yml
+- **M** game/localization/french/agitators_6_l_french.yml
+- **M** game/localization/french/alerts_l_french.yml
+- **M** game/localization/french/brazil_1_l_french.yml
+- **M** game/localization/french/brazil_2_l_french.yml
+- **M** game/localization/french/brazil_3_l_french.yml
+- **M** game/localization/french/buildings_l_french.yml
+- **M** game/localization/french/character/character_traits_l_french.yml
+- **M** game/localization/french/character_focused_l_french.yml
+- **M** game/localization/french/companies_l_french.yml
+- **M** game/localization/french/concepts_l_french.yml
+- **M** game/localization/french/content_101_l_french.yml
+- **M** game/localization/french/content_104_l_french.yml
+- **M** game/localization/french/content_105_l_french.yml
+- **M** game/localization/french/content_106_l_french.yml
+- **M** game/localization/french/content_1_l_french.yml
+- **M** game/localization/french/content_204_l_french.yml
+- **M** game/localization/french/content_2_l_french.yml
+- **M** game/localization/french/content_304_l_french.yml
+- **M** game/localization/french/content_3_l_french.yml
+- **M** game/localization/french/core_l_french.yml
+- **M** game/localization/french/countries_l_french.yml
+- **M** game/localization/french/country_flavor_text_l_french.yml
+- **M** game/localization/french/credits_l_french.yml
+- **M** game/localization/french/cultures_l_french.yml
+- **M** game/localization/french/customized_tooltips_l_french.yml
+- **M** game/localization/french/diplomacy_l_french.yml
+- **M** game/localization/french/diplomatic_treaties_l_french.yml
+- **M** game/localization/french/dlc_l_french.yml
+- **M** game/localization/french/dynamic_state_and_hub_names_l_french.yml
+- **M** game/localization/french/effects_l_french.yml
+- **M** game/localization/french/event_effects_l_french.yml
+- **M** game/localization/french/fr_custom_loc_l_french.yml
+- **M** game/localization/french/frontend/core_l_french.yml
+- **M** game/localization/french/goods_l_french.yml
+- **M** game/localization/french/government_l_french.yml
+- **M** game/localization/french/historical/military_formations_names_l_french.yml
+- **M** game/localization/french/hub_names_l_french.yml
+- **M** game/localization/french/interest_groups/interest_group_traits_l_french.yml
+- **M** game/localization/french/interest_groups/interest_groups_l_french.yml
+- **M** game/localization/french/interfaces_l_french.yml
+- **M** game/localization/french/ip2_02_l_french.yml
+- **M** game/localization/french/ip2_03_l_french.yml
+- **M** game/localization/french/ip2_04_l_french.yml
+- **A** game/localization/french/ip3_02_l_french.yml
+- **A** game/localization/french/ip3_03_l_french.yml
+- **A** game/localization/french/ip3_04_l_french.yml
+- **A** game/localization/french/ip3_05_l_french.yml
+- **A** game/localization/french/ip3_bulgaria_l_french.yml
+- **A** game/localization/french/ip3_montenegro_l_french.yml
+- **M** game/localization/french/journal_entries_l_french.yml
+- **M** game/localization/french/laws_l_french.yml
+- **M** game/localization/french/liberty_desire_levels_l_french.yml
+- **M** game/localization/french/lobbies_l_french.yml
+- **M** game/localization/french/map/state_traits_l_french.yml
+- **M** game/localization/french/map/states_l_french.yml
+- **M** game/localization/french/map/strategic_regions_l_french.yml
+- **M** game/localization/french/map_modes_l_french.yml
+- **M** game/localization/french/modifiers_l_french.yml
+- **M** game/localization/french/mp1_04_l_french.yml
+- **M** game/localization/french/names_l_french.yml
+- **M** game/localization/french/parties_l_french.yml
+- **M** game/localization/french/political_movements_l_french.yml
+- **M** game/localization/french/power_blocs_l_french.yml
+- **M** game/localization/french/production_methods_2_l_french.yml
+- **M** game/localization/french/production_methods_l_french.yml
+- **M** game/localization/french/religion_l_french.yml
+- **M** game/localization/french/scripted_triggers_l_french.yml
+- **M** game/localization/french/settings_l_french.yml
+- **M** game/localization/french/social_hierarchy_l_french.yml
+- **M** game/localization/french/sphere_of_influence_4_l_french.yml
+- **M** game/localization/french/themes_l_french.yml
+- **M** game/localization/french/triggers_l_french.yml
+- **M** game/localization/french/tutorial_l_french.yml
+- **A** game/localization/german/JE_lobby_text_l_german.yml
+- **M** game/localization/german/acceptance_statuses_l_german.yml
+- **M** game/localization/german/achievements_l_german.yml
+- **M** game/localization/german/agitators_1_l_german.yml
+- **M** game/localization/german/agitators_3_l_german.yml
+- **M** game/localization/german/agitators_4_l_german.yml
+- **M** game/localization/german/alerts_l_german.yml
+- **M** game/localization/german/brazil_1_l_german.yml
+- **M** game/localization/german/brazil_2_l_german.yml
+- **M** game/localization/german/brazil_3_l_german.yml
+- **M** game/localization/german/character/character_traits_l_german.yml
+- **M** game/localization/german/character_focused_l_german.yml
+- **M** game/localization/german/companies_l_german.yml
+- **M** game/localization/german/concepts_l_german.yml
+- **M** game/localization/german/content_101_l_german.yml
+- **M** game/localization/german/content_104_l_german.yml
+- **M** game/localization/german/content_105_l_german.yml
+- **M** game/localization/german/content_106_l_german.yml
+- **M** game/localization/german/content_1_l_german.yml
+- **M** game/localization/german/content_204_l_german.yml
+- **M** game/localization/german/content_2_l_german.yml
+- **M** game/localization/german/content_304_l_german.yml
+- **M** game/localization/german/content_3_l_german.yml
+- **M** game/localization/german/core_l_german.yml
+- **M** game/localization/german/countries_l_german.yml
+- **M** game/localization/german/country_flavor_text_l_german.yml
+- **M** game/localization/german/credits_l_german.yml
+- **M** game/localization/german/cultures_l_german.yml
+- **M** game/localization/german/customized_tooltips_l_german.yml
+- **M** game/localization/german/de_custom_loc_l_german.yml
+- **M** game/localization/german/diplomacy_l_german.yml
+- **M** game/localization/german/diplomatic_treaties_l_german.yml
+- **M** game/localization/german/dlc_l_german.yml
+- **M** game/localization/german/dynamic_state_and_hub_names_l_german.yml
+- **M** game/localization/german/effects_l_german.yml
+- **M** game/localization/german/event_effects_l_german.yml
+- **M** game/localization/german/frontend/core_l_german.yml
+- **M** game/localization/german/goods_l_german.yml
+- **M** game/localization/german/government_l_german.yml
+- **M** game/localization/german/historical/military_formations_names_l_german.yml
+- **M** game/localization/german/hub_names_l_german.yml
+- **M** game/localization/german/interest_groups/interest_group_traits_l_german.yml
+- **M** game/localization/german/interest_groups/interest_groups_l_german.yml
+- **M** game/localization/german/interfaces_l_german.yml
+- **M** game/localization/german/ip2_02_l_german.yml
+- **M** game/localization/german/ip2_03_l_german.yml
+- **M** game/localization/german/ip2_04_l_german.yml
+- **A** game/localization/german/ip3_02_l_german.yml
+- **A** game/localization/german/ip3_03_l_german.yml
+- **A** game/localization/german/ip3_04_l_german.yml
+- **A** game/localization/german/ip3_05_l_german.yml
+- **A** game/localization/german/ip3_bulgaria_l_german.yml
+- **A** game/localization/german/ip3_montenegro_l_german.yml
+- **M** game/localization/german/laws_l_german.yml
+- **M** game/localization/german/liberty_desire_levels_l_german.yml
+- **M** game/localization/german/lobbies_l_german.yml
+- **M** game/localization/german/map/state_traits_l_german.yml
+- **M** game/localization/german/map/states_l_german.yml
+- **M** game/localization/german/map/strategic_regions_l_german.yml
+- **M** game/localization/german/map_modes_l_german.yml
+- **M** game/localization/german/modifiers_l_german.yml
+- **M** game/localization/german/names_l_german.yml
+- **M** game/localization/german/parties_l_german.yml
+- **M** game/localization/german/political_movements_l_german.yml
+- **M** game/localization/german/production_methods_2_l_german.yml
+- **M** game/localization/german/production_methods_l_german.yml
+- **M** game/localization/german/religion_l_german.yml
+- **M** game/localization/german/scripted_triggers_l_german.yml
+- **M** game/localization/german/settings_l_german.yml
+- **M** game/localization/german/social_hierarchy_l_german.yml
+- **M** game/localization/german/sphere_of_influence_4_l_german.yml
+- **M** game/localization/german/themes_l_german.yml
+- **M** game/localization/german/triggers_l_german.yml
+- **M** game/localization/german/tutorial_l_german.yml
+- **A** game/localization/japanese/JE_lobby_text_l_japanese.yml
+- **M** game/localization/japanese/acceptance_statuses_l_japanese.yml
+- **M** game/localization/japanese/achievements_l_japanese.yml
+- **M** game/localization/japanese/agitators_1_l_japanese.yml
+- **M** game/localization/japanese/agitators_3_l_japanese.yml
+- **M** game/localization/japanese/agitators_4_l_japanese.yml
+- **M** game/localization/japanese/alerts_l_japanese.yml
+- **M** game/localization/japanese/brazil_1_l_japanese.yml
+- **M** game/localization/japanese/brazil_2_l_japanese.yml
+- **M** game/localization/japanese/brazil_3_l_japanese.yml
+- **M** game/localization/japanese/character/character_traits_l_japanese.yml
+- **M** game/localization/japanese/character_focused_l_japanese.yml
+- **M** game/localization/japanese/companies_l_japanese.yml
+- **M** game/localization/japanese/concepts_l_japanese.yml
+- **M** game/localization/japanese/content_101_l_japanese.yml
+- **M** game/localization/japanese/content_104_l_japanese.yml
+- **M** game/localization/japanese/content_105_l_japanese.yml
+- **M** game/localization/japanese/content_106_l_japanese.yml
+- **M** game/localization/japanese/content_1_l_japanese.yml
+- **M** game/localization/japanese/content_204_l_japanese.yml
+- **M** game/localization/japanese/content_2_l_japanese.yml
+- **M** game/localization/japanese/content_304_l_japanese.yml
+- **M** game/localization/japanese/content_3_l_japanese.yml
+- **M** game/localization/japanese/core_l_japanese.yml
+- **M** game/localization/japanese/countries_l_japanese.yml
+- **M** game/localization/japanese/country_flavor_text_l_japanese.yml
+- **M** game/localization/japanese/credits_l_japanese.yml
+- **M** game/localization/japanese/cultures_l_japanese.yml
+- **M** game/localization/japanese/customized_tooltips_l_japanese.yml
+- **M** game/localization/japanese/diplomacy_l_japanese.yml
+- **M** game/localization/japanese/diplomatic_treaties_l_japanese.yml
+- **M** game/localization/japanese/dlc_l_japanese.yml
+- **M** game/localization/japanese/dynamic_state_and_hub_names_l_japanese.yml
+- **M** game/localization/japanese/effects_l_japanese.yml
+- **M** game/localization/japanese/event_effects_l_japanese.yml
+- **M** game/localization/japanese/frontend/core_l_japanese.yml
+- **M** game/localization/japanese/goods_l_japanese.yml
+- **M** game/localization/japanese/government_l_japanese.yml
+- **M** game/localization/japanese/historical/military_formations_names_l_japanese.yml
+- **M** game/localization/japanese/hub_names_l_japanese.yml
+- **M** game/localization/japanese/interest_groups/interest_group_traits_l_japanese.yml
+- **M** game/localization/japanese/interest_groups/interest_groups_l_japanese.yml
+- **M** game/localization/japanese/interfaces_l_japanese.yml
+- **M** game/localization/japanese/ip2_02_l_japanese.yml
+- **M** game/localization/japanese/ip2_03_l_japanese.yml
+- **M** game/localization/japanese/ip2_04_l_japanese.yml
+- **A** game/localization/japanese/ip3_02_l_japanese.yml
+- **A** game/localization/japanese/ip3_03_l_japanese.yml
+- **A** game/localization/japanese/ip3_04_l_japanese.yml
+- **A** game/localization/japanese/ip3_05_l_japanese.yml
+- **A** game/localization/japanese/ip3_bulgaria_l_japanese.yml
+- **A** game/localization/japanese/ip3_montenegro_l_japanese.yml
+- **M** game/localization/japanese/laws_l_japanese.yml
+- **M** game/localization/japanese/liberty_desire_levels_l_japanese.yml
+- **M** game/localization/japanese/lobbies_l_japanese.yml
+- **M** game/localization/japanese/map/state_traits_l_japanese.yml
+- **M** game/localization/japanese/map/states_l_japanese.yml
+- **M** game/localization/japanese/map/strategic_regions_l_japanese.yml
+- **M** game/localization/japanese/map_modes_l_japanese.yml
+- **M** game/localization/japanese/modifiers_l_japanese.yml
+- **M** game/localization/japanese/names_l_japanese.yml
+- **M** game/localization/japanese/parties_l_japanese.yml
+- **M** game/localization/japanese/political_movements_l_japanese.yml
+- **M** game/localization/japanese/production_methods_2_l_japanese.yml
+- **M** game/localization/japanese/production_methods_l_japanese.yml
+- **M** game/localization/japanese/religion_l_japanese.yml
+- **M** game/localization/japanese/scripted_triggers_l_japanese.yml
+- **M** game/localization/japanese/settings_l_japanese.yml
+- **M** game/localization/japanese/social_hierarchy_l_japanese.yml
+- **M** game/localization/japanese/sphere_of_influence_4_l_japanese.yml
+- **M** game/localization/japanese/themes_l_japanese.yml
+- **M** game/localization/japanese/triggers_l_japanese.yml
+- **M** game/localization/japanese/tutorial_l_japanese.yml
+- **A** game/localization/korean/JE_lobby_text_l_korean.yml
+- **M** game/localization/korean/acceptance_statuses_l_korean.yml
+- **M** game/localization/korean/achievements_l_korean.yml
+- **M** game/localization/korean/agitators_1_l_korean.yml
+- **M** game/localization/korean/agitators_3_l_korean.yml
+- **M** game/localization/korean/agitators_4_l_korean.yml
+- **M** game/localization/korean/alerts_l_korean.yml
+- **M** game/localization/korean/brazil_1_l_korean.yml
+- **M** game/localization/korean/brazil_2_l_korean.yml
+- **M** game/localization/korean/brazil_3_l_korean.yml
+- **M** game/localization/korean/character/character_traits_l_korean.yml
+- **M** game/localization/korean/character_focused_l_korean.yml
+- **M** game/localization/korean/companies_l_korean.yml
+- **M** game/localization/korean/concepts_l_korean.yml
+- **M** game/localization/korean/content_101_l_korean.yml
+- **M** game/localization/korean/content_104_l_korean.yml
+- **M** game/localization/korean/content_105_l_korean.yml
+- **M** game/localization/korean/content_106_l_korean.yml
+- **M** game/localization/korean/content_1_l_korean.yml
+- **M** game/localization/korean/content_204_l_korean.yml
+- **M** game/localization/korean/content_2_l_korean.yml
+- **M** game/localization/korean/content_304_l_korean.yml
+- **M** game/localization/korean/content_3_l_korean.yml
+- **M** game/localization/korean/core_l_korean.yml
+- **M** game/localization/korean/countries_l_korean.yml
+- **M** game/localization/korean/country_flavor_text_l_korean.yml
+- **M** game/localization/korean/credits_l_korean.yml
+- **M** game/localization/korean/cultures_l_korean.yml
+- **M** game/localization/korean/customized_tooltips_l_korean.yml
+- **M** game/localization/korean/diplomacy_l_korean.yml
+- **M** game/localization/korean/diplomatic_treaties_l_korean.yml
+- **M** game/localization/korean/dlc_l_korean.yml
+- **M** game/localization/korean/dynamic_state_and_hub_names_l_korean.yml
+- **M** game/localization/korean/effects_l_korean.yml
+- **M** game/localization/korean/event_effects_l_korean.yml
+- **M** game/localization/korean/frontend/core_l_korean.yml
+- **M** game/localization/korean/goods_l_korean.yml
+- **M** game/localization/korean/government_l_korean.yml
+- **M** game/localization/korean/historical/military_formations_names_l_korean.yml
+- **M** game/localization/korean/hub_names_l_korean.yml
+- **M** game/localization/korean/interest_groups/interest_group_traits_l_korean.yml
+- **M** game/localization/korean/interest_groups/interest_groups_l_korean.yml
+- **M** game/localization/korean/interfaces_l_korean.yml
+- **M** game/localization/korean/ip2_02_l_korean.yml
+- **M** game/localization/korean/ip2_03_l_korean.yml
+- **M** game/localization/korean/ip2_04_l_korean.yml
+- **A** game/localization/korean/ip3_02_l_korean.yml
+- **A** game/localization/korean/ip3_03_l_korean.yml
+- **A** game/localization/korean/ip3_04_l_korean.yml
+- **A** game/localization/korean/ip3_05_l_korean.yml
+- **A** game/localization/korean/ip3_bulgaria_l_korean.yml
+- **A** game/localization/korean/ip3_montenegro_l_korean.yml
+- **M** game/localization/korean/laws_l_korean.yml
+- **M** game/localization/korean/liberty_desire_levels_l_korean.yml
+- **M** game/localization/korean/lobbies_l_korean.yml
+- **M** game/localization/korean/map/state_traits_l_korean.yml
+- **M** game/localization/korean/map/states_l_korean.yml
+- **M** game/localization/korean/map/strategic_regions_l_korean.yml
+- **M** game/localization/korean/map_modes_l_korean.yml
+- **M** game/localization/korean/modifiers_l_korean.yml
+- **M** game/localization/korean/names_l_korean.yml
+- **M** game/localization/korean/parties_l_korean.yml
+- **M** game/localization/korean/political_movements_l_korean.yml
+- **M** game/localization/korean/production_methods_2_l_korean.yml
+- **M** game/localization/korean/production_methods_l_korean.yml
+- **M** game/localization/korean/religion_l_korean.yml
+- **M** game/localization/korean/scripted_triggers_l_korean.yml
+- **M** game/localization/korean/settings_l_korean.yml
+- **M** game/localization/korean/social_hierarchy_l_korean.yml
+- **M** game/localization/korean/sphere_of_influence_4_l_korean.yml
+- **M** game/localization/korean/themes_l_korean.yml
+- **M** game/localization/korean/triggers_l_korean.yml
+- **M** game/localization/korean/tutorial_l_korean.yml
+- **A** game/localization/polish/JE_lobby_text_l_polish.yml
+- **M** game/localization/polish/acceptance_statuses_l_polish.yml
+- **M** game/localization/polish/achievements_l_polish.yml
+- **M** game/localization/polish/acw_text_l_polish.yml
+- **M** game/localization/polish/agitators_1_l_polish.yml
+- **M** game/localization/polish/agitators_3_l_polish.yml
+- **M** game/localization/polish/agitators_4_l_polish.yml
+- **M** game/localization/polish/alerts_l_polish.yml
+- **M** game/localization/polish/brazil_1_l_polish.yml
+- **M** game/localization/polish/brazil_2_l_polish.yml
+- **M** game/localization/polish/brazil_3_l_polish.yml
+- **M** game/localization/polish/character/character_traits_l_polish.yml
+- **M** game/localization/polish/character_focused_l_polish.yml
+- **M** game/localization/polish/character_interactions_l_polish.yml
+- **M** game/localization/polish/companies_l_polish.yml
+- **M** game/localization/polish/concepts_l_polish.yml
+- **M** game/localization/polish/content_101_l_polish.yml
+- **M** game/localization/polish/content_104_l_polish.yml
+- **M** game/localization/polish/content_105_l_polish.yml
+- **M** game/localization/polish/content_106_l_polish.yml
+- **M** game/localization/polish/content_1_l_polish.yml
+- **M** game/localization/polish/content_204_l_polish.yml
+- **M** game/localization/polish/content_2_l_polish.yml
+- **M** game/localization/polish/content_304_l_polish.yml
+- **M** game/localization/polish/content_3_l_polish.yml
+- **M** game/localization/polish/core_l_polish.yml
+- **M** game/localization/polish/countries_l_polish.yml
+- **M** game/localization/polish/country_flavor_text_l_polish.yml
+- **M** game/localization/polish/credits_l_polish.yml
+- **M** game/localization/polish/cultures_l_polish.yml
+- **M** game/localization/polish/customized_tooltips_l_polish.yml
+- **M** game/localization/polish/diplomacy_l_polish.yml
+- **M** game/localization/polish/diplomatic_treaties_l_polish.yml
+- **M** game/localization/polish/dlc_l_polish.yml
+- **M** game/localization/polish/dynamic_state_and_hub_names_l_polish.yml
+- **M** game/localization/polish/effects_l_polish.yml
+- **M** game/localization/polish/event_effects_l_polish.yml
+- **M** game/localization/polish/frontend/core_l_polish.yml
+- **M** game/localization/polish/goods_l_polish.yml
+- **M** game/localization/polish/government_l_polish.yml
+- **M** game/localization/polish/historical/military_formations_names_l_polish.yml
+- **M** game/localization/polish/hub_names_l_polish.yml
+- **M** game/localization/polish/interest_groups/interest_group_traits_l_polish.yml
+- **M** game/localization/polish/interest_groups/interest_groups_l_polish.yml
+- **M** game/localization/polish/interfaces_l_polish.yml
+- **M** game/localization/polish/ip2_02_l_polish.yml
+- **M** game/localization/polish/ip2_03_l_polish.yml
+- **M** game/localization/polish/ip2_04_l_polish.yml
+- **A** game/localization/polish/ip3_02_l_polish.yml
+- **A** game/localization/polish/ip3_03_l_polish.yml
+- **A** game/localization/polish/ip3_04_l_polish.yml
+- **A** game/localization/polish/ip3_05_l_polish.yml
+- **A** game/localization/polish/ip3_bulgaria_l_polish.yml
+- **A** game/localization/polish/ip3_montenegro_l_polish.yml
+- **M** game/localization/polish/laws_l_polish.yml
+- **M** game/localization/polish/liberty_desire_levels_l_polish.yml
+- **M** game/localization/polish/lobbies_l_polish.yml
+- **M** game/localization/polish/map/state_traits_l_polish.yml
+- **M** game/localization/polish/map/states_l_polish.yml
+- **M** game/localization/polish/map/strategic_regions_l_polish.yml
+- **M** game/localization/polish/map_modes_l_polish.yml
+- **M** game/localization/polish/modifiers_l_polish.yml
+- **M** game/localization/polish/names_l_polish.yml
+- **M** game/localization/polish/parties_l_polish.yml
+- **M** game/localization/polish/political_movements_l_polish.yml
+- **M** game/localization/polish/production_methods_2_l_polish.yml
+- **M** game/localization/polish/production_methods_l_polish.yml
+- **M** game/localization/polish/religion_l_polish.yml
+- **M** game/localization/polish/scripted_triggers_l_polish.yml
+- **M** game/localization/polish/settings_l_polish.yml
+- **M** game/localization/polish/social_hierarchy_l_polish.yml
+- **M** game/localization/polish/sphere_of_influence_4_l_polish.yml
+- **M** game/localization/polish/themes_l_polish.yml
+- **M** game/localization/polish/triggers_l_polish.yml
+- **M** game/localization/polish/tutorial_l_polish.yml
+- **A** game/localization/russian/JE_lobby_text_l_russian.yml
+- **M** game/localization/russian/acceptance_statuses_l_russian.yml
+- **M** game/localization/russian/achievements_l_russian.yml
+- **M** game/localization/russian/agitators_1_l_russian.yml
+- **M** game/localization/russian/agitators_3_l_russian.yml
+- **M** game/localization/russian/agitators_4_l_russian.yml
+- **M** game/localization/russian/alerts_l_russian.yml
+- **M** game/localization/russian/brazil_1_l_russian.yml
+- **M** game/localization/russian/brazil_2_l_russian.yml
+- **M** game/localization/russian/brazil_3_l_russian.yml
+- **M** game/localization/russian/buildings_l_russian.yml
+- **M** game/localization/russian/character/character_traits_l_russian.yml
+- **M** game/localization/russian/character_focused_l_russian.yml
+- **M** game/localization/russian/companies_l_russian.yml
+- **M** game/localization/russian/concepts_l_russian.yml
+- **M** game/localization/russian/content_101_l_russian.yml
+- **M** game/localization/russian/content_104_l_russian.yml
+- **M** game/localization/russian/content_105_l_russian.yml
+- **M** game/localization/russian/content_106_l_russian.yml
+- **M** game/localization/russian/content_1_l_russian.yml
+- **M** game/localization/russian/content_204_l_russian.yml
+- **M** game/localization/russian/content_2_l_russian.yml
+- **M** game/localization/russian/content_304_l_russian.yml
+- **M** game/localization/russian/content_3_l_russian.yml
+- **M** game/localization/russian/core_l_russian.yml
+- **M** game/localization/russian/countries_l_russian.yml
+- **M** game/localization/russian/country_flavor_text_l_russian.yml
+- **M** game/localization/russian/credits_l_russian.yml
+- **M** game/localization/russian/cultures_l_russian.yml
+- **M** game/localization/russian/customized_tooltips_l_russian.yml
+- **M** game/localization/russian/diplomacy_l_russian.yml
+- **M** game/localization/russian/diplomatic_treaties_l_russian.yml
+- **M** game/localization/russian/dlc_l_russian.yml
+- **M** game/localization/russian/dynamic_state_and_hub_names_l_russian.yml
+- **M** game/localization/russian/effects_l_russian.yml
+- **M** game/localization/russian/event_effects_l_russian.yml
+- **M** game/localization/russian/events_l_russian.yml
+- **M** game/localization/russian/frontend/core_l_russian.yml
+- **M** game/localization/russian/goods_l_russian.yml
+- **M** game/localization/russian/government_l_russian.yml
+- **M** game/localization/russian/historical/military_formations_names_l_russian.yml
+- **M** game/localization/russian/hub_names_l_russian.yml
+- **M** game/localization/russian/interest_groups/interest_group_traits_l_russian.yml
+- **M** game/localization/russian/interest_groups/interest_groups_l_russian.yml
+- **M** game/localization/russian/interfaces_l_russian.yml
+- **M** game/localization/russian/ip2_02_l_russian.yml
+- **M** game/localization/russian/ip2_03_l_russian.yml
+- **M** game/localization/russian/ip2_04_l_russian.yml
+- **A** game/localization/russian/ip3_02_l_russian.yml
+- **A** game/localization/russian/ip3_03_l_russian.yml
+- **A** game/localization/russian/ip3_04_l_russian.yml
+- **A** game/localization/russian/ip3_05_l_russian.yml
+- **A** game/localization/russian/ip3_bulgaria_l_russian.yml
+- **A** game/localization/russian/ip3_montenegro_l_russian.yml
+- **M** game/localization/russian/laws_l_russian.yml
+- **M** game/localization/russian/liberty_desire_levels_l_russian.yml
+- **M** game/localization/russian/lobbies_l_russian.yml
+- **M** game/localization/russian/map/state_traits_l_russian.yml
+- **M** game/localization/russian/map/states_l_russian.yml
+- **M** game/localization/russian/map/strategic_regions_l_russian.yml
+- **M** game/localization/russian/map_modes_l_russian.yml
+- **M** game/localization/russian/modifiers_l_russian.yml
+- **M** game/localization/russian/names_l_russian.yml
+- **M** game/localization/russian/parties_l_russian.yml
+- **M** game/localization/russian/political_movements_l_russian.yml
+- **M** game/localization/russian/production_methods_2_l_russian.yml
+- **M** game/localization/russian/production_methods_l_russian.yml
+- **M** game/localization/russian/religion_l_russian.yml
+- **M** game/localization/russian/ru_custom_loc_l_russian.yml
+- **M** game/localization/russian/scripted_triggers_l_russian.yml
+- **M** game/localization/russian/settings_l_russian.yml
+- **M** game/localization/russian/social_hierarchy_l_russian.yml
+- **M** game/localization/russian/sphere_of_influence_4_l_russian.yml
+- **M** game/localization/russian/themes_l_russian.yml
+- **M** game/localization/russian/triggers_l_russian.yml
+- **M** game/localization/russian/tutorial_l_russian.yml
+- **A** game/localization/simp_chinese/JE_lobby_text_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/acceptance_statuses_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/achievements_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/agitators_1_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/agitators_3_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/agitators_4_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/alerts_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/brazil_1_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/brazil_2_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/brazil_3_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/character/character_traits_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/character_focused_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/companies_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/concepts_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/content_101_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/content_104_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/content_105_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/content_106_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/content_1_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/content_204_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/content_2_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/content_304_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/content_3_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/content_4_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/core_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/countries_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/country_flavor_text_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/credits_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/cultures_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/customized_tooltips_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/diplomacy_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/diplomatic_treaties_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/dlc_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/dynamic_state_and_hub_names_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/effects_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/event_effects_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/frontend/core_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/goods_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/government_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/historical/military_formations_names_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/hub_names_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/interest_groups/interest_group_traits_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/interest_groups/interest_groups_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/interfaces_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/ip2_02_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/ip2_03_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/ip2_04_l_simp_chinese.yml
+- **A** game/localization/simp_chinese/ip3_02_l_simp_chinese.yml
+- **A** game/localization/simp_chinese/ip3_03_l_simp_chinese.yml
+- **A** game/localization/simp_chinese/ip3_04_l_simp_chinese.yml
+- **A** game/localization/simp_chinese/ip3_05_l_simp_chinese.yml
+- **A** game/localization/simp_chinese/ip3_bulgaria_l_simp_chinese.yml
+- **A** game/localization/simp_chinese/ip3_montenegro_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/laws_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/liberty_desire_levels_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/lobbies_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/map/state_traits_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/map/states_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/map/strategic_regions_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/map_modes_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/modifiers_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/names_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/parties_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/political_movements_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/production_methods_2_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/production_methods_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/religion_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/scripted_triggers_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/settings_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/social_hierarchy_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/sphere_of_influence_4_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/themes_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/triggers_l_simp_chinese.yml
+- **M** game/localization/simp_chinese/tutorial_l_simp_chinese.yml
+- **A** game/localization/spanish/JE_lobby_text_l_spanish.yml
+- **M** game/localization/spanish/acceptance_statuses_l_spanish.yml
+- **M** game/localization/spanish/achievements_l_spanish.yml
+- **M** game/localization/spanish/agitators_1_l_spanish.yml
+- **M** game/localization/spanish/agitators_3_l_spanish.yml
+- **M** game/localization/spanish/agitators_4_l_spanish.yml
+- **M** game/localization/spanish/alerts_l_spanish.yml
+- **M** game/localization/spanish/brazil_1_l_spanish.yml
+- **M** game/localization/spanish/brazil_2_l_spanish.yml
+- **M** game/localization/spanish/brazil_3_l_spanish.yml
+- **M** game/localization/spanish/character/character_traits_l_spanish.yml
+- **M** game/localization/spanish/character_focused_l_spanish.yml
+- **M** game/localization/spanish/companies_l_spanish.yml
+- **M** game/localization/spanish/concepts_l_spanish.yml
+- **M** game/localization/spanish/content_101_l_spanish.yml
+- **M** game/localization/spanish/content_104_l_spanish.yml
+- **M** game/localization/spanish/content_105_l_spanish.yml
+- **M** game/localization/spanish/content_106_l_spanish.yml
+- **M** game/localization/spanish/content_1_l_spanish.yml
+- **M** game/localization/spanish/content_204_l_spanish.yml
+- **M** game/localization/spanish/content_2_l_spanish.yml
+- **M** game/localization/spanish/content_304_l_spanish.yml
+- **M** game/localization/spanish/content_3_l_spanish.yml
+- **M** game/localization/spanish/content_4_l_spanish.yml
+- **M** game/localization/spanish/core_l_spanish.yml
+- **M** game/localization/spanish/countries_l_spanish.yml
+- **M** game/localization/spanish/country_flavor_text_l_spanish.yml
+- **M** game/localization/spanish/credits_l_spanish.yml
+- **M** game/localization/spanish/cultures_l_spanish.yml
+- **M** game/localization/spanish/customized_tooltips_l_spanish.yml
+- **M** game/localization/spanish/diplomacy_l_spanish.yml
+- **M** game/localization/spanish/diplomatic_treaties_l_spanish.yml
+- **M** game/localization/spanish/dlc_l_spanish.yml
+- **M** game/localization/spanish/dynamic_state_and_hub_names_l_spanish.yml
+- **M** game/localization/spanish/effects_l_spanish.yml
+- **M** game/localization/spanish/es_custom_loc_l_spanish.yml
+- **M** game/localization/spanish/event_effects_l_spanish.yml
+- **M** game/localization/spanish/events_l_spanish.yml
+- **M** game/localization/spanish/frontend/core_l_spanish.yml
+- **M** game/localization/spanish/goods_l_spanish.yml
+- **M** game/localization/spanish/government_l_spanish.yml
+- **M** game/localization/spanish/historical/military_formations_names_l_spanish.yml
+- **M** game/localization/spanish/hub_names_l_spanish.yml
+- **M** game/localization/spanish/interest_groups/interest_group_traits_l_spanish.yml
+- **M** game/localization/spanish/interest_groups/interest_groups_l_spanish.yml
+- **M** game/localization/spanish/interfaces_l_spanish.yml
+- **M** game/localization/spanish/ip2_02_l_spanish.yml
+- **M** game/localization/spanish/ip2_03_l_spanish.yml
+- **M** game/localization/spanish/ip2_04_l_spanish.yml
+- **A** game/localization/spanish/ip3_02_l_spanish.yml
+- **A** game/localization/spanish/ip3_03_l_spanish.yml
+- **A** game/localization/spanish/ip3_04_l_spanish.yml
+- **A** game/localization/spanish/ip3_05_l_spanish.yml
+- **A** game/localization/spanish/ip3_bulgaria_l_spanish.yml
+- **A** game/localization/spanish/ip3_montenegro_l_spanish.yml
+- **M** game/localization/spanish/laws_l_spanish.yml
+- **M** game/localization/spanish/liberty_desire_levels_l_spanish.yml
+- **M** game/localization/spanish/lobbies_l_spanish.yml
+- **M** game/localization/spanish/map/state_traits_l_spanish.yml
+- **M** game/localization/spanish/map/states_l_spanish.yml
+- **M** game/localization/spanish/map/strategic_regions_l_spanish.yml
+- **M** game/localization/spanish/map_modes_l_spanish.yml
+- **M** game/localization/spanish/modifiers_l_spanish.yml
+- **M** game/localization/spanish/names_l_spanish.yml
+- **M** game/localization/spanish/parties_l_spanish.yml
+- **M** game/localization/spanish/political_movements_l_spanish.yml
+- **M** game/localization/spanish/production_methods_2_l_spanish.yml
+- **M** game/localization/spanish/production_methods_l_spanish.yml
+- **M** game/localization/spanish/religion_l_spanish.yml
+- **M** game/localization/spanish/scripted_triggers_l_spanish.yml
+- **M** game/localization/spanish/settings_l_spanish.yml
+- **M** game/localization/spanish/social_hierarchy_l_spanish.yml
+- **M** game/localization/spanish/sphere_of_influence_4_l_spanish.yml
+- **M** game/localization/spanish/themes_l_spanish.yml
+- **M** game/localization/spanish/triggers_l_spanish.yml
+- **M** game/localization/spanish/tutorial_l_spanish.yml
+- **A** game/localization/turkish/JE_lobby_text_l_turkish.yml
+- **M** game/localization/turkish/acceptance_statuses_l_turkish.yml
+- **M** game/localization/turkish/achievements_l_turkish.yml
+- **M** game/localization/turkish/agitators_1_l_turkish.yml
+- **M** game/localization/turkish/agitators_3_l_turkish.yml
+- **M** game/localization/turkish/agitators_4_l_turkish.yml
+- **M** game/localization/turkish/alerts_l_turkish.yml
+- **M** game/localization/turkish/brazil_1_l_turkish.yml
+- **M** game/localization/turkish/brazil_2_l_turkish.yml
+- **M** game/localization/turkish/brazil_3_l_turkish.yml
+- **M** game/localization/turkish/character/character_traits_l_turkish.yml
+- **M** game/localization/turkish/character_focused_l_turkish.yml
+- **M** game/localization/turkish/companies_l_turkish.yml
+- **M** game/localization/turkish/concepts_l_turkish.yml
+- **M** game/localization/turkish/content_101_l_turkish.yml
+- **M** game/localization/turkish/content_104_l_turkish.yml
+- **M** game/localization/turkish/content_105_l_turkish.yml
+- **M** game/localization/turkish/content_106_l_turkish.yml
+- **M** game/localization/turkish/content_1_l_turkish.yml
+- **M** game/localization/turkish/content_204_l_turkish.yml
+- **M** game/localization/turkish/content_2_l_turkish.yml
+- **M** game/localization/turkish/content_304_l_turkish.yml
+- **M** game/localization/turkish/content_3_l_turkish.yml
+- **M** game/localization/turkish/core_l_turkish.yml
+- **M** game/localization/turkish/countries_l_turkish.yml
+- **M** game/localization/turkish/country_flavor_text_l_turkish.yml
+- **M** game/localization/turkish/credits_l_turkish.yml
+- **M** game/localization/turkish/cultures_l_turkish.yml
+- **M** game/localization/turkish/customized_tooltips_l_turkish.yml
+- **M** game/localization/turkish/diplomacy_l_turkish.yml
+- **M** game/localization/turkish/diplomatic_treaties_l_turkish.yml
+- **M** game/localization/turkish/dlc_l_turkish.yml
+- **M** game/localization/turkish/dynamic_state_and_hub_names_l_turkish.yml
+- **M** game/localization/turkish/effects_l_turkish.yml
+- **M** game/localization/turkish/event_effects_l_turkish.yml
+- **M** game/localization/turkish/frontend/core_l_turkish.yml
+- **M** game/localization/turkish/goods_l_turkish.yml
+- **M** game/localization/turkish/government_l_turkish.yml
+- **M** game/localization/turkish/historical/military_formations_names_l_turkish.yml
+- **M** game/localization/turkish/hub_names_l_turkish.yml
+- **M** game/localization/turkish/interest_groups/interest_group_traits_l_turkish.yml
+- **M** game/localization/turkish/interest_groups/interest_groups_l_turkish.yml
+- **M** game/localization/turkish/interfaces_l_turkish.yml
+- **M** game/localization/turkish/ip2_02_l_turkish.yml
+- **M** game/localization/turkish/ip2_03_l_turkish.yml
+- **M** game/localization/turkish/ip2_04_l_turkish.yml
+- **A** game/localization/turkish/ip3_02_l_turkish.yml
+- **A** game/localization/turkish/ip3_03_l_turkish.yml
+- **A** game/localization/turkish/ip3_04_l_turkish.yml
+- **A** game/localization/turkish/ip3_05_l_turkish.yml
+- **A** game/localization/turkish/ip3_bulgaria_l_turkish.yml
+- **A** game/localization/turkish/ip3_montenegro_l_turkish.yml
+- **M** game/localization/turkish/laws_l_turkish.yml
+- **M** game/localization/turkish/liberty_desire_levels_l_turkish.yml
+- **M** game/localization/turkish/lobbies_l_turkish.yml
+- **M** game/localization/turkish/map/state_traits_l_turkish.yml
+- **M** game/localization/turkish/map/states_l_turkish.yml
+- **M** game/localization/turkish/map/strategic_regions_l_turkish.yml
+- **M** game/localization/turkish/map_modes_l_turkish.yml
+- **M** game/localization/turkish/modifiers_l_turkish.yml
+- **M** game/localization/turkish/names_l_turkish.yml
+- **M** game/localization/turkish/parties_l_turkish.yml
+- **M** game/localization/turkish/political_movements_l_turkish.yml
+- **M** game/localization/turkish/production_methods_2_l_turkish.yml
+- **M** game/localization/turkish/production_methods_l_turkish.yml
+- **M** game/localization/turkish/religion_l_turkish.yml
+- **M** game/localization/turkish/scripted_triggers_l_turkish.yml
+- **M** game/localization/turkish/settings_l_turkish.yml
+- **M** game/localization/turkish/social_hierarchy_l_turkish.yml
+- **M** game/localization/turkish/sphere_of_influence_4_l_turkish.yml
+- **M** game/localization/turkish/themes_l_turkish.yml
+- **M** game/localization/turkish/triggers_l_turkish.yml
+- **M** game/localization/turkish/tutorial_l_turkish.yml
+- **M** game/map_data/state_regions/00_west_europe.txt
+- **M** game/map_data/state_regions/01_south_europe.txt
+- **M** game/map_data/state_regions/02_east_europe.txt
+- **M** game/map_data/state_regions/04_subsaharan_africa.txt
+- **M** game/map_data/state_regions/05_north_america.txt
+- **M** game/map_data/state_regions/06_central_america.txt
+- **M** game/map_data/state_regions/07_south_america.txt
+- **M** game/map_data/state_regions/08_middle_east.txt
+- **M** game/map_data/state_regions/09_central_asia.txt
+- **M** game/map_data/state_regions/10_india.txt
+- **M** game/map_data/state_regions/11_east_asia.txt
+- **M** game/map_data/state_regions/12_indonesia.txt
+- **M** game/map_data/state_regions/13_australasia.txt
+- **M** game/map_data/state_regions/15_russia.txt
+- **M** game/notifications/game.txt
+- **M** game/settings_layout.txt
+- **M** game/tools/mapeditor/map_editor_status.txt
+- **A** game/tools/scripted_tests/ip3.txt
