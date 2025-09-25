@@ -1,7 +1,7 @@
 # Victoria 3 Modding Digests
 ![banner.png](image/banner.png)
 
-This repository contains modding digests for Victoria 3 updates including.
+This repository contains modding digests for Victoria 3 updates including documentation and file changes.
 
 ## Existing Digests
 - [1.8.7](1.8.7/discord.md)
