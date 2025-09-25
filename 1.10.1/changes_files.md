@@ -1,0 +1,27 @@
+# Update 1.10.0 - Game File Changes
+**Only the following filetypes are included:** txt, gui, yml, asset
+- **M** caligula_branch.txt
+- **M** caligula_rev.txt
+- **M** clausewitz_branch.txt
+- **M** clausewitz_rev.txt
+- **M** game/common/ai_strategies/01_admin_strategies.txt
+- **M** game/common/character_interactions/00_character_interactions.txt
+- **M** game/common/history/ai/00_strategy.txt
+- **M** game/common/history/global/00_global.txt
+- **M** game/common/journal_entries/00_greek_nationalism.txt
+- **M** game/common/journal_entries/02_south_american_national_identity.txt
+- **M** game/common/journal_entries/05_austria_journal_entries.txt
+- **M** game/common/journal_entries/05_creation_of_yugoslavia.txt
+- **M** game/common/journal_entries/05_metternich.txt
+- **M** game/common/journal_entries/05_montenegro_je.txt
+- **M** game/common/laws/00_citizenship.txt
+- **M** game/common/on_actions/00_code_on_actions.txt
+- **M** game/common/political_movements/02_cultural_movement.txt
+- **M** game/common/scripted_buttons/00_wild_je_buttons.txt
+- **M** game/common/static_modifiers/00_ip3_04_modifiers.txt
+- **M** game/common/static_modifiers/content_1_modifiers.txt
+- **M** game/events/brazil/culture_south_america.txt
+- **M** game/events/greece_events.txt
+- **M** game/gui/military_formation_panel.gui
+- **M** game/localization/english/ai_strategies_l_english.yml
+- **M** game/localization/english/ip3_02_l_english.yml

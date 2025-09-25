@@ -14,3 +14,4 @@ This repository contains modding digests for Victoria 3 updates including.
 - [1.9.7](1.9.7/discord.md)
 - [1.9.8](1.9.8/discord.md)
 - [1.10.0](1.10.0/discord.md)
+- [1.10.1](1.10.1/discord.md)
