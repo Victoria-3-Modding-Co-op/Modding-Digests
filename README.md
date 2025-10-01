@@ -15,4 +15,5 @@ This repository contains modding digests for Victoria 3 updates including docume
 - [1.9.8](1.9.8/discord.md)
 - [1.10.0](1.10.0/discord.md)
 - [1.10.1](1.10.1/discord.md)
-- [1.10.2](1.10.1/discord.md)
+- [1.10.2](1.10.2/discord.md)
+- [1.10.3](1.10.3/discord.md)
