@@ -1,0 +1,84 @@
+# Update 1.10.5 - Game File Changes
+**Only the following filetypes are included:** txt, gui, yml, asset
+- **M** caligula_branch.txt
+- **M** caligula_rev.txt
+- **M** game/common/ai_strategies/00_default_strategy.txt
+- **M** game/common/company_charter_types/00_company_charter_types.txt
+- **M** game/common/country_formation/00_major_formables.txt
+- **M** game/common/customizable_localization/ip3_custom_loc.txt
+- **M** game/common/decisions/austria_decisions.txt
+- **M** game/common/defines/00_ai.txt
+- **M** game/common/defines/00_defines.txt
+- **M** game/common/dynamic_country_names/00_dynamic_country_names.txt
+- **M** game/common/flag_definitions/00_flag_definitions.txt
+- **M** game/common/history/buildings/01_south_europe.txt
+- **M** game/common/history/countries/ars - arsiland.txt
+- **M** game/common/history/countries/ash - ashanti.txt
+- **M** game/common/history/countries/bgi - bagirmi.txt
+- **M** game/common/history/countries/bgm - begemder.txt
+- **M** game/common/history/countries/bor - bornu.txt
+- **M** game/common/history/countries/dfr - darfur.txt
+- **M** game/common/history/countries/ftj - futa jallon.txt
+- **M** game/common/history/countries/ftr - futa toro.txt
+- **M** game/common/history/countries/gjm - gojjam.txt
+- **M** game/common/history/countries/gld - geledi.txt
+- **M** game/common/history/countries/har - harar.txt
+- **M** game/common/history/countries/hau - hausa.txt
+- **M** game/common/history/countries/hdy - hadiya.txt
+- **M** game/common/history/countries/kfa - kaffa.txt
+- **M** game/common/history/countries/kon - kongo.txt
+- **M** game/common/history/countries/krt - kaarta.txt
+- **M** game/common/history/countries/mad - madagascar.txt
+- **M** game/common/history/countries/mbs - mombasa.txt
+- **M** game/common/history/countries/msn - massina.txt
+- **M** game/common/history/countries/nep - nepal.txt
+- **M** game/common/history/countries/qwr - qwara.txt
+- **M** game/common/history/countries/sdm - sidamo.txt
+- **M** game/common/history/countries/sgu - segou.txt
+- **M** game/common/history/countries/shw - shewa.txt
+- **M** game/common/history/countries/sik - sikkim.txt
+- **M** game/common/history/countries/sok - sokoto.txt
+- **M** game/common/history/countries/tgi - tungi.txt
+- **M** game/common/history/countries/tgr - tigray.txt
+- **M** game/common/history/countries/wad - wadai.txt
+- **M** game/common/history/countries/wlg - welega.txt
+- **M** game/common/history/countries/wlt - wolaita.txt
+- **M** game/common/history/countries/wtu - witu.txt
+- **M** game/common/journal_entries/00_romania.txt
+- **M** game/common/journal_entries/05_danubian_federation.txt
+- **M** game/common/laws/00_army_model.txt
+- **M** game/common/laws/00_economic_system.txt
+- **M** game/common/laws/00_land_reform.txt
+- **M** game/common/laws/00_taxation.txt
+- **M** game/common/political_movements/01_religious_movements.txt
+- **M** game/common/political_movements/02_cultural_movement.txt
+- **M** game/common/political_movements/04_national_movements.txt
+- **M** game/common/pop_types/farmers.txt
+- **M** game/common/pop_types/peasants.txt
+- **M** game/common/production_methods/14_companies.txt
+- **M** game/common/script_values/je_values.txt
+- **M** game/common/scripted_buttons/00_scripted_buttons.txt
+- **M** game/common/scripted_buttons/05_hungary_buttons.txt
+- **M** game/common/scripted_effects/00_starting_inventions.txt
+- **M** game/common/scripted_triggers/00_coa_triggers.txt
+- **M** game/common/static_modifiers/agitators_2_modifiers.txt
+- **M** game/common/technology/technologies/30_society.txt
+- **M** game/events/balkans_events/austria_federalism.txt
+- **M** game/events/balkans_events/serbia_events.txt
+- **M** game/events/romania_events.txt
+- **M** game/gfx/portraits/portrait_modifiers/01_clothes.txt
+- **M** game/gfx/portraits/portrait_modifiers/01_headgear.txt
+- **M** game/localization/braz_por/ip3_04_l_braz_por.yml
+- **M** game/localization/english/concepts_l_english.yml
+- **M** game/localization/english/interfaces_l_english.yml
+- **M** game/localization/english/ip3_04_l_english.yml
+- **M** game/localization/french/ip3_04_l_french.yml
+- **M** game/localization/german/ip3_04_l_german.yml
+- **M** game/localization/japanese/ip3_04_l_japanese.yml
+- **M** game/localization/korean/ip3_04_l_korean.yml
+- **M** game/localization/polish/ip3_04_l_polish.yml
+- **M** game/localization/russian/ip3_04_l_russian.yml
+- **M** game/localization/simp_chinese/ip3_04_l_simp_chinese.yml
+- **M** game/localization/spanish/ip3_04_l_spanish.yml
+- **M** game/localization/turkish/ip3_04_l_turkish.yml
+
