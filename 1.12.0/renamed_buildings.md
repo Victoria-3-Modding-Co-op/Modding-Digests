@@ -1,0 +1,22 @@
+# Update 1.12.0 - Renamed Buildings
+This list was provided by the modding communities very own industry plant: **Doodlez**
+- `building_textile_mills` -> `building_textile_mill`
+- `building_tooling_workshops` -> `building_tooling_workshop`
+- `building_paper_mills` -> `building_paper_mill`
+- `building_shipyards` -> `building_shipyard`
+- `building_military_shipyards` -> `building_military_shipyard`
+- `building_chemical_plants` -> `building_chemical_plant`
+- `building_furniture_manufacturies` -> `building_furniture_manufactory`
+- `building_artillery_foundries` -> `building_artillery_foundry`
+- `building_munition_plants` -> `building_munition_plant`
+- `building_synthetics_plants` -> `building_synthetics_plant`
+- `building_steel_mills` -> `building_steel_mill`
+- `building_vineyard_plantation` -> `building_vineyard`
+- `building_gold_fields` -> `building_gold_field`
+- `building_subsistence_farms` -> `building_subsistence_farm`
+- `building_subsistence_orchards` -> `building_subsistence_orchard`
+- `building_subsistence_pastures` -> `building_subsistence_pasture`
+- `building_subsistence_fishing_villages` -> `building_subsistence_fishing_village`
+- `building_subsistence_rice_paddies` -> `building_subsistence_rice_farm`
+- `building_arts_academy` -> `building_art_academy`
+- `building_barracks` -> `building_barrack`
