@@ -48,6 +48,7 @@ Renamed State Regions:
 - Renamed `STATE_GRANADA` to `STATE_UPPER_ANDALUSIA`
 - Renamed `STATE_BADAJOZ` to `STATE_EXTREMADURA`
 - Renamed `STATE_CUBA` to `STATE_WESTERN_CUBA`
+- Renamed `STATE_BALEARES` to `STATE_BALEARIC_ISLANDS`
 
 New State Regions:
 - Added `STATE_MURCIA`
