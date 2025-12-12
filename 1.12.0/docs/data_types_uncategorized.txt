@@ -9442,6 +9442,18 @@ Return type: [unregistered]
 
 -----------------------
 
+concept_radicalized_interest_group
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+concept_radicalized_interest_group_desc
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
 concept_raid_convoys
 Definition type: Global function
 Return type: [unregistered]
@@ -63602,6 +63614,12 @@ Return type: CFixedPoint
 
 -----------------------
 
+State.GetDevastationDailyChangeBreakdown
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 State.GetDevastationEffects
 Definition type: Function
 Return type: CString
@@ -64079,6 +64097,18 @@ Return type: [unregistered]
 State.GetNonPotentialDiploPlays
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+State.GetNumArableLandReservedForSubsistence
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+State.GetNumBaseFreeArableLand
+Definition type: Function
+Return type: int32
 
 -----------------------
 

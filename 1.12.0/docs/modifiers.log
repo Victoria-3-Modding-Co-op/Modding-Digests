@@ -1238,7 +1238,7 @@ state_dependent_wage_mult:
   Description: An increase or decrease in Dependents Income
 state_devastation_decay_mult:
   Mask: state
-  Name: Devastation Decay
+  Name: Devastation Recovery
   Description: A bonus or penalty to the speed at which States recover from Devastation.
 state_disallow_incorporation_bool:
   Mask: state
@@ -6552,100 +6552,100 @@ goods_output_wood_add:
   Description: The amount of wood! Wood produced by buildings
 interest_group_ig_armed_forces_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
 interest_group_ig_armed_forces_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
 interest_group_ig_armed_forces_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
 interest_group_ig_devout_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
 interest_group_ig_devout_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
 interest_group_ig_devout_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
 interest_group_ig_industrialists_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
 interest_group_ig_industrialists_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
 interest_group_ig_industrialists_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
 interest_group_ig_intelligentsia_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
 interest_group_ig_intelligentsia_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
 interest_group_ig_intelligentsia_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
 interest_group_ig_landowners_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
 interest_group_ig_landowners_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
 interest_group_ig_landowners_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
 interest_group_ig_petty_bourgeoisie_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
 interest_group_ig_petty_bourgeoisie_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
 interest_group_ig_petty_bourgeoisie_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
 interest_group_ig_rural_folk_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
 interest_group_ig_rural_folk_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
 interest_group_ig_rural_folk_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
 interest_group_ig_trade_unions_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
 interest_group_ig_trade_unions_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
 interest_group_ig_trade_unions_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
+  Name: Politically Unaligned () Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
 power_bloc_invite_acceptance_great_power_add:
   Mask: power_bloc
   Name: Great Power Power Bloc Invitation Acceptance Chance

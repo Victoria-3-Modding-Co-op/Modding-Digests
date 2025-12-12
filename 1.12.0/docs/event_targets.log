@@ -951,6 +951,13 @@ army_size_including_conscripts > c:FRA.army_size_including_conscripts
 Input Scopes: country
 Output Scopes: value
 
+### army_size_including_raised_conscripts
+Number of battalions of scope country, including currently raised conscripts but excluding unraised conscripts.
+army_size_including_raised_conscripts >= 20
+army_size_including_raised_conscripts > c:FRA.army_size_including_raised_conscripts
+Input Scopes: country
+Output Scopes: value
+
 ### building_levels
 Get the total number of non-subsistence building levels of the scoped country
 Input Scopes: country
@@ -1633,10 +1640,6 @@ Requires Data: yes
 Input Scopes: front
 Output Scopes: value
 
-### target
-Scope to the target of the object
-Input Scopes: diplomatic_play, diplomatic_catalyst, political_lobby, journal_entry
-
 ### amended_treaty
 Scope to the treaty the scoped treaty is amending
 Input Scopes: treaty_options, treaty
@@ -1651,6 +1654,10 @@ Output Scopes: value
 Get the current remaining binding period in days for the scoped treaty
 Input Scopes: treaty_options, treaty
 Output Scopes: value
+
+### target
+Scope to the target of the object
+Input Scopes: diplomatic_play, diplomatic_catalyst, political_lobby, journal_entry
 
 
 --------------------
@@ -1769,6 +1776,7 @@ proposing_country
 treaty
 is_treaty_active
 is_renegotiation
+bad_faith_factor
 treaty_options
 binding_period
 article

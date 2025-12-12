@@ -92,7 +92,6 @@ This list was provided by the modding communities very own industry plant: **Doo
 - `common/religions`
 - `common/social_classes`
 - `common/social_hierarchies`
-- `common/map_data/state_regions`
 - `common/state_traits`
 - `common/strategic_regions`
 - `common/subject_types`
