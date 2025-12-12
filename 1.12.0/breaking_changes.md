@@ -39,6 +39,23 @@ For example: `building_artillery_foundries` -> `building_artillery_foundry`
 
 The full list of renamed buildings can be found [here](renamed_buildings.md).
 
+## Renamed and added State Regions
+Renamed State Regions:
+- Renamed `STATE_TOLEDO` to `STATE_NEW_CASTILE`
+- Renamed `STATE_CASTILE` to `STATE_OLD_CASTILE`
+- Renamed `STATE_NAVARRA` to `STATE_BASQUE_COUNTRY`
+- Renamed `STATE_ANDALUSIA` to `STATE_LOWER_ANDALUSIA`
+- Renamed `STATE_GRANADA` to `STATE_UPPER_ANDALUSIA`
+- Renamed `STATE_BADAJOZ` to `STATE_EXTREMADURA`
+- Renamed `STATE_CUBA` to `STATE_WESTERN_CUBA`
+
+New State Regions:
+- Added `STATE_MURCIA`
+- Added `STATE_LEON`
+- Added `STATE_ENTRE_DOURO_E_MINHO`
+- Added `STATE_EASTERN_CUBA`
+- Added `STATE_CENTRAL_CUBA`
+
 ## Map Data Resources
 Resources in the map data definitions are now not bound to building groups but buildings:
 ```

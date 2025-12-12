@@ -19,6 +19,7 @@ The breaking changes include:
 - Overwrite Logic
 - Journal Entry Group Context
 - Renamed Buildings and Production Methods
+- Renamed and added State Regions
 - Map Data Resources
 - Ordered Iterators
 
