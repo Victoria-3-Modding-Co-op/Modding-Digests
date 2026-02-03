@@ -1,0 +1,23 @@
+# Update 1.12.4 - Game File Changes
+**Only the following filetypes are included:** txt, gui, yml, asset
+- **M** caligula_branch.txt
+- **M** caligula_rev.txt
+- **M** clausewitz_branch.txt
+- **M** game/common/customizable_localization/99_ru_custom_loc.txt
+- **M** game/common/journal_entries/06_lusosphere.txt
+- **M** game/common/script_values/ip4_je_values.txt
+- **M** game/common/war_goal_types/00_annex_country.txt
+- **M** game/common/war_goal_types/01_ban_slavery.txt
+- **M** game/common/war_goal_types/03_conquer_state.txt
+- **M** game/common/war_goal_types/06_force_nationalization.txt
+- **M** game/common/war_goal_types/07_foreign_investment_rights.txt
+- **M** game/common/war_goal_types/10_independence.txt
+- **M** game/common/war_goal_types/15_make_dominion.txt
+- **M** game/common/war_goal_types/16_make_protectorate.txt
+- **M** game/common/war_goal_types/17_make_tributary.txt
+- **M** game/common/war_goal_types/18_open_market.txt
+- **M** game/common/war_goal_types/19_reduce_autonomy.txt
+- **M** game/common/war_goal_types/20_regime_change.txt
+- **M** game/common/war_goal_types/21_return_state.txt
+- **M** game/common/war_goal_types/25_take_treaty_port.txt
+- **M** game/common/war_goal_types/26_transfer_subject.txt
