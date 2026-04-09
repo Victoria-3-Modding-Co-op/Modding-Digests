@@ -1,0 +1,730 @@
+Scope Types:
+
+none:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: none
+Stores Variables: yes
+
+value:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: value
+Stores Variables: yes
+
+boolean:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: boolean
+Stores Variables: yes
+
+flag:
+Evaluate Triggers: no
+Execute Effects: no
+Change Scopes: no
+Save Token: flag
+Stores Variables: yes
+
+color:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: color
+Stores Variables: yes
+
+country:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: ctry
+Stores Variables: yes
+
+battle:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: battle
+Stores Variables: yes
+
+battle_side:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: battle_side
+Stores Variables: yes
+
+building:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: build
+Stores Variables: yes
+
+building_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: building_type
+Stores Variables: yes
+
+building_group:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: building_group
+Stores Variables: yes
+
+character:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: com
+Stores Variables: yes
+
+character_role:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: character_role
+Stores Variables: yes
+
+civil_war:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: civil_war
+Stores Variables: yes
+
+new_combat_unit:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: new_combat_unit
+Stores Variables: yes
+
+combat_unit_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: combat_unit_type
+Stores Variables: yes
+
+commander_order_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: commander_order_type
+Stores Variables: yes
+
+company:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: company
+Stores Variables: yes
+
+company_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: company_type
+Stores Variables: yes
+
+country_creation:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: country_creation
+Stores Variables: yes
+
+country_definition:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: country_definition
+Stores Variables: yes
+
+country_formation:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: country_formation
+Stores Variables: yes
+
+cultural_community:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: cultural_community
+Stores Variables: yes
+
+culture:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: cul
+Stores Variables: yes
+
+decree:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: decree
+Stores Variables: yes
+
+diplomatic_action:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: da
+Stores Variables: yes
+
+diplomatic_demand:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: diplomatic_demand
+Stores Variables: yes
+
+diplomatic_pact:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: pact
+Stores Variables: yes
+
+diplomatic_play:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: dp
+Stores Variables: yes
+
+diplomatic_play_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: dpt
+Stores Variables: yes
+
+diplomatic_relations:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: dr
+Stores Variables: yes
+
+diplomatic_catalyst:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: diplomatic_catalyst
+Stores Variables: yes
+
+diplomatic_catalyst_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: diplomatic_catalyst_type
+Stores Variables: yes
+
+diplomatic_catalyst_category:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: diplomatic_catalyst_category
+Stores Variables: yes
+
+political_lobby:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: political_lobby
+Stores Variables: yes
+
+political_lobby_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: political_lobby_type
+Stores Variables: yes
+
+political_lobby_appeasement:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: political_lobby_appeasement
+Stores Variables: yes
+
+front:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: front
+Stores Variables: yes
+
+goods:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: goods
+Stores Variables: yes
+
+hq:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: hq
+Stores Variables: yes
+
+ideology:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: ideology
+Stores Variables: yes
+
+institution:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: institution
+Stores Variables: yes
+
+institution_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: institution_type
+Stores Variables: yes
+
+interest_marker:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: im
+Stores Variables: yes
+
+interest_group:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: ig
+Stores Variables: yes
+
+interest_group_trait:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: ig_t
+Stores Variables: yes
+
+interest_group_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: ig_type
+Stores Variables: yes
+
+interest_tier_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: interest_tier_type
+Stores Variables: yes
+
+journal_entry:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: journal_entry
+Stores Variables: yes
+
+law:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: pol
+Stores Variables: yes
+
+law_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: law_type
+Stores Variables: yes
+
+market:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: market
+Stores Variables: yes
+
+market_goods:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: market_goods
+Stores Variables: yes
+
+military_formation:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: military_formation
+Stores Variables: yes
+
+naval_battle:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: naval_battle
+Stores Variables: yes
+
+naval_mission:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: naval_mission
+Stores Variables: yes
+
+naval_mission_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: naval_mission_type
+Stores Variables: yes
+
+invasion:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: invasion
+Stores Variables: yes
+
+objective:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: objective
+Stores Variables: yes
+
+party:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: party
+Stores Variables: yes
+
+political_movement:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: political_movement
+Stores Variables: yes
+
+political_movement_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: political_movement_type
+Stores Variables: yes
+
+political_movement_category:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: political_movement_category
+Stores Variables: yes
+
+pop:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: pop
+Stores Variables: yes
+
+pop_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: pop_type
+Stores Variables: yes
+
+power_bloc:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: power_bloc
+Stores Variables: yes
+
+power_bloc_identity:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: power_bloc_identity
+Stores Variables: yes
+
+power_bloc_principle:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: power_bloc_principle
+Stores Variables: yes
+
+province:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: prov
+Stores Variables: yes
+
+religion:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: rel
+Stores Variables: yes
+
+ship:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: ship
+Stores Variables: yes
+
+ship_group:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: ship_group
+Stores Variables: yes
+
+ship_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: ship_type
+Stores Variables: yes
+
+shipping_lanes:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: shipping_lanes
+Stores Variables: yes
+
+state:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: state
+Stores Variables: yes
+
+state_goods:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: state_goods
+Stores Variables: yes
+
+state_region:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: st_r
+Stores Variables: yes
+
+state_trait:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: state_trait
+Stores Variables: yes
+
+strait:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: strait
+Stores Variables: yes
+
+strategic_region:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: sr
+Stores Variables: yes
+
+sway:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: sway
+Stores Variables: yes
+
+technology:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: technology
+Stores Variables: yes
+
+technology_status:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: technology_status
+Stores Variables: yes
+
+theater:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: theater
+Stores Variables: yes
+
+travel_connection:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: travel_connection
+Stores Variables: yes
+
+travel_connection_definition:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: travel_connection_definition
+Stores Variables: yes
+
+travel_node:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: travel_node
+Stores Variables: yes
+
+travel_node_definition:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: travel_node_definition
+Stores Variables: yes
+
+war:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: war
+Stores Variables: yes
+
+mobilization_option:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: mobilization_option
+Stores Variables: yes
+
+geographic_region:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: geographic_region
+Stores Variables: yes
+
+power_bloc_principle_group:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: power_bloc_principle_group
+Stores Variables: yes
+
+harvest_condition:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: harvest_condition
+Stores Variables: yes
+
+harvest_condition_area:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: harvest_condition_area
+Stores Variables: yes
+
+harvest_condition_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: harvest_condition_type
+Stores Variables: yes
+
+treaty_article:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: treaty_article
+Stores Variables: yes
+
+treaty_options:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: treaty_options
+Stores Variables: yes
+
+treaty_article_options:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: treaty_article_options
+Stores Variables: yes
+
+treaty:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: treaty
+Stores Variables: yes
+
+war_goal:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: war_goal
+Stores Variables: yes
+
+war_goal_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: war_goal_type
+Stores Variables: yes
+
+amendment_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: amendment_type
+Stores Variables: yes
+
+amendment:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: amendment
+Stores Variables: yes
+
+decision:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: decision
+Stores Variables: yes
+
