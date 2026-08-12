@@ -31,3 +31,7 @@ This repository contains modding digests for Victoria 3 updates including docume
 - [1.13.4](1.13.4/discord.md)
 - [1.13.5](1.13.5/discord.md)
 - [1.13.6](1.13.6/discord.md)
+- [1.13.7](1.13.7/discord.md)
+- [1.13.8](1.13.8/discord.md)
+- [1.13.9](1.13.9/discord.md)
+- [1.13.10](1.13.10/discord.md)
