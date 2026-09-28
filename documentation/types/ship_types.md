@@ -10,6 +10,9 @@
 	# Goods cost for a ship when consuming materiel
 	materiel_goods = { modifier }
 
+	# The modifiers that are applied when a ship exceeds its maximum distance to a port
+	distance_to_port_modifier = { modifier }
+
 	# [Optional] Required technologies to construct the ship type. If multiple entries are specified, either one of them is required
 	unlocking_technologies = { <technology_key> ... }
 
@@ -21,6 +24,9 @@
 
 	# [Optional] The variable cost to construct a ship of this type based is multiplied by the total number of modification levels.
 	modification_construction_cost = fixed_point
+	
+	# Optional multiplier on the perceived combat power of a ship, primarily used by the AI to evaluate the combat prowess of one ship vs another, default 1.0
+	combat_power_multiplier = x
 
 	icon = <texture>
 
@@ -35,6 +41,12 @@
 			<ship_modification_key>
 			...
 		}
+		...
+	}
+
+	# [Optional] Default modification per slot. If not specified SHIP_TEMPLATE_DEFAULT_MODIFICATION_LEVEL will be used instead
+	default_modifications = {
+		<ship_modification_slot_key> = <ship_modification_key>
 		...
 	}
 }

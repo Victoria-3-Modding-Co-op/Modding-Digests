@@ -44,7 +44,7 @@
         min_raise_to_hire = fixed_point						# minimum required increase in salary for an employee to switch to working at this workplace, default NEconomy.MIN_RAISE_TO_HIRE
     
         naval = yes/no										# navy or army, default no, only applicable to military buildings, which is determined by building group
-        canal = canal_type_key								# reference to canal type, if set, marks the building as a canal
+        strait = strait_definition_key						# reference to strait definition, if set, marks the building as a canal
     
         # base AI value, default NAI.BUILDING_BASE_VALUE or NAI.GOVERNMENT_BUILDING_BASE_VALUE
         # scope is state the building is located in
@@ -90,6 +90,9 @@
         
         lens = infrastructure								# override for which lens the building type should appear in, otherwise specified on building group
         
+        recruits_combat_units = yes/no                      # whether the building's purpose is to recruit combat units 
+        recruits_sailors = yes/no                           # whether the building's purpose is to recruit sailors
+
         ownership_type = no_ownership/self/other			# type of the building ownership, no_ownership - can't own other buildings, dividends if any are payed to the state; self - can own only itself, pays dividends to the owning buildings; other - building can own other buildings, pays dividends only to own pops
         
         background = "gfx/interface/icons/building_icons/backgrounds/building_panel_wheat_farms_bg.dds" # Background texture for building registry items
