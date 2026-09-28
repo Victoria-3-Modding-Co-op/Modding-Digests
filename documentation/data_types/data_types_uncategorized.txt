@@ -11896,18 +11896,6 @@ Return type: [unregistered]
 
 -----------------------
 
-concept_war_exhaustion
-Definition type: Global function
-Return type: [unregistered]
-
------------------------
-
-concept_war_exhaustion_desc
-Definition type: Global function
-Return type: [unregistered]
-
------------------------
-
 concept_war_goal
 Definition type: Global function
 Return type: [unregistered]
@@ -16420,12 +16408,6 @@ Return type: CString
 
 -----------------------
 
-Building.GetAllFailedHiresDesc
-Definition type: Function
-Return type: CString
-
------------------------
-
 Building.GetArmyManpower
 Definition type: Function
 Return type: int64
@@ -16732,6 +16714,12 @@ Return type: CFixedPoint
 
 -----------------------
 
+Building.GetCrewPerShipAssignment
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 Building.GetCurrentCashReserves
 Definition type: Function
 Return type: CFixedPoint
@@ -16840,7 +16828,7 @@ Return type: int32
 
 -----------------------
 
-Building.GetFailedHiresDesc( Arg0 )
+Building.GetExpensesAnalysisDesc
 Definition type: Function
 Return type: CString
 
@@ -16867,6 +16855,18 @@ Return type: CString
 Building.GetHQ
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+Building.GetHiringAnalysisDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+Building.GetHiringPoolDesc
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -17566,7 +17566,7 @@ Return type: bool
 
 -----------------------
 
-Building.HasFailedHires
+Building.HasFailedToHire
 Definition type: Function
 Return type: bool
 
@@ -17641,6 +17641,12 @@ Return type: bool
 Building.IsActiveStr
 Definition type: Function
 Return type: CString
+
+-----------------------
+
+Building.IsActivelyDownsizing
+Definition type: Function
+Return type: bool
 
 -----------------------
 
@@ -25872,6 +25878,12 @@ Return type: [unregistered]
 
 -----------------------
 
+Country.GetAttitudeTowardsOverlordName
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 Country.GetAvailableCompanies
 Definition type: Function
 Return type: [unregistered]
@@ -25902,9 +25914,21 @@ Return type: [unregistered]
 
 -----------------------
 
+Country.GetAvailableSailors
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 Country.GetAvailableSubjectDiploActions
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+Country.GetAverageDevastation
+Definition type: Function
+Return type: CFixedPoint
 
 -----------------------
 
@@ -27618,6 +27642,12 @@ Return type: DataTrend
 
 -----------------------
 
+Country.GetLoyalistFraction
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 Country.GetLoyalistsChangeSummary
 Definition type: Function
 Return type: CString
@@ -28128,6 +28158,12 @@ Return type: int32
 
 -----------------------
 
+Country.GetNeededSailorsForShipConstruction
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 Country.GetNegotiatingInterestGroup
 Definition type: Function
 Return type: [unregistered]
@@ -28278,6 +28314,12 @@ Return type: int32
 
 -----------------------
 
+Country.GetNumCrewableShips
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 Country.GetNumGovernmentConstructionsInQueue
 Definition type: Function
 Return type: int32
@@ -28410,6 +28452,18 @@ Return type: int32
 
 -----------------------
 
+Country.GetNumQueuedShips
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+Country.GetNumQueuedShipsShortOfSailorCapacity
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 Country.GetNumRadicals
 Definition type: Function
 Return type: int64
@@ -28435,6 +28489,12 @@ Return type: int32
 -----------------------
 
 Country.GetNumShips
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+Country.GetNumShipsShortOfSailorCapacity
 Definition type: Function
 Return type: int32
 
@@ -29199,6 +29259,30 @@ Return type: CString
 Country.GetSOLDescForAllStratas
 Definition type: Function
 Return type: CString
+
+-----------------------
+
+Country.GetSailorBalance
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+Country.GetSailorBalanceWithShipConstruction
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+Country.GetSailorCapacityBreakdown
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+Country.GetSailorSufficiency
+Definition type: Function
+Return type: CFixedPoint
 
 -----------------------
 
@@ -30156,6 +30240,12 @@ Return type: CFixedPoint
 
 -----------------------
 
+Country.GetWeeksUntilBankruptcy
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 Country.GetWelfarePaymentsExpenses
 Definition type: Function
 Return type: CFixedPoint
@@ -30396,12 +30486,6 @@ Return type: bool
 
 -----------------------
 
-Country.HasInsufficientMaxSailors
-Definition type: Function
-Return type: bool
-
------------------------
-
 Country.HasInterestIn( Arg0 )
 Definition type: Function
 Return type: bool
@@ -30451,6 +30535,18 @@ Return type: bool
 -----------------------
 
 Country.HasRuler
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+Country.HasSailorDeficit
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+Country.HasSailorDeficitWithShipConstruction
 Definition type: Function
 Return type: bool
 
@@ -30589,6 +30685,12 @@ Return type: CString
 -----------------------
 
 Country.IsEnactingLaw
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+Country.IsGainingSailors
 Definition type: Function
 Return type: bool
 
@@ -31059,6 +31161,12 @@ Return type: Command
 Country.Self
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+Country.SetAsStateValuePerspective
+Definition type: Function
+Return type: void
 
 -----------------------
 
@@ -35383,6 +35491,12 @@ Return type: CString
 
 -----------------------
 
+DiplomaticPlay.GetInitiatorSideWarGoalImpact
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 DiplomaticPlay.GetInitiatorSideWounded
 Definition type: Function
 Return type: CFixedPoint
@@ -35635,6 +35749,12 @@ Return type: CString
 
 -----------------------
 
+DiplomaticPlay.GetTargetSideWarGoalImpact
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 DiplomaticPlay.GetTargetSideWounded
 Definition type: Function
 Return type: CFixedPoint
@@ -35701,6 +35821,12 @@ Return type: CString
 
 -----------------------
 
+DiplomaticPlay.GetWarOutcomeBreakdown
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 DiplomaticPlay.GetWarOutcomeString
 Definition type: Function
 Return type: CString
@@ -35714,6 +35840,12 @@ Return type: CString
 -----------------------
 
 DiplomaticPlay.HasAcceptedSway( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+DiplomaticPlay.HasAnyWarGoalImpact
 Definition type: Function
 Return type: bool
 
@@ -35744,6 +35876,12 @@ Return type: bool
 -----------------------
 
 DiplomaticPlay.HasExecutedWarGoalsByCapitulation
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+DiplomaticPlay.HasExecutedWarGoalsByOccupationTimer
 Definition type: Function
 Return type: bool
 
@@ -46341,6 +46479,18 @@ Return type: [unregistered]
 
 -----------------------
 
+InvasionPlannerPopup.GetSupplyShipPredictionBreakdown
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+InvasionPlannerPopup.GetSupplyShipPredictionTotalDelta
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 InvasionPlannerPopup.GetTargetState
 Definition type: Function
 Return type: [unregistered]
@@ -52483,6 +52633,24 @@ Return type: CString
 
 -----------------------
 
+MilitaryFormation.GetCrewGainPerWeek
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+MilitaryFormation.GetCrewSpeedBreakdown
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+MilitaryFormation.GetCrewStatus
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 MilitaryFormation.GetCurrentFront
 Definition type: Function
 Return type: [unregistered]
@@ -52834,6 +53002,12 @@ Return type: int64
 MilitaryFormation.GetMaxManpowerFromRegulars
 Definition type: Function
 Return type: int64
+
+-----------------------
+
+MilitaryFormation.GetMaxProtectedSupplyShipsPerBattle
+Definition type: Function
+Return type: int32
 
 -----------------------
 
@@ -53233,6 +53407,12 @@ Return type: CFixedPoint
 
 -----------------------
 
+MilitaryFormation.GetOwnSupplyShipsBreakdown
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 MilitaryFormation.GetOwnSupplyShipsInArea
 Definition type: Function
 Return type: int32
@@ -53306,6 +53486,42 @@ Return type: [unregistered]
 -----------------------
 
 MilitaryFormation.GetPrimaryCultureForType( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+MilitaryFormation.GetProtectSupplyRegions
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+MilitaryFormation.GetProtectedFormationsInRegion( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+MilitaryFormation.GetProtectedSupplyShips
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+MilitaryFormation.GetRaidChancePerDay
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+MilitaryFormation.GetRaidSupplyRegions
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+MilitaryFormation.GetRaidableFormationsInRegion( Arg0 )
 Definition type: Function
 Return type: [unregistered]
 
@@ -53485,9 +53701,21 @@ Return type: CFixedPoint
 
 -----------------------
 
+MilitaryFormation.GetSupplyProtectorsInRegion( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 MilitaryFormation.GetSupplyRaidTargetsBreakdown
 Definition type: Function
 Return type: CString
+
+-----------------------
+
+MilitaryFormation.GetSupplyRaidersInRegion( Arg0 )
+Definition type: Function
+Return type: [unregistered]
 
 -----------------------
 
@@ -53512,6 +53740,12 @@ Return type: CFixedPoint
 MilitaryFormation.GetSupplyShipCarryCapacity
 Definition type: Function
 Return type: CFixedPoint
+
+-----------------------
+
+MilitaryFormation.GetSupplyShipsAtRaidRegion
+Definition type: Function
+Return type: int32
 
 -----------------------
 
@@ -53671,6 +53905,12 @@ Return type: bool
 
 -----------------------
 
+MilitaryFormation.HasInterceptActivity
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 MilitaryFormation.HasInvasion
 Definition type: Function
 Return type: bool
@@ -53702,6 +53942,24 @@ Return type: bool
 -----------------------
 
 MilitaryFormation.HasPendingPickup
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+MilitaryFormation.HasProtectSupplyActivity
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+MilitaryFormation.HasProtectedSupplyShips
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+MilitaryFormation.HasRaidSupplyActivity
 Definition type: Function
 Return type: bool
 
@@ -53971,6 +54229,12 @@ Return type: bool
 
 -----------------------
 
+MilitaryFormation.IsReadyToIntercept
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 MilitaryFormation.IsRecalledForRepairs
 Definition type: Function
 Return type: bool
@@ -53990,6 +54254,12 @@ Return type: bool
 -----------------------
 
 MilitaryFormation.IsSelected
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+MilitaryFormation.IsShortOfSailorCapacity
 Definition type: Function
 Return type: bool
 
@@ -69314,6 +69584,12 @@ Return type: int32
 
 -----------------------
 
+SeaNodeMovementMarker.GetNumSupplyRaidersAtNode
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 SeaNodeMovementMarker.GetOwnSupplyShipsPassingThroughNode
 Definition type: Function
 Return type: int32
@@ -69335,6 +69611,36 @@ Return type: CString
 SeaNodeMovementMarker.GetSeaNode
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+SeaNodeMovementMarker.GetSelectedFleetsBlockadeDetails
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+SeaNodeMovementMarker.GetSelectedFleetsInterceptDetails
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+SeaNodeMovementMarker.GetSelectedFleetsPortBombardmentDetails
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+SeaNodeMovementMarker.GetSelectedFleetsSupplyProtectDetails
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+SeaNodeMovementMarker.GetSelectedFleetsSupplyRaidDetails
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -70001,6 +70307,12 @@ Return type: bool
 
 -----------------------
 
+Ship.CanCrewGrow
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 Ship.CancelRetrofit
 Definition type: Function
 Return type: Command
@@ -70103,6 +70415,12 @@ Return type: CString
 
 -----------------------
 
+Ship.GetCrewGainPerWeek
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 Ship.GetCrewMax
 Definition type: Function
 Return type: CFixedPoint
@@ -70118,6 +70436,18 @@ Return type: CString
 Ship.GetCrewOriginStates
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+Ship.GetCrewSpeedBreakdown
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+Ship.GetCrewStatus
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -70493,6 +70823,12 @@ Return type: bool
 
 -----------------------
 
+Ship.IsDocked
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 Ship.IsFlagship
 Definition type: Function
 Return type: bool
@@ -70511,7 +70847,19 @@ Return type: bool
 
 -----------------------
 
+Ship.IsInactiveFromInsufficientCrew
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 Ship.IsOutdated
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+Ship.IsShortOfSailorCapacity
 Definition type: Function
 Return type: bool
 
@@ -71732,6 +72080,12 @@ Return type: bool
 -----------------------
 
 ShipList.HasAnyShipOutdatedOfGroup( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+ShipList.HasAnyShipShortOfSailorCapacityOfGroup( Arg0 )
 Definition type: Function
 Return type: bool
 
@@ -74076,6 +74430,12 @@ Return type: StateRegion
 
 -----------------------
 
+State.GetStateValuePerspective
+Definition type: Promote
+Return type: Country
+
+-----------------------
+
 State.GetSubsistenceBuilding
 Definition type: Promote
 Return type: Building
@@ -75522,6 +75882,24 @@ Return type: [unregistered]
 
 -----------------------
 
+State.GetStateValue
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+State.GetStateValueDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+State.GetStateValuePerspective
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 State.GetStationSelectedFormationsCommand
 Definition type: Function
 Return type: Command
@@ -76020,6 +76398,12 @@ Return type: bool
 
 -----------------------
 
+State.IsSelectedBombardmentTarget
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 State.IsSlaveState
 Definition type: Function
 Return type: bool
@@ -76034,6 +76418,12 @@ Return type: bool
 
 State.IsStrategicObjective( Arg0 )
 Description: Returns 'true' if this State is a Strategic Objective of 'pCountry'
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+State.IsTargetOfHoveredSeaRegion
 Definition type: Function
 Return type: bool
 
@@ -83108,13 +83498,19 @@ Return type: [unregistered]
 
 -----------------------
 
+War.GetDurationMonths
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 War.GetEndedBattles
 Definition type: Function
 Return type: [unregistered]
 
 -----------------------
 
-War.GetEnemyContestedWarGoalsFraction( Arg0 )
+War.GetEnemySideOccupation( Arg0 )
 Definition type: Function
 Return type: CFixedPoint
 
@@ -83129,6 +83525,12 @@ Return type: [unregistered]
 War.GetLeaderOfOppositeSide( Arg0 )
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+War.GetLowWarSupportEffectsDesc( Arg0 )
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -83174,6 +83576,12 @@ Return type: CFixedPoint
 
 -----------------------
 
+War.GetSizeWeightedWonBattlesFraction( Arg0 )
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 War.GetStartWarDescriptionForPlayer
 Definition type: Function
 Return type: CString
@@ -83192,7 +83600,13 @@ Return type: CString
 
 -----------------------
 
-War.GetTotalDeadWithWarExhaustionTooltip( Arg0 )
+War.GetTotalDeadWithWarSupportTooltip( Arg0 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+War.GetWarGoalWarSupportBreakdown( Arg0 )
 Definition type: Function
 Return type: CString
 
@@ -83207,6 +83621,18 @@ Return type: [unregistered]
 War.GetWarSupport( Arg0 )
 Definition type: Function
 Return type: CFixedPoint
+
+-----------------------
+
+War.GetWarSupportColored( Arg0 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+War.GetWarSupportWithTrendArrow( Arg0 )
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -83509,6 +83935,12 @@ Return type: [unregistered]
 
 -----------------------
 
+WarGoal.GetEnforcementProgress
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 WarGoal.GetHolder
 Definition type: Function
 Return type: [unregistered]
@@ -83689,6 +84121,12 @@ Return type: bool
 
 -----------------------
 
+WarGoal.IsExecutedByOccupationTimer
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 WarGoal.IsExecutedByPeaceDeal
 Definition type: Function
 Return type: bool
@@ -83732,6 +84170,12 @@ Return type: bool
 -----------------------
 
 WarGoal.IsPrimaryDemand
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+WarGoal.IsTimerEnforceable
 Definition type: Function
 Return type: bool
 
@@ -84747,12 +85191,6 @@ Return type: [unregistered]
 
 -----------------------
 
-WarParticipant.GetExhaustionDesc
-Definition type: Function
-Return type: CString
-
------------------------
-
 WarParticipant.GetNumDead
 Definition type: Function
 Return type: int64
@@ -84801,7 +85239,7 @@ Return type: [unregistered]
 
 -----------------------
 
-WarParticipant.GetWarExhaustionFromAcceptanceOfDeadDesc
+WarParticipant.GetWarSupportChangeDesc
 Definition type: Function
 Return type: CString
 
@@ -84813,7 +85251,7 @@ Return type: CString
 
 -----------------------
 
-WarParticipant.GetWarSupportDescDelayed
+WarParticipant.GetWarSupportFromAcceptanceOfDeadDesc
 Definition type: Function
 Return type: CString
 

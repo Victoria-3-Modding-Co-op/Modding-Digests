@@ -609,34 +609,6 @@ Change Scopes: yes
 Save Token: theater
 Stores Variables: yes
 
-travel_connection:
-Evaluate Triggers: yes
-Execute Effects: yes
-Change Scopes: yes
-Save Token: travel_connection
-Stores Variables: yes
-
-travel_connection_definition:
-Evaluate Triggers: yes
-Execute Effects: yes
-Change Scopes: yes
-Save Token: travel_connection_definition
-Stores Variables: yes
-
-travel_node:
-Evaluate Triggers: yes
-Execute Effects: yes
-Change Scopes: yes
-Save Token: travel_node
-Stores Variables: yes
-
-travel_node_definition:
-Evaluate Triggers: yes
-Execute Effects: yes
-Change Scopes: yes
-Save Token: travel_node_definition
-Stores Variables: yes
-
 war:
 Evaluate Triggers: yes
 Execute Effects: yes

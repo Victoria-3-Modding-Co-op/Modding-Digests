@@ -626,6 +626,12 @@ Expected Scope: none
 
 --------------------
 
+on_diplo_play_subject_backstab_overlord:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 on_reverse_sway_offer_rejected:
 From Code: Yes
 Expected Scope: none

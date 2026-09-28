@@ -3,7 +3,7 @@
 your_status_key = {
     threshold = 0
     base_migration_desire = 50
-	war_exhaustion_impact_own_side / war_exhaustion_impact_other_side = 2.0
+	war_support_impact_own_side / war_support_impact_other_side = 2.0
 }
 ```
 
@@ -100,13 +100,13 @@ but only if those pops are allowed to do so.
 Whether a pop is allowed to migrate is dictated by the migration restrictiveness
 modifier, which is determined by laws.
 
-## war_exhaustion_impact_own_side
-## war_exhaustion_impact_other_side
+## war_support_impact_own_side
+## war_support_impact_other_side
 When someone dies in a war, due to battles or attrition, we keep track of their culture.
-Based on a country's Acceptance of that culture, they will gain War Exhaustion each week 
+Based on a country's Acceptance of that culture, they will lose War Support each week 
 relative to this factor compared to the number of total men mobilized in this war.
 For example, if 300K individuals with the same acceptance status in a given country have
 died  in the war compared to 500K currently mobilized, 140K on their side and 160K on
 the other, and these values are set to 2.0 vs 0.5 respectively, a country with this level
 of acceptance will gain 
-140K/500K * 2 + 160K/500K * 0.5 = 0.56 + 0.16 = 0.72 War Exhaustion on a weekly basis
+140K/500K * 2 + 160K/500K * 0.5 = 0.56 + 0.16 = 0.72 War Support lost on a weekly basis

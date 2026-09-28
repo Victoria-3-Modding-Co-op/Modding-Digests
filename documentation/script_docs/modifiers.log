@@ -1148,10 +1148,18 @@ country_voting_power_wealth_threshold_add:
   Mask: country
   Name: Wealth Threshold for Voting
   Description: An increase or decrease to the Wealth threshold at which Pops are eligible to vote
-country_war_exhaustion_casualties_mult:
+country_war_support_battles_decrease_mult:
   Mask: country
-  Name: War Exhaustion from Casualties
-  Description: An increase or decrease to the amount of War Exhaustion a Country suffers in War due to Casualties inflicted on them
+  Name: War Support from Lost Battle
+  Description: An increase or decrease to the amount of War Support a Country loses in War from losing Battle
+country_war_support_battles_increase_mult:
+  Mask: country
+  Name: War Support from Won Battle
+  Description: An increase or decrease to the amount of War Support a Country gains in War from winning Battle
+country_war_support_casualties_mult:
+  Mask: country
+  Name: War Support from Casualties
+  Description: An increase or decrease to the amount of War Support a Country suffers in War due to Casualties inflicted on them
 country_weekly_innovation_add:
   Mask: country
   Name: Innovation
