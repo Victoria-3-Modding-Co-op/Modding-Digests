@@ -34,7 +34,7 @@
         # is ignored when JE is added through `add_journal_entry` effect
         # root = owning country or no scope
         possible = {
-            c:USA = {
+            c:USA ?= {
                 owns_entire_state_region = scope:target
             }
         }
@@ -42,7 +42,7 @@
         # effect which happens when a journal entry is activated by having its `is_shown_when_inactive` and `possible` triggers become true or when JE is added through `add_journal_entry` effect
         # root = owning country or no scope
         immediate = {
-            c:USA = {
+            c:USA ?= {
                 # saved scopes can be used in any events triggered from the Journal Entry, as well as in the loc for the Journal Entry itself
                 # To use saved scopes in loc: JournalEntry.GetTopScope.sCountry('saved_scope_name') or SCOPE.sCountry('saved_scope_name')
                 save_scope_as = god_bless_america
