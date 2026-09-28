@@ -88,6 +88,11 @@
 		# scope:clout = combined clout of IGs that would become insurrectionary
 		possible = {}
 		
+		# Trigger for whether an interest group can join a civil war started by the movement
+		# Root = interest group
+		# scope:political_movement = political movement
+		interest_group_can_join = {}	
+		
 		# Weight for whether this civil war type should be selected over others
 		# Root = political movement
 		# scope:clout = combined clout of IGs that would become insurrectionary

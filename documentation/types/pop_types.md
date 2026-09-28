@@ -9,7 +9,7 @@
         consumption_mult = 1											# goods consumption multiplier (default = 1)
         dependent_wage = 0.5											# per year
         unemployment = yes												# can pop be unemployed
-        unemployment_wealth = 5											# unemployed pops whose wealth drops to or below this level switches to this profession
+        unemployment_wealth = 10											# unemployed pops whose wealth drops to or below this level switches to this profession
         
         # 50% - 100% politically engaged
         political_engagement_base = 0.5									# basic political engagement

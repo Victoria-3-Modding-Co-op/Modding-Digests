@@ -14,6 +14,10 @@ Available categories are:
 	theme_name = {					# requires 'theme_name' and 'theme_name_desc' to be added in 'game/localization/english/themes_l_english.yml'
 		category = key				# Each category also defines whether multiple themes can be applied at the same time.
 
+		dlc = "key"					# Key of the DLC inside game/dlc_metadata/00_dlc_metadata.txt. For example: dlc = "dlc003"
+
+		bulk_selection_group = "key" # Themes using the same key can be selected together as a group in the theme selector. Bulk selection groups are automatically created for each unique key, so the key can be named whatever you want.
+
 		skin = "name"				# Skins are defined in .skin files in gfx/skins. This field must match the name in a skin file or default for the default skin. Only for ui_skin_theme category.
 
 		map_textures = "gfx/map/textures/maptextures.settings" # Path to a settings file for map textures. Only for category papermap_theme.
@@ -24,5 +28,5 @@ Available categories are:
 			locator = "locator_name" # Locator for the spawned object. Instance id 1 is used.
 		}
 
-		dlc = "key"					# Key of the DLC inside game/dlc_metadata/00_dlc_metadata.txt. For example: dlc = "dlc003"
+		dynamic_weight = {}			# Script value for which theme in the category to use for the "dynamic" theme option. The selectable theme with the highest weight is picked. Scope: local player country
 	}

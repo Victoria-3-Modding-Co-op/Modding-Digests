@@ -1,7 +1,5 @@
 
-Discrimination trait groups need to have a type defined. This type can be heritage or language. Religious discrimination trait groups work the same as cultural ones.
-
-Available types: [heritage/language]
+Discrimination trait groups need to have a type defined. This type can be heritage or language. Religious discrimination trait groups work the same as cultura ones.
 
 Examples:
 
@@ -15,16 +13,4 @@ language_group_ainuic = {
 
 heritage_group_abrahamic = {
 	type = heritage
-}
-
-language_group_armenian = {
-	type = language
-}
-
-language_group_baltic = {
-	type = language
-}
-
-language_group_celtic = {
-	type = language
 }

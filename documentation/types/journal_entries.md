@@ -123,7 +123,50 @@
             }
         }
 		
-	
+		# dynamically updated text, which describes potential event outcomes when JE is activated
+		# multiple such entries can be added to a JE
+        event_outcome_activated_desc = {
+			first_valid = {
+				triggered_desc = {
+					desc = holstein_is_annexed
+					trigger = {
+						exists = c:SCH
+					}
+				}
+			}
+		}
+		
+		# alternative to  event_outcome_activated_desc using the effect system to automatically generate tooltips
+		# note that the effects here are only used for description purposes and will not actually happen
+		event_outcome_activated_effect_desc = {
+			header = option_gain_money
+			effect = {
+				add_treasury = 1000
+			}
+		}
+		
+		# dynamically updated text, which describes potential event outcomes when JE is invalidated
+		# multiple such entries can be added to a JE
+        event_outcome_invalidated_desc = {
+			first_valid = {
+				triggered_desc = {
+					desc = holstein_is_annexed
+					trigger = {
+						exists = c:SCH
+					}
+				}
+			}
+		}
+		
+		# alternative to  event_outcome_invalidated_desc using the effect system to automatically generate tooltips
+		# note that the effects here are only used for description purposes and will not actually happen
+		event_outcome_invalidated_effect_desc = {
+			header = option_gain_money
+			effect = {
+				add_treasury = 1000
+			}
+		}	
+		
 		# dynamically updated text, which describes potential event outcomes when JE is completed
 		# multiple such entries can be added to a JE
         event_outcome_completed_desc = {
@@ -136,8 +179,16 @@
 				}
 			}
 		}
+		
+		# alternative to  event_outcome_completed_desc using the effect system to automatically generate tooltips
+		# note that the effects here are only used for description purposes and will not actually happen
+		event_outcome_completed_effect_desc = {
+			header = option_gain_money
+			effect = {
+				add_treasury = 1000
+			}
+		}	
 
-	
 		# dynamically updated text, which describes potential event outcomes when JE is failed
 		# multiple such entries can be added to a JE
         event_outcome_failed_desc = {
@@ -149,7 +200,16 @@
 					}
 				}
 			}
-		}		
+		}	
+
+		# alternative to event_outcome_failed_desc using the effect system to automatically generate tooltips
+		# note that the effects here are only used for description purposes and will not actually happen
+		event_outcome_failed_effect_desc = {
+			header = option_gain_money
+			effect = {
+				add_treasury = 1000
+			}
+		}			
 	
 		# dynamically updated text, which describes potential event outcomes when JE timeouts
 		# multiple such entries can be added to a JE
@@ -163,6 +223,15 @@
 				}
 			}
 		}		
+		
+		# alternative to  event_outcome_timeout_desc using the effect system to automatically generate tooltips
+		# note that the effects here are only used for description purposes and will not actually happen
+		event_outcome_timeout_effect_desc = {
+			header = option_gain_money
+			effect = {
+				add_treasury = 1000
+			}
+		}			
 
         # [optional] loc key to use instead of JOURNAL_ENTRY_COMPLETION_HEADER, for flavor
         custom_completion_header = <loc key>
