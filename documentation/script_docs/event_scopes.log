@@ -504,6 +504,13 @@ Change Scopes: yes
 Save Token: ship_group
 Stores Variables: yes
 
+ship_modification_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: ship_modification_type
+Stores Variables: yes
+
 ship_type:
 Evaluate Triggers: yes
 Execute Effects: yes
@@ -551,6 +558,13 @@ Evaluate Triggers: yes
 Execute Effects: yes
 Change Scopes: yes
 Save Token: strait
+Stores Variables: yes
+
+strait_type:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: strait_type
 Stores Variables: yes
 
 strategic_region:

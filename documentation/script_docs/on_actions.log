@@ -50,6 +50,12 @@ Expected Scope: country
 
 --------------------
 
+on_ship_constructed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 on_secession_country_helped_by_home_country:
 From Code: Yes
 Expected Scope: none
@@ -170,6 +176,12 @@ Expected Scope: none
 
 --------------------
 
+on_our_supply_ship_raiders_intercepted:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 on_travel_deploy_to_sea_node_cancelled:
 From Code: Yes
 Expected Scope: none
@@ -213,6 +225,12 @@ Expected Scope: none
 --------------------
 
 on_game_started:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_enemy_supply_ships_raided:
 From Code: Yes
 Expected Scope: none
 
@@ -434,13 +452,13 @@ Expected Scope: state
 
 --------------------
 
-on_our_convoys_raided:
+on_national_awakening_started:
 From Code: Yes
 Expected Scope: none
 
 --------------------
 
-on_national_awakening_started:
+on_enemy_supply_ship_raiders_intercepted:
 From Code: Yes
 Expected Scope: none
 
@@ -512,7 +530,7 @@ Expected Scope: none
 
 --------------------
 
-on_enemy_convoys_raided:
+on_invasion_succeeded:
 From Code: Yes
 Expected Scope: none
 
@@ -657,6 +675,12 @@ Expected Scope: country
 --------------------
 
 on_diplomatic_action_third_party_accepted:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_our_supply_ships_raided:
 From Code: Yes
 Expected Scope: none
 

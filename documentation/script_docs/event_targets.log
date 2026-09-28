@@ -96,6 +96,16 @@ If used in an invasion scope, scope to the country the attacked state is control
 Input Scopes: invasion
 Output Scopes: country
 
+### initiator
+Scope to the initiator of the object
+Input Scopes: diplomatic_play
+Output Scopes: country
+
+### war
+Scope from a diplomatic play to its war
+Input Scopes: diplomatic_play
+Output Scopes: war
+
 ### controller
 Scope to the controller of the object
 Input Scopes: province, state
@@ -110,22 +120,6 @@ Output Scopes: hq
 Returns the province or state owner local land HQ
 Input Scopes: province, state
 Output Scopes: hq
-
-### initiator
-Scope to the initiator of the object
-Input Scopes: diplomatic_play
-Output Scopes: country
-
-### war
-Scope from a diplomatic play to its war
-Input Scopes: diplomatic_play
-Output Scopes: war
-
-### num_provinces
-Get the scoped entity's current number of provinces
-scopes: state, stateregion, front
-Input Scopes: front, state, state_region
-Output Scopes: value
 
 ### num_active_ships
 Get the number of active ships for a country, commander or military formation
@@ -177,17 +171,6 @@ Get the average progressiveness of the scoped character or interest group
 Input Scopes: character, interest_group
 Output Scopes: value
 
-### ai_colonization_value
-Scope to target country AI desire to colonize a strategic region (example: value = ai_colonization_value:root)
-Requires Data: yes
-Input Scopes: strategic_region
-Output Scopes: value
-
-### owner
-Scope to the owner country of object
-Input Scopes: country, building, character, new_combat_unit, company, decree, institution, interest_marker, interest_group, journal_entry, law, market, market_goods, military_formation, political_movement, pop, province, ship, state
-Output Scopes: country
-
 ### building
 Scope to the related building
 Input Scopes: new_combat_unit
@@ -223,10 +206,10 @@ Returns the unit's offense rating (including impact from their commander)
 Input Scopes: new_combat_unit
 Output Scopes: value
 
-### region
-Scope to the strategic region of the object!
-Input Scopes: building, diplomatic_play, hq, interest_marker, province, state, state_region
-Output Scopes: strategic_region
+### owner
+Scope to the owner country of object
+Input Scopes: country, building, character, new_combat_unit, company, decree, institution, interest_marker, interest_group, journal_entry, law, market, market_goods, military_formation, political_movement, pop, province, ship, state
+Output Scopes: country
 
 ### commander
 Scope from a military formation to its commander character
@@ -268,6 +251,11 @@ Links from a fleet scope to the total vulnerability of the ships in the fleet
 Input Scopes: military_formation
 Output Scopes: value
 
+### region
+Scope to the strategic region of the object!
+Input Scopes: building, diplomatic_play, hq, interest_marker, province, state, state_region
+Output Scopes: strategic_region
+
 ### diplomatic_pact_other_country
 Scope to the other country of the diplomatic pact in scope
 Requires Data: yes
@@ -304,21 +292,40 @@ Scope to the journal entry's goal value
 Input Scopes: journal_entry
 Output Scopes: value
 
-### modifier
-Scope to the value of the modifier type of specified key belonging to the current object
-Requires Data: yes
-Input Scopes: country, battle_side, building, character, interest_group, market, power_bloc, state
-Output Scopes: value, boolean
+### attached_law
+Links from an amendment scope to the law the amendment is attached to
+Input Scopes: amendment
+Output Scopes: law
+
+### parent_law_type
+Links from an amendment scope to the law type that is considered the amendment's parent
+Input Scopes: amendment
+Output Scopes: law_type
+
+### sponsor
+Links from an amendment scope to the interest group that sponsored the amendment
+Input Scopes: amendment
+Output Scopes: interest_group
 
 ### imposer_of_law
 Scope from a country to the country currrently imposing a law on them
 Input Scopes: country, law
 Output Scopes: country
 
+### goods
+Scope to the goods traded by a trade route
+Input Scopes: market_goods, state_goods
+Output Scopes: goods
+
 ### country
 Scope to the country of a military formation or ship
 Input Scopes: military_formation, ship
 Output Scopes: country
+
+### type
+Scope from an object to its type
+Input Scopes: building, company, diplomatic_play, diplomatic_catalyst, political_lobby, institution, interest_group, law, political_movement, ship, strait, harvest_condition_area, amendment
+Output Scopes: building_type, company_type, diplomatic_play_type, institution_type, interest_group_type, law_type, political_movement_type, ship_type, strait_type, harvest_condition_type, amendment_type
 
 ### civil_war
 Scope to the civil war started by the scoped (revolutionary) political movement.
@@ -345,6 +352,17 @@ Scope to tension value in diplomatic relations scope (example: scope_tension >= 
 Input Scopes: diplomatic_relations
 Output Scopes: value
 
+### total_pirated_trade_value
+Scope to the total average weekly base value of goods pilfered via piracy between two countries in a diplomatic relations scope (example: total_pirated_trade_value >= 100)
+Input Scopes: diplomatic_relations
+Output Scopes: value
+
+### modifier
+Scope to the value of the modifier type of specified key belonging to the current object
+Requires Data: yes
+Input Scopes: country, battle_side, building, character, interest_group, market, power_bloc, state
+Output Scopes: value, boolean
+
 ### state
 Scope to the state of the object
 Input Scopes: building, market, pop, province
@@ -355,71 +373,6 @@ Scope to the interest group of specified key belonging to the country
 Requires Data: yes
 Input Scopes: country, political_movement
 Output Scopes: interest_group
-
-### input_building_type
-Scope to the building type input in a treaty article
-Input Scopes: treaty_article, treaty_article_options
-Output Scopes: building_type
-
-### input_company
-Scope to the company input in a treaty article
-Input Scopes: treaty_article, treaty_article_options
-Output Scopes: company
-
-### input_country
-Scope to the country input in a treaty article
-Input Scopes: treaty_article, treaty_article_options
-Output Scopes: country
-
-### input_goods
-Scope to the goods input in a treaty article
-Input Scopes: treaty_article, treaty_article_options
-Output Scopes: goods
-
-### input_law
-Scope to the law input in a treaty article
-Input Scopes: treaty_article, treaty_article_options
-Output Scopes: law_type
-
-### input_market_goods
-Scope to the market goods input in a treaty article (example: input_market_goods:root)
-Requires Data: yes
-Input Scopes: treaty_article, treaty_article_options
-Output Scopes: market_goods
-
-### input_quantity
-Scope to the quantity input in a treaty article
-Input Scopes: treaty_article, treaty_article_options
-Output Scopes: value
-
-### input_ship
-Scope to the ship input in a treaty article
-Input Scopes: treaty_article, treaty_article_options
-Output Scopes: ship
-
-### input_state
-Scope to the state input in a treaty article
-Input Scopes: treaty_article, treaty_article_options
-Output Scopes: state
-
-### input_strategic_region
-Scope to the strategic region input in a treaty article
-Input Scopes: treaty_article, treaty_article_options
-Output Scopes: strategic_region
-
-### source_country
-Scope to the source_country of any of:
-1. treaty article (for directed article types only)
-2. treaty article options (for directed article types only)
-Input Scopes: treaty_article, treaty_article_options
-Output Scopes: country
-
-### target_country
-Scope to the target_country of any of:
-1. treaty article (for directed article types only)
-2. treaty article options (for directed article types only)
-Input Scopes: treaty_article, treaty_article_options
-Output Scopes: country
 
 ### ai_treaty_export_value
 Scope to target country AI desire to export scoped market good (example: value = ai_market_export_value:root)
@@ -489,20 +442,15 @@ Links from a culture scope to the state region with an active national awakening
 Input Scopes: culture
 Output Scopes: state_region
 
-### theater
-Scope from a BattleSide or State to its theater
-Input Scopes: battle_side, state
-Output Scopes: theater
-
-### goods
-Scope to the goods traded by a trade route
-Input Scopes: market_goods, state_goods
-Output Scopes: goods
-
 ### home_country
 Scopes to the home country of an exile
 Input Scopes: character, pop
 Output Scopes: country
+
+### theater
+Scope from a BattleSide or State to its theater
+Input Scopes: battle_side, state
+Output Scopes: theater
 
 ### mg
 Scope from a market to the MarketGoods with the specified key
@@ -520,6 +468,11 @@ Scope to the trade center state of the market!
 Input Scopes: market
 Output Scopes: state
 
+### gdp
+Get the scoped country's yearly predicted GDP
+Input Scopes: country, market, state, strategic_region
+Output Scopes: value
+
 ### ship_fleet
 Links from a ship scope to the ship fleet
 Input Scopes: ship
@@ -529,26 +482,6 @@ Output Scopes: military_formation
 Scope from a ship to its group
 Input Scopes: ship
 Output Scopes: ship_group
-
-### attached_law
-Links from an amendment scope to the law the amendment is attached to
-Input Scopes: amendment
-Output Scopes: law
-
-### parent_law_type
-Links from an amendment scope to the law type that is considered the amendment's parent
-Input Scopes: amendment
-Output Scopes: law_type
-
-### sponsor
-Links from an amendment scope to the interest group that sponsored the amendment
-Input Scopes: amendment
-Output Scopes: interest_group
-
-### type
-Scope from an object to its type
-Input Scopes: building, company, diplomatic_play, diplomatic_catalyst, political_lobby, institution, interest_group, law, political_movement, ship, harvest_condition_area, amendment
-Output Scopes: building_type, company_type, diplomatic_play_type, institution_type, interest_group_type, law_type, political_movement_type, ship_type, harvest_condition_type, amendment_type
 
 ### executive
 Scope from a company to its executive character
@@ -564,11 +497,6 @@ Output Scopes: value
 Scope to the weekly prosperity change for scope company (example: weekly_prosperity_change >= 2)
 Input Scopes: company
 Output Scopes: value
-
-### market
-Scope to the market of the object
-Input Scopes: country, building, market, market_goods, province, state, state_goods, state_region
-Output Scopes: market
 
 ### amendment_type
 Scope to an amendment type from its name (amendment_type:key)
@@ -843,6 +771,12 @@ Requires Data: yes
 Global Link: yes
 Output Scopes: strategic_region
 
+### strait_type
+Scope to a strait type from its name (strait_type:key)
+Requires Data: yes
+Global Link: yes
+Output Scopes: strait_type
+
 ### tension_threshold
 Scope to tension level threshold for comparison purposes (tension_threshold:warm)
 Requires Data: yes
@@ -887,67 +821,11 @@ Get the number of active units not in battle for a commander or military formati
 Input Scopes: character, military_formation
 Output Scopes: value
 
-### ai_state_value
-Scope to target country AI desire to own scope state (example: value = ai_state_value:root)
+### ai_colonization_value
+Scope to target country AI desire to colonize a strategic region (example: value = ai_colonization_value:root)
 Requires Data: yes
-Input Scopes: state
+Input Scopes: strategic_region
 Output Scopes: value
-
-### ai_treaty_port_value
-Scope to target country AI desire to have a treaty port in scope state (example: value = ai_treaty_port_value:root)
-Requires Data: yes
-Input Scopes: state
-Output Scopes: value
-
-### b
-Scope to the building of specified key in the state
-Requires Data: yes
-Input Scopes: state
-Output Scopes: building
-
-### decree_cost
-Scope to a state's cost for a certain decree
-authority > decree_cost:decree_road_maintaintenance
-Requires Data: yes
-Input Scopes: state
-Output Scopes: value
-
-### mass_migration_culture
-Scope to the mass migration target culture of a state
-Input Scopes: state
-Output Scopes: culture
-
-### nf
-Scope to a Decree of specified key applied to the state
-Requires Data: yes
-Input Scopes: state
-Output Scopes: decree
-
-### num_world_market_hub_trade_center_levels
-Get the total number of trade center levels associated with scope world market hub state
-Input Scopes: state
-Output Scopes: value
-
-### population_below_expected_sol
-Scope to the current percentage of the state's population that are below their expected standard of living (0-1)
-Input Scopes: state
-Output Scopes: value
-
-### sg
-Scope from a state to the StateGoods with the specified key
-Requires Data: yes
-Input Scopes: state
-Output Scopes: state_goods
-
-### state_region
-Scope to the state region of a state
-Input Scopes: state
-Output Scopes: state_region
-
-### world_market_hub
-Scope to the world market hub state associated with the scoped state
-Input Scopes: state
-Output Scopes: state
 
 ### active_law
 Scope to the scoped country's active law in the named law group (active_law:lawgroup_trade_policy)
@@ -1105,6 +983,11 @@ Scope from a country to the law that they're currently enacting
 Input Scopes: country
 Output Scopes: law
 
+### diplomatic_pact_expense_ratio
+Scope to the ratio of diplomatic pact expenses to income for this country, clamped 0-1 (example: value = diplomatic_pact_expense_ratio)
+Input Scopes: country
+Output Scopes: value
+
 ### flagship
 Get the flagship of the scoped country
 Input Scopes: country
@@ -1228,6 +1111,27 @@ Output Scopes: value
 ### mutual_trade_value_with_country
 Scope to the total base value of goods traded in trade routes between the two markets (example: mutual_trade_value_with_country:root >= 1000)
 Requires Data: yes
+Input Scopes: country
+Output Scopes: value
+
+### naval_combat_power
+Scope to the country's navy combat power (example: naval_combat_power > 100)
+Input Scopes: country
+Output Scopes: value
+
+### naval_hostility_average_damage_dealt
+Scope to average damage dealt by this country in naval hostilities it initiated over the lookback period. Returns -1 if no hostilities found.
+Input Scopes: country
+Output Scopes: value
+
+### naval_hostility_damage
+Scope to damage points inflicted by this country against another in active naval hostilities (example: naval_hostility_damage:root >= 50)
+Requires Data: yes
+Input Scopes: country
+Output Scopes: value
+
+### naval_vulnerability
+Scope to a country's naval vulnerability score based on trade reliance and coastal GDP share, capped at a define maximum
 Input Scopes: country
 Output Scopes: value
 
@@ -1413,6 +1317,12 @@ Scope to the company owning the scoped country
 Input Scopes: country
 Output Scopes: company
 
+### pirated_trade_value_by
+Scope to the average weekly base value of goods pilfered from this country by a target country (example: pirated_trade_value_by:root >= 50)
+Requires Data: yes
+Input Scopes: country
+Output Scopes: value
+
 ### power_bloc
 Scope to the power bloc for the scoped country
 Input Scopes: country
@@ -1446,6 +1356,12 @@ Scope to the ruler of a country
 Input Scopes: country
 Output Scopes: character
 
+### strait_trade_importance_by
+Scope to the trade importance of goods this country is trading through straits controlled by a target country. Accumulated value is multiplied by STRAIT_FULL_CONTROL_TRADE_IMPORTANCE_MULT for straits where the controller controls both sides (example: strait_trade_importance_by:root >= 100)
+Requires Data: yes
+Input Scopes: country
+Output Scopes: value
+
 ### technology_being_researched
 Scope to the current technology a country is researching
 Input Scopes: country
@@ -1467,6 +1383,11 @@ Scope to the top overlord of the country in scope
 Input Scopes: country
 Output Scopes: country
 
+### total_crew_needed
+Get the total crew needed by all ships of a country
+Input Scopes: country
+Output Scopes: value
+
 ### total_export_value
 Scope to the total value of scope country's exports to the world market (example: total_trade_value >= 1000)
 Input Scopes: country
@@ -1477,9 +1398,91 @@ Scope to the total value of scope country's imports from the world market (examp
 Input Scopes: country
 Output Scopes: value
 
+### total_marine_capacity
+Get the total marine capacity across all fleets of a country
+Input Scopes: country
+Output Scopes: value
+
 ### total_trade_value
 Scope to the total value of scope country's trade with the world market (example: total_trade_value >= 1000)
 Input Scopes: country
+Output Scopes: value
+
+### ai_state_value
+Scope to target country AI desire to own scope state (example: value = ai_state_value:root)
+Requires Data: yes
+Input Scopes: state
+Output Scopes: value
+
+### ai_treaty_port_value
+Scope to target country AI desire to have a treaty port in scope state (example: value = ai_treaty_port_value:root)
+Requires Data: yes
+Input Scopes: state
+Output Scopes: value
+
+### b
+Scope to the building of specified key in the state
+Requires Data: yes
+Input Scopes: state
+Output Scopes: building
+
+### decree_cost
+Scope to a state's cost for a certain decree
+authority > decree_cost:decree_road_maintaintenance
+Requires Data: yes
+Input Scopes: state
+Output Scopes: value
+
+### mass_migration_culture
+Scope to the mass migration target culture of a state
+Input Scopes: state
+Output Scopes: culture
+
+### nf
+Scope to a Decree of specified key applied to the state
+Requires Data: yes
+Input Scopes: state
+Output Scopes: decree
+
+### num_world_market_hub_trade_center_levels
+Get the total number of trade center levels associated with scope world market hub state
+Input Scopes: state
+Output Scopes: value
+
+### population_below_expected_sol
+Scope to the current percentage of the state's population that are below their expected standard of living (0-1)
+Input Scopes: state
+Output Scopes: value
+
+### sg
+Scope from a state to the StateGoods with the specified key
+Requires Data: yes
+Input Scopes: state
+Output Scopes: state_goods
+
+### state_region
+Scope to the state region of a state
+Input Scopes: state
+Output Scopes: state_region
+
+### world_market_hub
+Scope to the world market hub state associated with the scoped state
+Input Scopes: state
+Output Scopes: state
+
+### attacker_side
+Scope from a battle to the BattleSide corresponding to the attacker
+Input Scopes: battle
+Output Scopes: battle_side
+
+### defender_side
+Scope from a battle to the BattleSide corresponding to the defender
+Input Scopes: battle
+Output Scopes: battle_side
+
+### base_price
+Get the base price of the scoped good
+Input Scopes: goods
 Output Scopes: value
 
 ### average_expected_sol
@@ -1497,41 +1500,15 @@ Get the migration pull for a state or the mass migration pull for a country.
 Input Scopes: country, state
 Output Scopes: value
 
-### attacker_side
-Scope from a battle to the BattleSide corresponding to the attacker
-Input Scopes: battle
-Output Scopes: battle_side
-
-### defender_side
-Scope from a battle to the BattleSide corresponding to the defender
-Input Scopes: battle
-Output Scopes: battle_side
-
-### base_price
-Get the base price of the scoped good
-Input Scopes: goods
-Output Scopes: value
-
-### enforced_on_country
-Scope to the enforced_on_country of an enforced treaty
-Input Scopes: treaty
-Output Scopes: country
-
-### enforcer_country
-Scope to the enforcer_country of an enforced treaty
-Input Scopes: treaty
-Output Scopes: country
-
 ### group
 Scope from an object to its group
 Input Scopes: building, building_type
 Output Scopes: building_group
 
-### region_state
-Unknown, add something in code registration
-Requires Data: yes
-Input Scopes: state_region
-Output Scopes: state
+### market
+Scope to the market of the object
+Input Scopes: country, building, market, market_goods, province, state, state_goods, state_region
+Output Scopes: market
 
 ### momentum
 Get the scoped party's raw momentum
@@ -1551,6 +1528,32 @@ Output Scopes: front
 Returns the number of units garrisoned in a HQ
 Input Scopes: hq
 Output Scopes: value
+
+### first_country
+Scope to the first_country of any of:
+1. diplomatic pact
+2. treaty
+3. treaty options
+4. treaty article's treaty
+5. treaty article options (for mutual article types only)
+Input Scopes: diplomatic_pact, treaty_article, treaty_options, treaty_article_options, treaty
+Output Scopes: country
+
+### second_country
+Scope to the second_country of any of:
+1. diplomatic pact
+2. treaty
+3. treaty options
+4. treaty article's treaty
+5. treaty article options (for mutual article types only)
+Input Scopes: diplomatic_pact, treaty_article, treaty_options, treaty_article_options, treaty
+Output Scopes: country
+
+### region_state
+Unknown, add something in code registration
+Requires Data: yes
+Input Scopes: state_region
+Output Scopes: state
 
 ### investment
 Scope to current investment level in an institution (example: investment < investment_max)
@@ -1576,6 +1579,16 @@ Output Scopes: country
 Scope from a war to its diplomatic play
 Input Scopes: war
 Output Scopes: diplomatic_play
+
+### enforced_on_country
+Scope to the enforced_on_country of an enforced treaty
+Input Scopes: treaty
+Output Scopes: country
+
+### enforcer_country
+Scope to the enforcer_country of an enforced treaty
+Input Scopes: treaty
+Output Scopes: country
 
 ### command_limit_num_units
 Get the baseline number of units from their military formation a commander would normally get, depending on their command limit
@@ -1639,21 +1652,6 @@ Requires Data: yes
 Input Scopes: country, military_formation
 Output Scopes: value
 
-### amended_treaty
-Scope to the treaty the scoped treaty is amending
-Input Scopes: treaty_options, treaty
-Output Scopes: treaty
-
-### binding_period
-Get the original binding period in days when the treaty was signed for the scoped treaty
-Input Scopes: treaty_options, treaty
-Output Scopes: value
-
-### remaining_binding_period
-Get the current remaining binding period in days for the scoped treaty
-Input Scopes: treaty_options, treaty
-Output Scopes: value
-
 ### required_construction
 Get the required amount of construction for scope building type
 Input Scopes: building_type
@@ -1680,14 +1678,95 @@ Scope to the party that an IG is supporting
 Input Scopes: interest_group
 Output Scopes: party
 
+### amended_treaty
+Scope to the treaty the scoped treaty is amending
+Input Scopes: treaty_options, treaty
+Output Scopes: treaty
+
+### binding_period
+Get the original binding period in days when the treaty was signed for the scoped treaty
+Input Scopes: treaty_options, treaty
+Output Scopes: value
+
+### remaining_binding_period
+Get the current remaining binding period in days for the scoped treaty
+Input Scopes: treaty_options, treaty
+Output Scopes: value
+
+### input_building_type
+Scope to the building type input in a treaty article
+Input Scopes: treaty_article, treaty_article_options
+Output Scopes: building_type
+
+### input_company
+Scope to the company input in a treaty article
+Input Scopes: treaty_article, treaty_article_options
+Output Scopes: company
+
+### input_country
+Scope to the country input in a treaty article
+Input Scopes: treaty_article, treaty_article_options
+Output Scopes: country
+
+### input_goods
+Scope to the goods input in a treaty article
+Input Scopes: treaty_article, treaty_article_options
+Output Scopes: goods
+
+### input_law
+Scope to the law input in a treaty article
+Input Scopes: treaty_article, treaty_article_options
+Output Scopes: law_type
+
+### input_market_goods
+Scope to the market goods input in a treaty article (example: input_market_goods:root)
+Requires Data: yes
+Input Scopes: treaty_article, treaty_article_options
+Output Scopes: market_goods
+
+### input_quantity
+Scope to the quantity input in a treaty article
+Input Scopes: treaty_article, treaty_article_options
+Output Scopes: value
+
+### input_ship
+Scope to the ship input in a treaty article
+Input Scopes: treaty_article, treaty_article_options
+Output Scopes: ship
+
+### input_state
+Scope to the state input in a treaty article
+Input Scopes: treaty_article, treaty_article_options
+Output Scopes: state
+
+### input_strategic_region
+Scope to the strategic region input in a treaty article
+Input Scopes: treaty_article, treaty_article_options
+Output Scopes: strategic_region
+
+### source_country
+Scope to the source_country of any of:
+1. treaty article (for directed article types only)
+2. treaty article options (for directed article types only)
+Input Scopes: treaty_article, treaty_article_options
+Output Scopes: country
+
+### target_country
+Scope to the target_country of any of:
+1. treaty article (for directed article types only)
+2. treaty article options (for directed article types only)
+Input Scopes: treaty_article, treaty_article_options
+Output Scopes: country
+
 ### power_projection
 Get the power projection value of the scoped formation, unit, or ship
 Input Scopes: new_combat_unit, military_formation, ship
 Output Scopes: value
 
-### gdp
-Get the scoped country's yearly predicted GDP
-Input Scopes: country, market, state, strategic_region
+### num_provinces
+Get the scoped entity's current number of provinces
+scopes: state, stateregion, front
+Input Scopes: front, state, state_region
 Output Scopes: value
 
 ### target
@@ -1703,36 +1782,6 @@ Output Scopes: value
 Scope to the workplace of a pop
 Input Scopes: pop
 Output Scopes: building
-
-### shipping_lane
-Scope to the shipping lane for the military formation, or treaty article (goods transfer)
-Input Scopes: treaty_article
-Output Scopes: shipping_lanes
-
-### treaty
-Scope to the treaty a treaty article belongs to
-Input Scopes: treaty_article
-Output Scopes: treaty
-
-### first_country
-Scope to the first_country of any of:
-1. diplomatic pact
-2. treaty
-3. treaty options
-4. treaty article's treaty
-5. treaty article options (for mutual article types only)
-Input Scopes: diplomatic_pact, treaty_article, treaty_options, treaty_article_options, treaty
-Output Scopes: country
-
-### second_country
-Scope to the second_country of any of:
-1. diplomatic pact
-2. treaty
-3. treaty options
-4. treaty article's treaty
-5. treaty article options (for mutual article types only)
-Input Scopes: diplomatic_pact, treaty_article, treaty_options, treaty_article_options, treaty
-Output Scopes: country
 
 ### culture
 Scope to pop's or character's culture
@@ -1765,6 +1814,16 @@ If used in a revolution civil war scope, scope to the movement that started the 
 If used in an interest group scope, scope to the group's dominant movement.
 Input Scopes: character, civil_war
 Output Scopes: political_movement
+
+### shipping_lane
+Scope to the shipping lane for the military formation, or treaty article (goods transfer)
+Input Scopes: treaty_article
+Output Scopes: shipping_lanes
+
+### treaty
+Scope to the treaty a treaty article belongs to
+Input Scopes: treaty_article
+Output Scopes: treaty
 
 ### average_defense
 Returns the average defense of units on Front on the same side as Country
@@ -1813,6 +1872,7 @@ defender
 actor
 recipient
 ship
+ship_modification_type
 country_formation
 ally
 initiator
@@ -1885,6 +1945,7 @@ enemy_commander
 attacker_commander
 defender_commander
 province
+invasion
 is_naval_invasion
 is_advancing_side
 is_military_formation
@@ -1938,6 +1999,8 @@ building
 stakeholder
 war_goal
 strait
+is_sole_controller
 amenability
 advance_chance
 stall_chance
+num_sunk_ships

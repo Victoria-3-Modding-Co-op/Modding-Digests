@@ -561,6 +561,12 @@ Return type: ShipGroup
 
 -----------------------
 
+Scope.AccessShipModificationType
+Definition type: Promote
+Return type: ShipModificationType
+
+-----------------------
+
 Scope.AccessShipType
 Definition type: Promote
 Return type: ShipType
@@ -600,6 +606,12 @@ Return type: StateTrait
 Scope.AccessStrait
 Definition type: Promote
 Return type: Strait
+
+-----------------------
+
+Scope.AccessStraitDefinition
+Definition type: Promote
+Return type: StraitDefinition
 
 -----------------------
 
@@ -1101,6 +1113,12 @@ Return type: ShipGroup
 
 -----------------------
 
+Scope.GetShipModificationType
+Definition type: Promote
+Return type: ShipModificationType
+
+-----------------------
+
 Scope.GetShipType
 Definition type: Promote
 Return type: ShipType
@@ -1140,6 +1158,12 @@ Return type: StateTrait
 Scope.GetStrait
 Definition type: Promote
 Return type: Strait
+
+-----------------------
+
+Scope.GetStraitDefinition
+Definition type: Promote
+Return type: StraitDefinition
 
 -----------------------
 
