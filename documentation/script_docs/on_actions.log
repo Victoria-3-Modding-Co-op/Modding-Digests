@@ -20,6 +20,12 @@ Expected Scope: country
 
 --------------------
 
+japan_monarchy_monthly_events:
+From Code: No
+Expected Scope: country
+
+--------------------
+
 on_wounded:
 From Code: No
 Expected Scope: none
@@ -116,6 +122,12 @@ Expected Scope: none
 
 --------------------
 
+on_naval_battle_started:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 on_become_independent:
 From Code: Yes
 Expected Scope: none
@@ -182,6 +194,12 @@ Expected Scope: none
 
 --------------------
 
+on_fleet_destroyed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 bp1_misc_yearly_events:
 From Code: No
 Expected Scope: country
@@ -220,6 +238,12 @@ Expected Scope: country
 
 exile_pool_culling_on_action:
 From Code: No
+Expected Scope: none
+
+--------------------
+
+on_character_became_adult:
+From Code: Yes
 Expected Scope: none
 
 --------------------
@@ -350,12 +374,6 @@ Expected Scope: none
 
 --------------------
 
-on_memento_mori:
-From Code: No
-Expected Scope: none
-
---------------------
-
 on_diplomatic_proposal_break:
 From Code: Yes
 Expected Scope: none
@@ -376,6 +394,12 @@ Expected Scope: none
 
 on_treaty_entered_into_force:
 From Code: Yes
+Expected Scope: none
+
+--------------------
+
+ip4_lands_of_anarchy_remove_on_state_lost:
+From Code: No
 Expected Scope: none
 
 --------------------
@@ -519,6 +543,12 @@ Expected Scope: none
 --------------------
 
 on_half_yearly_pulse_character:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_flagship_battle_lost:
 From Code: Yes
 Expected Scope: none
 
@@ -680,6 +710,12 @@ Expected Scope: none
 
 --------------------
 
+ryukyu_rivalry_coin_toss:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_diplomatic_pact_auto_break:
 From Code: Yes
 Expected Scope: none
@@ -759,6 +795,12 @@ Expected Scope: none
 --------------------
 
 on_character_death:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_flagship_destroyed:
 From Code: Yes
 Expected Scope: none
 
@@ -908,6 +950,12 @@ Expected Scope: none
 
 --------------------
 
+on_strait_access_setting_changed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 on_resource_discovered:
 From Code: Yes
 Expected Scope: state
@@ -932,6 +980,12 @@ Expected Scope: none
 
 --------------------
 
+on_naval_battle_lost:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 on_decade_pulse_country:
 From Code: Yes
 Expected Scope: country
@@ -951,6 +1005,12 @@ Expected Scope: none
 --------------------
 
 spooky_halloween_events:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+japan_yearly_events:
 From Code: No
 Expected Scope: country
 
@@ -986,6 +1046,12 @@ Expected Scope: none
 
 --------------------
 
+japan_earthquake_events:
+From Code: No
+Expected Scope: country
+
+--------------------
+
 on_diplomatic_demand_accepted:
 From Code: Yes
 Expected Scope: none
@@ -1016,6 +1082,12 @@ Expected Scope: country
 
 --------------------
 
+on_flagship_battle_won:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 on_ruler_selected:
 From Code: Yes
 Expected Scope: none
@@ -1025,6 +1097,12 @@ Expected Scope: none
 on_objective_completed:
 From Code: Yes
 Expected Scope: none
+
+--------------------
+
+on_naval_battle_won:
+From Code: Yes
+Expected Scope: country
 
 --------------------
 
@@ -1065,6 +1143,12 @@ Expected Scope: none
 --------------------
 
 on_spreading_technology:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_travel_deploy_to_state_cancelled:
 From Code: Yes
 Expected Scope: none
 
@@ -1112,6 +1196,12 @@ Expected Scope: none
 
 --------------------
 
+japan_monarchy_yearly_events:
+From Code: No
+Expected Scope: country
+
+--------------------
+
 on_law_enactment_pass:
 From Code: Yes
 Expected Scope: none
@@ -1137,6 +1227,12 @@ Expected Scope: none
 --------------------
 
 on_peace_agreement_signed_war_participant:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_naval_battle_ended:
 From Code: Yes
 Expected Scope: none
 
@@ -1216,6 +1312,12 @@ Expected Scope: country
 
 on_monthly_pulse_state:
 From Code: Yes
+Expected Scope: none
+
+--------------------
+
+colonial_claims_check:
+From Code: No
 Expected Scope: none
 
 --------------------
@@ -1359,6 +1461,12 @@ Expected Scope: country
 --------------------
 
 on_diplomatic_action_third_party_break_declined:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_character_spawned_in_pool:
 From Code: Yes
 Expected Scope: none
 

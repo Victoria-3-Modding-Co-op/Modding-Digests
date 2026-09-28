@@ -11,6 +11,34 @@ battle_defense_owned_province_mult:
   Mask: battle
   Name: Home Defense
   Description: Alters the Defense of a Military Unit fighting in territory owned by its Country
+battle_naval_condition_calm_waters_chance_mult:
+  Mask: battle
+  Name: naval_condition_calm_waters_text_icon! Calm Waters Chance
+  Description: Chance of being affected by the naval_condition_calm_waters_text_icon! Calm Waters Battle Condition
+battle_naval_condition_cyclone_chance_mult:
+  Mask: battle
+  Name: naval_condition_cyclone_text_icon! Cyclone Chance
+  Description: Chance of being affected by the naval_condition_cyclone_text_icon! Cyclone Battle Condition
+battle_naval_condition_fog_chance_mult:
+  Mask: battle
+  Name: naval_condition_fog_text_icon! Fog Chance
+  Description: Chance of being affected by the naval_condition_fog_text_icon! Fog Battle Condition
+battle_naval_condition_ice_chance_mult:
+  Mask: battle
+  Name: naval_condition_ice_text_icon! Ice Chance
+  Description: Chance of being affected by the naval_condition_ice_text_icon! Ice Battle Condition
+battle_naval_condition_rough_waters_chance_mult:
+  Mask: battle
+  Name: naval_condition_rough_waters_text_icon! Rough Waters Chance
+  Description: Chance of being affected by the naval_condition_rough_waters_text_icon! Rough Waters Battle Condition
+battle_naval_condition_strong_winds_chance_mult:
+  Mask: battle
+  Name: naval_condition_strong_winds_text_icon! Strong Winds Chance
+  Description: Chance of being affected by the naval_condition_strong_winds_text_icon! Strong Winds Battle Condition
+battle_naval_condition_tropical_storm_chance_mult:
+  Mask: battle
+  Name: naval_condition_tropical_storm_text_icon! Tropical Storm Chance
+  Description: Chance of being affected by the naval_condition_tropical_storm_text_icon! Tropical Storm Battle Condition
 battle_offense_owned_province_mult:
   Mask: battle
   Name: Home Offense
@@ -50,7 +78,7 @@ building_level_bureaucracy_cost_add:
 building_minimum_incorporated_subsistence_employment_add:
   Mask: building
   Name: Protected Subsistence Employment in Incorporated States
-  Description: An increase or decrease to the level of employment below which it is not possible for other Buildings to hire from Subsistence Building in Incorporated States.
+  Description: An increase or decrease to the level of employment below which it is not possible for other Buildings to hire from Subsistence Buildings in Incorporated States.
 building_minimum_wage_mult:
   Mask: building
   Name: Building Wage Target
@@ -202,7 +230,7 @@ character_blockade_mult:
 character_command_limit_add:
   Mask: character
   Name: Command Limit
-  Description: Command Limit determines how many Battalions or Flotillas can be effectively Organized under a Formation. You can increase Command Limit by hiring more Commanders or by giving them promotions to higher Commander Ranks.
+  Description: Command Limit determines how many Battalions or Ships can be effectively Organized under a Formation. You can increase Command Limit by promoting your Commander to a higher Commander Rank.
 
 Having more Military Units in a Formation than its Command Limit reduces the maximum Organization a Formation can reach, and additionally confers the following effects:
 -50% Daily Organization Gain
@@ -210,14 +238,18 @@ character_command_limit_mult:
   Mask: character
   Name: Command Limit
   Description: Multiplies the amount of units this Character can command.
+character_commander_loyalty_add:
+  Mask: character
+  Name: Commander Loyalty
+  Description: An increase or decrease to a Commander’s Loyalty.
 character_convoy_protection_mult:
   Mask: character
-  Name: Admiral Convoys Protection
-  Description: A bonus or penalty to how effectively a Admiral protects Convoys
+  Name: Admiral merchant_marine! Merchant Marine Protection
+  Description: A bonus or penalty to how effectively a Admiral protects merchant_marine! Merchant Marine
 character_convoy_raiding_mult:
   Mask: character
-  Name: Admiral Convoys Raiding Efficiency
-  Description: A bonus or penalty to a Admiral efficiency of raiding Convoys
+  Name: Admiral merchant_marine! Merchant Marine Raiding Efficiency
+  Description: A bonus or penalty to a Admiral efficiency of raiding merchant_marine! Merchant Marine
 character_coup_strength_add:
   Mask: character
   Name: Coup Strength
@@ -233,19 +265,39 @@ character_expedition_events_explorer_mult:
 character_health_add:
   Mask: character
   Name: Character Health
-  Description: A character's health and longevity.
+  Description: A character's health and longevity. Characters with low health will have shorter lives and will usually serve a shorter time in their Roles before retiring.
 character_interception_add:
   Mask: character
   Name: Admiral Interception Chance
   Description: The chance the Admiral’s Fleet has at intercepting Fleets every quarter of a day
+character_loyalty_add:
+  Mask: character
+  Name: Loyalty
+  Description: An increase or decrease to a Character’s Loyalty.
+character_loyalty_mult:
+  Mask: character
+  Name: Loyalty
+  Description: An increase or decrease to a Character’s Loyalty.
+character_max_offensive_battles_add:
+  Mask: character
+  Name: Max Offensive Battles
+  Description: The maximum number of offensive battles this Character can participate in simultaneously.
+character_piracy_goods_capacity_mult:
+  Mask: character
+  Name: Pirating Capacity
+  Description: An increase or decrease of how many goods this admiral can capture in a week.
 character_popularity_add:
   Mask: character
   Name: Popularity
-  Description: How popular this character is with its constituents.
-character_supply_route_cost_mult:
+  Description: An increase or decrease to a Character’s Popularity.
+character_prominence_add:
   Mask: character
-  Name: Supply Route Cost
-  Description: How many convoys are needed to supply troops
+  Name: Prominence
+  Description: An increase or decrease to a Character’s Prominence.
+character_raid_supply_add:
+  Mask: character
+  Name: Admiral Raid Supply Chance
+  Description: The chance the Admiral’s Fleet has at raiding Fleets supply ships every quarter of a day
 country_acceptance_homeland_add:
   Mask: country
   Name: Acceptance from Homeland
@@ -306,6 +358,10 @@ country_acceptance_state_religion_add:
   Mask: country
   Name: Acceptance from State Religion
   Description: The amount of Acceptance a Pop is subject to if their Religion is the same as their Country State Religion
+country_admiral_rank_impact_mult:
+  Mask: country
+  Name: Admiral Rank Impact
+  Description: An increase or decrease to the benefit that a Admiral gains (such as an increase in Command Limit) from their Rank.
 country_agitator_slots_add:
   Mask: country
   Name: Potential Agitators
@@ -378,6 +434,10 @@ country_can_only_conscript_peasants_bool:
   Mask: country
   Name: Allows only Infantry Conscript Battalions
   Description: Conscript Battalions can only consist of Infantry Military Unit Types, except Mechanized Infantry
+country_cannot_be_subjugated_bool:
+  Mask: country
+  Name: Cannot be Subjugated
+  Description: This country recently declared its Neutrality and cannot be subjugated
 country_cannot_be_target_for_law_imposition_bool:
   Mask: country
   Name: Cannot be targeted for Law Imposition
@@ -390,6 +450,10 @@ country_cannot_enact_laws_bool:
   Mask: country
   Name: Disallow Enacting Laws
   Description: A penalty preventing a country from enacting any Laws
+country_cannot_join_power_bloc_bool:
+  Mask: country
+  Name: Cannot join Power Blocks
+  Description: This country recently declared its Neutrality and cannot join any Power Bloc
 country_cannot_start_law_enactment_bool:
   Mask: country
   Name: Disallow Start Law Enactment
@@ -418,26 +482,6 @@ country_conversion_delta_threshold_add:
   Mask: country
   Name: Religious Conversion Threshold
   Description: A bonus or penalty to the threshold for Conversion in this Country
-country_convoy_contribution_to_market_owner_add:
-  Mask: country
-  Name: convoys! Convoys Contribution to Market Owner
-  Description: The percentage of convoys! Convoys a member of a Customs Union must contribute to the Market Owner
-country_convoy_damage_taken_mult:
-  Mask: country
-  Name: Damage to Convoys
-  Description: A bonus or penalty to how much damage the Country’s Convoys suffer from Convoy Raiding
-country_convoys_capacity_add:
-  Mask: country
-  Name: convoys! Convoys
-  Description: Convoys are produced by Port Buildings and are required to operate a Countries’ Shipping Lanes.
-
-Convoy Cost is incurred by the Country unlike Merchant Marine which is utilized by Trade Center Buildings to conduct Trade on the World Market.
-country_convoys_capacity_mult:
-  Mask: country
-  Name: convoys! Convoys
-  Description: Convoys are produced by Port Buildings and are required to operate a Countries’ Shipping Lanes.
-
-Convoy Cost is incurred by the Country unlike Merchant Marine which is utilized by Trade Center Buildings to conduct Trade on the World Market.
 country_coup_resistance_add:
   Mask: country
   Name: Coup Resistance
@@ -454,6 +498,10 @@ country_diplomatic_play_maneuvers_add:
   Mask: country
   Name: Maneuvers per Diplomatic Play
   Description: A bonus or penalty to the number of Maneuvers the country can take in a diplomatic play.
+country_diplomatic_play_maneuvers_mult:
+  Mask: country
+  Name: Maneuvers per Diplomatic Play
+  Description: A multiplier to the number of Maneuvers the country can take in a diplomatic play.
 country_diplomatic_reputation_add:
   Mask: country
   Name: Diplomatic Reputation
@@ -490,6 +538,10 @@ country_disallow_trade_outside_canton_bool:
   Mask: country
   Name: Disable Trade Centers outside Western Guangdong
   Description: Disallow construction of Trade Centers in States other than Western Guangdong
+country_disallow_trade_outside_kyushu_bool:
+  Mask: country
+  Name: Disable Trade Centers outside Kyushu
+  Description: Disallow construction of Trade Centers in States other than Kyushu
 country_economic_dependence_on_overlord_add:
   Mask: country
   Name: Economic Dependence on Overlord
@@ -502,6 +554,10 @@ country_electoral_confidence_impact_mult:
   Mask: country
   Name: Electoral Confidence Impact
   Description: An increase or decrease to the impact that low Electoral Confidence will have on a Country, such as decreasing its Legitimacy.
+country_electoral_confidence_over_time:
+  Mask: country
+  Name: Monthly Electoral Confidence Change
+  Description: A monthly increase or decrease to a Country’s Electoral Confidence
 country_expedition_events_explorer_mult:
   Mask: country
   Name: Expedition Opportunity
@@ -538,6 +594,10 @@ country_free_charters_add:
   Mask: country
   Name: Free Company Charters
   Description: The amount of Company Charters a Country can hand out to their Companies for free
+country_general_rank_impact_mult:
+  Mask: country
+  Name: General Rank Impact
+  Description: An increase or decrease to the benefit that a General gains (such as an increase in Command Limit) from their Rank.
 country_gold_reserve_limit_mult:
   Mask: country
   Name: Gold reserve limit
@@ -606,6 +666,10 @@ country_institution_size_change_speed_mult:
   Mask: country
   Name: Institution Size Change Speed
   Description: How fast you change the size of an institution
+country_je_korea_action_cost:
+  Mask: country
+  Name: country_je_korea_action_cost
+  Description: country_je_korea_action_cost_desc
 country_join_power_bloc_member_in_defensive_plays_bool:
   Mask: country
   Name: Can call Power Bloc members with the Call Ally Sway in defensive Diplomatic Plays
@@ -706,6 +770,10 @@ country_liberty_desire_of_subjects_add:
   Mask: country
   Name: Weekly Liberty Desire for all Subjects
   Description: An increase or decrease to the amount of Liberty Desire all Subjects of the Overlord gain each week
+country_limit_officers_qualifications_to_upper_strata:
+  Mask: country
+  Name: officers! Officers qualifications limited to Upper Strata
+  Description: officers! Officers Qualifications will exclusively originate from the Upper Strata
 country_loan_interest_rate_add:
   Mask: country
   Name: Loan interest rate
@@ -718,6 +786,10 @@ country_lobby_leverage_generation_mult:
   Mask: country
   Name: Leverage Generation from Political Lobbies
   Description: An increase or decrease to the amount of Leverage generation from Political Lobbies aligned in favor of the Power Bloc Leader
+country_lobby_support:
+  Mask: country
+  Name: Lobby Support
+  Description: A bonus or penalty to the likelihood an Interest Group will remain in its Political Lobby
 country_loyalists_from_legitimacy_mult:
   Mask: country
   Name: Loyalists from high Legitimacy
@@ -730,14 +802,14 @@ country_max_companies_add:
   Mask: country
   Name: Max Number of Companies
   Description: The number of Companies a Country can establish
-country_max_declared_interests_add:
+country_max_unassigned_admirals_add:
   Mask: country
-  Name: Maximum Declared Interests
-  Description: An increase or decrease to the number of Interests that a country can declare outside of its controlled territory
-country_max_declared_interests_mult:
+  Name: Maximum Idle Admirals
+  Description: The maximum number of idle Admirals that a Country can have at the same time.
+country_max_unassigned_generals_add:
   Mask: country
-  Name: Maximum Declared Interests
-  Description: An increase or decrease to the number of Interests that a country can declare outside of its controlled territory
+  Name: Maximum Idle Generals
+  Description: The maximum number of idle Generals that a Country can have at the same time.
 country_max_weekly_construction_progress_add:
   Mask: country
   Name: Max Weekly Construction Progress
@@ -798,10 +870,14 @@ country_party_whip_impact_add:
   Mask: country
   Name: Party Whip Impact on Ideological Incoherence
   Description: A bonus or penalty to the effect that Party Whip has on the Ideological opinion of the rest of the Party members
+country_piracy_income_add:
+  Mask: country
+  Name: Piracy Income
+  Description: An increase or decrease of the value we can extract from pirated goods.
 country_port_connection_cost_mult:
   Mask: country
-  Name: convoys! Convoys Cost of Port Connections
-  Description: An increase or decrease to the number of convoys! Convoys required to maintain Port Connections
+  Name: merchant_marine! Merchant Marine Cost of Port Connections
+  Description: An increase or decrease to the merchant_marine! Merchant Marine demand required to maintain Port Connections
 country_prestige_add:
   Mask: country
   Name: Prestige
@@ -858,6 +934,10 @@ country_revolution_progress_mult:
   Mask: country
   Name: Revolution Progression Speed
   Description: A bonus or penalty to how much progress is added to the revolution when the Revolution Clock strikes 12
+country_sailors_max_add:
+  Mask: country
+  Name: Max Sailors
+  Description: The maximum amount of Sailors provided by Buildings for crewing Ships in a Country
 country_secession_clock_time_add:
   Mask: country
   Name: Secession Clock Time
@@ -870,6 +950,18 @@ country_secession_progress_mult:
   Mask: country
   Name: Secession Progression Speed
   Description: A bonus or penalty to how much progress is added to the secession when the Secession Clock strikes 12
+country_ship_construction_add:
+  Mask: country
+  Name: ship_construction! Ship Construction
+  Description: The amount of ship_construction! Construction a Country can apply to shipbuilding each week
+country_ship_construction_goods_cost_mult:
+  Mask: country
+  Name: Ship Construction Goods Cost
+  Description: A bonus or penalty to the monetary cost of Ship Construction material necessities.
+country_ship_construction_progress_max_add:
+  Mask: country
+  Name: Max Ship Construction Progress
+  Description: The maximum amount of construction progress a Country can apply to one shipbuilding project each week
 country_state_religion_wages_mult:
   Mask: country
   Name: Wages for State Religion Pops
@@ -882,6 +974,10 @@ country_subject_income_transfer_mult:
   Mask: country
   Name: Income transfer from Subjects
   Description: An increase or decrease to the amount of Money the subject must give to their overlord
+country_supply_ship_construction_ratio_add:
+  Mask: country
+  Name: Supply Ship Construction Ratio
+  Description: The proportion of total ship_construction! Construction a Country allocates to building Supply Ships
 country_support_independence_weekly_liberty_desire_add:
   Mask: country
   Name: support_independence_text_icon! Support Independence weekly Liberty Desire
@@ -1018,6 +1114,14 @@ interest_group_pop_attraction_mult:
   Mask: interest_group
   Name: Interest Group Pop Attraction
   Description: A bonus or penalty to how attracted Pops are to an Interest Group
+military_formation_army_movement_speed_add:
+  Mask: military_formation
+  Name: Army Speed
+  Description: How quickly a Army can travel to reach a new destination
+military_formation_army_movement_speed_mult:
+  Mask: military_formation
+  Name: Army Speed
+  Description: How quickly a Army can travel to reach a new destination
 military_formation_attrition_risk_add:
   Mask: military_formation
   Name: Attrition Risk
@@ -1026,6 +1130,18 @@ military_formation_attrition_risk_mult:
   Mask: military_formation
   Name: Attrition Risk Multiplier
   Description: The chance of casualties among the units not involved in active battles
+military_formation_fleet_movement_speed_add:
+  Mask: military_formation
+  Name: Fleet Speed
+  Description: How quickly a Fleet can travel to reach a new destination
+military_formation_fleet_movement_speed_mult:
+  Mask: military_formation
+  Name: Fleet Speed
+  Description: How quickly a Fleet can travel to reach a new destination
+military_formation_interest_gain_mult:
+  Mask: military_formation
+  Name: Fleet involvement Generation
+  Description: Modifies how much Involvement this fleet generates for its strategic regions.
 military_formation_mobilization_speed_add:
   Mask: military_formation
   Name: Formation Mobilization Speed
@@ -1034,14 +1150,6 @@ military_formation_mobilization_speed_mult:
   Mask: military_formation
   Name: Formation Mobilization Speed
   Description: How quickly a Formation can Mobilize its units
-military_formation_movement_speed_add:
-  Mask: military_formation
-  Name: Formation Speed
-  Description: How quickly a Formation can travel to reach a new destination
-military_formation_movement_speed_mult:
-  Mask: military_formation
-  Name: Formation Speed
-  Description: How quickly a Formation can travel to reach a new destination
 military_formation_organization_gain_add:
   Mask: military_formation
   Name: Daily Organization Gain
@@ -1051,14 +1159,21 @@ A Formation with low Organization will be less effective in Battle in a variety 
 
 Organization can also be impacted temporarily when switching Mobilization Options on or off, and when transferring Military Units between Mobilized Armies with different sets of Mobilization Options.
 
-A Formation with low Organization will suffer penalties the lower the value is, up to the following effects:
+A Formation with low Organization will suffer increasing penalties the lower the value is.
+
+For an Army, these penalties go up to the following effects:
 -75% Offense
 -75% Defense
--75% Blockade Strength
 -100% Morale Recovery
 -50% Recovery Rate
--75.0% Convoy Raiding Efficiency
--75.0% Convoy Escort Defense
+
+For a Fleet, the penalties are at most the following:
+-75% Accuracy
+-75% Blockade Strength
+-75% Crew Attack Damage
+-75% Critical Chance
+-75% Hull Attack Damage
+-75% Readiness
 military_formation_organization_gain_mult:
   Mask: military_formation
   Name: Daily Organization Gain
@@ -1068,14 +1183,25 @@ A Formation with low Organization will be less effective in Battle in a variety 
 
 Organization can also be impacted temporarily when switching Mobilization Options on or off, and when transferring Military Units between Mobilized Armies with different sets of Mobilization Options.
 
-A Formation with low Organization will suffer penalties the lower the value is, up to the following effects:
+A Formation with low Organization will suffer increasing penalties the lower the value is.
+
+For an Army, these penalties go up to the following effects:
 -75% Offense
 -75% Defense
--75% Blockade Strength
 -100% Morale Recovery
 -50% Recovery Rate
--75.0% Convoy Raiding Efficiency
--75.0% Convoy Escort Defense
+
+For a Fleet, the penalties are at most the following:
+-75% Accuracy
+-75% Blockade Strength
+-75% Crew Attack Damage
+-75% Critical Chance
+-75% Hull Attack Damage
+-75% Readiness
+political_movement_activism_growth_mult:
+  Mask: political_movement
+  Name: Political Movement Activism Growth
+  Description: An increase or decrease to the rate at which Movement Activism grows for a Political Movement
 political_movement_character_attraction_mult:
   Mask: political_movement
   Name: political_movement_character_attraction_mult
@@ -1172,10 +1298,178 @@ power_bloc_trade_advantage_add:
   Mask: power_bloc
   Name: Trade Advantage within Power Bloc
   Description: An increase or decrease in overall Trade Advantage with Countries in the same Power Bloc
+ship_accuracy_add:
+  Mask: ship
+  Name: Accuracy
+  Description: An increase or decrease to the probability that the Ship will get a hit when attacking
+ship_accuracy_mult:
+  Mask: ship
+  Name: Accuracy
+  Description: An increase or decrease to the probability that the Ship will get a hit when attacking
+ship_armor_add:
+  Mask: ship
+  Name: Ship Armor
+  Description: An increase or decrease to the amount of armor a Ship is equipped with, decreasing damage dealt to its hull
+ship_armor_mult:
+  Mask: ship
+  Name: Ship Armor
+  Description: An increase or decrease to the amount of armor a Ship is equipped with, decreasing damage dealt to its hull
+ship_blockade_strength_add:
+  Mask: ship
+  Name: Blockade Strength
+  Description: A Ship’s ability to Blockade enemy ports
+ship_blockade_strength_mult:
+  Mask: ship
+  Name: Blockade Strength
+  Description: A Ship’s ability to Blockade enemy ports
+ship_carrying_capacity_add:
+  Mask: ship
+  Name: Carrying Capacity
+  Description: How many Battalions a single Ship can transport to support a Naval Invasion
+ship_carrying_capacity_mult:
+  Mask: ship
+  Name: Carrying Capacity
+  Description: How many Battalions a single Ship can transport to support a Naval Invasion
+ship_construction_progress_max_add:
+  Mask: ship
+  Name: Max Ship Construction Progress
+  Description: The maximum amount of construction progress a Country can apply to one shipbuilding project each week
+ship_construction_progress_max_mult:
+  Mask: ship
+  Name: Max Ship Construction Progress
+  Description: The maximum amount of construction progress a Country can apply to one shipbuilding project each week
+ship_crew_damage_add:
+  Mask: ship
+  Name: Crew Attack Damage
+  Description: An increase or decrease to the amount of damage a Ship can deal to another Ship’s crew
+ship_crew_damage_mult:
+  Mask: ship
+  Name: Crew Attack Damage
+  Description: An increase or decrease to the amount of damage a Ship can deal to another Ship’s crew
+ship_crew_max_add:
+  Mask: ship
+  Name: Ship Crew
+  Description: An increase or decrease to the amount of Sailors a Ship requires to be fully crewed
+ship_crew_max_mult:
+  Mask: ship
+  Name: Ship Crew
+  Description: An increase or decrease to the amount of Sailors a Ship requires to be fully crewed
+ship_critical_hit_chance_add:
+  Mask: ship
+  Name: Critical Chance
+  Description: An increase or decrease to the probability that the Ship will get a critical hit when attacking
+ship_critical_hit_chance_mult:
+  Mask: ship
+  Name: Critical Chance
+  Description: An increase or decrease to the probability that the Ship will get a critical hit when attacking
+ship_critical_hit_multiplier_add:
+  Mask: ship
+  Name: Critical Damage
+  Description: A bonus or penalty to the amount of damage dealt when a Ship gets a critical hit when attacking
+ship_critical_hit_multiplier_mult:
+  Mask: ship
+  Name: Critical Damage
+  Description: A bonus or penalty to the amount of damage dealt when a Ship gets a critical hit when attacking
+ship_detection_add:
+  Mask: ship
+  Name: Detection
+  Description: An increase or decrease to how easily the Ship will detect other Ships
+ship_detection_mult:
+  Mask: ship
+  Name: Detection
+  Description: An increase or decrease to how easily the Ship will detect other Ships
+ship_hit_points_max_add:
+  Mask: ship
+  Name: Maximum Ship Hit Points
+  Description: An increase or decrease to the maximum amount of damage a Ship’s hull can take before being destroyed
+ship_hit_points_max_mult:
+  Mask: ship
+  Name: Maximum Ship Hit Points
+  Description: An increase or decrease to the maximum amount of damage a Ship’s hull can take before being destroyed
+ship_hull_damage_add:
+  Mask: ship
+  Name: Hull Attack Damage
+  Description: An increase or decrease to the amount of damage a Ship can deal to another Ship’s hull
+ship_hull_damage_mult:
+  Mask: ship
+  Name: Hull Attack Damage
+  Description: An increase or decrease to the amount of damage a Ship can deal to another Ship’s hull
+ship_marine_capacity_add:
+  Mask: ship
+  Name: Marine Capacity
+  Description: An increase or decrease to the amount of marines a Ship can carry, affecting its ability to support Naval Invasions and other amphibious operations
+ship_marine_capacity_mult:
+  Mask: ship
+  Name: Marine Capacity
+  Description: An increase or decrease to the amount of marines a Ship can carry, affecting its ability to support Naval Invasions and other amphibious operations
+ship_movement_speed_add:
+  Mask: ship
+  Name: Ship Speed
+  Description: An increase or decrease to the movement speed of ships. The slowest ship in a Fleet determines the speed of the entire fleet
+ship_movement_speed_mult:
+  Mask: ship
+  Name: Ship Speed
+  Description: An increase or decrease to the movement speed of ships. The slowest ship in a Fleet determines the speed of the entire fleet
+ship_readiness_gain_add:
+  Mask: ship
+  Name: Readiness
+  Description: An increase or decrease to how fast the Ship is able to act while in battle
+ship_readiness_gain_mult:
+  Mask: ship
+  Name: Readiness
+  Description: An increase or decrease to how fast the Ship is able to act while in battle
+ship_screening_add:
+  Mask: ship
+  Name: Screening
+  Description: An increase or decrease to how much the Ship is able to cover for the Vulnerability on other Ships
+ship_screening_mult:
+  Mask: ship
+  Name: Screening
+  Description: An increase or decrease to how much the Ship is able to cover for the Vulnerability on other Ships
+ship_supply_capacity_add:
+  Mask: ship
+  Name: Supply Capacity
+  Description: An increase or decrease to the maximum amount of supplies a Ship can carry
+ship_supply_capacity_mult:
+  Mask: ship
+  Name: Supply Capacity
+  Description: An increase or decrease to the maximum amount of supplies a Ship can carry
+ship_supply_efficiency_add:
+  Mask: ship
+  Name: Supply Efficiency
+  Description: An increase or decrease to how efficiently a Ship uses its supplies
+ship_supply_efficiency_mult:
+  Mask: ship
+  Name: Supply Efficiency
+  Description: An increase or decrease to how efficiently a Ship uses its supplies
+ship_visibility_add:
+  Mask: ship
+  Name: Visibility
+  Description: An increase or decrease to how hard to detect the Ship is
+ship_visibility_mult:
+  Mask: ship
+  Name: Visibility
+  Description: An increase or decrease to how hard to detect the Ship is
+ship_vulnerability_add:
+  Mask: ship
+  Name: Vulnerability
+  Description: An increase or decrease to how vulnerable the Ship is to get attacked
+ship_vulnerability_mult:
+  Mask: ship
+  Name: Vulnerability
+  Description: An increase or decrease to how vulnerable the Ship is to get attacked
 state_allow_assimilation_in_homeland_bool:
   Mask: state
   Name: Assimilation in Homeland States Allowed
   Description: Assimilation of Pops is allowed even if they are living in one of their Homeland States
+state_allow_assimilation_without_presence_bool:
+  Mask: state
+  Name: Assimilation to Primary Culture Always Allowed
+  Description: Assimilation to Primary Culture is allowed even if no Pops of that Culture are present in the State
+state_allow_conversion_without_presence_bool:
+  Mask: state
+  Name: Conversion to State Religion Always Allowed
+  Description: Conversion to the State Religion is allowed even if no Pops of that Religion are present in the State
 state_assimilation_mult:
   Mask: state
   Name: Assimilation
@@ -1216,6 +1510,10 @@ state_contiguous_incorporation_speed_mult:
   Mask: state
   Name: Contiguous Incorporation Speed
   Description: A bonus or penalty to the speed at which States that have a land or strait connection to the Capital State are Incorporated
+state_control_strait_bool:
+  Mask: state
+  Name: Control Strait
+  Description: Whether the state has control over a strait, affecting trade and military movement.
 state_conversion_mult:
   Mask: state
   Name: Conversion
@@ -1268,6 +1566,18 @@ state_food_security_add:
   Mask: state
   Name: Food Security
   Description: A bonus or penalty to the food security of all pops in a state
+state_fortification_bombardment_resistance_add:
+  Mask: state
+  Name: Naval Fortification Bombardment Resistance
+  Description: Resistance to port bombardment provided by Naval Fortification in a State. Higher values reduce the effectiveness of enemy fleet bombardment.
+state_fortification_naval_battle_mult:
+  Mask: state
+  Name: Naval Fortification Battle Defense
+  Description: A bonus or penalty to the defending units in a naval invasion battle provided by Naval Fortification in a State.
+state_fortification_naval_invasion_add:
+  Mask: state
+  Name: Naval Fortification Invasion Defense
+  Description: A bonus or penalty to the defense against naval invasion provided by Naval Fortification in a State.
 state_free_state_pop_support_movement_anti_slavery_mult:
   Mask: state
   Name: Abolitionist Movement Pop Attraction in non-Slave States
@@ -1308,6 +1618,10 @@ state_institution_impact_add:
   Mask: state
   Name: Impact of Institutions
   Description: An increase or reduction to the Impact of Institutions in the State
+state_literacy_growth_add:
+  Mask: state
+  Name: Literacy Growth
+  Description: A bonus or penalty to the growth of Literacy in a State.
 state_lower_strata_expected_sol_add:
   Mask: state
   Name: Minimum Expected Standard of Living for the Lower Strata
@@ -1355,7 +1669,7 @@ state_migration_quota_mult:
 state_minimum_incorporated_subsistence_arable_land_add:
   Mask: state
   Name: Minimum Subsistence Land Share in Incorporated States
-  Description: An increase or decrease to the minimum fraction of a Incorporated State’s arable land which is reserved for Subsistence Building and cannot be used for other types of Buildings.
+  Description: An increase or decrease to the minimum fraction of a Incorporated State’s arable land which is reserved for Subsistence Buildings and cannot be used for other types of Buildings.
 state_mortality_mult:
   Mask: state
   Name: Mortality
@@ -1476,6 +1790,10 @@ state_trade_capacity_mult:
   Mask: state
   Name: Trade Capacity
   Description: Trade Capacity
+state_trade_center_max_limit_add:
+  Mask: state
+  Name: Trade Center Max Level
+  Description: A bonus or penalty to the maximum level of Trade Center buildings.
 state_trade_quantity_mult:
   Mask: state
   Name: Traded Quantity
@@ -1568,26 +1886,6 @@ unit_army_offense_mult:
   Mask: unit
   Name: Army Offense
   Description: A Military Unit’s Offense (Army only)
-unit_blockade_add:
-  Mask: unit
-  Name: Blockade Strength
-  Description: A Military Unit’s ability to Blockade enemy ports
-unit_blockade_mult:
-  Mask: unit
-  Name: Blockade Strength
-  Description: A Military Unit’s ability to Blockade enemy ports
-unit_convoy_defense_mult:
-  Mask: unit
-  Name: Convoy Escort Defense
-  Description: Increase or decrease the protection offered against Convoy Raiding by escort Flotillas.
-unit_convoy_raiding_interception_mult:
-  Mask: unit
-  Name: Convoy Raider Interception
-  Description: Increase or decrease the chance of intercepting and engaging hostile Flotillas engaged in Convoy Raiding.
-unit_convoy_raiding_mult:
-  Mask: unit
-  Name: Convoy Raiding Efficiency
-  Description: Increase or decrease the effectiveness of our Flotillas to Raid Convoys.
 unit_defense_add:
   Mask: unit
   Name: Defense
@@ -1628,30 +1926,10 @@ unit_morale_recovery_mult:
   Mask: unit
   Name: Morale Recovery
   Description: How quickly a Military Unit recovers from Morale damage inflicted by its enemy
-unit_navy_defense_add:
+unit_naval_invasion_efficiency_mult:
   Mask: unit
-  Name: Navy Defense
-  Description: A Military Unit’s Defense (Navy only)
-unit_navy_defense_mult:
-  Mask: unit
-  Name: Navy Defense
-  Description: A Military Unit’s Defense (Navy only)
-unit_navy_experience_gain_add:
-  Mask: unit
-  Name: Weekly Unit Experience Gain for Navies
-  Description: How much Unit Experience is gained by Navies each week so that they can increase their Unit Veterancy Level
-unit_navy_experience_gain_mult:
-  Mask: unit
-  Name: Weekly Unit Experience Gain for Navies
-  Description: How much Unit Experience is gained by Navies each week so that they can increase their Unit Veterancy Level
-unit_navy_offense_add:
-  Mask: unit
-  Name: Navy Offense
-  Description: A Military Unit’s Offense (Navy only)
-unit_navy_offense_mult:
-  Mask: unit
-  Name: Navy Offense
-  Description: A Military Unit’s Offense (Navy only)
+  Name: Naval Invasion Efficiency
+  Description: PRCAL-43490
 unit_occupation_mult:
   Mask: unit
   Name: Battle Occupation
@@ -2614,10 +2892,6 @@ building_maize_farm_throughput_add:
   Mask: building
   Name: Maize Farms building Throughput
   Description: A bonus or penalty to both input and output of Maize Farms
-building_military_shipyard_throughput_add:
-  Mask: building
-  Name: Military Shipyards building Throughput
-  Description: A bonus or penalty to both input and output of Military Shipyards
 building_millet_farm_throughput_add:
   Mask: building
   Name: Millet Farms building Throughput
@@ -2630,10 +2904,10 @@ building_munition_plant_throughput_add:
   Mask: building
   Name: Munition Plants building Throughput
   Description: A bonus or penalty to both input and output of Munition Plants
-building_naval_base_throughput_add:
+building_naval_administration_throughput_add:
   Mask: building
-  Name: Naval Base building Throughput
-  Description: A bonus or penalty to both input and output of Naval Base
+  Name: Naval Administration building Throughput
+  Description: A bonus or penalty to both input and output of Naval Administration
 building_officers_job_attractiveness_mult:
   Mask: building
   Name: Job Attractiveness for officers! Officers
@@ -4454,6 +4728,10 @@ country_fervor_target_russian_add:
   Mask: country
   Name: Proportional Fervor for the Russian Culture
   Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
+country_fervor_target_ryukyuan_add:
+  Mask: country
+  Name: Proportional Fervor for the Ryukyuan Culture
+  Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
 country_fervor_target_salish_add:
   Mask: country
   Name: Proportional Fervor for the Salish Culture
@@ -5574,6 +5852,10 @@ country_russian_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Russian Culture
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
+country_ryukyuan_cultural_acceptance_add:
+  Mask: country
+  Name: Acceptance of Ryukyuan Culture
+  Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_salish_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Salish Culture
@@ -5762,6 +6044,246 @@ country_standard_of_living_violent_hostility_add:
   Mask: country
   Name: Standard of Living for the acceptance_status_1! Violent Hostility Status
   Description: Extra Standard of Living for the acceptance_status_1! Violent Hostility Status
+country_strata_commoners_peasants_acceptance_max_add:
+  Mask: country
+  Name: Maximum Acceptance for the Hyakushō Social Class
+  Description: A threshold describing the Acceptance value that Pops in the Hyakushō Social Class won't be able to exceed
+country_strata_commoners_peasants_acceptance_min_add:
+  Mask: country
+  Name: Minimum Acceptance for the Hyakushō Social Class
+  Description: A threshold describing the Acceptance value that Pops in the Hyakushō Social Class won't be able to fall below
+country_strata_commoners_peasants_cultural_acceptance_add:
+  Mask: country
+  Name: Cultural Acceptance for the Hyakushō Social Class
+  Description: A flat increase or decrease to cultural Acceptance for the Hyakushō Social Class
+country_strata_commoners_peasants_cultural_acceptance_mult:
+  Mask: country
+  Name: Cultural Acceptance for the Hyakushō Social Class
+  Description: A percentage increase or decrease to cultural Acceptance for the Hyakushō Social Class
+country_strata_commoners_peasants_education_access_add:
+  Mask: country
+  Name: Education Access for the Hyakushō Social Class
+  Description: A flat increase or decrease to Education Access for the Hyakushō Social Class
+country_strata_commoners_peasants_education_access_mult:
+  Mask: country
+  Name: Education Access for the Hyakushō Social Class
+  Description: A percentage increase or decrease to Education Access for the Hyakushō Social Class
+country_strata_commoners_peasants_qualification_growth_add:
+  Mask: country
+  Name: Qualification Growth for the Hyakushō Social Class
+  Description: A flat increase or decrease to Qualification Growth for the Hyakushō Social Class
+country_strata_commoners_peasants_qualification_growth_mult:
+  Mask: country
+  Name: Qualification Growth for the Hyakushō Social Class
+  Description: A percentage increase or decrease to Qualification Growth for the Hyakushō Social Class
+country_strata_commoners_peasants_qualification_growth_other_class_mult:
+  Mask: country
+  Name: Qualification Growth outside the Hyakushō Social Class for Hyakushō
+  Description: A percentage increase or decrease to Qualification Growth for the Hyakushō towards Professions in other Social Classes
+country_strata_commoners_peasants_qualification_growth_same_class_mult:
+  Mask: country
+  Name: Qualification Growth within Hyakushō Social Class
+  Description: A percentage increase or decrease to Qualification Growth for the Hyakushō Social Class towards Professions in the Hyakushō Social Class
+country_strata_commoners_townspeople_acceptance_max_add:
+  Mask: country
+  Name: Maximum Acceptance for the Chōnin Social Class
+  Description: A threshold describing the Acceptance value that Pops in the Chōnin Social Class won't be able to exceed
+country_strata_commoners_townspeople_acceptance_min_add:
+  Mask: country
+  Name: Minimum Acceptance for the Chōnin Social Class
+  Description: A threshold describing the Acceptance value that Pops in the Chōnin Social Class won't be able to fall below
+country_strata_commoners_townspeople_cultural_acceptance_add:
+  Mask: country
+  Name: Cultural Acceptance for the Chōnin Social Class
+  Description: A flat increase or decrease to cultural Acceptance for the Chōnin Social Class
+country_strata_commoners_townspeople_cultural_acceptance_mult:
+  Mask: country
+  Name: Cultural Acceptance for the Chōnin Social Class
+  Description: A percentage increase or decrease to cultural Acceptance for the Chōnin Social Class
+country_strata_commoners_townspeople_education_access_add:
+  Mask: country
+  Name: Education Access for the Chōnin Social Class
+  Description: A flat increase or decrease to Education Access for the Chōnin Social Class
+country_strata_commoners_townspeople_education_access_mult:
+  Mask: country
+  Name: Education Access for the Chōnin Social Class
+  Description: A percentage increase or decrease to Education Access for the Chōnin Social Class
+country_strata_commoners_townspeople_qualification_growth_add:
+  Mask: country
+  Name: Qualification Growth for the Chōnin Social Class
+  Description: A flat increase or decrease to Qualification Growth for the Chōnin Social Class
+country_strata_commoners_townspeople_qualification_growth_mult:
+  Mask: country
+  Name: Qualification Growth for the Chōnin Social Class
+  Description: A percentage increase or decrease to Qualification Growth for the Chōnin Social Class
+country_strata_commoners_townspeople_qualification_growth_other_class_mult:
+  Mask: country
+  Name: Qualification Growth outside the Chōnin Social Class for Chōnin
+  Description: A percentage increase or decrease to Qualification Growth for the Chōnin towards Professions in other Social Classes
+country_strata_commoners_townspeople_qualification_growth_same_class_mult:
+  Mask: country
+  Name: Qualification Growth within Chōnin Social Class
+  Description: A percentage increase or decrease to Qualification Growth for the Chōnin Social Class towards Professions in the Chōnin Social Class
+country_strata_outcastes_acceptance_max_add:
+  Mask: country
+  Name: Maximum Acceptance for the Eta-Hinin Social Class
+  Description: A threshold describing the Acceptance value that Pops in the Eta-Hinin Social Class won't be able to exceed
+country_strata_outcastes_acceptance_min_add:
+  Mask: country
+  Name: Minimum Acceptance for the Eta-Hinin Social Class
+  Description: A threshold describing the Acceptance value that Pops in the Eta-Hinin Social Class won't be able to fall below
+country_strata_outcastes_cultural_acceptance_add:
+  Mask: country
+  Name: Cultural Acceptance for the Eta-Hinin Social Class
+  Description: A flat increase or decrease to cultural Acceptance for the Eta-Hinin Social Class
+country_strata_outcastes_cultural_acceptance_mult:
+  Mask: country
+  Name: Cultural Acceptance for the Eta-Hinin Social Class
+  Description: A percentage increase or decrease to cultural Acceptance for the Eta-Hinin Social Class
+country_strata_outcastes_education_access_add:
+  Mask: country
+  Name: Education Access for the Eta-Hinin Social Class
+  Description: A flat increase or decrease to Education Access for the Eta-Hinin Social Class
+country_strata_outcastes_education_access_mult:
+  Mask: country
+  Name: Education Access for the Eta-Hinin Social Class
+  Description: A percentage increase or decrease to Education Access for the Eta-Hinin Social Class
+country_strata_outcastes_qualification_growth_add:
+  Mask: country
+  Name: Qualification Growth for the Eta-Hinin Social Class
+  Description: A flat increase or decrease to Qualification Growth for the Eta-Hinin Social Class
+country_strata_outcastes_qualification_growth_mult:
+  Mask: country
+  Name: Qualification Growth for the Eta-Hinin Social Class
+  Description: A percentage increase or decrease to Qualification Growth for the Eta-Hinin Social Class
+country_strata_outcastes_qualification_growth_other_class_mult:
+  Mask: country
+  Name: Qualification Growth outside the Eta-Hinin Social Class for Eta-Hinin
+  Description: A percentage increase or decrease to Qualification Growth for the Eta-Hinin towards Professions in other Social Classes
+country_strata_outcastes_qualification_growth_same_class_mult:
+  Mask: country
+  Name: Qualification Growth within Eta-Hinin Social Class
+  Description: A percentage increase or decrease to Qualification Growth for the Eta-Hinin Social Class towards Professions in the Eta-Hinin Social Class
+country_strata_religious_acceptance_max_add:
+  Mask: country
+  Name: Maximum Acceptance for the Jisha Social Class
+  Description: A threshold describing the Acceptance value that Pops in the Jisha Social Class won't be able to exceed
+country_strata_religious_acceptance_min_add:
+  Mask: country
+  Name: Minimum Acceptance for the Jisha Social Class
+  Description: A threshold describing the Acceptance value that Pops in the Jisha Social Class won't be able to fall below
+country_strata_religious_cultural_acceptance_add:
+  Mask: country
+  Name: Cultural Acceptance for the Jisha Social Class
+  Description: A flat increase or decrease to cultural Acceptance for the Jisha Social Class
+country_strata_religious_cultural_acceptance_mult:
+  Mask: country
+  Name: Cultural Acceptance for the Jisha Social Class
+  Description: A percentage increase or decrease to cultural Acceptance for the Jisha Social Class
+country_strata_religious_education_access_add:
+  Mask: country
+  Name: Education Access for the Jisha Social Class
+  Description: A flat increase or decrease to Education Access for the Jisha Social Class
+country_strata_religious_education_access_mult:
+  Mask: country
+  Name: Education Access for the Jisha Social Class
+  Description: A percentage increase or decrease to Education Access for the Jisha Social Class
+country_strata_religious_qualification_growth_add:
+  Mask: country
+  Name: Qualification Growth for the Jisha Social Class
+  Description: A flat increase or decrease to Qualification Growth for the Jisha Social Class
+country_strata_religious_qualification_growth_mult:
+  Mask: country
+  Name: Qualification Growth for the Jisha Social Class
+  Description: A percentage increase or decrease to Qualification Growth for the Jisha Social Class
+country_strata_religious_qualification_growth_other_class_mult:
+  Mask: country
+  Name: Qualification Growth outside the Jisha Social Class for Jisha
+  Description: A percentage increase or decrease to Qualification Growth for the Jisha towards Professions in other Social Classes
+country_strata_religious_qualification_growth_same_class_mult:
+  Mask: country
+  Name: Qualification Growth within Jisha Social Class
+  Description: A percentage increase or decrease to Qualification Growth for the Jisha Social Class towards Professions in the Jisha Social Class
+country_strata_samurai_high_acceptance_max_add:
+  Mask: country
+  Name: Maximum Acceptance for the Upper Samurai Social Class
+  Description: A threshold describing the Acceptance value that Pops in the Upper Samurai Social Class won't be able to exceed
+country_strata_samurai_high_acceptance_min_add:
+  Mask: country
+  Name: Minimum Acceptance for the Upper Samurai Social Class
+  Description: A threshold describing the Acceptance value that Pops in the Upper Samurai Social Class won't be able to fall below
+country_strata_samurai_high_cultural_acceptance_add:
+  Mask: country
+  Name: Cultural Acceptance for the Upper Samurai Social Class
+  Description: A flat increase or decrease to cultural Acceptance for the Upper Samurai Social Class
+country_strata_samurai_high_cultural_acceptance_mult:
+  Mask: country
+  Name: Cultural Acceptance for the Upper Samurai Social Class
+  Description: A percentage increase or decrease to cultural Acceptance for the Upper Samurai Social Class
+country_strata_samurai_high_education_access_add:
+  Mask: country
+  Name: Education Access for the Upper Samurai Social Class
+  Description: A flat increase or decrease to Education Access for the Upper Samurai Social Class
+country_strata_samurai_high_education_access_mult:
+  Mask: country
+  Name: Education Access for the Upper Samurai Social Class
+  Description: A percentage increase or decrease to Education Access for the Upper Samurai Social Class
+country_strata_samurai_high_qualification_growth_add:
+  Mask: country
+  Name: Qualification Growth for the Upper Samurai Social Class
+  Description: A flat increase or decrease to Qualification Growth for the Upper Samurai Social Class
+country_strata_samurai_high_qualification_growth_mult:
+  Mask: country
+  Name: Qualification Growth for the Upper Samurai Social Class
+  Description: A percentage increase or decrease to Qualification Growth for the Upper Samurai Social Class
+country_strata_samurai_high_qualification_growth_other_class_mult:
+  Mask: country
+  Name: Qualification Growth outside the Upper Samurai Social Class for Upper Samurai
+  Description: A percentage increase or decrease to Qualification Growth for the Upper Samurai towards Professions in other Social Classes
+country_strata_samurai_high_qualification_growth_same_class_mult:
+  Mask: country
+  Name: Qualification Growth within Upper Samurai Social Class
+  Description: A percentage increase or decrease to Qualification Growth for the Upper Samurai Social Class towards Professions in the Upper Samurai Social Class
+country_strata_samurai_low_acceptance_max_add:
+  Mask: country
+  Name: Maximum Acceptance for the Lower Samurai Social Class
+  Description: A threshold describing the Acceptance value that Pops in the Lower Samurai Social Class won't be able to exceed
+country_strata_samurai_low_acceptance_min_add:
+  Mask: country
+  Name: Minimum Acceptance for the Lower Samurai Social Class
+  Description: A threshold describing the Acceptance value that Pops in the Lower Samurai Social Class won't be able to fall below
+country_strata_samurai_low_cultural_acceptance_add:
+  Mask: country
+  Name: Cultural Acceptance for the Lower Samurai Social Class
+  Description: A flat increase or decrease to cultural Acceptance for the Lower Samurai Social Class
+country_strata_samurai_low_cultural_acceptance_mult:
+  Mask: country
+  Name: Cultural Acceptance for the Lower Samurai Social Class
+  Description: A percentage increase or decrease to cultural Acceptance for the Lower Samurai Social Class
+country_strata_samurai_low_education_access_add:
+  Mask: country
+  Name: Education Access for the Lower Samurai Social Class
+  Description: A flat increase or decrease to Education Access for the Lower Samurai Social Class
+country_strata_samurai_low_education_access_mult:
+  Mask: country
+  Name: Education Access for the Lower Samurai Social Class
+  Description: A percentage increase or decrease to Education Access for the Lower Samurai Social Class
+country_strata_samurai_low_qualification_growth_add:
+  Mask: country
+  Name: Qualification Growth for the Lower Samurai Social Class
+  Description: A flat increase or decrease to Qualification Growth for the Lower Samurai Social Class
+country_strata_samurai_low_qualification_growth_mult:
+  Mask: country
+  Name: Qualification Growth for the Lower Samurai Social Class
+  Description: A percentage increase or decrease to Qualification Growth for the Lower Samurai Social Class
+country_strata_samurai_low_qualification_growth_other_class_mult:
+  Mask: country
+  Name: Qualification Growth outside the Lower Samurai Social Class for Lower Samurai
+  Description: A percentage increase or decrease to Qualification Growth for the Lower Samurai towards Professions in other Social Classes
+country_strata_samurai_low_qualification_growth_same_class_mult:
+  Mask: country
+  Name: Qualification Growth within Lower Samurai Social Class
+  Description: A percentage increase or decrease to Qualification Growth for the Lower Samurai Social Class towards Professions in the Lower Samurai Social Class
 country_sudanese_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Sudanese Culture
@@ -6552,100 +7074,100 @@ goods_output_wood_add:
   Description: The amount of wood! Wood produced by buildings
 interest_group_ig_armed_forces_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_armed_forces_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_armed_forces_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_devout_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_devout_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_devout_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_industrialists_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_industrialists_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_industrialists_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_intelligentsia_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_intelligentsia_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_intelligentsia_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_landowners_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_landowners_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_landowners_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_petty_bourgeoisie_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_petty_bourgeoisie_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_petty_bourgeoisie_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_rural_folk_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_rural_folk_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_rural_folk_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_trade_unions_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_trade_unions_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_trade_unions_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 power_bloc_invite_acceptance_great_power_add:
   Mask: power_bloc
   Name: Great Power Power Bloc Invitation Acceptance Chance
@@ -6722,6 +7244,14 @@ power_bloc_mandate_progress_per_unrecognized_regional_power_member_mult:
   Mask: power_bloc
   Name: Mandate Progress per Unrecognized Regional Power
   Description: Determines the amount of Mandate Progress gained by a Power Bloc for each of its members that are of Rank Unrecognized Regional Power
+ship_ship_type_aircraft_carrier_hull_damage_mult:
+  Mask: ship
+  Name: Aircraft Carrier Hull Attack Damage
+  Description: A ship from which airplanes may take off and land, the Aircraft Carrier's duties involve reconnaissance as well as some offensive operations.
+ship_ship_type_submarine_hull_damage_mult:
+  Mask: ship
+  Name: Submarine Hull Attack Damage
+  Description: A dive-capable vessel primarily intended for use against enemy merchant shipping.
 state_aborigine_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Aboriginal
@@ -6982,10 +7512,14 @@ state_building_construction_sector_max_level_add:
   Mask: state
   Name: Construction Sector Max Level
   Description: A bonus or penalty to the maximum level of Construction Sector buildings.
-state_building_naval_base_max_level_add:
+state_building_naval_administration_max_level_add:
   Mask: state
-  Name: Naval Base Max Level
-  Description: A bonus or penalty to the maximum level of Naval Base buildings.
+  Name: Naval Administration Max Level
+  Description: A bonus or penalty to the maximum level of Naval Administration buildings.
+state_building_naval_fortification_max_level_add:
+  Mask: state
+  Name: Naval Fortification Max Level
+  Description: A bonus or penalty to the maximum level of Naval Fortification buildings.
 state_bulgarian_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Bulgarian
@@ -7330,6 +7864,14 @@ state_harvest_condition_drought_impact_mult:
   Mask: state
   Name: drought! Drought Harvest Condition Impact
   Description: An increase or decrease to the impact of Droughts.
+state_harvest_condition_earthquake_duration_mult:
+  Mask: state
+  Name: earthquake! Earthquake Harvest Condition Duration
+  Description: An increase or decrease to the duration of Earthquakes.
+state_harvest_condition_earthquake_impact_mult:
+  Mask: state
+  Name: earthquake! Earthquake Harvest Condition Impact
+  Description: An increase or decrease to the impact of Earthquakes.
 state_harvest_condition_extreme_winds_duration_mult:
   Mask: state
   Name: extreme_winds! Extreme Winds Harvest Condition Duration
@@ -7370,6 +7912,14 @@ state_harvest_condition_torrential_rains_impact_mult:
   Mask: state
   Name: state_harvest_condition_torrential_rains_impact_mult
   Description: state_harvest_condition_torrential_rains_impact_mult_desc
+state_harvest_condition_tsunami_duration_mult:
+  Mask: state
+  Name: tsunami! Tsunami Harvest Condition Duration
+  Description: An increase or decrease to the duration of Tsunamis.
+state_harvest_condition_tsunami_impact_mult:
+  Mask: state
+  Name: tsunami! Tsunami Harvest Condition Impact
+  Description: An increase or decrease to the impact of Tsunamis.
 state_harvest_condition_wildfire_duration_mult:
   Mask: state
   Name: wildfire! Wildfire Harvest Condition Duration
@@ -8262,6 +8812,10 @@ state_russian_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Russian
   Description: A bonus or penalty to a specific culture's [concept_sol]
+state_ryukyuan_standard_of_living_add:
+  Mask: state
+  Name: [concept_sol] Modifier for Ryukyuan
+  Description: A bonus or penalty to a specific culture's [concept_sol]
 state_salish_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Salish
@@ -8626,10 +9180,6 @@ unit_combat_unit_type_cannon_artillery_offense_mult:
   Mask: unit
   Name: Cannon Artillery Offense
   Description: Cannon Artillery Offense
-unit_combat_unit_type_carrier_offense_mult:
-  Mask: unit
-  Name: Carriers Offense
-  Description: Carriers Offense
 unit_combat_unit_type_heavy_tank_offense_mult:
   Mask: unit
   Name: Heavy Tanks Offense
@@ -8654,10 +9204,6 @@ unit_combat_unit_type_squad_infantry_offense_add:
   Mask: unit
   Name: Squad Infantry Offense
   Description: Squad Infantry Offense
-unit_combat_unit_type_submarine_offense_mult:
-  Mask: unit
-  Name: Submarines Offense
-  Description: Submarines Offense
 unit_combat_unit_type_trench_infantry_offense_add:
   Mask: unit
   Name: Trench Infantry Offense
@@ -11276,6 +11822,114 @@ building_group_bg_iron_mining_throughput_add:
   Mask: building
 building_group_bg_iron_mining_unincorporated_throughput_add:
   Mask: building
+building_group_bg_land_logistics_center_academics_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_academics_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_academics_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_aristocrats_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_aristocrats_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_aristocrats_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_bureaucrats_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_bureaucrats_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_bureaucrats_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_capitalists_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_capitalists_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_capitalists_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_clergymen_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_clergymen_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_clergymen_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_clerks_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_clerks_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_clerks_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_employee_mult:
+  Mask: building
+building_group_bg_land_logistics_center_engineers_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_engineers_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_engineers_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_farmers_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_farmers_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_farmers_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_infrastructure_usage_mult:
+  Mask: building
+building_group_bg_land_logistics_center_laborers_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_laborers_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_laborers_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_machinists_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_machinists_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_machinists_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_officers_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_officers_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_officers_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_peasants_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_peasants_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_peasants_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_self_investment_chance_add:
+  Mask: building
+building_group_bg_land_logistics_center_shopkeepers_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_shopkeepers_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_shopkeepers_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_slaves_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_slaves_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_slaves_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_soldiers_fertility_mult:
+  Mask: building
+building_group_bg_land_logistics_center_soldiers_mortality_mult:
+  Mask: building
+building_group_bg_land_logistics_center_soldiers_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_standard_of_living_add:
+  Mask: building
+building_group_bg_land_logistics_center_tax_mult:
+  Mask: building
+building_group_bg_land_logistics_center_throughput_add:
+  Mask: building
+building_group_bg_land_logistics_center_unincorporated_throughput_add:
+  Mask: building
 building_group_bg_lead_mining_academics_fertility_mult:
   Mask: building
 building_group_bg_lead_mining_academics_mortality_mult:
@@ -12587,6 +13241,330 @@ building_group_bg_monuments_tax_mult:
 building_group_bg_monuments_throughput_add:
   Mask: building
 building_group_bg_monuments_unincorporated_throughput_add:
+  Mask: building
+building_group_bg_naval_administration_academics_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_academics_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_academics_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_aristocrats_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_aristocrats_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_aristocrats_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_bureaucrats_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_bureaucrats_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_bureaucrats_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_capitalists_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_capitalists_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_capitalists_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_clergymen_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_clergymen_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_clergymen_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_clerks_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_clerks_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_clerks_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_employee_mult:
+  Mask: building
+building_group_bg_naval_administration_engineers_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_engineers_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_engineers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_farmers_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_farmers_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_farmers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_infrastructure_usage_mult:
+  Mask: building
+building_group_bg_naval_administration_laborers_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_laborers_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_laborers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_machinists_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_machinists_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_machinists_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_officers_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_officers_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_officers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_peasants_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_peasants_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_peasants_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_self_investment_chance_add:
+  Mask: building
+building_group_bg_naval_administration_shopkeepers_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_shopkeepers_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_shopkeepers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_slaves_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_slaves_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_slaves_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_soldiers_fertility_mult:
+  Mask: building
+building_group_bg_naval_administration_soldiers_mortality_mult:
+  Mask: building
+building_group_bg_naval_administration_soldiers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_administration_tax_mult:
+  Mask: building
+building_group_bg_naval_administration_throughput_add:
+  Mask: building
+building_group_bg_naval_administration_unincorporated_throughput_add:
+  Mask: building
+building_group_bg_naval_fortification_academics_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_academics_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_academics_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_aristocrats_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_aristocrats_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_aristocrats_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_bureaucrats_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_bureaucrats_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_bureaucrats_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_capitalists_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_capitalists_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_capitalists_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_clergymen_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_clergymen_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_clergymen_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_clerks_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_clerks_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_clerks_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_employee_mult:
+  Mask: building
+building_group_bg_naval_fortification_engineers_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_engineers_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_engineers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_farmers_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_farmers_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_farmers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_infrastructure_usage_mult:
+  Mask: building
+building_group_bg_naval_fortification_laborers_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_laborers_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_laborers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_machinists_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_machinists_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_machinists_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_officers_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_officers_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_officers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_peasants_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_peasants_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_peasants_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_self_investment_chance_add:
+  Mask: building
+building_group_bg_naval_fortification_shopkeepers_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_shopkeepers_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_shopkeepers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_slaves_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_slaves_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_slaves_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_soldiers_fertility_mult:
+  Mask: building
+building_group_bg_naval_fortification_soldiers_mortality_mult:
+  Mask: building
+building_group_bg_naval_fortification_soldiers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_fortification_tax_mult:
+  Mask: building
+building_group_bg_naval_fortification_throughput_add:
+  Mask: building
+building_group_bg_naval_fortification_unincorporated_throughput_add:
+  Mask: building
+building_group_bg_naval_logistics_center_academics_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_academics_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_academics_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_aristocrats_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_aristocrats_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_aristocrats_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_bureaucrats_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_bureaucrats_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_bureaucrats_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_capitalists_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_capitalists_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_capitalists_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_clergymen_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_clergymen_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_clergymen_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_clerks_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_clerks_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_clerks_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_employee_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_engineers_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_engineers_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_engineers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_farmers_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_farmers_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_farmers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_infrastructure_usage_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_laborers_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_laborers_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_laborers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_machinists_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_machinists_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_machinists_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_officers_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_officers_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_officers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_peasants_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_peasants_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_peasants_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_self_investment_chance_add:
+  Mask: building
+building_group_bg_naval_logistics_center_shopkeepers_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_shopkeepers_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_shopkeepers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_slaves_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_slaves_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_slaves_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_soldiers_fertility_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_soldiers_mortality_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_soldiers_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_standard_of_living_add:
+  Mask: building
+building_group_bg_naval_logistics_center_tax_mult:
+  Mask: building
+building_group_bg_naval_logistics_center_throughput_add:
+  Mask: building
+building_group_bg_naval_logistics_center_unincorporated_throughput_add:
   Mask: building
 building_group_bg_navy_academics_fertility_mult:
   Mask: building
@@ -13909,6 +14887,116 @@ building_group_bg_service_soldiers_mortality_mult:
 building_group_bg_service_soldiers_standard_of_living_add:
   Mask: building
 building_group_bg_service_unincorporated_throughput_add:
+  Mask: building
+building_group_bg_ship_construction_academics_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_academics_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_academics_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_aristocrats_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_aristocrats_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_aristocrats_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_bureaucrats_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_bureaucrats_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_bureaucrats_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_capitalists_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_capitalists_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_capitalists_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_clergymen_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_clergymen_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_clergymen_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_clerks_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_clerks_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_clerks_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_construction_efficiency_add:
+  Mask: building
+building_group_bg_ship_construction_employee_mult:
+  Mask: building
+building_group_bg_ship_construction_engineers_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_engineers_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_engineers_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_farmers_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_farmers_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_farmers_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_infrastructure_usage_mult:
+  Mask: building
+building_group_bg_ship_construction_laborers_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_laborers_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_laborers_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_machinists_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_machinists_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_machinists_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_officers_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_officers_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_officers_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_peasants_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_peasants_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_peasants_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_self_investment_chance_add:
+  Mask: building
+building_group_bg_ship_construction_shopkeepers_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_shopkeepers_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_shopkeepers_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_slaves_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_slaves_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_slaves_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_soldiers_fertility_mult:
+  Mask: building
+building_group_bg_ship_construction_soldiers_mortality_mult:
+  Mask: building
+building_group_bg_ship_construction_soldiers_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_standard_of_living_add:
+  Mask: building
+building_group_bg_ship_construction_tax_mult:
+  Mask: building
+building_group_bg_ship_construction_throughput_add:
+  Mask: building
+building_group_bg_ship_construction_unincorporated_throughput_add:
   Mask: building
 building_group_bg_silk_plantations_academics_fertility_mult:
   Mask: building
@@ -15530,6 +16618,8 @@ building_laborers_fertility_mult:
   Mask: building
 building_laborers_shares_mult:
   Mask: building
+building_land_logistics_center_throughput_add:
+  Mask: building
 building_logging_camp_throughput_add:
   Mask: building
 building_machinists_fertility_mult:
@@ -15548,7 +16638,13 @@ building_manor_house_throughput_add:
   Mask: building
 building_martandsuntemple_throughput_add:
   Mask: building
+building_military_shipyard_throughput_add:
+  Mask: building
 building_mosque_of_djenne_throughput_add:
+  Mask: building
+building_naval_fortification_throughput_add:
+  Mask: building
+building_naval_logistics_center_throughput_add:
   Mask: building
 building_observatorygreenwich_throughput_add:
   Mask: building
@@ -15726,6 +16822,8 @@ country_bg_infrastructure_require_subsidies_bool:
   Mask: country
 country_bg_iron_mining_require_subsidies_bool:
   Mask: country
+country_bg_land_logistics_center_require_subsidies_bool:
+  Mask: country
 country_bg_lead_mining_require_subsidies_bool:
   Mask: country
 country_bg_light_industry_require_subsidies_bool:
@@ -15749,6 +16847,12 @@ country_bg_mining_require_subsidies_bool:
 country_bg_monuments_hidden_require_subsidies_bool:
   Mask: country
 country_bg_monuments_require_subsidies_bool:
+  Mask: country
+country_bg_naval_administration_require_subsidies_bool:
+  Mask: country
+country_bg_naval_fortification_require_subsidies_bool:
+  Mask: country
+country_bg_naval_logistics_center_require_subsidies_bool:
   Mask: country
 country_bg_navy_require_subsidies_bool:
   Mask: country
@@ -15775,6 +16879,8 @@ country_bg_rubber_require_subsidies_bool:
 country_bg_rye_farms_require_subsidies_bool:
   Mask: country
 country_bg_service_require_subsidies_bool:
+  Mask: country
+country_bg_ship_construction_require_subsidies_bool:
   Mask: country
 country_bg_silk_plantations_require_subsidies_bool:
   Mask: country
@@ -15900,6 +17006,8 @@ country_building_kaiserforum_4_require_subsidies_bool:
   Mask: country
 country_building_khaju_bridge_require_subsidies_bool:
   Mask: country
+country_building_land_logistics_center_require_subsidies_bool:
+  Mask: country
 country_building_lead_mine_require_subsidies_bool:
   Mask: country
 country_building_livestock_ranch_require_subsidies_bool:
@@ -15930,7 +17038,11 @@ country_building_motor_industry_require_subsidies_bool:
   Mask: country
 country_building_munition_plant_require_subsidies_bool:
   Mask: country
-country_building_naval_base_require_subsidies_bool:
+country_building_naval_administration_require_subsidies_bool:
+  Mask: country
+country_building_naval_fortification_require_subsidies_bool:
+  Mask: country
+country_building_naval_logistics_center_require_subsidies_bool:
   Mask: country
 country_building_observatorygreenwich_require_subsidies_bool:
   Mask: country
@@ -16110,6 +17222,8 @@ country_enactment_success_chance_law_anti_strike_laws_add:
   Mask: country
 country_enactment_success_chance_law_appointed_bureaucrats_add:
   Mask: country
+country_enactment_success_chance_law_bakufu_add:
+  Mask: country
 country_enactment_success_chance_law_canton_system_add:
   Mask: country
 country_enactment_success_chance_law_censorship_add:
@@ -16162,6 +17276,8 @@ country_enactment_success_chance_law_debt_slavery_add:
   Mask: country
 country_enactment_success_chance_law_dedicated_police_add:
   Mask: country
+country_enactment_success_chance_law_diplomatic_navy_add:
+  Mask: country
 country_enactment_success_chance_law_elder_council_add:
   Mask: country
 country_enactment_success_chance_law_elected_bureaucrats_add:
@@ -16198,9 +17314,13 @@ country_enactment_success_chance_law_homesteading_add:
   Mask: country
 country_enactment_success_chance_law_industry_banned_add:
   Mask: country
+country_enactment_success_chance_law_intermediate_edo_system_add:
+  Mask: country
 country_enactment_success_chance_law_interventionism_add:
   Mask: country
 country_enactment_success_chance_law_isolationism_add:
+  Mask: country
+country_enactment_success_chance_law_jeune_ecole_add:
   Mask: country
 country_enactment_success_chance_law_laissez_faire_add:
   Mask: country
@@ -16209,6 +17329,8 @@ country_enactment_success_chance_law_land_based_taxation_add:
 country_enactment_success_chance_law_landed_voting_add:
   Mask: country
 country_enactment_success_chance_law_latifundias_add:
+  Mask: country
+country_enactment_success_chance_law_lax_edo_system_add:
   Mask: country
 country_enactment_success_chance_law_legacy_slavery_add:
   Mask: country
@@ -16219,6 +17341,8 @@ country_enactment_success_chance_law_manorialism_add:
 country_enactment_success_chance_law_mass_conscription_add:
   Mask: country
 country_enactment_success_chance_law_mercantilism_add:
+  Mask: country
+country_enactment_success_chance_law_merchant_navy_add:
   Mask: country
 country_enactment_success_chance_law_migration_controls_add:
   Mask: country
@@ -16266,6 +17390,8 @@ country_enactment_success_chance_law_parliamentary_republic_add:
   Mask: country
 country_enactment_success_chance_law_peasant_levies_add:
   Mask: country
+country_enactment_success_chance_law_peasant_proprietorship_add:
+  Mask: country
 country_enactment_success_chance_law_people_of_the_book_add:
   Mask: country
 country_enactment_success_chance_law_per_capita_based_taxation_add:
@@ -16279,6 +17405,8 @@ country_enactment_success_chance_law_private_health_insurance_add:
 country_enactment_success_chance_law_private_schools_add:
   Mask: country
 country_enactment_success_chance_law_professional_army_add:
+  Mask: country
+country_enactment_success_chance_law_professional_navy_add:
   Mask: country
 country_enactment_success_chance_law_proportional_taxation_add:
   Mask: country
@@ -16300,21 +17428,31 @@ country_enactment_success_chance_law_right_of_assembly_add:
   Mask: country
 country_enactment_success_chance_law_right_to_associate_add:
   Mask: country
+country_enactment_success_chance_law_sakoku_add:
+  Mask: country
 country_enactment_success_chance_law_secret_police_add:
   Mask: country
 country_enactment_success_chance_law_serfdom_add:
+  Mask: country
+country_enactment_success_chance_law_shinsengumi_add:
   Mask: country
 country_enactment_success_chance_law_slave_trade_add:
   Mask: country
 country_enactment_success_chance_law_slavery_banned_add:
   Mask: country
+country_enactment_success_chance_law_social_monarchy_add:
+  Mask: country
 country_enactment_success_chance_law_state_atheism_add:
   Mask: country
 country_enactment_success_chance_law_state_religion_add:
   Mask: country
+country_enactment_success_chance_law_strict_edo_system_add:
+  Mask: country
 country_enactment_success_chance_law_subjecthood_add:
   Mask: country
 country_enactment_success_chance_law_tenant_farmers_add:
+  Mask: country
+country_enactment_success_chance_law_terakoya_add:
   Mask: country
 country_enactment_success_chance_law_theocracy_add:
   Mask: country
@@ -16325,6 +17463,8 @@ country_enactment_success_chance_law_traditionalism_add:
 country_enactment_success_chance_law_universal_suffrage_add:
   Mask: country
 country_enactment_success_chance_law_wage_subsidies_add:
+  Mask: country
+country_enactment_success_chance_law_warrior_caste_add:
   Mask: country
 country_enactment_success_chance_law_wealth_voting_add:
   Mask: country
@@ -17436,6 +18576,10 @@ state_pop_support_movement_hindu_nationalist_add:
   Mask: state
 state_pop_support_movement_hindu_nationalist_mult:
   Mask: state
+state_pop_support_movement_meiji_restorationist_add:
+  Mask: state
+state_pop_support_movement_meiji_restorationist_mult:
+  Mask: state
 state_pop_support_movement_minority_rights_add:
   Mask: state
 state_pop_support_movement_minority_rights_mult:
@@ -17443,6 +18587,10 @@ state_pop_support_movement_minority_rights_mult:
 state_pop_support_movement_muslim_nationalist_add:
   Mask: state
 state_pop_support_movement_muslim_nationalist_mult:
+  Mask: state
+state_pop_support_movement_tokugawa_loyalist_add:
+  Mask: state
+state_pop_support_movement_tokugawa_loyalist_mult:
   Mask: state
 state_sell_orders_aeroplanes_add:
   Mask: state

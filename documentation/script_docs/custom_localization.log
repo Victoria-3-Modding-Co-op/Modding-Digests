@@ -317,6 +317,17 @@ custom_loc_film_industry_name_default
 
 --------------------
 
+ryukyu_rivalry_reaffirm_suzerainty:
+
+Scope: country
+Random Valid: no
+
+Entries:
+je_ryukyu_rivalry_reaffirm_suzerainty_japan
+je_ryukyu_rivalry_reaffirm_suzerainty_china
+
+--------------------
+
 newspaper_type:
 
 Scope: country
@@ -778,30 +789,6 @@ Random Valid: no
 
 Entries:
 je_conference_of_london_acceptance_timer_tt
-
---------------------
-
-flotilla_prefix:
-
-Scope: country
-Random Valid: no
-
-Entries:
-flotilla_prefix_hms_sv
-flotilla_prefix_sms
-flotilla_prefix_nms
-flotilla_prefix_hhms
-flotilla_prefix_rn
-flotilla_prefix_net_zrms
-flotilla_prefix_net_hrms
-flotilla_prefix_kdm
-flotilla_prefix_vp
-flotilla_prefix_tcg
-flotilla_prefix_arm
-flotilla_prefix_arv
-flotilla_prefix_uss
-flotilla_prefix_css
-flotilla_prefix_blank
 
 --------------------
 
@@ -1528,7 +1515,6 @@ RU_CL_IY
 RU_CL_IY
 RU_CL_IY
 RU_CL_IY
-RU_CL_OE
 RU_CL_OE
 RU_CL_OE
 RU_CL_OE
@@ -2466,7 +2452,6 @@ RU_CL_FEM_O
 RU_CL_FEM_O
 RU_CL_FEM_O
 RU_CL_FEM_O
-RU_CL_FEM_O
 RU_CL_FEM_A
 RU_CL_FEM_A
 RU_CL_FEM_A
@@ -3021,7 +3006,6 @@ RU_CL_UT
 RU_CL_UT
 RU_CL_UT
 RU_CL_UT
-RU_CL_ET
 RU_CL_ET
 RU_CL_ET
 RU_CL_ET
@@ -4223,7 +4207,6 @@ RU_CL_GE
 RU_CL_GE
 RU_CL_GE
 RU_CL_GE
-RU_CL_GE
 RU_CL_GU
 RU_CL_GE
 RU_CL_GE
@@ -5088,7 +5071,6 @@ RU_CL_ET
 RU_CL_ET
 RU_CL_ET
 RU_CL_ET
-RU_CL_ET
 RU_CL_YT
 RU_CL_ET
 RU_CL_ET
@@ -5552,6 +5534,7 @@ Random Valid: no
 
 Entries:
 legislature_board_of_directors
+legislature_chamber_of_corporations
 legislature_congress_of_soviets
 legislature_congress_of_councils
 legislature_congress
@@ -5564,6 +5547,8 @@ legislature_storting
 legislature_folketing
 legislature_althing
 legislature_landtag
+legislature_grand_council_of_state
+legislature_diet
 legislature_grand_council
 legislature_advisory_council
 legislature_national_assembly
@@ -5702,8 +5687,8 @@ Scope: country
 Random Valid: no
 
 Entries:
-metternich_unticked
-metternich_ticked
+checkbox_unticked
+checkbox_ticked
 
 --------------------
 
@@ -5713,8 +5698,8 @@ Scope: country
 Random Valid: no
 
 Entries:
-metternich_unticked
-metternich_ticked
+checkbox_unticked
+checkbox_ticked
 
 --------------------
 
@@ -5724,8 +5709,8 @@ Scope: country
 Random Valid: no
 
 Entries:
-metternich_unticked
-metternich_ticked
+checkbox_unticked
+checkbox_ticked
 
 --------------------
 
@@ -5735,8 +5720,8 @@ Scope: country
 Random Valid: no
 
 Entries:
-metternich_unticked
-metternich_ticked
+checkbox_unticked
+checkbox_ticked
 
 --------------------
 
@@ -5746,8 +5731,8 @@ Scope: country
 Random Valid: no
 
 Entries:
-metternich_unticked
-metternich_ticked
+checkbox_unticked
+checkbox_ticked
 
 --------------------
 
@@ -5757,8 +5742,8 @@ Scope: country
 Random Valid: no
 
 Entries:
-metternich_unticked
-metternich_ticked
+checkbox_unticked
+checkbox_ticked
 
 --------------------
 
@@ -5768,8 +5753,8 @@ Scope: country
 Random Valid: no
 
 Entries:
-metternich_unticked
-metternich_ticked
+checkbox_unticked
+checkbox_ticked
 
 --------------------
 
@@ -5779,8 +5764,8 @@ Scope: country
 Random Valid: no
 
 Entries:
-metternich_unticked
-metternich_ticked
+checkbox_unticked
+checkbox_ticked
 
 --------------------
 
@@ -5812,8 +5797,8 @@ Scope: country
 Random Valid: no
 
 Entries:
-metternich_unticked
-metternich_ticked
+checkbox_unticked
+checkbox_ticked
 
 --------------------
 
@@ -5823,8 +5808,8 @@ Scope: country
 Random Valid: no
 
 Entries:
-metternich_unticked
-metternich_ticked
+checkbox_unticked
+checkbox_ticked
 
 --------------------
 
@@ -5856,6 +5841,17 @@ Random Valid: no
 Entries:
 dyn_c_usga
 KUK
+
+--------------------
+
+social_monarchy_or_corporate_state:
+
+Scope: country
+Random Valid: no
+
+Entries:
+social_monarchy_tt
+corporate_state_tt
 
 --------------------
 
@@ -6171,6 +6167,335 @@ JAP_emperor_komei_loc
 JAP_emperor_meiji_loc
 JAP_emperor_taisho_loc
 JAP_emperor_hirohito_loc
+
+--------------------
+
+tenpo_checkbox_army_size:
+
+Scope: country
+Random Valid: no
+
+Entries:
+checkbox_unticked
+checkbox_ticked
+
+--------------------
+
+tenpo_checkbox_naval_size:
+
+Scope: country
+Random Valid: no
+
+Entries:
+checkbox_unticked
+checkbox_ticked
+
+--------------------
+
+tenpo_checkbox_famine:
+
+Scope: country
+Random Valid: no
+
+Entries:
+checkbox_unticked
+checkbox_ticked
+
+--------------------
+
+tenpo_checkbox_gdp:
+
+Scope: country
+Random Valid: no
+
+Entries:
+checkbox_unticked
+checkbox_ticked
+
+--------------------
+
+tenpo_checkbox_social_control:
+
+Scope: country
+Random Valid: no
+
+Entries:
+checkbox_unticked
+checkbox_ticked
+
+--------------------
+
+tenpo_checkbox_edo_system_strict:
+
+Scope: country
+Random Valid: no
+
+Entries:
+checkbox_unticked
+checkbox_ticked
+
+--------------------
+
+tenpo_checkbox_pb_marginalized:
+
+Scope: country
+Random Valid: no
+
+Entries:
+checkbox_unticked
+checkbox_ticked
+
+--------------------
+
+tenpo_checkbox_rural:
+
+Scope: country
+Random Valid: no
+
+Entries:
+checkbox_unticked
+checkbox_ticked
+
+--------------------
+
+tenpo_checkbox_urbanization:
+
+Scope: country
+Random Valid: no
+
+Entries:
+checkbox_unticked
+checkbox_ticked
+
+--------------------
+
+tenpo_checkbox_edo_system_lax:
+
+Scope: country
+Random Valid: no
+
+Entries:
+checkbox_unticked
+checkbox_ticked
+
+--------------------
+
+tenpo_checkbox_clout:
+
+Scope: country
+Random Valid: no
+
+Entries:
+checkbox_unticked
+checkbox_ticked
+
+--------------------
+
+tenpo_checkbox_bureaucrats:
+
+Scope: country
+Random Valid: no
+
+Entries:
+checkbox_unticked
+checkbox_ticked
+
+--------------------
+
+meiji_je_conditions_army:
+
+Scope: country
+Random Valid: no
+
+Entries:
+je_meiji_status_has_completed_meiji_army_je
+je_meiji_status_has_not_completed_meiji_army_je
+
+--------------------
+
+meiji_je_conditions_economy:
+
+Scope: country
+Random Valid: no
+
+Entries:
+je_meiji_status_has_completed_meiji_economy_je
+je_meiji_status_has_not_completed_meiji_economy_je
+
+--------------------
+
+meiji_je_conditions_diplomacy:
+
+Scope: country
+Random Valid: no
+
+Entries:
+je_meiji_status_has_completed_meiji_diplomacy_je
+je_meiji_status_has_not_completed_meiji_diplomacy_je
+je_meiji_status_has_completed_meiji_diplomacy_je
+je_meiji_status_has_not_completed_iwakura_mission_fake_je
+je_meiji_status_has_not_completed_iwakura_mission_real_je
+
+--------------------
+
+zaibatsu_democracy_snippet:
+
+Scope: country
+Random Valid: no
+
+Entries:
+zaibatsu_democracy_info
+blank_tt
+
+--------------------
+
+JAP_era_year_name:
+
+Scope: country
+Random Valid: no
+
+Entries:
+JAP_year_emperor
+JAP_year_1836
+JAP_year_1837
+JAP_year_1838
+JAP_year_1839
+JAP_year_1840
+JAP_year_1841
+JAP_year_1842
+JAP_year_1843
+JAP_year_1844
+JAP_year_1845
+JAP_year_1846
+JAP_year_1847
+JAP_year_1848
+JAP_year_1849
+JAP_year_1850
+JAP_year_1851
+JAP_year_1852
+JAP_year_1853
+JAP_year_1854
+JAP_year_1855
+JAP_year_1856
+JAP_year_1857
+JAP_year_1858
+JAP_year_1859
+JAP_year_1860
+JAP_year_1861
+JAP_year_1862
+JAP_year_1863
+JAP_year_1864
+JAP_year_1865
+JAP_year_1866
+JAP_year_1867
+
+--------------------
+
+JAP_era_name:
+
+Scope: country
+Random Valid: no
+
+Entries:
+JAP_era_ninko
+JAP_era_komei
+JAP_era_meiji
+JAP_era_taisho
+JAP_era_showa
+JAP_era_1
+JAP_era_2
+JAP_era_3
+JAP_era_3_b
+JAP_era_4
+JAP_era_5
+JAP_era_6
+JAP_era_7
+JAP_era_8
+
+--------------------
+
+JAP_emperor_year_in_power:
+
+Scope: country
+Random Valid: no
+
+Entries:
+JAP_year_in_power_1
+JAP_year_in_power_2
+JAP_year_in_power_3
+JAP_year_in_power_4
+JAP_year_in_power_5
+JAP_year_in_power_6
+JAP_year_in_power_7
+JAP_year_in_power_8
+JAP_year_in_power_9
+JAP_year_in_power_10
+JAP_year_in_power_11
+JAP_year_in_power_12
+JAP_year_in_power_13
+JAP_year_in_power_14
+JAP_year_in_power_15
+JAP_year_in_power_16
+JAP_year_in_power_17
+JAP_year_in_power_18
+JAP_year_in_power_19
+JAP_year_in_power_20
+JAP_year_in_power_21
+JAP_year_in_power_22
+JAP_year_in_power_23
+JAP_year_in_power_24
+JAP_year_in_power_25
+JAP_year_in_power_26
+JAP_year_in_power_27
+JAP_year_in_power_28
+JAP_year_in_power_29
+JAP_year_in_power_30
+JAP_year_in_power_31
+JAP_year_in_power_32
+JAP_year_in_power_33
+JAP_year_in_power_34
+JAP_year_in_power_35
+JAP_year_in_power_36
+JAP_year_in_power_37
+JAP_year_in_power_38
+JAP_year_in_power_39
+JAP_year_in_power_40
+JAP_year_in_power_41
+JAP_year_in_power_42
+JAP_year_in_power_43
+JAP_year_in_power_44
+JAP_year_in_power_45
+JAP_year_in_power_46
+JAP_year_in_power_47
+JAP_year_in_power_48
+JAP_year_in_power_49
+JAP_year_in_power_50
+JAP_year_in_power_51
+JAP_year_in_power_52
+JAP_year_in_power_53
+JAP_year_in_power_54
+JAP_year_in_power_55
+JAP_year_in_power_56
+JAP_year_in_power_57
+JAP_year_in_power_58
+JAP_year_in_power_59
+JAP_year_in_power_60
+JAP_year_in_power_61
+JAP_year_in_power_62
+JAP_year_in_power_63
+JAP_year_in_power_64
+JAP_year_in_power_65
+JAP_year_in_power_66
+JAP_year_in_power_67
+JAP_year_in_power_68
+JAP_year_in_power_69
+JAP_year_in_power_70
+JAP_year_in_power_71
+JAP_year_in_power_72
+JAP_year_in_power_73
+JAP_year_in_power_74
+JAP_year_in_power_75
+JAP_year_in_power_1
 
 --------------------
 
@@ -6547,6 +6872,132 @@ metternich_modifier_t1_display
 
 --------------------
 
+brz_republic_or_state:
+
+Scope: country
+Random Valid: no
+
+Entries:
+brz_state
+brz_republic
+brz_state
+
+--------------------
+
+get_sexagenary_cycle_term:
+
+Scope: country
+Random Valid: no
+
+Entries:
+sexagenary_cycle_1
+sexagenary_cycle_2
+sexagenary_cycle_3
+sexagenary_cycle_4
+sexagenary_cycle_5
+sexagenary_cycle_6
+sexagenary_cycle_7
+sexagenary_cycle_8
+sexagenary_cycle_9
+sexagenary_cycle_10
+sexagenary_cycle_11
+sexagenary_cycle_12
+sexagenary_cycle_13
+sexagenary_cycle_14
+sexagenary_cycle_15
+sexagenary_cycle_16
+sexagenary_cycle_17
+sexagenary_cycle_18
+sexagenary_cycle_19
+sexagenary_cycle_20
+sexagenary_cycle_21
+sexagenary_cycle_22
+sexagenary_cycle_23
+sexagenary_cycle_24
+sexagenary_cycle_25
+sexagenary_cycle_26
+sexagenary_cycle_27
+sexagenary_cycle_28
+sexagenary_cycle_29
+sexagenary_cycle_30
+sexagenary_cycle_31
+sexagenary_cycle_32
+sexagenary_cycle_33
+sexagenary_cycle_34
+sexagenary_cycle_35
+sexagenary_cycle_36
+sexagenary_cycle_37
+sexagenary_cycle_38
+sexagenary_cycle_39
+sexagenary_cycle_40
+sexagenary_cycle_41
+sexagenary_cycle_42
+sexagenary_cycle_43
+sexagenary_cycle_44
+sexagenary_cycle_45
+sexagenary_cycle_46
+sexagenary_cycle_47
+sexagenary_cycle_48
+sexagenary_cycle_49
+sexagenary_cycle_50
+sexagenary_cycle_51
+sexagenary_cycle_52
+sexagenary_cycle_53
+sexagenary_cycle_54
+sexagenary_cycle_55
+sexagenary_cycle_56
+sexagenary_cycle_57
+sexagenary_cycle_58
+sexagenary_cycle_59
+sexagenary_cycle_60
+
+--------------------
+
+get_shogunate_strategy_title_loc:
+
+Scope: country
+Random Valid: no
+
+Entries:
+shogunate_strategy_title_decide_loc
+shogunate_strategy_title_revise_loc
+
+--------------------
+
+get_shogunate_strategy_button_loc:
+
+Scope: country
+Random Valid: no
+
+Entries:
+shogunate_strategy_title_decide_desc_loc
+shogunate_strategy_title_revise_desc_loc
+
+--------------------
+
+get_imperial_restoration_button_loc:
+
+Scope: country
+Random Valid: no
+
+Entries:
+imperial_restoration_unavailable_loc
+imperial_restoration_kobu_gattai_loc
+imperial_restoration_kogi_yoron_loc
+
+--------------------
+
+japan_choshu_castle_name:
+
+Scope: country
+Random Valid: no
+
+Entries:
+castle_yamaguchi
+castle_hagi
+
+--------------------
+
 unite_can_description:
 
 Scope: country
@@ -6699,6 +7150,23 @@ spa_ruling
 
 --------------------
 
+get_coup_je_text:
+
+Scope: country
+Random Valid: no
+
+Entries:
+coup_je_reason_text_1
+coup_je_reason_text_2
+coup_je_reason_text_3
+coup_je_reason_text_4
+coup_je_reason_text_5
+coup_je_reason_text_6
+coup_je_reason_text_7
+coup_je_reason_text_0
+
+--------------------
+
 troop_name:
 
 Scope: building
@@ -6755,7 +7223,7 @@ RU_BL_RP_banana_plantation
 RU_BL_RP_silk_plantation
 RU_BL_RP_barracks
 RU_BL_RP_conscription_center
-RU_BL_RP_naval_base
+RU_BL_RP_naval_administration
 RU_BL_RP_urban_center
 RU_BL_RP_arts_academy
 RU_BL_RP_power_plant
@@ -6794,7 +7262,6 @@ RU_BL_RP_building_observatorygreenwich
 RU_BL_RP_building_temple_of_poseidon
 RU_BL_RP_building_wat_arun
 RU_BL_RP_building_explosives_factory
-RU_BL_RP_building_military_shipyard
 RU_BL_RP_building_vineyard
 RU_BL_RP_building_power_bloc_statue
 RU_BL_RP_building_manor_house
@@ -6850,7 +7317,7 @@ RU_BL_DP_banana_plantation
 RU_BL_DP_silk_plantation
 RU_BL_DP_barracks
 RU_BL_DP_conscription_center
-RU_BL_DP_naval_base
+RU_BL_DP_naval_administration
 RU_BL_DP_urban_center
 RU_BL_DP_arts_academy
 RU_BL_DP_power_plant
@@ -6889,7 +7356,6 @@ RU_BL_DP_building_observatorygreenwich
 RU_BL_DP_building_temple_of_poseidon
 RU_BL_DP_building_wat_arun
 RU_BL_DP_building_explosives_factory
-RU_BL_DP_building_military_shipyard
 RU_BL_DP_building_vineyard
 RU_BL_DP_building_power_bloc_statue
 RU_BL_DP_building_manor_house
@@ -6945,7 +7411,7 @@ RU_BL_VP_banana_plantation
 RU_BL_VP_silk_plantation
 RU_BL_VP_barracks
 RU_BL_VP_conscription_center
-RU_BL_VP_naval_base
+RU_BL_VP_naval_administration
 RU_BL_VP_urban_center
 RU_BL_VP_arts_academy
 RU_BL_VP_power_plant
@@ -6984,7 +7450,6 @@ RU_BL_VP_building_observatorygreenwich
 RU_BL_VP_building_temple_of_poseidon
 RU_BL_VP_building_wat_arun
 RU_BL_VP_building_explosives_factory
-RU_BL_VP_building_military_shipyard
 RU_BL_VP_building_vineyard
 RU_BL_VP_building_power_bloc_statue
 RU_BL_VP_building_manor_house
@@ -7040,7 +7505,7 @@ RU_BL_TP_banana_plantation
 RU_BL_TP_silk_plantation
 RU_BL_TP_barracks
 RU_BL_TP_conscription_center
-RU_BL_TP_naval_base
+RU_BL_TP_naval_administration
 RU_BL_TP_urban_center
 RU_BL_TP_arts_academy
 RU_BL_TP_power_plant
@@ -7079,7 +7544,6 @@ RU_BL_TP_building_observatorygreenwich
 RU_BL_TP_building_temple_of_poseidon
 RU_BL_TP_building_wat_arun
 RU_BL_TP_building_explosives_factory
-RU_BL_TP_building_military_shipyard
 RU_BL_TP_building_vineyard
 RU_BL_TP_building_power_bloc_statue
 RU_BL_TP_building_manor_house
@@ -7135,7 +7599,7 @@ RU_BL_PP_banana_plantation
 RU_BL_PP_silk_plantation
 RU_BL_PP_barracks
 RU_BL_PP_conscription_center
-RU_BL_PP_naval_base
+RU_BL_PP_naval_administration
 RU_BL_PP_urban_center
 RU_BL_PP_arts_academy
 RU_BL_PP_power_plant
@@ -7174,7 +7638,6 @@ RU_BL_PP_building_observatorygreenwich
 RU_BL_PP_building_temple_of_poseidon
 RU_BL_PP_building_wat_arun
 RU_BL_PP_building_explosives_factory
-RU_BL_PP_building_military_shipyard
 RU_BL_PP_building_vineyard
 RU_BL_PP_building_power_bloc_statue
 RU_BL_PP_building_manor_house
@@ -7182,6 +7645,46 @@ RU_BL_PP_building_financial_district
 RU_BL_PP_building_victoria_terminus
 RU_BL_PP_building_company_headquarter
 RU_BL_PP_DEFAULT
+
+--------------------
+
+character_role_magnate_custom_loc:
+
+Scope: character
+Random Valid: yes
+
+Entries:
+character_title_daimyo
+character_title_lady
+character_title_baroness
+character_title_countess
+character_title_marquess
+character_title_lord
+character_title_baron
+character_title_count
+character_title_marquis
+character_title_gentlewoman
+character_title_gentleman
+
+--------------------
+
+character_role_general_custom_loc:
+
+Scope: character
+Random Valid: yes
+
+Entries:
+character_role_general_title
+
+--------------------
+
+character_role_admiral_custom_loc:
+
+Scope: character
+Random Valid: yes
+
+Entries:
+character_role_admiral_title
 
 --------------------
 
@@ -9357,6 +9860,26 @@ persistent_trait_tt
 
 --------------------
 
+japan_domain_by_character:
+
+Scope: character
+Random Valid: no
+
+Entries:
+domain_obama
+domain_satsuma
+domain_mito
+domain_choshu
+domain_tokushima
+domain_kishu
+domain_owari
+domain_hikone
+domain_kaga
+domain_sendai
+domain_matsumae
+
+--------------------
+
 anarchist_assassination_circumstances:
 
 Scope: character
@@ -10426,6 +10949,666 @@ SINGULAR_DEMONYM_lumad
 SINGULAR_DEMONYM_asturleonese
 SINGULAR_DEMONYM_iberian
 SINGULAR_DEMONYM_DEFAULT
+
+--------------------
+
+getPluralDemonymFemale:
+
+Scope: culture
+Random Valid: no
+
+Entries:
+PLURAL_DEMONYM_FEMALE_chechen
+PLURAL_DEMONYM_FEMALE_karelian
+PLURAL_DEMONYM_FEMALE_bashkir
+PLURAL_DEMONYM_FEMALE_buryat
+PLURAL_DEMONYM_FEMALE_mordvin
+PLURAL_DEMONYM_FEMALE_chuvash
+PLURAL_DEMONYM_FEMALE_mari
+PLURAL_DEMONYM_FEMALE_udmurt
+PLURAL_DEMONYM_FEMALE_mazanderani
+PLURAL_DEMONYM_FEMALE_luri
+PLURAL_DEMONYM_FEMALE_kho
+PLURAL_DEMONYM_FEMALE_peruvian
+PLURAL_DEMONYM_FEMALE_ecuadorian
+PLURAL_DEMONYM_FEMALE_chilean
+PLURAL_DEMONYM_FEMALE_peruvian
+PLURAL_DEMONYM_FEMALE_bolivian
+PLURAL_DEMONYM_FEMALE_venezuelan
+PLURAL_DEMONYM_FEMALE_argentine
+PLURAL_DEMONYM_FEMALE_uruguayan
+PLURAL_DEMONYM_FEMALE_paraguayan
+PLURAL_DEMONYM_FEMALE_colombian
+PLURAL_DEMONYM_FEMALE_sulista
+PLURAL_DEMONYM_FEMALE_nordestino
+PLURAL_DEMONYM_FEMALE_amazonic
+PLURAL_DEMONYM_FEMALE_paulista
+PLURAL_DEMONYM_FEMALE_aborigine
+PLURAL_DEMONYM_FEMALE_occitan
+PLURAL_DEMONYM_FEMALE_moro
+PLURAL_DEMONYM_FEMALE_afar
+PLURAL_DEMONYM_FEMALE_afro_american
+PLURAL_DEMONYM_FEMALE_afro_antillean
+PLURAL_DEMONYM_FEMALE_afro_brazilian
+PLURAL_DEMONYM_FEMALE_afro_caribbean
+PLURAL_DEMONYM_FEMALE_afro_caribeno
+PLURAL_DEMONYM_FEMALE_aimara
+PLURAL_DEMONYM_FEMALE_ainu
+PLURAL_DEMONYM_FEMALE_akan
+PLURAL_DEMONYM_FEMALE_albanian
+PLURAL_DEMONYM_FEMALE_algonquian
+PLURAL_DEMONYM_FEMALE_amazonian
+PLURAL_DEMONYM_FEMALE_amhara
+PLURAL_DEMONYM_FEMALE_anglo_canadian
+PLURAL_DEMONYM_FEMALE_apache
+PLURAL_DEMONYM_FEMALE_armenian
+PLURAL_DEMONYM_FEMALE_ashkenazi
+PLURAL_DEMONYM_FEMALE_assamese
+PLURAL_DEMONYM_FEMALE_athabaskan
+PLURAL_DEMONYM_FEMALE_australian
+PLURAL_DEMONYM_FEMALE_avadhi
+PLURAL_DEMONYM_FEMALE_azande
+PLURAL_DEMONYM_FEMALE_azerbaijani
+PLURAL_DEMONYM_FEMALE_baganda
+PLURAL_DEMONYM_FEMALE_baguirmi
+PLURAL_DEMONYM_FEMALE_bakongo
+PLURAL_DEMONYM_FEMALE_balinese
+PLURAL_DEMONYM_FEMALE_baluchi
+PLURAL_DEMONYM_FEMALE_bambara
+PLURAL_DEMONYM_FEMALE_basque
+PLURAL_DEMONYM_FEMALE_bassa
+PLURAL_DEMONYM_FEMALE_batak
+PLURAL_DEMONYM_FEMALE_bedouin
+PLURAL_DEMONYM_FEMALE_beja
+PLURAL_DEMONYM_FEMALE_bengali
+PLURAL_DEMONYM_FEMALE_berber
+PLURAL_DEMONYM_FEMALE_bihari
+PLURAL_DEMONYM_FEMALE_boer
+PLURAL_DEMONYM_FEMALE_bornean
+PLURAL_DEMONYM_FEMALE_bosniak
+PLURAL_DEMONYM_FEMALE_brazilian
+PLURAL_DEMONYM_FEMALE_breton
+PLURAL_DEMONYM_FEMALE_british
+PLURAL_DEMONYM_FEMALE_bulgarian
+PLURAL_DEMONYM_FEMALE_burmese
+PLURAL_DEMONYM_FEMALE_byelorussian
+PLURAL_DEMONYM_FEMALE_caddoan
+PLURAL_DEMONYM_FEMALE_cariban
+PLURAL_DEMONYM_FEMALE_caribeno
+PLURAL_DEMONYM_FEMALE_catalan
+PLURAL_DEMONYM_FEMALE_central_american
+PLURAL_DEMONYM_FEMALE_cherokee
+PLURAL_DEMONYM_FEMALE_chewa
+PLURAL_DEMONYM_FEMALE_comanche
+PLURAL_DEMONYM_FEMALE_corsican
+PLURAL_DEMONYM_FEMALE_cree
+PLURAL_DEMONYM_FEMALE_croat
+PLURAL_DEMONYM_FEMALE_czech
+PLURAL_DEMONYM_FEMALE_dakota
+PLURAL_DEMONYM_FEMALE_danish
+PLURAL_DEMONYM_FEMALE_dayak
+PLURAL_DEMONYM_FEMALE_dinka
+PLURAL_DEMONYM_FEMALE_dixie
+PLURAL_DEMONYM_FEMALE_dutch
+PLURAL_DEMONYM_FEMALE_dyula
+PLURAL_DEMONYM_FEMALE_edo
+PLURAL_DEMONYM_FEMALE_equatorial_bantu
+PLURAL_DEMONYM_FEMALE_estonian
+PLURAL_DEMONYM_FEMALE_ewe
+PLURAL_DEMONYM_FEMALE_fang
+PLURAL_DEMONYM_FEMALE_filipino
+PLURAL_DEMONYM_FEMALE_filipino_mestizo
+PLURAL_DEMONYM_FEMALE_filipino_hispanophone
+PLURAL_DEMONYM_FEMALE_tagalog
+PLURAL_DEMONYM_FEMALE_ilocano
+PLURAL_DEMONYM_FEMALE_visayan
+PLURAL_DEMONYM_FEMALE_lumad
+PLURAL_DEMONYM_FEMALE_finnish
+PLURAL_DEMONYM_FEMALE_flemish
+PLURAL_DEMONYM_FEMALE_fluvian_bantu
+PLURAL_DEMONYM_FEMALE_fon
+PLURAL_DEMONYM_FEMALE_franco_canadian
+PLURAL_DEMONYM_FEMALE_french
+PLURAL_DEMONYM_FEMALE_fulbe
+PLURAL_DEMONYM_FEMALE_fur
+PLURAL_DEMONYM_FEMALE_galician
+PLURAL_DEMONYM_FEMALE_georgian
+PLURAL_DEMONYM_FEMALE_greek
+PLURAL_DEMONYM_FEMALE_guajiro
+PLURAL_DEMONYM_FEMALE_guarani
+PLURAL_DEMONYM_FEMALE_gujarati
+PLURAL_DEMONYM_FEMALE_hakka
+PLURAL_DEMONYM_FEMALE_han
+PLURAL_DEMONYM_FEMALE_haratin
+PLURAL_DEMONYM_FEMALE_hausa
+PLURAL_DEMONYM_FEMALE_hawaiian
+PLURAL_DEMONYM_FEMALE_hazara
+PLURAL_DEMONYM_FEMALE_herero
+PLURAL_DEMONYM_FEMALE_hokan
+PLURAL_DEMONYM_FEMALE_hungarian
+PLURAL_DEMONYM_FEMALE_ibibio
+PLURAL_DEMONYM_FEMALE_ibo
+PLURAL_DEMONYM_FEMALE_icelandic
+PLURAL_DEMONYM_FEMALE_inuit
+PLURAL_DEMONYM_FEMALE_irish
+PLURAL_DEMONYM_FEMALE_japanese
+PLURAL_DEMONYM_FEMALE_javan
+PLURAL_DEMONYM_FEMALE_kachin
+PLURAL_DEMONYM_FEMALE_kannada
+PLURAL_DEMONYM_FEMALE_kanuri
+PLURAL_DEMONYM_FEMALE_karen
+PLURAL_DEMONYM_FEMALE_kashmiri
+PLURAL_DEMONYM_FEMALE_kavango_bantu
+PLURAL_DEMONYM_FEMALE_kazak
+PLURAL_DEMONYM_FEMALE_khmer
+PLURAL_DEMONYM_FEMALE_khmu
+PLURAL_DEMONYM_FEMALE_khoisan
+PLURAL_DEMONYM_FEMALE_kikuyu
+PLURAL_DEMONYM_FEMALE_kirgiz
+PLURAL_DEMONYM_FEMALE_kissi
+PLURAL_DEMONYM_FEMALE_korean
+PLURAL_DEMONYM_FEMALE_kru
+PLURAL_DEMONYM_FEMALE_kurdish
+PLURAL_DEMONYM_FEMALE_lacustrine_bantu
+PLURAL_DEMONYM_FEMALE_lao
+PLURAL_DEMONYM_FEMALE_latvian
+PLURAL_DEMONYM_FEMALE_lithuanian
+PLURAL_DEMONYM_FEMALE_lomwe
+PLURAL_DEMONYM_FEMALE_luba
+PLURAL_DEMONYM_FEMALE_lunda
+PLURAL_DEMONYM_FEMALE_luo
+PLURAL_DEMONYM_FEMALE_maasai
+PLURAL_DEMONYM_FEMALE_maghrebi
+PLURAL_DEMONYM_FEMALE_makua
+PLURAL_DEMONYM_FEMALE_malagasy
+PLURAL_DEMONYM_FEMALE_malay
+PLURAL_DEMONYM_FEMALE_malayalam
+PLURAL_DEMONYM_FEMALE_maltese
+PLURAL_DEMONYM_FEMALE_manchu
+PLURAL_DEMONYM_FEMALE_mande
+PLURAL_DEMONYM_FEMALE_manipuri
+PLURAL_DEMONYM_FEMALE_maori
+PLURAL_DEMONYM_FEMALE_marathi
+PLURAL_DEMONYM_FEMALE_mashriqi
+PLURAL_DEMONYM_FEMALE_bidan
+PLURAL_DEMONYM_FEMALE_mayan
+PLURAL_DEMONYM_FEMALE_melanesian
+PLURAL_DEMONYM_FEMALE_metis
+PLURAL_DEMONYM_FEMALE_mexican
+PLURAL_DEMONYM_FEMALE_miao
+PLURAL_DEMONYM_FEMALE_micronesian
+PLURAL_DEMONYM_FEMALE_min
+PLURAL_DEMONYM_FEMALE_miskito
+PLURAL_DEMONYM_FEMALE_misri
+PLURAL_DEMONYM_FEMALE_mixtec
+PLURAL_DEMONYM_FEMALE_moluccan
+PLURAL_DEMONYM_FEMALE_mon
+PLURAL_DEMONYM_FEMALE_mongo
+PLURAL_DEMONYM_FEMALE_mongol
+PLURAL_DEMONYM_FEMALE_mossi
+PLURAL_DEMONYM_FEMALE_muisca
+PLURAL_DEMONYM_FEMALE_muskogean
+PLURAL_DEMONYM_FEMALE_nahua
+PLURAL_DEMONYM_FEMALE_navajo
+PLURAL_DEMONYM_FEMALE_nepali
+PLURAL_DEMONYM_FEMALE_nez_perce
+PLURAL_DEMONYM_FEMALE_nguni
+PLURAL_DEMONYM_FEMALE_nilotic
+PLURAL_DEMONYM_FEMALE_north_andean
+PLURAL_DEMONYM_FEMALE_north_caucasian
+PLURAL_DEMONYM_FEMALE_circassian
+PLURAL_DEMONYM_FEMALE_north_german
+PLURAL_DEMONYM_FEMALE_north_italian
+PLURAL_DEMONYM_FEMALE_norwegian
+PLURAL_DEMONYM_FEMALE_nuba
+PLURAL_DEMONYM_FEMALE_nuer
+PLURAL_DEMONYM_FEMALE_oodham
+PLURAL_DEMONYM_FEMALE_oriya
+PLURAL_DEMONYM_FEMALE_oromo
+PLURAL_DEMONYM_FEMALE_ovimbundu
+PLURAL_DEMONYM_FEMALE_paiute
+PLURAL_DEMONYM_FEMALE_panjabi
+PLURAL_DEMONYM_FEMALE_pashtun
+PLURAL_DEMONYM_FEMALE_patagonian
+PLURAL_DEMONYM_FEMALE_persian
+PLURAL_DEMONYM_FEMALE_platinean
+PLURAL_DEMONYM_FEMALE_polish
+PLURAL_DEMONYM_FEMALE_polynesian
+PLURAL_DEMONYM_FEMALE_portuguese
+PLURAL_DEMONYM_FEMALE_pueblo
+PLURAL_DEMONYM_FEMALE_quechua
+PLURAL_DEMONYM_FEMALE_rajput
+PLURAL_DEMONYM_FEMALE_romanian
+PLURAL_DEMONYM_FEMALE_ruanda
+PLURAL_DEMONYM_FEMALE_rundi
+PLURAL_DEMONYM_FEMALE_russian
+PLURAL_DEMONYM_FEMALE_salish
+PLURAL_DEMONYM_FEMALE_sami
+PLURAL_DEMONYM_FEMALE_sara
+PLURAL_DEMONYM_FEMALE_scottish
+PLURAL_DEMONYM_FEMALE_sena
+PLURAL_DEMONYM_FEMALE_senufo
+PLURAL_DEMONYM_FEMALE_sephardic
+PLURAL_DEMONYM_FEMALE_serb
+PLURAL_DEMONYM_FEMALE_shan
+PLURAL_DEMONYM_FEMALE_shona
+PLURAL_DEMONYM_FEMALE_siberian
+PLURAL_DEMONYM_FEMALE_sidama
+PLURAL_DEMONYM_FEMALE_sindi
+PLURAL_DEMONYM_FEMALE_sinhala
+PLURAL_DEMONYM_FEMALE_siouan
+PLURAL_DEMONYM_FEMALE_slovak
+PLURAL_DEMONYM_FEMALE_slovene
+PLURAL_DEMONYM_FEMALE_somali
+PLURAL_DEMONYM_FEMALE_songhai
+PLURAL_DEMONYM_FEMALE_sorb
+PLURAL_DEMONYM_FEMALE_sotho
+PLURAL_DEMONYM_FEMALE_south_andean
+PLURAL_DEMONYM_FEMALE_south_german
+PLURAL_DEMONYM_FEMALE_south_italian
+PLURAL_DEMONYM_FEMALE_spanish
+PLURAL_DEMONYM_FEMALE_sudanese
+PLURAL_DEMONYM_FEMALE_sukuma
+PLURAL_DEMONYM_FEMALE_sumatran
+PLURAL_DEMONYM_FEMALE_swahili
+PLURAL_DEMONYM_FEMALE_swedish
+PLURAL_DEMONYM_FEMALE_alemannic
+PLURAL_DEMONYM_FEMALE_tajik
+PLURAL_DEMONYM_FEMALE_tamil
+PLURAL_DEMONYM_FEMALE_tarascan
+PLURAL_DEMONYM_FEMALE_tatar
+PLURAL_DEMONYM_FEMALE_teda
+PLURAL_DEMONYM_FEMALE_telegu
+PLURAL_DEMONYM_FEMALE_thai
+PLURAL_DEMONYM_FEMALE_tibetan
+PLURAL_DEMONYM_FEMALE_tigray
+PLURAL_DEMONYM_FEMALE_tiv
+PLURAL_DEMONYM_FEMALE_tonga
+PLURAL_DEMONYM_FEMALE_tswana
+PLURAL_DEMONYM_FEMALE_tuareg
+PLURAL_DEMONYM_FEMALE_tupinamba
+PLURAL_DEMONYM_FEMALE_turkish
+PLURAL_DEMONYM_FEMALE_turkmen
+PLURAL_DEMONYM_FEMALE_tuvan
+PLURAL_DEMONYM_FEMALE_ugrian
+PLURAL_DEMONYM_FEMALE_uighur
+PLURAL_DEMONYM_FEMALE_ukrainian
+PLURAL_DEMONYM_FEMALE_nyamwezi
+PLURAL_DEMONYM_FEMALE_uzbek
+PLURAL_DEMONYM_FEMALE_vietnamese
+PLURAL_DEMONYM_FEMALE_wallonian
+PLURAL_DEMONYM_FEMALE_welsh
+PLURAL_DEMONYM_FEMALE_wolof
+PLURAL_DEMONYM_FEMALE_xhosa
+PLURAL_DEMONYM_FEMALE_yakut
+PLURAL_DEMONYM_FEMALE_yankee
+PLURAL_DEMONYM_FEMALE_yao
+PLURAL_DEMONYM_FEMALE_yi
+PLURAL_DEMONYM_FEMALE_yoruba
+PLURAL_DEMONYM_FEMALE_yue
+PLURAL_DEMONYM_FEMALE_zapotec
+PLURAL_DEMONYM_FEMALE_zhuang
+PLURAL_DEMONYM_FEMALE_zulu
+PLURAL_DEMONYM_FEMALE_sumatran
+PLURAL_DEMONYM_FEMALE_bornean
+PLURAL_DEMONYM_FEMALE_balinese
+PLURAL_DEMONYM_FEMALE_assyrian
+PLURAL_DEMONYM_FEMALE_kalmyk
+PLURAL_DEMONYM_FEMALE_yemenite
+PLURAL_DEMONYM_FEMALE_francoprovencal
+PLURAL_DEMONYM_FEMALE_yuanzhumin
+PLURAL_DEMONYM_FEMALE_hindustani
+PLURAL_DEMONYM_FEMALE_lushai
+PLURAL_DEMONYM_FEMALE_bundeli
+PLURAL_DEMONYM_FEMALE_pahari
+PLURAL_DEMONYM_FEMALE_gondi
+PLURAL_DEMONYM_FEMALE_bageli
+PLURAL_DEMONYM_FEMALE_chhattisgarhi
+PLURAL_DEMONYM_FEMALE_naga
+PLURAL_DEMONYM_FEMALE_deccani
+PLURAL_DEMONYM_FEMALE_pathan
+PLURAL_DEMONYM_FEMALE_east_german
+PLURAL_DEMONYM_FEMALE_aragonese
+PLURAL_DEMONYM_FEMALE_scottish_gaelic
+PLURAL_DEMONYM_FEMALE_filipino_mestizo
+PLURAL_DEMONYM_FEMALE_filipino_hispanophone
+PLURAL_DEMONYM_FEMALE_tagalog
+PLURAL_DEMONYM_FEMALE_ilocano
+PLURAL_DEMONYM_FEMALE_visayan
+PLURAL_DEMONYM_FEMALE_lumad
+PLURAL_DEMONYM_FEMALE_asturleonese
+PLURAL_DEMONYM_FEMALE_iberian
+PLURAL_DEMONYM_FEMALE_DEFAULT
+
+--------------------
+
+getSingularDemonymFemale:
+
+Scope: culture
+Random Valid: no
+
+Entries:
+SINGULAR_DEMONYM_FEMALE_chechen
+SINGULAR_DEMONYM_FEMALE_karelian
+SINGULAR_DEMONYM_FEMALE_bashkir
+SINGULAR_DEMONYM_FEMALE_buryat
+SINGULAR_DEMONYM_FEMALE_mordvin
+SINGULAR_DEMONYM_FEMALE_chuvash
+SINGULAR_DEMONYM_FEMALE_mari
+SINGULAR_DEMONYM_FEMALE_udmurt
+SINGULAR_DEMONYM_FEMALE_mazanderani
+SINGULAR_DEMONYM_FEMALE_luri
+SINGULAR_DEMONYM_FEMALE_kho
+SINGULAR_DEMONYM_FEMALE_peruvian
+SINGULAR_DEMONYM_FEMALE_ecuadorian
+SINGULAR_DEMONYM_FEMALE_chilean
+SINGULAR_DEMONYM_FEMALE_peruvian
+SINGULAR_DEMONYM_FEMALE_bolivian
+SINGULAR_DEMONYM_FEMALE_venezuelan
+SINGULAR_DEMONYM_FEMALE_argentine
+SINGULAR_DEMONYM_FEMALE_uruguayan
+SINGULAR_DEMONYM_FEMALE_paraguayan
+SINGULAR_DEMONYM_FEMALE_colombian
+SINGULAR_DEMONYM_FEMALE_sulista
+SINGULAR_DEMONYM_FEMALE_nordestino
+SINGULAR_DEMONYM_FEMALE_amazonic
+SINGULAR_DEMONYM_FEMALE_paulista
+SINGULAR_DEMONYM_FEMALE_aborigine
+SINGULAR_DEMONYM_FEMALE_occitan
+SINGULAR_DEMONYM_FEMALE_moro
+SINGULAR_DEMONYM_FEMALE_afar
+SINGULAR_DEMONYM_FEMALE_afro_american
+SINGULAR_DEMONYM_FEMALE_afro_antillean
+SINGULAR_DEMONYM_FEMALE_afro_brazilian
+SINGULAR_DEMONYM_FEMALE_afro_caribbean
+SINGULAR_DEMONYM_FEMALE_afro_caribeno
+SINGULAR_DEMONYM_FEMALE_aimara
+SINGULAR_DEMONYM_FEMALE_ainu
+SINGULAR_DEMONYM_FEMALE_akan
+SINGULAR_DEMONYM_FEMALE_albanian
+SINGULAR_DEMONYM_FEMALE_algonquian
+SINGULAR_DEMONYM_FEMALE_amazonian
+SINGULAR_DEMONYM_FEMALE_amhara
+SINGULAR_DEMONYM_FEMALE_anglo_canadian
+SINGULAR_DEMONYM_FEMALE_apache
+SINGULAR_DEMONYM_FEMALE_armenian
+SINGULAR_DEMONYM_FEMALE_ashkenazi
+SINGULAR_DEMONYM_FEMALE_assamese
+SINGULAR_DEMONYM_FEMALE_athabaskan
+SINGULAR_DEMONYM_FEMALE_australian
+SINGULAR_DEMONYM_FEMALE_avadhi
+SINGULAR_DEMONYM_FEMALE_azande
+SINGULAR_DEMONYM_FEMALE_azerbaijani
+SINGULAR_DEMONYM_FEMALE_baganda
+SINGULAR_DEMONYM_FEMALE_baguirmi
+SINGULAR_DEMONYM_FEMALE_bakongo
+SINGULAR_DEMONYM_FEMALE_balinese
+SINGULAR_DEMONYM_FEMALE_baluchi
+SINGULAR_DEMONYM_FEMALE_bambara
+SINGULAR_DEMONYM_FEMALE_basque
+SINGULAR_DEMONYM_FEMALE_bassa
+SINGULAR_DEMONYM_FEMALE_batak
+SINGULAR_DEMONYM_FEMALE_bedouin
+SINGULAR_DEMONYM_FEMALE_beja
+SINGULAR_DEMONYM_FEMALE_bengali
+SINGULAR_DEMONYM_FEMALE_berber
+SINGULAR_DEMONYM_FEMALE_bihari
+SINGULAR_DEMONYM_FEMALE_boer
+SINGULAR_DEMONYM_FEMALE_bornean
+SINGULAR_DEMONYM_FEMALE_bosniak
+SINGULAR_DEMONYM_FEMALE_brazilian
+SINGULAR_DEMONYM_FEMALE_breton
+SINGULAR_DEMONYM_FEMALE_british
+SINGULAR_DEMONYM_FEMALE_bulgarian
+SINGULAR_DEMONYM_FEMALE_burmese
+SINGULAR_DEMONYM_FEMALE_byelorussian
+SINGULAR_DEMONYM_FEMALE_caddoan
+SINGULAR_DEMONYM_FEMALE_cariban
+SINGULAR_DEMONYM_FEMALE_caribeno
+SINGULAR_DEMONYM_FEMALE_catalan
+SINGULAR_DEMONYM_FEMALE_central_american
+SINGULAR_DEMONYM_FEMALE_cherokee
+SINGULAR_DEMONYM_FEMALE_chewa
+SINGULAR_DEMONYM_FEMALE_comanche
+SINGULAR_DEMONYM_FEMALE_corsican
+SINGULAR_DEMONYM_FEMALE_cree
+SINGULAR_DEMONYM_FEMALE_croat
+SINGULAR_DEMONYM_FEMALE_czech
+SINGULAR_DEMONYM_FEMALE_dakota
+SINGULAR_DEMONYM_FEMALE_danish
+SINGULAR_DEMONYM_FEMALE_dayak
+SINGULAR_DEMONYM_FEMALE_dinka
+SINGULAR_DEMONYM_FEMALE_dixie
+SINGULAR_DEMONYM_FEMALE_dutch
+SINGULAR_DEMONYM_FEMALE_dyula
+SINGULAR_DEMONYM_FEMALE_edo
+SINGULAR_DEMONYM_FEMALE_equatorial_bantu
+SINGULAR_DEMONYM_FEMALE_estonian
+SINGULAR_DEMONYM_FEMALE_ewe
+SINGULAR_DEMONYM_FEMALE_fang
+SINGULAR_DEMONYM_FEMALE_filipino
+SINGULAR_DEMONYM_FEMALE_filipino_mestizo
+SINGULAR_DEMONYM_FEMALE_filipino_hispanophone
+SINGULAR_DEMONYM_FEMALE_tagalog
+SINGULAR_DEMONYM_FEMALE_ilocano
+SINGULAR_DEMONYM_FEMALE_visayan
+SINGULAR_DEMONYM_FEMALE_lumad
+SINGULAR_DEMONYM_FEMALE_finnish
+SINGULAR_DEMONYM_FEMALE_flemish
+SINGULAR_DEMONYM_FEMALE_fluvian_bantu
+SINGULAR_DEMONYM_FEMALE_fon
+SINGULAR_DEMONYM_FEMALE_franco_canadian
+SINGULAR_DEMONYM_FEMALE_french
+SINGULAR_DEMONYM_FEMALE_fulbe
+SINGULAR_DEMONYM_FEMALE_fur
+SINGULAR_DEMONYM_FEMALE_galician
+SINGULAR_DEMONYM_FEMALE_georgian
+SINGULAR_DEMONYM_FEMALE_greek
+SINGULAR_DEMONYM_FEMALE_guajiro
+SINGULAR_DEMONYM_FEMALE_guarani
+SINGULAR_DEMONYM_FEMALE_gujarati
+SINGULAR_DEMONYM_FEMALE_hakka
+SINGULAR_DEMONYM_FEMALE_han
+SINGULAR_DEMONYM_FEMALE_haratin
+SINGULAR_DEMONYM_FEMALE_hausa
+SINGULAR_DEMONYM_FEMALE_hawaiian
+SINGULAR_DEMONYM_FEMALE_hazara
+SINGULAR_DEMONYM_FEMALE_herero
+SINGULAR_DEMONYM_FEMALE_hokan
+SINGULAR_DEMONYM_FEMALE_hungarian
+SINGULAR_DEMONYM_FEMALE_ibibio
+SINGULAR_DEMONYM_FEMALE_ibo
+SINGULAR_DEMONYM_FEMALE_icelandic
+SINGULAR_DEMONYM_FEMALE_inuit
+SINGULAR_DEMONYM_FEMALE_irish
+SINGULAR_DEMONYM_FEMALE_japanese
+SINGULAR_DEMONYM_FEMALE_javan
+SINGULAR_DEMONYM_FEMALE_kachin
+SINGULAR_DEMONYM_FEMALE_kannada
+SINGULAR_DEMONYM_FEMALE_kanuri
+SINGULAR_DEMONYM_FEMALE_karen
+SINGULAR_DEMONYM_FEMALE_kashmiri
+SINGULAR_DEMONYM_FEMALE_kavango_bantu
+SINGULAR_DEMONYM_FEMALE_kazak
+SINGULAR_DEMONYM_FEMALE_khmer
+SINGULAR_DEMONYM_FEMALE_khmu
+SINGULAR_DEMONYM_FEMALE_khoisan
+SINGULAR_DEMONYM_FEMALE_kikuyu
+SINGULAR_DEMONYM_FEMALE_kirgiz
+SINGULAR_DEMONYM_FEMALE_kissi
+SINGULAR_DEMONYM_FEMALE_korean
+SINGULAR_DEMONYM_FEMALE_kru
+SINGULAR_DEMONYM_FEMALE_kurdish
+SINGULAR_DEMONYM_FEMALE_lacustrine_bantu
+SINGULAR_DEMONYM_FEMALE_lao
+SINGULAR_DEMONYM_FEMALE_latvian
+SINGULAR_DEMONYM_FEMALE_lithuanian
+SINGULAR_DEMONYM_FEMALE_lomwe
+SINGULAR_DEMONYM_FEMALE_luba
+SINGULAR_DEMONYM_FEMALE_lunda
+SINGULAR_DEMONYM_FEMALE_luo
+SINGULAR_DEMONYM_FEMALE_maasai
+SINGULAR_DEMONYM_FEMALE_maghrebi
+SINGULAR_DEMONYM_FEMALE_makua
+SINGULAR_DEMONYM_FEMALE_malagasy
+SINGULAR_DEMONYM_FEMALE_malay
+SINGULAR_DEMONYM_FEMALE_malayalam
+SINGULAR_DEMONYM_FEMALE_maltese
+SINGULAR_DEMONYM_FEMALE_manchu
+SINGULAR_DEMONYM_FEMALE_mande
+SINGULAR_DEMONYM_FEMALE_manipuri
+SINGULAR_DEMONYM_FEMALE_maori
+SINGULAR_DEMONYM_FEMALE_marathi
+SINGULAR_DEMONYM_FEMALE_mashriqi
+SINGULAR_DEMONYM_FEMALE_bidan
+SINGULAR_DEMONYM_FEMALE_mayan
+SINGULAR_DEMONYM_FEMALE_melanesian
+SINGULAR_DEMONYM_FEMALE_metis
+SINGULAR_DEMONYM_FEMALE_mexican
+SINGULAR_DEMONYM_FEMALE_miao
+SINGULAR_DEMONYM_FEMALE_micronesian
+SINGULAR_DEMONYM_FEMALE_min
+SINGULAR_DEMONYM_FEMALE_miskito
+SINGULAR_DEMONYM_FEMALE_misri
+SINGULAR_DEMONYM_FEMALE_mixtec
+SINGULAR_DEMONYM_FEMALE_moluccan
+SINGULAR_DEMONYM_FEMALE_mon
+SINGULAR_DEMONYM_FEMALE_mongo
+SINGULAR_DEMONYM_FEMALE_mongol
+SINGULAR_DEMONYM_FEMALE_mossi
+SINGULAR_DEMONYM_FEMALE_muisca
+SINGULAR_DEMONYM_FEMALE_muskogean
+SINGULAR_DEMONYM_FEMALE_nahua
+SINGULAR_DEMONYM_FEMALE_navajo
+SINGULAR_DEMONYM_FEMALE_nepali
+SINGULAR_DEMONYM_FEMALE_nez_perce
+SINGULAR_DEMONYM_FEMALE_nguni
+SINGULAR_DEMONYM_FEMALE_nilotic
+SINGULAR_DEMONYM_FEMALE_north_andean
+SINGULAR_DEMONYM_FEMALE_north_caucasian
+SINGULAR_DEMONYM_FEMALE_circassian
+SINGULAR_DEMONYM_FEMALE_north_german
+SINGULAR_DEMONYM_FEMALE_north_italian
+SINGULAR_DEMONYM_FEMALE_norwegian
+SINGULAR_DEMONYM_FEMALE_nuba
+SINGULAR_DEMONYM_FEMALE_nuer
+SINGULAR_DEMONYM_FEMALE_oodham
+SINGULAR_DEMONYM_FEMALE_oriya
+SINGULAR_DEMONYM_FEMALE_oromo
+SINGULAR_DEMONYM_FEMALE_ovimbundu
+SINGULAR_DEMONYM_FEMALE_paiute
+SINGULAR_DEMONYM_FEMALE_panjabi
+SINGULAR_DEMONYM_FEMALE_pashtun
+SINGULAR_DEMONYM_FEMALE_patagonian
+SINGULAR_DEMONYM_FEMALE_persian
+SINGULAR_DEMONYM_FEMALE_platinean
+SINGULAR_DEMONYM_FEMALE_polish
+SINGULAR_DEMONYM_FEMALE_polynesian
+SINGULAR_DEMONYM_FEMALE_portuguese
+SINGULAR_DEMONYM_FEMALE_pueblo
+SINGULAR_DEMONYM_FEMALE_quechua
+SINGULAR_DEMONYM_FEMALE_rajput
+SINGULAR_DEMONYM_FEMALE_romanian
+SINGULAR_DEMONYM_FEMALE_ruanda
+SINGULAR_DEMONYM_FEMALE_rundi
+SINGULAR_DEMONYM_FEMALE_russian
+SINGULAR_DEMONYM_FEMALE_salish
+SINGULAR_DEMONYM_FEMALE_sami
+SINGULAR_DEMONYM_FEMALE_sara
+SINGULAR_DEMONYM_FEMALE_scottish
+SINGULAR_DEMONYM_FEMALE_sena
+SINGULAR_DEMONYM_FEMALE_senufo
+SINGULAR_DEMONYM_FEMALE_sephardic
+SINGULAR_DEMONYM_FEMALE_serb
+SINGULAR_DEMONYM_FEMALE_shan
+SINGULAR_DEMONYM_FEMALE_shona
+SINGULAR_DEMONYM_FEMALE_siberian
+SINGULAR_DEMONYM_FEMALE_sidama
+SINGULAR_DEMONYM_FEMALE_sindi
+SINGULAR_DEMONYM_FEMALE_sinhala
+SINGULAR_DEMONYM_FEMALE_siouan
+SINGULAR_DEMONYM_FEMALE_slovak
+SINGULAR_DEMONYM_FEMALE_slovene
+SINGULAR_DEMONYM_FEMALE_somali
+SINGULAR_DEMONYM_FEMALE_songhai
+SINGULAR_DEMONYM_FEMALE_sorb
+SINGULAR_DEMONYM_FEMALE_sotho
+SINGULAR_DEMONYM_FEMALE_south_andean
+SINGULAR_DEMONYM_FEMALE_south_german
+SINGULAR_DEMONYM_FEMALE_south_italian
+SINGULAR_DEMONYM_FEMALE_spanish
+SINGULAR_DEMONYM_FEMALE_sudanese
+SINGULAR_DEMONYM_FEMALE_sukuma
+SINGULAR_DEMONYM_FEMALE_sumatran
+SINGULAR_DEMONYM_FEMALE_swahili
+SINGULAR_DEMONYM_FEMALE_swedish
+SINGULAR_DEMONYM_FEMALE_alemannic
+SINGULAR_DEMONYM_FEMALE_tajik
+SINGULAR_DEMONYM_FEMALE_tamil
+SINGULAR_DEMONYM_FEMALE_tarascan
+SINGULAR_DEMONYM_FEMALE_tatar
+SINGULAR_DEMONYM_FEMALE_teda
+SINGULAR_DEMONYM_FEMALE_telegu
+SINGULAR_DEMONYM_FEMALE_thai
+SINGULAR_DEMONYM_FEMALE_tibetan
+SINGULAR_DEMONYM_FEMALE_tigray
+SINGULAR_DEMONYM_FEMALE_tiv
+SINGULAR_DEMONYM_FEMALE_tonga
+SINGULAR_DEMONYM_FEMALE_tswana
+SINGULAR_DEMONYM_FEMALE_tuareg
+SINGULAR_DEMONYM_FEMALE_tupinamba
+SINGULAR_DEMONYM_FEMALE_turkish
+SINGULAR_DEMONYM_FEMALE_turkmen
+SINGULAR_DEMONYM_FEMALE_tuvan
+SINGULAR_DEMONYM_FEMALE_ugrian
+SINGULAR_DEMONYM_FEMALE_uighur
+SINGULAR_DEMONYM_FEMALE_ukrainian
+SINGULAR_DEMONYM_FEMALE_nyamwezi
+SINGULAR_DEMONYM_FEMALE_uzbek
+SINGULAR_DEMONYM_FEMALE_vietnamese
+SINGULAR_DEMONYM_FEMALE_wallonian
+SINGULAR_DEMONYM_FEMALE_welsh
+SINGULAR_DEMONYM_FEMALE_wolof
+SINGULAR_DEMONYM_FEMALE_xhosa
+SINGULAR_DEMONYM_FEMALE_yakut
+SINGULAR_DEMONYM_FEMALE_yankee
+SINGULAR_DEMONYM_FEMALE_yao
+SINGULAR_DEMONYM_FEMALE_yi
+SINGULAR_DEMONYM_FEMALE_yoruba
+SINGULAR_DEMONYM_FEMALE_yue
+SINGULAR_DEMONYM_FEMALE_zapotec
+SINGULAR_DEMONYM_FEMALE_zhuang
+SINGULAR_DEMONYM_FEMALE_zulu
+SINGULAR_DEMONYM_FEMALE_sumatran
+SINGULAR_DEMONYM_FEMALE_bornean
+SINGULAR_DEMONYM_FEMALE_balinese
+SINGULAR_DEMONYM_FEMALE_assyrian
+SINGULAR_DEMONYM_FEMALE_kalmyk
+SINGULAR_DEMONYM_FEMALE_yemenite
+SINGULAR_DEMONYM_FEMALE_francoprovencal
+SINGULAR_DEMONYM_FEMALE_yuanzhumin
+SINGULAR_DEMONYM_FEMALE_hindustani
+SINGULAR_DEMONYM_FEMALE_lushai
+SINGULAR_DEMONYM_FEMALE_bundeli
+SINGULAR_DEMONYM_FEMALE_pahari
+SINGULAR_DEMONYM_FEMALE_gondi
+SINGULAR_DEMONYM_FEMALE_bageli
+SINGULAR_DEMONYM_FEMALE_chhattisgarhi
+SINGULAR_DEMONYM_FEMALE_naga
+SINGULAR_DEMONYM_FEMALE_deccani
+SINGULAR_DEMONYM_FEMALE_pathan
+SINGULAR_DEMONYM_FEMALE_east_german
+SINGULAR_DEMONYM_FEMALE_aragonese
+SINGULAR_DEMONYM_FEMALE_scottish_gaelic
+SINGULAR_DEMONYM_FEMALE_filipino_mestizo
+SINGULAR_DEMONYM_FEMALE_filipino_hispanophone
+SINGULAR_DEMONYM_FEMALE_tagalog
+SINGULAR_DEMONYM_FEMALE_ilocano
+SINGULAR_DEMONYM_FEMALE_visayan
+SINGULAR_DEMONYM_FEMALE_lumad
+SINGULAR_DEMONYM_FEMALE_asturleonese
+SINGULAR_DEMONYM_FEMALE_iberian
+SINGULAR_DEMONYM_FEMALE_DEFAULT
 
 --------------------
 
@@ -12708,6 +13891,50 @@ RU_RL_PP_sikh
 RU_RL_PP_sunni
 RU_RL_PP_theravada
 RU_RL_PP_DEFAULT
+
+--------------------
+
+colonize_korea_state_owned_by_japan:
+
+Scope: state
+Random Valid: no
+
+Entries:
+checkbox_ticked
+checkbox_unticked
+
+--------------------
+
+colonize_korea_state_is_incorporated:
+
+Scope: state
+Random Valid: no
+
+Entries:
+checkbox_ticked
+checkbox_unticked
+
+--------------------
+
+colonize_korea_state_turmoil:
+
+Scope: state
+Random Valid: no
+
+Entries:
+checkbox_ticked
+checkbox_unticked
+
+--------------------
+
+colonize_korea_state_is_assimilated:
+
+Scope: state
+Random Valid: no
+
+Entries:
+checkbox_ticked
+checkbox_unticked
 
 --------------------
 
@@ -16839,6 +18066,46 @@ RU_SL_ADJ_STATE_LEON
 RU_SL_ADJ_STATE_MURCIA
 RU_SL_ADJ_STATE_SLOVAKIA
 RU_SL_DEFAULT_ADJ
+
+--------------------
+
+japan_domain_by_state:
+
+Scope: state
+Random Valid: no
+
+Entries:
+domain_satsuma
+domain_mito
+domain_choshu
+domain_tokushima
+domain_kishu
+domain_owari
+domain_hikone
+domain_kaga
+domain_sendai
+domain_matsumae
+domain_obama
+
+--------------------
+
+japan_domain_seat_name:
+
+Scope: state
+Random Valid: no
+
+Entries:
+domain_seat_satsuma
+domain_seat_mito
+domain_seat_choshu
+domain_seat_tokushima
+domain_seat_kishu
+domain_seat_owari
+domain_seat_hikone
+domain_seat_kaga
+domain_seat_sendai
+domain_seat_matsumae
+domain_seat_obama
 
 --------------------
 

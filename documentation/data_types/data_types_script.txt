@@ -153,15 +153,15 @@ Return type: BuildingType
 
 -----------------------
 
-Scope.AccessCanalType
-Definition type: Promote
-Return type: CanalType
-
------------------------
-
 Scope.AccessCharacter
 Definition type: Promote
 Return type: Character
+
+-----------------------
+
+Scope.AccessCharacterRole
+Definition type: Promote
+Return type: CharacterRole
 
 -----------------------
 
@@ -381,6 +381,12 @@ Return type: InterestGroupTrait
 
 -----------------------
 
+Scope.AccessInterestTierType
+Definition type: Promote
+Return type: InterestTierType
+
+-----------------------
+
 Scope.AccessInvasion
 Definition type: Promote
 Return type: Invasion
@@ -426,6 +432,24 @@ Return type: MilitaryFormation
 Scope.AccessMobilizationOption
 Definition type: Promote
 Return type: MobilizationOption
+
+-----------------------
+
+Scope.AccessNavalBattle
+Definition type: Promote
+Return type: NavalBattle
+
+-----------------------
+
+Scope.AccessNavalMission
+Definition type: Promote
+Return type: NavalMission
+
+-----------------------
+
+Scope.AccessNavalMissionType
+Definition type: Promote
+Return type: NavalMissionType
 
 -----------------------
 
@@ -525,6 +549,24 @@ Return type: Religion
 
 -----------------------
 
+Scope.AccessShip
+Definition type: Promote
+Return type: Ship
+
+-----------------------
+
+Scope.AccessShipGroup
+Definition type: Promote
+Return type: ShipGroup
+
+-----------------------
+
+Scope.AccessShipType
+Definition type: Promote
+Return type: ShipType
+
+-----------------------
+
 Scope.AccessShippingLane
 Definition type: Promote
 Return type: ShippingLane
@@ -552,6 +594,12 @@ Return type: StateRegion
 Scope.AccessStateTrait
 Definition type: Promote
 Return type: StateTrait
+
+-----------------------
+
+Scope.AccessStrait
+Definition type: Promote
+Return type: Strait
 
 -----------------------
 
@@ -645,15 +693,15 @@ Return type: BuildingType
 
 -----------------------
 
-Scope.GetCanalType
-Definition type: Promote
-Return type: CanalType
-
------------------------
-
 Scope.GetCharacter
 Definition type: Promote
 Return type: Character
+
+-----------------------
+
+Scope.GetCharacterRole
+Definition type: Promote
+Return type: CharacterRole
 
 -----------------------
 
@@ -873,6 +921,12 @@ Return type: InterestGroupTrait
 
 -----------------------
 
+Scope.GetInterestTierType
+Definition type: Promote
+Return type: InterestTierType
+
+-----------------------
+
 Scope.GetInvasion
 Definition type: Promote
 Return type: Invasion
@@ -918,6 +972,24 @@ Return type: MilitaryFormation
 Scope.GetMobilizationOption
 Definition type: Promote
 Return type: MobilizationOption
+
+-----------------------
+
+Scope.GetNavalBattle
+Definition type: Promote
+Return type: NavalBattle
+
+-----------------------
+
+Scope.GetNavalMission
+Definition type: Promote
+Return type: NavalMission
+
+-----------------------
+
+Scope.GetNavalMissionType
+Definition type: Promote
+Return type: NavalMissionType
 
 -----------------------
 
@@ -1017,6 +1089,24 @@ Return type: Religion
 
 -----------------------
 
+Scope.GetShip
+Definition type: Promote
+Return type: Ship
+
+-----------------------
+
+Scope.GetShipGroup
+Definition type: Promote
+Return type: ShipGroup
+
+-----------------------
+
+Scope.GetShipType
+Definition type: Promote
+Return type: ShipType
+
+-----------------------
+
 Scope.GetShippingLane
 Definition type: Promote
 Return type: ShippingLane
@@ -1044,6 +1134,12 @@ Return type: StateRegion
 Scope.GetStateTrait
 Definition type: Promote
 Return type: StateTrait
+
+-----------------------
+
+Scope.GetStrait
+Definition type: Promote
+Return type: Strait
 
 -----------------------
 
@@ -1345,6 +1441,12 @@ Return type: CommanderOrderType
 
 -----------------------
 
+TopScope.sCR( Arg0 )
+Definition type: Promote
+Return type: CharacterRole
+
+-----------------------
+
 TopScope.sCU( Arg0 )
 Definition type: Promote
 Return type: Culture
@@ -1366,6 +1468,12 @@ Return type: Character
 TopScope.sCharacter( Arg0 )
 Definition type: Promote
 Return type: Character
+
+-----------------------
+
+TopScope.sCharacterRole( Arg0 )
+Definition type: Promote
+Return type: CharacterRole
 
 -----------------------
 
@@ -1621,6 +1729,12 @@ Return type: InterestGroupTrait
 
 -----------------------
 
+TopScope.sInterestTierType( Arg0 )
+Definition type: Promote
+Return type: InterestTierType
+
+-----------------------
+
 TopScope.sJE( Arg0 )
 Definition type: Promote
 Return type: JournalEntry
@@ -1849,6 +1963,12 @@ Return type: StateRegion
 
 -----------------------
 
+TopScope.sStrait( Arg0 )
+Definition type: Promote
+Return type: Strait
+
+-----------------------
+
 TopScope.sStrategicRegion( Arg0 )
 Definition type: Promote
 Return type: StrategicRegion
@@ -2041,6 +2161,12 @@ Return type: [unregistered]
 
 -----------------------
 
+TopScope.sCR( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 TopScope.sCU( Arg0 )
 Definition type: Function
 Return type: [unregistered]
@@ -2060,6 +2186,12 @@ Return type: [unregistered]
 -----------------------
 
 TopScope.sCharacter( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+TopScope.sCharacterRole( Arg0 )
 Definition type: Function
 Return type: [unregistered]
 
@@ -2317,6 +2449,12 @@ Return type: [unregistered]
 
 -----------------------
 
+TopScope.sInterestTierType( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 TopScope.sJE( Arg0 )
 Definition type: Function
 Return type: [unregistered]
@@ -2540,6 +2678,12 @@ Return type: [unregistered]
 -----------------------
 
 TopScope.sStateRegion( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+TopScope.sStrait( Arg0 )
 Definition type: Function
 Return type: [unregistered]
 
