@@ -3064,16 +3064,17 @@ Traits: yes/no
 Reads gamestate for all scopes.
 **Supported Scopes**: treaty  
 
-## is_equal_exchange
-Checks if the scoped treaty has the same articles on both sides,  
+## is_equal_exchange_for
+Checks if the scoped treaty is considered an equal exchange by target country,  
 scope:some_treaty = {  
 	if = { limit = {  
-		is_equal_exchange = yes  
+		is_equal_exchange_for = c:FRA  
 	}}  
 }
-Traits: yes/no 
+Traits: country scope
 Reads gamestate for all scopes.
 **Supported Scopes**: treaty_options, treaty  
+**Supported Targets**: country  
 
 ## is_exchanging_obligations
 Checks if the scoped treaty is exchanging any obligations,  

@@ -994,6 +994,12 @@ Return type: Scope
 
 -----------------------
 
+OTHER_COUNTRY
+Definition type: Global promote
+Return type: Country
+
+-----------------------
+
 Outliner
 Definition type: Global promote
 Return type: Outliner
@@ -24459,12 +24465,6 @@ Return type: [unregistered]
 Country.GetOwningCompany
 Definition type: Function
 Return type: [unregistered]
-
------------------------
-
-Country.GetPactsBrokenFromCallToArmsDeclinedDesc( Arg0 )
-Definition type: Function
-Return type: CString
 
 -----------------------
 
@@ -61379,6 +61379,18 @@ Return type: CFixedPoint
 
 -----------------------
 
+State.GetConstructionEfficiencyForBuildingType( Arg0 )
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+State.GetConstructionEfficiencyForBuildingTypeTooltip( Arg0 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 State.GetConstructionEfficiencyTooltip
 Definition type: Function
 Return type: CString
@@ -66971,6 +66983,12 @@ Return type: int32
 TreatyDraft.GetArticleTypeAcceptanceWithState( Arg0, Arg1, Arg2 )
 Definition type: Function
 Return type: int32
+
+-----------------------
+
+TreatyDraft.GetArticleTypeInfluenceCostDesc( Arg0, Arg1 )
+Definition type: Function
+Return type: CString
 
 -----------------------
 

@@ -578,6 +578,12 @@ Expected Scope: none
 
 --------------------
 
+kamehameha_coin_toss:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 indochina_yearly_events:
 From Code: No
 Expected Scope: country
@@ -887,6 +893,12 @@ Expected Scope: none
 on_decade_pulse_country:
 From Code: Yes
 Expected Scope: country
+
+--------------------
+
+krakatoa_on_action:
+From Code: No
+Expected Scope: none
 
 --------------------
 

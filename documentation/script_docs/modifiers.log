@@ -1690,6 +1690,10 @@ building_group_bg_agriculture_allowed_collectivization_add:
   Mask: building
   Name: Minimum Worker-Owned Agriculture Building Levels
   Description: The minimum amount of Agriculture Buildings that will be worker-owned.
+building_group_bg_agriculture_construction_efficiency_add:
+  Mask: building
+  Name: Agriculture Construction Efficiency
+  Description: An increase or decrease to the weekly Construction progress for Agriculture
 building_group_bg_agriculture_employee_mult:
   Mask: building
   Name: Agriculture Employees
@@ -1762,6 +1766,10 @@ building_group_bg_extraction_allowed_collectivization_add:
   Mask: building
   Name: Minimum Worker-Owned Extraction Building Levels
   Description: The minimum amount of Extraction Buildings that will be worker-owned.
+building_group_bg_extraction_construction_efficiency_add:
+  Mask: building
+  Name: Extraction Construction Efficiency
+  Description: An increase or decrease to the weekly Construction progress for Extraction
 building_group_bg_extraction_throughput_add:
   Mask: building
   Name: Extraction Throughput
@@ -1814,6 +1822,10 @@ building_group_bg_gold_mining_tax_mult:
   Mask: building
   Name: Gold Mining Tax Income
   Description: A bonus or penalty to tax income from Gold Mines
+building_group_bg_government_construction_efficiency_add:
+  Mask: building
+  Name: Government Structures Construction Efficiency
+  Description: An increase or decrease to the weekly Construction progress for Government Structures
 building_group_bg_government_employee_mult:
   Mask: building
   Name: Government Employees
@@ -1834,6 +1846,10 @@ building_group_bg_government_throughput_add:
   Mask: building
   Name: Government Structures Throughput
   Description: A bonus or penalty to the Throughput of Government Structures
+building_group_bg_heavy_industry_construction_efficiency_add:
+  Mask: building
+  Name: Heavy Industries Construction Efficiency
+  Description: An increase or decrease to the weekly Construction progress for Heavy Industries
 building_group_bg_heavy_industry_engineers_mortality_mult:
   Mask: building
   Name: Mortality of engineers! Engineers employed in Heavy Industry
@@ -1854,6 +1870,10 @@ building_group_bg_heavy_industry_throughput_add:
   Mask: building
   Name: Heavy Industries Throughput
   Description: A bonus or penalty to both input and output of Heavy Industries
+building_group_bg_infrastructure_construction_efficiency_add:
+  Mask: building
+  Name: Infrastructure Construction Efficiency
+  Description: An increase or decrease to the weekly Construction progress for Infrastructure
 building_group_bg_infrastructure_employee_mult:
   Mask: building
   Name: Infrastructure Employees
@@ -1918,6 +1938,10 @@ building_group_bg_lead_mining_tax_mult:
   Mask: building
   Name: Lead Mining Tax Income
   Description: A bonus or penalty to tax income from Lead Mines
+building_group_bg_light_industry_construction_efficiency_add:
+  Mask: building
+  Name: Light Industries Construction Efficiency
+  Description: An increase or decrease to the weekly Construction progress for Light Industries
 building_group_bg_light_industry_laborers_mortality_mult:
   Mask: building
   Name: Mortality of laborers! Laborers employed in Light Industry
@@ -2022,6 +2046,10 @@ building_group_bg_manufacturing_unincorporated_throughput_add:
   Mask: building
   Name: Manufacturing Industries Throughput in Unincorporated States
   Description: A bonus or penalty to the Throughput of Manufacturing Industries in Unincorporated States
+building_group_bg_military_construction_efficiency_add:
+  Mask: building
+  Name: Military Buildings Construction Efficiency
+  Description: An increase or decrease to the weekly Construction progress for Military Buildings
 building_group_bg_military_throughput_add:
   Mask: building
   Name: Military Buildings Throughput
@@ -2118,6 +2146,10 @@ building_group_bg_plantations_allowed_collectivization_add:
   Mask: building
   Name: Minimum Worker-Owned Plantations Building Levels
   Description: The minimum amount of Plantations Buildings that will be worker-owned.
+building_group_bg_plantations_construction_efficiency_add:
+  Mask: building
+  Name: Plantations Construction Efficiency
+  Description: An increase or decrease to the weekly Construction progress for Plantations
 building_group_bg_plantations_employee_mult:
   Mask: building
   Name: Plantation Employees
@@ -2166,6 +2198,10 @@ building_group_bg_ranching_allowed_collectivization_add:
   Mask: building
   Name: Minimum Worker-Owned Ranches Building Levels
   Description: The minimum amount of Ranches Buildings that will be worker-owned.
+building_group_bg_ranching_construction_efficiency_add:
+  Mask: building
+  Name: Ranches Construction Efficiency
+  Description: An increase or decrease to the weekly Construction progress for Ranches
 building_group_bg_ranching_farmers_mortality_mult:
   Mask: building
   Name: Mortality of farmers! Farmers employed in Ranching

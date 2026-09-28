@@ -56,6 +56,8 @@ some_treaty_article = {
 
     icon = path/to/icon
 
+    maintenance_paid_by = source_country | target_country
+
     flags = {
         flag_1
         flag_2
@@ -98,7 +100,13 @@ some_treaty_article = {
 
     possible = { trigger block }
 
-    can_ratify = { trigger block }
+	requirement_to_maintain = { # Any number of these triggers can be added to set up the requirements to propose and maintain an article
+		trigger = {} # If this evaluates to false, the article will automatically break on next update
+
+		show_about_to_break_warning = {} # If this evaluates to true, the player will get an alert that this specific requirement to maintain is in danger of failing
+	}
+
+    can_ratify = { trigger block } # When can_ratify is checked, we also automatically check all requirements to maintain so they do not need to be duplicated here
 
     can_withdraw = { trigger block }
 
@@ -149,12 +157,13 @@ some_treaty_article = {
 
         inherent_accept_score = { script value }
         contextual_accept_score = { script value }
+		proposal_weight = { script value } # Multiplier on AI score for including an article in a treaty they are composing, root is composing AI country
 
         wargoal_score_multiplier = { script value }
     }
 
     wargoal = {
-        execution_priority = 60
+        execution_priority = 21
 
         maneuvers = { script value }
 
@@ -192,6 +201,11 @@ containing an article of this type. Progress is a percentage, when it reaches
 ## icon (default: empty)
 A path to the icon identifying this article type
 
+## maintenance_paid_by (default: empty)
+Must be specified for directed article types, must be unspecified for mutual article types.
+For directed article types, specified who pays the maintenance cost for an article of this type. Can either by the
+source country or the target country.
+
 ## flags (default: empty)
 A set of flags each of which determine some intrinsic behavior of the article.
 The game makes use of these flags in various situations and for a variety of
@@ -202,7 +216,7 @@ Articles are perfectly valid without any flags if all you need is available thro
 Currently, these are the supported flags:
 - `is_alliance`
 - `is_defensive_pact`
-- `is_guarantee_independence`
+- `is_gurantee_independence`
 - `is_support_independence`
 - `is_investment_rights`
 - `is_trade_privilege`
@@ -220,7 +234,6 @@ Currently, these are the supported flags:
 - `can_be_renegotiated`
 - `can_be_enforced`
 - `causes_state_transfer`
-- `recipient_pays_maintenance`
 
 ### flag behaviors
 
@@ -237,9 +250,6 @@ happened upon renegotiation.
 
 #### can_be_enforced
 This is what determines if an article is enforceable through a war goal or not.
-
-#### recipient_pays_maintenance
-Makes the target country in directed articles pay the influence cost of an article instead of the source
 
 ## required_inputs (default: empty)
 A set of inputs required by this article type, among the list of valid inputs
