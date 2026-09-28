@@ -371,6 +371,24 @@ Returns the province or state owner local navy HQ
 Input Scopes: province
 Output Scopes: hq
 
+### num_units
+Get the number of active units for military formations in the province that are allied to the specified country
+Requires Data: yes
+Input Scopes: province
+Output Scopes: value
+
+### num_units_in_battle
+Get the number of active units in battle for military formations in the province that are allied to the specified country
+Requires Data: yes
+Input Scopes: province
+Output Scopes: value
+
+### num_units_not_in_battle
+Get the number of active units not in battle for military formations in the province that are allied to the specified country
+Requires Data: yes
+Input Scopes: province
+Output Scopes: value
+
 ### average_expected_sol
 Get the average expected Standard of Living of the scope
 Input Scopes: country, state
@@ -460,6 +478,11 @@ Output Scopes: battle_side
 Scope from a battle side to the province in which the battle is being fought
 Input Scopes: battle_side
 Output Scopes: province
+
+### national_awakening_state_region
+Links from a culture scope to the state region with an active national awakening for that culture
+Input Scopes: culture
+Output Scopes: state_region
 
 ### ai_colonization_value
 Scope to target country AI desire to colonize a strategic region (example: value = ai_colonization_value:root)
@@ -1341,6 +1364,21 @@ Output Scopes: value
 Scope to the top overlord of the country in scope
 Input Scopes: country
 Output Scopes: country
+
+### total_export_value
+Scope to the total value of scope country's exports to the world market (example: total_trade_value >= 1000)
+Input Scopes: country
+Output Scopes: value
+
+### total_import_value
+Scope to the total value of scope country's imports from the world market (example: total_trade_value >= 1000)
+Input Scopes: country
+Output Scopes: value
+
+### total_trade_value
+Scope to the total value of scope country's trade with the world market (example: total_trade_value >= 1000)
+Input Scopes: country
+Output Scopes: value
 
 ### region_state
 Unknown, add something in code registration

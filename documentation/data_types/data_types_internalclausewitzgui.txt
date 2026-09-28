@@ -7567,6 +7567,12 @@ Return type: bool
 
 -----------------------
 
+MeshImporter.IsTargetMesh2
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 MeshImporter.SaveSettings
 Definition type: Function
 Return type: void
@@ -9219,15 +9225,15 @@ Return type: [unregistered]
 
 -----------------------
 
-PdxValueSetting.GetCurrentValue( Arg0 )
+PdxValueSetting.GetFormattedPendingValue( Arg0 )
 Definition type: Function
-Return type: float
+Return type: CString
 
 -----------------------
 
-PdxValueSetting.GetFormatedCurrentValue( Arg0 )
+PdxValueSetting.GetPendingValue( Arg0 )
 Definition type: Function
-Return type: CString
+Return type: float
 
 -----------------------
 
@@ -13085,6 +13091,83 @@ Return type: void
 
 -----------------------
 
+ToolProperty2SearchList
+Definition type: Type
+
+-----------------------
+
+ToolProperty2SearchList.AccessSelf
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+ToolProperty2SearchList.AreSelectButtonsVisible
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+ToolProperty2SearchList.GetSelectedLabel
+Definition type: Function
+Return type: CUTF8String
+
+-----------------------
+
+ToolProperty2SearchList.GetSelectedValueColor
+Definition type: Function
+Return type: CVector4f
+
+-----------------------
+
+ToolProperty2SearchList.HasNext
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+ToolProperty2SearchList.HasPrev
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+ToolProperty2SearchList.NextEntryTooltip
+Definition type: Function
+Return type: CUTF8String
+
+-----------------------
+
+ToolProperty2SearchList.OpenSearchList
+Definition type: Function
+Return type: void
+
+-----------------------
+
+ToolProperty2SearchList.PrevEntryTooltip
+Definition type: Function
+Return type: CUTF8String
+
+-----------------------
+
+ToolProperty2SearchList.SelectNext
+Definition type: Function
+Return type: void
+
+-----------------------
+
+ToolProperty2SearchList.SelectPrev
+Definition type: Function
+Return type: void
+
+-----------------------
+
+ToolProperty2SearchList.Self
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 ToolPropertyAction
 Description: Additional Action available on a given ToolProperty.
 Definition type: Type
@@ -15133,6 +15216,12 @@ Return type: [unregistered]
 ToolsPropertyValueList.AddItem
 Definition type: Function
 Return type: void
+
+-----------------------
+
+ToolsPropertyValueList.CanAddOrRemoveItems
+Definition type: Function
+Return type: bool
 
 -----------------------
 

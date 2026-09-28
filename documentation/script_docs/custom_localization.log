@@ -5331,6 +5331,7 @@ subject_type_personal_union_RP
 subject_type_protectorate_RP
 subject_type_chartered_company_RP
 subject_type_colony_RP
+subject_type_crown_land_RP
 subject_type_DEFAULT_RP
 
 --------------------
@@ -5349,6 +5350,7 @@ subject_type_personal_union_DP
 subject_type_protectorate_DP
 subject_type_chartered_company_DP
 subject_type_colony_DP
+subject_type_crown_land_DP
 subject_type_DEFAULT_DP
 
 --------------------
@@ -5367,6 +5369,7 @@ subject_type_personal_union_VP
 subject_type_protectorate_VP
 subject_type_chartered_company_VP
 subject_type_colony_VP
+subject_type_crown_land_VP
 subject_type_DEFAULT_VP
 
 --------------------
@@ -5385,6 +5388,7 @@ subject_type_personal_union_TP
 subject_type_protectorate_TP
 subject_type_chartered_company_TP
 subject_type_colony_TP
+subject_type_crown_land_TP
 subject_type_DEFAULT_TP
 
 --------------------
@@ -5403,6 +5407,7 @@ subject_type_personal_union_PP
 subject_type_protectorate_PP
 subject_type_chartered_company_PP
 subject_type_colony_PP
+subject_type_crown_land_PP
 subject_type_DEFAULT_PP
 
 --------------------
@@ -5532,6 +5537,319 @@ custom_ship_sereia
 custom_ship_leonidas
 custom_ship_lucy_ann
 custom_ship_astro
+
+--------------------
+
+country_legislature_name:
+
+Scope: country
+Random Valid: no
+
+Entries:
+legislature_board_of_directors
+legislature_congress_of_soviets
+legislature_congress_of_councils
+legislature_congress
+legislature_duma
+legislature_reichsrat
+legislature_diet
+legislature_federal_diet
+legislature_riksdag
+legislature_storting
+legislature_folketing
+legislature_althing
+legislature_landtag
+legislature_grand_council
+legislature_advisory_council
+legislature_national_assembly
+legislature_parliament
+
+--------------------
+
+country_red_season_name_dynamic:
+
+Scope: country
+Random Valid: no
+
+Entries:
+red_winter_loc
+red_spring_loc
+red_summer_loc
+red_autumn_loc
+red_summer_loc
+
+--------------------
+
+country_red_season_name:
+
+Scope: country
+Random Valid: no
+
+Entries:
+red_winter_loc
+red_spring_loc
+red_summer_loc
+red_autumn_loc
+red_summer_loc
+
+--------------------
+
+je_montenegrin_raiding_amount:
+
+Scope: country
+Random Valid: no
+
+Entries:
+je_montenegrin_raiding_amount_display_max
+je_montenegrin_raiding_amount_display
+
+--------------------
+
+country_national_epic_name:
+
+Scope: country
+Random Valid: no
+
+Entries:
+bosnian_epic_loc
+montenegrin_epic_loc
+serbian_epic_loc
+croatian_epic_loc
+hungarian_epic_loc
+romanian_epic_loc
+slovene_epic_loc
+bulgarian_epic_loc
+greek_epic_loc
+albanian_epic_loc
+national_epic_loc
+
+--------------------
+
+triune_kingdom_exists_or_not:
+
+Scope: country
+Random Valid: no
+
+Entries:
+TRIUNE_KINGDOM_EXISTS
+TRIUNE_KINGDOM_NOT_EXISTS
+
+--------------------
+
+triune_kingdom_exists_or_not_goal:
+
+Scope: country
+Random Valid: no
+
+Entries:
+TRIUNE_KINGDOM_EXISTS_GOAL
+TRIUNE_KINGDOM_NOT_EXISTS_GOAL
+
+--------------------
+
+danubian_principalities_exists_or_not:
+
+Scope: country
+Random Valid: no
+
+Entries:
+ROMANIA_EXISTS
+ROMANIA_NOT_EXISTS
+
+--------------------
+
+italy_or_italian_states:
+
+Scope: country
+Random Valid: no
+
+Entries:
+ITALY_EXISTS
+ITALY_NOT_EXISTS
+
+--------------------
+
+getDecadeName:
+
+Scope: country
+Random Valid: no
+
+Entries:
+decade_thirties
+decade_forties
+decade_fifties
+decade_sixties
+decade_seventies
+decade_eighties
+decade_nineties
+decade_centennial
+decade_tens
+decade_twenties
+decade_thirties
+decade_new_age
+
+--------------------
+
+metternich_ita_checkbox:
+
+Scope: country
+Random Valid: no
+
+Entries:
+metternich_unticked
+metternich_ticked
+
+--------------------
+
+metternich_art_checkbox:
+
+Scope: country
+Random Valid: no
+
+Entries:
+metternich_unticked
+metternich_ticked
+
+--------------------
+
+metternich_krakow_checkbox:
+
+Scope: country
+Random Valid: no
+
+Entries:
+metternich_unticked
+metternich_ticked
+
+--------------------
+
+metternich_ger_checkbox:
+
+Scope: country
+Random Valid: no
+
+Entries:
+metternich_unticked
+metternich_ticked
+
+--------------------
+
+metternich_tech_checkbox:
+
+Scope: country
+Random Valid: no
+
+Entries:
+metternich_unticked
+metternich_ticked
+
+--------------------
+
+metternich_movement_checkbox:
+
+Scope: country
+Random Valid: no
+
+Entries:
+metternich_unticked
+metternich_ticked
+
+--------------------
+
+metternich_laws_checkbox:
+
+Scope: country
+Random Valid: no
+
+Entries:
+metternich_unticked
+metternich_ticked
+
+--------------------
+
+metternich_institution_checkbox:
+
+Scope: country
+Random Valid: no
+
+Entries:
+metternich_unticked
+metternich_ticked
+
+--------------------
+
+metternich_system_entry:
+
+Scope: country
+Random Valid: no
+
+Entries:
+metternich_system_box_tt
+blank_tt
+
+--------------------
+
+metternich_system_cohesion_entry:
+
+Scope: country
+Random Valid: no
+
+Entries:
+metternich_system_cohesion_box_tt
+blank_tt
+
+--------------------
+
+metternich_bloc_checkbox:
+
+Scope: country
+Random Valid: no
+
+Entries:
+metternich_unticked
+metternich_ticked
+
+--------------------
+
+metternich_bloc_cohesion_checkbox:
+
+Scope: country
+Random Valid: no
+
+Entries:
+metternich_unticked
+metternich_ticked
+
+--------------------
+
+metternich_performance_text:
+
+Scope: country
+Random Valid: no
+
+Entries:
+metternich_memory_level_10
+metternich_memory_level_9
+metternich_memory_level_8
+metternich_memory_level_7
+metternich_memory_level_6
+metternich_memory_level_5
+metternich_memory_level_4
+metternich_memory_level_3
+metternich_memory_level_2
+metternich_memory_level_1
+metternich_memory_level_0
+
+--------------------
+
+future_kuk_name:
+
+Scope: country
+Random Valid: no
+
+Entries:
+dyn_c_usga
+KUK
 
 --------------------
 
@@ -5774,6 +6092,151 @@ Random Valid: no
 Entries:
 je_federation_of_india_reason_diploplay_info_tt
 blank_tt
+
+--------------------
+
+illyrian_or_yugoslav_movement:
+
+Scope: country
+Random Valid: no
+
+Entries:
+illyrian_movement
+yugoslav_movement
+
+--------------------
+
+serbia_rival_dynasty_concept:
+
+Scope: country
+Random Valid: no
+
+Entries:
+karadjordjevic_concept
+obrenovic_concept
+
+--------------------
+
+serbia_rival_dynasty_short_concept:
+
+Scope: country
+Random Valid: no
+
+Entries:
+karadjordjevic_concept_short
+obrenovic_concept_short
+
+--------------------
+
+serbia_rival_dynasty:
+
+Scope: country
+Random Valid: no
+
+Entries:
+concept_house_of_karadjordjevic
+concept_house_of_obrenovic
+
+--------------------
+
+serbia_rival_dynasty_short:
+
+Scope: country
+Random Valid: no
+
+Entries:
+concept_house_of_karadjordjevic_short
+concept_house_of_obrenovic_short
+
+--------------------
+
+serbia_ruling_dynasty_concept:
+
+Scope: country
+Random Valid: no
+
+Entries:
+obrenovic_concept
+karadjordjevic_concept
+
+--------------------
+
+serbia_ruling_dynasty_short_concept:
+
+Scope: country
+Random Valid: no
+
+Entries:
+obrenovic_concept_short
+karadjordjevic_concept_short
+
+--------------------
+
+serbia_ruling_dynasty:
+
+Scope: country
+Random Valid: no
+
+Entries:
+concept_house_of_obrenovic
+concept_house_of_karadjordjevic
+
+--------------------
+
+serbia_ruling_dynasty_short:
+
+Scope: country
+Random Valid: no
+
+Entries:
+concept_house_of_obrenovic_short
+concept_house_of_karadjordjevic_short
+
+--------------------
+
+serbia_throne_of_thorns_house_loc:
+
+Scope: country
+Random Valid: no
+
+Entries:
+je_serbian_throne_obrenovic_desc
+je_serbian_throne_karadjordjevic_desc
+
+--------------------
+
+grunderzeit_1_commitment_effects:
+
+Scope: country
+Random Valid: no
+
+Entries:
+grunderzeit.1_low_commitment_effects_string
+grunderzeit.1_high_commitment_effects_string
+
+--------------------
+
+grunderzeit_2_commitment_effects:
+
+Scope: country
+Random Valid: no
+
+Entries:
+grunderzeit.2_low_commitment_effects_string
+grunderzeit.2_high_commitment_effects_string
+
+--------------------
+
+possible_metternich_modifier:
+
+Scope: country
+Random Valid: no
+
+Entries:
+metternich_modifier_t4_display
+metternich_modifier_t3_display
+metternich_modifier_t2_display
+metternich_modifier_t1_display
 
 --------------------
 
@@ -6410,6 +6873,17 @@ RULER_TITLE_EMPRESS
 
 --------------------
 
+getQueenKing:
+
+Scope: character
+Random Valid: no
+
+Entries:
+RULER_TITLE_KING
+RULER_TITLE_QUEEN
+
+--------------------
+
 getLadyLord:
 
 Scope: character
@@ -6429,28 +6903,6 @@ Random Valid: no
 Entries:
 TITLE_LORD
 TITLE_LADY
-
---------------------
-
-getLover:
-
-Scope: character
-Random Valid: no
-
-Entries:
-MAN_LOVER
-WOMAN_LOVER
-
---------------------
-
-getLovers:
-
-Scope: character
-Random Valid: no
-
-Entries:
-MAN_LOVERS
-WOMAN_LOVERS
 
 --------------------
 
@@ -6474,6 +6926,28 @@ Random Valid: no
 Entries:
 custom_herself
 custom_himself
+
+--------------------
+
+getLover:
+
+Scope: character
+Random Valid: no
+
+Entries:
+custom_suitor
+custom_woman
+
+--------------------
+
+getLovers:
+
+Scope: character
+Random Valid: no
+
+Entries:
+custom_suitors
+custom_women
 
 --------------------
 
@@ -8337,17 +8811,6 @@ CustomLoc_PL_nim_niej_female
 
 --------------------
 
-RU_CHTL:
-
-Scope: character
-Random Valid: no
-
-Entries:
-CustomLoc_RU_female_
-CustomLoc_RU_male_
-
---------------------
-
 get_dom_dona:
 
 Scope: character
@@ -8443,6 +8906,8 @@ Scope: culture
 Random Valid: no
 
 Entries:
+RU_CUL_ADJ_champa
+RU_CUL_ADJ_east_german
 RU_CUL_ADJ_chechen
 RU_CUL_ADJ_karelian
 RU_CUL_ADJ_bashkir
@@ -8534,6 +8999,7 @@ RU_CUL_ADJ_danish
 RU_CUL_ADJ_dayak
 RU_CUL_ADJ_dinka
 RU_CUL_ADJ_dixie
+RU_CUL_ADJ_szekely
 RU_CUL_ADJ_dutch
 RU_CUL_ADJ_dyula
 RU_CUL_ADJ_edo
@@ -8712,7 +9178,7 @@ RU_CUL_ADJ_tuvan
 RU_CUL_ADJ_ugrian
 RU_CUL_ADJ_uighur
 RU_CUL_ADJ_ukrainian
-RU_CUL_ADJ_unyamwezi
+RU_CUL_ADJ_nyamwezi
 RU_CUL_ADJ_uzbek
 RU_CUL_ADJ_vietnamese
 RU_CUL_ADJ_wallonian
@@ -8747,6 +9213,634 @@ RU_CUL_ADJ_naga
 RU_CUL_ADJ_deccani
 RU_CUL_ADJ_pathan
 RU_CUL_ADJ_DEFAULT
+
+--------------------
+
+getPluralDemonym:
+
+Scope: culture
+Random Valid: no
+
+Entries:
+PLURAL_DEMONYM_chechen
+PLURAL_DEMONYM_karelian
+PLURAL_DEMONYM_bashkir
+PLURAL_DEMONYM_buryat
+PLURAL_DEMONYM_mordvin
+PLURAL_DEMONYM_chuvash
+PLURAL_DEMONYM_mari
+PLURAL_DEMONYM_udmurt
+PLURAL_DEMONYM_mazanderani
+PLURAL_DEMONYM_luri
+PLURAL_DEMONYM_kho
+PLURAL_DEMONYM_peruvian
+PLURAL_DEMONYM_ecuadorian
+PLURAL_DEMONYM_chilean
+PLURAL_DEMONYM_peruvian
+PLURAL_DEMONYM_bolivian
+PLURAL_DEMONYM_venezuelan
+PLURAL_DEMONYM_argentine
+PLURAL_DEMONYM_uruguayan
+PLURAL_DEMONYM_paraguayan
+PLURAL_DEMONYM_colombian
+PLURAL_DEMONYM_sulista
+PLURAL_DEMONYM_nordestino
+PLURAL_DEMONYM_amazonic
+PLURAL_DEMONYM_paulista
+PLURAL_DEMONYM_aborigine
+PLURAL_DEMONYM_occitan
+PLURAL_DEMONYM_moro
+PLURAL_DEMONYM_afar
+PLURAL_DEMONYM_afro_american
+PLURAL_DEMONYM_afro_antillean
+PLURAL_DEMONYM_afro_brazilian
+PLURAL_DEMONYM_afro_caribbean
+PLURAL_DEMONYM_afro_caribeno
+PLURAL_DEMONYM_aimara
+PLURAL_DEMONYM_ainu
+PLURAL_DEMONYM_akan
+PLURAL_DEMONYM_albanian
+PLURAL_DEMONYM_algonquian
+PLURAL_DEMONYM_amazonian
+PLURAL_DEMONYM_amhara
+PLURAL_DEMONYM_anglo_canadian
+PLURAL_DEMONYM_apache
+PLURAL_DEMONYM_armenian
+PLURAL_DEMONYM_ashkenazi
+PLURAL_DEMONYM_assamese
+PLURAL_DEMONYM_athabaskan
+PLURAL_DEMONYM_australian
+PLURAL_DEMONYM_avadhi
+PLURAL_DEMONYM_azande
+PLURAL_DEMONYM_azerbaijani
+PLURAL_DEMONYM_baganda
+PLURAL_DEMONYM_baguirmi
+PLURAL_DEMONYM_bakongo
+PLURAL_DEMONYM_balinese
+PLURAL_DEMONYM_baluchi
+PLURAL_DEMONYM_bambara
+PLURAL_DEMONYM_basque
+PLURAL_DEMONYM_bassa
+PLURAL_DEMONYM_batak
+PLURAL_DEMONYM_bedouin
+PLURAL_DEMONYM_beja
+PLURAL_DEMONYM_bengali
+PLURAL_DEMONYM_berber
+PLURAL_DEMONYM_bihari
+PLURAL_DEMONYM_boer
+PLURAL_DEMONYM_bornean
+PLURAL_DEMONYM_bosniak
+PLURAL_DEMONYM_brazilian
+PLURAL_DEMONYM_breton
+PLURAL_DEMONYM_british
+PLURAL_DEMONYM_bulgarian
+PLURAL_DEMONYM_burmese
+PLURAL_DEMONYM_byelorussian
+PLURAL_DEMONYM_caddoan
+PLURAL_DEMONYM_cariban
+PLURAL_DEMONYM_caribeno
+PLURAL_DEMONYM_catalan
+PLURAL_DEMONYM_central_american
+PLURAL_DEMONYM_cherokee
+PLURAL_DEMONYM_chewa
+PLURAL_DEMONYM_comanche
+PLURAL_DEMONYM_corsican
+PLURAL_DEMONYM_cree
+PLURAL_DEMONYM_croat
+PLURAL_DEMONYM_czech
+PLURAL_DEMONYM_dakota
+PLURAL_DEMONYM_danish
+PLURAL_DEMONYM_dayak
+PLURAL_DEMONYM_dinka
+PLURAL_DEMONYM_dixie
+PLURAL_DEMONYM_dutch
+PLURAL_DEMONYM_dyula
+PLURAL_DEMONYM_edo
+PLURAL_DEMONYM_equatorial_bantu
+PLURAL_DEMONYM_estonian
+PLURAL_DEMONYM_ewe
+PLURAL_DEMONYM_fang
+PLURAL_DEMONYM_filipino
+PLURAL_DEMONYM_finnish
+PLURAL_DEMONYM_flemish
+PLURAL_DEMONYM_fluvian_bantu
+PLURAL_DEMONYM_fon
+PLURAL_DEMONYM_franco_canadian
+PLURAL_DEMONYM_french
+PLURAL_DEMONYM_fulbe
+PLURAL_DEMONYM_fur
+PLURAL_DEMONYM_galician
+PLURAL_DEMONYM_georgian
+PLURAL_DEMONYM_greek
+PLURAL_DEMONYM_guajiro
+PLURAL_DEMONYM_guarani
+PLURAL_DEMONYM_gujarati
+PLURAL_DEMONYM_hakka
+PLURAL_DEMONYM_han
+PLURAL_DEMONYM_haratin
+PLURAL_DEMONYM_hausa
+PLURAL_DEMONYM_hawaiian
+PLURAL_DEMONYM_hazara
+PLURAL_DEMONYM_herero
+PLURAL_DEMONYM_hokan
+PLURAL_DEMONYM_hungarian
+PLURAL_DEMONYM_ibibio
+PLURAL_DEMONYM_ibo
+PLURAL_DEMONYM_icelandic
+PLURAL_DEMONYM_inuit
+PLURAL_DEMONYM_irish
+PLURAL_DEMONYM_japanese
+PLURAL_DEMONYM_javan
+PLURAL_DEMONYM_kachin
+PLURAL_DEMONYM_kannada
+PLURAL_DEMONYM_kanuri
+PLURAL_DEMONYM_karen
+PLURAL_DEMONYM_kashmiri
+PLURAL_DEMONYM_kavango_bantu
+PLURAL_DEMONYM_kazak
+PLURAL_DEMONYM_khmer
+PLURAL_DEMONYM_khmu
+PLURAL_DEMONYM_khoisan
+PLURAL_DEMONYM_kikuyu
+PLURAL_DEMONYM_kirgiz
+PLURAL_DEMONYM_kissi
+PLURAL_DEMONYM_korean
+PLURAL_DEMONYM_kru
+PLURAL_DEMONYM_kurdish
+PLURAL_DEMONYM_lacustrine_bantu
+PLURAL_DEMONYM_lao
+PLURAL_DEMONYM_latvian
+PLURAL_DEMONYM_lithuanian
+PLURAL_DEMONYM_lomwe
+PLURAL_DEMONYM_luba
+PLURAL_DEMONYM_lunda
+PLURAL_DEMONYM_luo
+PLURAL_DEMONYM_maasai
+PLURAL_DEMONYM_maghrebi
+PLURAL_DEMONYM_makua
+PLURAL_DEMONYM_malagasy
+PLURAL_DEMONYM_malay
+PLURAL_DEMONYM_malayalam
+PLURAL_DEMONYM_maltese
+PLURAL_DEMONYM_manchu
+PLURAL_DEMONYM_mande
+PLURAL_DEMONYM_manipuri
+PLURAL_DEMONYM_maori
+PLURAL_DEMONYM_marathi
+PLURAL_DEMONYM_mashriqi
+PLURAL_DEMONYM_bidan
+PLURAL_DEMONYM_mayan
+PLURAL_DEMONYM_melanesian
+PLURAL_DEMONYM_metis
+PLURAL_DEMONYM_mexican
+PLURAL_DEMONYM_miao
+PLURAL_DEMONYM_micronesian
+PLURAL_DEMONYM_min
+PLURAL_DEMONYM_miskito
+PLURAL_DEMONYM_misri
+PLURAL_DEMONYM_mixtec
+PLURAL_DEMONYM_moluccan
+PLURAL_DEMONYM_mon
+PLURAL_DEMONYM_mongo
+PLURAL_DEMONYM_mongol
+PLURAL_DEMONYM_mossi
+PLURAL_DEMONYM_muisca
+PLURAL_DEMONYM_muskogean
+PLURAL_DEMONYM_nahua
+PLURAL_DEMONYM_navajo
+PLURAL_DEMONYM_nepali
+PLURAL_DEMONYM_nez_perce
+PLURAL_DEMONYM_nguni
+PLURAL_DEMONYM_nilotic
+PLURAL_DEMONYM_north_andean
+PLURAL_DEMONYM_north_caucasian
+PLURAL_DEMONYM_circassian
+PLURAL_DEMONYM_north_german
+PLURAL_DEMONYM_north_italian
+PLURAL_DEMONYM_norwegian
+PLURAL_DEMONYM_nuba
+PLURAL_DEMONYM_nuer
+PLURAL_DEMONYM_oodham
+PLURAL_DEMONYM_oriya
+PLURAL_DEMONYM_oromo
+PLURAL_DEMONYM_ovimbundu
+PLURAL_DEMONYM_paiute
+PLURAL_DEMONYM_panjabi
+PLURAL_DEMONYM_pashtun
+PLURAL_DEMONYM_patagonian
+PLURAL_DEMONYM_persian
+PLURAL_DEMONYM_platinean
+PLURAL_DEMONYM_polish
+PLURAL_DEMONYM_polynesian
+PLURAL_DEMONYM_portuguese
+PLURAL_DEMONYM_pueblo
+PLURAL_DEMONYM_quechua
+PLURAL_DEMONYM_rajput
+PLURAL_DEMONYM_romanian
+PLURAL_DEMONYM_ruanda
+PLURAL_DEMONYM_rundi
+PLURAL_DEMONYM_russian
+PLURAL_DEMONYM_salish
+PLURAL_DEMONYM_sami
+PLURAL_DEMONYM_sara
+PLURAL_DEMONYM_scottish
+PLURAL_DEMONYM_sena
+PLURAL_DEMONYM_senufo
+PLURAL_DEMONYM_sephardic
+PLURAL_DEMONYM_serb
+PLURAL_DEMONYM_shan
+PLURAL_DEMONYM_shona
+PLURAL_DEMONYM_siberian
+PLURAL_DEMONYM_sidama
+PLURAL_DEMONYM_sindi
+PLURAL_DEMONYM_sinhala
+PLURAL_DEMONYM_siouan
+PLURAL_DEMONYM_slovak
+PLURAL_DEMONYM_slovene
+PLURAL_DEMONYM_somali
+PLURAL_DEMONYM_songhai
+PLURAL_DEMONYM_sorb
+PLURAL_DEMONYM_sotho
+PLURAL_DEMONYM_south_andean
+PLURAL_DEMONYM_south_german
+PLURAL_DEMONYM_south_italian
+PLURAL_DEMONYM_spanish
+PLURAL_DEMONYM_sudanese
+PLURAL_DEMONYM_sukuma
+PLURAL_DEMONYM_sumatran
+PLURAL_DEMONYM_swahili
+PLURAL_DEMONYM_swedish
+PLURAL_DEMONYM_alemannic
+PLURAL_DEMONYM_tajik
+PLURAL_DEMONYM_tamil
+PLURAL_DEMONYM_tarascan
+PLURAL_DEMONYM_tatar
+PLURAL_DEMONYM_teda
+PLURAL_DEMONYM_telegu
+PLURAL_DEMONYM_thai
+PLURAL_DEMONYM_tibetan
+PLURAL_DEMONYM_tigray
+PLURAL_DEMONYM_tiv
+PLURAL_DEMONYM_tonga
+PLURAL_DEMONYM_tswana
+PLURAL_DEMONYM_tuareg
+PLURAL_DEMONYM_tupinamba
+PLURAL_DEMONYM_turkish
+PLURAL_DEMONYM_turkmen
+PLURAL_DEMONYM_tuvan
+PLURAL_DEMONYM_ugrian
+PLURAL_DEMONYM_uighur
+PLURAL_DEMONYM_ukrainian
+PLURAL_DEMONYM_nyamwezi
+PLURAL_DEMONYM_uzbek
+PLURAL_DEMONYM_vietnamese
+PLURAL_DEMONYM_wallonian
+PLURAL_DEMONYM_welsh
+PLURAL_DEMONYM_wolof
+PLURAL_DEMONYM_xhosa
+PLURAL_DEMONYM_yakut
+PLURAL_DEMONYM_yankee
+PLURAL_DEMONYM_yao
+PLURAL_DEMONYM_yi
+PLURAL_DEMONYM_yoruba
+PLURAL_DEMONYM_yue
+PLURAL_DEMONYM_zapotec
+PLURAL_DEMONYM_zhuang
+PLURAL_DEMONYM_zulu
+PLURAL_DEMONYM_sumatran
+PLURAL_DEMONYM_bornean
+PLURAL_DEMONYM_balinese
+PLURAL_DEMONYM_assyrian
+PLURAL_DEMONYM_kalmyk
+PLURAL_DEMONYM_yemenite
+PLURAL_DEMONYM_francoprovencal
+PLURAL_DEMONYM_yuanzhumin
+PLURAL_DEMONYM_hindustani
+PLURAL_DEMONYM_lushai
+PLURAL_DEMONYM_bundeli
+PLURAL_DEMONYM_pahari
+PLURAL_DEMONYM_gondi
+PLURAL_DEMONYM_bageli
+PLURAL_DEMONYM_chhattisgarhi
+PLURAL_DEMONYM_naga
+PLURAL_DEMONYM_deccani
+PLURAL_DEMONYM_pathan
+PLURAL_DEMONYM_east_german
+PLURAL_DEMONYM_DEFAULT
+
+--------------------
+
+getSingularDemonym:
+
+Scope: culture
+Random Valid: no
+
+Entries:
+SINGULAR_DEMONYM_chechen
+SINGULAR_DEMONYM_karelian
+SINGULAR_DEMONYM_bashkir
+SINGULAR_DEMONYM_buryat
+SINGULAR_DEMONYM_mordvin
+SINGULAR_DEMONYM_chuvash
+SINGULAR_DEMONYM_mari
+SINGULAR_DEMONYM_udmurt
+SINGULAR_DEMONYM_mazanderani
+SINGULAR_DEMONYM_luri
+SINGULAR_DEMONYM_kho
+SINGULAR_DEMONYM_peruvian
+SINGULAR_DEMONYM_ecuadorian
+SINGULAR_DEMONYM_chilean
+SINGULAR_DEMONYM_peruvian
+SINGULAR_DEMONYM_bolivian
+SINGULAR_DEMONYM_venezuelan
+SINGULAR_DEMONYM_argentine
+SINGULAR_DEMONYM_uruguayan
+SINGULAR_DEMONYM_paraguayan
+SINGULAR_DEMONYM_colombian
+SINGULAR_DEMONYM_sulista
+SINGULAR_DEMONYM_nordestino
+SINGULAR_DEMONYM_amazonic
+SINGULAR_DEMONYM_paulista
+SINGULAR_DEMONYM_aborigine
+SINGULAR_DEMONYM_occitan
+SINGULAR_DEMONYM_moro
+SINGULAR_DEMONYM_afar
+SINGULAR_DEMONYM_afro_american
+SINGULAR_DEMONYM_afro_antillean
+SINGULAR_DEMONYM_afro_brazilian
+SINGULAR_DEMONYM_afro_caribbean
+SINGULAR_DEMONYM_afro_caribeno
+SINGULAR_DEMONYM_aimara
+SINGULAR_DEMONYM_ainu
+SINGULAR_DEMONYM_akan
+SINGULAR_DEMONYM_albanian
+SINGULAR_DEMONYM_algonquian
+SINGULAR_DEMONYM_amazonian
+SINGULAR_DEMONYM_amhara
+SINGULAR_DEMONYM_anglo_canadian
+SINGULAR_DEMONYM_apache
+SINGULAR_DEMONYM_armenian
+SINGULAR_DEMONYM_ashkenazi
+SINGULAR_DEMONYM_assamese
+SINGULAR_DEMONYM_athabaskan
+SINGULAR_DEMONYM_australian
+SINGULAR_DEMONYM_avadhi
+SINGULAR_DEMONYM_azande
+SINGULAR_DEMONYM_azerbaijani
+SINGULAR_DEMONYM_baganda
+SINGULAR_DEMONYM_baguirmi
+SINGULAR_DEMONYM_bakongo
+SINGULAR_DEMONYM_balinese
+SINGULAR_DEMONYM_baluchi
+SINGULAR_DEMONYM_bambara
+SINGULAR_DEMONYM_basque
+SINGULAR_DEMONYM_bassa
+SINGULAR_DEMONYM_batak
+SINGULAR_DEMONYM_bedouin
+SINGULAR_DEMONYM_beja
+SINGULAR_DEMONYM_bengali
+SINGULAR_DEMONYM_berber
+SINGULAR_DEMONYM_bihari
+SINGULAR_DEMONYM_boer
+SINGULAR_DEMONYM_bornean
+SINGULAR_DEMONYM_bosniak
+SINGULAR_DEMONYM_brazilian
+SINGULAR_DEMONYM_breton
+SINGULAR_DEMONYM_british
+SINGULAR_DEMONYM_bulgarian
+SINGULAR_DEMONYM_burmese
+SINGULAR_DEMONYM_byelorussian
+SINGULAR_DEMONYM_caddoan
+SINGULAR_DEMONYM_cariban
+SINGULAR_DEMONYM_caribeno
+SINGULAR_DEMONYM_catalan
+SINGULAR_DEMONYM_central_american
+SINGULAR_DEMONYM_cherokee
+SINGULAR_DEMONYM_chewa
+SINGULAR_DEMONYM_comanche
+SINGULAR_DEMONYM_corsican
+SINGULAR_DEMONYM_cree
+SINGULAR_DEMONYM_croat
+SINGULAR_DEMONYM_czech
+SINGULAR_DEMONYM_dakota
+SINGULAR_DEMONYM_danish
+SINGULAR_DEMONYM_dayak
+SINGULAR_DEMONYM_dinka
+SINGULAR_DEMONYM_dixie
+SINGULAR_DEMONYM_dutch
+SINGULAR_DEMONYM_dyula
+SINGULAR_DEMONYM_edo
+SINGULAR_DEMONYM_equatorial_bantu
+SINGULAR_DEMONYM_estonian
+SINGULAR_DEMONYM_ewe
+SINGULAR_DEMONYM_fang
+SINGULAR_DEMONYM_filipino
+SINGULAR_DEMONYM_finnish
+SINGULAR_DEMONYM_flemish
+SINGULAR_DEMONYM_fluvian_bantu
+SINGULAR_DEMONYM_fon
+SINGULAR_DEMONYM_franco_canadian
+SINGULAR_DEMONYM_french
+SINGULAR_DEMONYM_fulbe
+SINGULAR_DEMONYM_fur
+SINGULAR_DEMONYM_galician
+SINGULAR_DEMONYM_georgian
+SINGULAR_DEMONYM_greek
+SINGULAR_DEMONYM_guajiro
+SINGULAR_DEMONYM_guarani
+SINGULAR_DEMONYM_gujarati
+SINGULAR_DEMONYM_hakka
+SINGULAR_DEMONYM_han
+SINGULAR_DEMONYM_haratin
+SINGULAR_DEMONYM_hausa
+SINGULAR_DEMONYM_hawaiian
+SINGULAR_DEMONYM_hazara
+SINGULAR_DEMONYM_herero
+SINGULAR_DEMONYM_hokan
+SINGULAR_DEMONYM_hungarian
+SINGULAR_DEMONYM_ibibio
+SINGULAR_DEMONYM_ibo
+SINGULAR_DEMONYM_icelandic
+SINGULAR_DEMONYM_inuit
+SINGULAR_DEMONYM_irish
+SINGULAR_DEMONYM_japanese
+SINGULAR_DEMONYM_javan
+SINGULAR_DEMONYM_kachin
+SINGULAR_DEMONYM_kannada
+SINGULAR_DEMONYM_kanuri
+SINGULAR_DEMONYM_karen
+SINGULAR_DEMONYM_kashmiri
+SINGULAR_DEMONYM_kavango_bantu
+SINGULAR_DEMONYM_kazak
+SINGULAR_DEMONYM_khmer
+SINGULAR_DEMONYM_khmu
+SINGULAR_DEMONYM_khoisan
+SINGULAR_DEMONYM_kikuyu
+SINGULAR_DEMONYM_kirgiz
+SINGULAR_DEMONYM_kissi
+SINGULAR_DEMONYM_korean
+SINGULAR_DEMONYM_kru
+SINGULAR_DEMONYM_kurdish
+SINGULAR_DEMONYM_lacustrine_bantu
+SINGULAR_DEMONYM_lao
+SINGULAR_DEMONYM_latvian
+SINGULAR_DEMONYM_lithuanian
+SINGULAR_DEMONYM_lomwe
+SINGULAR_DEMONYM_luba
+SINGULAR_DEMONYM_lunda
+SINGULAR_DEMONYM_luo
+SINGULAR_DEMONYM_maasai
+SINGULAR_DEMONYM_maghrebi
+SINGULAR_DEMONYM_makua
+SINGULAR_DEMONYM_malagasy
+SINGULAR_DEMONYM_malay
+SINGULAR_DEMONYM_malayalam
+SINGULAR_DEMONYM_maltese
+SINGULAR_DEMONYM_manchu
+SINGULAR_DEMONYM_mande
+SINGULAR_DEMONYM_manipuri
+SINGULAR_DEMONYM_maori
+SINGULAR_DEMONYM_marathi
+SINGULAR_DEMONYM_mashriqi
+SINGULAR_DEMONYM_bidan
+SINGULAR_DEMONYM_mayan
+SINGULAR_DEMONYM_melanesian
+SINGULAR_DEMONYM_metis
+SINGULAR_DEMONYM_mexican
+SINGULAR_DEMONYM_miao
+SINGULAR_DEMONYM_micronesian
+SINGULAR_DEMONYM_min
+SINGULAR_DEMONYM_miskito
+SINGULAR_DEMONYM_misri
+SINGULAR_DEMONYM_mixtec
+SINGULAR_DEMONYM_moluccan
+SINGULAR_DEMONYM_mon
+SINGULAR_DEMONYM_mongo
+SINGULAR_DEMONYM_mongol
+SINGULAR_DEMONYM_mossi
+SINGULAR_DEMONYM_muisca
+SINGULAR_DEMONYM_muskogean
+SINGULAR_DEMONYM_nahua
+SINGULAR_DEMONYM_navajo
+SINGULAR_DEMONYM_nepali
+SINGULAR_DEMONYM_nez_perce
+SINGULAR_DEMONYM_nguni
+SINGULAR_DEMONYM_nilotic
+SINGULAR_DEMONYM_north_andean
+SINGULAR_DEMONYM_north_caucasian
+SINGULAR_DEMONYM_circassian
+SINGULAR_DEMONYM_north_german
+SINGULAR_DEMONYM_north_italian
+SINGULAR_DEMONYM_norwegian
+SINGULAR_DEMONYM_nuba
+SINGULAR_DEMONYM_nuer
+SINGULAR_DEMONYM_oodham
+SINGULAR_DEMONYM_oriya
+SINGULAR_DEMONYM_oromo
+SINGULAR_DEMONYM_ovimbundu
+SINGULAR_DEMONYM_paiute
+SINGULAR_DEMONYM_panjabi
+SINGULAR_DEMONYM_pashtun
+SINGULAR_DEMONYM_patagonian
+SINGULAR_DEMONYM_persian
+SINGULAR_DEMONYM_platinean
+SINGULAR_DEMONYM_polish
+SINGULAR_DEMONYM_polynesian
+SINGULAR_DEMONYM_portuguese
+SINGULAR_DEMONYM_pueblo
+SINGULAR_DEMONYM_quechua
+SINGULAR_DEMONYM_rajput
+SINGULAR_DEMONYM_romanian
+SINGULAR_DEMONYM_ruanda
+SINGULAR_DEMONYM_rundi
+SINGULAR_DEMONYM_russian
+SINGULAR_DEMONYM_salish
+SINGULAR_DEMONYM_sami
+SINGULAR_DEMONYM_sara
+SINGULAR_DEMONYM_scottish
+SINGULAR_DEMONYM_sena
+SINGULAR_DEMONYM_senufo
+SINGULAR_DEMONYM_sephardic
+SINGULAR_DEMONYM_serb
+SINGULAR_DEMONYM_shan
+SINGULAR_DEMONYM_shona
+SINGULAR_DEMONYM_siberian
+SINGULAR_DEMONYM_sidama
+SINGULAR_DEMONYM_sindi
+SINGULAR_DEMONYM_sinhala
+SINGULAR_DEMONYM_siouan
+SINGULAR_DEMONYM_slovak
+SINGULAR_DEMONYM_slovene
+SINGULAR_DEMONYM_somali
+SINGULAR_DEMONYM_songhai
+SINGULAR_DEMONYM_sorb
+SINGULAR_DEMONYM_sotho
+SINGULAR_DEMONYM_south_andean
+SINGULAR_DEMONYM_south_german
+SINGULAR_DEMONYM_south_italian
+SINGULAR_DEMONYM_spanish
+SINGULAR_DEMONYM_sudanese
+SINGULAR_DEMONYM_sukuma
+SINGULAR_DEMONYM_sumatran
+SINGULAR_DEMONYM_swahili
+SINGULAR_DEMONYM_swedish
+SINGULAR_DEMONYM_alemannic
+SINGULAR_DEMONYM_tajik
+SINGULAR_DEMONYM_tamil
+SINGULAR_DEMONYM_tarascan
+SINGULAR_DEMONYM_tatar
+SINGULAR_DEMONYM_teda
+SINGULAR_DEMONYM_telegu
+SINGULAR_DEMONYM_thai
+SINGULAR_DEMONYM_tibetan
+SINGULAR_DEMONYM_tigray
+SINGULAR_DEMONYM_tiv
+SINGULAR_DEMONYM_tonga
+SINGULAR_DEMONYM_tswana
+SINGULAR_DEMONYM_tuareg
+SINGULAR_DEMONYM_tupinamba
+SINGULAR_DEMONYM_turkish
+SINGULAR_DEMONYM_turkmen
+SINGULAR_DEMONYM_tuvan
+SINGULAR_DEMONYM_ugrian
+SINGULAR_DEMONYM_uighur
+SINGULAR_DEMONYM_ukrainian
+SINGULAR_DEMONYM_nyamwezi
+SINGULAR_DEMONYM_uzbek
+SINGULAR_DEMONYM_vietnamese
+SINGULAR_DEMONYM_wallonian
+SINGULAR_DEMONYM_welsh
+SINGULAR_DEMONYM_wolof
+SINGULAR_DEMONYM_xhosa
+SINGULAR_DEMONYM_yakut
+SINGULAR_DEMONYM_yankee
+SINGULAR_DEMONYM_yao
+SINGULAR_DEMONYM_yi
+SINGULAR_DEMONYM_yoruba
+SINGULAR_DEMONYM_yue
+SINGULAR_DEMONYM_zapotec
+SINGULAR_DEMONYM_zhuang
+SINGULAR_DEMONYM_zulu
+SINGULAR_DEMONYM_sumatran
+SINGULAR_DEMONYM_bornean
+SINGULAR_DEMONYM_balinese
+SINGULAR_DEMONYM_assyrian
+SINGULAR_DEMONYM_kalmyk
+SINGULAR_DEMONYM_yemenite
+SINGULAR_DEMONYM_francoprovencal
+SINGULAR_DEMONYM_yuanzhumin
+SINGULAR_DEMONYM_hindustani
+SINGULAR_DEMONYM_lushai
+SINGULAR_DEMONYM_bundeli
+SINGULAR_DEMONYM_pahari
+SINGULAR_DEMONYM_gondi
+SINGULAR_DEMONYM_bageli
+SINGULAR_DEMONYM_chhattisgarhi
+SINGULAR_DEMONYM_naga
+SINGULAR_DEMONYM_deccani
+SINGULAR_DEMONYM_pathan
+SINGULAR_DEMONYM_east_german
+SINGULAR_DEMONYM_DEFAULT
 
 --------------------
 
@@ -9250,10 +10344,12 @@ ig_industrialists_RU_IG_RP
 ig_east_india_company_RU_IG_RP
 ig_government_of_india_RU_IG_RP
 ig_rural_folk_RU_IG_RP
+ig_landvolk_RU_IG_RP
 ig_devout_RU_IG_RP
 ig_petty_bourgeoisie_RU_IG_RP
 ig_trade_unions_RU_IG_RP
 ig_bhadralok_RU_IG_RP
+ig_kleinburger_RU_IG_RP
 ig_junkers_RU_IG_RP
 ig_local_governors_RU_IG_RP
 ig_gentry_assembly_RU_IG_RP
@@ -9268,6 +10364,9 @@ ig_southern_planters_RU_IG_RP
 ig_shogunate_RU_IG_RP
 ig_austrian_aristocracy_RU_IG_RP
 ig_zamindars_RU_IG_RP
+ig_wamanga_RU_IG_RP
+ig_magnates_RU_IG_RP
+ig_boyars_RU_IG_RP
 ig_hawaiian_democrats_RU_IG_RP
 ig_civil_servants_RU_IG_RP
 ig_literati_RU_IG_RP
@@ -9303,6 +10402,7 @@ ig_vajrayana_monks_RU_IG_RP
 ig_theravada_monks_RU_IG_RP
 ig_mahayana_monks_RU_IG_RP
 ig_taiping_god_worshippers_RU_IG_RP
+ig_ibadi_madrasahs_RU_IG_RP
 ig_default_RU_RP
 
 --------------------
@@ -9320,15 +10420,20 @@ ig_industrialists_RU_IG_DP
 ig_east_india_company_RU_IG_DP
 ig_government_of_india_RU_IG_DP
 ig_rural_folk_RU_IG_DP
+ig_landvolk_RU_IG_DP
 ig_devout_RU_IG_DP
 ig_petty_bourgeoisie_RU_IG_DP
 ig_trade_unions_RU_IG_DP
 ig_bhadralok_RU_IG_DP
+ig_kleinburger_RU_IG_DP
 ig_junkers_RU_IG_DP
 ig_local_governors_RU_IG_DP
 ig_shogunate_RU_IG_DP
 ig_austrian_aristocracy_RU_IG_DP
 ig_zamindars_RU_IG_DP
+ig_wamanga_RU_IG_DP
+ig_magnates_RU_IG_DP
+ig_boyars_RU_IG_DP
 ig_gentry_assembly_RU_IG_DP
 ig_roman_landowners_RU_IG_DP
 ig_landed_gentry_RU_IG_DP
@@ -9374,6 +10479,7 @@ ig_vajrayana_monks_RU_IG_DP
 ig_theravada_monks_RU_IG_DP
 ig_mahayana_monks_RU_IG_DP
 ig_taiping_god_worshippers_RU_IG_DP
+ig_ibadi_madrasahs_RU_IG_DP
 ig_default_RU_DP
 
 --------------------
@@ -9395,10 +10501,14 @@ ig_devout_RU_IG_VP
 ig_petty_bourgeoisie_RU_IG_VP
 ig_trade_unions_RU_IG_VP
 ig_bhadralok_RU_IG_VP
+ig_kleinburger_RU_IG_VP
 ig_junkers_RU_IG_VP
 ig_shogunate_RU_IG_VP
 ig_austrian_aristocracy_RU_IG_VP
 ig_zamindars_RU_IG_VP
+ig_wamanga_RU_IG_VP
+ig_magnates_RU_IG_VP
+ig_boyars_RU_IG_VP
 ig_local_governors_RU_IG_VP
 ig_gentry_assembly_RU_IG_VP
 ig_roman_landowners_RU_IG_VP
@@ -9418,6 +10528,7 @@ ig_indian_army_RU_IG_VP
 ig_national_guard_RU_IG_VP
 ig_red_army_RU_IG_VP
 ig_fellahin_RU_IG_VP
+ig_landvolk_RU_IG_VP
 ig_ryots_RU_IG_VP
 ig_kisanharu_RU_IG_VP
 ig_yeoman_farmers_RU_IG_VP
@@ -9445,6 +10556,7 @@ ig_vajrayana_monks_RU_IG_VP
 ig_theravada_monks_RU_IG_VP
 ig_mahayana_monks_RU_IG_VP
 ig_taiping_god_worshippers_RU_IG_VP
+ig_ibadi_madrasahs_RU_IG_VP
 ig_default_RU_VP
 
 --------------------
@@ -9462,14 +10574,19 @@ ig_industrialists_RU_IG_TP
 ig_east_india_company_RU_IG_TP
 ig_government_of_india_RU_IG_TP
 ig_rural_folk_RU_IG_TP
+ig_landvolk_RU_IG_TP
 ig_devout_RU_IG_TP
 ig_petty_bourgeoisie_RU_IG_TP
 ig_trade_unions_RU_IG_TP
 ig_bhadralok_RU_IG_TP
+ig_kleinburger_RU_IG_TP
 ig_junkers_RU_IG_TP
 ig_shogunate_RU_IG_TP
 ig_austrian_aristocracy_RU_IG_TP
 ig_zamindars_RU_IG_TP
+ig_wamanga_RU_IG_TP
+ig_magnates_RU_IG_TP
+ig_boyars_RU_IG_TP
 ig_local_governors_RU_IG_TP
 ig_gentry_assembly_RU_IG_TP
 ig_roman_landowners_RU_IG_TP
@@ -9516,6 +10633,7 @@ ig_vajrayana_monks_RU_IG_TP
 ig_theravada_monks_RU_IG_TP
 ig_mahayana_monks_RU_IG_TP
 ig_taiping_god_worshippers_RU_IG_TP
+ig_ibadi_madrasahs_RU_IG_TP
 ig_default_RU_TP
 
 --------------------
@@ -9533,15 +10651,20 @@ ig_industrialists_RU_IG_PP
 ig_east_india_company_RU_IG_PP
 ig_government_of_india_RU_IG_PP
 ig_rural_folk_RU_IG_PP
+ig_landvolk_RU_IG_PP
 ig_devout_RU_IG_PP
 ig_petty_bourgeoisie_RU_IG_PP
 ig_trade_unions_RU_IG_PP
 ig_bhadralok_RU_IG_PP
+ig_kleinburger_RU_IG_PP
 ig_junkers_RU_IG_PP
 ig_local_governors_RU_IG_PP
 ig_shogunate_RU_IG_PP
 ig_austrian_aristocracy_RU_IG_PP
 ig_zamindars_RU_IG_PP
+ig_wamanga_RU_IG_PP
+ig_magnates_RU_IG_PP
+ig_boyars_RU_IG_PP
 ig_gentry_assembly_RU_IG_PP
 ig_roman_landowners_RU_IG_PP
 ig_landed_gentry_RU_IG_PP
@@ -9587,6 +10710,7 @@ ig_vajrayana_monks_RU_IG_PP
 ig_theravada_monks_RU_IG_PP
 ig_mahayana_monks_RU_IG_PP
 ig_taiping_god_worshippers_RU_IG_PP
+ig_ibadi_madrasahs_RU_IG_PP
 ig_default_RU_PP
 
 --------------------
@@ -10528,6 +11652,7 @@ Scope: religion
 Random Valid: no
 
 Entries:
+RU_RL_ADJ_IE_ibadi
 RU_RL_ADJ_IE_animist
 RU_RL_ADJ_IE_confucian
 RU_RL_ADJ_IE_catholic
@@ -10554,6 +11679,7 @@ Scope: religion
 Random Valid: no
 
 Entries:
+RU_RL_ADJ_IH_ibadi
 RU_RL_ADJ_IH_animist
 RU_RL_ADJ_IH_confucian
 RU_RL_ADJ_IH_catholic
@@ -10580,6 +11706,7 @@ Scope: religion
 Random Valid: no
 
 Entries:
+RU_RL_ADJ_MI_ibadi
 RU_RL_ADJ_MI_animist
 RU_RL_ADJ_MI_confucian
 RU_RL_ADJ_MI_catholic
@@ -10606,6 +11733,7 @@ Scope: religion
 Random Valid: no
 
 Entries:
+RU_RL_ADJ_YU_ibadi
 RU_RL_ADJ_YU_animist
 RU_RL_ADJ_YU_confucian
 RU_RL_ADJ_YU_catholic
@@ -10632,6 +11760,7 @@ Scope: religion
 Random Valid: no
 
 Entries:
+RU_RL_ADJ_YA_ibadi
 RU_RL_ADJ_YA_animist
 RU_RL_ADJ_YA_confucian
 RU_RL_ADJ_YA_catholic
@@ -10658,6 +11787,7 @@ Scope: religion
 Random Valid: no
 
 Entries:
+RU_RL_ADJ_OE_ibadi
 RU_RL_ADJ_OE_animist
 RU_RL_ADJ_OE_confucian
 RU_RL_ADJ_OE_catholic
@@ -10684,6 +11814,7 @@ Scope: religion
 Random Valid: no
 
 Entries:
+RU_RL_ADJ_OI_ibadi
 RU_RL_ADJ_OI_animist
 RU_RL_ADJ_OI_confucian
 RU_RL_ADJ_OI_catholic
@@ -10710,6 +11841,7 @@ Scope: religion
 Random Valid: no
 
 Entries:
+RU_RL_ADJ_GO_ibadi
 RU_RL_ADJ_GO_animist
 RU_RL_ADJ_GO_confucian
 RU_RL_ADJ_GO_catholic
@@ -10736,6 +11868,7 @@ Scope: religion
 Random Valid: no
 
 Entries:
+RU_RL_ADJ_IM_ibadi
 RU_RL_ADJ_IM_animist
 RU_RL_ADJ_IM_confucian
 RU_RL_ADJ_IM_catholic
@@ -10762,6 +11895,7 @@ Scope: religion
 Random Valid: no
 
 Entries:
+RU_RL_RP_ibadi
 RU_RL_RP_animist
 RU_RL_RP_confucian
 RU_RL_RP_catholic
@@ -10788,6 +11922,7 @@ Scope: religion
 Random Valid: no
 
 Entries:
+RU_RL_DP_ibadi
 RU_RL_DP_animist
 RU_RL_DP_confucian
 RU_RL_DP_catholic
@@ -10814,6 +11949,7 @@ Scope: religion
 Random Valid: no
 
 Entries:
+RU_RL_VP_ibadi
 RU_RL_VP_animist
 RU_RL_VP_confucian
 RU_RL_VP_catholic
@@ -10840,6 +11976,7 @@ Scope: religion
 Random Valid: no
 
 Entries:
+RU_RL_TP_ibadi
 RU_RL_TP_animist
 RU_RL_TP_confucian
 RU_RL_TP_catholic
@@ -10866,6 +12003,7 @@ Scope: religion
 Random Valid: no
 
 Entries:
+RU_RL_PP_ibadi
 RU_RL_PP_animist
 RU_RL_PP_confucian
 RU_RL_PP_catholic
@@ -13388,7 +14526,7 @@ RU_SL_VP_STATE_SISTAN
 RU_SL_VP_STATE_KHORASAN
 RU_SL_VP_STATE_KHUZESTAN
 RU_SL_VP_STATE_FARS
-RU_SL_VP_STATE_ISFAHAN_1
+RU_SL_VP_STATE_ISFAHAN
 RU_SL_VP_STATE_MAZANDARAN
 RU_SL_VP_STATE_IRAKAJEMI
 RU_SL_VP_STATE_TABRIZ
@@ -13397,8 +14535,6 @@ RU_SL_VP_STATE_ARMENIA
 RU_SL_VP_STATE_AZERBAIJAN
 RU_SL_VP_STATE_GREATER_CAUCASUS
 RU_SL_VP_STATE_MONTENEGRO
-RU_SL_VP_STATE_NORTHERN_SERBIA
-RU_SL_VP_STATE_SOUTHERN_SERBIA
 RU_SL_VP_STATE_EASTERN_THRACE
 RU_SL_VP_STATE_HUDAVENDIGAR
 RU_SL_VP_STATE_AYDIN
@@ -13519,8 +14655,6 @@ RU_SL_VP_STATE_ABRUZZO
 RU_SL_VP_STATE_APULIA
 RU_SL_VP_STATE_WEST_GALICIA
 RU_SL_VP_STATE_EAST_GALICIA
-RU_SL_VP_STATE_EAST_SLOVAKIA
-RU_SL_VP_STATE_WEST_SLOVAKIA
 RU_SL_VP_STATE_DALMATIA
 RU_SL_VP_STATE_CROATIA
 RU_SL_VP_STATE_SLAVONIA
@@ -13546,7 +14680,6 @@ RU_SL_VP_STATE_WEST_PRUSSIA
 RU_SL_VP_STATE_EAST_PRUSSIA
 RU_SL_VP_STATE_RHINELAND
 RU_SL_VP_STATE_NORTH_RHINE
-RU_SL_VP_STATE_SILESIA
 RU_SL_VP_STATE_BRANDENBURG
 RU_SL_VP_STATE_SCHLESWIG_HOLSTEIN
 RU_SL_VP_STATE_WURTTEMBERG
@@ -14761,8 +15894,6 @@ RU_SL_PP_STATE_ARMENIA
 RU_SL_PP_STATE_AZERBAIJAN
 RU_SL_PP_STATE_GREATER_CAUCASUS
 RU_SL_PP_STATE_MONTENEGRO
-RU_SL_PP_STATE_NORTHERN_SERBIA
-RU_SL_PP_STATE_SOUTHERN_SERBIA
 RU_SL_PP_STATE_EASTERN_THRACE
 RU_SL_PP_STATE_HUDAVENDIGAR
 RU_SL_PP_STATE_AYDIN
@@ -17480,7 +18611,7 @@ RU_SL_VP_STATE_SISTAN
 RU_SL_VP_STATE_KHORASAN
 RU_SL_VP_STATE_KHUZESTAN
 RU_SL_VP_STATE_FARS
-RU_SL_VP_STATE_ISFAHAN_1
+RU_SL_VP_STATE_ISFAHAN
 RU_SL_VP_STATE_MAZANDARAN
 RU_SL_VP_STATE_IRAKAJEMI
 RU_SL_VP_STATE_TABRIZ

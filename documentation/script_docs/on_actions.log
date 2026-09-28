@@ -164,6 +164,12 @@ Expected Scope: none
 
 --------------------
 
+on_new_interest_group_leader:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 on_law_activated:
 From Code: Yes
 Expected Scope: none
@@ -387,6 +393,12 @@ Expected Scope: state
 --------------------
 
 on_our_convoys_raided:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_national_awakening_started:
 From Code: Yes
 Expected Scope: none
 
@@ -653,6 +665,12 @@ Expected Scope: none
 on_enemy_capitulated_notification:
 From Code: Yes
 Expected Scope: none
+
+--------------------
+
+austrian_monarchy_yearly_events:
+From Code: No
+Expected Scope: country
 
 --------------------
 
@@ -1091,6 +1109,12 @@ Expected Scope: none
 on_diplo_play_start:
 From Code: Yes
 Expected Scope: none
+
+--------------------
+
+montenegro_half_yearly_events:
+From Code: No
+Expected Scope: country
 
 --------------------
 
