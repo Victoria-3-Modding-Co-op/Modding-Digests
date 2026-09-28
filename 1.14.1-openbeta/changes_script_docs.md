@@ -1,4 +1,4 @@
-# Script Documentation 1.14-openbeta
+# Script Documentation 1.14.1-openbeta
 ## Table of Contents
  * [Scopes](#scopes)
  * [Effects](#effects)

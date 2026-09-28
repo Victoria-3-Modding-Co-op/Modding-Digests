@@ -1,4 +1,4 @@
-# Release 1.14-openbeta
+# Release 1.14.1-openbeta
 ## Type Changes
  * [common/acceptance_statuses](types/acceptance_statuses.md)
  * [common/war_goal_types](types/war_goal_types.md)
