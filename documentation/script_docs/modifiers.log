@@ -991,7 +991,7 @@ power_bloc_disallow_war_bool:
 power_bloc_income_transfer_to_leader_factor:
   Mask: power_bloc
   Name: Income Transfer to Power Bloc Leader
-  Description: Base percentage of tax income transferred from concept_power_bloc_memembers to the Power Bloc Leader
+  Description: Base percentage of tax income transferred from Power Bloc Members to the Power Bloc Leader
 power_bloc_invite_acceptance_add:
   Mask: power_bloc
   Name: Power Bloc Invitation Acceptance Chance

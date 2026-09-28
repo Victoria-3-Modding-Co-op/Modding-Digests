@@ -11083,6 +11083,12 @@ Return type: [unregistered]
 
 -----------------------
 
+Article.CanWithdraw( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 Article.ExceedsMaxContraventions( Arg0 )
 Definition type: Function
 Return type: bool
@@ -11113,6 +11119,12 @@ Return type: CString
 
 -----------------------
 
+Article.GetBaseCost
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 Article.GetBuildingType
 Definition type: Function
 Return type: [unregistered]
@@ -11125,9 +11137,21 @@ Return type: [unregistered]
 
 -----------------------
 
-Article.GetCost
+Article.GetCostFor( Arg0 )
 Definition type: Function
 Return type: CFixedPoint
+
+-----------------------
+
+Article.GetCostForDesc( Arg0 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+Article.GetCostWithTooltipFor( Arg0 )
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -11436,6 +11460,12 @@ Return type: CString
 
 -----------------------
 
+ArticleDraft.FilterGoods( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
 ArticleDraft.GetAcceptance( Arg0 )
 Definition type: Function
 Return type: int32
@@ -11460,6 +11490,12 @@ Return type: [unregistered]
 
 -----------------------
 
+ArticleDraft.GetBaseCost
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 ArticleDraft.GetBuildingType
 Definition type: Function
 Return type: [unregistered]
@@ -11472,9 +11508,21 @@ Return type: [unregistered]
 
 -----------------------
 
-ArticleDraft.GetCost
+ArticleDraft.GetCostFor( Arg0 )
 Definition type: Function
 Return type: CFixedPoint
+
+-----------------------
+
+ArticleDraft.GetCostForDesc( Arg0 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+ArticleDraft.GetCostWithTooltipFor( Arg0 )
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -11742,6 +11790,12 @@ Return type: bool
 
 -----------------------
 
+ArticleDraft.IsSelectedGoods( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 ArticleDraft.IsVisible
 Definition type: Function
 Return type: bool
@@ -11832,6 +11886,12 @@ Return type: void
 
 -----------------------
 
+ArticleDraft.SortGoods( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
 ArticleType
 Definition type: Type
 
@@ -11846,6 +11906,18 @@ Return type: [unregistered]
 ArticleType.GetCost
 Definition type: Function
 Return type: CFixedPoint
+
+-----------------------
+
+ArticleType.GetCostFor( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+ArticleType.GetCostForDesc( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -11885,7 +11957,7 @@ Return type: CString
 
 -----------------------
 
-ArticleType.GetIsVisibleDesc( Arg0 )
+ArticleType.GetIsVisibleDesc( Arg0, Arg1 )
 Definition type: Function
 Return type: CString
 
@@ -11969,7 +12041,7 @@ Return type: bool
 
 -----------------------
 
-ArticleType.IsVisible( Arg0 )
+ArticleType.IsVisible( Arg0, Arg1 )
 Definition type: Function
 Return type: bool
 
@@ -35147,6 +35219,12 @@ Return type: CString
 
 -----------------------
 
+Goods.GetPrestigeGoodSoLEffectDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 Goods.GetPrestigeGoodThroughputEffectDesc
 Definition type: Function
 Return type: CString
@@ -35532,6 +35610,18 @@ Return type: CFixedPoint
 -----------------------
 
 Goods.GetTradedQuantity
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+Goods.GetWorldMarketAdditionalExportsFromMarket
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+Goods.GetWorldMarketAdditionalImportsToMarket
 Definition type: Function
 Return type: CFixedPoint
 
@@ -53530,6 +53620,12 @@ Return type: void
 
 -----------------------
 
+PopupManager.DeclineProposal( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
 PopupManager.ExecuteOrAskConfirmationIfNeeded( Arg0 )
 Definition type: Function
 Return type: void
@@ -66333,6 +66429,12 @@ Return type: CString
 
 -----------------------
 
+Treaty.GetAllArticles
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 Treaty.GetBindingDays
 Definition type: Function
 Return type: int32
@@ -66567,6 +66669,18 @@ Return type: bool
 
 -----------------------
 
+Treaty.IsFrozenFor( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+Treaty.IsFrozenForBothCountries
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 Treaty.IsPinnedInOutliner
 Definition type: Function
 Return type: bool
@@ -66653,6 +66767,12 @@ Return type: void
 TreatyDraft.AddArticleDraft( Arg0 )
 Definition type: Function
 Return type: void
+
+-----------------------
+
+TreatyDraft.CanAskForObligation( Arg0 )
+Definition type: Function
+Return type: bool
 
 -----------------------
 
@@ -66803,6 +66923,12 @@ Return type: int32
 TreatyDraft.GetArticleTypeAcceptanceWithState( Arg0, Arg1, Arg2 )
 Definition type: Function
 Return type: int32
+
+-----------------------
+
+TreatyDraft.GetAskForObligationDesc( Arg0 )
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -67070,6 +67196,12 @@ Return type: void
 
 -----------------------
 
+TreatyDraft.ToggleAskForObligation( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
 TreatyDraft.ToggleCallInObligation( Arg0 )
 Definition type: Function
 Return type: void
@@ -67125,6 +67257,12 @@ Return type: bool
 -----------------------
 
 TreatyDraft.WillAIMaybeAcceptWithOweObligation( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+TreatyDraft.WillAskForObligation( Arg0 )
 Definition type: Function
 Return type: bool
 

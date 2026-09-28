@@ -1135,6 +1135,13 @@ contains_capital_of = country scope/tag
 Reads gamestate for all scopes.
 **Supported Scopes**: state_region  
 
+## controls_treaty_port_province
+Checks if the scoped state controls the treaty port province in the state region  
+controls_treaty_port_province = yes/no
+Traits: yes/no 
+Reads gamestate for all scopes.
+**Supported Scopes**: state  
+
 ## could_support_political_movement
 Check if a character could potentially support a political movement  
 could_support_political_movement = <scope>  
@@ -1648,6 +1655,13 @@ Reads gamestate for all scopes.
 ## gdp_per_capita_ranking
 Compares a Country's GDP per Capita Ranking (position)  
 gdp_per_capita_ranking > 42
+Traits: <, <=, =, !=, >, >=
+Reads gamestate for all scopes.
+**Supported Scopes**: country  
+
+## gdp_ranking
+Compares a Country's GDP Ranking (position)  
+gdp_ranking > 42
 Traits: <, <=, =, !=, >, >=
 Reads gamestate for all scopes.
 **Supported Scopes**: country  
@@ -2286,6 +2300,7 @@ has_potential_resource = bg_rubber_plantations
 Traits: class CBuildingGroupDatabase key
 Reads gamestate for all scopes.
 **Supported Scopes**: state  
+**Supported Targets**: building_group  
 
 ## has_potential_supply
 Check if the market goods or state goods has a potential supply, either though local production or theoretical import
@@ -2732,6 +2747,14 @@ Reads gamestate for all scopes.
 **Supported Scopes**: country  
 **Supported Targets**: country  
 
+## is_adjacent_to_market
+Checks if market in scope is adjacent to a target market  
+is_adjacent_to_market = <scope>
+Traits: market scope
+Reads gamestate for all scopes.
+**Supported Scopes**: market  
+**Supported Targets**: market  
+
 ## is_adjacent_to_state
 Checks if country in scope is adjacent to a target state  
 is_adjacent_to_state = <scope>
@@ -2913,6 +2936,16 @@ Traits: yes/no
 Reads gamestate for all scopes.
 **Supported Scopes**: character  
 
+## is_desired_by
+Check if the scoped article or article_options has positive inherent acceptance with the target country  
+scope:treaty_article = {  
+	is_desired_by = c:FRA  
+}  
+Traits: country scope
+Reads gamestate for all scopes.
+**Supported Scopes**: treaty_article, treaty_article_options  
+**Supported Targets**: country  
+
 ## is_diplomatic_action_type
 Checks diplomatic pact is of a certain action type  
 is_diplomatic_action_type = diplomatic action type
@@ -3042,6 +3075,17 @@ Traits: yes/no
 Reads gamestate for all scopes.
 **Supported Scopes**: treaty_options, treaty  
 
+## is_exchanging_obligations
+Checks if the scoped treaty is exchanging any obligations,  
+scope:some_treaty = {  
+	if = { limit = {  
+		 is_exchanging_obligations= yes  
+	}}  
+}
+Traits: yes/no 
+Reads gamestate for all scopes.
+**Supported Scopes**: treaty_options, treaty  
+
 ## is_expanding_institution
 Are you expanding an institution  
 is_expanding_institution = <yes>/<no>
@@ -3104,6 +3148,16 @@ Traits: yes/no
 Is the gamestate tutorial active? See save_progress_in_gamestate in tutorial_lesson_chains documentation.
 Traits: yes/no 
 **Supported Scopes**: none  
+
+## is_giftable_to
+Check if the scoped article or article_options is giftable to target country  
+scope:treaty_article = {  
+	is_giftable_to = c:FRA  
+}  
+Traits: country scope
+Reads gamestate for all scopes.
+**Supported Scopes**: treaty_article, treaty_article_options  
+**Supported Targets**: country  
 
 ## is_goal_complete
 Check if the journal entry's goal has been met  
@@ -4525,6 +4579,13 @@ Traits: <, <=, =, !=, >, >=
 Reads gamestate for all scopes.
 **Supported Scopes**: country, interest_group  
 
+## num_potential_resources
+Checks the amount of the specified building group allowed in the state. Will return an error if used on building groups that are not level capped  
+num_potential_resources(bg_rubber_plantations) > 0
+Traits: <, <=, =, !=, >, >=
+Reads gamestate for all scopes.
+**Supported Scopes**: state  
+
 ## num_power_bloc_members
 Compare the number of members in a power bloc against a value  
 num_power_bloc_members >= 2
@@ -5812,4 +5873,13 @@ experience_level > 1
 Traits: <, <=, =, !=, >, >=
 Reads gamestate for all scopes.
 **Supported Scopes**: character  
+
+## years_to_incorporate
+Checks how many years it would take for target country to incorporate scope state  
+years_to_incorporate = {  
+ target = c:FRA   
+ value > 5
+Traits: <, <=, =, !=, >, >=
+Reads gamestate for all scopes.
+**Supported Scopes**: state  
 
