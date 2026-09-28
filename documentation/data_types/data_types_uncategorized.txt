@@ -562,6 +562,12 @@ Return type: BuildingType
 
 -----------------------
 
+GetContainer( Arg0 )
+Definition type: Global promote
+Return type: ScriptContainer
+
+-----------------------
+
 GetCountryDiplomaticAction( Arg0, Arg1, Arg2 )
 Definition type: Global promote
 Return type: DiplomaticAction
@@ -1405,6 +1411,12 @@ Return type: ScriptedButton
 SCRIPTED_PROGRESS_BAR
 Definition type: Global promote
 Return type: ScriptedProgressBar
+
+-----------------------
+
+SCRIPT_CONTAINER
+Definition type: Global promote
+Return type: ScriptContainer
 
 -----------------------
 
@@ -2392,6 +2404,12 @@ Return type: ScriptedProgressBar
 
 -----------------------
 
+TARGET_SCRIPT_CONTAINER
+Definition type: Global promote
+Return type: ScriptContainer
+
+-----------------------
+
 TARGET_SHIP
 Definition type: Global promote
 Return type: Ship
@@ -3016,6 +3034,12 @@ Return type: [unregistered]
 
 -----------------------
 
+GetCoastalBuildingTypesList
+Definition type: Global function
+Return type: CString
+
+-----------------------
+
 GetCohesionLevel( Arg0 )
 Definition type: Global function
 Return type: [unregistered]
@@ -3065,6 +3089,12 @@ Return type: CString
 -----------------------
 
 GetConstructionSectorType
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+GetContainer( Arg0 )
 Definition type: Global function
 Return type: [unregistered]
 
@@ -3529,6 +3559,12 @@ Return type: [unregistered]
 GetNavalMissionTypes
 Definition type: Global function
 Return type: [unregistered]
+
+-----------------------
+
+GetNumCoastalBuildingTypes
+Definition type: Global function
+Return type: int32
 
 -----------------------
 
@@ -5939,6 +5975,18 @@ Return type: [unregistered]
 -----------------------
 
 concept_clout_desc
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+concept_coastal_building
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+concept_coastal_building_desc
 Definition type: Global function
 Return type: [unregistered]
 
@@ -13098,6 +13146,12 @@ Return type: CString
 
 -----------------------
 
+Amendment.GetTimeoutMonths
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 Amendment.GetTooltipTag
 Definition type: Function
 Return type: CString
@@ -16468,6 +16522,18 @@ Return type: CString
 
 -----------------------
 
+Building.GetBombardmentDestructionChanceDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+Building.GetBombardmentDestructionChancePerDay
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 Building.GetBuildingAssets
 Definition type: Function
 Return type: [unregistered]
@@ -16615,6 +16681,12 @@ Return type: [unregistered]
 Building.GetCompany
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+Building.GetConstructionGoodsExpenses
+Definition type: Function
+Return type: CFixedPoint
 
 -----------------------
 
@@ -16927,6 +16999,12 @@ Return type: int64
 Building.GetMaxCashReserves
 Definition type: Function
 Return type: CFixedPoint
+
+-----------------------
+
+Building.GetMaxLevels
+Definition type: Function
+Return type: int32
 
 -----------------------
 
@@ -17422,6 +17500,12 @@ Return type: CString
 
 -----------------------
 
+Building.GetTotalLevels
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 Building.GetTotalProductionValue
 Definition type: Function
 Return type: CFixedPoint
@@ -17596,6 +17680,12 @@ Return type: bool
 
 -----------------------
 
+Building.IsConstructionOutputPaused
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 Building.IsCurrentlyUnderConstruction
 Definition type: Function
 Return type: bool
@@ -17704,6 +17794,12 @@ Return type: Command
 
 -----------------------
 
+Building.PauseConstructionOutput
+Definition type: Function
+Return type: Command
+
+-----------------------
+
 Building.ProvidesUrbanization
 Definition type: Function
 Return type: bool
@@ -17723,6 +17819,12 @@ Return type: Command
 -----------------------
 
 Building.ResetProductionMethodsToStandard
+Definition type: Function
+Return type: Command
+
+-----------------------
+
+Building.ResumeConstructionOutput
 Definition type: Function
 Return type: Command
 
@@ -19172,6 +19274,12 @@ Return type: bool
 -----------------------
 
 BuildingType.IsCappedBuilding
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+BuildingType.IsConstructionSector
 Definition type: Function
 Return type: bool
 
@@ -29862,6 +29970,12 @@ Return type: CString
 
 -----------------------
 
+Country.GetUnreachableConstructionFleetsDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 Country.GetUnrealizedTaxes
 Definition type: Function
 Return type: CFixedPoint
@@ -32694,6 +32808,53 @@ Return type: [unregistered]
 Decision.TakeDecision( Arg0 )
 Definition type: Function
 Return type: Command
+
+-----------------------
+
+DecommissionSupplyShipsWindow
+Definition type: Type
+
+-----------------------
+
+DecommissionSupplyShipsWindow.AccessSelf
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+DecommissionSupplyShipsWindow.GetAmount
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+DecommissionSupplyShipsWindow.GetDecommissionCommand
+Definition type: Function
+Return type: Command
+
+-----------------------
+
+DecommissionSupplyShipsWindow.GetMaxAmount
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+DecommissionSupplyShipsWindow.OnAmountEditboxValueChanged
+Definition type: Function
+Return type: void
+
+-----------------------
+
+DecommissionSupplyShipsWindow.OnAmountSliderValueChanged
+Definition type: Function
+Return type: void
+
+-----------------------
+
+DecommissionSupplyShipsWindow.Self
+Definition type: Function
+Return type: [unregistered]
 
 -----------------------
 
@@ -38815,6 +38976,12 @@ Return type: CString
 
 -----------------------
 
+FrontMovementMarker.GetSelectedFormationsInvolvementChangeDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 FrontMovementMarker.GetTravelTimeBreakdown
 Definition type: Function
 Return type: CString
@@ -41486,6 +41653,12 @@ Return type: bool
 
 -----------------------
 
+GoodsPanelValue.IsPiracyLoss
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 GoodsPanelValue.Self
 Definition type: Function
 Return type: [unregistered]
@@ -41963,6 +42136,12 @@ Return type: CVector2f
 -----------------------
 
 HQMovementMarker.GetPresentFormationsBreakdown
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+HQMovementMarker.GetSelectedFormationsInvolvementChangeDesc
 Definition type: Function
 Return type: CString
 
@@ -42563,6 +42742,12 @@ Return type: void
 -----------------------
 
 HighlightManager.HighlightNavalBattle( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+HighlightManager.HighlightNavalMissionSeaRegions( Arg0 )
 Definition type: Function
 Return type: void
 
@@ -45730,6 +45915,12 @@ Return type: int32
 Invasion.GetNumNonBlockingFleetsUnits
 Definition type: Function
 Return type: int32
+
+-----------------------
+
+Invasion.GetParticipatingFormationsBreakdown
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -52082,6 +52273,24 @@ Return type: CString
 
 -----------------------
 
+MilitaryFormation.GetBlockadeAffectedBuildingCount
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+MilitaryFormation.GetBlockadeAffectedShippingLaneCount
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+MilitaryFormation.GetBlockadeAffectedShippingLaneCountForState( Arg0 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 MilitaryFormation.GetBlockadeEfficiency
 Definition type: Function
 Return type: CFixedPoint
@@ -52106,6 +52315,12 @@ Return type: CString
 
 -----------------------
 
+MilitaryFormation.GetBlockadeStatesBreakdown
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 MilitaryFormation.GetBlockadeStrength
 Definition type: Function
 Return type: CFixedPoint
@@ -52118,6 +52333,12 @@ Return type: CFixedPoint
 
 -----------------------
 
+MilitaryFormation.GetBlockadedStates
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 MilitaryFormation.GetBombardedStates
 Definition type: Function
 Return type: [unregistered]
@@ -52127,6 +52348,12 @@ Return type: [unregistered]
 MilitaryFormation.GetBorrowSettings
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+MilitaryFormation.GetBuildingDestructionChanceForBombardedState( Arg0 )
+Definition type: Function
+Return type: CFixedPoint
 
 -----------------------
 
@@ -52313,6 +52540,12 @@ Return type: CFixedPoint
 MilitaryFormation.GetDailyDevastationFromBombardment
 Definition type: Function
 Return type: CFixedPoint
+
+-----------------------
+
+MilitaryFormation.GetDailyDevastationFromBombardmentDesc
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -52514,6 +52747,30 @@ Return type: int32
 
 -----------------------
 
+MilitaryFormation.GetInterceptBlockedFleetsInRegion( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+MilitaryFormation.GetInterceptChancePerDay
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+MilitaryFormation.GetInterceptRegions
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+MilitaryFormation.GetInterceptTargetsInRegion( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 MilitaryFormation.GetInvasionTooltip
 Definition type: Function
 Return type: CString
@@ -52706,6 +52963,12 @@ Return type: int32
 
 -----------------------
 
+MilitaryFormation.GetNumBlockadedStates
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 MilitaryFormation.GetNumCombatUnits
 Definition type: Function
 Return type: int32
@@ -52773,6 +53036,12 @@ Return type: int32
 -----------------------
 
 MilitaryFormation.GetNumExpectedRegularCombatUnitsOfType( Arg0 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+MilitaryFormation.GetNumFullyBlockadedStates
 Definition type: Function
 Return type: int32
 
@@ -53252,6 +53521,12 @@ Return type: int32
 
 -----------------------
 
+MilitaryFormation.GetSupplyShortageRatio
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 MilitaryFormation.GetSupplyWeeklyChange
 Definition type: Function
 Return type: CFixedPoint
@@ -53378,6 +53653,12 @@ Return type: bool
 
 -----------------------
 
+MilitaryFormation.HasCoastalBombardmentTargets
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 MilitaryFormation.HasCommander
 Definition type: Function
 Return type: bool
@@ -53438,6 +53719,12 @@ Return type: bool
 
 -----------------------
 
+MilitaryFormation.HasSufficientSeaPresenceForBombardment
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 MilitaryFormation.HasSupplyRaidTargets
 Definition type: Function
 Return type: bool
@@ -53445,6 +53732,12 @@ Return type: bool
 -----------------------
 
 MilitaryFormation.HasSupplyRoute
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+MilitaryFormation.HasSupplyShortageOrganizationPenalty
 Definition type: Function
 Return type: bool
 
@@ -53529,6 +53822,18 @@ Return type: bool
 -----------------------
 
 MilitaryFormation.IsBeingTutorialHighlighted
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+MilitaryFormation.IsBlockadeAtMaxLevel
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+MilitaryFormation.IsBlockadeFullyEffective
 Definition type: Function
 Return type: bool
 
@@ -53619,6 +53924,12 @@ Return type: bool
 -----------------------
 
 MilitaryFormation.IsMobilizing
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+MilitaryFormation.IsOnInterceptMission
 Definition type: Function
 Return type: bool
 
@@ -57143,9 +57454,45 @@ Definition type: Type
 
 -----------------------
 
+NavalMissionMarker.GetFirstEnemyFleetOnMissionType( Arg0 )
+Definition type: Promote
+Return type: MilitaryFormation
+
+-----------------------
+
+NavalMissionMarker.GetFirstFleetOnMissionType( Arg0 )
+Definition type: Promote
+Return type: MilitaryFormation
+
+-----------------------
+
 NavalMissionMarker.GetProvince
 Definition type: Promote
 Return type: Province
+
+-----------------------
+
+NavalMissionMarker.AccessEnemyFleetsOnMissionType( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+NavalMissionMarker.AccessEnemyNavalMissionTypes
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+NavalMissionMarker.AccessEnemyPresentFleetsOnMissionType( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+NavalMissionMarker.AccessEnemyTravelingFleetsOnMissionType( Arg0 )
+Definition type: Function
+Return type: [unregistered]
 
 -----------------------
 
@@ -57161,7 +57508,19 @@ Return type: [unregistered]
 
 -----------------------
 
+NavalMissionMarker.AccessPresentFleetsOnMissionType( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 NavalMissionMarker.AccessSelf
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+NavalMissionMarker.AccessTravelingFleetsOnMissionType( Arg0 )
 Definition type: Function
 Return type: [unregistered]
 
@@ -57170,6 +57529,24 @@ Return type: [unregistered]
 NavalMissionMarker.AreAllFleetsOnMissionTypeRecalledForRepairs( Arg0 )
 Definition type: Function
 Return type: bool
+
+-----------------------
+
+NavalMissionMarker.GetFirstEnemyFleetOnMissionType( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+NavalMissionMarker.GetFirstFleetOnMissionType( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+NavalMissionMarker.GetNumEnemyFleetsOnMissionType( Arg0 )
+Definition type: Function
+Return type: int32
 
 -----------------------
 
@@ -57185,7 +57562,31 @@ Return type: CVector2f
 
 -----------------------
 
+NavalMissionMarker.HighlightEnemyFleetsOnMissionType( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+NavalMissionMarker.HighlightFleetsOnMissionType( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
 NavalMissionMarker.IsAnyFleetOnMissionTypeRecalledForRepairs( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+NavalMissionMarker.IsMissionTypeHighlightedByEnemy( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+NavalMissionMarker.IsMissionTypeHighlightedByFriendly( Arg0 )
 Definition type: Function
 Return type: bool
 
@@ -62558,6 +62959,12 @@ Return type: void
 
 -----------------------
 
+PopupManager.HideDecommissionSupplyShipsWindow
+Definition type: Function
+Return type: void
+
+-----------------------
+
 PopupManager.HideDiplomaticActionConfirmation
 Definition type: Function
 Return type: void
@@ -62697,6 +63104,12 @@ Return type: [unregistered]
 -----------------------
 
 PopupManager.ShowCompanyChangeName( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+PopupManager.ShowDecommissionSupplyShipsWindow
 Definition type: Function
 Return type: void
 
@@ -67063,6 +67476,12 @@ Return type: void
 
 -----------------------
 
+RightClickMenuManager.ToggleEnemyFleetsOnMissionInSeaRegion( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
 RightClickMenuManager.ToggleFilterUnitStates( Arg0, Arg1, Arg2 )
 Definition type: Function
 Return type: void
@@ -67081,7 +67500,7 @@ Return type: void
 
 -----------------------
 
-RightClickMenuManager.ToggleFleetsOnMissionInSeaRegion( Arg0, Arg1, Arg2, Arg3 )
+RightClickMenuManager.ToggleFleetsOnMissionInSeaRegion( Arg0, Arg1, Arg2 )
 Definition type: Function
 Return type: void
 
@@ -67838,6 +68257,119 @@ Return type: void
 SaveGameWindow.UpdateSaveName
 Definition type: Function
 Return type: void
+
+-----------------------
+
+ScriptContainer
+Definition type: Type
+
+-----------------------
+
+ScriptContainer.GetParent
+Definition type: Promote
+Return type: Scope
+
+-----------------------
+
+ScriptContainer.MakeScope
+Definition type: Promote
+Return type: Scope
+
+-----------------------
+
+ScriptContainer.AccessSelf
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+ScriptContainer.GetCustom( Arg0 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+ScriptContainer.GetName
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+ScriptContainer.GetParent
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+ScriptContainer.GetTagCount
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+ScriptContainer.GetTagsString
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+ScriptContainer.GetTooltipTag
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+ScriptContainer.GetVariableCount
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+ScriptContainer.GetVariableListSize( Arg0 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+ScriptContainer.GetVariableValue( Arg0 )
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+ScriptContainer.HasParent
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+ScriptContainer.HasTag( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+ScriptContainer.HasVariable( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+ScriptContainer.IsValid
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+ScriptContainer.MakeScope
+Definition type: Function
+Return type: Scope
+
+-----------------------
+
+ScriptContainer.Self
+Definition type: Function
+Return type: [unregistered]
 
 -----------------------
 
@@ -68657,6 +69189,18 @@ Return type: bool
 
 -----------------------
 
+SeaNodeMarker.IsSeaNodeHighlightedByEnemy
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+SeaNodeMarker.IsSeaNodeHighlightedByFriendly
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 SeaNodeMarker.IsSelected
 Definition type: Function
 Return type: bool
@@ -68791,6 +69335,12 @@ Return type: CString
 SeaNodeMovementMarker.GetSeaNode
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+SeaNodeMovementMarker.GetSelectedFormationsInvolvementChangeDesc
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -69715,6 +70265,12 @@ Return type: CString
 
 -----------------------
 
+Ship.GetNameNoFormattingLowercasePrefix
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 Ship.GetNumCrewFromState( Arg0 )
 Definition type: Function
 Return type: int32
@@ -69985,6 +70541,12 @@ Return type: bool
 
 -----------------------
 
+Ship.IsVeterancyExperienceDecayPaused
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 Ship.IsZoomingTo
 Definition type: Function
 Return type: bool
@@ -70118,6 +70680,12 @@ Return type: ShipTemplate
 ShipConstruction.GetShipType
 Definition type: Promote
 Return type: ShipType
+
+-----------------------
+
+ShipConstruction.GetSpawnRegion
+Definition type: Promote
+Return type: StrategicRegion
 
 -----------------------
 
@@ -73556,6 +74124,12 @@ Return type: [unregistered]
 
 -----------------------
 
+State.AccessCoastalBuildings
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 State.AccessDecrees
 Definition type: Function
 Return type: [unregistered]
@@ -73733,6 +74307,12 @@ Return type: int64
 State.GetArableLandCapacity
 Definition type: Function
 Return type: int32
+
+-----------------------
+
+State.GetAtRiskCoastalBuildingsList
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -75207,6 +75787,12 @@ Return type: CFixedPoint
 -----------------------
 
 State.HasAnyGoodsShortage
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+State.HasAtRiskCoastalBuildings
 Definition type: Function
 Return type: bool
 
@@ -80714,6 +81300,12 @@ Return type: CString
 TransportPlannerPopup.GetFleetsForTransport
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+TransportPlannerPopup.GetInvolvementChangeDesc
+Definition type: Function
+Return type: CString
 
 -----------------------
 

@@ -490,6 +490,13 @@ Change Scopes: yes
 Save Token: rel
 Stores Variables: yes
 
+container:
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: container
+Stores Variables: yes
+
 ship:
 Evaluate Triggers: yes
 Execute Effects: yes

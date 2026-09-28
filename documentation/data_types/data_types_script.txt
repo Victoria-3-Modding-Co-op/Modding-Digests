@@ -561,6 +561,12 @@ Return type: Religion
 
 -----------------------
 
+Scope.AccessScriptContainer
+Definition type: Promote
+Return type: ScriptContainer
+
+-----------------------
+
 Scope.AccessShip
 Definition type: Promote
 Return type: Ship
@@ -1113,6 +1119,12 @@ Return type: Religion
 
 -----------------------
 
+Scope.GetScriptContainer
+Definition type: Promote
+Return type: ScriptContainer
+
+-----------------------
+
 Scope.GetShip
 Definition type: Promote
 Return type: Ship
@@ -1438,6 +1450,12 @@ Return type: InterestGroup
 TopScope.gsInterestGroup( Arg0 )
 Definition type: Promote
 Return type: InterestGroup
+
+-----------------------
+
+TopScope.sAmendmentType( Arg0 )
+Definition type: Promote
+Return type: AmendmentType
 
 -----------------------
 
@@ -2156,6 +2174,12 @@ Return type: [unregistered]
 -----------------------
 
 TopScope.gsInterestGroup( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+TopScope.sAmendmentType( Arg0 )
 Definition type: Function
 Return type: [unregistered]
 

@@ -152,6 +152,12 @@ Expected Scope: none
 
 --------------------
 
+on_treaty_ports_inherited:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 on_yearly_pulse:
 From Code: Yes
 Expected Scope: none
@@ -1503,6 +1509,12 @@ Expected Scope: none
 --------------------
 
 on_diplomatic_proposal_break_call_in_obligation:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_amendment_timeout:
 From Code: Yes
 Expected Scope: none
 
