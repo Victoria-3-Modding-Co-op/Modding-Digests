@@ -260,6 +260,12 @@ Expected Scope: none
 
 --------------------
 
+on_commander_promoted:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 on_character_became_adult:
 From Code: Yes
 Expected Scope: none

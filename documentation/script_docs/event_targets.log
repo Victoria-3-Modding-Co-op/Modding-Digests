@@ -231,6 +231,11 @@ Returns the home HQ of the scoped military formation
 Input Scopes: military_formation
 Output Scopes: hq
 
+### num_assigned_supply_ships
+Get the number of assigned supply ships for a military formation
+Input Scopes: military_formation
+Output Scopes: value
+
 ### num_commanderless_units
 Number of units in a MilitaryFormation which currently don't have a commander due to commanders Command Limit. Obs: defeated commanders do not command units, i.e., the more defeated commanders, the more commanderless units.
 Input Scopes: military_formation
@@ -595,6 +600,11 @@ Reference a previous set global variable via its name eg: global_var:important_t
 Requires Data: yes
 Global Link: yes
 
+### global_variable_map
+Reference a previous set variable via its name eg: "global_variable_map(average_relation_map|c:FRA)"
+Requires Data: yes
+Global Link: yes
+
 ### harvest_condition_type
 Scope to a harvest condition type from its name (harvest_condition_type:drought)
 Requires Data: yes
@@ -659,6 +669,11 @@ Output Scopes: political_lobby_type
 
 ### local_var
 Reference a previous set local variable via its name eg: local_var:person_of_interest
+Requires Data: yes
+Global Link: yes
+
+### local_variable_map
+Reference a previous set variable via its name eg: "local_variable_map(rewards_for_country|c:FRA)"
 Requires Data: yes
 Global Link: yes
 
@@ -799,6 +814,10 @@ Output Scopes: value
 
 ### var
 Reference a previous set variable via its name eg: var:mortal_enemy
+Requires Data: yes
+
+### variable_map
+Reference a variable set under a specified scope in a named container on this scope: "variable_map(our_relations_with|c:FRA)"
 Requires Data: yes
 
 ### yes
@@ -1869,6 +1888,7 @@ amendment
 area
 attacker
 defender
+war_goal_holder
 actor
 recipient
 ship
@@ -2004,3 +2024,5 @@ amenability
 advance_chance
 stall_chance
 num_sunk_ships
+count
+region_score

@@ -31,6 +31,12 @@ Return type: Scope
 
 -----------------------
 
+GetVariableFromGlobalVariableMap( Arg0, Arg1 )
+Definition type: Global promote
+Return type: Scope
+
+-----------------------
+
 PREV
 Description: Script Scope
 Definition type: Global promote
@@ -74,6 +80,12 @@ Return type: [unregistered]
 GetVarTimeRemaining( Arg0, Arg1 )
 Definition type: Global function
 Return type: int32
+
+-----------------------
+
+GetVariableFromGlobalVariableMap( Arg0, Arg1 )
+Definition type: Global function
+Return type: [unregistered]
 
 -----------------------
 
@@ -1209,6 +1221,12 @@ Return type: Scope
 
 -----------------------
 
+Scope.GetVariableFromVariableMap( Arg0, Arg1 )
+Definition type: Promote
+Return type: Scope
+
+-----------------------
+
 Scope.GetWar
 Definition type: Promote
 Return type: War
@@ -1246,6 +1264,12 @@ Return type: CString
 -----------------------
 
 Scope.GetList( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+Scope.GetMapKeys( Arg0 )
 Definition type: Function
 Return type: [unregistered]
 
@@ -1290,6 +1314,24 @@ Return type: [unregistered]
 Scope.VarRemaining( Arg0 )
 Definition type: Function
 Return type: int32
+
+-----------------------
+
+Scope.VariableMapContainsKey( Arg0, Arg1 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+Scope.VariableMapContainsValue( Arg0, Arg1 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+Scope.VariableMapExists( Arg0 )
+Definition type: Function
+Return type: [unregistered]
 
 -----------------------
 
