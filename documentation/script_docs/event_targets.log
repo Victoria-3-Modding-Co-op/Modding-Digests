@@ -164,8 +164,18 @@ Scope to the journal entry's goal value
 Input Scopes: journal_entry
 Output Scopes: value
 
-### binding_period_original
+### amended_treaty
+Scope to the treaty the scoped treaty is amending
+Input Scopes: treaty_options, treaty
+Output Scopes: treaty
+
+### binding_period
 Get the original binding period in days when the treaty was signed for the scoped treaty
+Input Scopes: treaty_options, treaty
+Output Scopes: value
+
+### remaining_binding_period
+Get the current remaining binding period in days for the scoped treaty
 Input Scopes: treaty_options, treaty
 Output Scopes: value
 
@@ -1366,11 +1376,6 @@ Scope to the country's current maximum investment level in an institution (examp
 Input Scopes: institution
 Output Scopes: value
 
-### binding_period
-Get the current remaining binding period in days for the scoped treaty
-Input Scopes: treaty
-Output Scopes: value
-
 ### enforced_on_country
 Scope to the enforced_on_country of an enforced treaty
 Input Scopes: treaty
@@ -1566,6 +1571,7 @@ religion
 combat_unit_type
 num_states
 num_units
+num_levels
 notification_target
 notification_ignore
 previous
@@ -1623,7 +1629,7 @@ non_withdrawing_country
 treaty
 is_treaty_active
 treaty_options
-binding_time
+binding_period
 article
 article_options
 first_country

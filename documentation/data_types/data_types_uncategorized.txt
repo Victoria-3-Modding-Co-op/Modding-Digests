@@ -11706,6 +11706,12 @@ Return type: bool
 
 -----------------------
 
+ArticleDraft.OnInputTextChanged
+Definition type: Function
+Return type: void
+
+-----------------------
+
 ArticleDraft.OnQuantityChanged
 Definition type: Function
 Return type: void
@@ -11922,6 +11928,12 @@ Return type: bool
 -----------------------
 
 ArticleType.IsVisible( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+ArticleType.RecipientPaysMaintenance
 Definition type: Function
 Return type: bool
 
@@ -57826,6 +57838,12 @@ Return type: void
 
 -----------------------
 
+RightClickMenuManager.ToggleSwayOfferArticleTypeInput( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
 RightClickMenuManager.ToggleSwitchProductionMethodMenu( Arg0, Arg1, Arg2 )
 Definition type: Function
 Return type: void
@@ -64209,9 +64227,21 @@ Return type: CString
 
 -----------------------
 
+SwayOffer.RequiresAnyInput
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 SwayOffer.Self
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+SwayOffer.SetArticleInputsFromDraft( Arg0 )
+Definition type: Function
+Return type: void
 
 -----------------------
 
@@ -66578,6 +66608,114 @@ Return type: [unregistered]
 
 -----------------------
 
+TreatyDraft.GetArticleTypeAcceptance( Arg0, Arg1 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceBreakdown( Arg0, Arg1 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceBreakdownWithBuilding( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceBreakdownWithCompany( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceBreakdownWithCompanyAndBuilding( Arg0, Arg1, Arg2, Arg3 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceBreakdownWithCountry( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceBreakdownWithGood( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceBreakdownWithLaw( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceBreakdownWithRegion( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceBreakdownWithState( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceWithBuilding( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceWithCompany( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceWithCompanyAndBuilding( Arg0, Arg1, Arg2, Arg3 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceWithCountry( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceWithGood( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceWithLaw( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceWithRegion( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+TreatyDraft.GetArticleTypeAcceptanceWithState( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 TreatyDraft.GetBindingDays
 Definition type: Function
 Return type: int32
@@ -66591,6 +66729,12 @@ Return type: CString
 -----------------------
 
 TreatyDraft.GetBindingPeriodFormatted
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+TreatyDraft.GetBreakPenaltiesDesc
 Definition type: Function
 Return type: CString
 

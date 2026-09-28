@@ -845,7 +845,7 @@ can_create_treaty = {
 			}  
 		}  
   
-		# some examples of valid aticles  
+		# some examples of valid articles  
 		{ article = alliance }			# mutual, no inputs  
 		{  
 			article = resource_transfer # directed  
@@ -1607,7 +1607,7 @@ Reads gamestate for all scopes.
 **Supported Scopes**: military_formation  
 
 ## fraction_of_levels_owned_by_country
-Compares the fraction of total levels of a building a country owns  
+Compares the fraction of total levels of a building a country or investors in that country owns  
  fraction_of_levels_owned_by_country = {  
  target = c:GBR  
  value  > 0.5
@@ -1751,6 +1751,13 @@ has_active_production_method = key
 Reads gamestate for all scopes.
 **Supported Scopes**: building  
 
+## has_any_law_commitment
+Checks if a country has a commitment to enact any law  
+has_any_law_commitment = yes
+Traits: yes/no 
+Reads gamestate for all scopes.
+**Supported Scopes**: country  
+
 ## has_any_secessionists_broken_out
 Check if the country has secessionists broken out
 Traits: yes/no 
@@ -1762,6 +1769,26 @@ Check if the country has any secessionists growing
 Traits: yes/no 
 Reads gamestate for all scopes.
 **Supported Scopes**: country  
+
+## has_any_subventions_on
+Check if the scoped country has any level of subventions on a goods  
+scope:country = {  
+	has_any_subventions_on = g:grain  
+}  
+Traits: goods scope
+Reads gamestate for all scopes.
+**Supported Scopes**: country  
+**Supported Targets**: goods  
+
+## has_any_tariffs_on
+Check if the scoped country has any level of tariffs on a goods  
+scope:country = {  
+	has_any_tariffs_on = g:grain  
+}  
+Traits: goods scope
+Reads gamestate for all scopes.
+**Supported Scopes**: country  
+**Supported Targets**: goods  
 
 ## has_assimilating_pops
 Check if a state has any pops currently in the process of assimilating.
@@ -3521,6 +3548,17 @@ Traits: yes/no
 Reads gamestate for all scopes.
 **Supported Scopes**: law  
 
+## is_renegotiation
+Checks if the scoped treaty is amending an existing treaty  
+scope:some_treaty = {  
+	if = { limit = {  
+		is_renegotiation = yes  
+	}}  
+}
+Traits: yes/no 
+Reads gamestate for all scopes.
+**Supported Scopes**: treaty_options, treaty  
+
 ## is_researching_technology
 Check if the country is actively researching a tech  
 is_researching_technology = <scope/key/any>
@@ -3841,6 +3879,13 @@ Compares the stance of the scoped character, movement or interest group has abou
 Reads gamestate for all scopes.
 **Supported Scopes**: character, interest_group, political_movement  
 
+## law_is_available
+Checks if a law is available for its country, considering its current situation. Like can_be_enacted, but ignores government support  
+law_is_available = yes
+Traits: yes/no 
+Reads gamestate for all scopes.
+**Supported Scopes**: law  
+
 ## law_progressiveness_difference
 Compares the progressiveness of the scoped law type to the target law type, higher value means greater difference  
 law_progressiveness_difference( scope:target_law ) > 50
@@ -3869,7 +3914,7 @@ Reads gamestate for all scopes.
 **Supported Scopes**: country  
 
 ## levels_owned_by_country
-Compares how many levels a country owns in a building  
+Compares how many levels a country or investors in that country own in a building  
  levels_owned_by_country = {  
  target = c:GBR  
  value  >= 1

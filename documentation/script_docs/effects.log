@@ -3603,7 +3603,7 @@ set_diplomats_expelled = scope:target_country
 
 ## set_export_tariff_level
 Sets export tariff level for a good in scoped country  
-set_export_tariff_level = { goods = iron level = max_tariffs }
+set_export_tariff_level = { goods = g:iron level = max_tariffs }
 **Supported Scopes**: country  
 
 ## set_exports
@@ -3676,7 +3676,7 @@ set_immune_to_revolutions = yes/no
 
 ## set_import_tariff_level
 Sets import tariff level for a good in scoped country  
-set_import_tariff_level = { goods = iron level = max_tariffs }
+set_import_tariff_level = { goods = g:iron level = max_tariffs }
 **Supported Scopes**: country  
 
 ## set_imports

@@ -163,6 +163,10 @@ character_battle_condition_surprise_maneuver_mult:
   Mask: character
   Name: Surprise Maneuver Chance
   Description: Chance of being affected by the Surprise Maneuver Battle Condition
+character_blockade_mult:
+  Mask: character
+  Name: Admiral Blockade Strength
+  Description: A bonus or penalty to how effectively an Admiral Blockades enemy ports
 character_command_limit_add:
   Mask: character
   Name: Command Limit
@@ -254,10 +258,6 @@ country_allow_multiple_alliances_bool:
   Mask: country
   Name: Allow Multiple Alliances
   Description: Whether the country is allowed to form multiple Alliance Diplomatic Pacts
-country_allow_trade_routes_without_interest_bool:
-  Mask: country
-  Name: Allow establishing Trade Routes without Interest
-  Description: Allows a country to establish Trade Routes towards targets that would normally be unavailable due to the lack of a Interest on the receiving end
 country_assimilation_delta_threshold_add:
   Mask: country
   Name: Cultural Assimilation Threshold
@@ -274,7 +274,7 @@ country_authority_per_subject_add:
   Mask: country
   Name: aut! Authority per Subject
   Description: The amount of aut! Authority which is scaled by the number of Subjects
-country_bolster_attraction_mult:
+country_bolster_attraction_factor:
   Mask: country
   Name: Bolstered impact on Political Movement attraction
   Description: A bonus or penalty to how attracted Pops are to a Political Movement as a result of being Bolstered
@@ -298,6 +298,10 @@ country_can_form_construction_company_bool:
   Mask: country
   Name: Can form Construction type Companies
   Description: Can form Construction type Companies
+country_can_only_conscript_peasants_bool:
+  Mask: country
+  Name: Allows only Infantry Conscript Battalions
+  Description: Conscript Battalions can only consist of Infantry Military Unit Types, except Mechanized Infantry
 country_cannot_be_target_for_law_imposition_bool:
   Mask: country
   Name: Cannot be targeted for Law Imposition
@@ -318,10 +322,6 @@ country_company_construction_efficiency_bonus_add:
   Mask: country
   Name: Company Construction Bonus
   Description: An increase or decrease to the weekly Construction progress added by Companies to their associated Buildings
-country_company_pay_to_establish_bool:
-  Mask: country
-  Name: Establish Companies by Purchase
-  Description: Establish Companies by purchasing privately owned levels instead of government owned
 country_company_throughput_bonus_add:
   Mask: country
   Name: Company Throughput Bonus
@@ -346,14 +346,22 @@ country_convoy_contribution_to_market_owner_add:
   Mask: country
   Name: convoys! Convoys Contribution to Market Owner
   Description: The percentage of convoys! Convoys a member of a Customs Union must contribute to the Market Owner
+country_convoy_damage_taken_mult:
+  Mask: country
+  Name: Damage to Convoys
+  Description: A bonus or penalty to how much damage the Country’s Convoys suffer from Convoy Raiding
 country_convoys_capacity_add:
   Mask: country
   Name: convoys! Convoys
-  Description: Convoys are produced by Port Buildings and are required to operate Shipping Lanes.
+  Description: Convoys are produced by Port Buildings and are required to operate a Countries’ Shipping Lanes.
+
+Convoy Cost is incurred by the Country unlike Merchant Marine which is utilized by Trade Center Buildings to conduct Trade on the World Market.
 country_convoys_capacity_mult:
   Mask: country
   Name: convoys! Convoys
-  Description: Convoys are produced by Port Buildings and are required to operate Shipping Lanes.
+  Description: Convoys are produced by Port Buildings and are required to operate a Countries’ Shipping Lanes.
+
+Convoy Cost is incurred by the Country unlike Merchant Marine which is utilized by Trade Center Buildings to conduct Trade on the World Market.
 country_damage_relations_speed_mult:
   Mask: country
   Name: Damage Relations Speed
@@ -386,6 +394,14 @@ country_disallow_agitator_invites_bool:
   Mask: country
   Name: Disallowed from inviting Exiles
   Description: This country does not permit the invitation of Exiles
+country_disallow_trade_bool:
+  Mask: country
+  Name: Disable Trade Centers
+  Description: Disallow construction of Trade Centers
+country_disallow_trade_outside_canton_bool:
+  Mask: country
+  Name: Disable Trade Centers outside Western Guangdong
+  Description: Disallow construction of Trade Centers in States other than Western Guangdong
 country_economic_dependence_on_overlord_add:
   Mask: country
   Name: Economic Dependence on Overlord
@@ -398,6 +414,10 @@ country_expenses_add:
   Mask: country
   Name: Government Expenses
   Description: A flat increase or reduction of government expenses
+country_forbid_monopoly_bool:
+  Mask: country
+  Name: Forbid Monopolies
+  Description: Forbid Buildings from being Monopolized by a Country or Company
 country_force_privatization_bool:
   Mask: country
   Name: Force Privatization
@@ -406,10 +426,10 @@ country_foreign_collectivization_bool:
   Mask: country
   Name: Foreign Collectivization
   Description: Allow Buildings owned by our Manor Houses and Financial Districts in foreign countries to become worker-owned
-country_free_trade_routes_add:
+country_free_charters_add:
   Mask: country
-  Name: Free Trade Routes
-  Description: An increase or decrease to the number of Trade Routes a Country can support with countries they do not have a Trade Agreement with before incurring a bur!Bureaucracy cost.
+  Name: Free Company Charters
+  Description: The amount of Company Charters a Country can hand out to their Companies for free
 country_gold_reserve_limit_mult:
   Mask: country
   Name: Gold reserve limit
@@ -638,6 +658,10 @@ country_nationalization_cost_non_members_mult:
   Mask: country
   Name: Cost for Nationalization
   Description: Increases or decreases the cost of Nationalization of buildings owned by a Country outside of your Power Bloc
+country_no_advantage_loss_from_lack_of_interest_bool:
+  Mask: country
+  Name: Ignores Trade Advantage penalty from Interests
+  Description: Whether our country ignores the Trade Advantage penalty applied against Markets where we lack an Interest
 country_non_state_religion_wages_mult:
   Mask: country
   Name: Wages for Non-State Religion Pops
@@ -742,7 +766,11 @@ country_subject_income_transfer_mult:
   Mask: country
   Name: Income transfer from Subjects
   Description: An increase or decrease to the amount of Money the subject must give to their overlord
-country_suppression_attraction_mult:
+country_support_independence_weekly_liberty_desire_add:
+  Mask: country
+  Name: support_independence_text_icon! Support Independence weekly Liberty Desire
+  Description: An increase or reduction to the weekly Liberty Desire of Countries that this country supports the independence of through support_independence_text_icon! Support Independence
+country_suppression_attraction_factor:
   Mask: country
   Name: Suppression impact on Political Movement attraction
   Description: A bonus or penalty to how attracted Pops are to a Political Movement as a result of Suppression
@@ -774,18 +802,14 @@ country_tension_decay_mult:
   Mask: country
   Name: Tension Decay
   Description: A bonus or penalty to Tension decay
-country_trade_route_competitiveness_mult:
+country_treaty_leverage_generation_add:
   Mask: country
-  Name: Trade Route Competitiveness
-  Description: An increase or decrease in the Trade Route Competitiveness of Trade Routes
-country_trade_route_cost_mult:
+  Name: Leverage Generation from Treaty
+  Description: An increase or decrease to the amount of Leverage generated between two Countries with this Treaty when the dominant Country in the Treaty is a Power Bloc Leader
+country_treaty_leverage_generation_mult:
   Mask: country
-  Name: Trade Route bur! Bureaucracy Cost
-  Description: An increase or decrease in the bur!Bureaucracy cost for each Trade Route
-country_trade_route_quantity_mult:
-  Mask: country
-  Name: Trade Route Volume
-  Description: An increase or decrease in the amount of goods imported or exported for each Trade Route level
+  Name: Leverage Generation from Treaty
+  Description: An increase or decrease to the amount of Leverage generated between two Countries with this Treaty when the dominant Country in the Treaty is a Power Bloc Leader
 country_voting_power_base_add:
   Mask: country
   Name: Political Strength per Vote
@@ -854,22 +878,6 @@ interest_group_pop_attraction_mult:
   Mask: interest_group
   Name: Interest Group Pop Attraction
   Description: A bonus or penalty to how attracted Pops are to an Interest Group
-market_disallow_trade_routes_bool:
-  Mask: market
-  Name: Disable Trade Routes
-  Description: Disallow all import and export of goods in the market
-market_land_trade_capacity_add:
-  Mask: market
-  Name: Land Trade Capacity
-  Description: An increase or decrease to the Land Trade Capacity of a Market.
-market_max_exports_add:
-  Mask: market
-  Name: Maximum Exports
-  Description: An increase or decrease to the amount of goods that can be exported from your Market.
-market_max_imports_add:
-  Mask: market
-  Name: Maximum Imports
-  Description: An increase or decrease to the amount of goods that can be imported by your Market.
 military_formation_attrition_risk_add:
   Mask: military_formation
   Name: Attrition Risk
@@ -904,10 +912,13 @@ A Formation with low Organization will be less effective in Battle in a variety 
 Organization can also be impacted temporarily when switching Mobilization Options on or off, and when transferring Military Units between Mobilized Armies with different sets of Mobilization Options.
 
 A Formation with low Organization will suffer penalties the lower the value is, up to the following effects:
--25% Offense
--10% Defense
+-75% Offense
+-75% Defense
+-75% Blockade Strength
 -100% Morale Recovery
 -50% Recovery Rate
+-75.0% Convoy Raiding Efficiency
+-75.0% Convoy Escort Defense
 military_formation_organization_gain_mult:
   Mask: military_formation
   Name: Daily Organization Gain
@@ -918,10 +929,13 @@ A Formation with low Organization will be less effective in Battle in a variety 
 Organization can also be impacted temporarily when switching Mobilization Options on or off, and when transferring Military Units between Mobilized Armies with different sets of Mobilization Options.
 
 A Formation with low Organization will suffer penalties the lower the value is, up to the following effects:
--25% Offense
--10% Defense
+-75% Offense
+-75% Defense
+-75% Blockade Strength
 -100% Morale Recovery
 -50% Recovery Rate
+-75.0% Convoy Raiding Efficiency
+-75.0% Convoy Escort Defense
 political_movement_character_attraction_mult:
   Mask: political_movement
   Name: political_movement_character_attraction_mult
@@ -1006,18 +1020,14 @@ power_bloc_mandate_progress_mult:
   Mask: power_bloc
   Name: Weekly Mandate Progress
   Description: An increase or decrease to the weekly Mandate progress for a Power Bloc.
-power_bloc_religion_trade_route_competitiveness_mult:
-  Mask: power_bloc
-  Name: Devotee Trade Route Competitiveness
-  Description: An increase or decrease in the Trade Route Competitiveness of Trade Routes owned by Bloc Members targeting a Country that shares the Religion of the Power Bloc Leader.
 power_bloc_target_sway_cost_mult:
   Mask: power_bloc
   Name: Sway Maneuver cost for the Diplomatic Play Target
   Description: An increase or decrease to the Sway Maneuver cost for the Diplomatic Play Target
-power_bloc_trade_route_cost_mult:
+power_bloc_trade_advantage_add:
   Mask: power_bloc
-  Name: Trade Route bur! Bureaucracy Cost with another Power Bloc member
-  Description: Trade Route bur! Bureaucracy Cost with another Power Bloc member
+  Name: Trade Advantage within Power Bloc
+  Description: An increase or decrease in overall Trade Advantage with Countries in the same Power Bloc
 state_assimilation_mult:
   Mask: state
   Name: Assimilation
@@ -1050,6 +1060,10 @@ state_construction_mult:
   Mask: state
   Name: State Construction Efficiency
   Description: A bonus or penalty to the weekly Construction progress in a State
+state_contiguous_incorporation_speed_mult:
+  Mask: state
+  Name: Contiguous Incorporation Speed
+  Description: A bonus or penalty to the speed at which States that have a land or strait connection to the Capital State are Incorporated
 state_conversion_mult:
   Mask: state
   Name: Conversion
@@ -1090,10 +1104,22 @@ state_expected_sol_mult:
   Mask: state
   Name: Minimum Expected Standard of Living
   Description: An increase or decrease to the minimum Standard of Living Pops expect to enjoy
+state_export_advantage_mult:
+  Mask: state
+  Name: Trade Advantage for Exports
+  Description: An increase or decrease in Trade Advantage for exported Goods
 state_food_security_add:
   Mask: state
   Name: Food Security
   Description: A bonus or penalty to the food security of all pops in a state
+state_import_advantage_mult:
+  Mask: state
+  Name: Trade Advantage for Imports
+  Description: An increase or decrease in Trade Advantage for imported Goods
+state_incorporation_speed_mult:
+  Mask: state
+  Name: Incorporation Speed
+  Description: state_incorporation_speed_mult_desc
 state_infrastructure_add:
   Mask: state
   Name: Infrastructure
@@ -1134,6 +1160,10 @@ state_market_access_price_impact:
   Mask: state
   Name: Market Access Price Impact
   Description: An increase or decrease to the maximum influence of Market Access on the Local Price of a Good.
+state_max_trade_advantage_from_capacity_add:
+  Mask: state
+  Name: Maximum Trade Advantage from Capacity
+  Description: An increase or decrease in maximum Trade Advantage from Trade Capacity in a State
 state_middle_strata_expected_sol_add:
   Mask: state
   Name: Minimum Expected Standard of Living for the Middle Strata
@@ -1174,6 +1204,10 @@ state_mortality_wealth_mult:
   Mask: state
   Name: Mortality per Wealth
   Description: An increase or decrease to pop Mortality per Wealth
+state_non_contiguous_incorporation_speed_mult:
+  Mask: state
+  Name: Non-Contiguous Incorporation Speed
+  Description: A bonus or penalty to the speed at which States that lack a land or strait connection to the Capital State are Incorporated
 state_non_homeland_colony_growth_speed_mult:
   Mask: state
   Name: Colony Growth Speed in non-Homeland States
@@ -1226,6 +1260,22 @@ state_standard_of_living_add:
   Mask: state
   Name: Standard of Living
   Description: Extra Standard of Living added on top of Wealth
+state_subvention_export_add:
+  Mask: state
+  Name: Maximum Subventions on Exports
+  Description: An increase or decrease to the maximum Subventions that can be paid to Trade Centers that export Goods from our Market.
+state_subvention_import_add:
+  Mask: state
+  Name: Maximum Subventions on Imports
+  Description: An increase or decrease to the maximum Subventions that can be paid to Trade Centers that import Goods to our Market.
+state_tariff_export_add:
+  Mask: state
+  Name: Maximum Tariffs on Exports
+  Description: An increase or decrease to the maximum Tariffs that can be collected from Trade Centers that export Goods from our Market.
+state_tariff_import_add:
+  Mask: state
+  Name: Maximum Tariffs on Imports
+  Description: An increase or decrease to the maximum Tariffs that can be collected from Trade Centers that import Goods to our Market.
 state_tax_capacity_add:
   Mask: state
   Name: Taxation Capacity
@@ -1242,6 +1292,30 @@ state_tax_waste_add:
   Mask: state
   Name: Tax Waste
   Description: An increase or decrease to the amount of Tax Waste in States
+state_trade_advantage_from_capacity_add:
+  Mask: state
+  Name: Trade Advantage from Capacity
+  Description: An increase or decrease in Trade Advantage from Trade Capacity in a State
+state_trade_advantage_mult:
+  Mask: state
+  Name: Trade Advantage
+  Description: An increase or decrease in overall Trade Advantage
+state_trade_advantage_same_religion_add:
+  Mask: state
+  Name: Trade Advantage with Co-Religionists
+  Description: An increase or decrease in overall Trade Advantage with Countries of the same State Religion
+state_trade_capacity_add:
+  Mask: state
+  Name: Trade Capacity
+  Description: An increase or decrease to the Trade Capacity of a State.
+state_trade_capacity_mult:
+  Mask: state
+  Name: Trade Capacity
+  Description: Trade Capacity
+state_trade_quantity_mult:
+  Mask: state
+  Name: Traded Quantity
+  Description: An increase or decrease to the quantity of Goods traded for each Trade Capacity.
 state_turmoil_effects_mult:
   Mask: state
   Name: State Penalties from Turmoil
@@ -1266,6 +1340,10 @@ state_urbanization_per_level_mult:
   Mask: state
   Name: Urbanization per Urban Center
   Description: Urbanization per Urban Center
+state_weekly_trades_add:
+  Mask: state
+  Name: Weekly Trades
+  Description: An increase or decrease to number of adjustments to Trade that a State can make each week.
 state_welfare_payments_add:
   Mask: state
   Name: Welfare Payments
@@ -1278,22 +1356,6 @@ state_working_adult_ratio_add:
   Mask: state
   Name: Workforce Ratio
   Description: The ratio of Workforce to Dependents
-tariff_export_add:
-  Mask: tariff
-  Name: Tariffs on Exports
-  Description: An increase or decrease to the Tariffs paid by foreign Trade Routes that export Goods from our Market.
-tariff_export_outside_power_bloc_mult:
-  Mask: tariff
-  Name: Tariffs on Exports outside Power Bloc
-  Description: An increase or decrease to the Tariffs paid by Trade Routes by Countries outside our Power Bloc that import Goods from our Market.
-tariff_import_add:
-  Mask: tariff
-  Name: Tariffs on Imports
-  Description: An increase or decrease to the Tariffs paid by foreign Trade Routes that import Goods to our Market.
-tariff_import_outside_power_bloc_mult:
-  Mask: tariff
-  Name: Tariffs on Imports outside Power Bloc
-  Description: An increase or decrease to the Tariffs paid by Trade Routes by Countries outside our Power Bloc that import Goods to our Market.
 tax_consumption_add:
   Mask: tax
   Name: Consumption Tax Rate
@@ -1346,6 +1408,14 @@ unit_army_offense_mult:
   Mask: unit
   Name: Army Offense
   Description: A Military Unit’s Offense (Army only)
+unit_blockade_add:
+  Mask: unit
+  Name: Blockade Strength
+  Description: A Military Unit’s ability to Blockade enemy ports
+unit_blockade_mult:
+  Mask: unit
+  Name: Blockade Strength
+  Description: A Military Unit’s ability to Blockade enemy ports
 unit_convoy_defense_mult:
   Mask: unit
   Name: Convoy Escort Defense
@@ -1476,6 +1546,10 @@ building_arts_academy_throughput_add:
   Mask: building
   Name: Arts Academy building Throughput
   Description: A bonus or penalty to both input and output of Arts Academy
+building_automotive_industry_throughput_add:
+  Mask: building
+  Name: Automotive Industries building Throughput
+  Description: A bonus or penalty to both input and output of Automotive Industries
 building_barracks_throughput_add:
   Mask: building
   Name: Barracks building Throughput
@@ -1496,6 +1570,10 @@ building_clergymen_shares_add:
   Mask: building
   Name: clergymen! Clergymen Pop Ownership Shares
   Description: An increase or decrease in a clergymen! Clergymen Pop Ownership Shares
+building_clerks_shares_add:
+  Mask: building
+  Name: clerks! Clerks Pop Ownership Shares
+  Description: An increase or decrease in a clerks! Clerks Pop Ownership Shares
 building_coal_mine_throughput_add:
   Mask: building
   Name: Coal Mines building Throughput
@@ -1648,6 +1726,10 @@ building_group_bg_arts_allowed_collectivization_add:
   Mask: building
   Name: Minimum Worker-Owned Arts Buildings Building Levels
   Description: The minimum amount of Arts Buildings Buildings that will be worker-owned.
+building_group_bg_arts_throughput_add:
+  Mask: building
+  Name: Arts Buildings Throughput
+  Description: A bonus or penalty to both input and output of Arts Buildings Buildings.
 building_group_bg_coal_mining_employee_mult:
   Mask: building
   Name: Coal Mining Employees
@@ -1764,6 +1846,10 @@ building_group_bg_heavy_industry_machinists_mortality_mult:
   Mask: building
   Name: Mortality of machinists! Machinists employed in Heavy Industry
   Description: An increase or decrease in the Mortality of machinists! Machinists employed in Heavy Industry
+building_group_bg_heavy_industry_mortality_mult:
+  Mask: building
+  Name: Heavy Industry Employee Mortality
+  Description: A bonus or penalty to the mortality of employees in Heavy Industry
 building_group_bg_heavy_industry_throughput_add:
   Mask: building
   Name: Heavy Industries Throughput
@@ -2344,10 +2430,6 @@ building_vineyard_plantation_throughput_add:
   Mask: building
   Name: Vineyards building Throughput
   Description: A bonus or penalty to both input and output of Vineyards
-building_war_machine_industry_throughput_add:
-  Mask: building
-  Name: War Machine Industries building Throughput
-  Description: A bonus or penalty to both input and output of War Machine Industries
 building_whaling_station_throughput_add:
   Mask: building
   Name: Whaling Stations building Throughput
@@ -3136,6 +3218,10 @@ goods_input_meat_add:
   Mask: goods
   Name: meat! Meat input
   Description: The amount of meat! Meat consumed by buildings
+goods_input_merchant_marine_add:
+  Mask: goods
+  Name: merchant_marine! Merchant Marine input
+  Description: The amount of merchant_marine! Merchant Marine consumed by buildings
 goods_input_oil_add:
   Mask: goods
   Name: oil! Oil input
@@ -3396,6 +3482,10 @@ goods_output_meat_add:
   Mask: goods
   Name: meat! Meat output
   Description: The amount of meat! Meat produced by buildings
+goods_output_merchant_marine_add:
+  Mask: goods
+  Name: merchant_marine! Merchant Marine output
+  Description: The amount of merchant_marine! Merchant Marine produced by buildings
 goods_output_oil_add:
   Mask: goods
   Name: oil! Oil output
@@ -3932,10 +4022,6 @@ state_building_naval_base_max_level_add:
   Mask: state
   Name: Naval Base Max Level
   Description: A bonus or penalty to the maximum level of Naval Base buildings.
-state_building_port_max_level_add:
-  Mask: state
-  Name: Port Max Level
-  Description: A bonus or penalty to the maximum level of Port buildings.
 state_bulgarian_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Bulgarian
@@ -5574,13 +5660,13 @@ building_clerks_fertility_mult:
   Mask: building
 building_clerks_mortality_mult:
   Mask: building
-building_clerks_shares_add:
-  Mask: building
 building_clerks_shares_mult:
   Mask: building
 building_coffee_plantation_throughput_add:
   Mask: building
 building_company_headquarter_throughput_add:
+  Mask: building
+building_company_regional_headquarter_throughput_add:
   Mask: building
 building_conscription_center_throughput_add:
   Mask: building
@@ -6153,8 +6239,6 @@ building_group_bg_arts_soldiers_standard_of_living_add:
 building_group_bg_arts_standard_of_living_add:
   Mask: building
 building_group_bg_arts_tax_mult:
-  Mask: building
-building_group_bg_arts_throughput_add:
   Mask: building
 building_group_bg_arts_unincorporated_throughput_add:
   Mask: building
@@ -6783,6 +6867,112 @@ building_group_bg_company_headquarter_tax_mult:
 building_group_bg_company_headquarter_throughput_add:
   Mask: building
 building_group_bg_company_headquarter_unincorporated_throughput_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_academics_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_academics_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_academics_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_aristocrats_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_aristocrats_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_aristocrats_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_bureaucrats_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_bureaucrats_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_bureaucrats_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_capitalists_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_capitalists_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_capitalists_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_clergymen_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_clergymen_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_clergymen_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_clerks_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_clerks_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_clerks_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_employee_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_engineers_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_engineers_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_engineers_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_farmers_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_farmers_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_farmers_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_infrastructure_usage_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_laborers_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_laborers_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_laborers_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_machinists_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_machinists_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_machinists_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_officers_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_officers_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_officers_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_peasants_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_peasants_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_peasants_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_shopkeepers_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_shopkeepers_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_shopkeepers_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_slaves_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_slaves_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_slaves_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_soldiers_fertility_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_soldiers_mortality_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_soldiers_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_standard_of_living_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_tax_mult:
+  Mask: building
+building_group_bg_company_regional_headquarter_throughput_add:
+  Mask: building
+building_group_bg_company_regional_headquarter_unincorporated_throughput_add:
   Mask: building
 building_group_bg_conscription_academics_fertility_mult:
   Mask: building
@@ -7863,8 +8053,6 @@ building_group_bg_heavy_industry_laborers_standard_of_living_add:
 building_group_bg_heavy_industry_machinists_fertility_mult:
   Mask: building
 building_group_bg_heavy_industry_machinists_standard_of_living_add:
-  Mask: building
-building_group_bg_heavy_industry_mortality_mult:
   Mask: building
 building_group_bg_heavy_industry_officers_fertility_mult:
   Mask: building
@@ -12480,6 +12668,8 @@ country_enactment_success_chance_law_appointed_bureaucrats_add:
   Mask: country
 country_enactment_success_chance_law_autocracy_add:
   Mask: country
+country_enactment_success_chance_law_canton_system_add:
+  Mask: country
 country_enactment_success_chance_law_censorship_add:
   Mask: country
 country_enactment_success_chance_law_census_voting_add:
@@ -12748,6 +12938,8 @@ goods_input_manowars_mult:
   Mask: goods
 goods_input_meat_mult:
   Mask: goods
+goods_input_merchant_marine_mult:
+  Mask: goods
 goods_input_opium_mult:
   Mask: goods
 goods_input_paper_mult:
@@ -12826,6 +13018,8 @@ goods_output_luxury_furniture_mult:
   Mask: goods
 goods_output_meat_mult:
   Mask: goods
+goods_output_merchant_marine_mult:
+  Mask: goods
 goods_output_opium_mult:
   Mask: goods
 goods_output_paper_mult:
@@ -12851,6 +13045,112 @@ goods_output_tobacco_mult:
 goods_output_transportation_mult:
   Mask: goods
 goods_output_wood_mult:
+  Mask: goods
+goods_trade_advantage_aeroplanes_mult:
+  Mask: goods
+goods_trade_advantage_ammunition_mult:
+  Mask: goods
+goods_trade_advantage_artillery_mult:
+  Mask: goods
+goods_trade_advantage_automobiles_mult:
+  Mask: goods
+goods_trade_advantage_clippers_mult:
+  Mask: goods
+goods_trade_advantage_clothes_mult:
+  Mask: goods
+goods_trade_advantage_coal_mult:
+  Mask: goods
+goods_trade_advantage_coffee_mult:
+  Mask: goods
+goods_trade_advantage_dye_mult:
+  Mask: goods
+goods_trade_advantage_electricity_mult:
+  Mask: goods
+goods_trade_advantage_engines_mult:
+  Mask: goods
+goods_trade_advantage_explosives_mult:
+  Mask: goods
+goods_trade_advantage_fabric_mult:
+  Mask: goods
+goods_trade_advantage_fertilizer_mult:
+  Mask: goods
+goods_trade_advantage_fine_art_mult:
+  Mask: goods
+goods_trade_advantage_fish_mult:
+  Mask: goods
+goods_trade_advantage_fruit_mult:
+  Mask: goods
+goods_trade_advantage_furniture_mult:
+  Mask: goods
+goods_trade_advantage_glass_mult:
+  Mask: goods
+goods_trade_advantage_gold_mult:
+  Mask: goods
+goods_trade_advantage_grain_mult:
+  Mask: goods
+goods_trade_advantage_groceries_mult:
+  Mask: goods
+goods_trade_advantage_hardwood_mult:
+  Mask: goods
+goods_trade_advantage_iron_mult:
+  Mask: goods
+goods_trade_advantage_ironclads_mult:
+  Mask: goods
+goods_trade_advantage_lead_mult:
+  Mask: goods
+goods_trade_advantage_liquor_mult:
+  Mask: goods
+goods_trade_advantage_luxury_clothes_mult:
+  Mask: goods
+goods_trade_advantage_luxury_furniture_mult:
+  Mask: goods
+goods_trade_advantage_manowars_mult:
+  Mask: goods
+goods_trade_advantage_meat_mult:
+  Mask: goods
+goods_trade_advantage_merchant_marine_mult:
+  Mask: goods
+goods_trade_advantage_oil_mult:
+  Mask: goods
+goods_trade_advantage_opium_mult:
+  Mask: goods
+goods_trade_advantage_paper_mult:
+  Mask: goods
+goods_trade_advantage_porcelain_mult:
+  Mask: goods
+goods_trade_advantage_radios_mult:
+  Mask: goods
+goods_trade_advantage_rubber_mult:
+  Mask: goods
+goods_trade_advantage_services_mult:
+  Mask: goods
+goods_trade_advantage_silk_mult:
+  Mask: goods
+goods_trade_advantage_small_arms_mult:
+  Mask: goods
+goods_trade_advantage_steamers_mult:
+  Mask: goods
+goods_trade_advantage_steel_mult:
+  Mask: goods
+goods_trade_advantage_sugar_mult:
+  Mask: goods
+goods_trade_advantage_sulfur_mult:
+  Mask: goods
+goods_trade_advantage_tanks_mult:
+  Mask: goods
+goods_trade_advantage_tea_mult:
+  Mask: goods
+goods_trade_advantage_telephones_mult:
+  Mask: goods
+goods_trade_advantage_tobacco_mult:
+  Mask: goods
+goods_trade_advantage_tools_mult:
+  Mask: goods
+goods_trade_advantage_transportation_mult:
+  Mask: goods
+goods_trade_advantage_wine_mult:
+  Mask: goods
+goods_trade_advantage_wood_mult:
   Mask: goods
 power_bloc_invite_acceptance_decentralized_power_add:
   Mask: power_bloc
@@ -12996,6 +13296,8 @@ state_infrastructure_from_manowars_consumption_add:
   Mask: state
 state_infrastructure_from_meat_consumption_add:
   Mask: state
+state_infrastructure_from_merchant_marine_consumption_add:
+  Mask: state
 state_infrastructure_from_oil_consumption_add:
   Mask: state
 state_infrastructure_from_opium_consumption_add:
@@ -13079,6 +13381,10 @@ state_peasants_investment_pool_efficiency_mult:
 state_pop_support_movement_hindu_nationalist_add:
   Mask: state
 state_pop_support_movement_hindu_nationalist_mult:
+  Mask: state
+state_pop_support_movement_minority_rights_add:
+  Mask: state
+state_pop_support_movement_minority_rights_mult:
   Mask: state
 state_pop_support_movement_muslim_nationalist_add:
   Mask: state
