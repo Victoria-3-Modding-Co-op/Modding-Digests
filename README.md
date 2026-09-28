@@ -3,6 +3,10 @@
 
 This repository contains modding digests for Victoria 3 updates including documentation and file changes.
 
+## Documentation
+
+The repository contains all official [documentation files](documentation) of the game. This can be used to see specific differences between updates. 
+
 ## Existing Digests
 - [1.8.7](1.8.7/discord.md)
 - [1.9.0](1.9.0/discord.md)
@@ -37,4 +41,4 @@ This repository contains modding digests for Victoria 3 updates including docume
 - [1.13.10](1.13.10/discord.md)
 - [1.13.11](1.13.11/discord.md)
 - [1.14.1-openbeta](1.14.1-openbeta/discord.md)
-- [1.14.4-openbeta](1.14.1-openbeta/discord.md)
+- [1.14.4-openbeta](1.14.4-openbeta/discord.md)
