@@ -1653,6 +1653,7 @@ withdrawing_country
 non_withdrawing_country
 treaty
 is_treaty_active
+is_renegotiation
 treaty_options
 binding_period
 article
