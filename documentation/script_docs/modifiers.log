@@ -19,6 +19,14 @@ building_cash_reserves_mult:
   Mask: building
   Name: Maximum Cash Reserves
   Description: A bonus or penalty to the maximum Cash Reserves that Buildings can retain.
+building_company_government_dividends_add:
+  Mask: building
+  Name: Company Government Dividends
+  Description: An increase or decrease to the amount of Government Dividends paid by Company Headquarters.
+building_company_worker_dividends_add:
+  Mask: building
+  Name: Company Workforce Dividends
+  Description: An increase or decrease to the amount of Dividends paid to the Workforce by Building levels owned by Companies.
 building_economy_of_scale_level_cap_add:
   Mask: building
   Name: Economy of Scale Building Level Cap
@@ -350,18 +358,10 @@ country_company_construction_efficiency_bonus_add:
   Mask: country
   Name: Company Construction Bonus
   Description: An increase or decrease to the weekly Construction progress added by Companies to their associated Buildings
-country_company_government_dividends_add:
-  Mask: country
-  Name: Company Government Dividends
-  Description: An increase or decrease to the amount of Government Dividends paid by Company Headquarters.
 country_company_throughput_bonus_add:
   Mask: country
   Name: Company Throughput Bonus
   Description: An increase or decrease to the Throughput added by Companies to their associated Buildings
-country_company_worker_dividends_add:
-  Mask: country
-  Name: Company Workforce Dividends
-  Description: An increase or decrease to the amount of Dividends paid to the Workforce by Building levels owned by Companies.
 country_construction_add:
   Mask: country
   Name: construction! Construction
@@ -418,10 +418,10 @@ country_disable_nationalization_without_compensation_bool:
   Mask: country
   Name: Disable Nationalization without compensation
   Description: Prevent Buildings from being Nationalized without compensation being paid to the owning Pops
-country_disable_privatization_bool:
+country_disable_non_company_privatization_bool:
   Mask: country
-  Name: Disable Privatization
-  Description: Disallow any Privatization
+  Name: Disable Privatization (except for Companies)
+  Description: Disallow any Privatization except by Companies
 country_disallow_aggressive_plays_bool:
   Mask: country
   Name: Disallow Aggressive Diplomatic Plays
@@ -722,7 +722,7 @@ country_pact_leverage_generation_mult:
   Mask: country
   Name: Leverage Generation from Diplomatic Pact
   Description: An increase or decrease to the amount of Leverage generated between two Countries with this Diplomatic Pact when the dominant Country in the Diplomatic Pact is a Power Bloc Leader
-country_party_whip_impact_mult:
+country_party_whip_impact_add:
   Mask: country
   Name: Party Whip Impact on Ideological Incoherence
   Description: A bonus or penalty to the effect that Party Whip has on the Ideological opinion of the rest of the Party members
@@ -870,6 +870,10 @@ country_voting_power_from_literacy_add:
   Mask: country
   Name: Political Strength from Literate Pops' Votes
   Description: An increase or decrease to amount of Political Strength gained from each vote in Elections, modified by the Literacy of the voting Pop
+country_voting_power_mult:
+  Mask: country
+  Name: Political Strength per Vote
+  Description: An increase or decrease to amount of Political Strength gained from each vote in Elections
 country_voting_power_wealth_threshold_add:
   Mask: country
   Name: Wealth Threshold for Voting
@@ -1718,6 +1722,10 @@ building_engineers_mortality_mult:
   Mask: building
   Name: Mortality of engineers! Engineers
   Description: An increase or decrease in the Mortality of engineers! Engineers
+building_engineers_shares_add:
+  Mask: building
+  Name: engineers! Engineers Pop Ownership Shares
+  Description: An increase or decrease in an engineers! Engineers Pop Ownership Shares
 building_explosives_factory_throughput_add:
   Mask: building
   Name: Explosives Factory building Throughput
@@ -2410,6 +2418,10 @@ building_laborers_mortality_mult:
   Mask: building
   Name: Mortality of laborers! Laborers
   Description: An increase or decrease in the Mortality of laborers! Laborers
+building_laborers_shares_add:
+  Mask: building
+  Name: laborers! Laborers Pop Ownership Shares
+  Description: An increase or decrease in a laborers! Laborers Pop Ownership Shares
 building_lead_mine_throughput_add:
   Mask: building
   Name: Lead Mines building Throughput
@@ -2422,6 +2434,10 @@ building_machinists_mortality_mult:
   Mask: building
   Name: Mortality of machinists! Machinists
   Description: An increase or decrease in the Mortality of machinists! Machinists
+building_machinists_shares_add:
+  Mask: building
+  Name: machinists! Machinists Pop Ownership Shares
+  Description: An increase or decrease in a machinists! Machinists Pop Ownership Shares
 building_maize_farm_throughput_add:
   Mask: building
   Name: Maize Farms building Throughput
@@ -2446,6 +2462,10 @@ building_naval_base_throughput_add:
   Mask: building
   Name: Naval Base building Throughput
   Description: A bonus or penalty to both input and output of Naval Base
+building_officers_shares_add:
+  Mask: building
+  Name: officers! Officers Pop Ownership Shares
+  Description: An increase or decrease in an officers! Officers Pop Ownership Shares
 building_opium_plantation_throughput_add:
   Mask: building
   Name: Opium Plantations building Throughput
@@ -2490,6 +2510,10 @@ building_silk_plantation_throughput_add:
   Mask: building
   Name: Silk Plantations building Throughput
   Description: A bonus or penalty to both input and output of Silk Plantations
+building_soldiers_shares_add:
+  Mask: building
+  Name: soldiers! Servicemen Pop Ownership Shares
+  Description: An increase or decrease in a soldiers! Servicemen Pop Ownership Shares
 building_steel_mills_throughput_add:
   Mask: building
   Name: Steel Mills building Throughput
@@ -6326,6 +6350,14 @@ state_aborigine_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Aboriginal
   Description: A bonus or penalty to a specific culture's [concept_sol]
+state_academics_investment_pool_contribution_add:
+  Mask: state
+  Name: academics! Academics Investment Pool contribution
+  Description: How much of their profits academics! Academics will invest
+state_academics_investment_pool_efficiency_mult:
+  Mask: state
+  Name: academics! Academics Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from academics! Academics will contribute to the Investment Pool
 state_academics_mortality_mult:
   Mask: state
   Name: Mortality of academics! Academics
@@ -6674,6 +6706,14 @@ state_clergymen_investment_pool_efficiency_mult:
   Mask: state
   Name: clergymen! Clergymen Investment Pool contribution efficiency
   Description: An increase or decrease to how much the invested profits from clergymen! Clergymen will contribute to the Investment Pool
+state_clerks_investment_pool_contribution_add:
+  Mask: state
+  Name: clerks! Clerks Investment Pool contribution
+  Description: How much of their profits clerks! Clerks will invest
+state_clerks_investment_pool_efficiency_mult:
+  Mask: state
+  Name: clerks! Clerks Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from clerks! Clerks will contribute to the Investment Pool
 state_colombian_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Colombian
@@ -6746,6 +6786,14 @@ state_edo_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Edo
   Description: A bonus or penalty to a specific culture's [concept_sol]
+state_engineers_investment_pool_contribution_add:
+  Mask: state
+  Name: engineers! Engineers Investment Pool contribution
+  Description: How much of their profits engineers! Engineers will invest
+state_engineers_investment_pool_efficiency_mult:
+  Mask: state
+  Name: engineers! Engineers Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from engineers! Engineers will contribute to the Investment Pool
 state_equatorial_bantu_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Equatorial Bantu
@@ -7074,6 +7122,14 @@ state_kurdish_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Kurdish
   Description: A bonus or penalty to a specific culture's [concept_sol]
+state_laborers_investment_pool_contribution_add:
+  Mask: state
+  Name: laborers! Laborers Investment Pool contribution
+  Description: How much of their profits laborers! Laborers will invest
+state_laborers_investment_pool_efficiency_mult:
+  Mask: state
+  Name: laborers! Laborers Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from laborers! Laborers will contribute to the Investment Pool
 state_laborers_mortality_mult:
   Mask: state
   Name: Mortality of laborers! Laborers
@@ -7142,6 +7198,14 @@ state_maasai_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Maasai
   Description: A bonus or penalty to a specific culture's [concept_sol]
+state_machinists_investment_pool_contribution_add:
+  Mask: state
+  Name: machinists! Machinists Investment Pool contribution
+  Description: How much of their profits machinists! Machinists will invest
+state_machinists_investment_pool_efficiency_mult:
+  Mask: state
+  Name: machinists! Machinists Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from machinists! Machinists will contribute to the Investment Pool
 state_machinists_mortality_mult:
   Mask: state
   Name: Mortality of machinists! Machinists
@@ -7350,6 +7414,14 @@ state_occitan_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Occitan
   Description: A bonus or penalty to a specific culture's [concept_sol]
+state_officers_investment_pool_contribution_add:
+  Mask: state
+  Name: officers! Officers Investment Pool contribution
+  Description: How much of their profits officers! Officers will invest
+state_officers_investment_pool_efficiency_mult:
+  Mask: state
+  Name: officers! Officers Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from officers! Officers will contribute to the Investment Pool
 state_oodham_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for O’odham
@@ -7838,6 +7910,14 @@ state_slovene_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Slovene
   Description: A bonus or penalty to a specific culture's [concept_sol]
+state_soldiers_investment_pool_contribution_add:
+  Mask: state
+  Name: soldiers! Servicemen Investment Pool contribution
+  Description: How much of their profits soldiers! Servicemen will invest
+state_soldiers_investment_pool_efficiency_mult:
+  Mask: state
+  Name: soldiers! Servicemen Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from soldiers! Servicemen will contribute to the Investment Pool
 state_soldiers_mortality_mult:
   Mask: state
   Name: Mortality of soldiers! Servicemen
@@ -8304,8 +8384,6 @@ building_employment_soldiers_mult:
   Mask: building
 building_engineers_fertility_mult:
   Mask: building
-building_engineers_shares_add:
-  Mask: building
 building_engineers_shares_mult:
   Mask: building
 building_eye_of_sahara_throughput_add:
@@ -8626,111 +8704,111 @@ building_group_bg_army_throughput_add:
   Mask: building
 building_group_bg_army_unincorporated_throughput_add:
   Mask: building
-building_group_bg_artillery_foundaries_academics_fertility_mult:
+building_group_bg_artillery_foundries_academics_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_academics_mortality_mult:
+building_group_bg_artillery_foundries_academics_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_academics_standard_of_living_add:
+building_group_bg_artillery_foundries_academics_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_aristocrats_fertility_mult:
+building_group_bg_artillery_foundries_aristocrats_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_aristocrats_mortality_mult:
+building_group_bg_artillery_foundries_aristocrats_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_aristocrats_standard_of_living_add:
+building_group_bg_artillery_foundries_aristocrats_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_bureaucrats_fertility_mult:
+building_group_bg_artillery_foundries_bureaucrats_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_bureaucrats_mortality_mult:
+building_group_bg_artillery_foundries_bureaucrats_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_bureaucrats_standard_of_living_add:
+building_group_bg_artillery_foundries_bureaucrats_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_capitalists_fertility_mult:
+building_group_bg_artillery_foundries_capitalists_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_capitalists_mortality_mult:
+building_group_bg_artillery_foundries_capitalists_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_capitalists_standard_of_living_add:
+building_group_bg_artillery_foundries_capitalists_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_clergymen_fertility_mult:
+building_group_bg_artillery_foundries_clergymen_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_clergymen_mortality_mult:
+building_group_bg_artillery_foundries_clergymen_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_clergymen_standard_of_living_add:
+building_group_bg_artillery_foundries_clergymen_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_clerks_fertility_mult:
+building_group_bg_artillery_foundries_clerks_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_clerks_mortality_mult:
+building_group_bg_artillery_foundries_clerks_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_clerks_standard_of_living_add:
+building_group_bg_artillery_foundries_clerks_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_employee_mult:
+building_group_bg_artillery_foundries_employee_mult:
   Mask: building
-building_group_bg_artillery_foundaries_engineers_fertility_mult:
+building_group_bg_artillery_foundries_engineers_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_engineers_mortality_mult:
+building_group_bg_artillery_foundries_engineers_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_engineers_standard_of_living_add:
+building_group_bg_artillery_foundries_engineers_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_farmers_fertility_mult:
+building_group_bg_artillery_foundries_farmers_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_farmers_mortality_mult:
+building_group_bg_artillery_foundries_farmers_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_farmers_standard_of_living_add:
+building_group_bg_artillery_foundries_farmers_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_fertility_mult:
+building_group_bg_artillery_foundries_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_infrastructure_usage_mult:
+building_group_bg_artillery_foundries_infrastructure_usage_mult:
   Mask: building
-building_group_bg_artillery_foundaries_laborers_fertility_mult:
+building_group_bg_artillery_foundries_laborers_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_laborers_mortality_mult:
+building_group_bg_artillery_foundries_laborers_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_laborers_standard_of_living_add:
+building_group_bg_artillery_foundries_laborers_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_machinists_fertility_mult:
+building_group_bg_artillery_foundries_machinists_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_machinists_mortality_mult:
+building_group_bg_artillery_foundries_machinists_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_machinists_standard_of_living_add:
+building_group_bg_artillery_foundries_machinists_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_mortality_mult:
+building_group_bg_artillery_foundries_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_officers_fertility_mult:
+building_group_bg_artillery_foundries_officers_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_officers_mortality_mult:
+building_group_bg_artillery_foundries_officers_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_officers_standard_of_living_add:
+building_group_bg_artillery_foundries_officers_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_peasants_fertility_mult:
+building_group_bg_artillery_foundries_peasants_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_peasants_mortality_mult:
+building_group_bg_artillery_foundries_peasants_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_peasants_standard_of_living_add:
+building_group_bg_artillery_foundries_peasants_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_shopkeepers_fertility_mult:
+building_group_bg_artillery_foundries_shopkeepers_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_shopkeepers_mortality_mult:
+building_group_bg_artillery_foundries_shopkeepers_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_shopkeepers_standard_of_living_add:
+building_group_bg_artillery_foundries_shopkeepers_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_slaves_fertility_mult:
+building_group_bg_artillery_foundries_slaves_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_slaves_mortality_mult:
+building_group_bg_artillery_foundries_slaves_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_slaves_standard_of_living_add:
+building_group_bg_artillery_foundries_slaves_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_soldiers_fertility_mult:
+building_group_bg_artillery_foundries_soldiers_fertility_mult:
   Mask: building
-building_group_bg_artillery_foundaries_soldiers_mortality_mult:
+building_group_bg_artillery_foundries_soldiers_mortality_mult:
   Mask: building
-building_group_bg_artillery_foundaries_soldiers_standard_of_living_add:
+building_group_bg_artillery_foundries_soldiers_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_standard_of_living_add:
+building_group_bg_artillery_foundries_standard_of_living_add:
   Mask: building
-building_group_bg_artillery_foundaries_tax_mult:
+building_group_bg_artillery_foundries_tax_mult:
   Mask: building
-building_group_bg_artillery_foundaries_throughput_add:
+building_group_bg_artillery_foundries_throughput_add:
   Mask: building
-building_group_bg_artillery_foundaries_unincorporated_throughput_add:
+building_group_bg_artillery_foundries_unincorporated_throughput_add:
   Mask: building
 building_group_bg_arts_academics_fertility_mult:
   Mask: building
@@ -15148,15 +15226,11 @@ building_khaju_bridge_throughput_add:
   Mask: building
 building_laborers_fertility_mult:
   Mask: building
-building_laborers_shares_add:
-  Mask: building
 building_laborers_shares_mult:
   Mask: building
 building_logging_camp_throughput_add:
   Mask: building
 building_machinists_fertility_mult:
-  Mask: building
-building_machinists_shares_add:
   Mask: building
 building_machinists_shares_mult:
   Mask: building
@@ -15173,8 +15247,6 @@ building_observatorygreenwich_throughput_add:
 building_officers_fertility_mult:
   Mask: building
 building_officers_mortality_mult:
-  Mask: building
-building_officers_shares_add:
   Mask: building
 building_officers_shares_mult:
   Mask: building
@@ -15215,8 +15287,6 @@ building_slaves_shares_mult:
 building_soldiers_fertility_mult:
   Mask: building
 building_soldiers_mortality_mult:
-  Mask: building
-building_soldiers_shares_add:
   Mask: building
 building_soldiers_shares_mult:
   Mask: building
@@ -15409,6 +15479,8 @@ country_enactment_success_chance_law_outlawed_dissent_add:
 country_enactment_success_chance_law_parliamentary_republic_add:
   Mask: country
 country_enactment_success_chance_law_peasant_levies_add:
+  Mask: country
+country_enactment_success_chance_law_people_of_the_book_add:
   Mask: country
 country_enactment_success_chance_law_per_capita_based_taxation_add:
   Mask: country
@@ -15780,10 +15852,6 @@ state_academics_dependent_wage_mult:
   Mask: state
 state_academics_internal_migration_disallowed_bool:
   Mask: state
-state_academics_investment_pool_contribution_add:
-  Mask: state
-state_academics_investment_pool_efficiency_mult:
-  Mask: state
 state_academics_mass_migration_disallowed_bool:
   Mask: state
 state_aristocrats_dependent_wage_mult:
@@ -15820,10 +15888,6 @@ state_clerks_dependent_wage_mult:
   Mask: state
 state_clerks_internal_migration_disallowed_bool:
   Mask: state
-state_clerks_investment_pool_contribution_add:
-  Mask: state
-state_clerks_investment_pool_efficiency_mult:
-  Mask: state
 state_clerks_mass_migration_disallowed_bool:
   Mask: state
 state_clerks_mortality_mult:
@@ -15831,10 +15895,6 @@ state_clerks_mortality_mult:
 state_engineers_dependent_wage_mult:
   Mask: state
 state_engineers_internal_migration_disallowed_bool:
-  Mask: state
-state_engineers_investment_pool_contribution_add:
-  Mask: state
-state_engineers_investment_pool_efficiency_mult:
   Mask: state
 state_engineers_mass_migration_disallowed_bool:
   Mask: state
@@ -15954,29 +16014,17 @@ state_laborers_dependent_wage_mult:
   Mask: state
 state_laborers_internal_migration_disallowed_bool:
   Mask: state
-state_laborers_investment_pool_contribution_add:
-  Mask: state
-state_laborers_investment_pool_efficiency_mult:
-  Mask: state
 state_laborers_mass_migration_disallowed_bool:
   Mask: state
 state_machinists_dependent_wage_mult:
   Mask: state
 state_machinists_internal_migration_disallowed_bool:
   Mask: state
-state_machinists_investment_pool_contribution_add:
-  Mask: state
-state_machinists_investment_pool_efficiency_mult:
-  Mask: state
 state_machinists_mass_migration_disallowed_bool:
   Mask: state
 state_officers_dependent_wage_mult:
   Mask: state
 state_officers_internal_migration_disallowed_bool:
-  Mask: state
-state_officers_investment_pool_contribution_add:
-  Mask: state
-state_officers_investment_pool_efficiency_mult:
   Mask: state
 state_officers_mass_migration_disallowed_bool:
   Mask: state
@@ -16125,10 +16173,6 @@ state_slaves_mass_migration_disallowed_bool:
 state_soldiers_dependent_wage_mult:
   Mask: state
 state_soldiers_internal_migration_disallowed_bool:
-  Mask: state
-state_soldiers_investment_pool_contribution_add:
-  Mask: state
-state_soldiers_investment_pool_efficiency_mult:
   Mask: state
 state_soldiers_mass_migration_disallowed_bool:
   Mask: state

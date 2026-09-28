@@ -6370,6 +6370,18 @@ Return type: [unregistered]
 
 -----------------------
 
+concept_gdp_ownership
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+concept_gdp_ownership_desc
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
 concept_gdp_per_capita
 Definition type: Global function
 Return type: [unregistered]
@@ -22992,6 +23004,18 @@ Return type: DataTrend
 
 -----------------------
 
+Country.GetDomesticallyOwnedGDP
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+Country.GetDomesticallyOwnedGDPFraction
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 Country.GetDraftTreaties
 Definition type: Function
 Return type: [unregistered]
@@ -23250,6 +23274,24 @@ Return type: CString
 
 -----------------------
 
+Country.GetForeignOwnedGDP
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+Country.GetForeignOwnedGDPDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+Country.GetForeignOwnedGDPFraction
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 Country.GetFormattedStandardOfLivingAll
 Definition type: Function
 Return type: CString
@@ -23358,6 +23400,18 @@ Return type: CFixedPoint
 
 -----------------------
 
+Country.GetGDPOwnedInForeignCountries
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+Country.GetGDPOwnedInForeignCountriesDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 Country.GetGDPPerCapita
 Definition type: Function
 Return type: CFixedPoint
@@ -23379,6 +23433,12 @@ Return type: CString
 Country.GetGDPTrend
 Definition type: Function
 Return type: DataTrend
+
+-----------------------
+
+Country.GetGDPWithOwnershipsInForeignCountries
+Definition type: Function
+Return type: CFixedPoint
 
 -----------------------
 
@@ -27318,6 +27378,12 @@ Return type: CString
 -----------------------
 
 CountryCreation.ListReleasableStates( Arg0 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+CountryCreation.ListReleasableStatesWithoutHomeland( Arg0 )
 Definition type: Function
 Return type: CString
 
@@ -58067,9 +58133,21 @@ Return type: bool
 
 -----------------------
 
+ReleaseCountryWindow.CanReleaseWithKeepHomelandStates
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 ReleaseCountryWindow.GetCountryCreation
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+ReleaseCountryWindow.GetKeepHomelandStatesTooltip
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -58115,6 +58193,12 @@ Return type: bool
 
 -----------------------
 
+ReleaseCountryWindow.ToggleKeepHomelandStates
+Definition type: Function
+Return type: void
+
+-----------------------
+
 ReleaseCountryWindow.ToggleMakeIndependent
 Definition type: Function
 Return type: void
@@ -58130,6 +58214,12 @@ Return type: void
 ReleaseCountryWindow.TogglePlayAsReleased
 Definition type: Function
 Return type: void
+
+-----------------------
+
+ReleaseCountryWindow.WillKeepHomelandStates
+Definition type: Function
+Return type: bool
 
 -----------------------
 
@@ -66176,6 +66266,18 @@ Return type: bool
 -----------------------
 
 ThemeBulkSelectionGroup.HasDlcRequirement
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+ThemeBulkSelectionGroup.IsCustom
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+ThemeBulkSelectionGroup.IsDynamic
 Definition type: Function
 Return type: bool
 
