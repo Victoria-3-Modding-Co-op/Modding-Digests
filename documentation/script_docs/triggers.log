@@ -151,58 +151,6 @@ any_country = { <count=num/all> / <percent=fixed_point> <triggers> }
 **Supported Targets**: country  
 
 ## any_country_in_africa
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_alpide_belt
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_americas
-gfx_artillery_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:artillery = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_andean_federation
-gfx_artillery_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:artillery = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_angola
 gfx_infantry_mobilization_count = {  
 	value = 0  
 	market = {  
@@ -213,6 +161,55 @@ gfx_infantry_mobilization_count = {
 	divide = 1000  
 	add = 1  
 	max = 3  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
+## any_country_in_alpide_belt
+money_amount_multiplier_very_small = {  
+	value = root.gdp  
+	divide = 10000  
+	multiply = 0.075  
+	round = yes  
+	multiply = 10  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
+## any_country_in_americas
+army_projection_comparison = {  
+	add = overlord.army_power_projection  
+	if = {  
+		limit = {  
+			army_power_projection > 0  
+		}  
+		divide = army_power_projection  
+	}  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
+## any_country_in_andean_federation
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
+## any_country_in_angola
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
@@ -241,39 +238,30 @@ state_urbanization_rate = {
 **Supported Targets**: country  
 
 ## any_country_in_bolivia
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
 ## any_country_in_brazil
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
 ## any_country_in_castile
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_central_america
 gfx_infantry_mobilization_count = {  
 	value = 0  
 	market = {  
@@ -288,7 +276,7 @@ gfx_infantry_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
-## any_country_in_central_asia
+## any_country_in_central_america
 state_urbanization_rate = {  
     value = total_urbanization  
     divide = state_population  
@@ -299,7 +287,7 @@ state_urbanization_rate = {
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
-## any_country_in_china
+## any_country_in_central_asia
 gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
@@ -314,24 +302,22 @@ gfx_artillery_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
-## any_country_in_chorasmia
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
+## any_country_in_china
+state_urbanization_rate = {  
+    value = total_urbanization  
+    divide = state_population  
+    multiply = 1000  
+    min = 0  
+    max = 1  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
-## any_country_in_colonial_la_plata
-gfx_infantry_mobilization_count = {  
+## any_country_in_chorasmia
+gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
-		mg:small_arms = {  
+		mg:artillery = {  
 			add = market_goods_sell_orders  
 		}  
 	}  
@@ -342,57 +328,53 @@ gfx_infantry_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
+## any_country_in_colonial_la_plata
+state_urbanization_rate = {  
+    value = total_urbanization  
+    divide = state_population  
+    multiply = 1000  
+    min = 0  
+    max = 1  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
 ## any_country_in_colonial_new_grenada
-money_amount_multiplier_very_small = {  
+money_amount_multiplier_very_large = {  
 	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
+	divide = 1000000  
+	multiply = 2.5  
 	round = yes  
-	multiply = 10  
+	multiply = 1000  
 	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
 ## any_country_in_colonial_new_spain
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
+state_urbanization_rate = {  
+    value = total_urbanization  
+    divide = state_population  
+    multiply = 1000  
+    min = 0  
+    max = 1  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
 ## any_country_in_colonial_peru
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_east_asia
-money_amount_multiplier_very_small = {  
+money_amount_multiplier_more_large = {  
 	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
+	divide = 1000000  
+	multiply = 1  
 	round = yes  
-	multiply = 10  
+	multiply = 1000  
 	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
-## any_country_in_europe
+## any_country_in_east_asia
 army_projection_comparison = {  
 	add = overlord.army_power_projection  
 	if = {  
@@ -405,11 +387,23 @@ army_projection_comparison = {
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
+## any_country_in_europe
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
 ## any_country_in_german_confederation
-gfx_infantry_mobilization_count = {  
+gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
-		mg:small_arms = {  
+		mg:artillery = {  
 			add = market_goods_sell_orders  
 		}  
 	}  
@@ -421,45 +415,29 @@ gfx_infantry_mobilization_count = {
 **Supported Targets**: country  
 
 ## any_country_in_great_rift_valley
-money_amount_multiplier_very_small = {  
+money_amount_multiplier_large = {  
 	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
+	divide = 1000000  
+	multiply = 0.5  
 	round = yes  
-	multiply = 10  
+	multiply = 1000  
 	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
 ## any_country_in_greater_germany
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
+state_urbanization_rate = {  
+    value = total_urbanization  
+    divide = state_population  
+    multiply = 1000  
+    min = 0  
+    max = 1  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
 ## any_country_in_greater_khorasan
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_historic_byzantium
 army_projection_comparison = {  
 	add = overlord.army_power_projection  
 	if = {  
@@ -468,6 +446,18 @@ army_projection_comparison = {
 		}  
 		divide = army_power_projection  
 	}  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
+## any_country_in_historic_byzantium
+money_amount_multiplier_very_small = {  
+	value = root.gdp  
+	divide = 10000  
+	multiply = 0.075  
+	round = yes  
+	multiply = 10  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
@@ -488,16 +478,13 @@ gfx_infantry_mobilization_count = {
 **Supported Targets**: country  
 
 ## any_country_in_iberia
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
+money_amount_multiplier_very_small = {  
+	value = root.gdp  
+	divide = 10000  
+	multiply = 0.075  
+	round = yes  
+	multiply = 10  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
@@ -518,28 +505,18 @@ gfx_infantry_mobilization_count = {
 **Supported Targets**: country  
 
 ## any_country_in_india
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_very_small = {  
+	value = root.gdp  
+	divide = 10000  
+	multiply = 0.075  
+	round = yes  
+	multiply = 10  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
 ## any_country_in_italy
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_megali_greece
 army_projection_comparison = {  
 	add = overlord.army_power_projection  
 	if = {  
@@ -552,7 +529,7 @@ army_projection_comparison = {
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
-## any_country_in_middle_east
+## any_country_in_megali_greece
 gfx_infantry_mobilization_count = {  
 	value = 0  
 	market = {  
@@ -567,7 +544,119 @@ gfx_infantry_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
+## any_country_in_middle_east
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
 ## any_country_in_mozambique
+money_amount_multiplier_very_small = {  
+	value = root.gdp  
+	divide = 10000  
+	multiply = 0.075  
+	round = yes  
+	multiply = 10  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
+## any_country_in_north_africa
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
+## any_country_in_north_america
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
+## any_country_in_peru
+army_projection_comparison = {  
+	add = overlord.army_power_projection  
+	if = {  
+		limit = {  
+			army_power_projection > 0  
+		}  
+		divide = army_power_projection  
+	}  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
+## any_country_in_ring_of_fire
+money_amount_multiplier_very_small = {  
+	value = root.gdp  
+	divide = 10000  
+	multiply = 0.075  
+	round = yes  
+	multiply = 10  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
+## any_country_in_scandinavia
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
+## any_country_in_south_africa
+gfx_infantry_mobilization_count = {  
+	value = 0  
+	market = {  
+		mg:small_arms = {  
+			add = market_goods_sell_orders  
+		}  
+	}  
+	divide = 1000  
+	add = 1  
+	max = 3  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
+## any_country_in_south_america
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: country  
+
+## any_country_in_south_east_asia
 gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
@@ -582,171 +671,73 @@ gfx_artillery_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
-## any_country_in_north_africa
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_north_america
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_peru
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_ring_of_fire
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_scandinavia
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_south_africa
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_south_america
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
-## any_country_in_south_east_asia
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: country  
-
 ## any_country_in_subsaharan_africa
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
 ## any_country_in_transoxiana
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
 ## any_country_in_west_africa
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
+gfx_infantry_mobilization_count = {  
+	value = 0  
+	market = {  
+		mg:small_arms = {  
+			add = market_goods_sell_orders  
 		}  
-		divide = army_power_projection  
 	}  
+	divide = 1000  
+	add = 1  
+	max = 3  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
 ## any_country_in_wet_process_region
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
 ## any_country_in_yugoslavia
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: country  
 
 ## any_country_in_zambezi_basin
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
+state_urbanization_rate = {  
+    value = total_urbanization  
+    divide = state_population  
     multiply = 1000  
     min = 0  
     max = 1  
@@ -974,77 +965,107 @@ Reads nothing for all scopes.
 **Supported Targets**: state  
 
 ## any_province_in_africa
-†∆sê
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
-## any_province_in_alpide_belt
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
-## any_province_in_americas
-†œsê
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
-## any_province_in_andean_federation
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
+provinces_with_elevated_terrain = {  
+	every_province = {  
+		if = {  
+			limit = { has_label = label_elevated }  
+			add = 1  
 		}  
-		divide = army_power_projection  
 	}  
 }
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
-## any_province_in_angola
-money_amount_multiplier_small = {  
+## any_province_in_alpide_belt
+money_amount_multiplier_very_large = {  
 	value = root.gdp  
-	divide = 100000  
-	multiply = 0.15  
+	divide = 1000000  
+	multiply = 2.5  
 	round = yes  
-	multiply = 100  
+	multiply = 1000  
 	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
+## any_province_in_americas
+gfx_capitalship_deploy_count = {  
+	value = 0  
+	scope:military_formation = { add = num_units }  
+	divide = 50  
+	add = 1  
+	max = 10  
+}
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
+## any_province_in_andean_federation
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
+## any_province_in_angola
+†ì≈Õ4
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
 ## any_province_in_aragon
-†»sê
+ Å≈Õ4
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
 ## any_province_in_balkans
- Ãsê
+†ì≈Õ4
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
 ## any_province_in_bolivia
- Œsê
+building_groups_extra = {  
+	add = building_group_levels_to_increase_value  
+	subtract = building_group_levels_existing  
+}
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
 ## any_province_in_brazil
-†»sê
+concentration_of_defensive_mobilized_battalions = {  
+	add = num_mobilized_units_in_theater  
+	divide = num_provinces_in_theater  
+}
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
 ## any_province_in_castile
-†∆sê
+gfx_infantry_deploy_count = {  
+	value = 0  
+	scope:military_formation = { add = num_units }  
+	divide = 50  
+	add = 1  
+	max = 10  
+}
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
 ## any_province_in_central_america
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
+## any_province_in_central_asia
 gfx_infantry_mobilization_count = {  
 	value = 0  
 	market = {  
@@ -1059,24 +1080,26 @@ gfx_infantry_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
-## any_province_in_central_asia
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+## any_province_in_china
+money_amount_multiplier_small = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.15  
+	round = yes  
+	multiply = 100  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
-## any_province_in_china
- –sê
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
 ## any_province_in_chorasmia
- Œsê
+gfx_lightship_deploy_count = {  
+	value = 0  
+	scope:military_formation = { add = num_units }  
+	divide = 50  
+	add = 1  
+	max = 10  
+}
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
@@ -1096,56 +1119,58 @@ gfx_infantry_mobilization_count = {
 **Supported Targets**: province  
 
 ## any_province_in_colonial_new_grenada
-gfx_artillery_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:artillery = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
 ## any_province_in_colonial_new_spain
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
 ## any_province_in_colonial_peru
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
 ## any_province_in_east_asia
- Ãsê
+building_levels_extra = {#uses IG scope  
+	add = building_levels_to_increase_value  
+	subtract = building_levels_existing  
+}
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
 ## any_province_in_europe
-†Œsê
+ Å≈Õ4
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
 ## any_province_in_german_confederation
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
+state_urbanization_rate = {  
+    value = total_urbanization  
+    divide = state_population  
     multiply = 1000  
     min = 0  
     max = 1  
@@ -1154,22 +1179,34 @@ country_urbanization_rate = {
 **Supported Targets**: province  
 
 ## any_province_in_great_rift_valley
-money_amount_multiplier_very_small = {  
+money_amount_multiplier_more_large = {  
 	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
+	divide = 1000000  
+	multiply = 1  
 	round = yes  
-	multiply = 10  
+	multiply = 1000  
 	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
 ## any_province_in_greater_germany
-gfx_artillery_mobilization_count = {  
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
+## any_province_in_greater_khorasan
+gfx_infantry_mobilization_count = {  
 	value = 0  
 	market = {  
-		mg:artillery = {  
+		mg:small_arms = {  
 			add = market_goods_sell_orders  
 		}  
 	}  
@@ -1180,37 +1217,20 @@ gfx_artillery_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
-## any_province_in_greater_khorasan
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
 ## any_province_in_historic_byzantium
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
 ## any_province_in_hungary
-†…sê
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
-## any_province_in_iberia
-gfx_artillery_deploy_count = {  
+gfx_supportship_deploy_count = {  
 	value = 0  
 	scope:military_formation = { add = num_units }  
 	divide = 50  
@@ -1220,15 +1240,25 @@ gfx_artillery_deploy_count = {
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
+## any_province_in_iberia
+†û≈Õ4
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
 ## any_province_in_iceland
-†√sê
+building_levels_extra = {#uses IG scope  
+	add = building_levels_to_increase_value  
+	subtract = building_levels_existing  
+}
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
 ## any_province_in_india
-concentration_of_defensive_mobilized_battalions = {  
-	add = num_mobilized_units_in_theater  
-	divide = num_provinces_in_theater  
+ottoman_power_projection = {  
+	every_in_global_list = {  
+		variable = ottoman_side_list  
+		add = army_power_projection  
+	}  
 }
 **Supported Scopes**: none  
 **Supported Targets**: province  
@@ -1246,126 +1276,21 @@ privy_purse_multiplier_base = {
 **Supported Targets**: province  
 
 ## any_province_in_megali_greece
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+gfx_artillery_mobilization_count = {  
+	value = 0  
+	market = {  
+		mg:artillery = {  
+			add = market_goods_sell_orders  
+		}  
+	}  
+	divide = 1000  
+	add = 1  
+	max = 3  
 }
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
 ## any_province_in_middle_east
-gfx_artillery_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:artillery = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
-}
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
-## any_province_in_mozambique
-gfx_artillery_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:artillery = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
-}
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
-## any_province_in_north_africa
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
-## any_province_in_north_america
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
-## any_province_in_peru
-†Œsê
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
-## any_province_in_ring_of_fire
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
-}
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
-## any_province_in_scandinavia
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
-}
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
-## any_province_in_south_africa
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
-## any_province_in_south_america
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
-}
-**Supported Scopes**: none  
-**Supported Targets**: province  
-
-## any_province_in_south_east_asia
 money_amount_multiplier_very_small = {  
 	value = root.gdp  
 	divide = 10000  
@@ -1377,7 +1302,7 @@ money_amount_multiplier_very_small = {
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
-## any_province_in_subsaharan_africa
+## any_province_in_mozambique
 state_urbanization_rate = {  
     value = total_urbanization  
     divide = state_population  
@@ -1388,18 +1313,43 @@ state_urbanization_rate = {
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
-## any_province_in_transoxiana
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+## any_province_in_north_africa
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
-## any_province_in_west_africa
+## any_province_in_north_america
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
+## any_province_in_peru
+money_amount_multiplier_small = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.15  
+	round = yes  
+	multiply = 100  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
+## any_province_in_ring_of_fire
 state_urbanization_rate = {  
     value = total_urbanization  
     divide = state_population  
@@ -1410,22 +1360,19 @@ state_urbanization_rate = {
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
-## any_province_in_wet_process_region
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
+## any_province_in_scandinavia
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
-## any_province_in_yugoslavia
+## any_province_in_south_africa
 gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
@@ -1440,13 +1387,101 @@ gfx_artillery_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: province  
 
-## any_province_in_zambezi_basin
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
+## any_province_in_south_america
+gfx_artillery_mobilization_count = {  
+	value = 0  
+	market = {  
+		mg:artillery = {  
+			add = market_goods_sell_orders  
+		}  
+	}  
+	divide = 1000  
+	add = 1  
+	max = 3  
+}
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
+## any_province_in_south_east_asia
+state_urbanization_rate = {  
+    value = total_urbanization  
+    divide = state_population  
     multiply = 1000  
     min = 0  
     max = 1  
+}
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
+## any_province_in_subsaharan_africa
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
+## any_province_in_transoxiana
+money_amount_multiplier_very_small = {  
+	value = root.gdp  
+	divide = 10000  
+	multiply = 0.075  
+	round = yes  
+	multiply = 10  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
+## any_province_in_west_africa
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
+## any_province_in_wet_process_region
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
+## any_province_in_yugoslavia
+army_projection_comparison = {  
+	add = overlord.army_power_projection  
+	if = {  
+		limit = {  
+			army_power_projection > 0  
+		}  
+		divide = army_power_projection  
+	}  
+}
+**Supported Scopes**: none  
+**Supported Targets**: province  
+
+## any_province_in_zambezi_basin
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: province  
@@ -1668,18 +1703,26 @@ any_state = { <count=num/all> / <percent=fixed_point> <triggers> }
 **Supported Targets**: state  
 
 ## any_state_in_africa
-building_groups_extra = {  
-	add = building_group_levels_to_increase_value  
-	subtract = building_group_levels_existing  
+gfx_capitalship_deploy_count = {  
+	value = 0  
+	scope:military_formation = { add = num_units }  
+	divide = 50  
+	add = 1  
+	max = 10  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state  
 
 ## any_state_in_alpide_belt
-provinces_with_forested_terrain = {  
+†ì≈Õ4
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_americas
+provinces_with_elevated_terrain = {  
 	every_province = {  
 		if = {  
-			limit = { has_label = label_forested }  
+			limit = { has_label = label_elevated }  
 			add = 1  
 		}  
 	}  
@@ -1687,23 +1730,86 @@ provinces_with_forested_terrain = {
 **Supported Scopes**: none  
 **Supported Targets**: state  
 
-## any_state_in_americas
- œsê
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
 ## any_state_in_andean_federation
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+army_projection_comparison = {  
+	add = overlord.army_power_projection  
+	if = {  
+		limit = {  
+			army_power_projection > 0  
+		}  
+		divide = army_power_projection  
+	}  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state  
 
 ## any_state_in_angola
+ Å≈Õ4
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_aragon
+ ì≈Õ4
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_balkans
+ ì≈Õ4
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_bolivia
+country_slave_culture_population = {  
+	value = "culture_percent_country(scope:culture)"  
+	multiply = total_population  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_brazil
+money_amount_multiplier_small = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.15  
+	round = yes  
+	multiply = 100  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_castile
+war_exhaustion_from_country_turmoil = {  
+	add = country_turmoil  
+	multiply = define:NWar|WAR_EXHAUSTION_TURMOIL_FACTOR  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_central_america
+gfx_infantry_deploy_count = {  
+	value = 0  
+	scope:military_formation = { add = num_units }  
+	divide = 50  
+	add = 1  
+	max = 10  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_central_asia
+money_amount_multiplier_small = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.15  
+	round = yes  
+	multiply = 100  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_china
 privy_purse_multiplier_base = {  
 	value = root.gdp  
 	divide = 100000  
@@ -1715,37 +1821,7 @@ privy_purse_multiplier_base = {
 **Supported Scopes**: none  
 **Supported Targets**: state  
 
-## any_state_in_aragon
-building_groups_extra = {  
-	add = building_group_levels_to_increase_value  
-	subtract = building_group_levels_existing  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_balkans
-†Ãsê
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_bolivia
-†Ãsê
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_brazil
-provinces_with_forested_terrain = {  
-	every_province = {  
-		if = {  
-			limit = { has_label = label_forested }  
-			add = 1  
-		}  
-	}  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_castile
+## any_state_in_chorasmia
 gfx_supportship_deploy_count = {  
 	value = 0  
 	scope:military_formation = { add = num_units }  
@@ -1753,32 +1829,6 @@ gfx_supportship_deploy_count = {
 	add = 1  
 	max = 10  
 }
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_central_america
-war_exhaustion_from_country_turmoil = {  
-	add = country_turmoil  
-	multiply = define:NWar|WAR_EXHAUSTION_TURMOIL_FACTOR  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_central_asia
-building_levels_extra = {#uses IG scope  
-	add = building_levels_to_increase_value  
-	subtract = building_levels_existing  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_china
-†œsê
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_chorasmia
- –sê
 **Supported Scopes**: none  
 **Supported Targets**: state  
 
@@ -1798,254 +1848,51 @@ gfx_artillery_mobilization_count = {
 **Supported Targets**: state  
 
 ## any_state_in_colonial_new_grenada
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state  
 
 ## any_state_in_colonial_new_spain
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state  
 
 ## any_state_in_colonial_peru
-†…sê
+building_groups_extra = {  
+	add = building_group_levels_to_increase_value  
+	subtract = building_group_levels_existing  
+}
 **Supported Scopes**: none  
 **Supported Targets**: state  
 
 ## any_state_in_east_asia
-† sê
+building_levels_extra = {#uses IG scope  
+	add = building_levels_to_increase_value  
+	subtract = building_levels_existing  
+}
 **Supported Scopes**: none  
 **Supported Targets**: state  
 
 ## any_state_in_europe
-†œsê
+ Å≈Õ4
 **Supported Scopes**: none  
 **Supported Targets**: state  
 
 ## any_state_in_german_confederation
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_great_rift_valley
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_greater_germany
-†¬sê
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_greater_khorasan
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_historic_byzantium
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_hungary
-† sê
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_iberia
-†∆sê
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_iceland
-gfx_infantry_deploy_count = {  
-	value = 0  
-	scope:military_formation = { add = num_units }  
-	divide = 50  
-	add = 1  
-	max = 10  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_india
-provinces_with_forested_terrain = {  
-	every_province = {  
-		if = {  
-			limit = { has_label = label_forested }  
-			add = 1  
-		}  
-	}  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_italy
-privy_purse_multiplier_base = {  
-	value = root.gdp  
-	divide = 100000  
-	multiply = 0.10  
-	round = yes  
-	multiply = 100  
-	min = 100  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_megali_greece
-provinces_with_elevated_terrain = {  
-	every_province = {  
-		if = {  
-			limit = { has_label = label_elevated }  
-			add = 1  
-		}  
-	}  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_middle_east
-gfx_artillery_deploy_count = {  
-	value = 0  
-	scope:military_formation = { add = num_units }  
-	divide = 50  
-	add = 1  
-	max = 10  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_mozambique
-†√sê
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_north_africa
-gfx_lightship_deploy_count = {  
-	value = 0  
-	scope:military_formation = { add = num_units }  
-	divide = 50  
-	add = 1  
-	max = 10  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_north_america
-provinces_with_forested_terrain = {  
-	every_province = {  
-		if = {  
-			limit = { has_label = label_forested }  
-			add = 1  
-		}  
-	}  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_peru
- –sê
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_ring_of_fire
-† sê
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_scandinavia
-country_slave_culture_population = {  
-	value = "culture_percent_country(scope:culture)"  
-	multiply = total_population  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_south_africa
-†¬sê
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_south_america
- Ãsê
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_south_east_asia
- œsê
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_subsaharan_africa
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_transoxiana
- œsê
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_west_africa
-money_amount_multiplier_small = {  
-	value = root.gdp  
-	divide = 100000  
-	multiply = 0.15  
-	round = yes  
-	multiply = 100  
-	min = 100  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state  
-
-## any_state_in_wet_process_region
 gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
@@ -2060,13 +1907,256 @@ gfx_artillery_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: state  
 
+## any_state_in_great_rift_valley
+money_amount_multiplier_very_small = {  
+	value = root.gdp  
+	divide = 10000  
+	multiply = 0.075  
+	round = yes  
+	multiply = 10  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_greater_germany
+ottoman_power_projection = {  
+	every_in_global_list = {  
+		variable = ottoman_side_list  
+		add = army_power_projection  
+	}  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_greater_khorasan
+money_amount_multiplier_very_small = {  
+	value = root.gdp  
+	divide = 10000  
+	multiply = 0.075  
+	round = yes  
+	multiply = 10  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_historic_byzantium
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_hungary
+ ï≈Õ4
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_iberia
+money_amount_multiplier_small = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.15  
+	round = yes  
+	multiply = 100  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_iceland
+country_slave_culture_population = {  
+	value = "culture_percent_country(scope:culture)"  
+	multiply = total_population  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_india
+country_slave_culture_population = {  
+	value = "culture_percent_country(scope:culture)"  
+	multiply = total_population  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_italy
+money_amount_multiplier_small = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.15  
+	round = yes  
+	multiply = 100  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_megali_greece
+gfx_capitalship_deploy_count = {  
+	value = 0  
+	scope:military_formation = { add = num_units }  
+	divide = 50  
+	add = 1  
+	max = 10  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_middle_east
+gfx_capitalship_deploy_count = {  
+	value = 0  
+	scope:military_formation = { add = num_units }  
+	divide = 50  
+	add = 1  
+	max = 10  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_mozambique
+ ï≈Õ4
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_north_africa
+gfx_artillery_deploy_count = {  
+	value = 0  
+	scope:military_formation = { add = num_units }  
+	divide = 50  
+	add = 1  
+	max = 10  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_north_america
+ Å≈Õ4
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_peru
+provinces_with_forested_terrain = {  
+	every_province = {  
+		if = {  
+			limit = { has_label = label_forested }  
+			add = 1  
+		}  
+	}  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_ring_of_fire
+ Å≈Õ4
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_scandinavia
+gfx_capitalship_deploy_count = {  
+	value = 0  
+	scope:military_formation = { add = num_units }  
+	divide = 50  
+	add = 1  
+	max = 10  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_south_africa
+gfx_infantry_deploy_count = {  
+	value = 0  
+	scope:military_formation = { add = num_units }  
+	divide = 50  
+	add = 1  
+	max = 10  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_south_america
+gfx_artillery_deploy_count = {  
+	value = 0  
+	scope:military_formation = { add = num_units }  
+	divide = 50  
+	add = 1  
+	max = 10  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_south_east_asia
+ottoman_power_projection = {  
+	every_in_global_list = {  
+		variable = ottoman_side_list  
+		add = army_power_projection  
+	}  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_subsaharan_africa
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_transoxiana
+gfx_infantry_deploy_count = {  
+	value = 0  
+	scope:military_formation = { add = num_units }  
+	divide = 50  
+	add = 1  
+	max = 10  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_west_africa
+ Å≈Õ4
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
+## any_state_in_wet_process_region
+gfx_infantry_mobilization_count = {  
+	value = 0  
+	market = {  
+		mg:small_arms = {  
+			add = market_goods_sell_orders  
+		}  
+	}  
+	divide = 1000  
+	add = 1  
+	max = 3  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state  
+
 ## any_state_in_yugoslavia
-†√sê
+gfx_supportship_deploy_count = {  
+	value = 0  
+	scope:military_formation = { add = num_units }  
+	divide = 50  
+	add = 1  
+	max = 10  
+}
 **Supported Scopes**: none  
 **Supported Targets**: state  
 
 ## any_state_in_zambezi_basin
-gfx_supportship_deploy_count = {  
+gfx_lightship_deploy_count = {  
 	value = 0  
 	scope:military_formation = { add = num_units }  
 	divide = 50  
@@ -2083,21 +2173,42 @@ any_state_region = { <count=num/all> / <percent=fixed_point> <triggers> }
 **Supported Targets**: state_region  
 
 ## any_state_region_in_africa
-gfx_artillery_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:artillery = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_alpide_belt
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state_region  
+
+## any_state_region_in_americas
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state_region  
+
+## any_state_region_in_andean_federation
 army_projection_comparison = {  
 	add = overlord.army_power_projection  
 	if = {  
@@ -2110,84 +2221,48 @@ army_projection_comparison = {
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
-## any_state_region_in_americas
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state_region  
-
-## any_state_region_in_andean_federation
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state_region  
-
 ## any_state_region_in_angola
-money_amount_multiplier_very_small = {  
+money_amount_multiplier_more_large = {  
 	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
+	divide = 1000000  
+	multiply = 1  
 	round = yes  
-	multiply = 10  
+	multiply = 1000  
 	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_aragon
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_balkans
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
+army_projection_comparison = {  
+	add = overlord.army_power_projection  
+	if = {  
+		limit = {  
+			army_power_projection > 0  
+		}  
+		divide = army_power_projection  
+	}  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_bolivia
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state_region  
-
-## any_state_region_in_brazil
-gfx_infantry_mobilization_count = {  
+gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
-		mg:small_arms = {  
+		mg:artillery = {  
 			add = market_goods_sell_orders  
 		}  
 	}  
@@ -2198,109 +2273,124 @@ gfx_infantry_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
+## any_state_region_in_brazil
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state_region  
+
 ## any_state_region_in_castile
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+gfx_artillery_mobilization_count = {  
+	value = 0  
+	market = {  
+		mg:artillery = {  
+			add = market_goods_sell_orders  
+		}  
+	}  
+	divide = 1000  
+	add = 1  
+	max = 3  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_central_america
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_central_asia
-money_amount_multiplier_very_small = {  
+money_amount_multiplier_medium = {  
 	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
+	divide = 100000  
+	multiply = 0.25  
 	round = yes  
-	multiply = 10  
+	multiply = 100  
 	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_china
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_chorasmia
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
+state_urbanization_rate = {  
+    value = total_urbanization  
+    divide = state_population  
+    multiply = 1000  
+    min = 0  
+    max = 1  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_colonial_la_plata
-money_amount_multiplier_very_small = {  
+money_amount_multiplier_more_large = {  
 	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
+	divide = 1000000  
+	multiply = 1  
 	round = yes  
-	multiply = 10  
+	multiply = 1000  
 	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_colonial_new_grenada
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+gfx_infantry_mobilization_count = {  
+	value = 0  
+	market = {  
+		mg:small_arms = {  
+			add = market_goods_sell_orders  
+		}  
+	}  
+	divide = 1000  
+	add = 1  
+	max = 3  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_colonial_new_spain
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_colonial_peru
-gfx_artillery_mobilization_count = {  
+gfx_infantry_mobilization_count = {  
 	value = 0  
 	market = {  
-		mg:artillery = {  
+		mg:small_arms = {  
 			add = market_goods_sell_orders  
 		}  
 	}  
@@ -2312,6 +2402,18 @@ gfx_artillery_mobilization_count = {
 **Supported Targets**: state_region  
 
 ## any_state_region_in_east_asia
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state_region  
+
+## any_state_region_in_europe
 gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
@@ -2326,22 +2428,19 @@ gfx_artillery_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
-## any_state_region_in_europe
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
+## any_state_region_in_german_confederation
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
-## any_state_region_in_german_confederation
+## any_state_region_in_great_rift_valley
 state_urbanization_rate = {  
     value = total_urbanization  
     divide = state_population  
@@ -2352,41 +2451,26 @@ state_urbanization_rate = {
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
-## any_state_region_in_great_rift_valley
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state_region  
-
 ## any_state_region_in_greater_germany
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_greater_khorasan
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_very_small = {  
+	value = root.gdp  
+	divide = 10000  
+	multiply = 0.075  
+	round = yes  
+	multiply = 10  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
@@ -2407,39 +2491,6 @@ gfx_infantry_mobilization_count = {
 **Supported Targets**: state_region  
 
 ## any_state_region_in_hungary
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state_region  
-
-## any_state_region_in_iberia
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state_region  
-
-## any_state_region_in_iceland
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state_region  
-
-## any_state_region_in_india
 army_projection_comparison = {  
 	add = overlord.army_power_projection  
 	if = {  
@@ -2452,19 +2503,19 @@ army_projection_comparison = {
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
-## any_state_region_in_italy
-money_amount_multiplier_very_small = {  
+## any_state_region_in_iberia
+money_amount_multiplier_large = {  
 	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
+	divide = 1000000  
+	multiply = 0.5  
 	round = yes  
-	multiply = 10  
+	multiply = 1000  
 	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
-## any_state_region_in_megali_greece
+## any_state_region_in_iceland
 gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
@@ -2479,36 +2530,46 @@ gfx_artillery_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
+## any_state_region_in_india
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state_region  
+
+## any_state_region_in_italy
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state_region  
+
+## any_state_region_in_megali_greece
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state_region  
+
 ## any_state_region_in_middle_east
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state_region  
-
-## any_state_region_in_mozambique
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state_region  
-
-## any_state_region_in_north_africa
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
+state_urbanization_rate = {  
+    value = total_urbanization  
+    divide = state_population  
     multiply = 1000  
     min = 0  
     max = 1  
@@ -2516,19 +2577,19 @@ country_urbanization_rate = {
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
-## any_state_region_in_north_america
-money_amount_multiplier_very_small = {  
+## any_state_region_in_mozambique
+money_amount_multiplier_more_large = {  
 	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
+	divide = 1000000  
+	multiply = 1  
 	round = yes  
-	multiply = 10  
+	multiply = 1000  
 	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
-## any_state_region_in_peru
+## any_state_region_in_north_africa
 gfx_infantry_mobilization_count = {  
 	value = 0  
 	market = {  
@@ -2543,93 +2604,135 @@ gfx_infantry_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
+## any_state_region_in_north_america
+money_amount_multiplier_medium = {  
+	value = root.gdp  
+	divide = 100000  
+	multiply = 0.25  
+	round = yes  
+	multiply = 100  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state_region  
+
+## any_state_region_in_peru
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state_region  
+
 ## any_state_region_in_ring_of_fire
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+gfx_infantry_mobilization_count = {  
+	value = 0  
+	market = {  
+		mg:small_arms = {  
+			add = market_goods_sell_orders  
+		}  
+	}  
+	divide = 1000  
+	add = 1  
+	max = 3  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_scandinavia
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_south_africa
-money_amount_multiplier_very_small = {  
+money_amount_multiplier_very_large = {  
 	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
+	divide = 1000000  
+	multiply = 2.5  
 	round = yes  
-	multiply = 10  
+	multiply = 1000  
 	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_south_america
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
+army_projection_comparison = {  
+	add = overlord.army_power_projection  
+	if = {  
+		limit = {  
+			army_power_projection > 0  
+		}  
+		divide = army_power_projection  
+	}  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_south_east_asia
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
+gfx_infantry_mobilization_count = {  
+	value = 0  
+	market = {  
+		mg:small_arms = {  
+			add = market_goods_sell_orders  
 		}  
-		divide = army_power_projection  
 	}  
+	divide = 1000  
+	add = 1  
+	max = 3  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_subsaharan_africa
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
+gfx_infantry_mobilization_count = {  
+	value = 0  
+	market = {  
+		mg:small_arms = {  
+			add = market_goods_sell_orders  
+		}  
+	}  
+	divide = 1000  
+	add = 1  
+	max = 3  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_transoxiana
-gfx_artillery_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:artillery = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
+state_urbanization_rate = {  
+    value = total_urbanization  
+    divide = state_population  
+    multiply = 1000  
+    min = 0  
+    max = 1  
 }
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
 ## any_state_region_in_west_africa
+state_urbanization_rate = {  
+    value = total_urbanization  
+    divide = state_population  
+    multiply = 1000  
+    min = 0  
+    max = 1  
+}
+**Supported Scopes**: none  
+**Supported Targets**: state_region  
+
+## any_state_region_in_wet_process_region
 gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
@@ -2644,7 +2747,7 @@ gfx_artillery_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
-## any_state_region_in_wet_process_region
+## any_state_region_in_yugoslavia
 army_projection_comparison = {  
 	add = overlord.army_power_projection  
 	if = {  
@@ -2657,25 +2760,13 @@ army_projection_comparison = {
 **Supported Scopes**: none  
 **Supported Targets**: state_region  
 
-## any_state_region_in_yugoslavia
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
-}
-**Supported Scopes**: none  
-**Supported Targets**: state_region  
-
 ## any_state_region_in_zambezi_basin
-money_amount_multiplier_very_small = {  
+money_amount_multiplier_medium = {  
 	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
+	divide = 100000  
+	multiply = 0.25  
 	round = yes  
-	multiply = 10  
+	multiply = 100  
 	min = 100  
 }
 **Supported Scopes**: none  
@@ -2689,21 +2780,10 @@ Reads nothing for all scopes.
 **Supported Targets**: state  
 
 ## any_strategic_region_in_africa
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_alpide_belt
-gfx_infantry_mobilization_count = {  
+gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
-		mg:small_arms = {  
+		mg:artillery = {  
 			add = market_goods_sell_orders  
 		}  
 	}  
@@ -2714,7 +2794,7 @@ gfx_infantry_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
 
-## any_strategic_region_in_americas
+## any_strategic_region_in_alpide_belt
 army_projection_comparison = {  
 	add = overlord.army_power_projection  
 	if = {  
@@ -2727,11 +2807,23 @@ army_projection_comparison = {
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
 
+## any_strategic_region_in_americas
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
 ## any_strategic_region_in_andean_federation
-gfx_infantry_mobilization_count = {  
+gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
-		mg:small_arms = {  
+		mg:artillery = {  
 			add = market_goods_sell_orders  
 		}  
 	}  
@@ -2743,6 +2835,21 @@ gfx_infantry_mobilization_count = {
 **Supported Targets**: strategic_region  
 
 ## any_strategic_region_in_angola
+gfx_infantry_mobilization_count = {  
+	value = 0  
+	market = {  
+		mg:small_arms = {  
+			add = market_goods_sell_orders  
+		}  
+	}  
+	divide = 1000  
+	add = 1  
+	max = 3  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_aragon
 state_urbanization_rate = {  
     value = total_urbanization  
     divide = state_population  
@@ -2753,26 +2860,14 @@ state_urbanization_rate = {
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
 
-## any_strategic_region_in_aragon
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
 ## any_strategic_region_in_balkans
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
@@ -2791,214 +2886,18 @@ army_projection_comparison = {
 **Supported Targets**: strategic_region  
 
 ## any_strategic_region_in_brazil
-money_amount_multiplier_very_small = {  
+money_amount_multiplier_more_large = {  
 	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
+	divide = 1000000  
+	multiply = 1  
 	round = yes  
-	multiply = 10  
+	multiply = 1000  
 	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
 
 ## any_strategic_region_in_castile
-gfx_artillery_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:artillery = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_central_america
-gfx_artillery_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:artillery = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_central_asia
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_china
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_chorasmia
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_colonial_la_plata
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_colonial_new_grenada
-neg_option_9_modifier = {  
-	if = {  
-		limit = {  
-			scope:ig = {  
-				OR = {  
-					is_interest_group_type = ig_devout  
-					is_interest_group_type = ig_trade_unions  
-				}  
-			}  
-		}  
-		add = 30  
-	}  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_colonial_new_spain
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_colonial_peru
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_east_asia
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_europe
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_german_confederation
-province_terrain_infrastructure_force_limit = {  
-	value = 5  
-	add = {  
-		value = scope:province.state.infrastructure  
-		divide = 2  
-	}  
-	multiply = scope:province.combat_width  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_great_rift_valley
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_greater_germany
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_greater_khorasan
-money_amount_multiplier_very_small = {  
-	value = root.gdp  
-	divide = 10000  
-	multiply = 0.075  
-	round = yes  
-	multiply = 10  
-	min = 100  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_historic_byzantium
 army_projection_comparison = {  
 	add = overlord.army_power_projection  
 	if = {  
@@ -3011,18 +2910,55 @@ army_projection_comparison = {
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
 
-## any_strategic_region_in_hungary
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+## any_strategic_region_in_central_america
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
 
-## any_strategic_region_in_iberia
+## any_strategic_region_in_central_asia
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_china
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_chorasmia
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_colonial_la_plata
 money_amount_multiplier_very_small = {  
 	value = root.gdp  
 	divide = 10000  
@@ -3034,11 +2970,16 @@ money_amount_multiplier_very_small = {
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
 
-## any_strategic_region_in_iceland
-gfx_infantry_mobilization_count = {  
+## any_strategic_region_in_colonial_new_grenada
+Hf…ˆ
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_colonial_new_spain
+gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
-		mg:small_arms = {  
+		mg:artillery = {  
 			add = market_goods_sell_orders  
 		}  
 	}  
@@ -3049,13 +2990,151 @@ gfx_infantry_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
 
-## any_strategic_region_in_india
+## any_strategic_region_in_colonial_peru
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_east_asia
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_europe
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_german_confederation
+free_tea_producing_arable_land = {  
+	value = 0  
+	every_scope_state = {  
+		limit = {  
+			can_construct_building = building_tea_plantation  
+		}  
+		add = this.free_arable_land  
+	}  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_great_rift_valley
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_greater_germany
 state_urbanization_rate = {  
     value = total_urbanization  
     divide = state_population  
     multiply = 1000  
     min = 0  
     max = 1  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_greater_khorasan
+army_projection_comparison = {  
+	add = overlord.army_power_projection  
+	if = {  
+		limit = {  
+			army_power_projection > 0  
+		}  
+		divide = army_power_projection  
+	}  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_historic_byzantium
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_hungary
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_iberia
+army_projection_comparison = {  
+	add = overlord.army_power_projection  
+	if = {  
+		limit = {  
+			army_power_projection > 0  
+		}  
+		divide = army_power_projection  
+	}  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_iceland
+money_amount_multiplier_very_small = {  
+	value = root.gdp  
+	divide = 10000  
+	multiply = 0.075  
+	round = yes  
+	multiply = 10  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_india
+gfx_artillery_mobilization_count = {  
+	value = 0  
+	market = {  
+		mg:artillery = {  
+			add = market_goods_sell_orders  
+		}  
+	}  
+	divide = 1000  
+	add = 1  
+	max = 3  
 }
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
@@ -3076,65 +3155,6 @@ gfx_artillery_mobilization_count = {
 **Supported Targets**: strategic_region  
 
 ## any_strategic_region_in_megali_greece
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_middle_east
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_mozambique
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_north_africa
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_north_america
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
-## any_strategic_region_in_peru
 gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
@@ -3149,11 +3169,73 @@ gfx_artillery_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
 
-## any_strategic_region_in_ring_of_fire
+## any_strategic_region_in_middle_east
+state_urbanization_rate = {  
+    value = total_urbanization  
+    divide = state_population  
+    multiply = 1000  
+    min = 0  
+    max = 1  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_mozambique
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_north_africa
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_north_america
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_peru
 gfx_infantry_mobilization_count = {  
 	value = 0  
 	market = {  
 		mg:small_arms = {  
+			add = market_goods_sell_orders  
+		}  
+	}  
+	divide = 1000  
+	add = 1  
+	max = 3  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_ring_of_fire
+gfx_artillery_mobilization_count = {  
+	value = 0  
+	market = {  
+		mg:artillery = {  
 			add = market_goods_sell_orders  
 		}  
 	}  
@@ -3165,9 +3247,9 @@ gfx_infantry_mobilization_count = {
 **Supported Targets**: strategic_region  
 
 ## any_strategic_region_in_scandinavia
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
+state_urbanization_rate = {  
+    value = total_urbanization  
+    divide = state_population  
     multiply = 1000  
     min = 0  
     max = 1  
@@ -3176,10 +3258,22 @@ country_urbanization_rate = {
 **Supported Targets**: strategic_region  
 
 ## any_strategic_region_in_south_africa
-gfx_infantry_mobilization_count = {  
+money_amount_multiplier_very_small = {  
+	value = root.gdp  
+	divide = 10000  
+	multiply = 0.075  
+	round = yes  
+	multiply = 10  
+	min = 100  
+}
+**Supported Scopes**: none  
+**Supported Targets**: strategic_region  
+
+## any_strategic_region_in_south_america
+gfx_artillery_mobilization_count = {  
 	value = 0  
 	market = {  
-		mg:small_arms = {  
+		mg:artillery = {  
 			add = market_goods_sell_orders  
 		}  
 	}  
@@ -3190,35 +3284,29 @@ gfx_infantry_mobilization_count = {
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
 
-## any_strategic_region_in_south_america
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
-}
-**Supported Scopes**: none  
-**Supported Targets**: strategic_region  
-
 ## any_strategic_region_in_south_east_asia
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
 
 ## any_strategic_region_in_subsaharan_africa
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+gfx_artillery_mobilization_count = {  
+	value = 0  
+	market = {  
+		mg:artillery = {  
+			add = market_goods_sell_orders  
+		}  
+	}  
+	divide = 1000  
+	add = 1  
+	max = 3  
 }
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
@@ -3237,51 +3325,49 @@ army_projection_comparison = {
 **Supported Targets**: strategic_region  
 
 ## any_strategic_region_in_west_africa
-country_urbanization_rate = {  
-    value = country_total_urbanization  
-    divide = total_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_very_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 2.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
 
 ## any_strategic_region_in_wet_process_region
-gfx_infantry_mobilization_count = {  
-	value = 0  
-	market = {  
-		mg:small_arms = {  
-			add = market_goods_sell_orders  
-		}  
-	}  
-	divide = 1000  
-	add = 1  
-	max = 3  
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
 
 ## any_strategic_region_in_yugoslavia
-army_projection_comparison = {  
-	add = overlord.army_power_projection  
-	if = {  
-		limit = {  
-			army_power_projection > 0  
-		}  
-		divide = army_power_projection  
-	}  
+money_amount_multiplier_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 0.5  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
 
 ## any_strategic_region_in_zambezi_basin
-state_urbanization_rate = {  
-    value = total_urbanization  
-    divide = state_population  
-    multiply = 1000  
-    min = 0  
-    max = 1  
+money_amount_multiplier_more_large = {  
+	value = root.gdp  
+	divide = 1000000  
+	multiply = 1  
+	round = yes  
+	multiply = 1000  
+	min = 100  
 }
 **Supported Scopes**: none  
 **Supported Targets**: strategic_region  
@@ -4583,8 +4669,10 @@ Reads gamestate for all scopes.
 ## has_amendment
 Check if scoped law has an amendment of the given type  
 has_amendment = <amendment type scope>
+Traits: amendment_type scope
 Reads gamestate for all scopes.
 **Supported Scopes**: law  
+**Supported Targets**: amendment_type  
 
 ## has_any_law_commitment
 Checks if a country has a commitment to enact any law  

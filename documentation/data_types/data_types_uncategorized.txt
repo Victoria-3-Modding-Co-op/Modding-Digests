@@ -11809,6 +11809,18 @@ Return type: int32
 
 -----------------------
 
+Amendment.GetOnAmendedEffectsDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+Amendment.GetOnRepealEffectsDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 Amendment.GetOpposingInterestGroups
 Definition type: Function
 Return type: [unregistered]
@@ -11952,12 +11964,6 @@ Return type: CString
 
 -----------------------
 
-AmendmentType.GetEffectsDesc
-Definition type: Function
-Return type: CString
-
------------------------
-
 AmendmentType.GetInstitutionModifierDesc
 Definition type: Function
 Return type: CString
@@ -11983,6 +11989,24 @@ Return type: CString
 -----------------------
 
 AmendmentType.GetNameNoFormatting
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+AmendmentType.GetNameWithLaw( Arg0 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+AmendmentType.GetOnAmendedEffectsDesc( Arg0 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+AmendmentType.GetOnRepealEffectsDesc( Arg0 )
 Definition type: Function
 Return type: CString
 
@@ -32465,6 +32489,12 @@ Return type: Scope
 
 -----------------------
 
+DiplomaticPlay.PlayerHasPotentialSwayOffers( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 DiplomaticPlay.Self
 Definition type: Function
 Return type: [unregistered]
@@ -33321,6 +33351,12 @@ Return type: CString
 
 -----------------------
 
+Election.GetEligibleVoters
+Definition type: Function
+Return type: int64
+
+-----------------------
+
 Election.GetIndependentIGs
 Definition type: Function
 Return type: [unregistered]
@@ -33363,9 +33399,15 @@ Return type: CString
 
 -----------------------
 
-Election.GetTotalVotersRaw
+Election.GetTotalVoters
 Definition type: Function
-Return type: int32
+Return type: int64
+
+-----------------------
+
+Election.GetVoterTurnout
+Definition type: Function
+Return type: CFixedPoint
 
 -----------------------
 
@@ -47865,6 +47907,12 @@ Return type: [unregistered]
 
 -----------------------
 
+MilitaryFormation.GetAIDebugInfo
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 MilitaryFormation.GetActiveBattles
 Definition type: Function
 Return type: [unregistered]
@@ -47970,6 +48018,12 @@ Return type: [unregistered]
 MilitaryFormation.GetCommandersWithRecruitableSlot
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+MilitaryFormation.GetCommonDebugInfo
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -51435,6 +51489,18 @@ Return type: [unregistered]
 
 -----------------------
 
+Party.GetCurrentPollNumVoters
+Definition type: Function
+Return type: int64
+
+-----------------------
+
+Party.GetCurrentPollNumVotersDifference
+Definition type: Function
+Return type: int64
+
+-----------------------
+
 Party.GetCurrentPollVotingPower
 Definition type: Function
 Return type: int64
@@ -51549,9 +51615,9 @@ Return type: CString
 
 -----------------------
 
-Party.GetProjectedVotesDesc
+Party.GetNumVotersLastElection
 Definition type: Function
-Return type: CString
+Return type: int64
 
 -----------------------
 
@@ -66654,6 +66720,12 @@ Return type: int32
 
 -----------------------
 
+SwayOffer.GetAcceptSwayScoreWithArticle( Arg0, Arg1, Arg2, Arg3 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 SwayOffer.GetCountryForFlag( Arg0 )
 Definition type: Function
 Return type: [unregistered]
@@ -66720,6 +66792,12 @@ Return type: CString
 
 -----------------------
 
+SwayOffer.GetWouldAcceptSwayDescWithArticle( Arg0, Arg1, Arg2, Arg3 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 SwayOffer.RequiresAnyInput
 Definition type: Function
 Return type: bool
@@ -66745,6 +66823,12 @@ Return type: bool
 -----------------------
 
 SwayOffer.WouldAcceptSway( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+SwayOffer.WouldAcceptSwayWithArticle( Arg0, Arg1, Arg2, Arg3 )
 Definition type: Function
 Return type: bool
 

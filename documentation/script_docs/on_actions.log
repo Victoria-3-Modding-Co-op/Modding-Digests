@@ -218,6 +218,12 @@ Expected Scope: country
 
 --------------------
 
+exile_pool_culling_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_diplomatic_demand:
 From Code: Yes
 Expected Scope: none
