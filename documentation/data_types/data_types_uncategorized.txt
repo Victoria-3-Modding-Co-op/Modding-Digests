@@ -844,6 +844,12 @@ Return type: ShipType
 
 -----------------------
 
+GetShipVeterancyLevel( Arg0 )
+Definition type: Global promote
+Return type: ShipVeterancyLevel
+
+-----------------------
+
 GetStateRegion( Arg0 )
 Definition type: Global promote
 Return type: StateRegion
@@ -1477,6 +1483,12 @@ Return type: ShipTemplateVersion
 SHIP_TYPE
 Definition type: Global promote
 Return type: ShipType
+
+-----------------------
+
+SHIP_VETERANCY_LEVEL
+Definition type: Global promote
+Return type: ShipVeterancyLevel
 
 -----------------------
 
@@ -2446,6 +2458,12 @@ Return type: ShipType
 
 -----------------------
 
+TARGET_SHIP_VETERANCY_LEVEL
+Definition type: Global promote
+Return type: ShipVeterancyLevel
+
+-----------------------
+
 TARGET_SOCIAL_CLASS
 Definition type: Global promote
 Return type: SocialClass
@@ -2927,12 +2945,6 @@ Return type: [unregistered]
 -----------------------
 
 GetAutosaveName
-Definition type: Global function
-Return type: CString
-
------------------------
-
-GetBasicAdmiralOrdersBreakdown
 Definition type: Global function
 Return type: CString
 
@@ -3767,6 +3779,12 @@ Return type: [unregistered]
 -----------------------
 
 GetShipTypes
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+GetShipVeterancyLevel( Arg0 )
 Definition type: Global function
 Return type: [unregistered]
 
@@ -5201,6 +5219,18 @@ Return type: [unregistered]
 -----------------------
 
 concept_blockade_strength_desc
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+concept_boddhisattva
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+concept_boddhisattva_desc
 Definition type: Global function
 Return type: [unregistered]
 
@@ -6934,18 +6964,6 @@ Return type: [unregistered]
 
 -----------------------
 
-concept_escort_convoys
-Definition type: Global function
-Return type: [unregistered]
-
------------------------
-
-concept_escort_convoys_desc
-Definition type: Global function
-Return type: [unregistered]
-
------------------------
-
 concept_executive
 Definition type: Global function
 Return type: [unregistered]
@@ -7229,6 +7247,18 @@ Return type: [unregistered]
 -----------------------
 
 concept_gold_reserves_desc
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+concept_gongen
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+concept_gongen_desc
 Definition type: Global function
 Return type: [unregistered]
 
@@ -10049,18 +10079,6 @@ Return type: [unregistered]
 -----------------------
 
 concept_radicalized_interest_group_desc
-Definition type: Global function
-Return type: [unregistered]
-
------------------------
-
-concept_raid_convoys
-Definition type: Global function
-Return type: [unregistered]
-
------------------------
-
-concept_raid_convoys_desc
 Definition type: Global function
 Return type: [unregistered]
 
@@ -16894,12 +16912,6 @@ Return type: CString
 
 -----------------------
 
-Building.GetPortConnectionRevenue
-Definition type: Function
-Return type: CFixedPoint
-
------------------------
-
 Building.GetPrivatizationTooltip
 Definition type: Function
 Return type: CString
@@ -20307,6 +20319,12 @@ Return type: bool
 
 -----------------------
 
+Character.WillNotStartOrJoinAnyMovementIfInvited( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 Character.WillStartMovementIfInvited( Arg0 )
 Definition type: Function
 Return type: bool
@@ -20320,6 +20338,149 @@ Return type: void
 -----------------------
 
 Character.ZoomToOrderTarget
+Definition type: Function
+Return type: void
+
+-----------------------
+
+CharacterFilter
+Definition type: Type
+
+-----------------------
+
+CharacterFilter.AccessSelf
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+CharacterFilter.GetCharacters
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+CharacterFilter.GetIGFilters
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+CharacterFilter.GetIdeologyFilters
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+CharacterFilter.GetNumFilteredCharacters
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+CharacterFilter.GetNumTotalCharacters
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+CharacterFilter.GetRoleFilters
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+CharacterFilter.HasCharacters
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+CharacterFilter.IsAppointmentFilterSelected( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+CharacterFilter.IsHistoricalFilterSelected( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+CharacterFilter.IsIGFilterSelected( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+CharacterFilter.IsIdeologyFilterSelected( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+CharacterFilter.IsRoleFilterSelected( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+CharacterFilter.IsSorted( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+CharacterFilter.Self
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+CharacterFilter.SetAppointmentFilter( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+CharacterFilter.SetHistoricalFilter( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+CharacterFilter.SetIGFilter( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+CharacterFilter.SetIdeologyFilter( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+CharacterFilter.SetRoleFilter( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+CharacterFilter.Sort( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+CharacterFilter.ToggleIGFilter( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+CharacterFilter.ToggleIdeologyFilter( Arg0 )
 Definition type: Function
 Return type: void
 
@@ -22150,12 +22311,6 @@ Return type: bool
 
 -----------------------
 
-CommanderOrderType.IsRaidConvoys
-Definition type: Function
-Return type: bool
-
------------------------
-
 CommanderOrderType.IsStandBy
 Definition type: Function
 Return type: bool
@@ -22238,13 +22393,55 @@ Return type: [unregistered]
 
 -----------------------
 
+CompaniesPanel.GetAllBuildingTypes
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 CompaniesPanel.GetCompanies
 Definition type: Function
 Return type: [unregistered]
 
 -----------------------
 
+CompaniesPanel.GetFilteredCompanyTypes
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+CompaniesPanel.GetNumFilteredCompanies
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+CompaniesPanel.IsBuildingFilterSelected( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+CompaniesPanel.IsHistoricalFilterSelected( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+CompaniesPanel.IsPrestigeGoodsFilterSelected( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 CompaniesPanel.IsSorted( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+CompaniesPanel.IsVisibilityFilterSelected( Arg0 )
 Definition type: Function
 Return type: bool
 
@@ -22256,7 +22453,37 @@ Return type: [unregistered]
 
 -----------------------
 
+CompaniesPanel.SetBuildingFilter( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+CompaniesPanel.SetHistoricalFilter( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+CompaniesPanel.SetPrestigeGoodsFilter( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+CompaniesPanel.SetVisibilityFilter( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
 CompaniesPanel.Sort( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+CompaniesPanel.ToggleBuildingFilter( Arg0 )
 Definition type: Function
 Return type: void
 
@@ -26899,6 +27126,12 @@ Return type: CFixedPoint
 
 -----------------------
 
+Country.GetLocalityInDisplay( Arg0 )
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 Country.GetLowerStrataPopulationTrend
 Definition type: Function
 Return type: DataTrend
@@ -27640,6 +27873,24 @@ Return type: int64
 Country.GetNumPoliticallyInactiveRadicals
 Definition type: Function
 Return type: int64
+
+-----------------------
+
+Country.GetNumPreviousAutonomousInvestments
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+Country.GetNumPreviousAutonomousPrivateConstructions
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+Country.GetNumPreviousAutonomousPrivatizations
+Definition type: Function
+Return type: int32
 
 -----------------------
 
@@ -37465,6 +37716,12 @@ Return type: bool
 
 -----------------------
 
+FormationPanel.IsUnitGroupExpanded( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 FormationPanel.SelectFormation( Arg0 )
 Definition type: Function
 Return type: void
@@ -37474,6 +37731,12 @@ Return type: void
 FormationPanel.Self
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+FormationPanel.ToggleUnitGroupExpanded( Arg0 )
+Definition type: Function
+Return type: void
 
 -----------------------
 
@@ -39760,6 +40023,12 @@ Return type: DataTrend
 -----------------------
 
 Goods.GetProductionPercentage
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+Goods.GetShippingConvoyCostMultiplier
 Definition type: Function
 Return type: CFixedPoint
 
@@ -45372,12 +45641,6 @@ Return type: CString
 -----------------------
 
 InvasionPlannerPopup.HasAdvancingGeneral
-Definition type: Function
-Return type: bool
-
------------------------
-
-InvasionPlannerPopup.HasInterceptingAdmiral
 Definition type: Function
 Return type: bool
 
@@ -51225,6 +51488,12 @@ Return type: CFixedPoint
 
 -----------------------
 
+MilitaryFormation.GetBaseSupplyConsumptionBreakdown
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 MilitaryFormation.GetBlockadeStrength
 Definition type: Function
 Return type: CFixedPoint
@@ -51358,6 +51627,18 @@ Return type: [unregistered]
 -----------------------
 
 MilitaryFormation.GetCurrentManpower
+Definition type: Function
+Return type: int64
+
+-----------------------
+
+MilitaryFormation.GetCurrentManpowerFromConscripts
+Definition type: Function
+Return type: int64
+
+-----------------------
+
+MilitaryFormation.GetCurrentManpowerFromVolunteers
 Definition type: Function
 Return type: int64
 
@@ -51573,6 +51854,12 @@ Return type: CString
 
 -----------------------
 
+MilitaryFormation.GetLogisticsCenterSupplyAvailability
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 MilitaryFormation.GetLowOrganizationDesc
 Definition type: Function
 Return type: CString
@@ -51592,6 +51879,18 @@ Return type: int32
 -----------------------
 
 MilitaryFormation.GetMaxManpower
+Definition type: Function
+Return type: int64
+
+-----------------------
+
+MilitaryFormation.GetMaxManpowerFromConscripts
+Definition type: Function
+Return type: int64
+
+-----------------------
+
+MilitaryFormation.GetMaxManpowerFromVolunteers
 Definition type: Function
 Return type: int64
 
@@ -51886,6 +52185,12 @@ Return type: int32
 -----------------------
 
 MilitaryFormation.GetNumWantedSupplyShips
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+MilitaryFormation.GetNumWantedSupplyShipsForEquilibrium
 Definition type: Function
 Return type: int32
 
@@ -52347,6 +52652,12 @@ Return type: bool
 
 -----------------------
 
+MilitaryFormation.HasLogisticsCenterGoodsShortage
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 MilitaryFormation.HasNavalMission
 Definition type: Function
 Return type: bool
@@ -52372,6 +52683,12 @@ Return type: bool
 -----------------------
 
 MilitaryFormation.HasSelectedUnitTypeForGroup( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+MilitaryFormation.HasSupplyRoute
 Definition type: Function
 Return type: bool
 
@@ -53077,6 +53394,12 @@ Return type: [unregistered]
 MilitaryFormationUnitEntry.GetUnitType
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+MilitaryFormationUnitEntry.IsDefaultType
+Definition type: Function
+Return type: bool
 
 -----------------------
 
@@ -61043,6 +61366,12 @@ Return type: PopList
 
 -----------------------
 
+PopsOverviewPanel.GetCharacterFilter
+Definition type: Promote
+Return type: CharacterFilter
+
+-----------------------
+
 PopsOverviewPanel.GetMapModeList
 Definition type: Promote
 Return type: MapModeList
@@ -61067,12 +61396,6 @@ Return type: [unregistered]
 
 -----------------------
 
-PopsOverviewPanel.Filter( Arg0 )
-Definition type: Function
-Return type: void
-
------------------------
-
 PopsOverviewPanel.GetAverageIncomeMiddle
 Definition type: Function
 Return type: CFixedPoint
@@ -61088,18 +61411,6 @@ Return type: CFixedPoint
 PopsOverviewPanel.GetAverageIncomeRich
 Definition type: Function
 Return type: CFixedPoint
-
------------------------
-
-PopsOverviewPanel.GetCharacters
-Definition type: Function
-Return type: [unregistered]
-
------------------------
-
-PopsOverviewPanel.GetFilters
-Definition type: Function
-Return type: [unregistered]
 
 -----------------------
 
@@ -61139,18 +61450,6 @@ Return type: CFixedPoint
 
 -----------------------
 
-PopsOverviewPanel.GetIGFilters
-Definition type: Function
-Return type: [unregistered]
-
------------------------
-
-PopsOverviewPanel.GetIdeologyFilters
-Definition type: Function
-Return type: [unregistered]
-
------------------------
-
 PopsOverviewPanel.GetIncomeRemainderMiddle
 Definition type: Function
 Return type: CFixedPoint
@@ -61166,18 +61465,6 @@ Return type: CFixedPoint
 PopsOverviewPanel.GetIncomeRemainderRich
 Definition type: Function
 Return type: CFixedPoint
-
------------------------
-
-PopsOverviewPanel.GetNumFilteredCharacters
-Definition type: Function
-Return type: int32
-
------------------------
-
-PopsOverviewPanel.GetNumTotalCharacters
-Definition type: Function
-Return type: int32
 
 -----------------------
 
@@ -61217,87 +61504,9 @@ Return type: CFixedPoint
 
 -----------------------
 
-PopsOverviewPanel.IsAppointmentFilterSelected( Arg0 )
-Definition type: Function
-Return type: bool
-
------------------------
-
-PopsOverviewPanel.IsHistoricalFilterSelected( Arg0 )
-Definition type: Function
-Return type: bool
-
------------------------
-
-PopsOverviewPanel.IsIGFilterSelected( Arg0 )
-Definition type: Function
-Return type: bool
-
------------------------
-
-PopsOverviewPanel.IsIdeologyFilterSelected( Arg0 )
-Definition type: Function
-Return type: bool
-
------------------------
-
-PopsOverviewPanel.IsSelected( Arg0 )
-Definition type: Function
-Return type: bool
-
------------------------
-
-PopsOverviewPanel.IsSorted( Arg0 )
-Definition type: Function
-Return type: bool
-
------------------------
-
 PopsOverviewPanel.Self
 Definition type: Function
 Return type: [unregistered]
-
------------------------
-
-PopsOverviewPanel.SetAppointmentFilter( Arg0 )
-Definition type: Function
-Return type: void
-
------------------------
-
-PopsOverviewPanel.SetHistoricalFilter( Arg0 )
-Definition type: Function
-Return type: void
-
------------------------
-
-PopsOverviewPanel.SetIGFilter( Arg0 )
-Definition type: Function
-Return type: void
-
------------------------
-
-PopsOverviewPanel.SetIdeologyFilter( Arg0 )
-Definition type: Function
-Return type: void
-
------------------------
-
-PopsOverviewPanel.Sort( Arg0 )
-Definition type: Function
-Return type: void
-
------------------------
-
-PopsOverviewPanel.ToggleIGFilter( Arg0 )
-Definition type: Function
-Return type: void
-
------------------------
-
-PopsOverviewPanel.ToggleIdeologyFilter( Arg0 )
-Definition type: Function
-Return type: void
 
 -----------------------
 
@@ -65906,7 +66115,7 @@ Return type: void
 
 -----------------------
 
-RightClickMenuManager.ToggleArmyMovement( Arg0, Arg1 )
+RightClickMenuManager.ToggleArmyAdditionalActions( Arg0, Arg1 )
 Definition type: Function
 Return type: void
 
@@ -65990,7 +66199,7 @@ Return type: void
 
 -----------------------
 
-RightClickMenuManager.ToggleFleetMovement( Arg0, Arg1 )
+RightClickMenuManager.ToggleFleetAdditionalActions( Arg0, Arg1 )
 Definition type: Function
 Return type: void
 
@@ -66117,6 +66326,12 @@ Return type: void
 -----------------------
 
 RightClickMenuManager.ToggleShipDesignerSkinsMenu( Arg0, Arg1 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+RightClickMenuManager.ToggleShipDesignerTemplateMenu( Arg0, Arg1 )
 Definition type: Function
 Return type: void
 
@@ -68146,6 +68361,12 @@ Return type: ShipType
 
 -----------------------
 
+Ship.GetVeterancyLevel
+Definition type: Promote
+Return type: ShipVeterancyLevel
+
+-----------------------
+
 Ship.MakeScope
 Definition type: Promote
 Return type: Scope
@@ -68560,6 +68781,30 @@ Return type: [unregistered]
 
 -----------------------
 
+Ship.GetVeterancyExperience
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+Ship.GetVeterancyExperienceNeededForNextLevel
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+Ship.GetVeterancyExperienceRelativeToCurrentLevel
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+Ship.GetVeterancyLevelUpProgress
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 Ship.GetVisibility
 Definition type: Function
 Return type: CFixedPoint
@@ -68581,6 +68826,12 @@ Return type: CFixedPoint
 Ship.GetVulnerabilityBreakdown
 Definition type: Function
 Return type: CString
+
+-----------------------
+
+Ship.IsAtMaxVeterancy
+Definition type: Function
+Return type: bool
 
 -----------------------
 
@@ -70680,6 +70931,12 @@ Return type: [unregistered]
 
 -----------------------
 
+ShipTemplateList.GetTypesObsoleteOfGroup( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 ShipTemplateList.GetTypesUnavailableOfGroup( Arg0 )
 Definition type: Function
 Return type: [unregistered]
@@ -70834,6 +71091,12 @@ Return type: bool
 
 -----------------------
 
+ShipType.IsObsolete( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 ShipType.MakeScope
 Definition type: Function
 Return type: Scope
@@ -70841,6 +71104,89 @@ Return type: Scope
 -----------------------
 
 ShipType.Self
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+ShipVeterancyLevel
+Definition type: Type
+
+-----------------------
+
+ShipVeterancyLevel.GetNextLevel
+Definition type: Promote
+Return type: ShipVeterancyLevel
+
+-----------------------
+
+ShipVeterancyLevel.AccessSelf
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+ShipVeterancyLevel.GetExperienceThreshold
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+ShipVeterancyLevel.GetModifierDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+ShipVeterancyLevel.GetName
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+ShipVeterancyLevel.GetNameNoFormatting
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+ShipVeterancyLevel.GetNameNoIcon
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+ShipVeterancyLevel.GetNextLevelRelativeExperienceThreshold
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+ShipVeterancyLevel.GetTexture
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+ShipVeterancyLevel.GetTooltipTag
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+ShipVeterancyLevel.IsMaxLevel
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+ShipVeterancyLevel.IsValid
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+ShipVeterancyLevel.Self
 Definition type: Function
 Return type: [unregistered]
 
@@ -74011,9 +74357,21 @@ Return type: CFixedPoint
 
 -----------------------
 
+State.RequiresNavalTransportForSelectedFormations
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 State.Self
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+State.ShowTransportPlannerForSelectedFormation
+Definition type: Function
+Return type: void
 
 -----------------------
 
@@ -74720,6 +75078,12 @@ Return type: State
 StatesPanel.AccessSubsistenceBuilding
 Definition type: Promote
 Return type: Building
+
+-----------------------
+
+StatesPanel.GetCharacterFilter
+Definition type: Promote
+Return type: CharacterFilter
 
 -----------------------
 
@@ -76098,6 +76462,12 @@ Return type: CFixedPoint
 
 -----------------------
 
+StrategicRegion.GetLocalCountriesLocalityPercentageDisplay
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 StrategicRegion.GetLocalCountriesWithOwnedStates
 Definition type: Function
 Return type: [unregistered]
@@ -76117,6 +76487,12 @@ Return type: CString
 -----------------------
 
 StrategicRegion.GetNonLocalCountriesLocalityPercentage
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+StrategicRegion.GetNonLocalCountriesLocalityPercentageDisplay
 Definition type: Function
 Return type: CFixedPoint
 

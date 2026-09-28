@@ -986,6 +986,14 @@ country_ship_construction_progress_max_add:
   Mask: country
   Name: Max Ship Construction Progress
   Description: The maximum amount of construction progress a Country can apply to one shipbuilding project each week
+country_ship_crew_starting_veterancy_experience_add:
+  Mask: country
+  Name: Starting Ship Crew Experience
+  Description: A bonus or penalty to the starting Experience of ship crews.
+country_ship_crew_starting_veterancy_experience_mult:
+  Mask: country
+  Name: Starting Ship Crew Experience
+  Description: A bonus or penalty to the starting Experience of ship crews.
 country_ship_group_capital_ships_construction_efficiency_add:
   Mask: country
   Name: Capital Ships Construction Efficiency
@@ -1428,12 +1436,12 @@ ship_crew_damage_mult:
   Description: An increase or decrease to the amount of damage a Ship can deal to another Ship’s crew
 ship_crew_experience_gain_add:
   Mask: ship
-  Name: Weekly Unit Experience Gain for Ship Crew
-  Description: How much Unit Experience is gained by Ship Crew each week so that they can increase their Unit Veterancy Level
+  Name: Weekly Experience Gain for Ship Crew
+  Description: How much Experience is gained by Ship Crew each week so that they can increase their Veterancy Rank
 ship_crew_experience_gain_mult:
   Mask: ship
-  Name: Weekly Unit Experience Gain for Ship Crew
-  Description: How much Unit Experience is gained by Ship Crew each week so that they can increase their Unit Veterancy Level
+  Name: Weekly Experience Gain for Ship Crew
+  Description: How much Experience is gained by Ship Crew each week so that they can increase their Veterancy Rank
 ship_crew_max_add:
   Mask: ship
   Name: Ship Crew
@@ -2000,12 +2008,12 @@ unit_army_defense_mult:
   Description: A Military Unit’s Defense (Army only)
 unit_army_experience_gain_add:
   Mask: unit
-  Name: Weekly Unit Experience Gain for Armies
-  Description: How much Unit Experience is gained by Armies each week so that they can increase their Unit Veterancy Level
+  Name: Weekly Experience Gain for Armies
+  Description: How much Experience is gained by Armies each week so that they can increase their Veterancy Rank
 unit_army_experience_gain_mult:
   Mask: unit
-  Name: Weekly Unit Experience Gain for Armies
-  Description: How much Unit Experience is gained by Armies each week so that they can increase their Unit Veterancy Level
+  Name: Weekly Experience Gain for Armies
+  Description: How much Experience is gained by Armies each week so that they can increase their Veterancy Rank
 unit_army_offense_add:
   Mask: unit
   Name: Army Offense
@@ -2028,12 +2036,12 @@ unit_devastation_mult:
   Description: How much Devastation Military Units inflict on the State Region a battle takes place in
 unit_experience_gain_add:
   Mask: unit
-  Name: Weekly Unit Experience Gain for Armies & Navies
-  Description: How much Unit Experience is gained by both Armies & Navies each week so that they can increase their Unit Veterancy Level
+  Name: Weekly Experience Gain for Armies & Navies
+  Description: How much Experience is gained by both Armies & Navies each week so that they can increase their Veterancy Rank
 unit_experience_gain_mult:
   Mask: unit
-  Name: Weekly Unit Experience Gain for Armies & Navies
-  Description: How much Unit Experience is gained by both Armies & Navies each week so that they can increase their Unit Veterancy Level
+  Name: Weekly Experience Gain for Armies & Navies
+  Description: How much Experience is gained by both Armies & Navies each week so that they can increase their Veterancy Rank
 unit_kill_rate_add:
   Mask: unit
   Name: Kill Rate
@@ -5312,6 +5320,10 @@ country_institution_cost_institution_health_system_mult:
   Mask: country
   Name: bur! Bureaucracy Cost of Health System
   Description: An increase or reduction to the bur! Bureaucracy cost of bringing Health System to the citizens
+country_institution_cost_institution_home_affairs_mult:
+  Mask: country
+  Name: bur! Bureaucracy Cost of Home Affairs
+  Description: An increase or reduction to the bur! Bureaucracy cost of bringing Home Affairs to the citizens
 country_institution_cost_institution_police_mult:
   Mask: country
   Name: bur! Bureaucracy Cost of Law Enforcement
