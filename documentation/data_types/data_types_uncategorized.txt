@@ -4726,6 +4726,18 @@ Return type: [unregistered]
 
 -----------------------
 
+concept_budget_treaties
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+concept_budget_treaties_desc
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
 concept_budget_wages
 Definition type: Global function
 Return type: [unregistered]
@@ -25464,6 +25476,18 @@ Return type: int32
 
 -----------------------
 
+Country.GetTreatiesExpenseTrend
+Definition type: Function
+Return type: DataTrend
+
+-----------------------
+
+Country.GetTreatiesIncomeTrend
+Definition type: Function
+Return type: DataTrend
+
+-----------------------
+
 Country.GetTreatiesWith( Arg0 )
 Definition type: Function
 Return type: [unregistered]
@@ -26427,6 +26451,30 @@ Return type: CString
 Country.PredictTotalMilitaryExpenses
 Definition type: Function
 Return type: CFixedPoint
+
+-----------------------
+
+Country.PredictTreatyExpenses
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+Country.PredictTreatyExpensesDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+Country.PredictTreatyIncome
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+Country.PredictTreatyIncomeDesc
+Definition type: Function
+Return type: CString
 
 -----------------------
 
