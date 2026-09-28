@@ -2130,7 +2130,7 @@ Reads gamestate for all scopes.
 **Supported Scopes**: province  
 
 ## has_law
-Checks if a country has a certain Law active
+Checks if a country has a certain law active
 Traits: law_type scope
 Reads gamestate for all scopes.
 **Supported Scopes**: country  
@@ -2148,6 +2148,13 @@ Checks if the scoped country has the necessary permits to demand another country
 has_law_imposition_rights = { target_country = scope:target_country type = law_type:law_serfdom }
 Reads gamestate for all scopes.
 **Supported Scopes**: country  
+
+## has_law_or_variant
+Checks if a country has a certain law or one its variant laws active
+Traits: law_type scope
+Reads gamestate for all scopes.
+**Supported Scopes**: country  
+**Supported Targets**: law_type  
 
 ## has_local_variable
 Checks whether the current scope has the specified variable set  
@@ -3024,6 +3031,17 @@ Traits: yes/no
 Reads gamestate for all scopes.
 **Supported Scopes**: treaty  
 
+## is_equal_exchange
+Checks if the scoped treaty has the same articles on both sides,  
+scope:some_treaty = {  
+	if = { limit = {  
+		is_equal_exchange = yes  
+	}}  
+}
+Traits: yes/no 
+Reads gamestate for all scopes.
+**Supported Scopes**: treaty_options, treaty  
+
 ## is_expanding_institution
 Are you expanding an institution  
 is_expanding_institution = <yes>/<no>
@@ -3754,12 +3772,24 @@ Checks if character template has already been used
 is_template_used = template_key
 **Supported Scopes**: none  
 
+## is_theme_selected
+Does the player have the theme selected in settings  
+is_theme_selected = <key>
+**Supported Scopes**: none  
+
 ## is_tradeable
 Check if a goods or market goods is tradeable  
 is_tradeable = yes/no
 Traits: yes/no 
 Reads gamestate for all scopes.
 **Supported Scopes**: goods, market_goods  
+
+## is_treaty_article_in_danger
+Checks if treaty article is in danger of breaking  
+is_treaty_article_in_danger = yes
+Traits: yes/no 
+Reads gamestate for all scopes.
+**Supported Scopes**: treaty_article  
 
 ## is_treaty_port
 Checks if the scoped state is a treaty port  

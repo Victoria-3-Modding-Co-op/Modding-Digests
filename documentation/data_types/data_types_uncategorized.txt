@@ -11023,6 +11023,12 @@ Return type: LawType
 
 -----------------------
 
+Article.GetMaintenancePayer
+Definition type: Promote
+Return type: Country
+
+-----------------------
+
 Article.GetSecondOrTargetCountry
 Definition type: Promote
 Return type: Country
@@ -11083,6 +11089,12 @@ Return type: bool
 
 -----------------------
 
+Article.GetAboutToBreakReasonDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 Article.GetArticleNumber
 Definition type: Function
 Return type: int32
@@ -11092,6 +11104,12 @@ Return type: int32
 Article.GetArticleType
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+Article.GetAutoBreakReasonDesc
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -11156,6 +11174,12 @@ Return type: CString
 -----------------------
 
 Article.GetLaw
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+Article.GetMaintenancePayer
 Definition type: Function
 Return type: [unregistered]
 
@@ -11364,6 +11388,12 @@ Return type: LawType
 
 -----------------------
 
+ArticleDraft.GetMaintenancePayer
+Definition type: Promote
+Return type: Country
+
+-----------------------
+
 ArticleDraft.GetSecondOrTarget
 Definition type: Promote
 Return type: Country
@@ -11397,6 +11427,12 @@ Return type: bool
 ArticleDraft.CanBeModified
 Definition type: Function
 Return type: bool
+
+-----------------------
+
+ArticleDraft.CanBeModifiedDesc
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -11479,6 +11515,12 @@ Return type: CString
 -----------------------
 
 ArticleDraft.GetLawType
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+ArticleDraft.GetMaintenancePayer
 Definition type: Function
 Return type: [unregistered]
 
@@ -11928,12 +11970,6 @@ Return type: bool
 -----------------------
 
 ArticleType.IsVisible( Arg0 )
-Definition type: Function
-Return type: bool
-
------------------------
-
-ArticleType.RecipientPaysMaintenance
 Definition type: Function
 Return type: bool
 
@@ -19975,7 +20011,7 @@ Return type: Scope
 
 -----------------------
 
-CompanyType.AccessBuildingTypes
+CompanyType.AccessBuildingTypes( Arg0 )
 Definition type: Function
 Return type: [unregistered]
 
@@ -20038,6 +20074,12 @@ Return type: CString
 CompanyType.GetNumBuildingLevels
 Definition type: Function
 Return type: int32
+
+-----------------------
+
+CompanyType.GetPotentialBuildingTypes( Arg0 )
+Definition type: Function
+Return type: [unregistered]
 
 -----------------------
 
@@ -46418,6 +46460,12 @@ Return type: CString
 
 -----------------------
 
+MilitaryFormation.GetOrganizationTargetPercentage
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 MilitaryFormation.GetOrganizationTargetRaw
 Definition type: Function
 Return type: CFixedPoint
@@ -47664,6 +47712,12 @@ Return type: CFixedPoint
 -----------------------
 
 Modifier.GetName
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+Modifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor( Arg0 )
 Definition type: Function
 Return type: CString
 
@@ -64161,6 +64215,12 @@ Return type: int32
 
 -----------------------
 
+SwayOffer.GetAcceptSwayScore( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 SwayOffer.GetCountryForFlag( Arg0 )
 Definition type: Function
 Return type: [unregistered]
@@ -66153,6 +66213,12 @@ Definition type: Type
 
 -----------------------
 
+Treaty.GetBindingPeriodEndGameDate
+Definition type: Promote
+Return type: Date
+
+-----------------------
+
 Treaty.GetEnforcedOnCountry
 Definition type: Promote
 Return type: Country
@@ -66198,6 +66264,12 @@ Return type: Country
 Treaty.GetShippingLaneOf( Arg0 )
 Definition type: Promote
 Return type: ShippingLane
+
+-----------------------
+
+Treaty.GetStartGameDate
+Definition type: Promote
+Return type: Date
 
 -----------------------
 
@@ -66270,6 +66342,12 @@ Return type: int32
 Treaty.GetBindingDaysLeft
 Definition type: Function
 Return type: int32
+
+-----------------------
+
+Treaty.GetBindingPeriodEndGameDate
+Definition type: Function
+Return type: [unregistered]
 
 -----------------------
 
@@ -66447,6 +66525,12 @@ Return type: CString
 
 -----------------------
 
+Treaty.GetStartGameDate
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 Treaty.GetTargetModifierDesc
 Definition type: Function
 Return type: CString
@@ -66462,6 +66546,12 @@ Return type: CString
 Treaty.GetWithdrawPenaltiesDesc( Arg0 )
 Definition type: Function
 Return type: CString
+
+-----------------------
+
+Treaty.IsDraft
+Definition type: Function
+Return type: bool
 
 -----------------------
 
@@ -66797,6 +66887,12 @@ Return type: CString
 TreatyDraft.GetNegativeAcceptanceBreakdown( Arg0 )
 Definition type: Function
 Return type: CString
+
+-----------------------
+
+TreatyDraft.GetNumAvailableInputOptions( Arg0, Arg1 )
+Definition type: Function
+Return type: int32
 
 -----------------------
 

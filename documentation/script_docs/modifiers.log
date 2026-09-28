@@ -1230,7 +1230,7 @@ state_pollution_generation_add:
   Description: An increase or decrease to how much pollution is generated in a state
 state_pollution_reduction_health_mult:
   Mask: state
-  Name: Pollution Effects Reduction
+  Name: Pollution Health Effects Reduction
   Description: An increase of decrease to the effects of Pollution Impact on the health of your population
 state_pop_pol_str_add:
   Mask: state

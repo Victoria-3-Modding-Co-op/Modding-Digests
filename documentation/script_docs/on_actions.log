@@ -362,6 +362,12 @@ Expected Scope: none
 
 --------------------
 
+on_treaty_article_removed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 on_character_creation:
 From Code: Yes
 Expected Scope: none

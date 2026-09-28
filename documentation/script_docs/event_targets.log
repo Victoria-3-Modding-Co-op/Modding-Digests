@@ -38,6 +38,26 @@ Requires Data: yes
 Input Scopes: market_goods
 Output Scopes: value
 
+### market_export_cap
+Get the maximum amount of goods the market can export based on it's production of the scoped MarketGoods
+Input Scopes: market_goods
+Output Scopes: value
+
+### market_import_cap
+Get the maximum amount of goods the market can import based on it's consumption of the scoped MarketGoods
+Input Scopes: market_goods
+Output Scopes: value
+
+### treaty_exports
+Get the current number of treaty (NOT world market) exports of the good to the market of the scoped MarketGoods
+Input Scopes: market_goods
+Output Scopes: value
+
+### treaty_imports
+Get the current number of treaty (NOT world market) imports of the good to the market of the scoped MarketGoods
+Input Scopes: market_goods
+Output Scopes: value
+
 ### momentum
 Get the scoped party's raw momentum
 Input Scopes: party
@@ -1168,6 +1188,11 @@ Output Scopes: company
 Scope to the power bloc for the scoped country
 Input Scopes: country
 Output Scopes: power_bloc
+
+### principal
+Get the current debt principal of the country
+Input Scopes: country
+Output Scopes: value
 
 ### py
 Scope to the active party of specified key belonging to the country

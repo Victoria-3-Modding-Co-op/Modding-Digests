@@ -1765,6 +1765,18 @@ Return type: Technology
 
 -----------------------
 
+TopScope.sTreaty( Arg0 )
+Definition type: Promote
+Return type: Treaty
+
+-----------------------
+
+TopScope.sTreatyArticle( Arg0 )
+Definition type: Promote
+Return type: Article
+
+-----------------------
+
 TopScope.sW( Arg0 )
 Definition type: Promote
 Return type: War
@@ -2408,6 +2420,18 @@ Return type: [unregistered]
 -----------------------
 
 TopScope.sTechnology( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+TopScope.sTreaty( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+TopScope.sTreatyArticle( Arg0 )
 Definition type: Function
 Return type: [unregistered]
 
