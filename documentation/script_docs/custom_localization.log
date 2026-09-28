@@ -5384,6 +5384,39 @@ subject_type_DEFAULT_PP
 
 --------------------
 
+getNameIBEorSPA_RU_VP:
+
+Scope: country
+Random Valid: no
+
+Entries:
+rootgetname_RU_VP
+IBE_var_RU_VP
+
+--------------------
+
+getSpainName_RU_RP:
+
+Scope: country
+Random Valid: no
+
+Entries:
+rootgetname_RU_RP
+SPA_var_RU_RP
+
+--------------------
+
+getSpainNameNoFormatting_RU_TP:
+
+Scope: country
+Random Valid: no
+
+Entries:
+rootgetname_noformatting_RU_TP
+SPA_RU_TP
+
+--------------------
+
 dynamic_french_pretender:
 
 Scope: country
@@ -6080,6 +6113,50 @@ je_cuba_Pro_USA_status_desc
 je_cuba_neutral_status_desc
 je_cuba_independencia_status_desc
 je_cuba_stay_status_desc
+
+--------------------
+
+getNameIBEorSPA:
+
+Scope: country
+Random Valid: no
+
+Entries:
+rootgetname
+IBE_var
+
+--------------------
+
+getNameIBEorSPANoFormatting:
+
+Scope: country
+Random Valid: no
+
+Entries:
+rootgetname_noformatting
+IBE
+
+--------------------
+
+getSpainName:
+
+Scope: country
+Random Valid: no
+
+Entries:
+rootgetname
+SPA_var
+
+--------------------
+
+getSpainNameNoFormatting:
+
+Scope: country
+Random Valid: no
+
+Entries:
+rootgetname_noformatting
+SPA
 
 --------------------
 

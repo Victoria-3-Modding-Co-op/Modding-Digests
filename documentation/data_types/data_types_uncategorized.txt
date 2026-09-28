@@ -23607,7 +23607,7 @@ Return type: CFixedPoint
 
 -----------------------
 
-Country.GetConstructionGoodsExpensesByGoodsDesc
+Country.GetConstructionGoodsExpensesByGoodsDesc( Arg0 )
 Definition type: Function
 Return type: CString
 
@@ -24360,6 +24360,18 @@ Return type: CString
 Country.GetGovernment
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+Country.GetGovernmentConstructionGoodsExpenses
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+Country.GetGovernmentConstructionGoodsExpensesByGoodsDesc
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -26151,6 +26163,18 @@ Return type: CFixedPoint
 
 -----------------------
 
+Country.GetPrivateConstructionGoodsExpenses
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+Country.GetPrivateConstructionGoodsExpensesByGoodsDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 Country.GetPrivateConstructionQueueDesc
 Definition type: Function
 Return type: CString
@@ -26814,6 +26838,12 @@ Return type: int64
 Country.GetTotalUrbanization
 Definition type: Function
 Return type: int32
+
+-----------------------
+
+Country.GetTreatiesBrokenFromNeutralityDesc( Arg0 )
+Definition type: Function
+Return type: CString
 
 -----------------------
 
