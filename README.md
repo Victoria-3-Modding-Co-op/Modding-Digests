@@ -42,3 +42,4 @@ The repository contains all official [documentation files](documentation) of the
 - [1.13.11](1.13.11/discord.md)
 - [1.14.1-openbeta](1.14.1-openbeta/discord.md)
 - [1.14.4-openbeta](1.14.4-openbeta/discord.md)
+- [1.14.5-openbeta](1.14.5-openbeta/discord.md)
