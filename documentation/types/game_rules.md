@@ -22,5 +22,9 @@ setting_<key>_desc will be used as the key for game rule setting descs
 | high_ai_aggression              | ???                                                                                    |
 | no_subject_flags                | Subject nations' flags do not include their Overlord's flag as a canton                |
 | no_subject_map_color            | Subject nations do not share their Overlord's map color                                |
+| infamy_generation_very_low      | Calculated infamy is multiplied by NDiplomacy INFAMY_GAME_RULE_VERY_LOW_MULT           |
+| infamy_generation_low           | Calculated infamy is multiplied by NDiplomacy INFAMY_GAME_RULE_LOW_MULT                |
+| infamy_generation_high          | Calculated infamy is multiplied by NDiplomacy INFAMY_GAME_RULE_HIGH_MULT               |
+| infamy_generation_very_high     | Calculated infamy is multiplied by NDiplomacy INFAMY_GAME_RULE_VERY_HIGH_MULT          |
 | disable_<production_method_key> | The specified production method cannot be activated under any circumstances            |
 | force_<production_method_key>   | The specified production method is forcibly activated and cannot be switched away from |

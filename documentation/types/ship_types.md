@@ -31,6 +31,9 @@
 	# Optional multiplier on the perceived combat power of a ship, primarily used by the AI to evaluate the combat prowess of one ship vs another, default 1.0
 	combat_power_multiplier = x
 
+	# [Optional] The most target vulnerability this ship type can exploit for extra damage against a side lacking screening. If not specified, it can exploit all of it
+	vulnerability_exploitation = x
+
 	icon = <texture>
 
 	# [Default = 1] How important is this ship type to build for AI

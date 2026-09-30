@@ -69,6 +69,7 @@ some_war_goal = {
 
 	ai = {
 		is_significant_demand = yes
+		settles_grievance = no # yes = an AI with an Antagonistic attitude towards the target may still start a diplomatic play for this war goal
 	}
 }
 ```

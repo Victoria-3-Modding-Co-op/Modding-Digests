@@ -12346,7 +12346,7 @@ Return type: [unregistered]
 
 -----------------------
 
-AIRegionalObjective.GetCompletionDate
+AIRegionalObjective.GetConclusionDate
 Definition type: Function
 Return type: CString
 
@@ -12406,7 +12406,19 @@ Return type: [unregistered]
 
 -----------------------
 
+AIRegionalObjective.IsActive
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 AIRegionalObjective.IsCompleted
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+AIRegionalObjective.IsFailed
 Definition type: Function
 Return type: bool
 
@@ -78128,6 +78140,12 @@ Return type: [unregistered]
 
 -----------------------
 
+Strait.GetRestrictionsDesc( Arg0, Arg1 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 Strait.GetSecondController
 Definition type: Function
 Return type: [unregistered]
@@ -83814,6 +83832,12 @@ Return type: Country
 
 -----------------------
 
+War.GetWarGoalAtRiskOfBeingDropped( Arg0 )
+Definition type: Promote
+Return type: WarGoal
+
+-----------------------
+
 War.MakeScope
 Definition type: Promote
 Return type: Scope
@@ -84150,6 +84174,12 @@ Return type: CString
 
 -----------------------
 
+War.GetWarGoalAtRiskOfBeingDropped( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 War.GetWarGoalWarSupportBreakdown( Arg0 )
 Definition type: Function
 Return type: CString
@@ -84467,6 +84497,12 @@ Return type: CString
 
 -----------------------
 
+WarGoal.GetDaysUntilUncontestedDrop
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 WarGoal.GetDesc
 Definition type: Function
 Return type: CString
@@ -84617,6 +84653,12 @@ Return type: [unregistered]
 
 -----------------------
 
+WarGoal.GetUncontestedDropDate
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 WarGoal.GetWar
 Definition type: Function
 Return type: [unregistered]
@@ -84642,6 +84684,12 @@ Return type: bool
 -----------------------
 
 WarGoal.HoldsArticle
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+WarGoal.IsAtRiskOfBeingDroppedForBeingUncontested
 Definition type: Function
 Return type: bool
 

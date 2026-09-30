@@ -424,6 +424,10 @@ country_authority_per_subject_add:
   Mask: country
   Name: aut! Authority per Subject
   Description: The amount of aut! Authority which is scaled by the number of Subjects
+country_ban_slavery_no_infamy_bool:
+  Mask: country
+  Name: No Infamy from Ban Slavery
+  Description: Ban Slavery War Goals no longer generate Infamy
 country_block_government_reform_bool:
   Mask: country
   Name: Blocks Government Reform
@@ -660,6 +664,10 @@ country_higher_leverage_from_economic_dependence_bool:
   Mask: country
   Name: Increased Leverage from Economic Dependence
   Description: Increased Leverage gain from Economic Dependence.
+country_homeland_infamy_reduction_bool:
+  Mask: country
+  Name: Reduced Infamy for Homelands
+  Description: Taking Homelands of our primary cultures generates even less Infamy
 country_improve_relations_speed_mult:
   Mask: country
   Name: Improve Relations Speed
@@ -920,10 +928,10 @@ country_prestige_from_army_power_projection_mult:
   Mask: country
   Name: Prestige from Army Power Projection
   Description: An increase or decrease to the amount of Prestige a Country receives from the Power Projection of its army.
-country_prestige_from_navy_combat_power_mult:
+country_prestige_from_navy_power_projection_mult:
   Mask: country
-  Name: Prestige from Navy Combat Power
-  Description: An increase or decrease to the amount of Prestige a Country receives from the fighting strength of its navy.
+  Name: Prestige from Navy Power Projection
+  Description: An increase or decrease to the amount of Prestige a Country receives from the Power Projection of its navy.
 country_prestige_mult:
   Mask: country
   Name: Prestige
@@ -984,6 +992,10 @@ country_secession_progress_mult:
   Mask: country
   Name: Secession Progression Speed
   Description: A bonus or penalty to how much progress is added to the secession when the Secession Clock strikes 12
+country_shared_language_infamy_reduction_bool:
+  Mask: country
+  Name: Reduced Infamy for Shared Language
+  Description: Taking Homelands of cultures that share a language with our primary cultures generates even less Infamy
 country_ship_construction_add:
   Mask: country
   Name: ship_construction! Ship Construction
@@ -7414,6 +7426,10 @@ power_bloc_mandate_progress_per_unrecognized_regional_power_member_mult:
   Mask: power_bloc
   Name: Mandate Progress per Unrecognized Regional Power
   Description: Determines the amount of Mandate Progress gained by a Power Bloc for each of its members that are of Rank Unrecognized Regional Power
+ship_battle_against_ship_type_coastal_defense_ship_hull_damage_mult:
+  Mask: ship
+  Name: Coastal Defense Ship Hull Attack Damage
+  Description: An increase or decrease to the amount of damage a Ship can deal to another Ship’s hull
 ship_battle_against_ship_type_destroyer_accuracy_add:
   Mask: ship
   Name: Destroyer Accuracy
@@ -7426,9 +7442,17 @@ ship_battle_against_ship_type_dreadnought_hull_damage_mult:
   Mask: ship
   Name: Dreadnought Hull Attack Damage
   Description: An increase or decrease to the amount of damage a Ship can deal to another Ship’s hull
+ship_battle_against_ship_type_early_ironclad_hull_damage_mult:
+  Mask: ship
+  Name: Early Ironclad Hull Attack Damage
+  Description: An increase or decrease to the amount of damage a Ship can deal to another Ship’s hull
 ship_battle_against_ship_type_modern_ironclad_hull_damage_mult:
   Mask: ship
   Name: Modern Ironclad Hull Attack Damage
+  Description: An increase or decrease to the amount of damage a Ship can deal to another Ship’s hull
+ship_battle_against_ship_type_monitor_hull_damage_mult:
+  Mask: ship
+  Name: Monitor Hull Attack Damage
   Description: An increase or decrease to the amount of damage a Ship can deal to another Ship’s hull
 ship_battle_against_ship_type_pre_dreadnought_hull_damage_mult:
   Mask: ship

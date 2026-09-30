@@ -32,6 +32,12 @@ Expected Scope: none
 
 --------------------
 
+on_wargoal_enforced_by_timer:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 korea_half_yearly_events:
 From Code: No
 Expected Scope: country
@@ -824,6 +830,12 @@ Expected Scope: none
 
 --------------------
 
+on_lost_war:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 on_law_checkpoint_debate:
 From Code: Yes
 Expected Scope: country
@@ -963,6 +975,12 @@ Expected Scope: none
 --------------------
 
 on_sub_objective_completed:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_won_war:
 From Code: Yes
 Expected Scope: none
 
@@ -1571,6 +1589,12 @@ Expected Scope: none
 silkworm_half_yearly_events:
 From Code: No
 Expected Scope: country
+
+--------------------
+
+on_inconclusive_war:
+From Code: Yes
+Expected Scope: none
 
 --------------------
 

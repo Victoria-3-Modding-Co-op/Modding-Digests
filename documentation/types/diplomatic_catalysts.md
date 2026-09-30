@@ -34,6 +34,8 @@
 			# root = the country the catalyst was triggered for
 			# scope:target_country = the country the catayst was triggered by
 			# scope:new_diplomatic_relation = yes/no - true if the diplomatic catalyst caused the two countries to become diplomatically relevant
+			# scope:value_before / scope:value_after = values the code creating the catalyst can provide, for instance a grievance before and after the change that caused it
+			# (strait catalysts pass the grievance on that strait, 0-100). Not set for catalysts created without them, and also available in political_lobby_creation and effect
 			trigger = {}
 		
 			# Script value for chance to recalculate the AI's strategic desire (0 = 0%, 1 = 100%)
