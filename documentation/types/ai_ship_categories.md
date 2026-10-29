@@ -1,4 +1,7 @@
 ﻿ai_ship_category_key = {
+	# Country scope. When false, the AI does not build this category and leaves it out of the mix it plans
+	# its navy around, but still knows how many of these ships it would want, e.g. when offered one
+	can_build = { <triggers> }
 }
 
 # AI-only categorisation of ship types, used by the AI to organise its navy into fleets and to decide

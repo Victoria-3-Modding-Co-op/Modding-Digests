@@ -1,6 +1,7 @@
 ﻿# the key determines which category the modifier falls into and thereby its flow through the modifier graph
 # for example, a modifier definition key that starts with `country_` with an entry in a static modifier applied to a Power Bloc will flow to countries belonging to that Bloc, but no further
 # while a modifier definition key that starts with `state_` with an entry in the same static modifier will flow through countries to all states in that country
+# the longest matching prefix wins, so `goods_output_` is its own category that reaches buildings, states and countries but never military formations, while `goods_` keys such as `goods_input_` do reach military formations
 
 modifier_type_key = {	
 	# determines how many decimal points will be used when displaying entries with this modifier definition

@@ -118,11 +118,11 @@ building_self_investment_chance_add:
 building_subsistence_output_add:
   Mask: building
   Name: Subsistence Output
-  Description: An increase or decrease to the Subsistence Output of peasants! Peasants in the Building.
+  Description: An increase or decrease to the Subsistence Output of peasants! Peasants in the Building.
 building_subsistence_output_mult:
   Mask: building
   Name: Subsistence Output
-  Description: An increase or decrease to the Subsistence Output of peasants! Peasants in the Building.
+  Description: An increase or decrease to the Subsistence Output of peasants! Peasants in the Building.
 building_throughput_add:
   Mask: building
   Name: Throughput
@@ -138,7 +138,7 @@ building_training_rate_mult:
 building_unincorporated_subsistence_output_mult:
   Mask: building
   Name: Subsistence Output in Unincorporated States
-  Description: An increase or decrease to the Subsistence Output of peasants! Peasants in Unincorporated States
+  Description: An increase or decrease to the Subsistence Output of peasants! Peasants in Unincorporated States
 building_unincorporated_throughput_add:
   Mask: building
   Name: Throughput in Unincorporated States
@@ -460,6 +460,10 @@ country_can_form_construction_company_bool:
   Mask: country
   Name: Can form Construction type Companies
   Description: Can form Construction type Companies
+country_can_found_cossack_host_bool:
+  Mask: country
+  Name: Can Establish Cossack Hosts
+  Description: Allows the establishment of a Cossack Host in States
 country_can_only_conscript_peasants_bool:
   Mask: country
   Name: Allows only Infantry Conscript Battalions
@@ -560,6 +564,14 @@ country_disallow_agitator_invites_bool:
   Mask: country
   Name: Disallowed from inviting Exiles
   Description: This country does not permit the invitation of Exiles
+country_disallow_army_creation_bool:
+  Mask: country
+  Name: Disallow Army Creation
+  Description: Not allowed to create new Armies
+country_disallow_military_ship_construction_bool:
+  Mask: country
+  Name: Disallow Military Ship Construction
+  Description: Not allowed to construct military Ships, but Supply Ships can still be constructed
 country_disallow_trade_bool:
   Mask: country
   Name: Disable Trade Centers
@@ -810,8 +822,8 @@ country_liberty_desire_of_subjects_add:
   Description: An increase or decrease to the amount of Liberty Desire all Subjects of the Overlord gain each week
 country_limit_officers_qualifications_to_upper_strata:
   Mask: country
-  Name: officers! Officers qualifications limited to Upper Strata
-  Description: officers! Officers Qualifications will exclusively originate from the Upper Strata
+  Name: officers! Officers qualifications limited to Upper Strata
+  Description: officers! Officers Qualifications will exclusively originate from the Upper Strata
 country_loan_interest_rate_add:
   Mask: country
   Name: Loan interest rate
@@ -896,10 +908,30 @@ country_opposition_ig_approval_add:
   Mask: country
   Name: Opposition Interest Group Approval
   Description: A bonus or penalty to the Approval of Interest Groups in Opposition
+country_other_country_socialist_economy_hostility_impact_add:
+  Mask: country
+  Name: Socialist Economy Hostility Impact
+  Description: An increase or decrease to the hostility of other Countries to this Country’s economy when evaluating Strategies, Diplomatic Plays and Treaties
+country_other_country_socialist_economy_hostility_impact_mult:
+  Mask: country
+  Name: Socialist Economy Hostility Impact
+  Description: An increase or decrease to the hostility of other Countries to this Country’s economy when evaluating Strategies, Diplomatic Plays and Treaties
+country_other_country_socialist_government_hostility_impact_add:
+  Mask: country
+  Name: Socialist Government Hostility Impact
+  Description: An increase or decrease to the hostility of other Countries to this Country’s government when evaluating Strategies, Diplomatic Plays and Treaties
+country_other_country_socialist_government_hostility_impact_mult:
+  Mask: country
+  Name: Socialist Government Hostility Impact
+  Description: An increase or decrease to the hostility of other Countries to this Country’s government when evaluating Strategies, Diplomatic Plays and Treaties
 country_overlord_income_transfer_mult:
   Mask: country
   Name: Overlord Income Transfer
   Description: An increase or decrease to the amount of Money the subject must give to their overlord
+country_overlord_law_enactment_success_add:
+  Mask: country
+  Name: Overlord Legal Synergy
+  Description: A flat percentage point increase to the likelihood of enacting a law the country's Overlord already has
 country_pact_leverage_generation_add:
   Mask: country
   Name: Leverage Generation from Diplomatic Pact
@@ -920,6 +952,10 @@ country_port_connection_cost_mult:
   Mask: country
   Name: merchant_marine! Merchant Marine Cost of Port Connections
   Description: An increase or decrease to the merchant_marine! Merchant Marine demand required to maintain Port Connections
+country_power_bloc_formation_mandates_add:
+  Mask: country
+  Name: Mandates when forming a Power Bloc
+  Description: Additional Mandates to spend on Principles when forming a Power Bloc. Any left unspent stay with the new Power Bloc.
 country_prestige_add:
   Mask: country
   Name: Prestige
@@ -956,6 +992,14 @@ country_reduced_liberty_desire_same_religion_bool:
   Mask: country
   Name: Reduced Liberty Desire for Same Religion
   Description: Subjects with the same state Religion will have reduced Liberty Desire over time
+country_reform_or_revolution_reform_bonus_add:
+  Mask: country
+  Name: Proportional Reform or Revolution Reformist Progress
+  Description: An increase or decrease to the amount of monthly progress towards Reformism in the Reform or Revolution Journal Entry, proportional to the strength of this Country’s Socialist Movement and Socialist Party
+country_reform_or_revolution_revolution_bonus_add:
+  Mask: country
+  Name: Proportional Reform or Revolution Revolutionary Progress
+  Description: An increase or decrease to the amount of monthly progress towards Revolution in the Reform or Revolution Journal Entry, proportional to the strength of this Country’s Socialist Movement and Socialist Party
 country_resource_depletion_chance_mult:
   Mask: country
   Name: Resource Depletion Chance
@@ -976,6 +1020,18 @@ country_revolution_progress_mult:
   Mask: country
   Name: Revolution Progression Speed
   Description: A bonus or penalty to how much progress is added to the revolution when the Revolution Clock strikes 12
+country_rlit_censorship_severity_add:
+  Mask: country
+  Name: Literary Censorship
+  Description: country_rlit_censorship_severity_add_desc
+country_rlit_cultural_prestige_add:
+  Mask: country
+  Name: Literary Prestige
+  Description: country_rlit_cultural_prestige_add_desc
+country_rlit_intellectual_freedom_add:
+  Mask: country
+  Name: Intellectual Freedom
+  Description: country_rlit_intellectual_freedom_add_desc
 country_sailors_max_add:
   Mask: country
   Name: Max Sailors
@@ -1200,6 +1256,194 @@ interest_group_approval_add:
   Mask: interest_group
   Name: Interest Group Approval
   Description: A bonus or penalty to the Approval of an Interest Group
+interest_group_ideology_abolitionist_leader_chance_mult:
+  Mask: interest_group
+  Name: Abolitionist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Abolitionist Ideology
+interest_group_ideology_anarchist_leader_chance_mult:
+  Mask: interest_group
+  Name: Anarchist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Anarchist Ideology
+interest_group_ideology_authoritarian_leader_chance_mult:
+  Mask: interest_group
+  Name: Authoritarian Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Authoritarian Ideology
+interest_group_ideology_bonapartist_leader_chance_mult:
+  Mask: interest_group
+  Name: Bonapartist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Bonapartist Ideology
+interest_group_ideology_carlist_2_leader_chance_mult:
+  Mask: interest_group
+  Name: Carlist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Carlist Ideology
+interest_group_ideology_carlist_leader_chance_mult:
+  Mask: interest_group
+  Name: Carlist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Carlist Ideology
+interest_group_ideology_communist_leader_leader_chance_mult:
+  Mask: interest_group
+  Name: Communist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Communist Ideology
+interest_group_ideology_corporatist_leader_leader_chance_mult:
+  Mask: interest_group
+  Name: Corporatist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Corporatist Ideology
+interest_group_ideology_despotic_utopian_leader_chance_mult:
+  Mask: interest_group
+  Name: Despotic Utopian Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Despotic Utopian Ideology
+interest_group_ideology_ethno_nationalist_leader_chance_mult:
+  Mask: interest_group
+  Name: Ethno-Nationalist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Ethno-Nationalist Ideology
+interest_group_ideology_fascist_leader_chance_mult:
+  Mask: interest_group
+  Name: Fascist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Fascist Ideology
+interest_group_ideology_feminist_leader_chance_mult:
+  Mask: interest_group
+  Name: Feminist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Feminist Ideology
+interest_group_ideology_humanitarian_leader_chance_mult:
+  Mask: interest_group
+  Name: Humanitarian Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Humanitarian Ideology
+interest_group_ideology_humanitarian_royalist_leader_chance_mult:
+  Mask: interest_group
+  Name: Enlightened Royalist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Enlightened Royalist Ideology
+interest_group_ideology_ilustrado_leader_leader_chance_mult:
+  Mask: interest_group
+  Name: Ilustrado Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Ilustrado Ideology
+interest_group_ideology_integralist_leader_chance_mult:
+  Mask: interest_group
+  Name: Integralist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Integralist Ideology
+interest_group_ideology_jacksonian_democrat_leader_chance_mult:
+  Mask: interest_group
+  Name: Jacksonian Democrat Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Jacksonian Democrat Ideology
+interest_group_ideology_jingoist_leader_leader_chance_mult:
+  Mask: interest_group
+  Name: Jingoist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Jingoist Ideology
+interest_group_ideology_land_reformer_leader_chance_mult:
+  Mask: interest_group
+  Name: Land Reformer Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Land Reformer Ideology
+interest_group_ideology_legitimist_leader_chance_mult:
+  Mask: interest_group
+  Name: Legitimist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Legitimist Ideology
+interest_group_ideology_liberal_leader_leader_chance_mult:
+  Mask: interest_group
+  Name: Liberal Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Liberal Ideology
+interest_group_ideology_luddite_leader_chance_mult:
+  Mask: interest_group
+  Name: Luddite Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Luddite Ideology
+interest_group_ideology_market_liberal_leader_chance_mult:
+  Mask: interest_group
+  Name: Market Liberal Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Market Liberal Ideology
+interest_group_ideology_miguelist_2_leader_chance_mult:
+  Mask: interest_group
+  Name: Miguelist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Miguelist Ideology
+interest_group_ideology_miguelist_leader_chance_mult:
+  Mask: interest_group
+  Name: Miguelist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Miguelist Ideology
+interest_group_ideology_mitogaku_leader_chance_mult:
+  Mask: interest_group
+  Name: Mitogaku Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Mitogaku Ideology
+interest_group_ideology_moderate_leader_chance_mult:
+  Mask: interest_group
+  Name: Moderate Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Moderate Ideology
+interest_group_ideology_modernizer_leader_leader_chance_mult:
+  Mask: interest_group
+  Name: Modernizer Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Modernizer Ideology
+interest_group_ideology_nihilist_leader_chance_mult:
+  Mask: interest_group
+  Name: Nihilist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Nihilist Ideology
+interest_group_ideology_orleanist_leader_chance_mult:
+  Mask: interest_group
+  Name: Orléanist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Orléanist Ideology
+interest_group_ideology_pacifist_leader_chance_mult:
+  Mask: interest_group
+  Name: Pacifist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Pacifist Ideology
+interest_group_ideology_positivist_leader_chance_mult:
+  Mask: interest_group
+  Name: Positivist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Positivist Ideology
+interest_group_ideology_protectionist_leader_chance_mult:
+  Mask: interest_group
+  Name: Protectionist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Protectionist Ideology
+interest_group_ideology_radical_leader_chance_mult:
+  Mask: interest_group
+  Name: Radical Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Radical Ideology
+interest_group_ideology_reformer_leader_chance_mult:
+  Mask: interest_group
+  Name: Reformer Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Reformer Ideology
+interest_group_ideology_republican_leader_leader_chance_mult:
+  Mask: interest_group
+  Name: Republican Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Republican Ideology
+interest_group_ideology_royalist_leader_chance_mult:
+  Mask: interest_group
+  Name: Royalist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Royalist Ideology
+interest_group_ideology_shojoi_leader_chance_mult:
+  Mask: interest_group
+  Name: Shōjōi Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Shōjōi Ideology
+interest_group_ideology_slaver_leader_chance_mult:
+  Mask: interest_group
+  Name: Slaver Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Slaver Ideology
+interest_group_ideology_sovereignist_leader_leader_chance_mult:
+  Mask: interest_group
+  Name: Sovereignist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Sovereignist Ideology
+interest_group_ideology_state_socialist_leader_chance_mult:
+  Mask: interest_group
+  Name: State Socialist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the State Socialist Ideology
+interest_group_ideology_theocrat_leader_chance_mult:
+  Mask: interest_group
+  Name: Theocrat Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Theocrat Ideology
+interest_group_ideology_traditionalist_leader_chance_mult:
+  Mask: interest_group
+  Name: Traditionalist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Traditionalist Ideology
+interest_group_ideology_traditionalist_minoritarian_leader_chance_mult:
+  Mask: interest_group
+  Name: Minoritarian Traditionalist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Minoritarian Traditionalist Ideology
+interest_group_ideology_utilitarian_leader_leader_chance_mult:
+  Mask: interest_group
+  Name: Utilitarian Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Utilitarian Ideology
+interest_group_ideology_utopian_leader_chance_mult:
+  Mask: interest_group
+  Name: Utopian Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Utopian Ideology
+interest_group_ideology_vanguardist_leader_chance_mult:
+  Mask: interest_group
+  Name: Vanguardist Leader Chance
+  Description: An increase or decrease to the chance for this Interest Group to select a Leader with the Vanguardist Ideology
 interest_group_in_government_approval_add:
   Mask: interest_group
   Name: Government Interest Group Approval
@@ -1318,8 +1562,8 @@ political_movement_activism_growth_mult:
   Description: An increase or decrease to the rate at which Movement Activism grows for a Political Movement
 political_movement_character_attraction_mult:
   Mask: political_movement
-  Name: political_movement_character_attraction_mult
-  Description: political_movement_character_attraction_mult_desc
+  Name: Political Movement Character Attraction
+  Description: An increase or decrease to the attraction for Characters towards joining a Political Movement.
 political_movement_pop_attraction_mult:
   Mask: political_movement
   Name: Political Movement Pop Attraction
@@ -1708,6 +1952,10 @@ state_devastation_decay_mult:
   Mask: state
   Name: Devastation Recovery
   Description: A bonus or penalty to the speed at which States recover from Devastation.
+state_disallow_barracks_construction_bool:
+  Mask: state
+  Name: Disallow Army Building Construction
+  Description: Army Buildings cannot be constructed in the State, and no new Battalions can be raised there
 state_disallow_incorporation_bool:
   Mask: state
   Name: State Incorporation Disallowed
@@ -1792,6 +2040,10 @@ state_literacy_growth_add:
   Mask: state
   Name: Literacy Growth
   Description: A bonus or penalty to the growth of Literacy in a State.
+state_lower_strata_birth_rate_mult:
+  Mask: state
+  Name: Birth Rate for the Lower Strata
+  Description: How many children are born each year among the Lower Strata
 state_lower_strata_expected_sol_add:
   Mask: state
   Name: Minimum Expected Standard of Living for the Lower Strata
@@ -1812,6 +2064,10 @@ state_max_trade_advantage_from_capacity_add:
   Mask: state
   Name: Maximum Trade Advantage from Capacity
   Description: An increase or decrease in maximum Trade Advantage from Trade Capacity in a State
+state_middle_strata_birth_rate_mult:
+  Mask: state
+  Name: Birth Rate for the Middle Strata
+  Description: How many children are born each year among the Middle Strata
 state_middle_strata_expected_sol_add:
   Mask: state
   Name: Minimum Expected Standard of Living for the Middle Strata
@@ -1864,6 +2120,10 @@ state_non_homeland_mortality_mult:
   Mask: state
   Name: Mortality in non-Homeland States
   Description: An increase or decrease to the Mortality for Pops in States that are not the Homeland of any of your Primary Cultures.
+state_orthodox_lower_strata_conversion_rate_add:
+  Mask: state
+  Name: Monthly orthodox_text_icon! Orthodox Conversion
+  Description: An increase or decrease to the percentage of lower-strata Pops in a non-orthodox_text_icon! Orthodox Country that will Convert to Orthodox per month
 state_political_strength_from_wealth_mult:
   Mask: state
   Name: Political Strength from Wealth
@@ -1976,6 +2236,10 @@ state_unincorporated_starting_wages_mult:
   Mask: state
   Name: Starting Wages in Unincorporated States
   Description: How much more or less Pops in Unincorporated States get as initial salaries.
+state_upper_strata_birth_rate_mult:
+  Mask: state
+  Name: Birth Rate for the Upper Strata
+  Description: How many children are born each year among the Upper Strata
 state_upper_strata_expected_sol_add:
   Mask: state
   Name: Minimum Expected Standard of Living for the Upper Strata
@@ -2027,11 +2291,11 @@ tax_income_add:
 tax_land_add:
   Mask: tax
   Name: Land Tax
-  Description: The amount of Land Taxes collected from peasants! Peasants
+  Description: The amount of Land Taxes collected from peasants! Peasants
 tax_per_capita_add:
   Mask: tax
   Name: Per Capita Tax
-  Description: The amount of Per Capita Taxes collected from non-peasants! Peasants Pops
+  Description: The amount of Per Capita Taxes collected from non-peasants! Peasants Pops
 unit_army_defense_add:
   Mask: unit
   Name: Army Defense
@@ -2132,32 +2396,32 @@ unit_supply_consumption_mult:
 --- Dynamic modifier types ---
 building_academics_job_attractiveness_mult:
   Mask: building
-  Name: Job Attractiveness for academics! Academics
-  Description: A bonus or penalty to the wages a Building has to offer to be able to hire academics! Academics.
+  Name: Job Attractiveness for academics! Academics
+  Description: A bonus or penalty to the wages a Building has to offer to be able to hire academics! Academics.
 building_academics_mortality_mult:
   Mask: building
-  Name: Mortality of academics! Academics
-  Description: An increase or decrease in the Mortality of academics! Academics
+  Name: Mortality of academics! Academics
+  Description: An increase or decrease in the Mortality of academics! Academics
 building_academics_shares_add:
   Mask: building
-  Name: academics! Academics Pop Ownership Shares
-  Description: An increase or decrease in an academics! Academics Pop Ownership Shares
+  Name: academics! Academics Pop Ownership Shares
+  Description: An increase or decrease in an academics! Academics Pop Ownership Shares
 building_academics_standard_of_living_add:
   Mask: building
-  Name: Standard of Living for academics! Academics
-  Description: A bonus or penalty to the Standard of Living for employed academics! Academics.
+  Name: Standard of Living for academics! Academics
+  Description: A bonus or penalty to the Standard of Living for employed academics! Academics.
 building_aristocrats_job_attractiveness_mult:
   Mask: building
-  Name: Job Attractiveness for aristocrats! Aristocrats
-  Description: A bonus or penalty to the wages a Building has to offer to be able to hire aristocrats! Aristocrats.
+  Name: Job Attractiveness for aristocrats! Aristocrats
+  Description: A bonus or penalty to the wages a Building has to offer to be able to hire aristocrats! Aristocrats.
 building_aristocrats_shares_add:
   Mask: building
-  Name: aristocrats! Aristocrats Pop Ownership Shares
-  Description: An increase or decrease in an aristocrats! Aristocrats Pop Ownership Shares
+  Name: aristocrats! Aristocrats Pop Ownership Shares
+  Description: An increase or decrease in an aristocrats! Aristocrats Pop Ownership Shares
 building_aristocrats_standard_of_living_add:
   Mask: building
-  Name: Standard of Living for aristocrats! Aristocrats
-  Description: A bonus or penalty to the Standard of Living for employed aristocrats! Aristocrats.
+  Name: Standard of Living for aristocrats! Aristocrats
+  Description: A bonus or penalty to the Standard of Living for employed aristocrats! Aristocrats.
 building_arms_industry_throughput_add:
   Mask: building
   Name: Arms Industries building Throughput
@@ -2192,16 +2456,16 @@ building_bureaucrats_standard_of_living_add:
   Description: A bonus or penalty to the Standard of Living for employed bureaucrats! Bureaucrats.
 building_capitalists_job_attractiveness_mult:
   Mask: building
-  Name: Job Attractiveness for capitalists! Capitalists
-  Description: A bonus or penalty to the wages a Building has to offer to be able to hire capitalists! Capitalists.
+  Name: Job Attractiveness for capitalists! Capitalists
+  Description: A bonus or penalty to the wages a Building has to offer to be able to hire capitalists! Capitalists.
 building_capitalists_shares_add:
   Mask: building
-  Name: capitalists! Capitalists Pop Ownership Shares
-  Description: An increase or decrease in a capitalists! Capitalists Pop Ownership Shares
+  Name: capitalists! Capitalists Pop Ownership Shares
+  Description: An increase or decrease in a capitalists! Capitalists Pop Ownership Shares
 building_capitalists_standard_of_living_add:
   Mask: building
-  Name: Standard of Living for capitalists! Capitalists
-  Description: A bonus or penalty to the Standard of Living for employed capitalists! Capitalists.
+  Name: Standard of Living for capitalists! Capitalists
+  Description: A bonus or penalty to the Standard of Living for employed capitalists! Capitalists.
 building_chemical_plant_throughput_add:
   Mask: building
   Name: Fertilizer Plants building Throughput
@@ -2220,16 +2484,16 @@ building_clergymen_standard_of_living_add:
   Description: A bonus or penalty to the Standard of Living for employed clergymen! Clergymen.
 building_clerks_job_attractiveness_mult:
   Mask: building
-  Name: Job Attractiveness for clerks! Clerks
-  Description: A bonus or penalty to the wages a Building has to offer to be able to hire clerks! Clerks.
+  Name: Job Attractiveness for clerks! Clerks
+  Description: A bonus or penalty to the wages a Building has to offer to be able to hire clerks! Clerks.
 building_clerks_shares_add:
   Mask: building
-  Name: clerks! Clerks Pop Ownership Shares
-  Description: An increase or decrease in a clerks! Clerks Pop Ownership Shares
+  Name: clerks! Clerks Pop Ownership Shares
+  Description: An increase or decrease in a clerks! Clerks Pop Ownership Shares
 building_clerks_standard_of_living_add:
   Mask: building
-  Name: Standard of Living for clerks! Clerks
-  Description: A bonus or penalty to the Standard of Living for employed clerks! Clerks.
+  Name: Standard of Living for clerks! Clerks
+  Description: A bonus or penalty to the Standard of Living for employed clerks! Clerks.
 building_coal_mine_throughput_add:
   Mask: building
   Name: Coal Mines building Throughput
@@ -2242,6 +2506,10 @@ building_construction_sector_throughput_add:
   Mask: building
   Name: Construction Sector building Throughput
   Description: A bonus or penalty to both input and output of Construction Sector
+building_copper_mine_throughput_add:
+  Mask: building
+  Name: Copper Mines building Throughput
+  Description: A bonus or penalty to both input and output of Copper Mines
 building_cotton_plantation_throughput_add:
   Mask: building
   Name: Cotton Plantations building Throughput
@@ -2256,92 +2524,92 @@ building_electrics_industry_throughput_add:
   Description: A bonus or penalty to both input and output of Electrics Industries
 building_employment_academics_add:
   Mask: building
-  Name: academics! Academics Per Level
-  Description: Modifies the amount of academics! Academics a building can hire per level
+  Name: academics! Academics Per Level
+  Description: Modifies the amount of academics! Academics a building can hire per level
 building_employment_aristocrats_add:
   Mask: building
-  Name: aristocrats! Aristocrats Per Level
-  Description: Modifies the amount of aristocrats! Aristocrats a building can hire per level
+  Name: aristocrats! Aristocrats Per Level
+  Description: Modifies the amount of aristocrats! Aristocrats a building can hire per level
 building_employment_bureaucrats_add:
   Mask: building
   Name: bureaucrats! Bureaucrats Per Level
   Description: Modifies the amount of bureaucrats! Bureaucrats a building can hire per level
 building_employment_capitalists_add:
   Mask: building
-  Name: capitalists! Capitalists Per Level
-  Description: Modifies the amount of capitalists! Capitalists a building can hire per level
+  Name: capitalists! Capitalists Per Level
+  Description: Modifies the amount of capitalists! Capitalists a building can hire per level
 building_employment_clergymen_add:
   Mask: building
   Name: clergymen! Clergymen Per Level
   Description: Modifies the amount of clergymen! Clergymen a building can hire per level
 building_employment_clerks_add:
   Mask: building
-  Name: clerks! Clerks Per Level
-  Description: Modifies the amount of clerks! Clerks a building can hire per level
+  Name: clerks! Clerks Per Level
+  Description: Modifies the amount of clerks! Clerks a building can hire per level
 building_employment_engineers_add:
   Mask: building
-  Name: engineers! Engineers Per Level
-  Description: Modifies the amount of engineers! Engineers a building can hire per level
+  Name: engineers! Engineers Per Level
+  Description: Modifies the amount of engineers! Engineers a building can hire per level
 building_employment_farmers_add:
   Mask: building
-  Name: farmers! Farmers Per Level
-  Description: Modifies the amount of farmers! Farmers a building can hire per level
+  Name: farmers! Farmers Per Level
+  Description: Modifies the amount of farmers! Farmers a building can hire per level
 building_employment_laborers_add:
   Mask: building
   Name: laborers! Laborers Per Level
   Description: Modifies the amount of laborers! Laborers a building can hire per level
 building_employment_machinists_add:
   Mask: building
-  Name: machinists! Machinists Per Level
-  Description: Modifies the amount of machinists! Machinists a building can hire per level
+  Name: machinists! Machinists Per Level
+  Description: Modifies the amount of machinists! Machinists a building can hire per level
 building_employment_officers_add:
   Mask: building
-  Name: officers! Officers Per Level
-  Description: Modifies the amount of officers! Officers a building can hire per level
+  Name: officers! Officers Per Level
+  Description: Modifies the amount of officers! Officers a building can hire per level
 building_employment_peasants_add:
   Mask: building
-  Name: peasants! Peasants Per Level
-  Description: Modifies the amount of peasants! Peasants a building can hire per level
+  Name: peasants! Peasants Per Level
+  Description: Modifies the amount of peasants! Peasants a building can hire per level
 building_employment_shopkeepers_add:
   Mask: building
-  Name: shopkeepers! Shopkeepers Per Level
-  Description: Modifies the amount of shopkeepers! Shopkeepers a building can hire per level
+  Name: shopkeepers! Shopkeepers Per Level
+  Description: Modifies the amount of shopkeepers! Shopkeepers a building can hire per level
 building_employment_slaves_add:
   Mask: building
-  Name: slaves! Slaves Per Level
-  Description: Modifies the amount of slaves! Slaves a building can hire per level
+  Name: slaves! Slaves Per Level
+  Description: Modifies the amount of slaves! Slaves a building can hire per level
 building_employment_soldiers_add:
   Mask: building
-  Name: soldiers! Servicemen Per Level
-  Description: Modifies the amount of soldiers! Servicemen a building can hire per level
+  Name: soldiers! Servicemen Per Level
+  Description: Modifies the amount of soldiers! Servicemen a building can hire per level
 building_engineers_job_attractiveness_mult:
   Mask: building
-  Name: Job Attractiveness for engineers! Engineers
-  Description: A bonus or penalty to the wages a Building has to offer to be able to hire engineers! Engineers.
+  Name: Job Attractiveness for engineers! Engineers
+  Description: A bonus or penalty to the wages a Building has to offer to be able to hire engineers! Engineers.
 building_engineers_mortality_mult:
   Mask: building
-  Name: Mortality of engineers! Engineers
-  Description: An increase or decrease in the Mortality of engineers! Engineers
+  Name: Mortality of engineers! Engineers
+  Description: An increase or decrease in the Mortality of engineers! Engineers
 building_engineers_shares_add:
   Mask: building
-  Name: engineers! Engineers Pop Ownership Shares
-  Description: An increase or decrease in an engineers! Engineers Pop Ownership Shares
+  Name: engineers! Engineers Pop Ownership Shares
+  Description: An increase or decrease in an engineers! Engineers Pop Ownership Shares
 building_engineers_standard_of_living_add:
   Mask: building
-  Name: Standard of Living for engineers! Engineers
-  Description: A bonus or penalty to the Standard of Living for employed engineers! Engineers.
+  Name: Standard of Living for engineers! Engineers
+  Description: A bonus or penalty to the Standard of Living for employed engineers! Engineers.
 building_explosives_factory_throughput_add:
   Mask: building
   Name: Explosives Factory building Throughput
   Description: A bonus or penalty to both input and output of Explosives Factory
 building_farmers_job_attractiveness_mult:
   Mask: building
-  Name: Job Attractiveness for farmers! Farmers
-  Description: A bonus or penalty to the wages a Building has to offer to be able to hire farmers! Farmers.
+  Name: Job Attractiveness for farmers! Farmers
+  Description: A bonus or penalty to the wages a Building has to offer to be able to hire farmers! Farmers.
 building_farmers_standard_of_living_add:
   Mask: building
-  Name: Standard of Living for farmers! Farmers
-  Description: A bonus or penalty to the Standard of Living for employed farmers! Farmers.
+  Name: Standard of Living for farmers! Farmers
+  Description: A bonus or penalty to the Standard of Living for employed farmers! Farmers.
 building_fishing_wharf_throughput_add:
   Mask: building
   Name: Fishing Wharves building Throughput
@@ -2384,8 +2652,8 @@ building_group_bg_agriculture_employee_mult:
   Description: A bonus or penalty to the number of employees in Agriculture Buildings
 building_group_bg_agriculture_farmers_mortality_mult:
   Mask: building
-  Name: Mortality of farmers! Farmers employed in Agriculture
-  Description: An increase or decrease in the Mortality of farmers! Farmers employed in Agriculture
+  Name: Mortality of farmers! Farmers employed in Agriculture
+  Description: An increase or decrease in the Mortality of farmers! Farmers employed in Agriculture
 building_group_bg_agriculture_infrastructure_usage_mult:
   Mask: building
   Name: Infrastructure Usage of Agriculture buildings
@@ -2430,6 +2698,10 @@ building_group_bg_construction_laborers_mortality_mult:
   Mask: building
   Name: Mortality of laborers! Laborers employed in Construction
   Description: An increase or decrease in the Mortality of laborers! Laborers employed in Construction
+building_group_bg_construction_machinists_mortality_mult:
+  Mask: building
+  Name: Mortality of machinists! Machinists employed in Construction
+  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Construction
 building_group_bg_extraction_allowed_collectivization_add:
   Mask: building
   Name: Minimum Worker-Owned Extraction Building Levels
@@ -2452,16 +2724,16 @@ building_group_bg_fishing_employee_mult:
   Description: A bonus or penalty to the number of employees in Fishing Buildings
 building_group_bg_fishing_engineers_mortality_mult:
   Mask: building
-  Name: Mortality of engineers! Engineers employed in Fishing Wharves
-  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Fishing Wharves
+  Name: Mortality of engineers! Engineers employed in Fishing Wharves
+  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Fishing Wharves
 building_group_bg_fishing_laborers_mortality_mult:
   Mask: building
   Name: Mortality of laborers! Laborers employed in Fishing Wharves
   Description: An increase or decrease in the Mortality of laborers! Laborers employed in Fishing Wharves
 building_group_bg_fishing_machinists_mortality_mult:
   Mask: building
-  Name: Mortality of machinists! Machinists employed in Fishing Wharves
-  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Fishing Wharves
+  Name: Mortality of machinists! Machinists employed in Fishing Wharves
+  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Fishing Wharves
 building_group_bg_fishing_mortality_mult:
   Mask: building
   Name: Fishing Employee Mortality
@@ -2512,16 +2784,16 @@ building_group_bg_heavy_industry_construction_efficiency_add:
   Description: An increase or decrease to the weekly Construction progress for Heavy Industries
 building_group_bg_heavy_industry_engineers_mortality_mult:
   Mask: building
-  Name: Mortality of engineers! Engineers employed in Heavy Industry
-  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Heavy Industry
+  Name: Mortality of engineers! Engineers employed in Heavy Industry
+  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Heavy Industry
 building_group_bg_heavy_industry_laborers_mortality_mult:
   Mask: building
   Name: Mortality of laborers! Laborers employed in Heavy Industry
   Description: An increase or decrease in the Mortality of laborers! Laborers employed in Heavy Industry
 building_group_bg_heavy_industry_machinists_mortality_mult:
   Mask: building
-  Name: Mortality of machinists! Machinists employed in Heavy Industry
-  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Heavy Industry
+  Name: Mortality of machinists! Machinists employed in Heavy Industry
+  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Heavy Industry
 building_group_bg_heavy_industry_mortality_mult:
   Mask: building
   Name: Heavy Industry Employee Mortality
@@ -2540,16 +2812,16 @@ building_group_bg_infrastructure_employee_mult:
   Description: A bonus or penalty to the number of employees in Infrastructure Buildings
 building_group_bg_infrastructure_engineers_mortality_mult:
   Mask: building
-  Name: Mortality of engineers! Engineers employed in Infrastructure
-  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Infrastructure
+  Name: Mortality of engineers! Engineers employed in Infrastructure
+  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Infrastructure
 building_group_bg_infrastructure_laborers_mortality_mult:
   Mask: building
   Name: Mortality of laborers! Laborers employed in Infrastructure
   Description: An increase or decrease in the Mortality of laborers! Laborers employed in Infrastructure
 building_group_bg_infrastructure_machinists_mortality_mult:
   Mask: building
-  Name: Mortality of machinists! Machinists employed in Infrastructure
-  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Infrastructure
+  Name: Mortality of machinists! Machinists employed in Infrastructure
+  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Infrastructure
 building_group_bg_infrastructure_mortality_mult:
   Mask: building
   Name: Infrastructure Employee Mortality
@@ -2584,8 +2856,8 @@ building_group_bg_light_industry_laborers_mortality_mult:
   Description: An increase or decrease in the Mortality of laborers! Laborers employed in Light Industry
 building_group_bg_light_industry_machinists_mortality_mult:
   Mask: building
-  Name: Mortality of machinists! Machinists employed in Light Industry
-  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Light Industry
+  Name: Mortality of machinists! Machinists employed in Light Industry
+  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Light Industry
 building_group_bg_light_industry_throughput_add:
   Mask: building
   Name: Light Industries Throughput
@@ -2596,24 +2868,24 @@ building_group_bg_logging_employee_mult:
   Description: A bonus or penalty to the number of employees in Logging Industry Buildings
 building_group_bg_logging_engineers_mortality_mult:
   Mask: building
-  Name: Mortality of engineers! Engineers employed in Logging
-  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Logging
+  Name: Mortality of engineers! Engineers employed in Logging
+  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Logging
 building_group_bg_logging_laborers_mortality_mult:
   Mask: building
   Name: Mortality of laborers! Laborers employed in Logging
   Description: An increase or decrease in the Mortality of laborers! Laborers employed in Logging
 building_group_bg_logging_machinists_mortality_mult:
   Mask: building
-  Name: Mortality of machinists! Machinists employed in Logging
-  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Logging
+  Name: Mortality of machinists! Machinists employed in Logging
+  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Logging
 building_group_bg_logging_mortality_mult:
   Mask: building
   Name: Logging Industry Employee Mortality
   Description: A bonus or penalty to the mortality of employees in Logging Buildings
 building_group_bg_logging_slaves_mortality_mult:
   Mask: building
-  Name: Mortality of slaves! Slaves employed in Logging
-  Description: An increase or decrease in the Mortality of slaves! Slaves employed in Logging
+  Name: Mortality of slaves! Slaves employed in Logging
+  Description: An increase or decrease in the Mortality of slaves! Slaves employed in Logging
 building_group_bg_logging_standard_of_living_add:
   Mask: building
   Name: Logging Industry Employee Standard of Living
@@ -2632,8 +2904,8 @@ building_group_bg_logging_unincorporated_throughput_add:
   Description: A bonus or penalty to the Throughput of Forestries in Unincorporated States
 building_group_bg_manor_houses_aristocrats_standard_of_living_add:
   Mask: building
-  Name: Standard of Living of aristocrats! Aristocrats employed in Manor Houses
-  Description: An increase or decrease in the Standard of Living of aristocrats! Aristocrats employed in Manor Houses
+  Name: Standard of Living of aristocrats! Aristocrats employed in Manor Houses
+  Description: An increase or decrease in the Standard of Living of aristocrats! Aristocrats employed in Manor Houses
 building_group_bg_manufacturing_allowed_collectivization_add:
   Mask: building
   Name: Minimum Worker-Owned Manufacturing Industries Building Levels
@@ -2644,12 +2916,12 @@ building_group_bg_manufacturing_employee_mult:
   Description: A bonus or penalty to the number of employees in Manufacturing Buildings
 building_group_bg_manufacturing_engineers_mortality_mult:
   Mask: building
-  Name: Mortality of engineers! Engineers employed in Manufacturing
-  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Manufacturing
+  Name: Mortality of engineers! Engineers employed in Manufacturing
+  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Manufacturing
 building_group_bg_manufacturing_engineers_standard_of_living_add:
   Mask: building
-  Name: Standard of Living of engineers! Engineers employed in Manufacturing
-  Description: An increase or decrease in the Standard of Living of engineers! Engineers employed in Manufacturing
+  Name: Standard of Living of engineers! Engineers employed in Manufacturing
+  Description: An increase or decrease in the Standard of Living of engineers! Engineers employed in Manufacturing
 building_group_bg_manufacturing_laborers_mortality_mult:
   Mask: building
   Name: Mortality of laborers! Laborers employed in Manufacturing
@@ -2660,12 +2932,12 @@ building_group_bg_manufacturing_laborers_standard_of_living_add:
   Description: An increase or decrease in the Standard of Living of laborers! Laborers employed in Manufacturing
 building_group_bg_manufacturing_machinists_mortality_mult:
   Mask: building
-  Name: Mortality of machinists! Machinists employed in Manufacturing
-  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Manufacturing
+  Name: Mortality of machinists! Machinists employed in Manufacturing
+  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Manufacturing
 building_group_bg_manufacturing_machinists_standard_of_living_add:
   Mask: building
-  Name: Standard of Living of machinists! Machinists employed in Manufacturing
-  Description: An increase or decrease in the Standard of Living of machinists! Machinists employed in Manufacturing
+  Name: Standard of Living of machinists! Machinists employed in Manufacturing
+  Description: An increase or decrease in the Standard of Living of machinists! Machinists employed in Manufacturing
 building_group_bg_manufacturing_mortality_mult:
   Mask: building
   Name: Manufacturing Employee Mortality
@@ -2704,16 +2976,16 @@ building_group_bg_military_industry_construction_efficiency_add:
   Description: An increase or decrease to the weekly Construction progress for Military Industries
 building_group_bg_military_industry_engineers_mortality_mult:
   Mask: building
-  Name: Mortality of engineers! Engineers employed in Military Industry
-  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Military Industry
+  Name: Mortality of engineers! Engineers employed in Military Industry
+  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Military Industry
 building_group_bg_military_industry_laborers_mortality_mult:
   Mask: building
   Name: Mortality of laborers! Laborers employed in Military Industry
   Description: An increase or decrease in the Mortality of laborers! Laborers employed in Military Industry
 building_group_bg_military_industry_machinists_mortality_mult:
   Mask: building
-  Name: Mortality of machinists! Machinists employed in Military Industry
-  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Military Industry
+  Name: Mortality of machinists! Machinists employed in Military Industry
+  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Military Industry
 building_group_bg_military_industry_mortality_mult:
   Mask: building
   Name: Military Industry Employee Mortality
@@ -2736,12 +3008,12 @@ building_group_bg_mining_employee_mult:
   Description: A bonus or penalty to the number of employees in Mines
 building_group_bg_mining_engineers_mortality_mult:
   Mask: building
-  Name: Mortality of engineers! Engineers employed in Mines
-  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Mines
+  Name: Mortality of engineers! Engineers employed in Mines
+  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Mines
 building_group_bg_mining_engineers_standard_of_living_add:
   Mask: building
-  Name: Standard of Living of engineers! Engineers employed in Mines
-  Description: An increase or decrease in the Standard of Living of engineers! Engineers employed in Mines
+  Name: Standard of Living of engineers! Engineers employed in Mines
+  Description: An increase or decrease in the Standard of Living of engineers! Engineers employed in Mines
 building_group_bg_mining_laborers_mortality_mult:
   Mask: building
   Name: Mortality of laborers! Laborers employed in Mines
@@ -2752,20 +3024,20 @@ building_group_bg_mining_laborers_standard_of_living_add:
   Description: An increase or decrease in the Standard of Living of laborers! Laborers employed in Mines
 building_group_bg_mining_machinists_mortality_mult:
   Mask: building
-  Name: Mortality of machinists! Machinists employed in Mines
-  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Mines
+  Name: Mortality of machinists! Machinists employed in Mines
+  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Mines
 building_group_bg_mining_machinists_standard_of_living_add:
   Mask: building
-  Name: Standard of Living of machinists! Machinists employed in Mines
-  Description: An increase or decrease in the Standard of Living of machinists! Machinists employed in Mines
+  Name: Standard of Living of machinists! Machinists employed in Mines
+  Description: An increase or decrease in the Standard of Living of machinists! Machinists employed in Mines
 building_group_bg_mining_mortality_mult:
   Mask: building
   Name: Mining Employee Mortality
   Description: A bonus or penalty to the mortality of employees in Mining Buildings
 building_group_bg_mining_slaves_mortality_mult:
   Mask: building
-  Name: Mortality of slaves! Slaves employed in Mines
-  Description: An increase or decrease in the Mortality of slaves! Slaves employed in Mines
+  Name: Mortality of slaves! Slaves employed in Mines
+  Description: An increase or decrease in the Mortality of slaves! Slaves employed in Mines
 building_group_bg_mining_standard_of_living_add:
   Mask: building
   Name: Mining Employee Standard of Living
@@ -2788,16 +3060,16 @@ building_group_bg_oil_extraction_employee_mult:
   Description: A bonus or penalty to the number of employees in Oil Industry Buildings
 building_group_bg_oil_extraction_engineers_mortality_mult:
   Mask: building
-  Name: Mortality of engineers! Engineers employed in Oil Extraction
-  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Oil Extraction
+  Name: Mortality of engineers! Engineers employed in Oil Extraction
+  Description: An increase or decrease in the Mortality of engineers! Engineers employed in Oil Extraction
 building_group_bg_oil_extraction_laborers_mortality_mult:
   Mask: building
   Name: Mortality of laborers! Laborers employed in Oil Extraction
   Description: An increase or decrease in the Mortality of laborers! Laborers employed in Oil Extraction
 building_group_bg_oil_extraction_machinists_mortality_mult:
   Mask: building
-  Name: Mortality of machinists! Machinists employed in Oil Extraction
-  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Oil Extraction
+  Name: Mortality of machinists! Machinists employed in Oil Extraction
+  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Oil Extraction
 building_group_bg_oil_extraction_mortality_mult:
   Mask: building
   Name: Oil Industry Employee Mortality
@@ -2828,8 +3100,8 @@ building_group_bg_plantations_employee_mult:
   Description: A bonus or penalty to the number of employees in Plantation Buildings
 building_group_bg_plantations_farmers_mortality_mult:
   Mask: building
-  Name: Mortality of farmers! Farmers employed on Plantations
-  Description: An increase or decrease in the Mortality of farmers! Farmers employed on Plantations
+  Name: Mortality of farmers! Farmers employed on Plantations
+  Description: An increase or decrease in the Mortality of farmers! Farmers employed on Plantations
 building_group_bg_plantations_infrastructure_usage_mult:
   Mask: building
   Name: Infrastructure Usage of Plantations
@@ -2848,8 +3120,8 @@ building_group_bg_plantations_self_investment_chance_add:
   Description: An increase or decrease to the chance that the Workforce of Plantations Buildings will be the owners of new invested levels.
 building_group_bg_plantations_slaves_mortality_mult:
   Mask: building
-  Name: Mortality of slaves! Slaves employed in Plantations
-  Description: An increase or decrease in the Mortality of slaves! Slaves employed in Plantations
+  Name: Mortality of slaves! Slaves employed in Plantations
+  Description: An increase or decrease in the Mortality of slaves! Slaves employed in Plantations
 building_group_bg_plantations_standard_of_living_add:
   Mask: building
   Name: Plantation Employee Standard of Living
@@ -2888,8 +3160,8 @@ building_group_bg_ranching_construction_efficiency_add:
   Description: An increase or decrease to the weekly Construction progress for Ranches
 building_group_bg_ranching_farmers_mortality_mult:
   Mask: building
-  Name: Mortality of farmers! Farmers employed in Ranching
-  Description: An increase or decrease in the Mortality of farmers! Farmers employed in Ranching
+  Name: Mortality of farmers! Farmers employed in Ranching
+  Description: An increase or decrease in the Mortality of farmers! Farmers employed in Ranching
 building_group_bg_ranching_infrastructure_usage_mult:
   Mask: building
   Name: Infrastructure Usage of Ranches
@@ -2932,7 +3204,7 @@ building_group_bg_rubber_mortality_mult:
   Description: A bonus or penalty to the mortality of employees in Rubber Plantation Buildings
 building_group_bg_rubber_slaves_mortality_mult:
   Mask: building
-  Name: Mortality of slaves! Slaves employed on Rubber Plantations
+  Name: Mortality of slaves! Slaves employed on Rubber Plantations
   Description: building_group_bg_rubber_slaves_mortality_mult_desc
 building_group_bg_rubber_standard_of_living_add:
   Mask: building
@@ -2976,16 +3248,16 @@ building_group_bg_subsistence_agriculture_allowed_collectivization_add:
   Description: The minimum amount of Subsistence Agriculture Buildings that will be worker-owned.
 building_group_bg_subsistence_agriculture_peasants_standard_of_living_add:
   Mask: building
-  Name: Standard of Living of peasants! Peasants employed in Subsistence Agriculture
-  Description: An increase or decrease in the Standard of Living of peasants! Peasants employed in Subsistence Agriculture
+  Name: Standard of Living of peasants! Peasants employed in Subsistence Agriculture
+  Description: An increase or decrease in the Standard of Living of peasants! Peasants employed in Subsistence Agriculture
 building_group_bg_subsistence_ranching_allowed_collectivization_add:
   Mask: building
   Name: Minimum Worker-Owned Subsistence Ranching Building Levels
   Description: The minimum amount of Subsistence Ranching Buildings that will be worker-owned.
 building_group_bg_subsistence_ranching_peasants_standard_of_living_add:
   Mask: building
-  Name: Standard of Living of peasants! Peasants employed in Subsistence Ranching
-  Description: An increase or decrease in the Standard of Living of peasants! Peasants employed in Subsistence Ranching
+  Name: Standard of Living of peasants! Peasants employed in Subsistence Ranching
+  Description: An increase or decrease in the Standard of Living of peasants! Peasants employed in Subsistence Ranching
 building_group_bg_whaling_employee_mult:
   Mask: building
   Name: Whaling Employees
@@ -2996,8 +3268,8 @@ building_group_bg_whaling_laborers_mortality_mult:
   Description: An increase or decrease in the Mortality of laborers! Laborers employed in Whaling Stations
 building_group_bg_whaling_machinists_mortality_mult:
   Mask: building
-  Name: Mortality of machinists! Machinists employed in Whaling Stations
-  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Whaling Stations
+  Name: Mortality of machinists! Machinists employed in Whaling Stations
+  Description: An increase or decrease in the Mortality of machinists! Machinists employed in Whaling Stations
 building_group_bg_whaling_mortality_mult:
   Mask: building
   Name: Whaling Employee Mortality
@@ -3044,20 +3316,20 @@ building_livestock_ranch_throughput_add:
   Description: A bonus or penalty to both input and output of Livestock Ranches
 building_machinists_job_attractiveness_mult:
   Mask: building
-  Name: Job Attractiveness for machinists! Machinists
-  Description: A bonus or penalty to the wages a Building has to offer to be able to hire machinists! Machinists.
+  Name: Job Attractiveness for machinists! Machinists
+  Description: A bonus or penalty to the wages a Building has to offer to be able to hire machinists! Machinists.
 building_machinists_mortality_mult:
   Mask: building
-  Name: Mortality of machinists! Machinists
-  Description: An increase or decrease in the Mortality of machinists! Machinists
+  Name: Mortality of machinists! Machinists
+  Description: An increase or decrease in the Mortality of machinists! Machinists
 building_machinists_shares_add:
   Mask: building
-  Name: machinists! Machinists Pop Ownership Shares
-  Description: An increase or decrease in a machinists! Machinists Pop Ownership Shares
+  Name: machinists! Machinists Pop Ownership Shares
+  Description: An increase or decrease in a machinists! Machinists Pop Ownership Shares
 building_machinists_standard_of_living_add:
   Mask: building
-  Name: Standard of Living for machinists! Machinists
-  Description: A bonus or penalty to the Standard of Living for employed machinists! Machinists.
+  Name: Standard of Living for machinists! Machinists
+  Description: A bonus or penalty to the Standard of Living for employed machinists! Machinists.
 building_maize_farm_throughput_add:
   Mask: building
   Name: Maize Farms building Throughput
@@ -3080,16 +3352,16 @@ building_naval_administration_throughput_add:
   Description: A bonus or penalty to both input and output of Naval Administration
 building_officers_job_attractiveness_mult:
   Mask: building
-  Name: Job Attractiveness for officers! Officers
-  Description: A bonus or penalty to the wages a Building has to offer to be able to hire officers! Officers.
+  Name: Job Attractiveness for officers! Officers
+  Description: A bonus or penalty to the wages a Building has to offer to be able to hire officers! Officers.
 building_officers_shares_add:
   Mask: building
-  Name: officers! Officers Pop Ownership Shares
-  Description: An increase or decrease in an officers! Officers Pop Ownership Shares
+  Name: officers! Officers Pop Ownership Shares
+  Description: An increase or decrease in an officers! Officers Pop Ownership Shares
 building_officers_standard_of_living_add:
   Mask: building
-  Name: Standard of Living for officers! Officers
-  Description: A bonus or penalty to the Standard of Living for employed officers! Officers.
+  Name: Standard of Living for officers! Officers
+  Description: A bonus or penalty to the Standard of Living for employed officers! Officers.
 building_opium_plantation_throughput_add:
   Mask: building
   Name: Opium Plantations building Throughput
@@ -3100,12 +3372,12 @@ building_paper_mill_throughput_add:
   Description: A bonus or penalty to both input and output of Paper Mills
 building_peasants_job_attractiveness_mult:
   Mask: building
-  Name: Job Attractiveness for peasants! Peasants
-  Description: A bonus or penalty to the wages a Building has to offer to be able to hire peasants! Peasants.
+  Name: Job Attractiveness for peasants! Peasants
+  Description: A bonus or penalty to the wages a Building has to offer to be able to hire peasants! Peasants.
 building_peasants_standard_of_living_add:
   Mask: building
-  Name: Standard of Living for peasants! Peasants
-  Description: A bonus or penalty to the Standard of Living for employed peasants! Peasants.
+  Name: Standard of Living for peasants! Peasants
+  Description: A bonus or penalty to the Standard of Living for employed peasants! Peasants.
 building_port_throughput_add:
   Mask: building
   Name: Port building Throughput
@@ -3136,40 +3408,40 @@ building_shipyard_throughput_add:
   Description: A bonus or penalty to both input and output of Shipyards
 building_shopkeepers_job_attractiveness_mult:
   Mask: building
-  Name: Job Attractiveness for shopkeepers! Shopkeepers
-  Description: A bonus or penalty to the wages a Building has to offer to be able to hire shopkeepers! Shopkeepers.
+  Name: Job Attractiveness for shopkeepers! Shopkeepers
+  Description: A bonus or penalty to the wages a Building has to offer to be able to hire shopkeepers! Shopkeepers.
 building_shopkeepers_shares_add:
   Mask: building
-  Name: shopkeepers! Shopkeepers Pop Ownership Shares
-  Description: An increase or decrease in a shopkeepers! Shopkeepers Pop Ownership Shares
+  Name: shopkeepers! Shopkeepers Pop Ownership Shares
+  Description: An increase or decrease in a shopkeepers! Shopkeepers Pop Ownership Shares
 building_shopkeepers_standard_of_living_add:
   Mask: building
-  Name: Standard of Living for shopkeepers! Shopkeepers
-  Description: A bonus or penalty to the Standard of Living for employed shopkeepers! Shopkeepers.
+  Name: Standard of Living for shopkeepers! Shopkeepers
+  Description: A bonus or penalty to the Standard of Living for employed shopkeepers! Shopkeepers.
 building_silk_plantation_throughput_add:
   Mask: building
   Name: Silk Plantations building Throughput
   Description: A bonus or penalty to both input and output of Silk Plantations
 building_slaves_mortality_mult:
   Mask: building
-  Name: Mortality of slaves! Slaves
-  Description: An increase or decrease in the Mortality of slaves! Slaves
+  Name: Mortality of slaves! Slaves
+  Description: An increase or decrease in the Mortality of slaves! Slaves
 building_slaves_standard_of_living_add:
   Mask: building
-  Name: Standard of Living for slaves! Slaves
-  Description: A bonus or penalty to the Standard of Living for employed slaves! Slaves.
+  Name: Standard of Living for slaves! Slaves
+  Description: A bonus or penalty to the Standard of Living for employed slaves! Slaves.
 building_soldiers_job_attractiveness_mult:
   Mask: building
-  Name: Job Attractiveness for soldiers! Servicemen
-  Description: A bonus or penalty to the wages a Building has to offer to be able to hire soldiers! Servicemen.
+  Name: Job Attractiveness for soldiers! Servicemen
+  Description: A bonus or penalty to the wages a Building has to offer to be able to hire soldiers! Servicemen.
 building_soldiers_shares_add:
   Mask: building
-  Name: soldiers! Servicemen Pop Ownership Shares
-  Description: An increase or decrease in a soldiers! Servicemen Pop Ownership Shares
+  Name: soldiers! Servicemen Pop Ownership Shares
+  Description: An increase or decrease in a soldiers! Servicemen Pop Ownership Shares
 building_soldiers_standard_of_living_add:
   Mask: building
-  Name: Standard of Living for soldiers! Servicemen
-  Description: A bonus or penalty to the Standard of Living for employed soldiers! Servicemen.
+  Name: Standard of Living for soldiers! Servicemen
+  Description: A bonus or penalty to the Standard of Living for employed soldiers! Servicemen.
 building_steel_mill_throughput_add:
   Mask: building
   Name: Steel Mills building Throughput
@@ -3230,18 +3502,22 @@ building_wheat_farm_throughput_add:
   Mask: building
   Name: Wheat Farms building Throughput
   Description: A bonus or penalty to both input and output of Wheat Farms
+country_abkhazian_cultural_acceptance_add:
+  Mask: country
+  Name: Acceptance of Abkhazian Culture
+  Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_aborigine_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Aboriginal Culture
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_academics_pol_str_mult:
   Mask: country
-  Name: Political Strength of academics! Academics
-  Description: An increase or decrease in the Political Strength of academics! Academics
+  Name: Political Strength of academics! Academics
+  Description: An increase or decrease in the Political Strength of academics! Academics
 country_academics_voting_power_add:
   Mask: country
-  Name: Political Strength from the Votes of academics! Academics
-  Description: An increase or decrease to amount of Political Strength gained from the Votes of academics! Academics in Elections
+  Name: Political Strength from the Votes of academics! Academics
+  Description: An increase or decrease to amount of Political Strength gained from the Votes of academics! Academics in Elections
 country_afar_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Afar Culture
@@ -3380,12 +3656,12 @@ country_argentine_cultural_acceptance_add:
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_aristocrats_pol_str_mult:
   Mask: country
-  Name: Political Strength of aristocrats! Aristocrats
-  Description: An increase or decrease in the Political Strength of aristocrats! Aristocrats
+  Name: Political Strength of aristocrats! Aristocrats
+  Description: An increase or decrease in the Political Strength of aristocrats! Aristocrats
 country_aristocrats_voting_power_add:
   Mask: country
-  Name: Political Strength from the Votes of aristocrats! Aristocrats
-  Description: An increase or decrease to amount of Political Strength gained from the Votes of aristocrats! Aristocrats in Elections
+  Name: Political Strength from the Votes of aristocrats! Aristocrats
+  Description: An increase or decrease to amount of Political Strength gained from the Votes of aristocrats! Aristocrats in Elections
 country_armenian_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Armenian Culture
@@ -3518,6 +3794,26 @@ country_bihari_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Bihari Culture
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
+country_birth_rate_cultural_erasure_mult:
+  Mask: country
+  Name: Birth Rate for the acceptance_status_2! Cultural Erasure Status
+  Description: How many children are born each year among Pops in the acceptance_status_2! Cultural Erasure Status
+country_birth_rate_full_acceptance_mult:
+  Mask: country
+  Name: Birth Rate for the acceptance_status_5! Full Acceptance Status
+  Description: How many children are born each year among Pops in the acceptance_status_5! Full Acceptance Status
+country_birth_rate_open_prejudice_mult:
+  Mask: country
+  Name: Birth Rate for the acceptance_status_3! Open Prejudice Status
+  Description: How many children are born each year among Pops in the acceptance_status_3! Open Prejudice Status
+country_birth_rate_second_rate_citizen_mult:
+  Mask: country
+  Name: Birth Rate for the acceptance_status_4! Second-class Citizen Status
+  Description: How many children are born each year among Pops in the acceptance_status_4! Second-class Citizen Status
+country_birth_rate_violent_hostility_mult:
+  Mask: country
+  Name: Birth Rate for the acceptance_status_1! Violent Hostility Status
+  Description: How many children are born each year among Pops in the acceptance_status_1! Violent Hostility Status
 country_boer_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Boer Culture
@@ -3628,12 +3924,12 @@ country_can_impose_same_lawgroup_policing_in_power_bloc_bool:
   Description: Allowed to Impose the same Law as their own in the Policing group on other Bloc Members
 country_capitalists_pol_str_mult:
   Mask: country
-  Name: Political Strength of capitalists! Capitalists
-  Description: An increase or decrease in the Political Strength of capitalists! Capitalists
+  Name: Political Strength of capitalists! Capitalists
+  Description: An increase or decrease in the Political Strength of capitalists! Capitalists
 country_capitalists_voting_power_add:
   Mask: country
-  Name: Political Strength from the Votes of capitalists! Capitalists
-  Description: An increase or decrease to amount of Political Strength gained from the Votes of capitalists! Capitalists in Elections
+  Name: Political Strength from the Votes of capitalists! Capitalists
+  Description: An increase or decrease to amount of Political Strength gained from the Votes of capitalists! Capitalists in Elections
 country_cariban_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Cariban Culture
@@ -3645,6 +3941,10 @@ country_caribeno_cultural_acceptance_add:
 country_catalan_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Catalan Culture
+  Description: A bonus or penalty to a specific culture's [concept_acceptance]
+country_caucasian_turk_cultural_acceptance_add:
+  Mask: country
+  Name: Acceptance of Caucasian Turk Culture
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_central_american_cultural_acceptance_add:
   Mask: country
@@ -3674,6 +3974,10 @@ country_chilean_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Chilean Culture
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
+country_chukchi_cultural_acceptance_add:
+  Mask: country
+  Name: Acceptance of Chukchi Culture
+  Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_chuvash_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Chuvash Culture
@@ -3692,12 +3996,12 @@ country_clergymen_voting_power_add:
   Description: An increase or decrease to amount of Political Strength gained from the Votes of clergymen! Clergymen in Elections
 country_clerks_pol_str_mult:
   Mask: country
-  Name: Political Strength of clerks! Clerks
-  Description: An increase or decrease in the Political Strength of clerks! Clerks
+  Name: Political Strength of clerks! Clerks
+  Description: An increase or decrease in the Political Strength of clerks! Clerks
 country_clerks_voting_power_add:
   Mask: country
-  Name: Political Strength from the Votes of clerks! Clerks
-  Description: An increase or decrease to amount of Political Strength gained from the Votes of clerks! Clerks in Elections
+  Name: Political Strength from the Votes of clerks! Clerks
+  Description: An increase or decrease to amount of Political Strength gained from the Votes of clerks! Clerks in Elections
 country_colombian_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Colombian Culture
@@ -3714,6 +4018,10 @@ country_cree_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Cree Culture
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
+country_crimean_tatar_cultural_acceptance_add:
+  Mask: country
+  Name: Acceptance of Crimean Tatar Culture
+  Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_croat_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Croatian Culture
@@ -3721,6 +4029,10 @@ country_croat_cultural_acceptance_add:
 country_czech_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Czech Culture
+  Description: A bonus or penalty to a specific culture's [concept_acceptance]
+country_dagestani_cultural_acceptance_add:
+  Mask: country
+  Name: Acceptance of Dagestani Culture
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_dakota_cultural_acceptance_add:
   Mask: country
@@ -3862,6 +4174,10 @@ country_enactment_speed_law_autocracy_mult:
   Mask: country
   Name: country_enactment_speed_law_autocracy_mult
   Description: country_enactment_speed_law_autocracy_mult_desc
+country_enactment_speed_law_multicultural_mult:
+  Mask: country
+  Name: country_enactment_speed_law_multicultural_mult
+  Description: country_enactment_speed_law_multicultural_mult_desc
 country_enactment_speed_law_oligarchy_mult:
   Mask: country
   Name: country_enactment_speed_law_oligarchy_mult
@@ -3886,6 +4202,10 @@ country_enactment_success_chance_law_autocracy_add:
   Mask: country
   Name: Enactment Success chance for Autocracy
   Description: A flat percentage point increase to the likelihood of enacting the specific law
+country_enactment_success_chance_law_multicultural_add:
+  Mask: country
+  Name: Enactment Success chance for Multiculturalism
+  Description: A flat percentage point increase to the likelihood of enacting the specific law
 country_enactment_success_chance_law_oligarchy_add:
   Mask: country
   Name: Enactment Success chance for Oligarchy
@@ -3904,12 +4224,12 @@ country_enactment_success_chance_law_technocracy_add:
   Description: A flat percentage point increase to the likelihood of enacting the specific law
 country_engineers_pol_str_mult:
   Mask: country
-  Name: Political Strength of engineers! Engineers
-  Description: An increase or decrease in the Political Strength of engineers! Engineers
+  Name: Political Strength of engineers! Engineers
+  Description: An increase or decrease in the Political Strength of engineers! Engineers
 country_engineers_voting_power_add:
   Mask: country
-  Name: Political Strength from the Votes of engineers! Engineers
-  Description: An increase or decrease to amount of Political Strength gained from the Votes of engineers! Engineers in Elections
+  Name: Political Strength from the Votes of engineers! Engineers
+  Description: An increase or decrease to amount of Political Strength gained from the Votes of engineers! Engineers in Elections
 country_equatorial_bantu_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Equatorial Bantu Culture
@@ -3917,6 +4237,10 @@ country_equatorial_bantu_cultural_acceptance_add:
 country_estonian_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Estonian Culture
+  Description: A bonus or penalty to a specific culture's [concept_acceptance]
+country_evenki_cultural_acceptance_add:
+  Mask: country
+  Name: Acceptance of Evenki Culture
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_ewe_cultural_acceptance_add:
   Mask: country
@@ -3928,12 +4252,16 @@ country_fang_cultural_acceptance_add:
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_farmers_pol_str_mult:
   Mask: country
-  Name: Political Strength of farmers! Farmers
-  Description: An increase or decrease in the Political Strength of farmers! Farmers
+  Name: Political Strength of farmers! Farmers
+  Description: An increase or decrease in the Political Strength of farmers! Farmers
 country_farmers_voting_power_add:
   Mask: country
-  Name: Political Strength from the Votes of farmers! Farmers
-  Description: An increase or decrease to amount of Political Strength gained from the Votes of farmers! Farmers in Elections
+  Name: Political Strength from the Votes of farmers! Farmers
+  Description: An increase or decrease to amount of Political Strength gained from the Votes of farmers! Farmers in Elections
+country_fervor_target_abkhazian_add:
+  Mask: country
+  Name: Proportional Fervor for the Abkhazian Culture
+  Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
 country_fervor_target_aborigine_add:
   Mask: country
   Name: Proportional Fervor for the Aboriginal Culture
@@ -4190,6 +4518,10 @@ country_fervor_target_catalan_add:
   Mask: country
   Name: Proportional Fervor for the Catalan Culture
   Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
+country_fervor_target_caucasian_turk_add:
+  Mask: country
+  Name: Proportional Fervor for the Caucasian Turk Culture
+  Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
 country_fervor_target_central_american_add:
   Mask: country
   Name: Proportional Fervor for the Central American Culture
@@ -4218,6 +4550,10 @@ country_fervor_target_chilean_add:
   Mask: country
   Name: Proportional Fervor for the Chilean Culture
   Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
+country_fervor_target_chukchi_add:
+  Mask: country
+  Name: Proportional Fervor for the Chukchi Culture
+  Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
 country_fervor_target_chuvash_add:
   Mask: country
   Name: Proportional Fervor for the Chuvash Culture
@@ -4242,6 +4578,10 @@ country_fervor_target_cree_add:
   Mask: country
   Name: Proportional Fervor for the Cree Culture
   Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
+country_fervor_target_crimean_tatar_add:
+  Mask: country
+  Name: Proportional Fervor for the Crimean Tatar Culture
+  Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
 country_fervor_target_croat_add:
   Mask: country
   Name: Proportional Fervor for the Croatian Culture
@@ -4249,6 +4589,10 @@ country_fervor_target_croat_add:
 country_fervor_target_czech_add:
   Mask: country
   Name: Proportional Fervor for the Czech Culture
+  Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
+country_fervor_target_dagestani_add:
+  Mask: country
+  Name: Proportional Fervor for the Dagestani Culture
   Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
 country_fervor_target_dakota_add:
   Mask: country
@@ -4301,6 +4645,10 @@ country_fervor_target_equatorial_bantu_add:
 country_fervor_target_estonian_add:
   Mask: country
   Name: Proportional Fervor for the Estonian Culture
+  Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
+country_fervor_target_evenki_add:
+  Mask: country
+  Name: Proportional Fervor for the Evenki Culture
   Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
 country_fervor_target_ewe_add:
   Mask: country
@@ -4762,10 +5110,6 @@ country_fervor_target_north_andean_add:
   Mask: country
   Name: Proportional Fervor for the North Andean Culture
   Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
-country_fervor_target_north_caucasian_add:
-  Mask: country
-  Name: Proportional Fervor for the North Caucasian Culture
-  Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
 country_fervor_target_north_german_add:
   Mask: country
   Name: Proportional Fervor for the North German Culture
@@ -4805,6 +5149,10 @@ country_fervor_target_oriya_add:
 country_fervor_target_oromo_add:
   Mask: country
   Name: Proportional Fervor for the Oromo Culture
+  Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
+country_fervor_target_ossetian_add:
+  Mask: country
+  Name: Proportional Fervor for the Ossetian Culture
   Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
 country_fervor_target_ovimbundu_add:
   Mask: country
@@ -4932,7 +5280,7 @@ country_fervor_target_senufo_add:
   Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
 country_fervor_target_sephardic_add:
   Mask: country
-  Name: Proportional Fervor for the Sephardim Culture
+  Name: Proportional Fervor for the Sephardi Culture
   Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
 country_fervor_target_serb_add:
   Mask: country
@@ -4945,10 +5293,6 @@ country_fervor_target_shan_add:
 country_fervor_target_shona_add:
   Mask: country
   Name: Proportional Fervor for the Shona Culture
-  Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
-country_fervor_target_siberian_add:
-  Mask: country
-  Name: Proportional Fervor for the Siberian Culture
   Description: A bonus or penalty to a specific culture's [concept_fervor], to be proportioned according the percentage of the culture's [Concept('concept_pop', 'Pops')] that reside in the affected [concept_country].
 country_fervor_target_sidama_add:
   Mask: country
@@ -5410,6 +5754,30 @@ country_institution_workplace_safety_max_investment_add:
   Mask: country
   Name: Max Workplace Safety Office Institution Investment
   Description: A bonus or penalty to the maximum investment level of the Workplace Safety Office Institution
+country_interest_tier_engaged_trade_advantage_mult:
+  Mask: country
+  Name: Engaged Interest Tier Trade Advantage
+  Description: A bonus or penalty to the Trade Advantage gained in Market Capitals where your Interest Tier is Engaged
+country_interest_tier_hegemonic_trade_advantage_mult:
+  Mask: country
+  Name: Hegemonic Interest Tier Trade Advantage
+  Description: A bonus or penalty to the Trade Advantage gained in Market Capitals where your Interest Tier is Hegemonic
+country_interest_tier_influential_trade_advantage_mult:
+  Mask: country
+  Name: Influential Interest Tier Trade Advantage
+  Description: A bonus or penalty to the Trade Advantage gained in Market Capitals where your Interest Tier is Influential
+country_interest_tier_none_trade_advantage_mult:
+  Mask: country
+  Name: None Interest Tier Trade Advantage
+  Description: A bonus or penalty to the Trade Advantage gained in Market Capitals where your Interest Tier is None
+country_interest_tier_observant_trade_advantage_mult:
+  Mask: country
+  Name: Observant Interest Tier Trade Advantage
+  Description: A bonus or penalty to the Trade Advantage gained in Market Capitals where your Interest Tier is Observant
+country_interest_tier_pervasive_trade_advantage_mult:
+  Mask: country
+  Name: Pervasive Interest Tier Trade Advantage
+  Description: A bonus or penalty to the Trade Advantage gained in Market Capitals where your Interest Tier is Pervasive
 country_inuit_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Inuit Culture
@@ -5624,12 +5992,12 @@ country_maasai_cultural_acceptance_add:
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_machinists_pol_str_mult:
   Mask: country
-  Name: Political Strength of machinists! Machinists
-  Description: An increase or decrease in the Political Strength of machinists! Machinists
+  Name: Political Strength of machinists! Machinists
+  Description: An increase or decrease in the Political Strength of machinists! Machinists
 country_machinists_voting_power_add:
   Mask: country
-  Name: Political Strength from the Votes of machinists! Machinists
-  Description: An increase or decrease to amount of Political Strength gained from the Votes of machinists! Machinists vote in Elections
+  Name: Political Strength from the Votes of machinists! Machinists
+  Description: An increase or decrease to amount of Political Strength gained from the Votes of machinists! Machinists vote in Elections
 country_maghrebi_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Maghrebi Culture
@@ -5806,10 +6174,6 @@ country_north_andean_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of North Andean Culture
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
-country_north_caucasian_cultural_acceptance_add:
-  Mask: country
-  Name: Acceptance of North Caucasian Culture
-  Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_north_german_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of North German Culture
@@ -5840,12 +6204,12 @@ country_occitan_cultural_acceptance_add:
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_officers_pol_str_mult:
   Mask: country
-  Name: Political Strength of officers! Officers
-  Description: An increase or decrease in the Political Strength of officers! Officers
+  Name: Political Strength of officers! Officers
+  Description: An increase or decrease in the Political Strength of officers! Officers
 country_officers_voting_power_add:
   Mask: country
-  Name: Political Strength from the Votes of officers! Officers
-  Description: An increase or decrease to amount of Political Strength gained from the Votes of officers! Officers in Elections
+  Name: Political Strength from the Votes of officers! Officers
+  Description: An increase or decrease to amount of Political Strength gained from the Votes of officers! Officers in Elections
 country_oodham_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of O’odham Culture
@@ -5857,6 +6221,10 @@ country_oriya_cultural_acceptance_add:
 country_oromo_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Oromo Culture
+  Description: A bonus or penalty to a specific culture's [concept_acceptance]
+country_ossetian_cultural_acceptance_add:
+  Mask: country
+  Name: Acceptance of Ossetian Culture
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_ovimbundu_cultural_acceptance_add:
   Mask: country
@@ -5896,12 +6264,12 @@ country_paulista_cultural_acceptance_add:
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_peasants_pol_str_mult:
   Mask: country
-  Name: Political Strength of peasants! Peasants
-  Description: An increase or decrease in the Political Strength of peasants! Peasants
+  Name: Political Strength of peasants! Peasants
+  Description: An increase or decrease in the Political Strength of peasants! Peasants
 country_peasants_voting_power_add:
   Mask: country
-  Name: Political Strength from the Votes of peasants! Peasants
-  Description: An increase or decrease to amount of Political Strength gained from the Votes of peasants! Peasants in Elections
+  Name: Political Strength from the Votes of peasants! Peasants
+  Description: An increase or decrease to amount of Political Strength gained from the Votes of peasants! Peasants in Elections
 country_persian_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Persian Culture
@@ -6060,7 +6428,7 @@ country_senufo_cultural_acceptance_add:
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_sephardic_cultural_acceptance_add:
   Mask: country
-  Name: Acceptance of Sephardim Culture
+  Name: Acceptance of Sephardi Culture
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_serb_cultural_acceptance_add:
   Mask: country
@@ -6096,12 +6464,12 @@ country_shona_cultural_acceptance_add:
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_shopkeepers_pol_str_mult:
   Mask: country
-  Name: Political Strength of shopkeepers! Shopkeepers
-  Description: An increase or decrease in the Political Strength of shopkeepers! Shopkeepers
+  Name: Political Strength of shopkeepers! Shopkeepers
+  Description: An increase or decrease in the Political Strength of shopkeepers! Shopkeepers
 country_shopkeepers_voting_power_add:
   Mask: country
-  Name: Political Strength from the Votes of shopkeepers! Shopkeepers
-  Description: An increase or decrease to amount of Political Strength gained from the Votes of shopkeepers! Shopkeepers in Elections
+  Name: Political Strength from the Votes of shopkeepers! Shopkeepers
+  Description: An increase or decrease to amount of Political Strength gained from the Votes of shopkeepers! Shopkeepers in Elections
 country_shudras_acceptance_max_add:
   Mask: country
   Name: Maximum Acceptance for the Shudras Social Class
@@ -6138,10 +6506,6 @@ country_shudras_qualification_growth_same_class_mult:
   Mask: country
   Name: Qualification Growth within Shudras Social Class
   Description: A percentage increase or decrease to Qualification Growth for the Shudras Social Class towards Professions in the Shudras Social Class
-country_siberian_cultural_acceptance_add:
-  Mask: country
-  Name: Acceptance of Siberian Culture
-  Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_sidama_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Sidama Culture
@@ -6160,8 +6524,8 @@ country_siouan_cultural_acceptance_add:
   Description: A bonus or penalty to a specific culture's [concept_acceptance]
 country_slaves_voting_power_add:
   Mask: country
-  Name: Political Strength from the Votes of slaves! Slaves
-  Description: An increase or decrease to amount of Political Strength gained from the Votes of slaves! Slaves in Elections
+  Name: Political Strength from the Votes of slaves! Slaves
+  Description: An increase or decrease to amount of Political Strength gained from the Votes of slaves! Slaves in Elections
 country_slovak_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Slovak Culture
@@ -6180,12 +6544,12 @@ country_society_tech_spread_mult:
   Description: The speed at which Society technologies spread from other countries
 country_soldiers_pol_str_mult:
   Mask: country
-  Name: Political Strength of soldiers! Servicemen
-  Description: An increase or decrease in the Political Strength of soldiers! Servicemen
+  Name: Political Strength of soldiers! Servicemen
+  Description: An increase or decrease in the Political Strength of soldiers! Servicemen
 country_soldiers_voting_power_add:
   Mask: country
-  Name: Political Strength from the Votes of soldiers! Servicemen
-  Description: An increase or decrease to amount of Political Strength gained from the Votes of soldiers! Servicemen in Elections
+  Name: Political Strength from the Votes of soldiers! Servicemen
+  Description: An increase or decrease to amount of Political Strength gained from the Votes of soldiers! Servicemen in Elections
 country_somali_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Somali Culture
@@ -6790,6 +7154,10 @@ goods_input_coal_add:
   Mask: goods
   Name: coal! Coal input
   Description: The amount of coal! Coal consumed by buildings
+goods_input_copper_add:
+  Mask: goods
+  Name: copper! Copper input
+  Description: The amount of copper! Copper consumed by buildings
 goods_input_dye_add:
   Mask: goods
   Name: dye! Dye input
@@ -6955,401 +7323,409 @@ goods_input_wood_add:
   Name: wood! Wood input
   Description: The amount of wood! Wood consumed by buildings
 goods_output_aeroplanes_add:
-  Mask: goods
+  Mask: goods_output
   Name: aeroplanes! Aeroplanes output
   Description: The amount of aeroplanes! Aeroplanes produced by buildings
 goods_output_aeroplanes_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building aeroplanes! Aeroplanes output
   Description: A bonus or penalty to the amount of aeroplanes! output produced by buildings
 goods_output_ammunition_add:
-  Mask: goods
+  Mask: goods_output
   Name: ammunition! Ammunition output
   Description: The amount of ammunition! Ammunition produced by buildings
 goods_output_ammunition_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building ammunition! ammunition output
   Description: A bonus or penalty to the amount of ammunition! output produced by buildings
 goods_output_artillery_add:
-  Mask: goods
+  Mask: goods_output
   Name: artillery! Artillery output
   Description: The amount of artillery! Artillery produced by buildings
 goods_output_artillery_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building artillery! Artillery output
   Description: A bonus or penalty to the amount of artillery! output produced by buildings
 goods_output_automobiles_add:
-  Mask: goods
+  Mask: goods_output
   Name: automobiles! Automobiles output
   Description: The amount of automobiles! Automobiles produced by buildings
 goods_output_automobiles_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building automobiles! Automobiles output
   Description: A bonus or penalty to the amount of automobiles! output produced by buildings
 goods_output_clippers_add:
-  Mask: goods
+  Mask: goods_output
   Name: clippers! Clippers output
   Description: The amount of clippers! Clippers produced by buildings
 goods_output_clippers_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building clippers! Clippers output
   Description: A bonus or penalty to the amount of clippers! Clippers produced by buildings
 goods_output_clothes_add:
-  Mask: goods
+  Mask: goods_output
   Name: clothes! Clothes output
   Description: The amount of clothes! Clothes produced by buildings
 goods_output_coal_add:
-  Mask: goods
+  Mask: goods_output
   Name: coal! Coal output
   Description: The amount of coal! Coal produced by buildings
 goods_output_coffee_add:
-  Mask: goods
+  Mask: goods_output
   Name: coffee! Coffee output
   Description: The amount of coffee! Coffee produced by buildings
+goods_output_copper_add:
+  Mask: goods_output
+  Name: copper! Copper output
+  Description: The amount of copper! Copper produced by buildings
 goods_output_dye_add:
-  Mask: goods
+  Mask: goods_output
   Name: dye! Dye output
   Description: The amount of dye! Dye produced by buildings
 goods_output_electricity_add:
-  Mask: goods
+  Mask: goods_output
   Name: electricity! Electricity output
   Description: The amount of electricity! Electricity produced by buildings
 goods_output_electricity_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building electricity! Electricity output
   Description: A bonus or penalty to the amount of electricity! Electricity produced by buildings
 goods_output_engines_add:
-  Mask: goods
+  Mask: goods_output
   Name: engines! Engines output
   Description: The amount of engines! Engines produced by buildings
 goods_output_engines_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building engines! Engines output
   Description: A bonus or penalty to the amount of engines! output produced by buildings
 goods_output_explosives_add:
-  Mask: goods
+  Mask: goods_output
   Name: explosives! Explosives output
   Description: The amount of explosives! Explosives produced by buildings
 goods_output_fabric_add:
-  Mask: goods
+  Mask: goods_output
   Name: fabric! Fabric output
   Description: The amount of fabric! Fabric produced by buildings
 goods_output_fabric_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building fabric! Fabric output
   Description: A bonus or penalty to the amount of fabric! Fabric produced by buildings
 goods_output_fertilizer_add:
-  Mask: goods
+  Mask: goods_output
   Name: fertilizer! Fertilizer output
   Description: The amount of fertilizer! Fertilizer produced by buildings
 goods_output_fine_art_add:
-  Mask: goods
+  Mask: goods_output
   Name: fine_art! Fine Art output
   Description: The amount of fine_art! Fine Art produced by buildings
+goods_output_fine_art_mult:
+  Mask: goods_output
+  Name: Building fine_art! Fine Art output
+  Description: A bonus or penalty to the amount of fine_art! Fine Art produced by buildings
 goods_output_fish_add:
-  Mask: goods
+  Mask: goods_output
   Name: fish! Fish output
   Description: The amount of fish! Fish produced by buildings
 goods_output_fruit_add:
-  Mask: goods
+  Mask: goods_output
   Name: fruit! Fruit output
   Description: The amount of fruit! Fruit produced by buildings
 goods_output_fruit_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building fruit! Fruit output
   Description: A bonus or penalty to the amount of fruit! Fruit produced by buildings
 goods_output_furniture_add:
-  Mask: goods
+  Mask: goods_output
   Name: furniture! Furniture output
   Description: The amount of furniture! Furniture produced by buildings
 goods_output_glass_add:
-  Mask: goods
+  Mask: goods_output
   Name: glass! Glass output
   Description: The amount of glass! Glass produced by buildings
 goods_output_gold_add:
-  Mask: goods
+  Mask: goods_output
   Name: gold! Gold output
   Description: The amount of gold! Gold produced by buildings
 goods_output_grain_add:
-  Mask: goods
+  Mask: goods_output
   Name: grain! Grain output
   Description: The amount of grain! Grain produced by buildings
 goods_output_groceries_add:
-  Mask: goods
+  Mask: goods_output
   Name: groceries! Groceries output
   Description: The amount of groceries! Groceries produced by buildings
 goods_output_hardwood_add:
-  Mask: goods
+  Mask: goods_output
   Name: hardwood! Hardwood output
   Description: The amount of hardwood! Hardwood produced by buildings
 goods_output_hardwood_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building hardwood! Hardwood output
   Description: A bonus or penalty to the amount of hardwood! Hardwood produced by buildings
 goods_output_iron_add:
-  Mask: goods
+  Mask: goods_output
   Name: iron! Iron output
   Description: The amount of iron! Iron produced by buildings
 goods_output_ironclads_add:
-  Mask: goods
+  Mask: goods_output
   Name: ironclads! Ironclads output
   Description: The amount of ironclads! Ironclads produced by buildings
 goods_output_ironclads_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building ironclads! Ironclads output
   Description: A bonus or penalty to the amount of ironclads! Ironclads produced by buildings
 goods_output_lead_add:
-  Mask: goods
+  Mask: goods_output
   Name: lead! Lead output
   Description: The amount of lead! Lead produced by buildings
 goods_output_liquor_add:
-  Mask: goods
+  Mask: goods_output
   Name: liquor! Liquor output
   Description: The amount of liquor! Liquor produced by buildings
 goods_output_liquor_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building liquor! Liquor output
   Description: A bonus or penalty to the amount of liquor! Liquor produced by buildings
 goods_output_luxury_clothes_add:
-  Mask: goods
+  Mask: goods_output
   Name: luxury_clothes! Luxury Clothes output
   Description: The amount of luxury_clothes! Luxury Clothes produced by buildings
 goods_output_luxury_furniture_add:
-  Mask: goods
+  Mask: goods_output
   Name: luxury_furniture! Luxury Furniture output
   Description: The amount of luxury_furniture! Luxury Furniture produced by buildings
 goods_output_manowars_add:
-  Mask: goods
+  Mask: goods_output
   Name: manowars! Man-o-Wars output
   Description: The amount of manowars! Man-o-Wars produced by buildings
 goods_output_manowars_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building manowars! Man-o-Wars output
   Description: A bonus or penalty to the amount of manowars! Man-o-Wars produced by buildings
 goods_output_meat_add:
-  Mask: goods
+  Mask: goods_output
   Name: meat! Meat output
   Description: The amount of meat! Meat produced by buildings
 goods_output_merchant_marine_add:
-  Mask: goods
+  Mask: goods_output
   Name: merchant_marine! Merchant Marine output
   Description: The amount of merchant_marine! Merchant Marine produced by buildings
 goods_output_oil_add:
-  Mask: goods
+  Mask: goods_output
   Name: oil! Oil output
   Description: The amount of oil! Oil produced by buildings
 goods_output_oil_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building oil! Oil output 
   Description: A bonus or penalty to the amount of oil! Oil produced by buildings
 goods_output_opium_add:
-  Mask: goods
+  Mask: goods_output
   Name: opium! Opium output
   Description: The amount of opium! Opium produced by buildings
 goods_output_paper_add:
-  Mask: goods
+  Mask: goods_output
   Name: paper! Paper output
   Description: The amount of paper! Paper produced by buildings
 goods_output_porcelain_add:
-  Mask: goods
+  Mask: goods_output
   Name: porcelain! Porcelain output
   Description: The amount of porcelain! Porcelain produced by buildings
 goods_output_radios_add:
-  Mask: goods
+  Mask: goods_output
   Name: radios! Radios output
   Description: The amount of radios! Radios produced by buildings
 goods_output_radios_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building radio! Radio output
   Description: A bonus or penalty to the amount of radio! Radio produced by buildings
 goods_output_rubber_add:
-  Mask: goods
+  Mask: goods_output
   Name: rubber! Rubber output
   Description: The amount of rubber! Rubber produced by buildings
 goods_output_services_add:
-  Mask: goods
+  Mask: goods_output
   Name: services! Services output
   Description: The amount of services! Services produced by buildings
 goods_output_silk_add:
-  Mask: goods
+  Mask: goods_output
   Name: silk! Fine Silk output
   Description: The amount of silk! Fine Silk produced by buildings
 goods_output_silk_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building silk! Silk output
   Description: A bonus or penalty to the amount of silk! Silk produced by buildings
 goods_output_small_arms_add:
-  Mask: goods
+  Mask: goods_output
   Name: small_arms! Small Arms output
   Description: The amount of small_arms! Small Arms produced by buildings
 goods_output_small_arms_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building small_arms! Small Arms output
   Description: A bonus or penalty to the amount of small_arms! output produced by buildings
 goods_output_steamers_add:
-  Mask: goods
+  Mask: goods_output
   Name: steamers! Steamers output
   Description: The amount of steamers! Steamers produced by buildings
 goods_output_steamers_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building steamers! Steamers output
   Description: A bonus or penalty to the amount of steamers! Steamers produced by buildings
 goods_output_steel_add:
-  Mask: goods
+  Mask: goods_output
   Name: steel! Steel output
   Description: The amount of steel! Steel produced by buildings
 goods_output_sugar_add:
-  Mask: goods
+  Mask: goods_output
   Name: sugar! Sugar output
   Description: The amount of sugar! Sugar produced by buildings
 goods_output_sugar_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building sugar! Sugar output
   Description: A bonus or penalty to the amount of sugar! Sugar produced by buildings
 goods_output_sulfur_add:
-  Mask: goods
+  Mask: goods_output
   Name: sulfur! Sulfur output
   Description: The amount of sulfur! Sulfur produced by buildings
 goods_output_tanks_add:
-  Mask: goods
+  Mask: goods_output
   Name: tanks! Tanks output
   Description: The amount of tanks! Tanks produced by buildings
 goods_output_tanks_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building tanks! Tanks output
   Description: A bonus or penalty to the amount of tanks! output produced by buildings
 goods_output_tea_add:
-  Mask: goods
+  Mask: goods_output
   Name: tea! Tea output
   Description: The amount of tea! Tea produced by buildings
 goods_output_telephones_add:
-  Mask: goods
+  Mask: goods_output
   Name: telephones! Telephones output
   Description: The amount of telephones! Telephones produced by buildings
 goods_output_tobacco_add:
-  Mask: goods
+  Mask: goods_output
   Name: tobacco! Tobacco output
   Description: The amount of tobacco! Tobacco produced by buildings
 goods_output_tools_add:
-  Mask: goods
+  Mask: goods_output
   Name: tools! Tools output
   Description: The amount of tools! Tools produced by buildings
 goods_output_tools_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building tools! Tools output
   Description: A bonus or penalty to the amount of tools! output produced by buildings
 goods_output_transportation_add:
-  Mask: goods
+  Mask: goods_output
   Name: transportation! Transportation output
   Description: The amount of transportation! Transportation produced by buildings
 goods_output_wine_add:
-  Mask: goods
+  Mask: goods_output
   Name: wine! Wine output
   Description: The amount of wine! Wine produced by buildings
 goods_output_wine_mult:
-  Mask: goods
+  Mask: goods_output
   Name: Building wine! Wine output
   Description: A bonus or penalty to the amount of wine! Wine produced by buildings
 goods_output_wood_add:
-  Mask: goods
+  Mask: goods_output
   Name: wood! Wood output
   Description: The amount of wood! Wood produced by buildings
 interest_group_ig_armed_forces_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_armed_forces_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_armed_forces_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_devout_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_devout_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_devout_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_industrialists_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_industrialists_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_industrialists_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_intelligentsia_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_intelligentsia_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_intelligentsia_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_landowners_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_landowners_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_landowners_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_petty_bourgeoisie_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_petty_bourgeoisie_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_petty_bourgeoisie_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_rural_folk_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_rural_folk_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_rural_folk_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_trade_unions_approval_add:
   Mask: interest_group
-  Name: Politically Unaligned () Approval
-  Description: A bonus or penalty to the total Approval of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Approval
+  Description: A bonus or penalty to the total Approval of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_trade_unions_pol_str_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Political Strength
-  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Political Strength
+  Description: A bonus or penalty to the total Political Strength of the Politically Unaligned (NULL_OBJ) Interest Group
 interest_group_ig_trade_unions_pop_attraction_mult:
   Mask: interest_group
-  Name: Politically Unaligned () Pop Attraction
-  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned () Interest Group
+  Name: Politically Unaligned (NULL_OBJ) Pop Attraction
+  Description: A bonus or penalty to the how attracted Pops are to the Politically Unaligned (NULL_OBJ) Interest Group
 power_bloc_invite_acceptance_great_power_add:
   Mask: power_bloc
   Name: Great Power Power Bloc Invitation Acceptance Chance
@@ -7498,22 +7874,26 @@ ship_ship_type_supply_ship_supply_capacity_mult:
   Mask: ship
   Name: Supply Ship Supply Capacity
   Description: An increase or decrease to the maximum amount of supplies a Ship can carry
+state_abkhazian_standard_of_living_add:
+  Mask: state
+  Name: [concept_sol] Modifier for Abkhazian
+  Description: A bonus or penalty to a specific culture's [concept_sol]
 state_aborigine_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Aboriginal
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_academics_investment_pool_contribution_add:
   Mask: state
-  Name: academics! Academics Investment Pool contribution
-  Description: How much of their profits academics! Academics will invest
+  Name: academics! Academics Investment Pool contribution
+  Description: How much of their profits academics! Academics will invest
 state_academics_investment_pool_efficiency_mult:
   Mask: state
-  Name: academics! Academics Investment Pool contribution efficiency
-  Description: An increase or decrease to how much the invested profits from academics! Academics will contribute to the Investment Pool
+  Name: academics! Academics Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from academics! Academics will contribute to the Investment Pool
 state_academics_mortality_mult:
   Mask: state
-  Name: Mortality of academics! Academics
-  Description: An increase or decrease in the Mortality of academics! Academics
+  Name: Mortality of academics! Academics
+  Description: An increase or decrease in the Mortality of academics! Academics
 state_afar_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Afar
@@ -7596,16 +7976,16 @@ state_argentine_standard_of_living_add:
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_aristocrats_investment_pool_contribution_add:
   Mask: state
-  Name: aristocrats! Aristocrats Investment Pool contribution
-  Description: How much of their profits aristocrats! Aristocrats will invest
+  Name: aristocrats! Aristocrats Investment Pool contribution
+  Description: How much of their profits aristocrats! Aristocrats will invest
 state_aristocrats_investment_pool_efficiency_mult:
   Mask: state
-  Name: aristocrats! Aristocrats Investment Pool contribution efficiency
-  Description: An increase or decrease to how much the invested profits from aristocrats! Aristocrats will contribute to the Investment Pool
+  Name: aristocrats! Aristocrats Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from aristocrats! Aristocrats will contribute to the Investment Pool
 state_aristocrats_mortality_mult:
   Mask: state
-  Name: Mortality of aristocrats! Aristocrats
-  Description: An increase or decrease in the Mortality of aristocrats! Aristocrats
+  Name: Mortality of aristocrats! Aristocrats
+  Description: An increase or decrease in the Mortality of aristocrats! Aristocrats
 state_armenian_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Armenian
@@ -7812,12 +8192,12 @@ state_cajun_standard_of_living_add:
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_capitalists_investment_pool_contribution_add:
   Mask: state
-  Name: capitalists! Capitalists Investment Pool contribution
-  Description: How much of their profits capitalists! Capitalists will invest
+  Name: capitalists! Capitalists Investment Pool contribution
+  Description: How much of their profits capitalists! Capitalists will invest
 state_capitalists_investment_pool_efficiency_mult:
   Mask: state
-  Name: capitalists! Capitalists Investment Pool contribution efficiency
-  Description: An increase or decrease to how much the invested profits from capitalists! Capitalists will contribute to the Investment Pool
+  Name: capitalists! Capitalists Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from capitalists! Capitalists will contribute to the Investment Pool
 state_cariban_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Cariban
@@ -7834,6 +8214,10 @@ state_catholic_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Catholic
   Description: A bonus or penalty to a specific religion's [concept_sol]
+state_caucasian_turk_standard_of_living_add:
+  Mask: state
+  Name: [concept_sol] Modifier for Caucasian Turk
+  Description: A bonus or penalty to a specific culture's [concept_sol]
 state_central_american_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Central American
@@ -7862,6 +8246,10 @@ state_chilean_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Chilean
   Description: A bonus or penalty to a specific culture's [concept_sol]
+state_chukchi_standard_of_living_add:
+  Mask: state
+  Name: [concept_sol] Modifier for Chukchi
+  Description: A bonus or penalty to a specific culture's [concept_sol]
 state_chuvash_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Chuvash
@@ -7880,12 +8268,12 @@ state_clergymen_investment_pool_efficiency_mult:
   Description: An increase or decrease to how much the invested profits from clergymen! Clergymen will contribute to the Investment Pool
 state_clerks_investment_pool_contribution_add:
   Mask: state
-  Name: clerks! Clerks Investment Pool contribution
-  Description: How much of their profits clerks! Clerks will invest
+  Name: clerks! Clerks Investment Pool contribution
+  Description: How much of their profits clerks! Clerks will invest
 state_clerks_investment_pool_efficiency_mult:
   Mask: state
-  Name: clerks! Clerks Investment Pool contribution efficiency
-  Description: An increase or decrease to how much the invested profits from clerks! Clerks will contribute to the Investment Pool
+  Name: clerks! Clerks Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from clerks! Clerks will contribute to the Investment Pool
 state_colombian_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Colombian
@@ -7906,6 +8294,10 @@ state_cree_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Cree
   Description: A bonus or penalty to a specific culture's [concept_sol]
+state_crimean_tatar_standard_of_living_add:
+  Mask: state
+  Name: [concept_sol] Modifier for Crimean Tatar
+  Description: A bonus or penalty to a specific culture's [concept_sol]
 state_croat_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Croatian
@@ -7913,6 +8305,10 @@ state_croat_standard_of_living_add:
 state_czech_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Czech
+  Description: A bonus or penalty to a specific culture's [concept_sol]
+state_dagestani_standard_of_living_add:
+  Mask: state
+  Name: [concept_sol] Modifier for Dagestani
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_dakota_standard_of_living_add:
   Mask: state
@@ -7960,12 +8356,12 @@ state_edo_standard_of_living_add:
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_engineers_investment_pool_contribution_add:
   Mask: state
-  Name: engineers! Engineers Investment Pool contribution
-  Description: How much of their profits engineers! Engineers will invest
+  Name: engineers! Engineers Investment Pool contribution
+  Description: How much of their profits engineers! Engineers will invest
 state_engineers_investment_pool_efficiency_mult:
   Mask: state
-  Name: engineers! Engineers Investment Pool contribution efficiency
-  Description: An increase or decrease to how much the invested profits from engineers! Engineers will contribute to the Investment Pool
+  Name: engineers! Engineers Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from engineers! Engineers will contribute to the Investment Pool
 state_equatorial_bantu_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Equatorial Bantu
@@ -7973,6 +8369,10 @@ state_equatorial_bantu_standard_of_living_add:
 state_estonian_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Estonian
+  Description: A bonus or penalty to a specific culture's [concept_sol]
+state_evenki_standard_of_living_add:
+  Mask: state
+  Name: [concept_sol] Modifier for Evenki
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_ewe_standard_of_living_add:
   Mask: state
@@ -7984,16 +8384,16 @@ state_fang_standard_of_living_add:
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_farmers_investment_pool_contribution_add:
   Mask: state
-  Name: farmers! Farmers Investment Pool contribution
-  Description: How much of their profits farmers! Farmers will invest
+  Name: farmers! Farmers Investment Pool contribution
+  Description: How much of their profits farmers! Farmers will invest
 state_farmers_investment_pool_efficiency_mult:
   Mask: state
-  Name: farmers! Farmers Investment Pool contribution efficiency
-  Description: An increase or decrease to how much the invested profits from farmers! Farmers will contribute to the Investment Pool
+  Name: farmers! Farmers Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from farmers! Farmers will contribute to the Investment Pool
 state_farmers_mortality_mult:
   Mask: state
-  Name: Mortality of farmers! Farmers
-  Description: An increase or decrease in the Mortality of farmers! Farmers
+  Name: Mortality of farmers! Farmers
+  Description: An increase or decrease in the Mortality of farmers! Farmers
 state_filipino_hispanophone_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Filipino
@@ -8396,16 +8796,16 @@ state_maasai_standard_of_living_add:
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_machinists_investment_pool_contribution_add:
   Mask: state
-  Name: machinists! Machinists Investment Pool contribution
-  Description: How much of their profits machinists! Machinists will invest
+  Name: machinists! Machinists Investment Pool contribution
+  Description: How much of their profits machinists! Machinists will invest
 state_machinists_investment_pool_efficiency_mult:
   Mask: state
-  Name: machinists! Machinists Investment Pool contribution efficiency
-  Description: An increase or decrease to how much the invested profits from machinists! Machinists will contribute to the Investment Pool
+  Name: machinists! Machinists Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from machinists! Machinists will contribute to the Investment Pool
 state_machinists_mortality_mult:
   Mask: state
-  Name: Mortality of machinists! Machinists
-  Description: An increase or decrease in the Mortality of machinists! Machinists
+  Name: Mortality of machinists! Machinists
+  Description: An increase or decrease in the Mortality of machinists! Machinists
 state_maghrebi_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Maghrebi
@@ -8578,10 +8978,6 @@ state_north_andean_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for North Andean
   Description: A bonus or penalty to a specific culture's [concept_sol]
-state_north_caucasian_standard_of_living_add:
-  Mask: state
-  Name: [concept_sol] Modifier for North Caucasian
-  Description: A bonus or penalty to a specific culture's [concept_sol]
 state_north_german_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for North German
@@ -8612,12 +9008,12 @@ state_occitan_standard_of_living_add:
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_officers_investment_pool_contribution_add:
   Mask: state
-  Name: officers! Officers Investment Pool contribution
-  Description: How much of their profits officers! Officers will invest
+  Name: officers! Officers Investment Pool contribution
+  Description: How much of their profits officers! Officers will invest
 state_officers_investment_pool_efficiency_mult:
   Mask: state
-  Name: officers! Officers Investment Pool contribution efficiency
-  Description: An increase or decrease to how much the invested profits from officers! Officers will contribute to the Investment Pool
+  Name: officers! Officers Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from officers! Officers will contribute to the Investment Pool
 state_oodham_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for O’odham
@@ -8638,6 +9034,10 @@ state_orthodox_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Orthodox
   Description: A bonus or penalty to a specific religion's [concept_sol]
+state_ossetian_standard_of_living_add:
+  Mask: state
+  Name: [concept_sol] Modifier for Ossetian
+  Description: A bonus or penalty to a specific culture's [concept_sol]
 state_ovimbundu_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Ovimbundu
@@ -8676,24 +9076,24 @@ state_paulista_standard_of_living_add:
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_peasants_consumption_multiplier_add:
   Mask: state
-  Name: Goods consumption for peasants! Peasants
-  Description: A bonus or penalty to goods consumption for peasants! Peasants
+  Name: Goods consumption for peasants! Peasants
+  Description: A bonus or penalty to goods consumption for peasants! Peasants
 state_peasants_education_access_add:
   Mask: state
-  Name: Education Access for peasants! Peasants
-  Description: A bonus or penalty to education access for peasants! Peasants
+  Name: Education Access for peasants! Peasants
+  Description: A bonus or penalty to education access for peasants! Peasants
 state_peasants_internal_migration_disallowed_bool:
   Mask: state
-  Name: Disallowed Internal Migration for peasants! Peasants
-  Description: peasants! Peasants are prohibited from Migration between States in their Country
+  Name: Disallowed Internal Migration for peasants! Peasants
+  Description: peasants! Peasants are prohibited from Migration between States in their Country
 state_peasants_mass_migration_disallowed_bool:
   Mask: state
-  Name: Disallowed Mass Migration for peasants! Peasants
-  Description: peasants! Peasants are prohibited from Mass Migrating away from their Country
+  Name: Disallowed Mass Migration for peasants! Peasants
+  Description: peasants! Peasants are prohibited from Mass Migrating away from their Country
 state_peasants_mortality_mult:
   Mask: state
-  Name: Mortality of peasants! Peasants
-  Description: An increase or decrease in the Mortality of peasants! Peasants
+  Name: Mortality of peasants! Peasants
+  Description: An increase or decrease in the Mortality of peasants! Peasants
 state_persian_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Persian
@@ -8932,19 +9332,19 @@ state_pop_support_movement_religious_minority_mult:
   Description: An increase or decrease to the attraction for Pops towards joining a Political Movement.
 state_pop_support_movement_royalist_absolutist_add:
   Mask: state
-  Name: Absolutist Movement Pop Attraction
+  Name:  Movement Pop Attraction
   Description: An increase or decrease to the attraction for Pops towards joining a Political Movement.
 state_pop_support_movement_royalist_absolutist_mult:
   Mask: state
-  Name: Absolutist Movement Pop Attraction
+  Name:  Movement Pop Attraction
   Description: An increase or decrease to the attraction for Pops towards joining a Political Movement.
 state_pop_support_movement_royalist_constitutional_add:
   Mask: state
-  Name: Royalist Movement Pop Attraction
+  Name:  Movement Pop Attraction
   Description: An increase or decrease to the attraction for Pops towards joining a Political Movement.
 state_pop_support_movement_royalist_constitutional_mult:
   Mask: state
-  Name: Royalist Movement Pop Attraction
+  Name:  Movement Pop Attraction
   Description: An increase or decrease to the attraction for Pops towards joining a Political Movement.
 state_pop_support_movement_slave_revolt_add:
   Mask: state
@@ -9088,7 +9488,7 @@ state_senufo_standard_of_living_add:
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_sephardic_standard_of_living_add:
   Mask: state
-  Name: [concept_sol] Modifier for Sephardim
+  Name: [concept_sol] Modifier for Sephardi
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_serb_standard_of_living_add:
   Mask: state
@@ -9112,16 +9512,12 @@ state_shona_standard_of_living_add:
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_shopkeepers_investment_pool_contribution_add:
   Mask: state
-  Name: shopkeepers! Shopkeepers Investment Pool contribution
-  Description: How much of their profits shopkeepers! Shopkeepers will invest
+  Name: shopkeepers! Shopkeepers Investment Pool contribution
+  Description: How much of their profits shopkeepers! Shopkeepers will invest
 state_shopkeepers_investment_pool_efficiency_mult:
   Mask: state
-  Name: shopkeepers! Shopkeepers Investment Pool contribution efficiency
-  Description: An increase or decrease to how much the invested profits from shopkeepers! Shopkeepers will contribute to the Investment Pool
-state_siberian_standard_of_living_add:
-  Mask: state
-  Name: [concept_sol] Modifier for Siberian
-  Description: A bonus or penalty to a specific culture's [concept_sol]
+  Name: shopkeepers! Shopkeepers Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from shopkeepers! Shopkeepers will contribute to the Investment Pool
 state_sidama_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Sidama
@@ -9144,8 +9540,8 @@ state_siouan_standard_of_living_add:
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_slaves_mortality_mult:
   Mask: state
-  Name: Mortality of slaves! Slaves
-  Description: An increase or decrease in the Mortality of slaves! Slaves
+  Name: Mortality of slaves! Slaves
+  Description: An increase or decrease in the Mortality of slaves! Slaves
 state_slovak_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Slovak
@@ -9156,16 +9552,16 @@ state_slovene_standard_of_living_add:
   Description: A bonus or penalty to a specific culture's [concept_sol]
 state_soldiers_investment_pool_contribution_add:
   Mask: state
-  Name: soldiers! Servicemen Investment Pool contribution
-  Description: How much of their profits soldiers! Servicemen will invest
+  Name: soldiers! Servicemen Investment Pool contribution
+  Description: How much of their profits soldiers! Servicemen will invest
 state_soldiers_investment_pool_efficiency_mult:
   Mask: state
-  Name: soldiers! Servicemen Investment Pool contribution efficiency
-  Description: An increase or decrease to how much the invested profits from soldiers! Servicemen will contribute to the Investment Pool
+  Name: soldiers! Servicemen Investment Pool contribution efficiency
+  Description: An increase or decrease to how much the invested profits from soldiers! Servicemen will contribute to the Investment Pool
 state_soldiers_mortality_mult:
   Mask: state
-  Name: Mortality of soldiers! Servicemen
-  Description: An increase or decrease in the Mortality of soldiers! Servicemen
+  Name: Mortality of soldiers! Servicemen
+  Description: An increase or decrease in the Mortality of soldiers! Servicemen
 state_somali_standard_of_living_add:
   Mask: state
   Name: [concept_sol] Modifier for Somali
@@ -9406,10 +9802,26 @@ unit_combat_unit_type_cannon_artillery_offense_mult:
   Mask: unit
   Name: Cannon Artillery Offense
   Description: Cannon Artillery Offense
+unit_combat_unit_type_cuirassiers_offense_mult:
+  Mask: unit
+  Name: Cuirassiers Offense
+  Description: Cuirassiers Offense
+unit_combat_unit_type_dragoons_offense_mult:
+  Mask: unit
+  Name: Dragoons Offense
+  Description: Dragoons Offense
 unit_combat_unit_type_heavy_tank_offense_mult:
   Mask: unit
   Name: Heavy Tanks Offense
   Description: Heavy Tanks Offense
+unit_combat_unit_type_hussars_offense_mult:
+  Mask: unit
+  Name: Hussars Offense
+  Description: Hussars Offense
+unit_combat_unit_type_lancers_offense_mult:
+  Mask: unit
+  Name: Lancers Offense
+  Description: Lancers Offense
 unit_combat_unit_type_mechanized_infantry_offense_add:
   Mask: unit
   Name: Mechanized Infantry Offense
@@ -9566,6 +9978,8 @@ building_capitalists_shares_mult:
   Mask: building
 building_capitol_hill_throughput_add:
   Mask: building
+building_cathedral_of_christ_the_savior_throughput_add:
+  Mask: building
 building_central_park_throughput_add:
   Mask: building
 building_chichen_itza_throughput_add:
@@ -9587,6 +10001,8 @@ building_company_headquarter_throughput_add:
 building_company_regional_headquarter_throughput_add:
   Mask: building
 building_conscription_center_throughput_add:
+  Mask: building
+building_cossack_host_throughput_add:
   Mask: building
 building_cristo_redentor_throughput_add:
   Mask: building
@@ -9647,6 +10063,8 @@ building_forbidden_city_throughput_add:
 building_giza_necropolis_throughput_add:
   Mask: building
 building_gran_teatro_de_la_habana_throughput_add:
+  Mask: building
+building_grand_kremlin_palace_throughput_add:
   Mask: building
 building_group_bg_agriculture_academics_fertility_mult:
   Mask: building
@@ -10982,8 +11400,6 @@ building_group_bg_construction_laborers_standard_of_living_add:
   Mask: building
 building_group_bg_construction_machinists_fertility_mult:
   Mask: building
-building_group_bg_construction_machinists_mortality_mult:
-  Mask: building
 building_group_bg_construction_machinists_standard_of_living_add:
   Mask: building
 building_group_bg_construction_mortality_mult:
@@ -11027,6 +11443,114 @@ building_group_bg_construction_tax_mult:
 building_group_bg_construction_throughput_add:
   Mask: building
 building_group_bg_construction_unincorporated_throughput_add:
+  Mask: building
+building_group_bg_cossack_host_academics_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_academics_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_academics_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_aristocrats_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_aristocrats_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_aristocrats_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_bureaucrats_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_bureaucrats_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_bureaucrats_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_capitalists_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_capitalists_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_capitalists_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_clergymen_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_clergymen_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_clergymen_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_clerks_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_clerks_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_clerks_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_employee_mult:
+  Mask: building
+building_group_bg_cossack_host_engineers_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_engineers_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_engineers_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_farmers_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_farmers_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_farmers_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_infrastructure_usage_mult:
+  Mask: building
+building_group_bg_cossack_host_laborers_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_laborers_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_laborers_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_machinists_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_machinists_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_machinists_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_officers_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_officers_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_officers_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_peasants_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_peasants_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_peasants_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_self_investment_chance_add:
+  Mask: building
+building_group_bg_cossack_host_shopkeepers_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_shopkeepers_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_shopkeepers_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_slaves_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_slaves_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_slaves_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_soldiers_fertility_mult:
+  Mask: building
+building_group_bg_cossack_host_soldiers_mortality_mult:
+  Mask: building
+building_group_bg_cossack_host_soldiers_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_standard_of_living_add:
+  Mask: building
+building_group_bg_cossack_host_tax_mult:
+  Mask: building
+building_group_bg_cossack_host_throughput_add:
+  Mask: building
+building_group_bg_cossack_host_unincorporated_throughput_add:
   Mask: building
 building_group_bg_cotton_plantations_academics_fertility_mult:
   Mask: building
@@ -16844,6 +17368,8 @@ building_khaju_bridge_throughput_add:
   Mask: building
 building_kiel_canal_throughput_add:
   Mask: building
+building_kizhi_pogost_throughput_add:
+  Mask: building
 building_laborers_fertility_mult:
   Mask: building
 building_laborers_shares_mult:
@@ -16908,6 +17434,8 @@ building_sagrada_familia_cathedral_3_throughput_add:
   Mask: building
 building_saint_basils_cathedral_throughput_add:
   Mask: building
+building_saint_isaacs_cathedral_throughput_add:
+  Mask: building
 building_shopkeepers_fertility_mult:
   Mask: building
 building_shopkeepers_mortality_mult:
@@ -16953,6 +17481,8 @@ building_victoria_terminus_throughput_add:
 building_wat_arun_throughput_add:
   Mask: building
 building_white_house_throughput_add:
+  Mask: building
+building_winter_palace_throughput_add:
   Mask: building
 country_aeroplanes_export_tariffs_rate_add:
   Mask: country
@@ -17027,6 +17557,8 @@ country_bg_company_regional_headquarter_require_subsidies_bool:
 country_bg_conscription_require_subsidies_bool:
   Mask: country
 country_bg_construction_require_subsidies_bool:
+  Mask: country
+country_bg_cossack_host_require_subsidies_bool:
   Mask: country
 country_bg_cotton_plantations_require_subsidies_bool:
   Mask: country
@@ -17160,6 +17692,8 @@ country_building_big_ben_require_subsidies_bool:
   Mask: country
 country_building_capitol_hill_require_subsidies_bool:
   Mask: country
+country_building_cathedral_of_christ_the_savior_require_subsidies_bool:
+  Mask: country
 country_building_central_park_require_subsidies_bool:
   Mask: country
 country_building_chemical_plant_require_subsidies_bool:
@@ -17177,6 +17711,10 @@ country_building_company_regional_headquarter_require_subsidies_bool:
 country_building_conscription_center_require_subsidies_bool:
   Mask: country
 country_building_construction_sector_require_subsidies_bool:
+  Mask: country
+country_building_copper_mine_require_subsidies_bool:
+  Mask: country
+country_building_cossack_host_require_subsidies_bool:
   Mask: country
 country_building_cotton_plantation_require_subsidies_bool:
   Mask: country
@@ -17218,6 +17756,8 @@ country_building_government_administration_require_subsidies_bool:
   Mask: country
 country_building_gran_teatro_de_la_habana_require_subsidies_bool:
   Mask: country
+country_building_grand_kremlin_palace_require_subsidies_bool:
+  Mask: country
 country_building_hagia_sophia_require_subsidies_bool:
   Mask: country
 country_building_halloween_castledracula_require_subsidies_bool:
@@ -17235,6 +17775,8 @@ country_building_kaiserforum_4_require_subsidies_bool:
 country_building_khaju_bridge_require_subsidies_bool:
   Mask: country
 country_building_kiel_canal_require_subsidies_bool:
+  Mask: country
+country_building_kizhi_pogost_require_subsidies_bool:
   Mask: country
 country_building_lead_mine_require_subsidies_bool:
   Mask: country
@@ -17308,6 +17850,8 @@ country_building_sagrada_familia_cathedral_3_require_subsidies_bool:
   Mask: country
 country_building_saint_basils_cathedral_require_subsidies_bool:
   Mask: country
+country_building_saint_isaacs_cathedral_require_subsidies_bool:
+  Mask: country
 country_building_shipyard_require_subsidies_bool:
   Mask: country
 country_building_silk_plantation_require_subsidies_bool:
@@ -17368,6 +17912,8 @@ country_building_wheat_farm_require_subsidies_bool:
   Mask: country
 country_building_white_house_require_subsidies_bool:
   Mask: country
+country_building_winter_palace_require_subsidies_bool:
+  Mask: country
 country_clippers_export_tariffs_rate_add:
   Mask: country
 country_clippers_import_tariffs_rate_add:
@@ -17416,6 +17962,18 @@ country_coffee_min_export_tariffs_level_add:
   Mask: country
 country_coffee_min_import_tariffs_level_add:
   Mask: country
+country_copper_export_tariffs_rate_add:
+  Mask: country
+country_copper_import_tariffs_rate_add:
+  Mask: country
+country_copper_max_export_tariffs_level_add:
+  Mask: country
+country_copper_max_import_tariffs_level_add:
+  Mask: country
+country_copper_min_export_tariffs_level_add:
+  Mask: country
+country_copper_min_import_tariffs_level_add:
+  Mask: country
 country_dye_export_tariffs_rate_add:
   Mask: country
 country_dye_import_tariffs_rate_add:
@@ -17450,6 +18008,8 @@ country_enactment_success_chance_law_appointed_bureaucrats_add:
   Mask: country
 country_enactment_success_chance_law_bakufu_add:
   Mask: country
+country_enactment_success_chance_law_caesaropapism_add:
+  Mask: country
 country_enactment_success_chance_law_canton_system_add:
   Mask: country
 country_enactment_success_chance_law_censorship_add:
@@ -17481,6 +18041,8 @@ country_enactment_success_chance_law_combination_acts_add:
 country_enactment_success_chance_law_command_economy_add:
   Mask: country
 country_enactment_success_chance_law_commercialized_agriculture_add:
+  Mask: country
+country_enactment_success_chance_law_communal_administration_add:
   Mask: country
 country_enactment_success_chance_law_compulsory_primary_school_add:
   Mask: country
@@ -17514,6 +18076,8 @@ country_enactment_success_chance_law_expanded_latifundias_add:
   Mask: country
 country_enactment_success_chance_law_extraction_economy_add:
   Mask: country
+country_enactment_success_chance_law_extraordinary_commission_add:
+  Mask: country
 country_enactment_success_chance_law_factory_councils_add:
   Mask: country
 country_enactment_success_chance_law_free_trade_add:
@@ -17542,11 +18106,15 @@ country_enactment_success_chance_law_industry_banned_add:
   Mask: country
 country_enactment_success_chance_law_intermediate_edo_system_add:
   Mask: country
+country_enactment_success_chance_law_internal_colonization_add:
+  Mask: country
 country_enactment_success_chance_law_interventionism_add:
   Mask: country
 country_enactment_success_chance_law_isolationism_add:
   Mask: country
 country_enactment_success_chance_law_jeune_ecole_add:
+  Mask: country
+country_enactment_success_chance_law_labour_suffrage_add:
   Mask: country
 country_enactment_success_chance_law_laissez_faire_add:
   Mask: country
@@ -17574,11 +18142,11 @@ country_enactment_success_chance_law_migration_controls_add:
   Mask: country
 country_enactment_success_chance_law_militarized_police_add:
   Mask: country
+country_enactment_success_chance_law_military_bureaucrats_add:
+  Mask: country
 country_enactment_success_chance_law_millet_system_add:
   Mask: country
 country_enactment_success_chance_law_monarchy_add:
-  Mask: country
-country_enactment_success_chance_law_multicultural_add:
   Mask: country
 country_enactment_success_chance_law_national_guard_add:
   Mask: country
@@ -17605,6 +18173,10 @@ country_enactment_success_chance_law_no_social_security_add:
 country_enactment_success_chance_law_no_womens_rights_add:
   Mask: country
 country_enactment_success_chance_law_no_workers_rights_add:
+  Mask: country
+country_enactment_success_chance_law_official_nationality_add:
+  Mask: country
+country_enactment_success_chance_law_okhrana_add:
   Mask: country
 country_enactment_success_chance_law_old_age_pension_add:
   Mask: country
@@ -17650,6 +18222,8 @@ country_enactment_success_chance_law_religious_schools_add:
   Mask: country
 country_enactment_success_chance_law_restricted_child_labor_add:
   Mask: country
+country_enactment_success_chance_law_revolutionary_guard_add:
+  Mask: country
 country_enactment_success_chance_law_right_of_assembly_add:
   Mask: country
 country_enactment_success_chance_law_right_to_associate_add:
@@ -17681,6 +18255,8 @@ country_enactment_success_chance_law_tenant_farmers_add:
 country_enactment_success_chance_law_terakoya_add:
   Mask: country
 country_enactment_success_chance_law_theocracy_add:
+  Mask: country
+country_enactment_success_chance_law_third_section_add:
   Mask: country
 country_enactment_success_chance_law_total_separation_add:
   Mask: country
@@ -18270,6 +18846,8 @@ goods_input_coffee_add:
   Mask: goods
 goods_input_coffee_mult:
   Mask: goods
+goods_input_copper_mult:
+  Mask: goods
 goods_input_dye_mult:
   Mask: goods
 goods_input_electricity_mult:
@@ -18369,67 +18947,67 @@ goods_input_wine_mult:
 goods_input_wood_mult:
   Mask: goods
 goods_output_clothes_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_coal_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_coffee_mult:
-  Mask: goods
+  Mask: goods_output
+goods_output_copper_mult:
+  Mask: goods_output
 goods_output_dye_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_explosives_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_fertilizer_mult:
-  Mask: goods
-goods_output_fine_art_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_fish_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_furniture_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_glass_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_gold_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_grain_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_groceries_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_iron_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_lead_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_luxury_clothes_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_luxury_furniture_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_meat_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_merchant_marine_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_opium_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_paper_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_porcelain_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_rubber_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_services_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_steel_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_sulfur_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_tea_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_telephones_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_tobacco_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_transportation_mult:
-  Mask: goods
+  Mask: goods_output
 goods_output_wood_mult:
-  Mask: goods
+  Mask: goods_output
 goods_trade_advantage_aeroplanes_mult:
   Mask: goods
 goods_trade_advantage_ammunition_mult:
@@ -18445,6 +19023,8 @@ goods_trade_advantage_clothes_mult:
 goods_trade_advantage_coal_mult:
   Mask: goods
 goods_trade_advantage_coffee_mult:
+  Mask: goods
+goods_trade_advantage_copper_mult:
   Mask: goods
 goods_trade_advantage_dye_mult:
   Mask: goods
@@ -18577,6 +19157,8 @@ state_buy_orders_clothes_add:
 state_buy_orders_coal_add:
   Mask: state
 state_buy_orders_coffee_add:
+  Mask: state
+state_buy_orders_copper_add:
   Mask: state
 state_buy_orders_dye_add:
   Mask: state
@@ -18718,6 +19300,8 @@ state_infrastructure_from_coal_consumption_add:
   Mask: state
 state_infrastructure_from_coffee_consumption_add:
   Mask: state
+state_infrastructure_from_copper_consumption_add:
+  Mask: state
 state_infrastructure_from_dye_consumption_add:
   Mask: state
 state_infrastructure_from_electricity_consumption_add:
@@ -18834,6 +19418,14 @@ state_peasants_investment_pool_contribution_add:
   Mask: state
 state_peasants_investment_pool_efficiency_mult:
   Mask: state
+state_pop_support_movement_anti_communist_add:
+  Mask: state
+state_pop_support_movement_anti_communist_mult:
+  Mask: state
+state_pop_support_movement_cossack_add:
+  Mask: state
+state_pop_support_movement_cossack_mult:
+  Mask: state
 state_pop_support_movement_dominican_national_add:
   Mask: state
 state_pop_support_movement_dominican_national_mult:
@@ -18869,6 +19461,8 @@ state_sell_orders_clothes_add:
 state_sell_orders_coal_add:
   Mask: state
 state_sell_orders_coffee_add:
+  Mask: state
+state_sell_orders_copper_add:
   Mask: state
 state_sell_orders_dye_add:
   Mask: state

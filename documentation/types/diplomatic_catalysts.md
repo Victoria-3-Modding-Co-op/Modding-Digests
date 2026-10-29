@@ -1,6 +1,6 @@
 ﻿	catalyst_example = {
 		# Which diplomatic_catalyst_category does this catalyst belong to
-		category = cc_example 
+		category = <diplomatic_catalyst_category> 
 	
 		# Data for creating lobbies as a result of this catalyst
 		political_lobby_creation = {

@@ -1,10 +1,10 @@
 ﻿movement_example = {
 	# The movement's category, which determines factors such as whether it has a cultural/religious identity
 	# Movement categories are defined in their own database
-	category = x
+	category = <political_movement_category>
 	
 	# The core ideology of the movement - this will determine which laws they inherently support/oppose
-	ideology = x
+	ideology = <ideology>
 	
 	# A list of character ideologies that this movement can potentially assign to leaders of IGs they are pressuring 
 	character_ideologies = {}

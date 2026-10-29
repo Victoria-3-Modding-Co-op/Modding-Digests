@@ -111,6 +111,8 @@ some_treaty_article = {
 
     can_ratify = { trigger block } # When can_ratify is checked, we also automatically check all requirements to maintain so they do not need to be duplicated here
 
+    can_propose = { trigger block } # Like can_ratify, but only checked on the full treaty when it is proposed or answered, never when adding the article to a draft
+
     can_withdraw = { trigger block }
 
     # Valid trigger blocks depending on your inputs
@@ -240,6 +242,7 @@ Currently, these are the supported flags:
 - `can_be_renegotiated`
 - `can_be_enforced`
 - `causes_state_transfer`
+- `show_in_lens`
 
 ### flag behaviors
 
@@ -250,12 +253,28 @@ any article without this flag will not be able to be changed in any way. It
 cannot be removed from the renegotiated treaty, and its inputs (if any) are
 locked.
 
-However, the on_entry_into_force effect of the article will be skipped, as this
-flag implies that the article has some immediate effects that have alread
-happened upon renegotiation.
+When the renegotiated treaty enters into force, an article without this flag
+that was carried over from the old treaty skips its on_entry_into_force effect,
+since that effect already happened. Every other article (one with this flag, or
+one newly added in the renegotiation) runs its on_entry_into_force effect with
+`scope:is_renegotiation` set, so the effect can skip whatever must only happen
+when the article is first formed.
+
+#### is_one_time
+This means an article has an immediate effect when the treaty enters into force 
+and nothing is reverted when the treaty ends. Once the binding period of the 
+treaty ends the AI will withdraw from treaties where they mainly received 
+one-time articles so that they will not keep paying for nothing.
 
 #### can_be_enforced
 This is what determines if an article is enforceable through a war goal or not.
+
+#### show_in_lens
+Lists the article in the Treaty Articles tab of the diplomatic lens, where the map shows how willing
+each country is to sign a treaty containing only this article. Ignored on articles with required inputs.
+
+An article with this flag can also define a `show_in_lens` trigger, evaluated on the country viewing the lens, to
+only list the article for the countries it is relevant to. Without the trigger the article is listed for everyone.
 
 ## required_inputs (default: empty)
 A set of inputs required by this article type, among the list of valid inputs
@@ -454,6 +473,13 @@ ONLY for directed articles:
 - `scope:source_country` is the specific party that would be bound as the source party of the article if the treaty entered into force
 - `scope:target_country` is the specific party that would be bound as the target party of the article if the treaty entered into force
 
+## can_propose (default: empty)
+Works like `can_ratify` and sees the same scopes, but is only checked on the full treaty when it
+is proposed or answered, never when the article is added to a draft. Use it for requirements on
+what else the treaty contains, which the player should be free to add in any order, for example
+an article that needs something in return from the other party.
+Unlike `can_ratify`, it does not run the visible, possible or requirement_to_maintain triggers.
+
 ## on_entry_into_force (default: empty)
 A treaty enters into force once all parties have ratified it. This effect is
 executed when that happens.
@@ -462,6 +488,7 @@ executed when that happens.
 Within the `on_entry_into_force` effect, the following scope objects are accessible:
 - `scope:treaty_options` are the parameters (settings) that made up the treaty
 - `scope:article_options` are the parameters (settings) that made up the treaty article
+- `scope:is_renegotiation` exists when the treaty enters into force as a renegotiation of an existing treaty
 
 ## can_withdraw (default: empty)
 Determines if a country is allowed to withdraw from a treaty. Defaults to true.

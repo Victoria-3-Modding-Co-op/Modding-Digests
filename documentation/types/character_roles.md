@@ -3,6 +3,7 @@ character_role_example = {
 	priority = 1			# Used to select the primary title for a character, higher priority gets selected over lower
 
 	auto_assigned = yes/no		# If this is set to yes, then all characters of this role's archetype will receive this role when created
+	can_be_interest_group_leader = yes/no	# Defaults to yes. If set to no, characters with this role will never be selected or set as an interest group leader
 	
 	career_length = { min max }			# For how many years will a character hold this role before retiring (randomly set between min and max)
 	
@@ -37,5 +38,19 @@ character_role_example = {
 	# Applied to characters holding this role
 	character_modifier = {
 		character_prominence_add = 10
+	}
+	
+	# The background shown behind the character in the character panel. Can be listed several times to get variations
+	# The first entry whose trigger passes is used, so list the most specific ones first. An entry without a trigger always passes
+	# A character holding several roles uses the background of their highest priority role. If that role has no valid entry the next highest priority role is tried, and so on
+	# Root = character
+	character_background = {
+		trigger = {
+			has_role_of_type = general
+		}
+		texture = "gfx/interface/character_panel/backgrounds/char_role_rulergeneral.dds"
+	}
+	character_background = {
+		texture = "gfx/interface/character_panel/backgrounds/char_role_ruler.dds"
 	}
 }

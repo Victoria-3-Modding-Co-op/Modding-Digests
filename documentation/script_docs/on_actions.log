@@ -266,7 +266,19 @@ Expected Scope: country
 
 --------------------
 
+on_character_returned_from_exile:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 exile_pool_culling_on_action:
+From Code: No
+Expected Scope: none
+
+--------------------
+
+on_monthly_pulse_country_morocco:
 From Code: No
 Expected Scope: none
 
@@ -296,6 +308,12 @@ Expected Scope: none
 
 --------------------
 
+on_journal_entry_concluded:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
 ep1_misc_yearly_events:
 From Code: No
 Expected Scope: country
@@ -304,6 +322,12 @@ Expected Scope: country
 
 on_journal_entry_deactivated:
 From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_monthly_pulse_country_portugal:
+From Code: No
 Expected Scope: none
 
 --------------------
@@ -368,6 +392,12 @@ Expected Scope: none
 
 --------------------
 
+on_monthly_pulse_country_spain:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_sway_offer:
 From Code: Yes
 Expected Scope: none
@@ -400,12 +430,18 @@ Expected Scope: none
 
 on_government_reformed:
 From Code: Yes
-Expected Scope: none
+Expected Scope: country
 
 --------------------
 
 on_state_owner_change:
 From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_monthly_pulse_country_india:
+From Code: No
 Expected Scope: none
 
 --------------------
@@ -419,6 +455,12 @@ Expected Scope: none
 british_dictate_yearly_events:
 From Code: No
 Expected Scope: country
+
+--------------------
+
+on_monthly_pulse_country_baltic:
+From Code: No
+Expected Scope: none
 
 --------------------
 
@@ -506,6 +548,12 @@ Expected Scope: none
 
 --------------------
 
+on_monthly_pulse_country_montenegro:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_treaty_enforced:
 From Code: Yes
 Expected Scope: none
@@ -530,7 +578,19 @@ Expected Scope: none
 
 --------------------
 
+on_monthly_pulse_country_britain:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_diplomatic_proposal:
+From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_power_bloc_formed:
 From Code: Yes
 Expected Scope: none
 
@@ -718,7 +778,7 @@ Expected Scope: state
 
 on_country_formed:
 From Code: Yes
-Expected Scope: none
+Expected Scope: country
 
 --------------------
 
@@ -736,6 +796,12 @@ Expected Scope: country
 
 on_law_checkpoint_success:
 From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_monthly_pulse_country_france:
+From Code: No
 Expected Scope: none
 
 --------------------
@@ -866,12 +932,6 @@ Expected Scope: none
 
 --------------------
 
-on_journal_entry_failed:
-From Code: Yes
-Expected Scope: none
-
---------------------
-
 on_sub_objective_failed:
 From Code: Yes
 Expected Scope: none
@@ -892,6 +952,12 @@ Expected Scope: none
 
 on_start_supporting_unification:
 From Code: Yes
+Expected Scope: none
+
+--------------------
+
+on_monthly_pulse_country_japan:
+From Code: No
 Expected Scope: none
 
 --------------------
@@ -923,6 +989,12 @@ Expected Scope: none
 on_ally_capitulated_notification:
 From Code: Yes
 Expected Scope: none
+
+--------------------
+
+on_monthly_pulse_country_russia:
+From Code: No
+Expected Scope: country
 
 --------------------
 
@@ -971,6 +1043,12 @@ Expected Scope: none
 on_investment_decreased:
 From Code: Yes
 Expected Scope: none
+
+--------------------
+
+council_republic_monthly_events:
+From Code: No
+Expected Scope: country
 
 --------------------
 
@@ -1220,6 +1298,12 @@ Expected Scope: none
 
 --------------------
 
+on_monthly_pulse_country_sweden:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_decade_pulse_state:
 From Code: Yes
 Expected Scope: none
@@ -1298,6 +1382,12 @@ Expected Scope: none
 
 --------------------
 
+russia_yearly_events:
+From Code: No
+Expected Scope: country
+
+--------------------
+
 on_naval_battle_ended:
 From Code: Yes
 Expected Scope: none
@@ -1352,12 +1442,6 @@ Expected Scope: none
 
 --------------------
 
-on_journal_entry_completed:
-From Code: Yes
-Expected Scope: none
-
---------------------
-
 on_diplomatic_incident:
 From Code: Yes
 Expected Scope: none
@@ -1373,6 +1457,12 @@ Expected Scope: none
 on_monthly_pulse_country:
 From Code: Yes
 Expected Scope: country
+
+--------------------
+
+on_five_year_pulse_country_poland:
+From Code: No
+Expected Scope: none
 
 --------------------
 
@@ -1472,6 +1562,12 @@ Expected Scope: country
 
 --------------------
 
+on_monthly_pulse_country_turkey:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 exiles_yearly_events:
 From Code: No
 Expected Scope: country
@@ -1508,6 +1604,12 @@ Expected Scope: none
 
 --------------------
 
+rlit_monthly_events:
+From Code: No
+Expected Scope: country
+
+--------------------
+
 on_empty_battle_won:
 From Code: Yes
 Expected Scope: none
@@ -1521,6 +1623,12 @@ Expected Scope: none
 --------------------
 
 lobbies_proposals_half_yearly_events:
+From Code: No
+Expected Scope: country
+
+--------------------
+
+nemo_monthly_events:
 From Code: No
 Expected Scope: country
 
@@ -1552,6 +1660,12 @@ Expected Scope: none
 
 on_diplo_play_start_third_party:
 From Code: Yes
+Expected Scope: none
+
+--------------------
+
+chartering_the_stanitsas_state_gained:
+From Code: No
 Expected Scope: none
 
 --------------------

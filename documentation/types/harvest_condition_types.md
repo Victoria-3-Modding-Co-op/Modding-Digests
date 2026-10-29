@@ -55,4 +55,7 @@
 
 	# Which texture to use as a pattern in the map mode, default - none
 	map_texture = <texture>
+
+	# Sea conditions only. The naval battle condition this one mirrors - its weather VFX is shown on the epicenter sea node while no battle is fought there. Omit for no VFX
+	naval_battle_condition = naval_battle_condition_key
 }
