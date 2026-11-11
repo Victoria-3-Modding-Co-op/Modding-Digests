@@ -17,7 +17,10 @@
         # optional DLC this journal entry belongs to, as specified in common/dlc_metadata
         # marks the entry with that DLC's badge in the journal entry panel - it does not gate
         # availability, use the `has_dlc_feature` trigger for that
+        # takes a single DLC or a list; with a list the badge shows the most recent DLC the player has enabled,
+        # or the most recent one listed if the player has none of them
         dlc = <dlc_metadata>
+        dlc = { <dlc_metadata> <dlc_metadata> }
 
         # optional image that shows in the journal entry widget near the description, default = NDefines::GUI::JOURNAL_ENTRY_ICON_DEFAULT (set in /defines/00_interfaces.txt)
         icon = "gfx/interface/icons/event_icons/event_industry.dds"

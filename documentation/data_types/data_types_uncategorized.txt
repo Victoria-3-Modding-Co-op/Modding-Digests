@@ -31880,6 +31880,12 @@ Return type: bool
 
 -----------------------
 
+Country.IsFriendlyTo( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 Country.IsGainingSailors
 Definition type: Function
 Return type: bool
@@ -31887,6 +31893,12 @@ Return type: bool
 -----------------------
 
 Country.IsHighestRank
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+Country.IsHostileTo( Arg0 )
 Definition type: Function
 Return type: bool
 
@@ -45015,6 +45027,12 @@ Return type: bool
 
 -----------------------
 
+InformationPanelBar.IsWorldMarketHubSelected( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 InformationPanelBar.OpenAddWarGoalPanel( Arg0, Arg1 )
 Definition type: Function
 Return type: void
@@ -45232,6 +45250,12 @@ Return type: void
 -----------------------
 
 InformationPanelBar.OpenMarketPanelCycleTabs( Arg0, Arg1, Arg2 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+InformationPanelBar.OpenMarketPanelForWorldMarketHub( Arg0 )
 Definition type: Function
 Return type: void
 
@@ -53311,30 +53335,6 @@ Return type: CFixedPoint
 
 -----------------------
 
-Market.GetCountryTradeCapacity( Arg0 )
-Definition type: Function
-Return type: int32
-
------------------------
-
-Market.GetCountryTradeCapacityBalance( Arg0 )
-Definition type: Function
-Return type: int32
-
------------------------
-
-Market.GetCountryTradeCapacityDesc( Arg0 )
-Definition type: Function
-Return type: CString
-
------------------------
-
-Market.GetCountryTradeCapacityUsage( Arg0 )
-Definition type: Function
-Return type: int32
-
------------------------
-
 Market.GetCustom( Arg0 )
 Definition type: Function
 Return type: CString
@@ -53545,6 +53545,30 @@ Return type: CFixedPoint
 
 -----------------------
 
+Market.GetTradeCapacity
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+Market.GetTradeCapacityBalance
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+Market.GetTradeCapacityDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+Market.GetTradeCapacityUsage
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 Market.GetTradeSurplus
 Definition type: Function
 Return type: CFixedPoint
@@ -53554,6 +53578,30 @@ Return type: CFixedPoint
 Market.GetTradeSurplusBreakdown
 Definition type: Function
 Return type: CString
+
+-----------------------
+
+Market.GetWorldMarketHubTradeCapacity( Arg0 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+Market.GetWorldMarketHubTradeCapacityBalance( Arg0 )
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+Market.GetWorldMarketHubTradeCapacityDesc( Arg0 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+Market.GetWorldMarketHubTradeCapacityUsage( Arg0 )
+Definition type: Function
+Return type: int32
 
 -----------------------
 
@@ -53771,7 +53819,43 @@ Return type: SearchBar
 
 -----------------------
 
+MarketPanel.GetSelectedWorldMarketHub
+Definition type: Promote
+Return type: State
+
+-----------------------
+
+MarketPanel.AccessExportersToMarket( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+MarketPanel.AccessGoodsSortedOnExports
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+MarketPanel.AccessGoodsSortedOnImports
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+MarketPanel.AccessImportersFromMarket( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 MarketPanel.AccessSelf
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+MarketPanel.AccessWorldMarketHubs
 Definition type: Function
 Return type: [unregistered]
 
@@ -53783,9 +53867,33 @@ Return type: void
 
 -----------------------
 
+MarketPanel.GetExportedAmount( Arg0 )
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+MarketPanel.GetExportedAmountToPartner( Arg0, Arg1 )
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
 MarketPanel.GetFilters
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+MarketPanel.GetImportedAmount( Arg0 )
+Definition type: Function
+Return type: CFixedPoint
+
+-----------------------
+
+MarketPanel.GetImportedAmountFromPartner( Arg0, Arg1 )
+Definition type: Function
+Return type: CFixedPoint
 
 -----------------------
 
@@ -53795,15 +53903,57 @@ Return type: [unregistered]
 
 -----------------------
 
+MarketPanel.GetWorldMarketHubExportsDesc( Arg0 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+MarketPanel.GetWorldMarketHubImportsDesc( Arg0 )
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+MarketPanel.HasSelectedWorldMarketHub
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 MarketPanel.IsSelected( Arg0 )
 Definition type: Function
 Return type: bool
 
 -----------------------
 
+MarketPanel.IsWorldMarketHubSelected( Arg0 )
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+MarketPanel.SelectAllWorldMarketHubs
+Definition type: Function
+Return type: void
+
+-----------------------
+
+MarketPanel.SelectWorldMarketHub( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
 MarketPanel.Self
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+MarketPanel.ToggleWorldMarketHubFilter( Arg0 )
+Definition type: Function
+Return type: void
 
 -----------------------
 
@@ -54890,12 +55040,6 @@ Return type: Command
 MilitaryFormation.GetDistanceToHomePort
 Definition type: Function
 Return type: CFixedPoint
-
------------------------
-
-MilitaryFormation.GetDistanceToHomePortFormatted
-Definition type: Function
-Return type: CString
 
 -----------------------
 
@@ -56669,6 +56813,12 @@ Return type: Command
 
 -----------------------
 
+MilitaryFormation.ReplacesLostShips
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 MilitaryFormation.RetrofitShips
 Definition type: Function
 Return type: Command
@@ -56714,6 +56864,12 @@ Return type: void
 MilitaryFormation.TogglePinInOutliner
 Definition type: Function
 Return type: void
+
+-----------------------
+
+MilitaryFormation.ToggleReplaceLostShips
+Definition type: Function
+Return type: Command
 
 -----------------------
 
@@ -66983,12 +67139,6 @@ Return type: [unregistered]
 
 -----------------------
 
-PowerBlocFormation.GetMandatesLostToCap
-Definition type: Function
-Return type: int32
-
------------------------
-
 PowerBlocFormation.GetMapColor
 Definition type: Function
 Return type: CVector4f
@@ -72380,6 +72530,12 @@ Return type: [unregistered]
 
 -----------------------
 
+SeaRegionPanel.AccessWorldMarketHubs
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 SeaRegionPanel.GetExporters( Arg0 )
 Definition type: Function
 Return type: [unregistered]
@@ -72425,6 +72581,12 @@ Return type: CString
 SeaRegionPanel.GetWorldMarketTradedGoods
 Definition type: Function
 Return type: [unregistered]
+
+-----------------------
+
+SeaRegionPanel.IsWorldMarketHubConnectedHere( Arg0 )
+Definition type: Function
+Return type: bool
 
 -----------------------
 
@@ -78920,13 +79082,61 @@ Return type: [unregistered]
 
 -----------------------
 
+State.GetWorldMarketHubAccessDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 State.GetWorldMarketHubName
 Definition type: Function
 Return type: CString
 
 -----------------------
 
+State.GetWorldMarketHubNameNoFormatting
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 State.GetWorldMarketHubNameWithCountryFlag
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+State.GetWorldMarketHubTradeCapacity
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+State.GetWorldMarketHubTradeCapacityBalance
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+State.GetWorldMarketHubTradeCapacityDesc
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+State.GetWorldMarketHubTradeCapacityUsage
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+State.GetWorldMarketHubTradingStateCount
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+State.GetWorldMarketHubTradingStatesDesc
 Definition type: Function
 Return type: CString
 
@@ -79058,6 +79268,12 @@ Return type: bool
 
 -----------------------
 
+State.HasWorldMarketHubTrade
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 State.IncorporateState
 Definition type: Function
 Return type: Command
@@ -79167,6 +79383,12 @@ Return type: bool
 -----------------------
 
 State.IsIsolatedFromMarket
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+State.IsMarketAreaBeingHighlighted
 Definition type: Function
 Return type: bool
 

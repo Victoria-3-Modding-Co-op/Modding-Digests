@@ -93,6 +93,9 @@
 		# scope:political_movement = political movement
 		interest_group_can_join = {}	
 		
+		# Only used on secession. Whether the movement can start a secession while a revolution is growing in its country
+		can_secede_during_revolution = no # Default: no
+		
 		# Weight for whether this civil war type should be selected over others
 		# Root = political movement
 		# scope:clout = combined clout of IGs that would become insurrectionary

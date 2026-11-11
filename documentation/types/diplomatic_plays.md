@@ -22,6 +22,10 @@
 			# trigger here
 		}
 
+		subject_join_initiator_trigger = {
+			# trigger here, root is a subject that wants to support the initiator, scope:initiator and scope:target_country are set
+		}
+
 	
 		on_weekly_pulse = {}
 	

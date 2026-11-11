@@ -1922,6 +1922,21 @@ Scope to the contender country if there is a power struggle
 Input Scopes: power_bloc
 Output Scopes: country
 
+### controller
+Scope to the controller of the object
+Input Scopes: province, state
+Output Scopes: country
+
+### land_controller_hq
+Returns the province or state controller land HQ
+Input Scopes: province, state
+Output Scopes: hq
+
+### land_hq
+Returns the province or state owner local land HQ
+Input Scopes: province, state
+Output Scopes: hq
+
 ### input_building_type
 Scope to the building type input in a treaty article
 Input Scopes: treaty_article, treaty_article_options
@@ -1986,21 +2001,6 @@ Scope to the target_country of any of:
 2. treaty article options (for directed article types only)
 Input Scopes: treaty_article, treaty_article_options
 Output Scopes: country
-
-### controller
-Scope to the controller of the object
-Input Scopes: province, state
-Output Scopes: country
-
-### land_controller_hq
-Returns the province or state controller land HQ
-Input Scopes: province, state
-Output Scopes: hq
-
-### land_hq
-Returns the province or state owner local land HQ
-Input Scopes: province, state
-Output Scopes: hq
 
 ### political_movement
 If used in a character scope, scope to the political movement that character supports.

@@ -1879,6 +1879,24 @@ RULER_TITLE_TSARINA
 
 --------------------
 
+favorite_scandal_reason:
+
+Scope: country
+Random Valid: yes
+
+Entries:
+favorite_scandal_bribing_politicians
+favorite_scandal_forging_securities
+favorite_scandal_carousing
+favorite_scandal_selling_counterfeits
+favorite_scandal_affair
+favorite_scandal_secret_society
+favorite_scandal_contraband
+favorite_scandal_blackmailing
+favorite_scandal_drunken_misconduct
+
+--------------------
+
 je_tsarpoints_master_title:
 
 Scope: country
@@ -5904,6 +5922,18 @@ Entries:
 communication_siberian_exile_reason_custom
 books_siberian_exile_reason_custom
 society_siberian_exile_reason_custom
+
+--------------------
+
+favorite_law_speech:
+
+Scope: character
+Random Valid: no
+
+Entries:
+favorite_law_speech_persuasive
+favorite_law_speech_determined
+favorite_law_speech_intimidating
 
 --------------------
 

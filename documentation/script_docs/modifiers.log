@@ -480,6 +480,10 @@ country_cannot_cancel_law_enactment_bool:
   Mask: country
   Name: Disallow Cancel Law Enactment
   Description: A penalty preventing a country from cancelling the enactment of any Laws currently in progress
+country_cannot_decrease_autonomy_bool:
+  Mask: country
+  Name: Guaranteed Autonomy
+  Description: A guarantee preventing the Overlord from decreasing Autonomy or using the Install Favored Ruler Overlord Action
 country_cannot_enact_laws_bool:
   Mask: country
   Name: Disallow Enacting Laws
@@ -1952,6 +1956,10 @@ state_devastation_decay_mult:
   Mask: state
   Name: Devastation Recovery
   Description: A bonus or penalty to the speed at which States recover from Devastation.
+state_disable_disband_prestige_penalty_bool:
+  Mask: state
+  Name: No Prestige Penalty for Disbanding
+  Description: Disbanding Battalions from the State does not cost Prestige
 state_disallow_barracks_construction_bool:
   Mask: state
   Name: Disallow Army Building Construction
