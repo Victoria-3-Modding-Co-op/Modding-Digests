@@ -2854,12 +2854,6 @@ Return type: CString
 
 -----------------------
 
-CanEditSeaRegionsForSelectedFleets
-Definition type: Global function
-Return type: bool
-
------------------------
-
 CanGetAchievements
 Definition type: Global function
 Return type: bool
@@ -3109,12 +3103,6 @@ Return type: [unregistered]
 GetBuildingType( Arg0 )
 Definition type: Global function
 Return type: [unregistered]
-
------------------------
-
-GetCanEditMissionSeaRegionsForSelectedFleetsDesc
-Definition type: Global function
-Return type: CString
 
 -----------------------
 
@@ -3755,6 +3743,12 @@ Return type: int32
 -----------------------
 
 GetNumSelectedFleets
+Definition type: Global function
+Return type: int32
+
+-----------------------
+
+GetNumSelectedFleetsMissionSeaRegions
 Definition type: Global function
 Return type: int32
 
@@ -4462,12 +4456,6 @@ Return type: Command
 
 -----------------------
 
-OnEditSelectedFleetsSeaRegionsClicked
-Definition type: Global function
-Return type: void
-
------------------------
-
 OnToggleLoginWindow
 Definition type: Global function
 Return type: void
@@ -5009,6 +4997,18 @@ Return type: [unregistered]
 -----------------------
 
 concept_advancement_speed_desc
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+concept_advancing_war_goal
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+concept_advancing_war_goal_desc
 Definition type: Global function
 Return type: [unregistered]
 
@@ -7289,6 +7289,18 @@ Return type: [unregistered]
 -----------------------
 
 concept_enforced_treaty_desc
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+concept_enforced_war_goal
+Definition type: Global function
+Return type: [unregistered]
+
+-----------------------
+
+concept_enforced_war_goal_desc
 Definition type: Global function
 Return type: [unregistered]
 
@@ -16659,6 +16671,12 @@ Return type: Country
 BattleParticipant.AccessLowWarSupportModifier
 Definition type: Promote
 Return type: Modifier
+
+-----------------------
+
+BattleParticipant.AccessWarParticipant
+Definition type: Promote
+Return type: WarParticipant
 
 -----------------------
 
@@ -28886,6 +28904,12 @@ Return type: float
 
 -----------------------
 
+Country.GetMaxConscriptBattalions
+Definition type: Function
+Return type: int32
+
+-----------------------
+
 Country.GetMaxCredit
 Definition type: Function
 Return type: CFixedPoint
@@ -30815,6 +30839,12 @@ Return type: CString
 Country.GetTargetInvolvementIn( Arg0 )
 Definition type: Function
 Return type: CFixedPoint
+
+-----------------------
+
+Country.GetTargetInvolvementTooltipTagIn( Arg0 )
+Definition type: Function
+Return type: CString
 
 -----------------------
 
@@ -51573,7 +51603,25 @@ Return type: [unregistered]
 
 -----------------------
 
+MapInteractionManager.GetSelectionEditNavalMissionDescriptiveText
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+MapInteractionManager.GetSelectionEditNavalMissionExtraText
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 MapInteractionManager.HasAnyActiveMapInteraction
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+MapInteractionManager.HasSelectionEditNavalMissionInteraction
 Definition type: Function
 Return type: bool
 
@@ -52344,94 +52392,6 @@ Return type: [unregistered]
 
 -----------------------
 
-MapListNavalMissionOption
-Definition type: Type
-
------------------------
-
-MapListNavalMissionOption.GetSeaRegion
-Definition type: Promote
-Return type: Province
-
------------------------
-
-MapListNavalMissionOption.AccessSelf
-Definition type: Function
-Return type: [unregistered]
-
------------------------
-
-MapListNavalMissionOption.CanTravelTo
-Definition type: Function
-Return type: bool
-
------------------------
-
-MapListNavalMissionOption.GetNumMissions
-Definition type: Function
-Return type: int32
-
------------------------
-
-MapListNavalMissionOption.GetSeaRegion
-Definition type: Function
-Return type: [unregistered]
-
------------------------
-
-MapListNavalMissionOption.GetSupplyShipPredictionDelta
-Definition type: Function
-Return type: int32
-
------------------------
-
-MapListNavalMissionOption.GetTravelDays
-Definition type: Function
-Return type: int32
-
------------------------
-
-MapListNavalMissionOption.GetTravelTimeLabel
-Definition type: Function
-Return type: CString
-
------------------------
-
-MapListNavalMissionOption.HasMultipleMissions
-Definition type: Function
-Return type: bool
-
------------------------
-
-MapListNavalMissionOption.IsTravelTimeAffectedByWeather
-Definition type: Function
-Return type: bool
-
------------------------
-
-MapListNavalMissionOption.Self
-Definition type: Function
-Return type: [unregistered]
-
------------------------
-
-MapListNavalMissionPanel
-Definition type: Type
-
------------------------
-
-MapListNavalMissionPanel.AccessSelf
-Definition type: Function
-Return type: [unregistered]
-
------------------------
-
-MapListNavalMissionPanel.Self
-Definition type: Function
-Return type: [unregistered]
-
------------------------
-
 MapListOption
 Definition type: Type
 
@@ -52548,12 +52508,6 @@ Return type: MapListMarketOption
 MapListOption.GetMilitaryFormationData
 Definition type: Promote
 Return type: MapListMilitaryFormationOption
-
------------------------
-
-MapListOption.GetNavalMissionData
-Definition type: Promote
-Return type: MapListNavalMissionOption
 
 -----------------------
 
@@ -53915,6 +53869,18 @@ Return type: CString
 
 -----------------------
 
+MarketPanel.HasExports
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+MarketPanel.HasImports
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 MarketPanel.HasSelectedWorldMarketHub
 Definition type: Function
 Return type: bool
@@ -54473,12 +54439,6 @@ Return type: bool
 
 -----------------------
 
-MilitaryFormation.CanEditMissionSeaRegions
-Definition type: Function
-Return type: bool
-
------------------------
-
 MilitaryFormation.CanEmbark
 Definition type: Function
 Return type: bool
@@ -54542,6 +54502,12 @@ Return type: bool
 MilitaryFormation.CancelRetrofitShips
 Definition type: Function
 Return type: Command
+
+-----------------------
+
+MilitaryFormation.Check
+Definition type: Function
+Return type: void
 
 -----------------------
 
@@ -54792,12 +54758,6 @@ Return type: [unregistered]
 -----------------------
 
 MilitaryFormation.GetBuildingsDesc
-Definition type: Function
-Return type: CString
-
------------------------
-
-MilitaryFormation.GetCanEditMissionSeaRegionsDesc
 Definition type: Function
 Return type: CString
 
@@ -55596,6 +55556,12 @@ Return type: int32
 -----------------------
 
 MilitaryFormation.GetNumStationSelections
+Definition type: Function
+Return type: int32
+
+-----------------------
+
+MilitaryFormation.GetNumStationSelectionsCapped
 Definition type: Function
 Return type: int32
 
@@ -56483,6 +56449,12 @@ Return type: bool
 
 -----------------------
 
+MilitaryFormation.IsChecked
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 MilitaryFormation.IsCommander( Arg0 )
 Definition type: Function
 Return type: bool
@@ -56580,6 +56552,12 @@ Return type: bool
 -----------------------
 
 MilitaryFormation.IsMobilizing
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+MilitaryFormation.IsNumStationSelectionsCapped
 Definition type: Function
 Return type: bool
 
@@ -56759,12 +56737,6 @@ Return type: void
 
 -----------------------
 
-MilitaryFormation.OnEditMissionSeaRegionsClicked
-Definition type: Function
-Return type: void
-
------------------------
-
 MilitaryFormation.OnInvasionClicked
 Definition type: Function
 Return type: void
@@ -56856,6 +56828,12 @@ Return type: void
 -----------------------
 
 MilitaryFormation.SortTransportedFormations( Arg0 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+MilitaryFormation.ToggleChecked
 Definition type: Function
 Return type: void
 
@@ -68963,13 +68941,13 @@ Return type: [unregistered]
 
 -----------------------
 
-Province.AddSeaRegionToSelectedFleetMissions
+Province.AssignSelectedFleetsToNewMissionInRegion( Arg0 )
 Definition type: Function
 Return type: Command
 
 -----------------------
 
-Province.AssignSelectedFleetsToNewMissionInRegion( Arg0 )
+Province.CancelSelectedFleetMissions
 Definition type: Function
 Return type: Command
 
@@ -69029,6 +69007,18 @@ Return type: CString
 
 -----------------------
 
+Province.GetSelectionEditNavalMissionTitle
+Definition type: Function
+Return type: CString
+
+-----------------------
+
+Province.GetSelectionEditNavalMissionTooltip
+Definition type: Function
+Return type: CString
+
+-----------------------
+
 Province.GetState
 Definition type: Function
 Return type: [unregistered]
@@ -69071,9 +69061,21 @@ Return type: bool
 
 -----------------------
 
+Province.IsSelectionEditingNavalMission
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 Province.MakeScope
 Definition type: Function
 Return type: Scope
+
+-----------------------
+
+Province.OnSelectedFleetsRightClick( Arg0 )
+Definition type: Function
+Return type: void
 
 -----------------------
 
@@ -69089,19 +69091,19 @@ Return type: bool
 
 -----------------------
 
-Province.WouldAssignSelectedFleetsToNewMission( Arg0 )
+Province.WouldCancelSelectedFleetMissions
 Definition type: Function
 Return type: bool
 
 -----------------------
 
-Province.WouldAssignSelectedFleetsToNewMissionWithConfirmation( Arg0 )
+Province.WouldRemoveSeaRegionFromSelectedFleetMissions
 Definition type: Function
 Return type: bool
 
 -----------------------
 
-Province.WouldAssignSelectedFleetsToNewMissionWithoutConfirmation( Arg0 )
+Province.WouldSelectNewMissionForSelectedFleets
 Definition type: Function
 Return type: bool
 
@@ -70065,6 +70067,12 @@ Return type: bool
 
 -----------------------
 
+RightClickMenuManager.IsSelectNavalMissionTypeForSeaNodeOpen
+Definition type: Function
+Return type: bool
+
+-----------------------
+
 RightClickMenuManager.IsSwitchProductionMethodMenuOpen
 Definition type: Function
 Return type: bool
@@ -70408,6 +70416,12 @@ Return type: void
 -----------------------
 
 RightClickMenuManager.ToggleSelectNavalMissionTypeForFleet( Arg0, Arg1 )
+Definition type: Function
+Return type: void
+
+-----------------------
+
+RightClickMenuManager.ToggleSelectNavalMissionTypeForSeaNode( Arg0, Arg1 )
 Definition type: Function
 Return type: void
 
@@ -72365,6 +72379,12 @@ Return type: CString
 -----------------------
 
 SeaNodeMovementMarker.HasActiveSupplyNetwork
+Definition type: Function
+Return type: bool
+
+-----------------------
+
+SeaNodeMovementMarker.HasCheckedMilitaryPanelFleets
 Definition type: Function
 Return type: bool
 
@@ -79136,9 +79156,9 @@ Return type: int32
 
 -----------------------
 
-State.GetWorldMarketHubTradingStatesDesc
+State.GetWorldMarketHubTradingStates
 Definition type: Function
-Return type: CString
+Return type: [unregistered]
 
 -----------------------
 

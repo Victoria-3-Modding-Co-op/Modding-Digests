@@ -456,6 +456,10 @@ country_bureaucracy_mult:
   Mask: country
   Name: bur! Bureaucracy
   Description: The amount of bur! Bureaucracy is modified up or down
+country_can_conscript_protected_subsistence_employment_bool:
+  Mask: country
+  Name: Conscription Centers ignore Protected Subsistence Employment
+  Description: Whether Conscription Centers can recruit from Subsistence Buildings even when their employment is protected
 country_can_form_construction_company_bool:
   Mask: country
   Name: Can form Construction type Companies
@@ -2351,7 +2355,7 @@ unit_experience_gain_mult:
 unit_kill_rate_add:
   Mask: unit
   Name: Kill Rate
-  Description: How effective a Military Unit is at ensuring their opponent's Casualties end up unable to come back to fight another day. Increases the ratio of Casualties that end up killed (instead of Wounded). Kill Rate is countered by the enemy Military Unit's Recovery Rate.
+  Description: How effective a Military Unit is at killing its opponents. Increases the share of the enemy's Casualties that are killed outright instead of Wounded. Kill Rate is countered by the enemy Military Unit's Recovery Rate.
 unit_morale_damage_mult:
   Mask: unit
   Name: Morale Damage
@@ -2395,7 +2399,7 @@ unit_provinces_lost_mult:
 unit_recovery_rate_add:
   Mask: unit
   Name: Recovery Rate
-  Description: The percentage of Casualties a Military Unit takes that survive, in some cases by becoming Dependents. Can be increased with Mobilization Options. Recovery Rate is countered by the enemy Military Unit's Kill Rate.
+  Description: How effective a Military Unit is at protecting its soldiers. Turns a share of the Casualties a Military Unit takes into Demoralized soldiers. Decreases the share of Casualties that are killed outright instead of Wounded. This is countered by the enemy Military Unit's Kill Rate. Can be increased with Mobilization Options.
 unit_supply_consumption_mult:
   Mask: unit
   Name: Supply Consumption
@@ -6452,8 +6456,8 @@ country_ship_type_armored_cruiser_construction_efficiency_add:
   Description: The efficiency of Armored Cruiser ship_construction! Ship Construction
 country_ship_type_early_troop_ship_construction_efficiency_add:
   Mask: country
-  Name: Early Troopship Construction Efficiency
-  Description: The efficiency of Early Troopship ship_construction! Ship Construction
+  Name: Troopship Construction Efficiency
+  Description: The efficiency of Troopship ship_construction! Ship Construction
 country_ship_type_light_cruiser_construction_efficiency_add:
   Mask: country
   Name: Light Cruiser Construction Efficiency
@@ -6464,8 +6468,8 @@ country_ship_type_protected_cruiser_construction_efficiency_add:
   Description: The efficiency of Protected Cruiser ship_construction! Ship Construction
 country_ship_type_troop_ship_construction_efficiency_add:
   Mask: country
-  Name: Troopship Construction Efficiency
-  Description: The efficiency of Troopship ship_construction! Ship Construction
+  Name: Iron Troopship Construction Efficiency
+  Description: The efficiency of Iron Troopship ship_construction! Ship Construction
 country_shona_cultural_acceptance_add:
   Mask: country
   Name: Acceptance of Shona Culture

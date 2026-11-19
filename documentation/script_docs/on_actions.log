@@ -796,7 +796,7 @@ Expected Scope: country
 
 on_law_checkpoint_success:
 From Code: Yes
-Expected Scope: none
+Expected Scope: country
 
 --------------------
 
@@ -885,12 +885,6 @@ Expected Scope: none
 --------------------
 
 on_travel_station_in_hq_cancelled:
-From Code: Yes
-Expected Scope: none
-
---------------------
-
-on_diplo_play_subject_released_overlord:
 From Code: Yes
 Expected Scope: none
 
@@ -1130,6 +1124,12 @@ Expected Scope: none
 
 --------------------
 
+sps_law_checkpoint_cancellation:
+From Code: No
+Expected Scope: none
+
+--------------------
+
 on_decade_pulse_country:
 From Code: Yes
 Expected Scope: country
@@ -1257,12 +1257,6 @@ Expected Scope: country
 --------------------
 
 on_merge_markets:
-From Code: Yes
-Expected Scope: none
-
---------------------
-
-on_diplo_play_subject_released:
 From Code: Yes
 Expected Scope: none
 
